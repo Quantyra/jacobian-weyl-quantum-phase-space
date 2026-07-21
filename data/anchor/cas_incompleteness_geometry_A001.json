@@ -1,0 +1,15 @@
+{
+  "det_J": "-2",
+  "det_ok": true,
+  "J_Jinv_is_I": true,
+  "gamma_star": [
+    "1/12",
+    "1",
+    "4/3"
+  ],
+  "gamma_on_real_curve": true,
+  "n_affine_preimages_sympy": 0,
+  "no_affine_preimage": true,
+  "pass_support": true,
+  "theorem_ref": "docs/validation/G4-Xj-incompleteness.md"
+}
