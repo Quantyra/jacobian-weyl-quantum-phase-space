@@ -1,8 +1,8 @@
 ﻿# EXOTIC-CCR â€” Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release:** [v0.3.2](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.2)  
-**DOI:** [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.2; concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); do not use v0.2.2 pair or v0.3.0 Dom(H*) proof)
+**Release:** [v0.3.3](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3)  
+**DOI:** [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.3; concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); do not use v0.2.2 pair or v0.3.0 Dom(H*) proof)
 
 ---
 
@@ -15,7 +15,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 | Doc | Role |
 |-----|------|
-| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Primary submit PDF (v0.3.2)** |
+| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Primary submit PDF (v0.3.3)** |
 | [A001-arxiv.tex](docs/notes/A001-arxiv.tex) / [draft.md](docs/notes/A001-arxiv-draft.md) | LaTeX source / long form |
 | [A001-endorsement-request.md](docs/notes/A001-endorsement-request.md) | Endorser email blurb |
 | [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze |
@@ -65,7 +65,7 @@ scripts/cas/          # reproducible verifiers
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Prefer version DOI `10.5281/zenodo.21478679` (v0.3.2) or concept `10.5281/zenodo.21474351`. Do not use v0.2.2 pair or v0.3.0 Dom(H*) proof.
+See [CITATION.cff](CITATION.cff). Prefer version DOI `10.5281/zenodo.21478679` (v0.3.3) or concept `10.5281/zenodo.21474351`. Do not use v0.2.2 pair or v0.3.0 Dom(H*) proof.
 
 ## License
 

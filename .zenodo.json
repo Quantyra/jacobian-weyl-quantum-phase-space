@@ -1,5 +1,5 @@
-{
-  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts of the Alpöge–Fable Keller map with dual-transport deficiency (∞,∞)",
+﻿{
+  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts of the AlpÃ¶geâ€“Fable Keller map with dual-transport deficiency (âˆž,âˆž)",
   "upload_type": "software",
   "creators": [
     {
@@ -8,7 +8,7 @@
     }
   ],
   "license": "Apache-2.0",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "keywords": [
     "jacobian-conjecture",
     "alpoge-fable",
@@ -24,5 +24,5 @@
       "resource_type": "software"
     }
   ],
-  "description": "<p><strong>EXOTIC-CCR v0.3.2</strong> — Daniel Eric Fredriksen (Quantyra Inc).</p><p><strong>Claim:</strong> H=−iX₁ on C_c^∞(R³) has deficiency indices (n₊,n₋)=(∞,∞) via whole maximal-orbit deficiency vectors (transverse cutoffs only). Infinitely many self-adjoint extensions; algebraic CCR/Poisson data select none.</p><p><strong>Errata:</strong> v0.2.2 pair (0,∞) withdrawn; v0.3.0 interior s-indicator proof withdrawn (not in Dom(H*)).</p><p><strong>Non-claims:</strong> No gate/channel/advantage; seed F attributed to Alpöge–Fable (restated).</p><p>Paper: docs/notes/A001-arxiv.pdf</p>"
+  "description": "<p><strong>EXOTIC-CCR v0.3.3</strong> â€” Daniel Eric Fredriksen (Quantyra Inc).</p><p><strong>Claim:</strong> H=âˆ’iXâ‚ on C_c^âˆž(RÂ³) has deficiency indices (nâ‚Š,nâ‚‹)=(âˆž,âˆž) via whole maximal-orbit deficiency vectors (transverse cutoffs only). Infinitely many self-adjoint extensions; algebraic CCR/Poisson data select none.</p><p><strong>Errata:</strong> v0.2.2 pair (0,âˆž) withdrawn; v0.3.0 interior s-indicator proof withdrawn (not in Dom(H*)).</p><p><strong>Non-claims:</strong> No gate/channel/advantage; seed F attributed to AlpÃ¶geâ€“Fable (restated).</p><p>Paper: docs/notes/A001-arxiv.pdf</p>"
 }

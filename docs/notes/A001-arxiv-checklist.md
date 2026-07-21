@@ -1,4 +1,4 @@
-# A001 arXiv checklist (v0.3.2)
+﻿# A001 arXiv checklist (v0.3.3)
 
 **PDF:** `docs/notes/A001-arxiv.pdf`  
 **TeX:** `docs/notes/A001-arxiv.tex`  
@@ -8,7 +8,7 @@
 
 ## Freeze
 - [x] Theorem F expanded (reconstruction, IFT scaling, saturation, Dom(H*))
-- [x] Version **0.3.2** in CITATION / .zenodo.json / CHANGELOG / README
+- [x] Version **0.3.3** in CITATION / .zenodo.json / CHANGELOG / README
 - [ ] Zenodo version DOI after tag ingest
 - [ ] Publication adversarial 3-role PASS
 - [ ] Dan PDF read-through
