@@ -1,59 +1,65 @@
-# Jacobian Conjecture / Weyl / Quantum Phase-Space
+# EXOTIC-CCR — Jacobian / Weyl / quantum phase-space
 
-Research scaffold for investigating Jacobian Conjecture counterexamples, Weyl-algebra endomorphisms, and phase-space / reversible quantum symmetry criteria.
+**Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
+**Release:** [v0.2.1](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.1)  
+**DOI:** [10.5281/zenodo.21474488](https://doi.org/10.5281/zenodo.21474488) (concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351))
 
-**Organization:** Quantyra Inc.  
-**Planning epic:** `C:\Users\Dan\Desktop\Projects\IGH\Quantyra-Planning2\epics\E005-jacobian-weyl-quantum-phase-space.md`  
-**Charter (provisional):** `Quantyra-Planning2/docs/research-program-jacobian-weyl-qc-charter.md`  
-**Version:** 0.0.1
+---
 
-## Scientific question (bounded)
+## Start here — paper draft
 
-Does a Jacobian-counterexample endomorphism of a Weyl algebra yield a reversible quantum symmetry of the corresponding phase-space / CCR algebra, or does it produce only a non-invertible / non-unitary / non-symplectic exotic map?
+### **[docs/notes/A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)**
+
+**arXiv-oriented write-up of the A001 theorems** (Poisson lift, Weyl endomorphism, \(X_1\) incompleteness, \(P_1^{\mathrm{sym}}\) not essentially self-adjoint, deficiency bounds).
+
+Shorter ledger form: **[docs/notes/A001-minimum-result-note.md](docs/notes/A001-minimum-result-note.md)**
+
+---
+
+## One-sentence result
+
+For the seed Keller map \(F\), algebraic Poisson/Weyl CCR lifts exist, but the dual momentum \(P_1^{\mathrm{sym}}=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\).
 
 ## Non-claims
 
-This repository is infrastructure and research scaffolding only.
+- **Not** a unitary quantum gate, channel, or computational advantage  
+- **Not** unique physical momenta without self-adjoint extension choices  
+- **Not** ESS failure claimed for all three dual momenta  
+- **Not** a slogan “factory false” theorem beyond the finite identities used  
 
-- It does **not** assert that any particular Jacobian Conjecture counterexample is correct; literature intake pins the object of study.
-- It does **not** claim new quantum algorithms, complexity separations, or hardware results.
-- It does **not** claim that exotic Weyl endomorphisms are physical quantum gates without explicit criteria and proof.
-- It does **not** claim P-vs-NP or circuit lower bounds.
+Full boundary: [INTEGRITY.md](INTEGRITY.md) · paper draft §9
 
-See [INTEGRITY.md](INTEGRITY.md) for the standing non-claims boundary.
+## Companion Lean (Gate-0 seed)
 
-## Gate status (2026-07-21) — A001 spine through G7
+https://github.com/Quantyra/exotic-ccr-lean
 
-| Gate | Status |
-|------|--------|
-| G0-seed | [D0-seed](docs/validation/D0-seed-validation-dossier.md) · Lean [v0.1.1](https://github.com/Quantyra/exotic-ccr-lean) |
-| G0-family d=4 | [D0-family](docs/validation/D0-family-pilot-dossier.md) |
-| G1 atlas | [index](data/atlas/index.json) A001/A002 |
-| G2 Poisson A001 | [dossier](docs/validation/G2-poisson-A001-dossier.md) **certified** |
-| G3 Weyl A001 | [dossier](docs/validation/G3-weyl-A001-dossier.md) **certified** |
-| G4–G7 | [G4](docs/validation/G4-domains-CCR-A001-dossier.md) · [G5](docs/validation/G5-completion-degree-A001-dossier.md) · [G6](docs/validation/G6-CP-dilation-A001-dossier.md) · [G7](docs/validation/G7-semigroup-index-A001-dossier.md) |
-| **Closeout** | [PROGRAM-CLOSEOUT-G0-G7-A001.md](docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md) |
+## Gate / evidence index
 
-Physical reversible quantum symmetry is **not** claimed (G4 ESS open; G6 not a channel).
+| Gate | Status | Doc |
+|------|--------|-----|
+| G0 seed | certified | [D0-seed](docs/validation/D0-seed-validation-dossier.md) |
+| G0 family d=4 pilot | certified pilot | [D0-family](docs/validation/D0-family-pilot-dossier.md) |
+| G1 atlas | A001/A002 | [atlas index](data/atlas/index.json) |
+| G2 Poisson | certified | [G2](docs/validation/G2-poisson-A001-dossier.md) |
+| G3 Weyl | certified | [G3](docs/validation/G3-weyl-A001-dossier.md) |
+| G4 \(X_1\) / \(P_1\) ESS | **proved** | [G4-X1](docs/validation/G4-X1-incompleteness.md) · [deficiency](docs/validation/G4-P1-deficiency-indices.md) · [G4 summary](docs/validation/G4-domains-CCR-A001-dossier.md) |
+| G5–G7 | packages | [closeout](docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md) |
 
-## Repository structure
+## Repository layout
 
 ```
-data/anchor/      # frozen maps + CAS reports
-data/atlas/       # G1 counterexample atlas (schema, index, entries)
-docs/
-  validation/
-  provenance/
-  literature/
-  plans/          # includes atlas-schema.md
-scripts/cas/
-src/
+docs/notes/           # A001-arxiv-draft.md  ← paper draft
+                      # A001-minimum-result-note.md
+docs/validation/      # theorem dossiers + CAS-linked proofs
+data/anchor/          # frozen maps + CAS JSON reports
+data/atlas/           # counterexample atlas
+scripts/cas/          # reproducible verifiers
 ```
+
+## Citation
+
+See [CITATION.cff](CITATION.cff). Prefer concept DOI `10.5281/zenodo.21474351` for the project; version DOI `10.5281/zenodo.21474488` for v0.2.1.
 
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
-
-## Citation
-
-See [CITATION.cff](CITATION.cff). Zenodo DOI pending first GitHub release (Soft Blocker).
