@@ -80,7 +80,7 @@ For the A001 seed dual momenta \(P_j^{\mathrm{sym}}=-i X_j\) on \(C_c^\infty(\ma
 ## 6. What remains open (honest)
 | Item | Status |
 |------|--------|
-| Which \(j\) fails ESS | **open** (numerics suggest \(X_1\)) |
+| Which \(j\) fails ESS | **all three** \(j=0,1,2\) (see `G4-X0-X2-ESS-status.md`, `G4-X1-incompleteness.md`) |
 | Deficiency indices \(n_\pm\) | **not computed** |
 | Strong commutation of the \(Q\)'s and \(P\)'s as unbounded operators | **open** |
 | Unique self-adjoint extensions / boundary conditions at infinity | **open** |

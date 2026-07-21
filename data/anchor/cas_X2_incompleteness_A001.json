@@ -1,0 +1,27 @@
+{
+  "q_star": [
+    "0",
+    "1",
+    "-47/12"
+  ],
+  "F_q_star": [
+    "1/12",
+    "1",
+    "0"
+  ],
+  "F_q_star_is_1_12_1_0": true,
+  "gamma_star": [
+    "1/12",
+    "1",
+    "4/3"
+  ],
+  "time_to_gamma_along_e2": "4/3",
+  "DF_X2": [
+    "0",
+    "0",
+    "1"
+  ],
+  "DF_X2_is_e2": true,
+  "argument": "If X2-flow through q_star were global, F(phi_t)=(1/12,1,t) for all t; t=4/3 yields gamma* in F(R^3), contradicting omission. Hence incomplete; T+ <= 4/3.",
+  "pass": true
+}

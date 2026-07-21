@@ -17,8 +17,8 @@
 | \(H_0=-iX_0\) not ESS | **proved** |
 | \(X_1\) incomplete | **proved** |
 | \(H_1=-iX_1\) not ESS; \((n_+,n_-)=(\infty,\infty)\) | **proved** (v0.3.x) |
-| \(X_2\) incomplete | **numeric / open algebraic curve** |
-| \(H_2\) not ESS | **conditional** on \(X_2\) incomplete |
+| \(X_2\) incomplete | **proved** (omit \(\gamma_\star\) + witness \(q_\star\)) |
+| \(H_2=-iX_2\) not ESS | **proved** |
 | \(\max(n_+,n_-)\ge 1\) | **proved** |
 | Orbit through \((1,0,0)\): time \((-\infty,\tfrac12)\) | **proved** (forward finite end, backward complete) |
 | 1D orbit model indices | **\((1,0)\) or \((0,1)\)** (orientation) |
