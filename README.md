@@ -6,13 +6,17 @@
 
 ---
 
-## Start here — paper draft
+## Start here — paper (arXiv submission package)
 
-### **[docs/notes/A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)**
+### **[docs/notes/A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)** ← main paper draft
 
-**arXiv-oriented write-up of the A001 theorems** (Poisson lift, Weyl endomorphism, \(X_1\) incompleteness, \(P_1^{\mathrm{sym}}\) not essentially self-adjoint, deficiency bounds).
+arXiv-ready markdown: abstract, MSC, Theorems A–E (\(X_1\) blow-up, \(P_1^{\mathrm{sym}}\) not ESS), deficiency bounds, non-claims, bibliography.
 
-Shorter ledger form: **[docs/notes/A001-minimum-result-note.md](docs/notes/A001-minimum-result-note.md)**
+| Doc | Role |
+|-----|------|
+| **[A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)** | **Submit this** (polish → PDF/arXiv) |
+| [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze, source bundle, pre-submit steps |
+| [A001-minimum-result-note.md](docs/notes/A001-minimum-result-note.md) | Compact living ledger |
 
 ---
 
