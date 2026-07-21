@@ -39,3 +39,8 @@ desktop.ini
 *.key
 secrets/
 local/
+
+docs/notes/*.aux
+docs/notes/*.log
+docs/notes/*-pass*.log
+docs/notes/*-build.log
