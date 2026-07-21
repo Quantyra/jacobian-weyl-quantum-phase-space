@@ -1,13 +1,13 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
-title: "EXOTIC-CCR A001: Poisson/Weyl lifts of the Alpöge–Fable Keller map with dual-transport deficiency (∞,∞)"
+title: "EXOTIC-CCR A001: Poisson/Weyl lifts of the AlpÃ¶geâ€“Fable Keller map with dual-transport deficiency (âˆž,âˆž)"
 type: software
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
-# version DOI: update after Zenodo ingests tag v0.3.2
+# version DOI: 10.5281/zenodo.21478429 (v0.3.2)
 version: 0.3.2
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
@@ -20,8 +20,9 @@ keywords:
   - essential-self-adjointness
   - exotic-ccr
 abstract: >-
-  Poisson/Weyl lifts of the Alpöge–Fable Keller seed (restated). H=-i X_1 not ESS
+  Poisson/Weyl lifts of the AlpÃ¶geâ€“Fable Keller seed (restated). H=-i X_1 not ESS
   on C_c^infty(R^3) with deficiency indices (infinity, infinity) via whole-orbit
   deficiency vectors. Infinitely many self-adjoint extensions; none preferred by
   algebraic CCR data. v0.2.2 pair (0,infinity) and v0.3.0 s-indicator proof withdrawn.
   No gates/channels/advantage. Paper: docs/notes/A001-arxiv.pdf.
+
