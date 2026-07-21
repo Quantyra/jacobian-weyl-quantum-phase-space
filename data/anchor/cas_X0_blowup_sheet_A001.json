@@ -1,0 +1,21 @@
+{
+  "wall_s": "-4/27",
+  "escape_time_from_s0": "4/27",
+  "leading_coeff_a": "27*s**2 + 4*s",
+  "a_at_wall_zero": true,
+  "norms_as_h_to_0": [
+    5.687378818362738,
+    16.358552232227993,
+    50.51412523740936,
+    158.61828250999898,
+    500.5013848467721
+  ],
+  "norms_increase": true,
+  "DF_X0": [
+    "1",
+    "0",
+    "0"
+  ],
+  "DF_X0_is_e0": true,
+  "pass": true
+}

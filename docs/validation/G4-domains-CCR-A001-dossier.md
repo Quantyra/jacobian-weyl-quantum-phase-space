@@ -1,6 +1,6 @@
 # G4 Domains / self-adjointness / strong CCR — A001
 
-**Status:** \(X_1\) incomplete + \(P_1^{\mathrm{sym}}\) not ESS **proved**; deficiency indices **bounded / modeled**  
+**Status:** \(X_0,X_1\) incomplete + \(H_0,H_1\) not ESS **proved**; \(H_1\) indices \((\infty,\infty)\); \(X_2/H_2\) provisional (see `G4-X0-X2-ESS-status.md`)  
 **Date:** 2026-07-21  
 
 ## Documents
@@ -13,8 +13,12 @@
 ## Results
 | Item | Status |
 |------|--------|
+| \(X_0\) incomplete | **proved** (`G4-X0-X2-ESS-status.md`) |
+| \(H_0=-iX_0\) not ESS | **proved** |
 | \(X_1\) incomplete | **proved** |
-| \(P_1^{\mathrm{sym}}\) not ESS | **proved** |
+| \(H_1=-iX_1\) not ESS; \((n_+,n_-)=(\infty,\infty)\) | **proved** (v0.3.x) |
+| \(X_2\) incomplete | **numeric / open algebraic curve** |
+| \(H_2\) not ESS | **conditional** on \(X_2\) incomplete |
 | \(\max(n_+,n_-)\ge 1\) | **proved** |
 | Orbit through \((1,0,0)\): time \((-\infty,\tfrac12)\) | **proved** (forward finite end, backward complete) |
 | 1D orbit model indices | **\((1,0)\) or \((0,1)\)** (orientation) |
