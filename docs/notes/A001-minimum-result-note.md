@@ -210,6 +210,6 @@ See [../validation/G4-P1-deficiency-indices.md](../validation/G4-P1-deficiency-i
 - \(\max(n_+,n_-)\ge 1\): **proved** (non-ESS).
 - Orbit through \((1,0,0)\) is a half-line \((-\infty,	frac12)\): backward complete, forward escape at \(	frac12\).
 - 1D model indices: \((1,0)\) or \((0,1)\) (orientation).
-- Exact **global** \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\): **open**.
-- Incomplete set contains a **2D sheet** in \(\{F_0=0\}\) (proved); Lebesgue positivity in \(\mathbb{R}^3\) open (MC support).
+- Global deficiency: \(\max(n_+,n_-)=\infty\) (proved via orbit measure); exact pair open.
+- Incomplete set: 2D sheet in \(\{F_0=0\}\) + \(\mathrm{Leb}_3>0\) (IFT off \(a=0\), \(\det DF\equiv-2\)).
 - Details: [../validation/G4-P1-orbit-measure-deficiency.md](../validation/G4-P1-orbit-measure-deficiency.md).

@@ -97,44 +97,31 @@ in the \(\ker(A^*\mp i)\) convention above (orientation-dependent).
 
 ---
 
-## 4. Global operator on \(L^2(\mathbb{R}^3)\) — bounds (updated)
+## 4. Global operator on \(L^2(\mathbb{R}^3)\) — resolved (orbit measure)
 
-**Full orbit-measure write-up:** `G4-P1-orbit-measure-deficiency.md`
+**Full write-up:** `G4-P1-orbit-measure-deficiency.md`
 
-### 4.1 Rigorous
 \[
-\boxed{(n_+,n_-)\neq(0,0),\quad \max(n_+,n_-)\ge 1}
+\boxed{(n_+,n_-)\neq(0,0),\quad \max(n_+,n_-)=\infty}
 \]
 \[
 \boxed{(n_+,n_-)_{\mathrm{orbit}}\in\{(1,0),(0,1)\}
 \text{ for the half-line orbit through }(1,0,0)}
 \]
 
-### 4.2 Incomplete set structure (proved)
-The set of incomplete points contains a **smooth 2D sheet** \(\Sigma_0\subset\{F_0=0\}\):
-\[
-q(s,c)=\bigl(q_0(s,c),\,s,\,q_2(s,c)\bigr),\quad c>0,\;0<s<1/c,
-\]
-with closed form (CAS PASS: `cas_F0_zero_incomplete_sheet_A001.json`).  
-Escape as \(s\to(1/c)^-\). Thus incompleteness is **not** a single trajectory; it has positive \(\mathcal{H}^2\) measure.
-
-### 4.3 Lebesgue measure in \(\mathbb{R}^3\) (open; MC support)
-Monte Carlo forward escapes: \(\sim 25\%\)–\(40\%\) in open samples about \((1,0,0)\) and \(N(0,I)\).  
-**Not a theorem** that \(\mathrm{Leb}_3(\mathcal{I})>0\).
-
-### 4.4 Dichotomy (conditional)
-| Incomplete set in \(\mathbb{R}^3\) | Expected global \((n_+,n_-)\) |
-|----------------------------------|------------------------------|
-| Lebesgue **null** (only lower-dimensional sheets) | finite; often \(\in\{(1,0),(0,1)\}\) |
-| Lebesgue **positive** | at least one index **infinite** |
-
-MC favors positive measure ⇒ infinite indices **conjecturally**; **not claimed**.
+| Piece | Status |
+|-------|--------|
+| 2D sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** (closed form) |
+| Escape locus \(A(s;a,c)=0\) continues off \(a=0\) by IFT | **proved** (`cas_orbit_measure_IFT_A001.json`) |
+| \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** (IFT + \(\det DF\equiv-2\)) |
+| \(\max(n_+,n_-)=\infty\) | **proved** (positive-measure orbit family) |
+| Exact pair \((\infty,0)\) / \((0,\infty)\) / \((\infty,\infty)\) | **open** |
 
 ---
 
-## 5. Single next obligation
+## 5. Residual open point
 
-**Prove or refute** \(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\), e.g. by extending the discriminant sheet off \(F_0=0\) to an open set of level values \((a,c)\) and applying coarea.
+Orient the incomplete ends on a full-measure subset of the transverse parameter space \(U\) to pin the exact pair \((n_+,n_-)\).
 
 ---
 
