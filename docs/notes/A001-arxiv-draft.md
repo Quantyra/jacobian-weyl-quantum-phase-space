@@ -1,5 +1,5 @@
 ﻿---
-title: "Poisson and Weyl lifts of the AlpÃ¶geâ€“Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
+title: "Poisson and Weyl lifts of the AlpÃ¶ge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
@@ -26,10 +26,10 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "pending-v0.3.2-zenodo"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.2: Theorem F theorem-grade Dom(H*)+saturation+analytic wall IFT; (n+,n-)=(inf,inf). Errata: v0.2.2 (0,inf); v0.3.2 s-indicators."
+claims_freeze: "A001 v0.3.2: Theorem F theorem-grade Dom(H*)+saturation+analytic wall IFT; (n+,n-)=(inf,inf). Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
-# Poisson and Weyl lifts of the AlpÃ¶geâ€“Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
+# Poisson and Weyl lifts of the AlpÃ¶ge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
 
 **Daniel Eric Fredriksen**  
 Quantyra Inc.  
@@ -44,7 +44,7 @@ https://github.com/Quantyra/jacobian-weyl-quantum-phase-space
 
 ## Abstract
 
-We study the three-dimensional Keller map \(F\) announced by AlpÃ¶ge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems Bâ€“F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The SchrÃ¶dinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
+We study the three-dimensional Keller map \(F\) announced by AlpÃ¶ge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B--F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The SchrÃ¶dinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
 
 We prove \(X_1\) is incomplete by an explicit integral curve escaping as \(t\to\tfrac12^-\). In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open transverse families with finite **upper** \(F_1\)-ends and finite **lower** \(F_1\)-ends yield square-integrable deficiency functions, so
 \[
@@ -61,7 +61,7 @@ We claim no unitary gates, channels, computational advantage, or preferred physi
 ## 1. Introduction
 
 ### 1.1 Motivation and attribution
-A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19â€“20 July 2026, **Levent AlpÃ¶ge** announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the AI system **Fable** [8]; independent checks and Lean formalizations followed promptly (e.g. Cureton [11]; Speyerâ€™s commentary [12]). **This paper does not claim discovery of \(F\).** Repository atlas label: **A001**.
+A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19--20 July 2026, **Levent AlpÃ¶ge** announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the AI system **Fable** [8]; independent checks and Lean formalizations followed promptly (e.g. Cureton [11]; Speyerâ€™s commentary [12]). **This paper does not claim discovery of \(F\).** Repository atlas label: **A001**.
 
 The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual transport fields \(X_j\) are standard when \(\det J\) is a nonzero constant. The question studied here is whether algebraic preservation of Poisson/CCR data selects a unique self-adjoint \(L^2\) realization of a dual transport generator on \(C_c^\infty(\mathbb{R}^3)\).
 
@@ -76,12 +76,12 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 **Message.** Algebraic CCR/Poisson lifts of a noninjective Keller map can coexist with a dual transport generator that is symmetric but not essentially self-adjoint, with a large self-adjoint extension theory.
 
 ### 1.3 Related work
-Jacobian conjecture background: Keller [4], Bassâ€“Connellâ€“Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reedâ€“Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
+Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
 - **Lean-proved:** Theorem A seed identities [6].  
-- **Exact CAS (two engines) + conceptual proof:** Bâ€“C polynomial identities; D curve.  
-- **Analytic construction:** Eâ€“F deficiency functions in flow-box coordinates.  
+- **Exact CAS (two engines) + conceptual proof:** B--C polynomial identities; D curve.  
+- **Analytic construction:** E--F deficiency functions in flow-box coordinates.  
 Software DOI: [5].
 
 ---
@@ -147,7 +147,7 @@ F\bigl(0,0,-\tfrac14\bigr)
 3. \(\Phi\) is not injective: if \(F(q^{(a)})=Q_\star\) and \(p^{(a)}=J(q^{(a)})^{T}P_\star\), then \(\Phi(q^{(a)},p^{(a)})=(Q_\star,P_\star)\) for each collision source \(q^{(a)}\) in (2.4).
 
 **Proof sketch.**  
-(1)â€“(2) follow from \(B=J^{-T}\) together with dual-CAS verification of the generator brackets (global SymPy identities; pure-Python dual-number sampling).  
+(1)--(2) follow from \(B=J^{-T}\) together with dual-CAS verification of the generator brackets (global SymPy identities; pure-Python dual-number sampling).  
 (3) uses \(B J^{T}=I\).
 
 **Evidence pointers:** `docs/validation/G2-poisson-A001-dossier.md`; `data/anchor/Phi_A001_seed_d3.json`; `cas_poisson_A001_*.json`.
@@ -385,23 +385,23 @@ u_+\bigl(\Psi_-(a,c,s)\bigr)
 zero off \(\Omega_-\). The same estimates give \(u_+\in L^2\), \(u_+\in\operatorname{Dom}(H^*)\), \((H^*-i)u_+=0\), and \(n_+=\infty\). âˆŽ
 
 **Remark (withdrawn constructions).**  
-Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-masses at artificial cross-sections and exit \(\operatorname{Dom}(H^*)\). That v0.3.2 device is **withdrawn**.
+Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-masses at artificial cross-sections and exit \(\operatorname{Dom}(H^*)\). That v0.3.0 device is **withdrawn**.
 
-### 8.6 Theorems Eâ€“F
+### 8.6 Theorems E--F
 **Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
 
-*Proof.* Propositions 8.1â€“8.2 and Lemmas 8.3â€“8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. âˆŽ
+*Proof.* Propositions 8.1--8.2 and Lemmas 8.3--8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. âˆŽ
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
 *Proof.* \(n_\pm\ge 1\) by Theorem F. âˆŽ
 
 **Corollary 8.5.**  
-Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems Bâ€“C do not distinguish among these extensions. Strong CCR after extension remains open.
+Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems B--C do not distinguish among these extensions. Strong CCR after extension remains open.
 
 **Conceptual point.** Even after a clean algebraic Poisson/CCR lift, incompleteness of \(X_1\) forces extension choices not fixed by the core algebraic relations.
 
-**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.2 interior \(s\)-cutoffs **withdrawn**. v0.3.2: whole maximal orbits (8.2)â€“(8.3).
+**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.2 interior \(s\)-cutoffs **withdrawn**. v0.3.2: whole maximal orbits (8.2)--(8.3).
 
 ---
 
@@ -413,8 +413,8 @@ Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of sel
 4. No unique physically preferred self-adjoint extension is selected.  
 5. No von Neumann inclusion index tied to generic degree is claimed.  
 6. No slogan claim that the Jacobian conjecture is â€œfactory falseâ€ is made beyond the finite identities actually used.  
-7. Discovery of the seed map \(F\) is not claimed (AlpÃ¶geâ€“Fable [8]).  
-8. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems Aâ€“F unless separately cited.
+7. Discovery of the seed map \(F\) is not claimed (AlpÃ¶ge--Fable [8]).  
+8. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems A--F unless separately cited.
 
 ---
 
@@ -422,7 +422,7 @@ Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of sel
 
 1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
 2. Strong CCR after extensions.  
-3. Lean formalization of Theorems Bâ€“F.  
+3. Lean formalization of Theorems B--F.  
 4. The same depth of analysis for higher-degree family maps in the atlas.  
 5. Optional: finer spectral theory of self-adjoint extensions of \(P_1^{\mathrm{sym}}\).
 
@@ -430,7 +430,7 @@ Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of sel
 
 ## 11. Conclusion
 
-Starting from the AlpÃ¶geâ€“Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
+Starting from the AlpÃ¶ge--Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
 
 ---
 
@@ -442,14 +442,14 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 
 ## References
 
-[1] P. R. Chernoff, *Essential self-adjointness of powers of generators of hyperbolic equations*, J. Funct. Anal. **12** (1973), 401â€“414.  
+[1] P. R. Chernoff, *Essential self-adjointness of powers of generators of hyperbolic equations*, J. Funct. Anal. **12** (1973), 401--414.  
 [2] M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press, 1975.  
-[3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287â€“330.  
-[4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299â€“306.  
-[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21478429](https://doi.org/10.5281/zenodo.21478429) (v0.3.2); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
+[3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287--330.  
+[4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299--306.  
+[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); see docs/zenodo-status.md for version DOI after ingest matches tag; GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
-[8] L. AlpÃ¶ge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19â€“20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
+[8] L. AlpÃ¶ge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
 [10] K. SchmÃ¼dgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.  
 [11] D. Cureton, independent Lean 4 formalization of the AlpÃ¶ge/Fable seed, https://github.com/deancureton/jacobian.  
@@ -465,7 +465,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 | Theorem B | `docs/validation/G2-poisson-A001-dossier.md` | `cas_poisson_A001_*.json` |
 | Theorem C | `docs/validation/G3-weyl-A001-dossier.md` | `cas_weyl_A001_*.json` |
 | Theorem D | `docs/validation/G4-X1-incompleteness.md` | `cas_X1_blowup_curve_A001.json` |
-| Theorems Eâ€“F | `docs/validation/G4-P1-orbit-measure-deficiency.md` | forward IFT + backward wall CAS |
+| Theorems E--F | `docs/validation/G4-P1-orbit-measure-deficiency.md` | forward IFT + backward wall CAS |
 
 ---
 
