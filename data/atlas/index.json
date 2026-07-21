@@ -1,0 +1,43 @@
+{
+  "program": "EXOTIC-CCR",
+  "gate": "G1-bootstrap",
+  "schema": "data/atlas/schema.json",
+  "schema_doc": "docs/plans/atlas-schema.md",
+  "updated_utc": "2026-07-21",
+  "policy": {
+    "bulk_generate_d_loop": false,
+    "poisson_weyl_required_for_active_row": false,
+    "factory_false_claim": false
+  },
+  "composition_plan": {
+    "mu_multiplicative": "mu(F o G) = mu(F)*mu(G) for generically finite dominant maps (standard; use when adding composite rows)",
+    "iterates": "mu(F^{o k}) = mu(F)^k",
+    "bootstrap_composites": "none"
+  },
+  "entries": [
+    {
+      "atlas_id": "A001-seed-d3",
+      "path": "data/atlas/entries/A001-seed-d3.json",
+      "mu_generic_degree": 3,
+      "evidence_level": "A_algebra_certified",
+      "status": "active"
+    },
+    {
+      "atlas_id": "A002-family-d4-pilot",
+      "path": "data/atlas/entries/A002-family-d4-pilot.json",
+      "mu_generic_degree": 4,
+      "evidence_level": "A_algebra_pilot",
+      "status": "active"
+    }
+  ],
+  "counts": {
+    "active": 2,
+    "draft": 0
+  },
+  "non_claims": [
+    "Atlas bootstrap registers existing G0 certificates only",
+    "No G2/G3 proofs",
+    "No mass d=5..D generation",
+    "No physical language"
+  ]
+}

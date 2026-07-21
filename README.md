@@ -22,26 +22,25 @@ This repository is infrastructure and research scaffolding only.
 
 See [INTEGRITY.md](INTEGRITY.md) for the standing non-claims boundary.
 
-## Gate 0 seed (D0-seed) — closed 2026-07-21
+## Gate status (2026-07-21)
 
-- Dossier: [docs/validation/D0-seed-validation-dossier.md](docs/validation/D0-seed-validation-dossier.md)
-- Frozen anchor: [data/anchor/F_announced_det_m2.json](data/anchor/F_announced_det_m2.json)
-- Dual CAS: `python scripts/cas/verify_anchor_sympy.py` and `python scripts/cas/verify_anchor_purepython.py`
-- Lean: **[Quantyra/exotic-ccr-lean](https://github.com/Quantyra/exotic-ccr-lean)** release `v0.1.1`
-- Full G0 still requires family certification (planning S015)
+| Gate | Status |
+|------|--------|
+| G0-seed | [D0-seed dossier](docs/validation/D0-seed-validation-dossier.md) · [anchor](data/anchor/F_announced_det_m2.json) · Lean [v0.1.1](https://github.com/Quantyra/exotic-ccr-lean) |
+| G0-family pilot d=4 | [D0-family dossier](docs/validation/D0-family-pilot-dossier.md) · [anchor](data/anchor/F_family_d4_cor53_pilot.json) |
+| G1 atlas bootstrap | [schema](data/atlas/schema.json) · [index](data/atlas/index.json) · rows A001, A002 |
 
 ## Repository structure
 
 ```
-data/anchor/      # frozen seed map + CAS reports
+data/anchor/      # frozen maps + CAS reports
+data/atlas/       # G1 counterexample atlas (schema, index, entries)
 docs/
-  validation/     # D0-seed dossier
-  provenance/     # provenance ledger
+  validation/
+  provenance/
   literature/
-  definitions/
-  plans/
-  notes/
-scripts/cas/      # dual exact CAS verifiers
+  plans/          # includes atlas-schema.md
+scripts/cas/
 src/
 ```
 

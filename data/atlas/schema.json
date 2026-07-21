@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/data/atlas/schema.json",
+  "title": "EXOTIC-CCR Counterexample Atlas Entry",
+  "description": "Schema for degree-indexed Keller map atlas rows (G1). Placeholders allowed for unproven Poisson/Weyl fields.",
+  "type": "object",
+  "required": [
+    "atlas_id",
+    "version",
+    "mu_generic_degree",
+    "ambient_dimension",
+    "map",
+    "jacobian",
+    "collision",
+    "evidence_level",
+    "certificates",
+    "placeholders",
+    "non_claims",
+    "status"
+  ],
+  "properties": {
+    "atlas_id": {
+      "type": "string",
+      "pattern": "^A[0-9]{3}-.+$",
+      "description": "Stable atlas row id, e.g. A001-seed-d3"
+    },
+    "version": { "type": "string" },
+    "mu_generic_degree": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Generic degree mu(F); for seed/preprint family typically >= 3"
+    },
+    "mu_evidence": {
+      "type": "string",
+      "enum": [
+        "preprint_only",
+        "fiber_poly_degree",
+        "cas_partial",
+        "certified",
+        "unknown"
+      ]
+    },
+    "ambient_dimension": { "type": "integer", "const": 3 },
+    "map": {
+      "type": "object",
+      "required": ["name", "variables", "formula_display", "construction"],
+      "properties": {
+        "name": { "type": "string" },
+        "variables": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "formula_display": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "construction": { "type": "string" },
+        "anchor_ref": {
+          "type": "string",
+          "description": "Path to frozen anchor JSON if any"
+        }
+      }
+    },
+    "jacobian": {
+      "type": "object",
+      "required": ["det_constant", "det_status"],
+      "properties": {
+        "det_constant": { "type": "string" },
+        "det_status": {
+          "type": "string",
+          "enum": ["certified", "certified_pilot", "claimed_preprint", "unknown"]
+        }
+      }
+    },
+    "collision": {
+      "type": "object",
+      "required": ["retained_seed_triple", "target", "inputs", "status"],
+      "properties": {
+        "retained_seed_triple": { "type": "boolean" },
+        "target": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["certified", "certified_pilot", "claimed_preprint", "unknown"]
+        }
+      }
+    },
+    "geometry_placeholders": {
+      "type": "object",
+      "description": "G1+ fields not yet filled",
+      "properties": {
+        "discriminant_nonproper_set": { "type": "string" },
+        "omitted_set": { "type": "string" },
+        "monodromy_galois": { "type": "string" },
+        "primitive_decomposition": { "type": "string" },
+        "real_locus": { "type": "string" }
+      }
+    },
+    "placeholders": {
+      "type": "object",
+      "required": ["poisson_lift_Phi", "weyl_formula", "star_domain_status"],
+      "properties": {
+        "poisson_lift_Phi": {
+          "type": "string",
+          "description": "G2 placeholder only unless filled"
+        },
+        "weyl_formula": {
+          "type": "string",
+          "description": "G3 placeholder only unless filled"
+        },
+        "star_domain_status": {
+          "type": "string",
+          "description": "G4 placeholder only unless filled"
+        }
+      }
+    },
+    "evidence_level": {
+      "type": "string",
+      "enum": [
+        "A_algebra_certified",
+        "A_algebra_pilot",
+        "A_algebra_preprint_only",
+        "B_star_core",
+        "C_unbounded",
+        "D_regular_ccr",
+        "E_cstar",
+        "F_quantum_op",
+        "G_computational"
+      ],
+      "description": "Highest EXOTIC-CCR evidence ladder level reached for this row"
+    },
+    "certificates": {
+      "type": "object",
+      "properties": {
+        "dossiers": { "type": "array", "items": { "type": "string" } },
+        "cas_reports": { "type": "array", "items": { "type": "string" } },
+        "lean": {
+          "type": "object",
+          "properties": {
+            "repo": { "type": "string" },
+            "release": { "type": "string" },
+            "theorems": { "type": "array", "items": { "type": "string" } },
+            "status": { "type": "string" }
+          }
+        },
+        "literature": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "composition_notes": {
+      "type": "string",
+      "description": "How this row composes; mu multiplicative under composition"
+    },
+    "non_claims": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "superseded", "draft"]
+    }
+  },
+  "additionalProperties": true
+}
