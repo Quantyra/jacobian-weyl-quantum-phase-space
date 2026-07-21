@@ -24,7 +24,7 @@ keywords:
   - dual vector field
   - deficiency indices
 software_doi_concept: "10.5281/zenodo.21474351"
-software_doi_version: "10.5281/zenodo.21474488"
+software_doi_version: "10.5281/zenodo.21476665"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
 claims_freeze: "A001 through G4 orbit-measure: Leb3(I)>0 and (n+,n-)=(0,inf) for P1^sym; G4-P1-orbit-measure-deficiency.md"
@@ -322,7 +322,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [2] M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press, 1975.  
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287–330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299–306.  
-[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21474488](https://doi.org/10.5281/zenodo.21474488); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
+[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21476665](https://doi.org/10.5281/zenodo.21476665) (v0.2.2); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
 [7] Repository validation dossiers and CAS reports under `docs/validation/` and `data/anchor/` in [5], including `G2-poisson-A001-dossier.md`, `G3-weyl-A001-dossier.md`, `G4-X1-incompleteness.md`, `G4-Chernoff-discharge.md`, `G4-P1-deficiency-indices.md`, and `G4-P1-orbit-measure-deficiency.md`.  
 [8] Public seed-map provenance as recorded in `docs/provenance/` and `docs/literature/` of [5] (announcement lineage and independent public Lean formalizations).  

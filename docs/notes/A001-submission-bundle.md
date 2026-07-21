@@ -54,11 +54,10 @@ Lean companion (external): https://github.com/Quantyra/exotic-ccr-lean
 | Item | Value |
 |------|--------|
 | Concept DOI | 10.5281/zenodo.21474351 |
+| v0.2.2 version DOI | 10.5281/zenodo.21476665 |
 | GitHub | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space |
 | Release tag | v0.2.2 |
 | Prior version DOI | 10.5281/zenodo.21474488 (v0.2.1) |
-
-After Zenodo ingests v0.2.2, record the new version DOI in `CITATION.cff`, `docs/zenodo-status.md`, and the draft YAML `software_doi_version`.
 
 ---
 

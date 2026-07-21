@@ -70,7 +70,7 @@ Orbit-measure dossier: [`../validation/G4-P1-orbit-measure-deficiency.md`](../va
 ### Metadata / cite
 - [x] `CITATION.cff` — author Daniel Eric Fredriksen  
 - [x] `.zenodo.json`  
-- [x] Concept DOI `10.5281/zenodo.21474351` (version DOI updates on v0.2.2 Zenodo deposit)  
+- [x] Concept DOI `10.5281/zenodo.21474351`; v0.2.2 version DOI `10.5281/zenodo.21476665`  
 - [x] `README.md` — Start here → arxiv draft  
 
 ---
@@ -81,7 +81,7 @@ Orbit-measure dossier: [`../validation/G4-P1-orbit-measure-deficiency.md`](../va
 |-------|--------|
 | Title | Algebraic CCR lifts of a Keller counterexample and failure of essential self-adjointness for a dual momentum |
 | Authors | Daniel Eric Fredriksen |
-| Comments | Deficiency indices (0,∞) for one dual momentum; software DOI concept 10.5281/zenodo.21474351; GitHub Quantyra/jacobian-weyl-quantum-phase-space; Lean Quantyra/exotic-ccr-lean |
+| Comments | Deficiency indices (0,∞) for one dual momentum; software DOI 10.5281/zenodo.21476665 (concept 10.5281/zenodo.21474351); GitHub Quantyra/jacobian-weyl-quantum-phase-space; Lean Quantyra/exotic-ccr-lean |
 | Primary class | math.FA |
 | Cross-lists | math.AG, math-ph, quant-ph |
 | MSC | 47B25, 81S05, 14R15, 37C10, 53D17 |
@@ -94,7 +94,8 @@ Orbit-measure dossier: [`../validation/G4-P1-orbit-measure-deficiency.md`](../va
 - [ ] Author read-through of `A001-arxiv-draft.md` for tone and typos  
 - [ ] Optional: convert MD → LaTeX/PDF (pandoc or manual)  
 - [ ] Confirm abstract non-claims paragraph retained  
-- [ ] Tag **v0.2.2** + GitHub release; confirm Zenodo version DOI; patch draft/CITATION if version DOI changes  
+- [x] Tag **v0.2.2** + GitHub release (https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.2)  
+- [x] Zenodo v0.2.2 version DOI `10.5281/zenodo.21476665` recorded  
 - [ ] arXiv account / endorsement if needed  
 - [ ] After arXiv ID: add `eprint` to `CITATION.cff` and README  
 

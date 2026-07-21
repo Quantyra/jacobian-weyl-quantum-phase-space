@@ -8,7 +8,7 @@ authors:
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
 # v0.2.1 version DOI: 10.5281/zenodo.21474488
-# v0.2.2 version DOI: update after Zenodo ingest of tag v0.2.2
+# v0.2.2 version DOI: 10.5281/zenodo.21476665
 version: 0.2.2
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
