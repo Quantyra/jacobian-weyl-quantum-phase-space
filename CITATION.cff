@@ -1,13 +1,28 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
-title: "Jacobian Conjecture counterexamples, Weyl-algebra endomorphisms, and phase-space / reversible quantum symmetry criteria"
+title: "EXOTIC-CCR A001: Poisson/Weyl lifts of a Jacobian counterexample seed with dual-field incompleteness and ESS obstruction"
 type: software
 authors:
   - family-names: Fredriksen
     given-names: Daniel
-# doi: pending first Zenodo deposit from GitHub release
-version: 0.0.1
-date-released: 2026-07-20
+    affiliation: "Quantyra Inc"
+# doi: pending Zenodo deposit from GitHub release v0.2.0
+version: 0.2.0
+date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 license: Apache-2.0
+keywords:
+  - jacobian-conjecture
+  - weyl-algebra
+  - poisson-geometry
+  - essential-self-adjointness
+  - exotic-ccr
+  - quantyra
+abstract: >-
+  Research artifact for EXOTIC-CCR A001 (seed Keller map): dual-CAS certified
+  Poisson cotangent lift and polynomial Weyl endomorphism; proof that some dual
+  field is incomplete on R^3; proof that some dual momentum is not essentially
+  self-adjoint on C_c^infty(R^3). Does not claim quantum gates, channels, or
+  unique physical momenta without extension choices. See
+  docs/notes/A001-minimum-result-note.md.
