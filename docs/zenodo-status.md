@@ -2,11 +2,12 @@
 
 | Field | Value |
 |-------|--------|
-| Date | 2026-07-21 |
-| Repo | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space |
-| Concept DOI | **10.5281/zenodo.21474351** |
-| v0.2.0 version DOI | 10.5281/zenodo.21474352 (creator string was "Fredriksen, Daniel") |
-| v0.2.1 | authorship fix → **Daniel Eric Fredriksen**; version DOI pending this release |
+| Concept DOI | **10.5281/zenodo.21474351** — https://doi.org/10.5281/zenodo.21474351 |
+| v0.2.1 version DOI | **10.5281/zenodo.21474488** — https://doi.org/10.5281/zenodo.21474488 |
+| v0.2.1 creator | **Fredriksen, Daniel Eric** |
+| v0.2.0 version DOI | 10.5281/zenodo.21474352 (creator was "Fredriksen, Daniel" — superseded) |
+| GitHub | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.1 |
 
 ## Cite
-Prefer concept DOI `10.5281/zenodo.21474351` for the project; use the latest version DOI for a specific release.
+- Project / ongoing: concept DOI `10.5281/zenodo.21474351`
+- This authorship-correct release: version DOI `10.5281/zenodo.21474488`

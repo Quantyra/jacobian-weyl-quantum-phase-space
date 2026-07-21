@@ -7,6 +7,7 @@ authors:
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
+# version DOI for v0.2.1: 10.5281/zenodo.21474488
 version: 0.2.1
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
