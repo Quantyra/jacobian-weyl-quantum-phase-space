@@ -7,6 +7,7 @@ authors:
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
+# v0.3.2 version DOI: 10.5281/zenodo.21478672
 version: 0.3.2
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
@@ -21,4 +22,4 @@ abstract: >-
   Poisson/Weyl lifts of the Alpoge-Fable Keller seed (restated). H=-i X_1 not ESS
   with deficiency indices (infinity, infinity) via whole-orbit deficiency vectors.
   v0.2.2 pair (0,infinity) and v0.3.0 s-indicator proof withdrawn. No gates/channels.
-  Paper: docs/notes/A001-arxiv.pdf (tag v0.3.2).
+  Paper: docs/notes/A001-arxiv.pdf. Version DOI 10.5281/zenodo.21478672.
