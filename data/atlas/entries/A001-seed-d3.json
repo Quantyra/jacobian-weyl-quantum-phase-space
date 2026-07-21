@@ -1,6 +1,6 @@
 {
   "atlas_id": "A001-seed-d3",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "mu_generic_degree": 3,
   "mu_evidence": "certified",
   "ambient_dimension": 3,
@@ -59,7 +59,7 @@
   "placeholders": {
     "poisson_lift_Phi": "G2 CERTIFIED (pilot): Phi(q,p)=(F(q), J(q)^{-T} p); B polynomial; Poisson brackets on generators dual-CAS; non-injectivity lift; mu(Phi)=3 partial fiberwise. See docs/validation/G2-poisson-A001-dossier.md and data/anchor/Phi_A001_seed_d3.json",
     "weyl_formula": "G3 CERTIFIED: Q=F(q), P=B(q)p, B=J^{-T}; [Q,Q]=0,[P,P]=0,[Q,P]=I on poly Weyl (hbar=1). See docs/validation/G3-weyl-A001-dossier.md and data/anchor/psi_weyl_A001.json",
-    "star_domain_status": "G4 PROVED: exists j such that P_j^sym=-i X_j is NOT essentially self-adjoint on C_c^infty(R^3). Chain: incompleteness of some X_j + transport/Stone necessity (G4-Chernoff-discharge.md). Which j open; strong CCR open; no channel/gate claim."
+    "star_domain_status": "G4: X_1 incomplete PROVED (explicit curve T=1/2 through (1,0,0)); P_1^sym=-i X_1 not ESS on C_c^infty PROVED. Deficiency indices open (max n_pm >= 1). P_0/P_2 ESS open. No channel/gate."
   },
   "poisson_lift": {
     "status": "certified_pilot",
@@ -135,6 +135,7 @@
     "G7": "docs/validation/G7-semigroup-index-A001-dossier.md",
     "closeout": "docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md",
     "G4_incompleteness": "docs/validation/G4-Xj-incompleteness.md",
-    "G4_Chernoff": "docs/validation/G4-Chernoff-discharge.md"
+    "G4_Chernoff": "docs/validation/G4-Chernoff-discharge.md",
+    "G4_X1": "docs/validation/G4-X1-incompleteness.md"
   }
 }

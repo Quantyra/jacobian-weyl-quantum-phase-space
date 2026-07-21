@@ -135,9 +135,11 @@ is **not essentially self-adjoint**.
 | T-B-μ | \(\mu(\Phi)=3\) | **partial** (fiberwise) |
 | T-C | Weyl \(\psi\) preserves poly CCR; \(\mathrm{div} B=0\) | **certified** |
 | T-D | ∃ incomplete \(X_j\) | **proved** |
+| T-D1 | \(X_1\) incomplete (explicit curve through \((1,0,0)\), escape at \(t=\tfrac12\)) | **proved** |
 | T-E | ∃ \(j\) with \(P_j^{\mathrm{sym}}\) not ESS on \(C_c^\infty\) | **proved** |
-| T-which-j | Explicit incomplete / non-ESS index \(j\) | **open** |
-| T-def | Deficiency indices \(n_\pm\) | **open** |
+| T-E1 | \(P_1^{\mathrm{sym}}=-i X_1\) not ESS on \(C_c^\infty\) | **proved** |
+| T-which-j | Explicit index \(j\) | **settled: \(j=1\)** (others open) |
+| T-def | Exact deficiency indices \((n_+,n_-)\) for \(P_1^{\mathrm{sym}}\) | **open** (\(\max(n_+,n_-)\ge 1\) only) |
 | T-sCCR | Strong CCR / joint spectral package | **open** |
 | T-phys | Reversible physical symmetry / unique momenta / channel / gate | **not authorized** |
 
@@ -170,14 +172,35 @@ is **not essentially self-adjoint**.
 
 ## 5. Open problems (next math)
 
-1. **Which \(j\)?** Prove incompleteness / non-ESS for a specific dual field (numerics favor \(X_1\)).  
-2. **Deficiency indices** of that \(P_j^{\mathrm{sym}}\).  
+1. **Deficiency indices** \((n_+,n_-)\) of \(P_1^{\mathrm{sym}}\).  
+2. **ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\)**.  
 3. **Strong CCR** after choosing self-adjoint extensions (if any coherent joint theory exists).  
-4. **Lean** formalization of Theorems B–E (or selected lemmas).  
+4. **Lean** formalization of Theorems B–E1 (or selected lemmas).  
 5. **Family spine** for A002 / \(\psi_d\) at the same depth as A001.
 
 ---
 
 ## 6. One-paragraph summary
 
-For the seed Jacobian-counterexample map we construct and dual-CAS-certify a classical Poisson cotangent lift and a polynomial Weyl-algebra endomorphism preserving CCR relations. We prove that not all associated dual vector fields can be complete on \(\mathbb{R}^3\), and hence that at least one symmetrized dual momentum fails essential self-adjointness on \(C_c^\infty(\mathbb{R}^3)\). Algebraic CCR preservation therefore does not yield uniquely determined Schrödinger momenta without additional boundary choices. Strong commutation, explicit index \(j\), and any channel/gate interpretation remain open and are not claimed.
+For the seed Jacobian-counterexample map we construct and dual-CAS-certify a classical Poisson cotangent lift and a polynomial Weyl-algebra endomorphism preserving CCR relations. We prove that the dual field \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in time \(1/2\), and hence that \(P_1^{\mathrm{sym}}=-i X_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\). Algebraic CCR preservation therefore does not yield uniquely determined Schrödinger momenta without additional boundary choices. Exact deficiency indices, strong commutation, and any channel/gate interpretation remain open and are not claimed.
+
+---
+
+## Appendix A — Which \(j\): \(X_1\) incompleteness (2026-07-21)
+
+**Full proof:** [`../validation/G4-X1-incompleteness.md`](../validation/G4-X1-incompleteness.md)  
+**CAS:** `data/anchor/cas_X1_blowup_curve_A001.json` (PASS)
+
+### Curve
+For \(t\in[0,\tfrac12)\), with continuous extension at \(t=0\) to \((1,0,0)\):
+\[
+\begin{aligned}
+q_0(t)&=\dfrac{-2t-\sqrt{1-2t}+1}{t(2t-1)},\\
+q_1(t)&=t,\\
+q_2(t)&=t^2\bigl(2t-3\sqrt{1-2t}-1\bigr).
+\end{aligned}
+\]
+Then \(F(q(t))=(0,t,2)\), \(q'(t)=X_1(q(t))\), and \(q_0(t)\to+\infty\) as \(t\to\tfrac12^-\).
+
+### Deficiency indices
+Non-ESS \(\Rightarrow\max(n_+,n_-)\ge 1\). Exact pair \((n_+,n_-)\) for \(P_1^{\mathrm{sym}}\) is **not computed**.

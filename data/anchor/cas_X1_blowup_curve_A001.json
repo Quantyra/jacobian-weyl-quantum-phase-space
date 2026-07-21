@@ -1,0 +1,33 @@
+{
+  "F_along_curve": [
+    "0",
+    "t",
+    "2"
+  ],
+  "F_is_0_t_2": true,
+  "gamma_prime_minus_X1": [
+    "0",
+    "0",
+    "0"
+  ],
+  "gamma_prime_eq_X1": true,
+  "limit_t_to_0": [
+    "1",
+    "0",
+    "0"
+  ],
+  "limit_velocity_t_to_0": [
+    "3/2",
+    "1",
+    "0"
+  ],
+  "X1_at_1_0_0": [
+    "3/2",
+    "1",
+    "0"
+  ],
+  "velocity_matches_X1_at_start": true,
+  "q0_series_near_half": "sqrt(2)/sqrt(eps) - 2 - 4*eps + 2*sqrt(2)*sqrt(eps) + 4*sqrt(2)*eps**(3/2) + O(eps**2)",
+  "blowup_coeff_positive": true,
+  "pass": true
+}
