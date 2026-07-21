@@ -39,5 +39,6 @@
     "No G2/G3 proofs",
     "No mass d=5..D generation",
     "No physical language"
-  ]
+  ],
+  "g2_note": "A001 poisson_lift certified_pilot (S017)"
 }

@@ -1,6 +1,6 @@
 {
   "atlas_id": "A001-seed-d3",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mu_generic_degree": 3,
   "mu_evidence": "certified",
   "ambient_dimension": 3,
@@ -37,18 +37,32 @@
     "real_locus": "pending"
   },
   "placeholders": {
-    "poisson_lift_Phi": "G2 TODO: Phi(q,p)=(F(q), DF(q)^{-T} p); not proved in this row",
-    "weyl_formula": "G3 TODO: Q_i=F_i(q), P_j = sum B_{kj}(q) p_k; not proved in this row",
+    "poisson_lift_Phi": "G2 CERTIFIED (pilot): Phi(q,p)=(F(q), J(q)^{-T} p); B polynomial; Poisson brackets on generators dual-CAS; non-injectivity lift; mu(Phi)=3 partial fiberwise. See docs/validation/G2-poisson-A001-dossier.md and data/anchor/Phi_A001_seed_d3.json",
+    "weyl_formula": "G3 TODO: Q_i=F_i(q), P_j = sum B_{ij}(q) p_j as Weyl gens; not proved in this row",
     "star_domain_status": "G4 TODO: domains / self-adjointness / strong CCR; not started"
+  },
+  "poisson_lift": {
+    "status": "certified_pilot",
+    "definition_ref": "data/anchor/Phi_A001_seed_d3.json",
+    "dossier": "docs/validation/G2-poisson-A001-dossier.md",
+    "cas_reports": [
+      "data/anchor/cas_poisson_A001_sympy_report.json",
+      "data/anchor/cas_poisson_A001_purepython_report.json"
+    ],
+    "mu_Phi": 3,
+    "mu_Phi_evidence": "partial_fiberwise_from_mu_F"
   },
   "evidence_level": "A_algebra_certified",
   "certificates": {
     "dossiers": [
-      "docs/validation/D0-seed-validation-dossier.md"
+      "docs/validation/D0-seed-validation-dossier.md",
+      "docs/validation/G2-poisson-A001-dossier.md"
     ],
     "cas_reports": [
       "data/anchor/cas_sympy_report.json",
-      "data/anchor/cas_purepython_report.json"
+      "data/anchor/cas_purepython_report.json",
+      "data/anchor/cas_poisson_A001_sympy_report.json",
+      "data/anchor/cas_poisson_A001_purepython_report.json"
     ],
     "lean": {
       "repo": "https://github.com/Quantyra/exotic-ccr-lean",
@@ -60,19 +74,20 @@
         "ExoticCCR.evalMap_F_p2",
         "ExoticCCR.not_injective_unit_jacobian"
       ],
-      "status": "certified_seed"
+      "status": "certified_seed_config_only_not_Phi"
     },
     "literature": [
       "docs/literature/jacobian-counterexample-ulam-2026-07-20.pdf",
       "docs/charters/Project_EXOTIC_CCR_Research_Charter.docx"
     ]
   },
-  "composition_notes": "Base factor for Cor 5.3 family (Thm 5.2). Composites/iterates not registered in bootstrap.",
+  "composition_notes": "Base factor for Cor 5.3 family (Thm 5.2). Composites/iterates not registered in bootstrap. Cotangent lift Phi registered under poisson_lift.",
   "non_claims": [
-    "Algebraic seed certificates only (ladder A)",
+    "Classical Poisson on T*A^3 only — not Weyl/CCR/physical",
+    "mu(Phi)=3 is partial (fiberwise); not a full C^6 generic-degree formalization",
     "Does not claim factory-false slogan as Quantyra theorem",
-    "Does not claim Poisson/Weyl/physical/channel/gate/advantage results",
-    "Geometry of nonproperness/omitted set cited from preprint, not dual-CAS certified here"
+    "Does not claim channel/gate/advantage results",
+    "A002 Poisson lift not included"
   ],
   "status": "active"
 }
