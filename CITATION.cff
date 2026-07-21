@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Jacobian Conjecture counterexamples, Weyl-algebra endomorphisms, and phase-space / reversible quantum symmetry criteria"
+type: software
+authors:
+  - family-names: Fredriksen
+    given-names: Daniel
+# doi: pending first Zenodo deposit from GitHub release
+version: 0.0.1
+date-released: 2026-07-20
+url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
+repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
+license: Apache-2.0

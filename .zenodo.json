@@ -1,0 +1,20 @@
+{
+  "title": "Jacobian Conjecture counterexamples, Weyl-algebra endomorphisms, and phase-space / reversible quantum symmetry criteria",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel"
+    }
+  ],
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "keywords": [
+    "jacobian-conjecture",
+    "weyl-algebra",
+    "quantum-information",
+    "phase-space",
+    "continuous-variable-qc",
+    "quantyra"
+  ],
+  "description": "<p>(v0.0.1) Research scaffold for investigating Jacobian Conjecture counterexamples, Weyl-algebra endomorphisms, and phase-space / reversible quantum symmetry criteria under the Quantyra research program.</p><p><strong>Non-claims:</strong> this release does not assert that any particular Jacobian Conjecture counterexample is correct (literature intake pins the object of study); does not claim new quantum algorithms, complexity separations, or hardware results; does not claim that exotic Weyl endomorphisms are physical quantum gates without explicit criteria and proof; and does not claim P-vs-NP or circuit lower bounds.</p>"
+}
