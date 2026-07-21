@@ -97,45 +97,44 @@ in the \(\ker(A^*\mp i)\) convention above (orientation-dependent).
 
 ---
 
-## 4. Global operator on \(L^2(\mathbb{R}^3)\) — bounds
+## 4. Global operator on \(L^2(\mathbb{R}^3)\) — bounds (updated)
 
-The global operator \(A=-i X_1\) is, heuristically, a **direct integral** of 1D orbit operators over a measurable space of \(X_1\)-orbits (foliation by integral curves, modulo the singular set where the field vanishes or charts break).
+**Full orbit-measure write-up:** `G4-P1-orbit-measure-deficiency.md`
 
-| Claim | Status |
-|-------|--------|
-| Global \((n_+,n_-)\neq(0,0)\) | **proved** (non-ESS) |
-| Global \(\max(n_+,n_-)\ge 1\) | **proved** |
-| Global indices equal to orbit model \((1,0)\) or \((0,1)\) | **not proved** — requires: (i) measurable orbit decomposition; (ii) showing incomplete orbits form a null set **or** controlling their contribution; (iii) no extra deficiency from singular orbits / zeros of \(X_1\) |
-| Global indices infinite | **possible a priori** if a positive-measure family of incomplete orbits exists; **not established** |
-| Numeric | ~1/3 of random forward IVPs look “wild,” but that does **not** prove positive measure incompleteness (fast complete motion can look large) |
-
-**Best rigorous global bound available now:**
+### 4.1 Rigorous
 \[
-\boxed{
-(n_+,n_-)\neq(0,0)
-\quad\text{and}\quad
-\max(n_+,n_-)\ge 1
-}
+\boxed{(n_+,n_-)\neq(0,0),\quad \max(n_+,n_-)\ge 1}
 \]
-with the **orbit model prediction**
 \[
-(n_+,n_-)\in\{(1,0),(0,1)\}
-\quad\text{(conjectural for the global operator if incomplete orbits are negligible in measure / contribute one channel).}
+\boxed{(n_+,n_-)_{\mathrm{orbit}}\in\{(1,0),(0,1)\}
+\text{ for the half-line orbit through }(1,0,0)}
 \]
+
+### 4.2 Incomplete set structure (proved)
+The set of incomplete points contains a **smooth 2D sheet** \(\Sigma_0\subset\{F_0=0\}\):
+\[
+q(s,c)=\bigl(q_0(s,c),\,s,\,q_2(s,c)\bigr),\quad c>0,\;0<s<1/c,
+\]
+with closed form (CAS PASS: `cas_F0_zero_incomplete_sheet_A001.json`).  
+Escape as \(s\to(1/c)^-\). Thus incompleteness is **not** a single trajectory; it has positive \(\mathcal{H}^2\) measure.
+
+### 4.3 Lebesgue measure in \(\mathbb{R}^3\) (open; MC support)
+Monte Carlo forward escapes: \(\sim 25\%\)–\(40\%\) in open samples about \((1,0,0)\) and \(N(0,I)\).  
+**Not a theorem** that \(\mathrm{Leb}_3(\mathcal{I})>0\).
+
+### 4.4 Dichotomy (conditional)
+| Incomplete set in \(\mathbb{R}^3\) | Expected global \((n_+,n_-)\) |
+|----------------------------------|------------------------------|
+| Lebesgue **null** (only lower-dimensional sheets) | finite; often \(\in\{(1,0),(0,1)\}\) |
+| Lebesgue **positive** | at least one index **infinite** |
+
+MC favors positive measure ⇒ infinite indices **conjecturally**; **not claimed**.
 
 ---
 
-## 5. Analytic plan to pin exact global \((n_+,n_-)\)
+## 5. Single next obligation
 
-1. **Orbit stratification.** Construct a measurable cross-section for the \(X_1\) flow on \(\mathbb{R}^3\setminus Z\) (\(Z=\) zeros of \(X_1\) ∪ critical set).  
-2. **Classify orbit types.** Complete \(\cong\mathbb{R}\); half-line incomplete one end; finite interval both ends incomplete; equilibria.  
-3. **Measure of incomplete set.** Determine whether incomplete orbits have positive transverse measure.  
-   - If **null**: expect global indices = single-orbit contribution \(\in\{(1,0),(0,1)\}\).  
-   - If **positive**: expect \(n_+\) or \(n_-=\infty\).  
-4. **Singular set \(X_1=0\).** Check whether equilibria add deficiency (usually not if discrete).  
-5. **Optional:** limit-point/limit-circle analysis in cylindrical coordinates about the incomplete end \(q_0\to+\infty\).
-
-**Single next obligation:** prove that the set of points lying on forward-incomplete \(X_1\)-orbits is either null or of positive measure in \(\mathbb{R}^3\).
+**Prove or refute** \(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\), e.g. by extending the discriminant sheet off \(F_0=0\) to an open set of level values \((a,c)\) and applying coarea.
 
 ---
 

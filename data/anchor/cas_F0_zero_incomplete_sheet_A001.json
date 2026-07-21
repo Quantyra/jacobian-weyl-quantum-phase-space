@@ -1,0 +1,12 @@
+{
+  "F_along_sheet": [
+    "0",
+    "s",
+    "c"
+  ],
+  "F_is_0_s_c": true,
+  "matches_c2_curve": true,
+  "domain": "c>0 and 0<s<1/c (for real sqrt)",
+  "escape_s": "s -> (1/c)-",
+  "pass": true
+}

@@ -36,7 +36,11 @@ Global exact pair requires orbit-measure analysis (plan in deficiency note §5).
 | G4-def-max-ge-1 | **proved** |
 | G4-def-orbit-model-half-line | **proved** |
 | G4-def-global-exact | **open** |
+| G4-def-incomplete-2D-sheet | **proved** (\(\Sigma_0\subset\{F_0=0\}\)) |
+| G4-def-Lebesgue-positive | **open** (MC \(\sim 25\)–\(40\%\)) |
 | G4-physical-unique-momenta | **not authorized** |
 
+**Orbit-measure analysis:** `G4-P1-orbit-measure-deficiency.md`
+
 ## Non-claims
-No channel/gate/advantage. No claim global indices are exactly \((1,0)\) without further measure theory.
+No channel/gate/advantage. No claim that global indices are infinite or exactly \((1,0)\) without a Lebesgue-measure theorem.
