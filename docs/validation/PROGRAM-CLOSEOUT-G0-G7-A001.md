@@ -1,9 +1,9 @@
-# EXOTIC-CCR program closeout — A001 spine (G0–G7)
+﻿# EXOTIC-CCR program closeout â€” A001 spine (G0â€“G7)
 
 **Date:** 2026-07-21  
 **Entity:** Quantyra Inc.  
 **Planning:** Quantyra-Planning2 E005  
-**Roadmap:** Phases 1–3 executed at evidence-authorized level  
+**Roadmap:** Phases 1â€“3 executed at evidence-authorized level  
 
 ---
 
@@ -11,16 +11,16 @@
 
 | Gate | Result |
 |------|--------|
-| **G0–G3** | **Certified** (seed, atlas pilot, Poisson \(\Phi\), Weyl \(\psi\), Piola) |
-| **G4** | **CLOSED — obstruction:** all \(X_j\) incomplete; all \(H_j\) not ESS; \(H_1\) indices \((\infty,\infty)\); \(H_0,H_2\) have \(\max n_\pm=\infty\); dual-flow strong CCR **obstructed** |
-| **G5** | **CLOSED — Outcome 3:** degree-as-index moot; failure before completion |
-| **G6** | **CLOSED — negative:** no CP/channel/gate authorized |
-| **G7** | **CLOSED — blocked:** no quantum index from failed dual-flow package |
+| **G0â€“G3** | **Certified** (seed, atlas pilot, Poisson \(\Phi\), Weyl \(\psi\), Piola) |
+| **G4** | **CLOSED â€” obstruction:** all \(X_j\) incomplete; all \(H_j\) not ESS; \(H_1\) indices \((\infty,\infty)\); \(H_0,H_2\) have \(\max n_\pm=\infty\); dual-flow strong CCR **obstructed** |
+| **G5** | **CLOSED â€” Outcome 3:** degree-as-index moot; failure before completion |
+| **G6** | **CLOSED â€” negative:** no CP/channel/gate authorized |
+| **G7** | **CLOSED â€” blocked:** no quantum index from failed dual-flow package |
 
-**Physical reversible quantum symmetry from dual-flow quantization:** **not established** (blocked at G4–D).
+**Physical reversible quantum symmetry from dual-flow quantization:** **not established** (blocked at G4â€“D).
 
 **Minimum charter publishable outcome:** **MET** (exact algebra + first analytic obstruction).  
-**Primary 24-month “definitive admissibility”:** **partial** — dual-flow path classified as **no-go**; alternative realizations open.
+**Primary 24-month â€œdefinitive admissibilityâ€:** **partial** â€” dual-flow path classified as **no-go**; alternative realizations open.
 
 ---
 
@@ -43,12 +43,13 @@
 - https://github.com/Quantyra/jacobian-weyl-quantum-phase-space  
 - https://github.com/Quantyra/exotic-ccr-lean  
 
-## Follow-on (post Phases 1–3)
+## Index pairs (dual-flow)`n| \(H_0\) | \((\\infty,0)\) |`n| \(H_1\) | \((\\infty,\\infty)\) |`n| \(H_2\) | \((0,\\infty)\) |`n`n## Follow-on (post Phases 1â€“3)
 1. Exact \((n_+,n_-)\) for \(H_0,H_2\)  
-2. Alternative realizations (H4): subspace / dilation / nonregular — **new charter gate** before claims  
+2. Alternative realizations (H4): subspace / dilation / nonregular â€” **new charter gate** before claims  
 3. Family atlas ESS spot-checks  
 4. Lean deepen beyond DualFields  
 5. Optional arXiv when endorsement is easy  
 
 ## Binding non-claims
 No factory-false slogan; no channel/gate/advantage; no P-vs-NP; no preferred extension; no \((0,\infty)\) for \(H_0/H_2\); no claim every quantization route fails.
+

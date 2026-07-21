@@ -126,20 +126,27 @@ Infinitely many self-adjoint extensions exist. Core algebraic Poisson/CCR relati
 \end{corollary}
 
 \section{Discussion}
-The example separates two layers that are often collapsed in practice. On the algebraic side, the Poisson cotangent lift and the dual-field/CCR identities are clean: brackets close, rows of \(B\) are divergence-free, and \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). On the analytic side, incompleteness of \(X_1\) produces open families of finite orbit ends, and the whole-orbit deficiency construction yields
+The example separates two layers that are often collapsed in practice. On the algebraic side, the Poisson cotangent lift and the dual-field/CCR identities are clean: brackets close, rows of \(B\) are divergence-free, and \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). On the analytic side, \emph{all three} dual fields \(X_j\) are incomplete, so each \(H_j=-iX_j\) fails to be essentially self-adjoint. For the middle momentum one obtains
 \[
-(n_+,n_-)=(\infty,\infty).
+(n_+,n_-)=(\infty,\infty)
+\quad(H_1),
 \]
-Thus a working algebraic CCR/Poisson presentation does \emph{not} select a unique self-adjoint dual momentum for \(H=-iX_1\).
+while the one-sided wall/omission models give
+\[
+(n_+,n_-)=(\infty,0)\ \text{for }H_0
+\quad\text{and}\quad
+(0,\infty)\ \text{for }H_2
+\]
+(so \(H_0\) and \(H_2\) admit \emph{no} self-adjoint extensions of the minimal operators). A working algebraic CCR/Poisson presentation therefore does \emph{not} select unique quantum dual momenta.
 
-This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the phenomenon is new in the abstract: incomplete flows and half-line models are classical~\cite{RS2}. The point is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alp\"oge--Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
+Moreover, no reducing subspace of \(L^2(\mathbb{R}^3)\) can carry unitary groups implementing dual \(F\)-translations in all three directions with open \(F\)-support (H4-S pilot no-go): the same non-surjectivity of \(F\) blocks that repair. Dual-flow strong CCR on this Hilbert space is obstructed. Roadmap Phases 1--3 classify the dual-flow Schrödinger program as a \textbf{no-go}; remaining options are other realization classes (dilation, nonregular representations, open systems) under a separate H4 charter, not a fix of \(H_j=-iX_j\) on \(C_c^\infty\).
 
-What the paper does \emph{not} establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. Lean certification covers the seed identities (Theorem~A) only.
+This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality: incomplete flows and half-line models are classical~\cite{RS2}. The point is geometric and structural for this Keller dual lift.
 
-Natural next steps are the ESS status of \(H_0\) and \(H_2\), the residual CCR question after choosing extensions, finer spectral theory of the extension family, and Lean coverage beyond Gate~0.
+What the paper does \emph{not} establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; a preferred boundary condition; or that every abstract quantization route fails. Lean certification covers the seed identities (Theorem~A) and the adjugate identity for \(DF\); full G2--G4 formalization remains open.
 
 \section{Non-claims}
-No unitary gate, channel, CP map, or computational advantage. No ESS claim for \(H_0,H_2\). No strong CCR after extensions. No discovery claim for \(F\). No preferred physical extension. Lean covers Theorem~A only.
+No unitary gate, channel, CP map, or computational advantage. No dual-flow strong CCR. No preferred physical extension. No claim all quantization routes fail. Discovery of \(F\) not claimed. Lean: seed + adjugate identity only.
 
 \begin{thebibliography}{99}
 \bibitem{RS2}

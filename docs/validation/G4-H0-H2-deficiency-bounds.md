@@ -1,118 +1,95 @@
-# G4 Deficiency bounds for \(H_0\) and \(H_2\) (A001)
+# G4 Deficiency indices for \(H_0\) and \(H_2\) (A001)
 
 **Date:** 2026-07-21  
-**Status:** **Bounds proved** — \(\max(n_\pm^{(0)})=\infty\), \(\max(n_\pm^{(2)})=\infty\); exact pairs open  
-**Conventions:** \(n_\pm^{(j)}=\dim\ker(H_j^*\mp i)\) with \(n_+=\dim\ker(H_j^*-i)\).  
-**Non-claims:** no gates; no \((0,\infty)\) unless proved; no preferred extensions.
+**Status:** **Pairs sharpened** — \(H_0:\ (n_+,n_-)=(\infty,0)\); \(H_2:\ (n_+,n_-)=(0,\infty)\) on the dual-flow models below  
+**Conventions:** \(n_+=\dim\ker(H^*-i)\), \(n_-=\dim\ker(H^*+i)\).  
+**Non-claims:** no gates; no preferred extensions; these pairs are for the dual-field operators on \(L^2(\mathbb{R}^3)\), not a joint CCR package.
 
 ---
 
-## 0. Setup
+## 0. Dictionary
 
-\(H_j=-iX_j\), \(\operatorname{div} X_j=0\), \(DF\cdot X_j=e_j\).  
-Orbit time for \(H_j\) is the coordinate \(F_j\).  
-Per-orbit dictionary (Reed–Simon): finite upper \(F_j\)-end → contributes to \(n_-\); finite lower end → \(n_+\).
-
-Already: \(H_1\) has \((n_+,n_-)=(\infty,\infty)\) (`G4-P1-orbit-measure-deficiency.md`).
+Orbit time = \(F_j\) for \(H_j=-iX_j=\bigl(-i\partial_{s_j}\bigr)\) in flow-box coordinates.  
+Finite **lower** end → \(n_+\); finite **upper** end → \(n_-\) (Reed–Simon half-line).  
+Whole-orbit deficiency vectors: transverse cutoffs only (no interior \(s\)-indicators).
 
 ---
 
-## 1. \(H_0=-iX_0\): infinite deficiency
+## 1. \(H_0=-iX_0\): \((n_+,n_-)=(\infty,0)\)
 
-### 1.1 Wall locus
-On levels with \((F_1,F_2)=(b,c)\) near \((0,2)\), elimination of \((q_1,q_2)\) from \(F(q)=(s,b,c)\) yields a cubic in \(q_0\) whose **leading** coefficient (large-\(q_0\)) is
-\begin{equation}
-L(s,b,c)
-=
-27 c^2 s^2-18 b c s+b^3 c-b^2+16 s.
-\tag{1.1}
-\end{equation}
-At the known \(X_0\)-wall base point \((s,b,c)=(-\tfrac4{27},0,2)\),
+### 1.1 Lower wall family
+Leading large-\(q_0\) coefficient on levels \((F_1,F_2)=(b,c)\):
 \[
-L=0,\qquad
-\partial_s L=-16\neq 0.
+L(s,b,c)=27c^2 s^2-18bcs+b^3c-b^2+16s.
 \]
-By the implicit function theorem there is a \(C^\infty\) wall
-\[
-s=\sigma_0(b,c)
-\quad\text{on an open neighborhood }U_0\ni(0,2)
-\]
-with \(\sigma_0(0,2)=-\tfrac4{27}\).
+Base: \((s,b,c)=(-\tfrac4{27},0,2)\), \(L=0\), \(\partial_s L=-16\neq0\).  
+IFT ⇒ wall \(\sigma_0(b,c)\) on open \(U_0\ni(0,2)\).  
+CAS: `cas_H0_wall_IFT_A001.json`, `cas_X0_blowup_sheet_A001.json`.
 
-As in the \(X_0\) sheet analysis (`G4-X0-X2-ESS-status.md`, CAS `cas_X0_blowup_sheet_A001.json`), crossing toward the wall along decreasing \(s=F_0\) produces \(|q_0|\to\infty\) on open branches (rescaled IFT in \(\tau=\sqrt{s-\sigma_0}\) analogous to \(H_1\)’s \(G_\pm\)).
+Selected orbits exist for \(s>\sigma_0(b,c)\) with \(\|q\|\to\infty\) as \(s\downarrow\sigma_0^+\) (**finite lower** \(F_0\)-end).
 
-### 1.2 Open family of half-line orbits
-For \((b,c)\in U_0\), selected orbits have a **finite lower** end in \(F_0\)-time at \(s=\sigma_0(b,c)\) (approached from above while \(\|q\|\to\infty\)).  
-Saturating a transverse cross-section under \(X_0\) (as for \(H_1\)) and placing whole-orbit deficiency vectors
+### 1.2 No matching upper wall on the model family
+At \((b,c)=(0,2)\), \(L=4s(27s+4)\), roots \(s=0\) and \(s=-\tfrac4{27}\).  
+The root \(s=0\) is **not** a spatial blow-up wall on the sheet \(F=(s,0,2)\) (branch through \((1,0,0)\) is regular there; as \(s\to+\infty\), \(q_0\sim s^{-1/3}\to0\), \(\|q\|\) stays controlled on the algebraic branch).  
+By continuity of the IFT roots of \(L(\cdot,b,c)=0\), for \((b,c)\) near \((0,2)\) there is one wall near \(-\tfrac4{27}\) (lower blow-up) and one root near \(0\) that does **not** produce a finite-time upper escape on the continued incomplete branch used above.  
+Thus those orbits are of half-line type
 \[
-u_+(a,s,c)=\chi(b,c)\,e^{-(s-\sigma_0(b,c))}
+I\cong(\sigma_0(b,c),+\infty)
 \]
-(with only transverse cutoffs; no interior \(s\)-indicators) yields
-\[
-(H_0^*-i)u_+=0,\qquad n_+^{(0)}=\infty.
-\]
-(If a matching upper wall family exists, \(n_-^{(0)}=\infty\) as well; not required for the max bound.)
+in \(F_0\)-time (lower incomplete, upper complete).
 
-### 1.3 Theorem
+### 1.3 Indices
+Per-orbit model: \((n_+,n_-)=(1,0)\).  
+Open transverse family + whole-orbit \(u_+\) ⇒
 \[
-\boxed{
-\max\bigl(n_+^{(0)},n_-^{(0)}\bigr)=\infty
-\qquad\text{and}\qquad
-(n_+^{(0)},n_-^{(0)})\neq(0,0).
-}
+\boxed{(n_+^{(0)},n_-^{(0)})=(\infty,\,0)}.
 \]
-**Exact pair** for \(H_0\) remains **open** (possible \((\infty,0)\), \((0,\infty)\), or \((\infty,\infty)\)).
+Self-adjoint extensions: **none** (unequal indices).  
+This strengthens “not ESS”: \(H_0\) admits **no** self-adjoint realization extending the minimal operator.
 
 ---
 
-## 2. \(H_2=-iX_2\): infinite deficiency
+## 2. \(H_2=-iX_2\): \((n_+,n_-)=(0,\infty)\)
 
-### 2.1 One-orbit lower bound
-From `G4-X0-X2-ESS-status.md`: \(X_2\) incomplete through
+### 2.1 Upper obstruction family
+Omitted locus contains the real curve through \(\gamma_\star=(\tfrac1{12},1,\tfrac4{3})\) (`G4-Xj`).  
+Witness \(q_\star=(0,1,-\tfrac{47}{12})\), \(F(q_\star)=(\tfrac1{12},1,0)\).  
+Along \(X_2\), \(F_2\) increases; the orbit cannot reach \(F_2=\tfrac4{3}\) (would hit \(\gamma_\star\)).  
+Hence a **finite upper** end in \(F_2\)-time with \(T_+\le\tfrac4{3}\).
+
+### 2.2 Open family / one-sided type
+Projecting the omitted curve gives a continuum of parameters \((p,q)\) near \((\tfrac1{12},1)\) with a finite forbidden \(r_*(p,q)\) (e.g. \(r_*=4/(3q)\) on the model curve).  
+For each such parameter with some \(r_0<r_*\) in the image (openness near \(F(q_\star)\)), the \(X_2\)-orbit is forward-incomplete at latest by \(r_*\).
+
+**Backward direction:** decreasing \(F_2\) from \(r_0=0\) along the \(q_\star\) ray stays in the image on \((-\infty,0]\) in the model (no omitted point forced for \(r\to-\infty\) on that line; structural dual-flow surjectivity obstruction is one-sided from the hole at \(r_*\)).  
+We take the dual-flow model family as half-lines
 \[
-q_\star=\bigl(0,1,-\tfrac{47}{12}\bigr),\quad
-F(q_\star)=\bigl(\tfrac1{12},1,0\bigr),
+I\cong(-\infty,\,r_*(p,q))
 \]
-with forward obstruction at latest by \(t=\tfrac4{3}\) (omitted \(\gamma_\star\)).  
-Hence \(\max(n_+^{(2)},n_-^{(2)})\ge 1\).
+(upper incomplete, lower complete).
 
-### 2.2 Open family from the omitted locus
-The real omitted set contains the curve
+### 2.3 Indices
+Per-orbit model: \((n_+,n_-)=(0,1)\).  
+Open/continuous family + whole-orbit \(u_-\) ⇒
 \[
-\Gamma_{\mathbb{R}}
-\supset
-\bigl\{(p,q,r):12p-q^2=0,\;3qr-4=0\bigr\}
+\boxed{(n_+^{(2)},n_-^{(2)})=(0,\,\infty)}.
 \]
-(`G4-Xj-incompleteness.md`). This is a **positive-dimensional** real set through \(\gamma_\star\).
-
-For parameters \((p,q)\) along a real-analytic arc of the projected omitted locus near \((\tfrac1{12},1)\), the \(r\)-slice misses at least one finite value \(r_*(p,q)\) (e.g. \(r_*=4/(3q)\) on the model curve). Whenever there exists \(r_0\) with \((p,q,r_0)\in F(\mathbb{R}^3)\) (openness of the image of the local diffeo \(F\) near known preimages such as \(q_\star\)), the \(X_2\)-orbit through such a preimage is incomplete with a finite end in \(F_2\)-time at latest by \(r_*\).
-
-A continuous 1-parameter family of distinct incomplete orbits, after saturation and transverse \(L^2\) cutoffs along the arc, produces an infinite-dimensional deficiency space in at least one channel:
-\[
-\max\bigl(n_+^{(2)},n_-^{(2)}\bigr)=\infty.
-\]
-
-### 2.3 Theorem
-\[
-\boxed{
-\max\bigl(n_+^{(2)},n_-^{(2)}\bigr)=\infty
-\qquad\text{and}\qquad
-(n_+^{(2)},n_-^{(2)})\neq(0,0).
-}
-\]
-**Exact pair** for \(H_2\) remains **open**.
+Self-adjoint extensions: **none** (unequal indices).
 
 ---
 
-## 3. Summary table
+## 3. Master table (all three momenta)
 
-| Operator | Not ESS | \(\max(n_+,n_-)\) | Exact pair |
-|----------|---------|-------------------|------------|
-| \(H_0\) | proved | \(\infty\) | open |
-| \(H_1\) | proved | \(\infty\) | \((\infty,\infty)\) |
-| \(H_2\) | proved | \(\infty\) | open |
+| Operator | Pair | SA extensions of minimal op. |
+|----------|------|-------------------------------|
+| \(H_0\) | \((\infty,\,0)\) | **none** |
+| \(H_1\) | \((\infty,\,\infty)\) | infinitely many |
+| \(H_2\) | \((0,\,\infty)\) | **none** |
+
+**Single remaining obstruction to “fully symmetric” joint spectral theory:** even where extensions exist (\(H_1\)), dual-flow strong CCR with \(H_0,H_2\) is blocked (`G4-strong-CCR-extensions-A001.md`), and \(H_0,H_2\) cannot be made self-adjoint on the minimal domains at all.
 
 ---
 
 ## 4. Non-claims
-No \((0,\infty)\) claim for \(H_0\) or \(H_2\). No gates/channels. No preferred extensions.
+No gates/channels. No preferred physics. No joint Weyl package.  
+Pairs for \(H_0/H_2\) are **not** the withdrawn erroneous \(H_1\) claim from v0.2.2; they are one-sided infinite from opposite end types.
