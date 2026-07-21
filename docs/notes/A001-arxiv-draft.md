@@ -1,5 +1,5 @@
 ﻿---
-title: "Poisson and Weyl lifts of the AlpÃ¶ge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
+title: "Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
@@ -29,7 +29,7 @@ lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
 claims_freeze: "A001 v0.3.2: Theorem F theorem-grade Dom(H*)+saturation+analytic wall IFT; (n+,n-)=(inf,inf). Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
-# Poisson and Weyl lifts of the AlpÃ¶ge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
+# Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
 
 **Daniel Eric Fredriksen**  
 Quantyra Inc.  
@@ -44,13 +44,13 @@ https://github.com/Quantyra/jacobian-weyl-quantum-phase-space
 
 ## Abstract
 
-We study the three-dimensional Keller map \(F\) announced by AlpÃ¶ge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B--F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The SchrÃ¶dinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
+We study the three-dimensional Keller map \(F\) announced by Alpöge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B--F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The SchrÃ¶dinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
 
 We prove \(X_1\) is incomplete by an explicit integral curve escaping as \(t\to\tfrac12^-\). In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open transverse families with finite **upper** \(F_1\)-ends and finite **lower** \(F_1\)-ends yield square-integrable deficiency functions, so
 \[
 (n_+,n_-)=(\infty,\infty)
 \]
-for \(H=-iX_1\). Hence \(H\) is not essentially self-adjoint, yet von Neumannâ€™s theorem supplies infinitely many self-adjoint extensions; the algebraic CCR data select none of them.
+for \(H=-iX_1\). Hence \(H\) is not essentially self-adjoint, yet von Neumann's theorem supplies infinitely many self-adjoint extensions; the algebraic CCR data select none of them.
 
 We claim no unitary gates, channels, computational advantage, or preferred physical extension.
 
@@ -61,7 +61,7 @@ We claim no unitary gates, channels, computational advantage, or preferred physi
 ## 1. Introduction
 
 ### 1.1 Motivation and attribution
-A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19--20 July 2026, **Levent AlpÃ¶ge** announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the AI system **Fable** [8]; independent checks and Lean formalizations followed promptly (e.g. Cureton [11]; Speyerâ€™s commentary [12]). **This paper does not claim discovery of \(F\).** Repository atlas label: **A001**.
+A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19--20 July 2026, **Levent Alpöge** announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the AI system **Fable** [8]; independent checks and Lean formalizations followed promptly (e.g. Cureton [11]; Speyer's commentary [12]). **This paper does not claim discovery of \(F\).** Repository atlas label: **A001**.
 
 The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual transport fields \(X_j\) are standard when \(\det J\) is a nonzero constant. The question studied here is whether algebraic preservation of Poisson/CCR data selects a unique self-adjoint \(L^2\) realization of a dual transport generator on \(C_c^\infty(\mathbb{R}^3)\).
 
@@ -165,7 +165,7 @@ F\bigl(0,0,-\tfrac14\bigr)
    \]
    (SchrÃ¶dinger CCR with \(\hbar=1\)).
 
-**Convention.** Algebraic generators with \([q_i,\pi_j]=\delta_{ij}\) correspond to \(\pi_j\sim -\partial_{q_j}\). The physical SchrÃ¶dinger momenta are \(\widehat p_j=-i\partial_{q_j}\). We write \(H_j=-iX_j\) for the latter normalization; earlier draftsâ€™ mixed use of \(p\) is superseded by this split.
+**Convention.** Algebraic generators with \([q_i,\pi_j]=\delta_{ij}\) correspond to \(\pi_j\sim -\partial_{q_j}\). The physical SchrÃ¶dinger momenta are \(\widehat p_j=-i\partial_{q_j}\). We write \(H_j=-iX_j\) for the latter normalization; earlier drafts' mixed use of \(p\) is superseded by this split.
 
 **Proof sketch.**  
 (1) \(X_j(F_i)=(JB^{T})_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe (\(\det DF\neq 0\)), \([X_i,X_j]=0\).  
@@ -247,7 +247,7 @@ A=-c s^3+s^2+18 a c s-27 a^2 c^2-16 a,\quad
 B=3 c s-4,\quad
 C=2c.
 \]
-If \(A\to 0\) with \(B\neq 0\), Vietaâ€™s formulas force at least one root with \(|q_0|\to\infty\).
+If \(A\to 0\) with \(B\neq 0\), Vieta's formulas force at least one root with \(|q_0|\to\infty\).
 
 ---
 
@@ -397,28 +397,42 @@ Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-m
 *Proof.* \(n_\pm\ge 1\) by Theorem F. ∎
 
 **Corollary 8.5.**  
-Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems B--C do not distinguish among these extensions. Strong CCR after extension remains open.
+Since \(n_+=n_-=\infty\), von Neumann's theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems B--C do not distinguish among these extensions. Strong CCR after extension remains open.
 
-**Conceptual point.** Even after a clean algebraic Poisson/CCR lift, incompleteness of \(X_1\) forces extension choices not fixed by the core algebraic relations.
-
-**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.2 interior \(s\)-cutoffs **withdrawn**. v0.3.2: whole maximal orbits (8.2)--(8.3).
+**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.0 interior \(s\)-cutoffs **withdrawn**. v0.3.2: whole maximal orbits (8.2)--(8.3).
 
 ---
 
-## 9. Non-claims
+## 9. Discussion
+
+The example separates two layers that are often collapsed in practice. On the algebraic side, the Poisson cotangent lift and the dual-field/CCR identities are clean: brackets close, rows of \(B\) are divergence-free, and \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). On the analytic side, incompleteness of \(X_1\) produces open families of finite orbit ends, and the whole-orbit deficiency construction yields
+\[
+(n_+,n_-)=(\infty,\infty).
+\]
+Thus a working algebraic CCR/Poisson presentation does **not** select a unique self-adjoint dual momentum for \(H=-iX_1\).
+
+This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the abstract operator-theoretic phenomenon is new: incomplete flows and half-line models are classical [2]. The contribution is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alpöge–Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
+
+What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. Lean certification covers the seed identities (Theorem A) only.
+
+Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) and \(H_2\), residual CCR after extensions, spectral theory of the extension family, and Lean coverage beyond Gate-0.
+
+---
+
+## 10. Non-claims
 
 1. No unitary quantum gate, quantum channel, CP instrument, or computational advantage is claimed.  
 2. Essential-self-adjointness failure is not claimed for \(H_0=-iX_0\) or \(H_2=-iX_2\).  
 3. No strong-commutation / joint unbounded CCR theorem after choosing extensions is claimed.  
 4. No unique physically preferred self-adjoint extension is selected.  
 5. No von Neumann inclusion index tied to generic degree is claimed.  
-6. No slogan claim that the Jacobian conjecture is â€œfactory falseâ€ is made beyond the finite identities actually used.  
-7. Discovery of the seed map \(F\) is not claimed (AlpÃ¶ge--Fable [8]).  
+6. No slogan claim that the Jacobian conjecture is "factory false" is made beyond the finite identities actually used.  
+7. Discovery of the seed map \(F\) is not claimed (Alpöge--Fable [8]).  
 8. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems A--F unless separately cited.
 
 ---
 
-## 10. Open problems
+## 11. Open problems
 
 1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
 2. Strong CCR after extensions.  
@@ -428,9 +442,9 @@ Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of sel
 
 ---
 
-## 11. Conclusion
+## 12. Conclusion
 
-Starting from the AlpÃ¶ge--Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
+Starting from the Alpöge--Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
 
 ---
 
@@ -449,10 +463,10 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.2); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
-[8] L. AlpÃ¶ge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
+[8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
 [10] K. SchmÃ¼dgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.  
-[11] D. Cureton, independent Lean 4 formalization of the AlpÃ¶ge/Fable seed, https://github.com/deancureton/jacobian.  
+[11] D. Cureton, independent Lean 4 formalization of the Alpöge/Fable seed, https://github.com/deancureton/jacobian.  
 [12] D. Speyer, *The new counterexample to the Jacobian conjecture*, Secret Blogging Seminar, 20 July 2026.
 
 ---

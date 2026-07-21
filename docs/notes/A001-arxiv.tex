@@ -125,6 +125,19 @@ The two walls, saturation, and deficiency lemmas; separability.
 Infinitely many self-adjoint extensions exist. Core algebraic Poisson/CCR relations do not distinguish among them.
 \end{corollary}
 
+\section{Discussion}
+The example separates two layers that are often collapsed in practice. On the algebraic side, the Poisson cotangent lift and the dual-field/CCR identities are clean: brackets close, rows of \(B\) are divergence-free, and \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). On the analytic side, incompleteness of \(X_1\) produces open families of finite orbit ends, and the whole-orbit deficiency construction yields
+\[
+(n_+,n_-)=(\infty,\infty).
+\]
+Thus a working algebraic CCR/Poisson presentation does \emph{not} select a unique self-adjoint dual momentum for \(H=-iX_1\).
+
+This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the phenomenon is new in the abstract: incomplete flows and half-line models are classical~\cite{RS2}. The point is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alp\"oge--Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
+
+What the paper does \emph{not} establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. Lean certification covers the seed identities (Theorem~A) only.
+
+Natural next steps are the ESS status of \(H_0\) and \(H_2\), the residual CCR question after choosing extensions, finer spectral theory of the extension family, and Lean coverage beyond Gate~0.
+
 \section{Non-claims}
 No unitary gate, channel, CP map, or computational advantage. No ESS claim for \(H_0,H_2\). No strong CCR after extensions. No discovery claim for \(F\). No preferred physical extension. Lean covers Theorem~A only.
 
