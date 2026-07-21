@@ -7,7 +7,6 @@ authors:
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
-# version DOI v0.3.2: 10.5281/zenodo.21478429
 version: 0.3.2
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
@@ -20,7 +19,6 @@ keywords:
   - exotic-ccr
 abstract: >-
   Poisson/Weyl lifts of the Alpoge-Fable Keller seed (restated). H=-i X_1 not ESS
-  on C_c^infty(R^3) with deficiency indices (infinity, infinity) via whole-orbit
-  deficiency vectors. Infinitely many self-adjoint extensions; none preferred by
-  algebraic CCR data. v0.2.2 pair (0,infinity) and v0.3.0 s-indicator proof withdrawn.
-  No gates/channels/advantage. Paper: docs/notes/A001-arxiv.pdf.
+  with deficiency indices (infinity, infinity) via whole-orbit deficiency vectors.
+  v0.2.2 pair (0,infinity) and v0.3.0 s-indicator proof withdrawn. No gates/channels.
+  Paper: docs/notes/A001-arxiv.pdf (tag v0.3.2).

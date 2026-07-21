@@ -2,8 +2,8 @@
 
 | Field | Value |
 |-------|--------|
-| Concept DOI | **10.5281/zenodo.21474351** |
-| Current freeze | **v0.3.2** (version DOI pending ingest of tag v0.3.2) |
-| Superseded | v0.2.2 pair (0,âˆž) withdrawn; v0.3.2 Dom(H*) indicator proof withdrawn; v0.3.1 intermediate |
+| Concept DOI | 10.5281/zenodo.21474351 |
+| Git freeze | tag **v0.3.2** at SHA see `git rev-parse v0.3.2` |
+| Version DOI | **Re-mint required** after final tag push (prior 10.5281/zenodo.21478429 may archive an intermediate SHA; do not cite until it matches current tag tree) |
 
-Cite concept DOI for the project; pin version DOI after Zenodo mints v0.3.2.
+Superseded claims: v0.2.2 pair (0,inf); v0.3.0 interior s-indicator Dom(H*) proof.
