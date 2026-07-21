@@ -22,23 +22,27 @@ This repository is infrastructure and research scaffolding only.
 
 See [INTEGRITY.md](INTEGRITY.md) for the standing non-claims boundary.
 
-## Related Lean artifact (Gate 0)
+## Gate 0 seed (D0-seed) — closed 2026-07-21
 
-Formal Gate-0 algebraic certificates live in a separate public repo (not merged here):
-
-- **[Quantyra/exotic-ccr-lean](https://github.com/Quantyra/exotic-ccr-lean)** — Lean 4 T0.1/T0.2 Jacobian anchor (`det DF = -2`, three-point collision, non-injectivity packaging). Release `v0.1.0`.
+- Dossier: [docs/validation/D0-seed-validation-dossier.md](docs/validation/D0-seed-validation-dossier.md)
+- Frozen anchor: [data/anchor/F_announced_det_m2.json](data/anchor/F_announced_det_m2.json)
+- Dual CAS: `python scripts/cas/verify_anchor_sympy.py` and `python scripts/cas/verify_anchor_purepython.py`
+- Lean: **[Quantyra/exotic-ccr-lean](https://github.com/Quantyra/exotic-ccr-lean)** release `v0.1.1`
+- Full G0 still requires family certification (planning S015)
 
 ## Repository structure
 
 ```
+data/anchor/      # frozen seed map + CAS reports
 docs/
-  literature/     # S005/S006 literature intake and citation packets
-  definitions/    # S007/S008 formal/definitional bridges
-  plans/          # S009 research plans
-  notes/          # working notes
-  zenodo-release-path.md
-src/              # future code (optional)
-lean/             # optional local notes only; active Lean surface is exotic-ccr-lean
+  validation/     # D0-seed dossier
+  provenance/     # provenance ledger
+  literature/
+  definitions/
+  plans/
+  notes/
+scripts/cas/      # dual exact CAS verifiers
+src/
 ```
 
 ## License
