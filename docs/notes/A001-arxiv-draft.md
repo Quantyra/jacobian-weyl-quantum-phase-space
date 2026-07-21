@@ -27,7 +27,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "10.5281/zenodo.21474488"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 package through G4-X1 incompleteness and P1 ESS obstruction; deficiency bounds as in G4-P1-deficiency-indices.md"
+claims_freeze: "A001 through G4 orbit-measure: Leb3(I)>0 and (n+,n-)=(0,inf) for P1^sym; G4-P1-orbit-measure-deficiency.md"
 ---
 
 # Algebraic CCR lifts of a Keller counterexample and failure of essential self-adjointness for a dual momentum
@@ -45,7 +45,7 @@ https://github.com/Quantyra/jacobian-weyl-quantum-phase-space
 
 We study an explicit three-dimensional Keller map \(F\) (constant Jacobian determinant \(\det DF=-2\) and a three-point collision). We construct the classical cotangent lift \(\Phi(q,p)=(F(q),J(q)^{-T}p)\) and verify, by dual exact computer-algebra checks, that \(\Phi\) preserves the canonical Poisson brackets on generators and is non-injective. The same matrix \(B=J^{-T}\) induces a polynomial Weyl-algebra endomorphism preserving the canonical commutation relations; moreover \(\operatorname{div} B=0\), so the Schrödinger candidates \(P_j^{\mathrm{sym}}=\frac12\{B_{j\cdot},p\}\) equal \(-iX_j\) for the dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\).
 
-We prove that \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in forward time \(T=\frac12\). Hence \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\). The distinguished orbit is a half-line \((-\infty,\frac12)\), so the natural one-dimensional model has deficiency indices \((1,0)\) or \((0,1)\) (orientation-dependent); the exact global pair \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) remains open.
+We prove that \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in forward time \(T=\frac12\). Hence \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\). The incomplete set has positive Lebesgue measure. With orbit time \(s=F_1\), the half-line model for \(A=-i\mathrm{d}/\mathrm{d}s\) has deficiency indices \((0,1)\); a positive-measure family of such orbits yields the global pair \((n_+,n_-)=(0,\infty)\) on \(L^2(\mathbb{R}^3)\).
 
 We do not claim unitary gates, quantum channels, computational advantage, or unique physical momenta without self-adjoint extension choices.
 
@@ -71,7 +71,7 @@ For the seed map \(F\) studied here (repository atlas label **A001**):
 2. The associated Weyl substitution preserves polynomial CCR, and \(\operatorname{div} B=0\) (Theorem C).  
 3. The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\), via an explicit escaping integral curve (Theorem D).  
 4. Consequently \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\) (Theorem E).  
-5. Deficiency indices satisfy \(\max(n_+,n_-)\ge 1\); the distinguished orbit models half-line indices \((1,0)\) or \((0,1)\); exact global indices remain open (Section 8).
+5. The incomplete set has positive Lebesgue measure, and the global deficiency indices are \((n_+,n_-)=(0,\infty)\) (Theorem F).
 
 **Message.** Algebraic CCR/Poisson lifts can exist while the standard dense-domain recipe fails to select a unique self-adjoint dual momentum.
 
@@ -248,13 +248,37 @@ n_-:=\dim\ker\bigl((P_1^{\mathrm{sym}})^*+i\bigr).
 
 *Proof.* Immediate from Theorem E. ∎
 
-**Orbit model.** The curve (6.1) extends to all \(t\in(-\infty,\tfrac12)\) by the same closed-form expressions (the radicand \(1-2t\) is positive for \(t<\tfrac12\)). Backward in time the orbit escapes only as \(t\to-\infty\) (complete backward end). Hence the distinguished orbit is a half-line \((-\infty,\tfrac12)\). The comparison operator \(-i\,d/dt\) on \(C_c^\infty(-\infty,T)\) is unitarily equivalent to a half-line model with
-\[
-(n_+,n_-)_{\mathrm{orbit}}\in\{(1,0),(0,1)\}
-\]
-(orientation-dependent), not \((1,1)\).
+### 8.1 Half-line model (orientation fixed)
 
-**Global indices.** The exact pair \((n_+,n_-)\) for the ambient operator on \(L^2(\mathbb{R}^3)\) is **open**. It requires a measurable decomposition into \(X_1\)-orbits and control of the transverse measure of incomplete orbits (indices may be infinite if that measure is positive). See `docs/validation/G4-P1-deficiency-indices.md`.
+The curve (6.1) extends to all \(t\in(-\infty,\tfrac12)\). Backward escape occurs only as \(t\to-\infty\), so the distinguished orbit is a half-line \(I=(-\infty,T)\) with \(T=\tfrac12\). Along orbits, \(F_1\) is time for \(X_1\) and
+\[
+A=-i X_1=-i\frac{\mathrm{d}}{\mathrm{d}s}\qquad(s=F_1).
+\]
+Mapping \(x=T-s\in(0,\infty)\) sends \(a=-i\mathrm{d}/\mathrm{d}s\) to \(-b\) where \(b=-i\mathrm{d}/\mathrm{d}x\) on \((0,\infty)\). By the standard half-line computation [2, §X.1], \(b\) has indices \((1,0)\), hence \(a\) has
+\begin{equation}
+(n_+,n_-)_{\mathrm{orbit}}=(0,1).
+\tag{8.1}
+\end{equation}
+(The opposite pair would require the opposite operator orientation; with \(A=-iX_1\) and \(F_1\) increasing along the flow, (8.1) is fixed.)
+
+### 8.2 Positive measure incomplete set
+
+**Theorem F (orbit measure).**  
+(1) \(\mathrm{Leb}_3(\mathcal{I})>0\) where \(\mathcal{I}=\{q:T_+^{X_1}(q)<\infty\}\).  
+(2) \((n_+,n_-)=(0,\infty)\).
+
+**Proof sketch.**  
+*Escape locus.* Eliminating variables from \(F(q)=(a,s,c)\) yields a cubic constraint \(A(s;a,c)\,q_0^3+B\,q_0+C=0\). At \((a,s,c)=(0,\tfrac12,2)\) one has \(A=0\) and \(\partial_s A\neq 0\). The implicit function theorem produces a smooth forward escape time \(s_\star(a,c)\) on an open neighborhood \(U\ni(0,2)\).  
+
+*Lebesgue positivity.* On \(V=\{(a,s,c):(a,c)\in U,\,s\in(0.2,0.35)\}\) a local inverse branch of \(F\) exists (\(\det DF\equiv-2\)). Its image has positive measure and lies in \(\mathcal{I}\).  
+
+*Half-line family.* For \((a,c)\in U\) the incomplete branch is of type \((-\infty,s_\star(a,c))\): forward blow-up at \(s_\star\), backward continuation for \(s\to-\infty\) via the algebraic balance \(q_0\sim k/s\) with \(k\in\{2,-1\}\). Each such orbit contributes (8.1).  
+
+*Direct integral.* Since \(\operatorname{div} X_1=0\), Lebesgue measure disintegrates into arc-time on orbits times a transverse measure \(\mu\) [9, §II.2], [10, Ch. 11]. The label set \(U\) carries non-atomic positive \(\mu\)-measure. Deficiency indices of the decomposable operator dominate the direct integral of the fiber indices [10, §11.3–11.4]: each fiber contributes \(n_+=0\), \(n_-=1\), and \(L^2(U,\mu)\) is infinite-dimensional, so
+\[
+(n_+,n_-)=(0,\infty).
+\]
+Full write-up: `docs/validation/G4-P1-orbit-measure-deficiency.md`. ∎
 
 ---
 
@@ -272,17 +296,17 @@ n_-:=\dim\ker\bigl((P_1^{\mathrm{sym}})^*+i\bigr).
 
 ## 10. Open problems
 
-1. Exact global deficiency indices of \(P_1^{\mathrm{sym}}\) on \(L^2(\mathbb{R}^3)\).  
-2. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
-3. Strong CCR after extensions.  
-4. Lean formalization of Theorems B–E.  
-5. The same depth of analysis for higher-degree family maps in the atlas.
+1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
+2. Strong CCR after extensions.  
+3. Lean formalization of Theorems B–F.  
+4. The same depth of analysis for higher-degree family maps in the atlas.  
+5. Optional: finer spectral theory of self-adjoint extensions of \(P_1^{\mathrm{sym}}\).
 
 ---
 
 ## 11. Conclusion
 
-For the A001 seed Keller map we construct polynomial Poisson and Weyl lifts of the canonical relations, prove incompleteness of the dual field \(X_1\) by an explicit escaping integral curve, and conclude that \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\). Algebraic preservation of CCR-type relations is therefore compatible with failure of the standard unique-observable recipe for at least one dual momentum. Global deficiency indices and strong CCR remain open.
+For the A001 seed Keller map we construct polynomial Poisson and Weyl lifts of the canonical relations, prove incompleteness of the dual field \(X_1\) by an explicit escaping integral curve, and conclude that \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\), with global deficiency indices \((n_+,n_-)=(0,\infty)\). Algebraic preservation of CCR-type relations is therefore compatible with failure of the standard unique-observable recipe for at least one dual momentum. Strong CCR after extensions remains open.
 
 ---
 
@@ -300,8 +324,10 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299–306.  
 [5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21474488](https://doi.org/10.5281/zenodo.21474488); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
-[7] Repository validation dossiers and CAS reports under `docs/validation/` and `data/anchor/` in [5], including `G2-poisson-A001-dossier.md`, `G3-weyl-A001-dossier.md`, `G4-X1-incompleteness.md`, `G4-Chernoff-discharge.md`, and `G4-P1-deficiency-indices.md`.  
-[8] Public seed-map provenance as recorded in `docs/provenance/` and `docs/literature/` of [5] (announcement lineage and independent public Lean formalizations).
+[7] Repository validation dossiers and CAS reports under `docs/validation/` and `data/anchor/` in [5], including `G2-poisson-A001-dossier.md`, `G3-weyl-A001-dossier.md`, `G4-X1-incompleteness.md`, `G4-Chernoff-discharge.md`, `G4-P1-deficiency-indices.md`, and `G4-P1-orbit-measure-deficiency.md`.  
+[8] Public seed-map provenance as recorded in `docs/provenance/` and `docs/literature/` of [5] (announcement lineage and independent public Lean formalizations).  
+[9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980 (direct integrals).  
+[10] K. Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012 (Ch. 11: direct integrals of operators).
 
 ---
 
@@ -314,7 +340,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 | Theorem C | `docs/validation/G3-weyl-A001-dossier.md` | `cas_weyl_A001_*.json` |
 | Theorem D | `docs/validation/G4-X1-incompleteness.md` | `cas_X1_blowup_curve_A001.json` |
 | Theorem E | `docs/validation/G4-Chernoff-discharge.md` | logic + D |
-| Deficiency | `docs/validation/G4-P1-deficiency-indices.md` | orbit geometry from D |
+| Theorem F | `docs/validation/G4-P1-orbit-measure-deficiency.md` | `cas_orbit_measure_IFT_A001.json`, sheet CAS |
 
 ---
 

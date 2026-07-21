@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.2.2 — 2026-07-21
+
+### Science
+- Orbit-measure analysis: \(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\)
+- Exact deficiency indices \((n_+,n_-)=(0,\infty)\) for \(P_1^{\mathrm{sym}}\) (half-line orientation + direct integral)
+- arXiv draft upgraded with Theorem F; submission bundle + checklist freeze
+- CAS: incomplete sheet \(\Sigma_0\), IFT escape locus certificates
+
+### Non-claims
+Unchanged: no gate/channel/advantage; no unique physical momenta without extensions.
+
 ## v0.2.1 — 2026-07-21
 
 ### Metadata

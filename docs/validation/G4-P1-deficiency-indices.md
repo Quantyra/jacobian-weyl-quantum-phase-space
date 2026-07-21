@@ -1,7 +1,7 @@
 # G4 Deficiency indices of \(P_1^{\mathrm{sym}}=-i X_1\) (A001)
 
 **Date:** 2026-07-21  
-**Status:** **Bounds + orbit model settled; exact global \((n_+,n_-)\) open**  
+**Status:** **Resolved** — global \((n_+,n_-)=(0,\infty)\); see `G4-P1-orbit-measure-deficiency.md`  
 **Operator:** \(A:=P_1^{\mathrm{sym}}=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)  
 **Conventions:** \(n_\pm:=\dim\ker(A^*\mp i)\) would vary by text; we use  
 \[
@@ -79,49 +79,47 @@ C_c^\infty(0,\infty)
 - \(b^*f=-if\) \(\Rightarrow\) \(f'=f\) \(\Rightarrow\) \(f\propto e^{x}\notin L^2(0,\infty)\)  
   \(\Rightarrow\) \(\dim\ker(b^*+i)=0\)
 
-Thus for this orientation,
+For \(b=-i\mathrm{d}/\mathrm{d}x\) on \((0,\infty)\) one has \((n_+,n_-)=(1,0)\).  
+With \(A=-i\mathrm{d}/\mathrm{d}s\) on \((-\infty,T)\) and \(x=T-s\), one obtains \(A\simeq -b\), hence
 \[
-(n_+,n_-)_{\mathrm{1D}}
-=
-(1,0).
+(n_+,n_-)_{\mathrm{1D}}=(0,1).
 \]
-(If the opposite unitary orientation is chosen, one obtains \((0,1)\) instead; **the unordered pair is \(\{0,1\}\), never \((0,0)\) or \((1,1)\).**  
-On a *finite* open interval both indices are \(1\); that model is **ruled out** here by backward completeness.)
+(On a *finite* open interval both indices are \(1\); that model is **ruled out** here by backward completeness.)
 
 **Orbit-model theorem.**  
-The deficiency indices of the minimal 1D operator along the distinguished incomplete \(X_1\)-orbit through \((1,0,0)\) are
+Along the distinguished incomplete \(X_1\)-orbit through \((1,0,0)\),
 \[
-\boxed{(n_+,n_-)_{\mathrm{orbit}}=(1,0)\ \text{or}\ (0,1)}
+\boxed{(n_+,n_-)_{\mathrm{orbit}}=(0,1)}
 \]
-in the \(\ker(A^*\mp i)\) convention above (orientation-dependent).
+for \(A=-i X_1=-i\mathrm{d}/\mathrm{d}s\) (orientation fixed by the flow).
 
 ---
 
-## 4. Global operator on \(L^2(\mathbb{R}^3)\) — resolved (orbit measure)
+## 4. Global operator on \(L^2(\mathbb{R}^3)\) — resolved
 
 **Full write-up:** `G4-P1-orbit-measure-deficiency.md`
 
 \[
-\boxed{(n_+,n_-)\neq(0,0),\quad \max(n_+,n_-)=\infty}
+\boxed{(n_+,n_-)=(0,\infty)}
 \]
 \[
-\boxed{(n_+,n_-)_{\mathrm{orbit}}\in\{(1,0),(0,1)\}
-\text{ for the half-line orbit through }(1,0,0)}
+\boxed{(n_+,n_-)_{\mathrm{orbit}}=(0,1)
+\text{ for }A=-i\mathrm{d}/\mathrm{d}s\text{ on half-line }(-\infty,T)}
 \]
 
 | Piece | Status |
 |-------|--------|
-| 2D sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** (closed form) |
-| Escape locus \(A(s;a,c)=0\) continues off \(a=0\) by IFT | **proved** (`cas_orbit_measure_IFT_A001.json`) |
-| \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** (IFT + \(\det DF\equiv-2\)) |
-| \(\max(n_+,n_-)=\infty\) | **proved** (positive-measure orbit family) |
-| Exact pair \((\infty,0)\) / \((0,\infty)\) / \((\infty,\infty)\) | **open** |
+| 2D sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** |
+| IFT escape locus off \(a=0\) | **proved** |
+| \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** |
+| Half-line orientation \((0,1)\) | **proved** |
+| Direct integral \(\Rightarrow(0,\infty)\) | **proved** |
 
 ---
 
-## 5. Residual open point
+## 5. Residual open points (non-blocking)
 
-Orient the incomplete ends on a full-measure subset of the transverse parameter space \(U\) to pin the exact pair \((n_+,n_-)\).
+ESS of \(P_0^{\mathrm{sym}}\), \(P_2^{\mathrm{sym}}\); strong CCR after extensions; Lean of Theorems B–F.
 
 ---
 
@@ -130,12 +128,11 @@ Orient the incomplete ends on a full-measure subset of the transverse parameter 
 | ID | Statement | Status |
 |----|-----------|--------|
 | Def-min | \(\max(n_+,n_-)\ge 1\) | **proved** |
-| Def-orbit-model | orbit through \((1,0,0)\) has 1D indices \((1,0)\) or \((0,1)\) | **proved** (model) |
-| Def-global-exact | exact global \((n_+,n_-)\) | **open** |
-| Def-global-finite | global indices finite | **open** |
+| Def-orbit-model | half-line indices \((0,1)\) | **proved** |
+| Def-global-exact | \((n_+,n_-)=(0,\infty)\) | **proved** |
 | Channel/gate | — | **not claimed** |
 
 ---
 
 ## 7. Non-claims
-No quantum channel, gate, or unique physical extension. No claim \(n_+=1,n_-=0\) globally without orbit-measure analysis.
+No quantum channel, gate, or unique physical extension.

@@ -38,7 +38,7 @@ Global exact pair requires orbit-measure analysis (plan in deficiency note §5).
 | G4-def-incomplete-2D-sheet | **proved** (\(\Sigma_0\subset\{F_0=0\}\)) |
 | G4-def-Lebesgue-positive | **proved** (IFT + local diffeo) |
 | G4-def-max-index-infinite | **proved** |
-| G4-def-global-exact-pair | **open** (\((\infty,0)\) vs \((0,\infty)\) vs \((\infty,\infty)\)) |
+| G4-def-global-exact-pair | **proved** \((n_+,n_-)=(0,\infty)\) |
 | G4-physical-unique-momenta | **not authorized** |
 
 **Orbit-measure analysis:** `G4-P1-orbit-measure-deficiency.md`

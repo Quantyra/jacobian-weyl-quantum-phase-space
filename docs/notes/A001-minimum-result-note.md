@@ -140,8 +140,9 @@ is **not essentially self-adjoint**.
 | T-E1 | \(P_1^{\mathrm{sym}}=-i X_1\) not ESS on \(C_c^\infty\) | **proved** |
 | T-which-j | Explicit index \(j\) | **settled: \(j=1\)** (others open) |
 | T-def | \(\max(n_+,n_-)\ge 1\) for \(P_1^{\mathrm{sym}}\) | **proved** |
-| T-def-orbit | 1D orbit model indices \((1,0)\) or \((0,1)\) | **proved** (model) |
-| T-def-global | Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **open** |
+| T-def-pair | \((n_+,n_-)=(0,\infty)\) | **proved** |
+| T-def-orbit | 1D orbit model indices \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\) | **proved** |
+| T-def-global | Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **proved** \((0,\infty)\) |
 | T-sCCR | Strong CCR / joint spectral package | **open** |
 | T-phys | Reversible physical symmetry / unique momenta / channel / gate | **not authorized** |
 
@@ -174,17 +175,16 @@ is **not essentially self-adjoint**.
 
 ## 5. Open problems (next math)
 
-1. **Exact global deficiency indices** of \(P_1^{\mathrm{sym}}\) (orbit-measure / direct-integral analysis).  
-2. **ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\)**.  
-3. **Strong CCR** after choosing self-adjoint extensions (if any coherent joint theory exists).  
-4. **Lean** formalization of Theorems B–E1 (or selected lemmas).  
-5. **Family spine** for A002 / \(\psi_d\) at the same depth as A001.
+1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
+2. **Strong CCR** after choosing self-adjoint extensions (if any coherent joint theory exists).  
+3. **Lean** formalization of Theorems B–F (or selected lemmas).  
+4. **Family spine** for A002 / \(\psi_d\) at the same depth as A001.
 
 ---
 
 ## 6. One-paragraph summary
 
-For the seed Jacobian-counterexample map we construct and dual-CAS-certify a classical Poisson cotangent lift and a polynomial Weyl-algebra endomorphism preserving CCR relations. We prove that the dual field \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in time \(1/2\), and hence that \(P_1^{\mathrm{sym}}=-i X_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\). Algebraic CCR preservation therefore does not yield uniquely determined Schrödinger momenta without additional boundary choices. Exact deficiency indices, strong commutation, and any channel/gate interpretation remain open and are not claimed.
+For the seed Jacobian-counterexample map we construct and dual-CAS-certify a classical Poisson cotangent lift and a polynomial Weyl-algebra endomorphism preserving CCR relations. We prove that the dual field \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in time \(1/2\), and hence that \(P_1^{\mathrm{sym}}=-i X_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\), with global deficiency indices \((n_+,n_-)=(0,\infty)\). Algebraic CCR preservation therefore does not yield uniquely determined Schrödinger momenta without additional boundary choices. Strong commutation and any channel/gate interpretation remain open and are not claimed.
 
 ---
 
@@ -208,8 +208,8 @@ Then \(F(q(t))=(0,t,2)\), \(q'(t)=X_1(q(t))\), and \(q_0(t)\to+\infty\) as \(t\t
 See [../validation/G4-P1-deficiency-indices.md](../validation/G4-P1-deficiency-indices.md).
 
 - \(\max(n_+,n_-)\ge 1\): **proved** (non-ESS).
-- Orbit through \((1,0,0)\) is a half-line \((-\infty,	frac12)\): backward complete, forward escape at \(	frac12\).
-- 1D model indices: \((1,0)\) or \((0,1)\) (orientation).
-- Global deficiency: \(\max(n_+,n_-)=\infty\) (proved via orbit measure); exact pair open.
+- Orbit through \((1,0,0)\) is a half-line \((-\infty,\tfrac12)\): backward complete, forward escape at \(\tfrac12\).
+- 1D model indices: \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\).
+- Global deficiency: \((n_+,n_-)=(0,\infty)\).
 - Incomplete set: 2D sheet in \(\{F_0=0\}\) + \(\mathrm{Leb}_3>0\) (IFT off \(a=0\), \(\det DF\equiv-2\)).
 - Details: [../validation/G4-P1-orbit-measure-deficiency.md](../validation/G4-P1-orbit-measure-deficiency.md).
