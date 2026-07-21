@@ -1,0 +1,533 @@
+{
+  "atlas_id": "A001-seed-d3",
+  "div_X_rows": [
+    "0",
+    "0",
+    "0"
+  ],
+  "div_all_zero": true,
+  "X1_on_axis_y_z_0": [
+    "3*q0**2/2",
+    "1",
+    "0"
+  ],
+  "X1_axis_note": "At points (s,0,0), X1=(3/2 s^2, 1, 0). The 1D comparison ODE \u1e61=(3/2)s^2 has finite-time blow-up for s(0)>0, but the line is not invariant (q1'=1). Used only as local heuristic, not a completeness proof.",
+  "probes": [
+    {
+      "field": "X0",
+      "y0": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.12564162140627216,
+        -4.8944505485582175,
+        -260.6330619431726
+      ],
+      "speed_end": 111.14852846521197,
+      "norm_y_end": 260.67904482306005,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X0",
+      "y0": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.10864793817318788,
+        -7.087696989347905,
+        -1194.2936630257589
+      ],
+      "speed_end": 494.192385867914,
+      "norm_y_end": 1194.3146992298437,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X0",
+      "y0": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.08890061964622119,
+        -9.702526428377169,
+        -5112.583011147791
+      ],
+      "speed_end": 2078.5139058980235,
+      "norm_y_end": 5112.592218512975,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X0",
+      "y0": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.0,
+        0.5,
+        4.999999999999999
+      ],
+      "speed_end": 1.0,
+      "norm_y_end": 5.024937810560444,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X0",
+      "y0": [
+        1.0,
+        -0.5,
+        0.2
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.0987671628348941,
+        -8.53276983582025,
+        -2960.9208557248426
+      ],
+      "speed_end": 1251.2553697935944,
+      "norm_y_end": 2960.9331521975223,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X0",
+      "y0": [
+        -1.5,
+        0.4,
+        1.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        -0.11638414134576726,
+        6.797861165586048,
+        -1151.9490368929673
+      ],
+      "speed_end": 534.6503675894692,
+      "norm_y_end": 1151.9691003062235,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X0",
+      "y0": [
+        0.1,
+        0.1,
+        -0.25
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.08416773548898372,
+        -1.3235890527758953,
+        -1.316183361813349
+      ],
+      "speed_end": 1.7321720809947798,
+      "norm_y_end": 1.8685049719601563,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X0",
+      "y0": [
+        1.0,
+        -1.5,
+        6.5
+      ],
+      "t_end": 0.24999999893240982,
+      "y_end": [
+        7287582.479064135,
+        -2.0969612852528189e-07,
+        1.2398182799568524e-13
+      ],
+      "speed_end": 7.740704641508681e+20,
+      "norm_y_end": 7287582.479064135,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X0",
+      "y0": [
+        -1.0,
+        1.5,
+        6.5
+      ],
+      "t_end": 0.24999999893240982,
+      "y_end": [
+        -7287582.479064135,
+        2.0969612852528189e-07,
+        1.2398182799568524e-13
+      ],
+      "speed_end": 7.740704641508681e+20,
+      "norm_y_end": 7287582.479064135,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X1",
+      "y0": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "t_end": 0.9999995053087939,
+      "y_end": [
+        28760.95702875524,
+        1.0004398666879435,
+        -0.00010435153860806546
+      ],
+      "speed_end": 1643928049822258.8,
+      "norm_y_end": 28760.957046155218,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X1",
+      "y0": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 0.49999973189685565,
+      "y_end": [
+        57494.529288911355,
+        0.5002251071344905,
+        -2.610058004359265e-05
+      ],
+      "speed_end": 6576049357369844.0,
+      "norm_y_end": 57494.529291087434,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X1",
+      "y0": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 0.24999986082753245,
+      "y_end": [
+        115196.44407803164,
+        0.25011306474328815,
+        -6.513411525860179e-06
+      ],
+      "speed_end": 2.6293850260703464e+16,
+      "norm_y_end": 115196.44407830316,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X1",
+      "y0": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.0,
+        5.4999999999999964,
+        -119.99999999999991
+      ],
+      "speed_end": 44.011362169330745,
+      "norm_y_end": 120.12597554234463,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X1",
+      "y0": [
+        1.0,
+        -0.5,
+        0.2
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.3219752087401762,
+        -2.999524666974757,
+        -51.62554268997912
+      ],
+      "speed_end": 33.27389452676456,
+      "norm_y_end": 51.71361014566369,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X1",
+      "y0": [
+        -1.5,
+        0.4,
+        1.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        -0.19380918858810744,
+        3.4567915067009802,
+        -212.62076097632
+      ],
+      "speed_end": 159.86667422237701,
+      "norm_y_end": 212.6489477229356,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X1",
+      "y0": [
+        0.1,
+        0.1,
+        -0.25
+      ],
+      "t_end": 4.948922949126272,
+      "y_end": [
+        5065.61041969635,
+        5.113645217689405,
+        -0.003028369700288398
+      ],
+      "speed_end": 35258448281627.56,
+      "norm_y_end": 5065.6130007643505,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X1",
+      "y0": [
+        1.0,
+        -1.5,
+        6.5
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.3713906763512784,
+        -2.7888736053631726,
+        37.027815987824646
+      ],
+      "speed_end": 12.497806888659257,
+      "norm_y_end": 37.13455134843256,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X1",
+      "y0": [
+        -1.0,
+        1.5,
+        6.5
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        -0.37139067709183543,
+        5.288873601926868,
+        57.22218385958431
+      ],
+      "speed_end": 20.032798662776575,
+      "norm_y_end": 57.46728147974516,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        2.999999999999998,
+        0.0,
+        0.0
+      ],
+      "speed_end": 0.5,
+      "norm_y_end": 2.999999999999998,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        3.4999999999999956,
+        0.0,
+        0.0
+      ],
+      "speed_end": 0.5,
+      "norm_y_end": 3.4999999999999956,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        4.499999999999987,
+        0.0,
+        0.0
+      ],
+      "speed_end": 0.5,
+      "norm_y_end": 4.499999999999987,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.2564170531390875,
+        -3.0563304696684326,
+        -230.3949093262268
+      ],
+      "speed_end": 105.85172273578215,
+      "norm_y_end": 230.41532316468286,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        1.0,
+        -0.5,
+        0.2
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.6054295997892509,
+        -1.2923378918481576,
+        -25.541242429482992
+      ],
+      "speed_end": 9.481763692991276,
+      "norm_y_end": 25.58108181974777,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        -1.5,
+        0.4,
+        1.0
+      ],
+      "t_end": 2.8306185278711813,
+      "y_end": [
+        -62661.359130773686,
+        -0.41165694243104606,
+        -1.9708140816387446e-05
+      ],
+      "speed_end": 857916842414202.5,
+      "norm_y_end": 62661.35913212589,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X2",
+      "y0": [
+        0.1,
+        0.1,
+        -0.25
+      ],
+      "t_end": 1.4022605536370518,
+      "y_end": [
+        30789.563442988412,
+        0.8247086570000611,
+        -8.035388566975673e-05
+      ],
+      "speed_end": 882251121678158.4,
+      "norm_y_end": 30789.563454033458,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    },
+    {
+      "field": "X2",
+      "y0": [
+        1.0,
+        -1.5,
+        6.5
+      ],
+      "t_end": 5.0,
+      "y_end": [
+        0.5853423722706834,
+        -2.070613375499903,
+        -8.481430747063104
+      ],
+      "speed_end": 7.450227748446892,
+      "norm_y_end": 8.750127596829774,
+      "scipy_status": 0,
+      "scipy_message": "The solver successfully reached the end of the integration interval.",
+      "numeric_blowup_suspect": false
+    },
+    {
+      "field": "X2",
+      "y0": [
+        -1.0,
+        1.5,
+        6.5
+      ],
+      "t_end": 1.5396005599235247,
+      "y_end": [
+        -28957.13519455058,
+        0.8659120936566511,
+        8.97120996364189e-05
+      ],
+      "speed_end": 828563679872148.8,
+      "norm_y_end": 28957.13520749737,
+      "scipy_status": -1,
+      "scipy_message": "Required step size is less than spacing between numbers.",
+      "numeric_blowup_suspect": true
+    }
+  ],
+  "n_suspect_blowups": 13,
+  "interpretation": "Multiple adaptive IVP integrations terminate with step-size collapse and huge |q|, consistent with incomplete dual fields. This is numeric evidence only \u2014 not a theorem that X_j is incomplete.",
+  "pass_diagnostic": true
+}
