@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.1 — 2026-07-21
+
+### Metadata
+- Author name standardized to **Daniel Eric Fredriksen** (Quantyra Inc) in Zenodo/CITATION
+- Concept DOI recorded: `10.5281/zenodo.21474351` (version DOI updates with this release)
+
 ## v0.2.0 — 2026-07-21
 
 ### A001 minimum result package

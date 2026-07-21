@@ -6,8 +6,8 @@ authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
-# doi: pending Zenodo deposit from GitHub release v0.2.0
-version: 0.2.0
+doi: 10.5281/zenodo.21474351
+version: 0.2.1
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"

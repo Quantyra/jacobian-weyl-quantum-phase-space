@@ -4,12 +4,9 @@
 |-------|--------|
 | Date | 2026-07-21 |
 | Repo | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space |
-| Target release | **v0.2.0** |
-| Concept DOI | **pending** |
-| Version DOI | **pending** |
+| Concept DOI | **10.5281/zenodo.21474351** |
+| v0.2.0 version DOI | 10.5281/zenodo.21474352 (creator string was "Fredriksen, Daniel") |
+| v0.2.1 | authorship fix → **Daniel Eric Fredriksen**; version DOI pending this release |
 
-## Procedure
-1. GitHub release `v0.2.0` published (triggers Zenodo hook if enabled).
-2. If no public record appears: Zenodo → GitHub → this repo → open/publish draft.
-3. Paste concept + version DOIs into `CITATION.cff` and this file.
-4. Do not invent DOIs.
+## Cite
+Prefer concept DOI `10.5281/zenodo.21474351` for the project; use the latest version DOI for a specific release.

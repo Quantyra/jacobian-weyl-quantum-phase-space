@@ -8,7 +8,7 @@
     }
   ],
   "license": "Apache-2.0",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "jacobian-conjecture",
     "keller-map",
@@ -27,5 +27,5 @@
       "resource_type": "software"
     }
   ],
-  "description": "<p><strong>EXOTIC-CCR v0.2.0 (A001 minimum result package)</strong> — Quantyra research artifact for the seed Jacobian/Keller counterexample map F.</p><p><strong>Certified results (see docs/notes/A001-minimum-result-note.md):</strong></p><ul><li>Seed identities: det DF = −2 and three-point collision (dual CAS + Lean companion exotic-ccr-lean)</li><li>Classical cotangent lift Φ(q,p)=(F(q), J^{−T}p) is Poisson on generators and non-injective</li><li>Polynomial Weyl endomorphism ψ preserving CCR; row-div B = 0</li><li>Some dual field X_j is incomplete on R³ (geometric non-surjectivity argument)</li><li>Some dual momentum P_j^sym = −i X_j is not essentially self-adjoint on C_c^∞(R³) (incompleteness + Stone/transport necessity)</li></ul><p><strong>Non-claims:</strong> Does not claim a unitary quantum gate, channel, CP map, or computational advantage. Does not claim all three momenta fail ESS, nor unique physical observables after choosing self-adjoint extensions. Does not claim strong CCR or a von Neumann inclusion index related to generic degree. Does not assert “factory false” as a slogan theorem. Literature JC status beyond the finite identities used is not certified here. Public abstract language stays within the A001 claim ledger.</p><p>Apache-2.0. Repository: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space</p>"
+  "description": "<p><strong>EXOTIC-CCR v0.2.1 (A001 minimum result package)</strong> — Author: <strong>Daniel Eric Fredriksen</strong> (Quantyra Inc).</p><p><strong>v0.2.0 package</strong> — Quantyra research artifact for the seed Jacobian/Keller counterexample map F.</p><p><strong>Certified results (see docs/notes/A001-minimum-result-note.md):</strong></p><ul><li>Seed identities: det DF = −2 and three-point collision (dual CAS + Lean companion exotic-ccr-lean)</li><li>Classical cotangent lift Φ(q,p)=(F(q), J^{−T}p) is Poisson on generators and non-injective</li><li>Polynomial Weyl endomorphism ψ preserving CCR; row-div B = 0</li><li>Some dual field X_j is incomplete on R³ (geometric non-surjectivity argument)</li><li>Some dual momentum P_j^sym = −i X_j is not essentially self-adjoint on C_c^∞(R³) (incompleteness + Stone/transport necessity)</li></ul><p><strong>Non-claims:</strong> Does not claim a unitary quantum gate, channel, CP map, or computational advantage. Does not claim all three momenta fail ESS, nor unique physical observables after choosing self-adjoint extensions. Does not claim strong CCR or a von Neumann inclusion index related to generic degree. Does not assert “factory false” as a slogan theorem. Literature JC status beyond the finite identities used is not certified here. Public abstract language stays within the A001 claim ledger.</p><p>Apache-2.0. Repository: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space</p>"
 }
