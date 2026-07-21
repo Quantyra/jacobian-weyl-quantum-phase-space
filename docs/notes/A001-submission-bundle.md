@@ -1,22 +1,13 @@
 ﻿# A001 submission bundle (v0.3.2)
 
-**Main text:** [`A001-arxiv-draft.md`](A001-arxiv-draft.md)  
-**Erratum:** [`A001-ERRATUM-v0.2.2.md`](A001-ERRATUM-v0.2.2.md)  
-**Checklist:** [`A001-arxiv-checklist.md`](A001-arxiv-checklist.md)
+Main PDF: docs/notes/A001-arxiv.pdf
+TeX: docs/notes/A001-arxiv.tex
+Long form: docs/notes/A001-arxiv-draft.md
+Erratum: docs/notes/A001-ERRATUM-v0.2.2.md
+Endorsement blurb: docs/notes/A001-endorsement-request.md
 
-## One-liner
-AlpÃ¶geâ€“Fable Keller seed (restated) admits Poisson/Weyl lifts; dual transport \(H=-iX_1\) has deficiency \((\infty,\infty)\): not ESS, infinitely many self-adjoint extensions, none preferred. No gate/channel claims.
+Claim: (n+,n-)=(inf,inf). No gates/channels. Seed restated (Alpoge-Fable).
 
-## Core files
-- Draft + erratum + checklist + minimum note  
-- `docs/validation/G4-P1-orbit-measure-deficiency.md`  
-- `docs/validation/G4-X1-incompleteness.md`  
-- CAS: X1 curve, forward IFT, backward wall, sheet, anchors  
-
-## DOIs / submit files
-- Concept: `10.5281/zenodo.21474351`  
-- **v0.3.2:** `10.5281/zenodo.21478429`  
-- Superseded: v0.2.2 `10.5281/zenodo.21476665` (pair withdrawn)  
-- **PDF:** `docs/notes/A001-arxiv.pdf`  
-- **TeX:** `docs/notes/A001-arxiv.tex`  
-- Endorsement email: `docs/notes/A001-endorsement-request.md`
+DOI concept: 10.5281/zenodo.21474351
+DOI version v0.3.2: 10.5281/zenodo.21478429
+Tag: v0.3.2

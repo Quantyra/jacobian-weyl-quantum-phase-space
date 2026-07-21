@@ -401,7 +401,7 @@ Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of sel
 
 **Conceptual point.** Even after a clean algebraic Poisson/CCR lift, incompleteness of \(X_1\) forces extension choices not fixed by the core algebraic relations.
 
-**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.2 interior \(s\)-cutoffs **withdrawn**. v0.3.1/v0.3.2: whole maximal orbits (8.2)â€“(8.3).
+**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.2 interior \(s\)-cutoffs **withdrawn**. v0.3.2: whole maximal orbits (8.2)â€“(8.3).
 
 ---
 

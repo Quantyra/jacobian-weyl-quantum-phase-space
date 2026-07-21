@@ -1,0 +1,66 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(A001-arxiv.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty)
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
+x.def) (A001-arxiv.aux)
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\Dan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+Overfull \hbox (28.6752pt too wide) in paragraph at lines 18--18
+ [][] 
+[1{C:/Users/Dan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (5.00748pt too wide) in paragraph at lines 100--101
+\OML/cmm/m/it/10.95 JB[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 I$\OT1/cmr/m/
+it/10.95 , the gen-er-a-tor Pois-son brack-ets $\OMS/cmsy/m/n/10.95 f\OML/cmm/m
+/it/10.95 Q[]; Q[]\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.9
+5 f\OML/cmm/m/it/10.95 P[]; P[]\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 = 0$\OT
+1/cmr/m/it/10.95 , $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 Q[]; P[]\OMS/cmsy/
+m/n/10.95 g \OT1/cmr/m/n/10.95 =
+[3]
+Overfull \hbox (1.28317pt too wide) in paragraph at lines 109--112
+\OT1/cmr/m/n/10.95 a coframe, $[\OML/cmm/m/it/10.95 X[]; X[]\OT1/cmr/m/n/10.95 
+] = 0$. $[](\OML/cmm/m/it/10.95 DF\OT1/cmr/m/n/10.95 ) = ([] \OML/cmm/m/it/10.9
+5 DF\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 B$\OT1/cmr/m/n/10.95 . Pi-ola gives
+ $[] [](\OML/cmm/m/it/10.95 DF\OT1/cmr/m/n/10.95 ) =
+[4] [5] [6] (A001-arxiv.aux) )
+(see the transcript file for additional information)<C:/Users/Dan/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Dan/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Dan
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Us
+ers/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi5.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Dan/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Dan/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Dan/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Dan/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Dan/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Dan/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
+rs/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmtt12.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Users/Dan/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on A001-arxiv.pdf (6 pages, 290069 bytes).
+Transcript written on A001-arxiv.log.
