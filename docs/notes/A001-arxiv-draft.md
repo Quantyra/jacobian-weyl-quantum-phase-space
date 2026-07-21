@@ -23,7 +23,7 @@ keywords:
   - dual vector field
   - deficiency indices
 software_doi_concept: "10.5281/zenodo.21474351"
-software_doi_version: "10.5281/zenodo.21476665"
+software_doi_version: "10.5281/zenodo.21477350"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
 claims_freeze: "A001 v0.3.0: Alpöge–Fable seed restated; B–D lifts/blow-up; E non-ESS via deficiency; F (n+,n-)=(inf,inf). Erratum: v0.2.2 (0,inf) withdrawn."
@@ -150,8 +150,6 @@ F\bigl(0,0,-\tfrac14\bigr)
 (1)–(2) follow from \(B=J^{-T}\) together with dual-CAS verification of the generator brackets (global SymPy identities; pure-Python dual-number sampling).  
 (3) uses \(B J^{T}=I\).
 
-**Partial remark.** On the étale locus where \(F\) has generic degree three, fibers of \(\Phi\) have cardinality three, suggesting \(\mu(\Phi)=3\). A full generic-degree theorem for \(\Phi:\mathbb{C}^6\to\mathbb{C}^6\) is not claimed.
-
 **Evidence pointers:** `docs/validation/G2-poisson-A001-dossier.md`; `data/anchor/Phi_A001_seed_d3.json`; `cas_poisson_A001_*.json`.
 
 ---
@@ -219,64 +217,95 @@ Therefore \(X_1\) is incomplete. ∎
 
 ---
 
-## 7–8. Theorems E–F — Deficiency indices and non-ESS
+## 7. Flow-box coordinates for \(H=-iX_1\)
 
 Write \(H:=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\) and
 \[
 n_+:=\dim\ker(H^*-i),\qquad
 n_-:=\dim\ker(H^*+i).
 \]
-On every local inverse sheet of \(F\), set \((a,s,c)=F(q)\). Then \(|\det DF|=2\) gives
-\[
-\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
+By Theorem C, \(X_1(F_0)=X_1(F_2)=0\) and \(X_1(F_1)=1\). On any open set where a smooth local inverse of \(F\) exists (everywhere locally, since \(\det DF\equiv-2\neq 0\)), the coordinates \((a,s,c)=F(q)\) satisfy
+\begin{equation}
+\mathrm{d}q=\frac{1}{|\det DF|}\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c
+=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
 \qquad
 X_1=\partial_s,
 \qquad
 H=-i\partial_s.
-\]
+\tag{7.1}
+\end{equation}
+Thus questions about \(H\) reduce to a measurable field of one-dimensional operators \(-i\partial_s\) on orbit intervals in the \(s\)-line, with transverse measure \(\mathrm{d}a\,\mathrm{d}c\).
 
-### Escape walls
-Eliminating variables from \(F(q)=(a,s,c)\) yields the cubic
+Eliminating \(q_2\) from \(F_2=c\) and then \(q_1\) from \((F_0,F_1)=(a,s)\) produces the cubic constraint
+\begin{equation}
+A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0,
+\tag{7.2}
+\end{equation}
+where
 \[
-A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0
+A=-c s^3+s^2+18 a c s-27 a^2 c^2-16 a,\quad
+B=3 c s-4,\quad
+C=2c.
 \]
-with \(A=-cs^3+s^2+18acs-27a^2c^2-16a\), \(B=3cs-4\), \(C=2c\). Zeros of \(A\) with \(B\neq 0\) force \(|q_0|\to\infty\).
+If \(A\to 0\) with \(B\neq 0\), Vieta’s formulas force at least one root with \(|q_0|\to\infty\).
 
-**Forward wall.** At \((a,s,c)=(0,\tfrac12,2)\), \(A=0\) and \(\partial_s A=-\tfrac12\neq 0\). IFT produces an open set \(U_+\) of transverse labels with a finite **upper** end \(s=\beta(a,c)\). (Matches the explicit curve (6.1) at \((0,2)\).)
+---
 
-**Backward wall.** At \((a,s,c)=(\tfrac1{54},\tfrac12,2)\),
+## 8. Theorem F — Escape walls and deficiency indices \((\infty,\infty)\)
+
+**Proposition 8.1 (forward wall).**  
+At \((a,s,c)=(0,\tfrac12,2)\) one has \(A=0\) and \(\partial_s A=-\tfrac12\neq 0\). By the implicit function theorem there exist a neighborhood \(U_+\ni(0,2)\) and a \(C^\infty\) function \(\beta:U_+\to\mathbb{R}\) with \(\beta(0,2)=\tfrac12\) and \(A(\beta(a,c);a,c)=0\). Along the associated infinite root branch of (7.2), \(\|q\|\to\infty\) as \(s\to\beta(a,c)^-\). Hence every nearby orbit on that branch has a **finite upper** \(F_1\)-end. (The explicit curve (6.1) is the case \((a,c)=(0,2)\).)
+
+**Proposition 8.2 (backward wall).**  
+At \(a=\tfrac1{54}\), \(c=2\),
 \[
-A=-\frac{(2s-1)(3s^2-1)}{3},
-\qquad
-\partial_s A(\tfrac12)=\tfrac16>0,
-\qquad
-B(\tfrac12)=-1.
+A\bigl(s;\tfrac1{54},2\bigr)=-\frac{(2s-1)(3s^2-1)}{3},
 \]
-For \(s=\tfrac12+h\), \(h\downarrow 0^+\), large roots \(q_0=\pm\sqrt{6/h}+O(1)\) give \(\|q\|\to\infty\). IFT yields an open set \(U_-\) of finite **lower** ends \(s=\alpha(a,c)\).  
-CAS: `cas_backward_incomplete_wall_A001.json`.
+so \(A(\tfrac12)=0\), \(\partial_s A(\tfrac12)=\tfrac16>0\), and \(B(\tfrac12)=-1\neq 0\). For \(s=\tfrac12+h\) with \(h\downarrow 0^+\,\) the cubic admits large real roots \(q_0=\pm\sqrt{6/h}+O(1)\), and the fiber equations reconstruct real \((q_1,q_2)\) with \(\|q\|\to\infty\). By IFT there is an open \(U_-\ni(\tfrac1{54},2)\) and a wall \(\alpha:U_-\to\mathbb{R}\) of **finite lower** \(F_1\)-ends. (Machine check: `cas_backward_incomplete_wall_A001.json`.)
 
-**Theorem F.**  
-(1) \(\mathrm{Leb}_3(\{T_+<\infty\})>0\) and \(\mathrm{Leb}_3(\{T_->-\infty\})>0\) (images of open flow-box slabs under local inverses of \(F\)).  
-(2) \((n_+,n_-)=(\infty,\infty)\).
+**Lemma 8.3 (positive measure).**  
+\(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\) and \(\mathrm{Leb}_3(\{T_-^{X_1}>-\infty\})>0\).
 
-**Proof of (2).** Transverse cutoffs \(\chi\in C_c^\infty(U_\pm)\) give \(L^2\) deficiency functions
-\begin{align*}
-u_-(a,s,c)&=\chi(a,c)\,e^{s-\beta(a,c)}
-&&\text{near upper walls,}
-&&(H^*+i)u_-=0,\\
-u_+(a,s,c)&=\chi(a,c)\,e^{-(s-\alpha(a,c))}
-&&\text{near lower walls,}
-&&(H^*-i)u_+=0.
-\end{align*}
-Varying \(\chi\) over infinite-dimensional subspaces of \(L^2(U_\pm)\) yields \(n_\pm=\infty\). Separability caps the dimensions at \(\aleph_0\). Full write-up: `G4-P1-orbit-measure-deficiency.md`. ∎
+*Proof.* Let \(V_+\subset U_+\times\mathbb{R}\) be a nonempty open slab of points \((a,s,c)\) with \(s\in(\beta(a,c)-\delta,\beta(a,c))\) for small \(\delta>0\). On \(V_+\) a continuous local inverse branch of \(F\) exists and is a \(C^1\) diffeomorphism onto its image (7.1). That image is open of positive Lebesgue measure and lies in \(\{T_+<\infty\}\). The same argument with a slab just above \(\alpha\) on \(U_-\) gives positive measure for \(\{T_->-\infty\}\). ∎
+
+**Lemma 8.4 (model deficiency functions).**  
+On an orbit interval with a finite upper end \(\beta\) (resp. lower end \(\alpha\)), the functions of \(s\) proportional to \(e^{s-\beta}\) (resp. \(e^{-(s-\alpha)}\)) solve \((-i\partial_s)^* u=\mp i\,u\) in the distributional sense on the open interval and are square-integrable near the finite end [2, §X.1].
+
+**Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
+
+**Proof.**  
+Fix a nonempty open relatively compact \(W_+\Subset U_+\) and \(\chi\in C_c^\infty(W_+)\). In flow-box coordinates define
+\begin{equation}
+u_-(a,s,c)
+:=
+\chi(a,c)\,e^{s-\beta(a,c)}
+\cdot
+\mathbf{1}_{(\beta(a,c)-\delta,\beta(a,c))}(s)
+\tag{8.1}
+\end{equation}
+for small \(\delta>0\) so that the indicator stays in the local chart. Then \(u_-\in L^2(\mathbb{R}^3)\) by (7.1) and exponential decay as \(s\to\beta^-\), and \((H^*+i)u_-=0\). The linear map \(\chi\mapsto u_-\) is injective on an infinite-dimensional subspace of \(L^2(W_+)\), hence \(n_-=\infty\).
+
+Likewise, with \(W_-\Subset U_-\) and
+\begin{equation}
+u_+(a,s,c)
+:=
+\chi(a,c)\,e^{-(s-\alpha(a,c))}
+\cdot
+\mathbf{1}_{(\alpha(a,c),\alpha(a,c)+\delta)}(s),
+\tag{8.2}
+\end{equation}
+one obtains \((H^*-i)u_+=0\) and \(n_+=\infty\).
+
+Since \(L^2(\mathbb{R}^3)\) is separable, both dimensions equal \(\aleph_0\). ∎
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
-**Proof.** Immediate from \(n_-\ge 1\) (or \(n_+\ge 1\)) in Theorem F. No general “incompleteness ⇒ non-ESS for every div-free field” lemma is used. ∎
+**Proof.** \(n_-\ge 1\) (or \(n_+\ge 1\)) by Theorem F. ∎
 
-**Corollary (extensions).** Since \(n_+=n_-=\infty\), von Neumann’s theorem supplies a continuum of self-adjoint extensions. The polynomial CCR/Poisson data do not select a preferred extension; strong CCR after extension remains open.
+**Corollary 8.5 (extensions).**  
+von Neumann’s theorem: self-adjoint extensions exist iff \(n_+=n_-\). Here both are infinite, so there is a continuum of self-adjoint extensions. The polynomial Poisson/CCR data of Theorems B–C do not select a preferred extension. Strong CCR after extension is open.
 
-**Erratum.** The v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn**. It ignored the open backward-incomplete family and would have incorrectly implied *no* self-adjoint extension.
+**Erratum.** The v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn**. It omitted the backward wall (Proposition 8.2) and would have incorrectly implied the absence of self-adjoint extensions.
 
 ---
 
@@ -321,7 +350,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [2] M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press, 1975.  
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287–330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299–306.  
-[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space (see release v0.3.0).  
+[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21477350](https://doi.org/10.5281/zenodo.21477350) (v0.3.0); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
 [8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19–20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  

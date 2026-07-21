@@ -52,7 +52,11 @@ python scripts/cas/verify_F0_zero_incomplete_sheet_A001.py
 
 ## 4. Pre-submit human
 
-- [ ] Author read-through  
-- [ ] MD → PDF  
-- [ ] arXiv endorsement if needed  
+- [x] Self-contained E–F proofs in draft + LaTeX  
+- [x] PDF: `docs/notes/A001-arxiv.pdf` (6 pp.)  
+- [x] Zenodo v0.3.0 DOI `10.5281/zenodo.21477350` frozen in CITATION/draft  
+- [x] Endorsement blurb: `A001-endorsement-request.md`  
+- [ ] Author read-through of PDF  
+- [ ] arXiv account + endorsement  
+- [ ] Upload PDF (primary math.FA)  
 - [ ] After arXiv ID: update CITATION.cff  

@@ -13,7 +13,10 @@ Alpöge–Fable Keller seed (restated) admits Poisson/Weyl lifts; dual transport
 - `docs/validation/G4-X1-incompleteness.md`  
 - CAS: X1 curve, forward IFT, backward wall, sheet, anchors  
 
-## DOIs
+## DOIs / submit files
 - Concept: `10.5281/zenodo.21474351`  
-- Superseded freeze: v0.2.2 `10.5281/zenodo.21476665` (pair claim withdrawn)  
-- Current tag: **v0.3.0**
+- **v0.3.0:** `10.5281/zenodo.21477350`  
+- Superseded: v0.2.2 `10.5281/zenodo.21476665` (pair withdrawn)  
+- **PDF:** `docs/notes/A001-arxiv.pdf`  
+- **TeX:** `docs/notes/A001-arxiv.tex`  
+- Endorsement email: `docs/notes/A001-endorsement-request.md`

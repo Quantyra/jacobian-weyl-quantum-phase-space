@@ -2,7 +2,7 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Release:** [v0.3.0](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0)  
-**DOI:** concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (v0.3.0 version DOI after Zenodo ingest; **do not use v0.2.2 pair claim**)
+**DOI:** [10.5281/zenodo.21477350](https://doi.org/10.5281/zenodo.21477350) (v0.3.0; concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); **ignore v0.2.2 pair claim**)
 
 ---
 
@@ -15,10 +15,11 @@ Theorems A–F: Alpöge–Fable seed **restated**; Poisson/Weyl lifts; \(X_1\) i
 
 | Doc | Role |
 |-----|------|
-| **[A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)** | **Submit this** (polish → PDF/arXiv) |
-| [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze, pre-submit steps |
-| [A001-submission-bundle.md](docs/notes/A001-submission-bundle.md) | Packing list for referees |
-| [A001-minimum-result-note.md](docs/notes/A001-minimum-result-note.md) | Compact living ledger |
+| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Submit this PDF** |
+| [A001-arxiv.tex](docs/notes/A001-arxiv.tex) / [draft.md](docs/notes/A001-arxiv-draft.md) | LaTeX source / long form |
+| [A001-endorsement-request.md](docs/notes/A001-endorsement-request.md) | Endorser email blurb |
+| [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze |
+| [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) | Withdrawn \((0,\infty)\) |
 
 ---
 

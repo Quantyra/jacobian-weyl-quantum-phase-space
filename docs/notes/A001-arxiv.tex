@@ -1,0 +1,224 @@
+﻿\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\title{Poisson and Weyl lifts of the Alp\"oge--Fable Keller map\\
+and nonunique self-adjoint realizations of a dual transport operator}
+\author{Daniel Eric Fredriksen\\
+Quantyra Inc.\\
+\texttt{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
+\date{21 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fable credited): \(\det DF\equiv -2\) and a three-point collision. Theorem~A restates those finite identities (independently dual-CAS and Lean checked); novelty is Theorems~B--F. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The matrix \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The operators \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\).
+
+We prove \(X_1\) is incomplete by an explicit integral curve escaping as \(t\to\tfrac12^-\). In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open transverse families with finite upper and lower \(F_1\)-ends yield square-integrable deficiency functions, so
+\[
+(n_+,n_-)=(\infty,\infty)
+\]
+for \(H=-iX_1\). Hence \(H\) is not essentially self-adjoint, yet von~Neumann's theorem supplies infinitely many self-adjoint extensions; the algebraic CCR data select none of them.
+
+We claim no unitary gates, channels, computational advantage, or preferred physical extension.
+\end{abstract}
+
+\noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
+\textbf{Keywords:} Jacobian conjecture, Keller map, cotangent lift, Weyl algebra, essential self-adjointness, deficiency indices.\\
+\textbf{Software:} concept DOI 10.5281/zenodo.21474351; v0.3.0 DOI 10.5281/zenodo.21477350.
+
+\paragraph{Erratum.}
+Release v0.2.2 claimed \((n_+,n_-)=(0,\infty)\). An open backward-incomplete family forces \(n_+=\infty\) as well; the corrected pair is \((\infty,\infty)\).
+
+\section{Introduction}
+
+\subsection{Motivation and attribution}
+A \emph{Keller map} is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19--20 July 2026, Levent Alp\"oge announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv -2\) and a three-point collision, crediting the AI system Fable~\cite{Alpoge2026}; independent checks and Lean formalizations followed promptly (e.g.\ Cureton~\cite{Cureton2026}; Speyer~\cite{Speyer2026}). \textbf{This paper does not claim discovery of \(F\).} Repository atlas label: A001.
+
+The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and dual transport fields \(X_j\) are standard when \(\det J\) is a nonzero constant. We ask whether algebraic preservation of Poisson/CCR data selects a unique self-adjoint \(L^2\) realization of a dual transport generator on \(C_c^\infty(\mathbb{R}^3)\).
+
+\subsection{Main results}
+\begin{enumerate}
+\item[(A)] Restatement: \(\det DF\equiv -2\) and the three-point collision hold.
+\item[(B)] \(\Phi\) is a polynomial Poisson map on generators and is non-injective.
+\item[(C)] Dual fields commute and are divergence-free; \(H_j=-iX_j\) is symmetric on \(C_c^\infty\).
+\item[(D)] \(X_1\) is incomplete via an explicit escaping integral curve.
+\item[(E)] \(H=-iX_1\) is not essentially self-adjoint.
+\item[(F)] \((n_+,n_-)=(\infty,\infty)\); infinitely many self-adjoint extensions exist, none selected by the algebraic data.
+\end{enumerate}
+
+\subsection{Related work}
+Jacobian conjecture background: Keller~\cite{Keller1939}, Bass--Connell--Wright~\cite{BCW1982}. Deficiency indices: Reed--Simon~\cite{RS2}. Chernoff~\cite{Chernoff1973} concerns \emph{sufficiency} criteria for ESS and is not used as a necessity theorem here.
+
+\section{Setup}
+\begin{equation}
+\begin{aligned}
+F_0&=(1+xy)^3 z + y^2(1+xy)(4+3xy),\\
+F_1&=y + 3x(1+xy)^2 z + 3xy^2(4+3xy),\\
+F_2&=2x - 3x^2 y - x^3 z.
+\end{aligned}
+\tag{2.1}
+\end{equation}
+Write \(J=DF\), \(B:=J^{-T}\), and
+\begin{equation}
+X_j:=\sum_{k=0}^{2} B_{jk}(q)\,\partial_{q_k}.
+\tag{2.2}
+\end{equation}
+Collision data:
+\begin{equation}
+F\bigl(0,0,-\tfrac14\bigr)
+=F\bigl(1,-\tfrac32,\tfrac{13}2\bigr)
+=F\bigl(-1,\tfrac32,\tfrac{13}2\bigr)
+=\bigl(-\tfrac14,0,0\bigr).
+\tag{2.4}
+\end{equation}
+
+\section{Theorem A --- Seed identities}
+\begin{theorem}[A]
+(1) \(\det DF\equiv -2\).
+(2) The identities~\eqref{eq:coll} hold in characteristic not \(2\).
+(3) Hence \(F\) is not injective.
+\end{theorem}
+\setcounter{equation}{3}
+\begin{equation}
+\label{eq:coll}
+F\bigl(0,0,-\tfrac14\bigr)
+=F\bigl(1,-\tfrac32,\tfrac{13}2\bigr)
+=F\bigl(-1,\tfrac32,\tfrac{13}2\bigr)
+=\bigl(-\tfrac14,0,0\bigr).
+\end{equation}
+\noindent\emph{Proof sketch.} Expand \(\det J\); evaluate at the three rational points. Dual CAS and Lean formalization~\cite{FredriksenLean}.
+
+\section{Theorem B --- Poisson lift}
+\begin{theorem}[B]
+Let \(\Phi(q,p)=(F(q),B(q)p)\). Then \(B\) is polynomial, \(JB^T=I\), the generator Poisson brackets \(\{Q_i,Q_j\}=\{P_i,P_j\}=0\), \(\{Q_i,P_j\}=\delta_{ij}\) hold, and \(\Phi\) is non-injective via~\eqref{eq:coll}.
+\end{theorem}
+\noindent\emph{Proof sketch.} Standard cotangent lift for constant \(\det J\); non-injectivity lifts from collisions using \(BJ^T=I\). CAS regression tests in the software artifact~\cite{FredriksenSoft}.
+
+\section{Theorem C --- Dual fields and Piola}
+\begin{theorem}[C]
+Let \(X_j=\sum_k B_{jk}\partial_{q_k}\). Then \(X_j(F_i)=\delta_{ij}\), \([X_i,X_j]=0\), \(\operatorname{div} X_j=0\), and \(H_j:=-iX_j\) is symmetric on \(C_c^\infty(\mathbb{R}^3)\) with \([F_i,H_j]=i\delta_{ij}\).
+\end{theorem}
+\begin{proof}
+\(X_j(F_i)=(JB^T)_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe, \([X_i,X_j]=0\).
+\(\operatorname{Cof}(DF)=(\det DF)B\). Piola gives \(\operatorname{Div}\operatorname{Cof}(DF)=0\); constant \(\det DF=-2\) implies \(\operatorname{Div} B=0\).
+Symmetry of \(-iX\) when \(\operatorname{div} X=0\) is standard.
+\end{proof}
+
+\section{Theorem D --- Incompleteness of \(X_1\)}
+\begin{theorem}[D]
+The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\).
+\end{theorem}
+\begin{proof}
+For \(t\in[0,\tfrac12)\), with continuous extension \(\gamma(0)=(1,0,0)\),
+\begin{equation}
+\begin{aligned}
+q_0(t)&=\frac{-2t-\sqrt{1-2t}+1}{t(2t-1)},\\
+q_1(t)&=t,\\
+q_2(t)&=t^2\bigl(2t-3\sqrt{1-2t}-1\bigr).
+\end{aligned}
+\tag{6.1}
+\end{equation}
+On \((0,\tfrac12)\), \(F(\gamma(t))=(0,t,2)\) and \(\gamma'=X_1\circ\gamma\) (CAS-verified identities). As \(t=\tfrac12-\varepsilon\), \(q_0=\sqrt{2/\varepsilon}+O(1)\to+\infty\). Thus the forward maximal time from \((1,0,0)\) is at most \(\tfrac12<\infty\).
+\end{proof}
+
+\section{Flow-box coordinates}
+Write \(H:=-iX_1\) and \(n_\pm:=\dim\ker(H^*\mp i)\) in the usual Reed--Simon convention \(n_+=\dim\ker(H^*-i)\).
+On local inverse sheets of \(F\), with \((a,s,c)=F(q)\),
+\begin{equation}
+\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
+\qquad
+X_1=\partial_s,
+\qquad
+H=-i\partial_s.
+\tag{7.1}
+\end{equation}
+Eliminating variables yields
+\begin{equation}
+A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0,
+\tag{7.2}
+\end{equation}
+with \(A=-cs^3+s^2+18acs-27a^2c^2-16a\), \(B=3cs-4\), \(C=2c\). If \(A\to 0\) and \(B\neq 0\), then some \(|q_0|\to\infty\).
+
+\section{Theorems E--F --- Deficiency indices}
+\begin{proposition}[Forward wall]
+At \((0,\tfrac12,2)\), \(A=0\) and \(\partial_s A=-\tfrac12\neq 0\). IFT yields open \(U_+\ni(0,2)\) and a finite upper wall \(\beta:U_+\to\mathbb{R}\).
+\end{proposition}
+
+\begin{proposition}[Backward wall]
+At \(a=\tfrac1{54}\), \(c=2\), \(A=-\frac{(2s-1)(3s^2-1)}{3}\), so \(A(\tfrac12)=0\), \(\partial_s A(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\). For \(s=\tfrac12+h\), \(h\downarrow 0^+\), large roots \(q_0=\pm\sqrt{6/h}+O(1)\) give \(\|q\|\to\infty\). IFT yields open \(U_-\) of finite lower walls \(\alpha\).
+\end{proposition}
+
+\begin{lemma}[Positive measure]
+\(\mathrm{Leb}_3(\{T_+<\infty\})>0\) and \(\mathrm{Leb}_3(\{T_->-\infty\})>0\).
+\end{lemma}
+\begin{proof}
+Open flow-box slabs below \(\beta\) (resp.\ above \(\alpha\)), pushed by local inverses of \(F\), have positive Lebesgue measure in \(q\)-space.
+\end{proof}
+
+\begin{theorem}[F]
+\((n_+,n_-)=(\infty,\infty)\).
+\end{theorem}
+\begin{proof}
+For \(\chi\in C_c^\infty(W_+)\), \(W_+\Subset U_+\), set
+\[
+u_-(a,s,c)=\chi(a,c)\,e^{s-\beta(a,c)}\,\mathbf{1}_{(\beta-\delta,\beta)}(s).
+\]
+Then \(u_-\in L^2\) and \((H^*+i)u_-=0\). Varying \(\chi\) gives \(n_-=\infty\).
+Similarly
+\[
+u_+(a,s,c)=\chi(a,c)\,e^{-(s-\alpha(a,c))}\,\mathbf{1}_{(\alpha,\alpha+\delta)}(s)
+\]
+gives \(n_+=\infty\). Separability yields countably infinite dimensions~\cite{RS2}.
+\end{proof}
+
+\begin{theorem}[E]
+\(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
+\end{theorem}
+\begin{proof}
+Immediate from \(n_\pm\ge 1\) in Theorem~F.
+\end{proof}
+
+\begin{corollary}[Extensions]
+Since \(n_+=n_-=\infty\), infinitely many self-adjoint extensions exist. Algebraic CCR/Poisson data do not select a preferred extension.
+\end{corollary}
+
+\paragraph{Erratum.}
+The v0.2.2 claim \((0,\infty)\) is withdrawn.
+
+\section{Non-claims}
+No unitary gate, channel, CP map, or computational advantage. No ESS claim for \(H_0,H_2\). No strong CCR after extensions. No discovery claim for \(F\). No preferred physical extension.
+
+\section{Conclusion}
+Starting from the Alp\"oge--Fable Keller map, Poisson/Weyl lifts exist, \(X_1\) is incomplete, and \(H=-iX_1\) has deficiency indices \((\infty,\infty)\): not ESS, infinitely many self-adjoint extensions, none preferred by algebraic data.
+
+\begin{thebibliography}{99}
+\bibitem{Chernoff1973}
+P.~R. Chernoff, Essential self-adjointness of powers of generators of hyperbolic equations, \emph{J.\ Funct.\ Anal.} \textbf{12} (1973), 401--414.
+\bibitem{RS2}
+M.~Reed and B.~Simon, \emph{Methods of Modern Mathematical Physics II}, Academic Press, 1975.
+\bibitem{BCW1982}
+H.~Bass, E.~H. Connell, and D.~Wright, The Jacobian conjecture: reduction of degree and formal expansion of the inverse, \emph{Bull.\ Amer.\ Math.\ Soc.\ (N.S.)} \textbf{7} (1982), 287--330.
+\bibitem{Keller1939}
+O.-H. Keller, Ganze Cremona-Transformationen, \emph{Monatsh.\ Math.\ Phys.} \textbf{47} (1939), 299--306.
+\bibitem{FredriksenSoft}
+D.~E. Fredriksen, EXOTIC-CCR A001 software artifact, Zenodo (2026), DOI 10.5281/zenodo.21477350.
+\bibitem{FredriksenLean}
+D.~E. Fredriksen, exotic-ccr-lean, \\texttt{https://github.com/Quantyra/exotic-ccr-lean}.
+\bibitem{Alpoge2026}
+L.~Alp\"oge, announcement that the Jacobian conjecture is false in dimension~3, public post, 19--20 July 2026 (credits Fable); see also software provenance in~\cite{FredriksenSoft}.
+\bibitem{Cureton2026}
+D.~Cureton, independent Lean~4 formalization, \\texttt{https://github.com/deancureton/jacobian}.
+\bibitem{Speyer2026}
+D.~Speyer, The new counterexample to the Jacobian conjecture, Secret Blogging Seminar, 20 July 2026.
+\end{thebibliography}
+
+\end{document}
+
+
