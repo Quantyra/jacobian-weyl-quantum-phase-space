@@ -23,10 +23,10 @@ keywords:
   - dual vector field
   - deficiency indices
 software_doi_concept: "10.5281/zenodo.21474351"
-software_doi_version: "10.5281/zenodo.21477350"
+software_doi_version: "pending-v0.3.2-zenodo"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.1: (n+,n-)=(inf,inf) via whole-orbit deficiency vectors (no interior s-cutoffs). v0.2.2 (0,inf) withdrawn; v0.3.0 indicator proof withdrawn."
+claims_freeze: "A001 v0.3.2: Theorem F theorem-grade Dom(H*)+saturation+analytic wall IFT; (n+,n-)=(inf,inf). Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
 # Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -253,83 +253,150 @@ If \(A\to 0\) with \(B\neq 0\), Vieta’s formulas force at least one root with 
 
 ## 8. Theorem F — Escape walls and deficiency indices \((\infty,\infty)\)
 
-**Per-orbit dictionary** (standard half-line calculus [2, §X.1]).  
-On a single orbit interval \((\ell,r)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\):
-- finite **upper** end \(r<\infty\) ⇒ \(\dim\ker(h^*+i)=1\) (model \(e^{s-r}\));
-- finite **lower** end \(\ell>-\infty\) ⇒ \(\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\));
-- both finite ⇒ \((1,1)\); neither finite ⇒ \((0,0)\).
+### 8.0 Per-orbit dictionary
+On one orbit interval \((\ell,r)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\) [2, §X.1]:
+- finite upper end \(r<\infty\) ⇒ \(\dim\ker(h^*+i)=1\) (model \(e^{s-r}\), square-integrable on \((-\infty,r)\) after unitary shift);
+- finite lower end \(\ell>-\infty\) ⇒ \(\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\));
+- both finite ⇒ \((1,1)\); neither ⇒ \((0,0)\).
 
-**Proposition 8.1 (forward wall).**  
-At \((a,s,c)=(0,\tfrac12,2)\): \(A=0\), \(\partial_s A=-\tfrac12\neq 0\). IFT yields open \(U_+\ni(0,2)\) and \(C^\infty\) upper wall \(\beta:U_+\to\mathbb{R}\), \(\beta(0,2)=\tfrac12\). Writing \(h=\beta-s\downarrow 0^+\) and \(q_0=r/\sqrt h\), the cubic (7.2) has leading balance \(A_s r^3+B r=0\); at the base, \(A_s=-\tfrac12\), \(B=-1\), so nonzero roots \(r=\pm\sqrt 2\) are simple. A second IFT in \(\tau=\sqrt h\) produces two real large-\(q_0\) branches for \(s<\beta(a,c)\) on a possibly smaller open \(U_+\). Completing \((q_1,q_2)\) from \(F_2=c\) and \(F_1=s\) (denominators nonzero for large \(|q_0|\)) gives a real preimage with \(\|q\|\to\infty\) as \(s\to\beta^-\). Thus selected orbits have a **finite upper** \(F_1\)-end. (Curve (6.1) is the case \((0,2)\); CAS regression: `cas_orbit_measure_IFT_A001.json`.)
+### 8.1 Branch reconstruction from the elimination cubic
+When \(x=q_0\neq 0\) solves (7.2) and the indicated denominators are nonzero, set
+\begin{equation}
+\begin{aligned}
+q_1
+&=
+\frac{9 a c x^2-3 c s x-3 c-s x^2+6 x}{x\bigl((3 c s-4)x+3 c\bigr)},\\
+q_2
+&=
+\frac{2x-3 x^2 q_1-c}{x^3}.
+\end{aligned}
+\tag{8.0}
+\end{equation}
+A direct (polynomial) substitution yields \(F(x,q_1,q_2)=(a,s,c)\) wherever defined. Thus real roots of (7.2) with nonzero denominators reconstruct genuine real preimages. (CAS may regress this identity; it is algebraic, not numeric.)
 
-**Proposition 8.2 (backward wall).**  
-At \(a=\tfrac1{54}\), \(c=2\),
+### 8.2 Forward wall (analytic open family)
+**Proposition 8.1.**  
+There is a nonempty open \(U_+\subset\mathbb{R}^2\) and a \(C^\infty\) map \(\beta:U_+\to\mathbb{R}\) such that for every \((a,c)\in U_+\) a selected real inverse branch of \(F\) exists on an \(s\)-interval with finite upper end \(s=\beta(a,c)\) and \(\|q\|\to\infty\) as \(s\to\beta^-\).
+
+*Proof.* At the base \(p_\star=(a,s,c)=(0,\tfrac12,2)\): \(A(p_\star)=0\) and \(A_s:=\partial_s A(p_\star)=-\tfrac12\neq 0\), while \(B(p_\star)=-1\neq 0\). By the IFT there is a neighborhood \(U_0\ni(0,2)\) and \(\beta\in C^\infty(U_0)\) with \(\beta(0,2)=\tfrac12\) and \(A(\beta(a,c);a,c)=0\).
+
+For the **escaping** side, set \(h=\beta(a,c)-s>0\) small and \(x=r/\sqrt h\). Substitute into (7.2), multiply by \(h^{3/2}\), and pass to the limit \(h\downarrow 0\). Because \(A(\beta)=0\),
+\[
+A(\beta-h)= -A_s(\beta)\,h+O(h^2)
+\]
+along the wall, the leading balance is
+\begin{equation}
+\bigl(-A_s(\beta;a,c)\bigr)\,r^3+B(\beta;c)\,r=0.
+\tag{8.1a}
+\end{equation}
+At \(p_\star\), \(-A_s=\tfrac12\) and \(B=-1\), so \(r\bigl(\tfrac12 r^2-1\bigr)=0\) and the nonzero roots \(r=\pm\sqrt 2\) are **simple** (\(3(-A_s)r^2+B=-2B\neq 0\)). By the IFT in the variable \(\tau=\sqrt h\) (parameters \((a,c)\)), each simple root continues to a \(C^\infty\) branch \(r_\pm(a,c,\tau)\) for \((a,c)\) in a possibly smaller open \(U_+\subset U_0\) and \(\tau\in(0,\tau_0)\). Then \(q_0=r_\pm/\tau\to\infty\) as \(\tau\downarrow 0\), and (8.0) produces real \((q_1,q_2)\) for small \(\tau\) (denominators \(\sim 3c q_0\neq 0\)). Hence \(\|q\|\to\infty\) as \(s\to\beta^-\) on an open transverse set. ∎
+
+(The explicit curve (6.1) is the special fibre \((a,c)=(0,2)\). JSON/Python anchors are regression checks only.)
+
+### 8.3 Backward wall (analytic open family)
+**Proposition 8.2.**  
+There is a nonempty open \(U_-\) and \(\alpha\in C^\infty(U_-)\) such that for \((a,c)\in U_-\) a selected real branch exists for \(s>\alpha(a,c)\) with \(\|q\|\to\infty\) as \(s\downarrow\alpha^+\).
+
+*Proof.* At \(a=\tfrac1{54}\), \(c=2\),
 \[
 A\bigl(s;\tfrac1{54},2\bigr)=-\frac{(2s-1)(3s^2-1)}{3},
 \]
-so \(A(\tfrac12)=0\), \(\partial_s A(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\). With \(h=s-\tfrac12\downarrow 0^+\) and \(q_0=r/\sqrt h\), the leading balance gives simple roots \(r=\pm\sqrt 6\). IFT in \(\tau=\sqrt h\) yields two real large-\(q_0\) branches for \(s>\alpha(a,c)\) on open \(U_-\ni(\tfrac1{54},2)\), with \(\|q\|\to\infty\) as \(s\downarrow\alpha^+\). Thus selected orbits have a **finite lower** \(F_1\)-end. (Numeric regression only: `cas_backward_incomplete_wall_A001.json`.)
+so \(A(\tfrac12)=0\), \(A_s(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\). IFT gives a wall \(\alpha\) near \(\tfrac12\). Set \(h=s-\alpha>0\) and \(x=r/\sqrt h\). The leading balance is
+\begin{equation}
+A_s(\alpha;a,c)\,r^3+B(\alpha;c)\,r=0.
+\tag{8.1b}
+\end{equation}
+At the base, \(r=\pm\sqrt 6\) are simple. IFT in \(\tau=\sqrt h\) yields open \(U_-\) and real large-\(q_0\) branches; reconstruct via (8.0). ∎
 
-**Lemma 8.3 (saturated inverse sheets).**  
-Fix a nonempty open relatively compact \(W_+\Subset U_+\) and a smooth local cross-section \(\Sigma_+\) of the selected large-\(q_0\) branch with \(s=\beta-\varepsilon_0\) for small \(\varepsilon_0>0\). Because \(X_1 F_1=1\), the flow of \(X_1\) is a global time-shift in the \(s\)-coordinate on the maximal existence interval. Saturating \(\Sigma_+\) under the flow produces an open invariant set \(\Omega_+\) and a \(C^\infty\) diffeomorphism
+(Numeric script `cas_backward_incomplete_wall_A001.json` is a regression check only.)
+
+### 8.4 Saturated maximal sheets
+**Lemma 8.3.**  
+Let \(W_+\Subset U_+\) be nonempty, open, and relatively compact. On the selected large-\(q_0\) forward branch, pick \(\varepsilon_0>0\) small and the smooth cross-section
 \[
-\Psi_+:D_+\to\Omega_+,
-\qquad
+\Sigma_+=\bigl\{q:F(q)=(a,\beta(a,c)-\varepsilon_0,c),\;(a,c)\in W_+\bigr\}
+\]
+(embedded by (8.0) and \(\det DF\neq 0\)). Let \(\phi_t\) be the (maximal) flow of the smooth vector field \(X_1\). Because \(X_1 F_1=1\), along any integral curve one has \(F_1(\phi_t(q))=F_1(q)+t\) on the existence interval. Define
+\[
 D_+=\bigl\{(a,c,s):(a,c)\in W_+,\;\ell_+(a,c)<s<\beta(a,c)\bigr\},
 \]
-with \(F\circ\Psi_+=(a,s,c)\), where \((\ell_+(a,c),\beta(a,c))\) is the **entire maximal** \(s\)-interval of that orbit (\(\ell_+\) may be finite or \(-\infty\)).  
-An analogous saturation \(\Psi_-:D_-\to\Omega_-\) exists for \(W_-\Subset U_-\) with maximal intervals \((\alpha(a,c),r_-(a,c))\).  
-Injectivity of \(\Psi_\pm\) follows from uniqueness of ODE solutions and strict monotonicity of \(F_1\) along the flow; the constant Jacobian gives the measure identity (7.1) on \(\Omega_\pm\).
+where \((\ell_+(a,c),\beta(a,c))\) is the **maximal** open \(s\)-interval on which the selected branch continues as a \(C^\infty\) immersed orbit in \(\mathbb{R}^3\) (equivalently: the projection of the maximal existence interval of \(\phi_t\) through \(\Sigma_+\), reparameterized by \(F_1\)).
 
-**Lemma 8.4 (whole-orbit deficiency vectors — no interior \(s\)-cutoff).**  
-For \(\chi\in C_c^\infty(W_+)\) define \(u_-\) on \(\Omega_+\) by
+Standard ODE theory: the flow domain is open in \(\mathbb{R}\times\mathbb{R}^3\); \(\phi\) is \(C^\infty\); uniqueness gives injectivity of
+\[
+\Psi_+:D_+\to\mathbb{R}^3,
+\qquad
+\Psi_+(a,c,s)=\phi_{s-(\beta-\varepsilon_0)}(q_\Sigma(a,c)),
+\]
+where \(q_\Sigma(a,c)\in\Sigma_+\). The image \(\Omega_+:=\Psi_+(D_+)\) is open (invariance of domain / local diffeo from \(\det DF\neq 0\) and flowbox theorem). By construction \(F\circ\Psi_+=(a,s,c)\) and \(\Omega_+\) is \(X_1\)-invariant. The upper endpoint \(s\to\beta^-\) is the wall of Proposition 8.1, hence \(\|\Psi_+\|\to\infty\); therefore \(\beta\) is not attained in \(\mathbb{R}^3\).
+
+If the lower maximal time \(\ell_+\) is **finite**, maximality of the ODE solution forces \(\|\Psi_+\|\to\infty\) as \(s\downarrow\ell_+\) as well (escape from every compact). If \(\ell_+=-\infty\), the orbit is backward-complete.
+
+An identical saturation produces \(\Psi_-:D_-\to\Omega_-\) for \(W_-\Subset U_-\) with maximal intervals \((\alpha(a,c),r_-(a,c))\). ∎
+
+### 8.5 Deficiency vectors in \(\operatorname{Dom}(H^*)\)
+**Lemma 8.4.**  
+For \(\chi\in C_c^\infty(W_+)\) define
 \begin{equation}
 u_-\bigl(\Psi_+(a,c,s)\bigr)
 :=
 \chi(a,c)\,e^{s-\beta(a,c)}
-\qquad
-\bigl(\ell_+(a,c)<s<\beta(a,c)\bigr),
-\tag{8.1}
+\quad\text{for all }s\in(\ell_+(a,c),\beta(a,c)),
+\tag{8.2}
 \end{equation}
-and \(u_-=0\) off \(\Omega_+\).  
-**No characteristic cutoff in \(s\)** is used: only the transverse cutoff \(\chi(a,c)\). Then
-\[
-\int_{\mathbb{R}^3}|u_-|^2\,\mathrm{d}q
-=
-\tfrac12\int_{W_+}|\chi|^2
-\Bigl(\int_{\ell_+}^{\beta}e^{2(s-\beta)}\,\mathrm{d}s\Bigr)
-\mathrm{d}a\,\mathrm{d}c
-\le
-\tfrac14\|\chi\|_{L^2(W_+)}^2,
-\]
-so \(u_-\in L^2(\mathbb{R}^3)\). For \(\varphi\in C_c^\infty(\mathbb{R}^3)\), integration by parts along orbits uses \(H=-i\partial_s\) and \(\operatorname{div} X_1=0\): the finite escape end \(s=\beta\) lies at spatial infinity (support of \(\varphi\) never meets it), and \(\chi\) vanishes near the lateral boundary of \(W_+\), so no boundary term arises. Hence \((H^*+i)u_-=0\). The map \(\chi\mapsto u_-\) is injective, so \(n_-=\infty\).
+and \(u_-:=0\) on \(\mathbb{R}^3\setminus\Omega_+\).  
+**No cutoff in the orbit coordinate \(s\)** appears—only the transverse factor \(\chi(a,c)\).
 
-Similarly, on \(\Omega_-\),
+*(i) Square-integrability.* By (7.1),
+\[
+\|u_-\|_2^2
+=
+\tfrac12\int_{W_+}|\chi(a,c)|^2
+\Bigl(\int_{\ell_+}^{\beta}e^{2(s-\beta)}\,\mathrm{d}s\Bigr)
+\mathrm{d}a\,\mathrm{d}c.
+\]
+The inner integral equals \(\tfrac12\bigl(1-e^{2(\ell_+-\beta)}\bigr)\le\tfrac12\), so \(u_-\in L^2(\mathbb{R}^3)\).
+
+*(ii) Distributional eigenvalue.* Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\). Then \(\operatorname{supp}\varphi\) is compact, hence meets each orbit in a **closed bounded** \(s\)-segment strictly inside \((\ell_+,\beta)\) whenever it meets \(\Omega_+\) (neither escape end lies in a compact of \(\mathbb{R}^3\)). On \(\Omega_+\), \(H=-i\partial_s\) and \(\operatorname{div} X_1=0\), so
+\[
+\int_{\mathbb{R}^3}u_-\,\overline{(H\varphi)}\,\mathrm{d}q
+=
+\int_{\mathbb{R}^3}(-i\partial_s u_-)\,\overline{\varphi}\,\mathrm{d}q
+=
+\int_{\mathbb{R}^3}(-i u_-)\,\overline{\varphi}\,\mathrm{d}q,
+\]
+with **no** interior jump terms and **no** boundary terms at \(\ell_+,\beta\) (they lie outside \(\operatorname{supp}\varphi\)). Off \(\Omega_+\), \(u_-=0\). The lateral boundary of \(W_+\) contributes nothing because \(\chi|_{\partial W_+}=0\). Therefore \(u_-\in\operatorname{Dom}(H^*)\) and \((H^*+i)u_-=0\).
+
+*(iii) Infinite dimension.* The linear map \(C_c^\infty(W_+)\ni\chi\mapsto u_-\) is injective, and \(L^2(W_+)\) is infinite-dimensional, so \(n_-=\infty\).
+
+*(iv) Lower wall.* On \(\Omega_-\) set
 \begin{equation}
 u_+\bigl(\Psi_-(a,c,s)\bigr)
 :=
 \chi(a,c)\,e^{-(s-\alpha(a,c))}
-\qquad
-\bigl(\alpha(a,c)<s<r_-(a,c)\bigr)
-\tag{8.2}
+\quad\text{for all }s\in(\alpha(a,c),r_-(a,c)),
+\tag{8.3}
 \end{equation}
-gives \(u_+\in L^2\), \((H^*-i)u_+=0\), and \(n_+=\infty\).
+zero off \(\Omega_-\). The same estimates give \(u_+\in L^2\), \(u_+\in\operatorname{Dom}(H^*)\), \((H^*-i)u_+=0\), and \(n_+=\infty\). ∎
 
-**Remark.** Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) (as in a previous draft) produce \(\delta\)-masses at artificial cross-sections and take the candidate **out** of \(\operatorname{Dom}(H^*)\). That construction is **withdrawn**.
+**Remark (withdrawn constructions).**  
+Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-masses at artificial cross-sections and exit \(\operatorname{Dom}(H^*)\). That v0.3.0 device is **withdrawn**.
 
+### 8.6 Theorems E–F
 **Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
 
-**Proof.** Lemmas 8.3–8.4 and Propositions 8.1–8.2. Separability of \(L^2(\mathbb{R}^3)\) caps both dimensions at \(\aleph_0\). ∎
+*Proof.* Propositions 8.1–8.2 and Lemmas 8.3–8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. ∎
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
-**Proof.** \(n_-\ge 1\) (or \(n_+\ge 1\)) by Theorem F. ∎
+*Proof.* \(n_\pm\ge 1\) by Theorem F. ∎
 
-**Corollary 8.5 (extensions).**  
-Since \(n_+=n_-=\infty\), von Neumann’s theorem yields a continuum of self-adjoint extensions. The polynomial Poisson/CCR data of Theorems B–C select none of them. Strong CCR after extension remains open.
+**Corollary 8.5.**  
+Since \(n_+=n_-=\infty\), von Neumann’s theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems B–C do not distinguish among these extensions. Strong CCR after extension remains open.
 
-**Conceptual point.** The same local-to-global gap that makes \(F\) a noninjective Keller map (constant nonzero Jacobian, yet incomplete dual flow) leaves the algebraic CCR lift underdetermined as a unique self-adjoint momentum.
+**Conceptual point.** Constant nonzero Jacobian with incomplete dual flow is the same local-to-global gap that makes \(F\) a noninjective Keller map; the algebraic lift therefore underdetermines a unique self-adjoint dual momentum.
 
-**Erratum.** v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn** (missed backward wall). v0.3.0 indicator cutoffs in \(s\) are **withdrawn** (not in \(\operatorname{Dom}(H^*)\)). Corrected proof: whole maximal orbits (8.1)–(8.2).
+**Errata.** v0.2.2 pair \((0,\infty)\) **withdrawn**. v0.3.0 interior \(s\)-cutoffs **withdrawn**. v0.3.1/v0.3.2: whole maximal orbits (8.2)–(8.3).
 
 ---
 

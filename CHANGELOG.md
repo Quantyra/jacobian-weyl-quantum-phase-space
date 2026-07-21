@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.3.2 — 2026-07-21
+
+### Theorem F (publication freeze candidate)
+- Analytic wall IFT with correct forward scaling \((-A_s)r^3+Br=0\)
+- Explicit algebraic branch reconstruction (8.0)
+- Saturated maximal-sheet lemma (ODE flow domain)
+- Dom(H*) integration-by-parts with compact-support endpoint control
+- PDF/TeX expanded; metadata version **0.3.2**
+- Numeric wall scripts labeled regression only
+
 ## v0.3.1 — 2026-07-21
 
 ### Critical proof repair (Theorem F)

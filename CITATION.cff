@@ -7,9 +7,8 @@ authors:
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
-# v0.2.2 (superseded pair claim): 10.5281/zenodo.21476665
-# v0.3.0 version DOI: 10.5281/zenodo.21477350
-version: 0.3.0
+# version DOI: update after Zenodo ingests tag v0.3.2
+version: 0.3.2
 date-released: 2026-07-21
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
@@ -17,15 +16,12 @@ license: Apache-2.0
 keywords:
   - jacobian-conjecture
   - alpoge-fable
-  - weyl-algebra
-  - poisson-geometry
-  - essential-self-adjointness
   - deficiency-indices
+  - essential-self-adjointness
   - exotic-ccr
-  - quantyra
 abstract: >-
-  Poisson/Weyl lifts of the Alpöge–Fable Keller seed (restated). Dual field X_1
-  incomplete; H=-i X_1 not ESS on C_c^infty(R^3) with deficiency indices
-  (n_+, n_-) = (infinity, infinity). Infinitely many self-adjoint extensions;
-  none preferred by algebraic CCR data. v0.2.2 pair (0, infinity) withdrawn.
-  No gates/channels/advantage. Paper: docs/notes/A001-arxiv-draft.md.
+  Poisson/Weyl lifts of the Alpöge–Fable Keller seed (restated). H=-i X_1 not ESS
+  on C_c^infty(R^3) with deficiency indices (infinity, infinity) via whole-orbit
+  deficiency vectors. Infinitely many self-adjoint extensions; none preferred by
+  algebraic CCR data. v0.2.2 pair (0,infinity) and v0.3.0 s-indicator proof withdrawn.
+  No gates/channels/advantage. Paper: docs/notes/A001-arxiv.pdf.

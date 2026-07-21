@@ -8,28 +8,21 @@
     }
   ],
   "license": "Apache-2.0",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "keywords": [
     "jacobian-conjecture",
     "alpoge-fable",
-    "keller-map",
-    "weyl-algebra",
-    "essential-self-adjointness",
     "deficiency-indices",
-    "quantyra",
-    "exotic-ccr"
+    "essential-self-adjointness",
+    "exotic-ccr",
+    "quantyra"
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/Quantyra/exotic-ccr-lean",
       "relation": "isSupplementedBy",
       "resource_type": "software"
-    },
-    {
-      "identifier": "10.5281/zenodo.21476665",
-      "relation": "isNewVersionOf",
-      "resource_type": "software"
     }
   ],
-  "description": "<p><strong>EXOTIC-CCR v0.3.0</strong> — Author: <strong>Daniel Eric Fredriksen</strong> (Quantyra Inc).</p><p><strong>Erratum:</strong> v0.2.2 claimed deficiency indices (0,∞). Corrected to <strong>(∞,∞)</strong> after identifying an open backward-incomplete orbit family. See docs/notes/A001-ERRATUM-v0.2.2.md.</p><p><strong>Results:</strong> Alpöge–Fable seed restated (det DF=−2, 3-collision); Poisson/Weyl lifts; X_1 incomplete; H=−iX_1 not ESS; (n_+,n_−)=(∞,∞); infinitely many self-adjoint extensions, none preferred by algebraic CCR data.</p><p><strong>Non-claims:</strong> No gate/channel/advantage; seed discovery not claimed.</p><p>https://github.com/Quantyra/jacobian-weyl-quantum-phase-space</p>"
+  "description": "<p><strong>EXOTIC-CCR v0.3.2</strong> — Daniel Eric Fredriksen (Quantyra Inc).</p><p><strong>Claim:</strong> H=−iX₁ on C_c^∞(R³) has deficiency indices (n₊,n₋)=(∞,∞) via whole maximal-orbit deficiency vectors (transverse cutoffs only). Infinitely many self-adjoint extensions; algebraic CCR/Poisson data select none.</p><p><strong>Errata:</strong> v0.2.2 pair (0,∞) withdrawn; v0.3.0 interior s-indicator proof withdrawn (not in Dom(H*)).</p><p><strong>Non-claims:</strong> No gate/channel/advantage; seed F attributed to Alpöge–Fable (restated).</p><p>Paper: docs/notes/A001-arxiv.pdf</p>"
 }

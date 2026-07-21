@@ -1,9 +1,10 @@
 # Global deficiency indices of \(P_1^{\mathrm{sym}}\) via \(X_1\) orbit geometry
 
 **Date:** 2026-07-21  
-**Status:** **Corrected** — \(\mathrm{Leb}_3(\mathcal{I}_\pm)>0\); \((n_+,n_-)=(\infty,\infty)\)  
-**Erratum:** v0.2.2 claimed \((0,\infty)\); open backward-incomplete family forces \(n_+=\infty\) as well.  
-**Operator:** \(H=P_1^{\mathrm{sym}}=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)
+**Status:** **v0.3.2** — theorem-grade sketch aligned with `A001-arxiv-draft.md` §8; \((n_+,n_-)=(\infty,\infty)\)  
+**Errata:** v0.2.2 \((0,\infty)\) withdrawn; v0.3.0 interior \(s\)-indicators withdrawn.  
+**Operator:** \(H=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)  
+**Normative public write-up:** `docs/notes/A001-arxiv-draft.md` §§7–8 (reconstruction, wall IFT, saturation, Dom(H*)).
 
 ---
 
