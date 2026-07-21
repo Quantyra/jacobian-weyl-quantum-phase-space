@@ -1,11 +1,11 @@
 ﻿# Erratum — release v0.2.2
 
-**Affects:** Zenodo records that advertised `(n+,n-)=(0,∞)`.
-**Corrected claim (current):** `(n+,n-)=(∞,∞)` on freeze **v0.3.2** (whole-orbit Dom(H*); analytic walls).
+Affects records that advertised (n+,n-)=(0, infinity).
 
-## Withdrawn
-- v0.2.2 exact pair `(0,∞)`
-- v0.3.0 interior s-indicator deficiency construction (`∉ Dom(H*)`)
+Corrected claim (current freeze v0.3.2): (n+,n-)=(infinity, infinity) via whole-orbit Dom(H*) vectors and analytic wall IFT.
 
-## Cite
-Prefer GitHub tag **v0.3.2** and concept DOI `10.5281/zenodo.21474351`; version DOI `10.5281/zenodo.21478429` (v0.3.2 ingest) when citing the software freeze.
+Withdrawn:
+- v0.2.2 exact pair (0, infinity)
+- v0.3.0 interior s-indicator deficiency construction (not in Dom(H*))
+
+Cite: GitHub tag v0.3.2; concept DOI 10.5281/zenodo.21474351; version DOI 10.5281/zenodo.21478679 (or latest Zenodo 0.3.2 on the concept page).

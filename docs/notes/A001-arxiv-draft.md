@@ -209,7 +209,7 @@ Let \(\gamma(t)=(q_0(t),q_1(t),q_2(t))\) for \(t\in[0,\tfrac12)\).
    \]
    Thus \(\gamma(t)\) leaves every compact subset of \(\mathbb{R}^3\) in finite time and cannot extend to a continuous \(\mathbb{R}^3\)-valued curve on the compact interval \([0,\tfrac12]\). The forward maximal existence time from \(q_\star\) is at most \(\tfrac12<\infty\).
 
-Therefore \(X_1\) is incomplete. âˆŽ
+Therefore \(X_1\) is incomplete. ∎
 
 **Evidence pointers:** `docs/validation/G4-X1-incompleteness.md`; `scripts/cas/verify_X1_blowup_curve_A001.py` (PASS report `data/anchor/cas_X1_blowup_curve_A001.json`).
 
@@ -290,7 +290,7 @@ G_+(a,c,\tau,r)
 \qquad(\tau\neq 0),
 \tag{8.1a}
 \end{equation}
-extended continuously at \(\tau=0\) by \(G_+(a,c,0,r)=(-A_s(\beta;a,c))r^3+B(\beta;c)r\) (using \(A(\beta)=0\) and \(A(\beta-\tau^2)=-A_s(\beta)\tau^2+O(\tau^4)\)). At the base, \(G_+(0,2,0,r)=\tfrac12 r^3-r\), with simple nonzero roots \(r=\pm\sqrt 2\) because \(\partial_r G_+=-2B\neq 0\) there. By the IFT, each root continues as \(r_\pm(a,c,\tau)\) on an open set \(U_+\times(0,\tau_0)\). Then \(q_0=r_\pm/\tau\to\infty\) as \(\tau\downarrow 0\), and (8.0) produces real \((q_1,q_2)\) for small \(\tau\) (denominator \(q_0(Bq_0+3c)\sim B q_0^2\neq 0\)). Hence \(\|q\|\to\infty\) as \(s\to\beta^-\) on an open transverse set. âˆŽ
+extended continuously at \(\tau=0\) by \(G_+(a,c,0,r)=(-A_s(\beta;a,c))r^3+B(\beta;c)r\) (using \(A(\beta)=0\) and \(A(\beta-\tau^2)=-A_s(\beta)\tau^2+O(\tau^4)\)). At the base, \(G_+(0,2,0,r)=\tfrac12 r^3-r\), with simple nonzero roots \(r=\pm\sqrt 2\) because \(\partial_r G_+=-2B\neq 0\) there. By the IFT, each root continues as \(r_\pm(a,c,\tau)\) on an open set \(U_+\times(0,\tau_0)\). Then \(q_0=r_\pm/\tau\to\infty\) as \(\tau\downarrow 0\), and (8.0) produces real \((q_1,q_2)\) for small \(\tau\) (denominator \(q_0(Bq_0+3c)\sim B q_0^2\neq 0\)). Hence \(\|q\|\to\infty\) as \(s\to\beta^-\) on an open transverse set. ∎
 
 (The explicit curve (6.1) is the special fibre \((a,c)=(0,2)\). JSON/Python anchors are regression checks only.)
 
@@ -311,7 +311,7 @@ G_-(a,c,\tau,r)
 +C(c)\,\tau,
 \tag{8.1b}
 \end{equation}
-extended at \(\tau=0\) by \(A_s(\alpha)r^3+B(\alpha)r\). At the base, simple roots \(r=\pm\sqrt 6\) (\(\partial_r G_-=-2B\neq 0\)). IFT yields open \(U_-\) and real large-\(q_0\) branches; reconstruct via (8.0). âˆŽ
+extended at \(\tau=0\) by \(A_s(\alpha)r^3+B(\alpha)r\). At the base, simple roots \(r=\pm\sqrt 6\) (\(\partial_r G_-=-2B\neq 0\)). IFT yields open \(U_-\) and real large-\(q_0\) branches; reconstruct via (8.0). ∎
 
 (Numeric script `cas_backward_incomplete_wall_A001.json` is a regression check only.)
 
@@ -337,7 +337,7 @@ where \(q_\Sigma(a,c)\in\Sigma_+\). The image \(\Omega_+:=\Psi_+(D_+)\) is open 
 
 If the lower maximal time \(\ell_+\) is **finite**, maximality of the ODE solution forces \(\|\Psi_+\|\to\infty\) as \(s\downarrow\ell_+\) as well (escape from every compact). If \(\ell_+=-\infty\), the orbit is backward-complete.
 
-An identical saturation produces \(\Psi_-:D_-\to\Omega_-\) for \(W_-\Subset U_-\) with maximal intervals \((\alpha(a,c),r_-(a,c))\). âˆŽ
+An identical saturation produces \(\Psi_-:D_-\to\Omega_-\) for \(W_-\Subset U_-\) with maximal intervals \((\alpha(a,c),r_-(a,c))\). ∎
 
 ### 8.5 Deficiency vectors in \(\operatorname{Dom}(H^*)\)
 **Lemma 8.4.**  
@@ -382,7 +382,7 @@ u_+\bigl(\Psi_-(a,c,s)\bigr)
 \quad\text{for all }s\in(\alpha(a,c),r_-(a,c)),
 \tag{8.3}
 \end{equation}
-zero off \(\Omega_-\). The same estimates give \(u_+\in L^2\), \(u_+\in\operatorname{Dom}(H^*)\), \((H^*-i)u_+=0\), and \(n_+=\infty\). âˆŽ
+zero off \(\Omega_-\). The same estimates give \(u_+\in L^2\), \(u_+\in\operatorname{Dom}(H^*)\), \((H^*-i)u_+=0\), and \(n_+=\infty\). ∎
 
 **Remark (withdrawn constructions).**  
 Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-masses at artificial cross-sections and exit \(\operatorname{Dom}(H^*)\). That v0.3.0 device is **withdrawn**.
@@ -390,11 +390,11 @@ Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-m
 ### 8.6 Theorems E--F
 **Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
 
-*Proof.* Propositions 8.1--8.2 and Lemmas 8.3--8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. âˆŽ
+*Proof.* Propositions 8.1--8.2 and Lemmas 8.3--8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. ∎
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
-*Proof.* \(n_\pm\ge 1\) by Theorem F. âˆŽ
+*Proof.* \(n_\pm\ge 1\) by Theorem F. ∎
 
 **Corollary 8.5.**  
 Since \(n_+=n_-=\infty\), von Neumannâ€™s theorem yields a continuum of self-adjoint extensions. The core algebraic Poisson/CCR relations of Theorems B--C do not distinguish among these extensions. Strong CCR after extension remains open.
