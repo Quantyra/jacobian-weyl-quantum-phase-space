@@ -107,45 +107,49 @@ In flow-box coordinates both sets contain nonempty open pieces of \((a,s,c)\)-sp
 
 ---
 
-## 5. Deficiency indices \((\infty,\infty)\)
+## 5. Deficiency indices \((\infty,\infty)\) — whole maximal orbits
 
-**Lemma 5.1** (half-line models).  
-On \(L^2((\alpha,\beta),\mathrm{d}s)\) with \(h=-i\partial_s\) minimal:
-- finite **upper** end only: contributes to \(\ker(h^*+i)\) (dimension 1 per orbit);
-- finite **lower** end only: contributes to \(\ker(h^*-i)\) (dimension 1 per orbit);
-- both ends finite: contributes \((1,1)\).
+**Lemma 5.1** (half-line dictionary).  
+On \(L^2((\ell,r),\mathrm{d}s)\) with \(h=-i\partial_s\) minimal:
+- finite upper end only → \(\ker(h^*+i)\) (model \(e^{s-r}\));
+- finite lower end only → \(\ker(h^*-i)\) (model \(e^{-(s-\ell)}\));
+- both finite → \((1,1)\).
 
-Explicit deficiency functions in flow-box coordinates (transverse cutoff \(\chi\in C_c^\infty(U)\)):
+**Critical repair (v0.3.1).**  
+Do **not** multiply by \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\). That interior jump produces a \(\delta\)-measure and ejects the candidate from \(\operatorname{Dom}(H^*)\).
+
+**Construction.** Saturate a transverse cross-section under the \(X_1\)-flow (\(X_1 F_1=1\)) to obtain diffeomorphisms \(\Psi_\pm\) from full maximal orbit domains
+\[
+D_+=\{(a,c,s):(a,c)\in W_+,\;\ell_+<s<\beta\},
+\quad
+D_-=\{(a,c,s):(a,c)\in W_-,\;\alpha<s<r_-\}
+\]
+onto open invariant sets \(\Omega_\pm\subset\mathbb{R}^3\). Define
 \begin{align*}
-u_-(a,s,c)
+u_-\bigl(\Psi_+(a,c,s)\bigr)
 &=
 \chi(a,c)\,e^{s-\beta(a,c)}
-&&\text{near a finite upper wall }\beta,
+&&\text{on all of }(\ell_+,\beta),
 &&
 (H^*+i)u_-=0,\\
-u_+(a,s,c)
+u_+\bigl(\Psi_-(a,c,s)\bigr)
 &=
 \chi(a,c)\,e^{-(s-\alpha(a,c))}
-&&\text{near a finite lower wall }\alpha,
+&&\text{on all of }(\alpha,r_-),
 &&
-(H^*-i)u_+=0.
+(H^*-i)u_+=0,
 \end{align*}
-Both are square-integrable near the finite end (exponential decay into the orbit). Varying \(\chi\) over an infinite-dimensional subspace of \(L^2(U)\) yields infinite-dimensional deficiency spaces.
-
-**Theorem 5.2.**
+with only transverse cutoffs \(\chi\in C_c^\infty(W_\pm)\). Then \(u_\pm\in L^2\) by
 \[
-\boxed{(n_+,n_-)=(\infty,\infty)}.
+\int_{\ell}^{\beta}e^{2(s-\beta)}\,\mathrm{d}s\le\tfrac12
+\quad\bigl(\text{resp. }\int_{\alpha}^{r}e^{-2(s-\alpha)}\,\mathrm{d}s\le\tfrac12\bigr),
 \]
+and integration by parts has no interior jump and no compactly-supported contribution at the spatial-infinity escape end.
 
-**Proof.**  
-1. Open family \(U_+\) of finite **upper** ends ⇒ \(n_-=\infty\) via \(\{u_-\}\).  
-2. Open family \(U_-\) of finite **lower** ends ⇒ \(n_+=\infty\) via \(\{u_+\}\).  
-3. Separability of \(L^2(\mathbb{R}^3)\) ⇒ dimensions are countably infinite. ∎
+**Theorem 5.2.** \(\boxed{(n_+,n_-)=(\infty,\infty)}.\)
 
-**Corollary 5.3 (non-ESS).** \(n_-\ge 1\) (or \(n_+\ge 1\)) ⇒ \(H\) is not essentially self-adjoint.  
-No general “any incomplete div-free field is non-ESS” lemma is required.
-
-**Corollary 5.4 (extensions).** By von Neumann, \(n_+=n_-=\infty\) ⇒ **infinitely many** self-adjoint extensions exist. The algebraic CCR data do **not** select a canonical one.
+**Corollary 5.3.** \(H\) not ESS.  
+**Corollary 5.4.** Infinitely many self-adjoint extensions; none preferred by algebraic CCR data.
 
 ---
 

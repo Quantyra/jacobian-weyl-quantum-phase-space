@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "10.5281/zenodo.21477350"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.0: Alpöge–Fable seed restated; B–D lifts/blow-up; E non-ESS via deficiency; F (n+,n-)=(inf,inf). Erratum: v0.2.2 (0,inf) withdrawn."
+claims_freeze: "A001 v0.3.1: (n+,n-)=(inf,inf) via whole-orbit deficiency vectors (no interior s-cutoffs). v0.2.2 (0,inf) withdrawn; v0.3.0 indicator proof withdrawn."
 ---
 
 # Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -253,66 +253,90 @@ If \(A\to 0\) with \(B\neq 0\), Vieta’s formulas force at least one root with 
 
 ## 8. Theorem F — Escape walls and deficiency indices \((\infty,\infty)\)
 
+**Per-orbit dictionary** (standard half-line calculus [2, §X.1]).  
+On a single orbit interval \((\ell,r)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\):
+- finite **upper** end \(r<\infty\) ⇒ \(\dim\ker(h^*+i)=1\) (model \(e^{s-r}\));
+- finite **lower** end \(\ell>-\infty\) ⇒ \(\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\));
+- both finite ⇒ \((1,1)\); neither finite ⇒ \((0,0)\).
+
 **Proposition 8.1 (forward wall).**  
-At \((a,s,c)=(0,\tfrac12,2)\) one has \(A=0\) and \(\partial_s A=-\tfrac12\neq 0\). By the implicit function theorem there exist a neighborhood \(U_+\ni(0,2)\) and a \(C^\infty\) function \(\beta:U_+\to\mathbb{R}\) with \(\beta(0,2)=\tfrac12\) and \(A(\beta(a,c);a,c)=0\). Along the associated infinite root branch of (7.2), \(\|q\|\to\infty\) as \(s\to\beta(a,c)^-\). Hence every nearby orbit on that branch has a **finite upper** \(F_1\)-end. (The explicit curve (6.1) is the case \((a,c)=(0,2)\).)
+At \((a,s,c)=(0,\tfrac12,2)\): \(A=0\), \(\partial_s A=-\tfrac12\neq 0\). IFT yields open \(U_+\ni(0,2)\) and \(C^\infty\) upper wall \(\beta:U_+\to\mathbb{R}\), \(\beta(0,2)=\tfrac12\). Writing \(h=\beta-s\downarrow 0^+\) and \(q_0=r/\sqrt h\), the cubic (7.2) has leading balance \(A_s r^3+B r=0\); at the base, \(A_s=-\tfrac12\), \(B=-1\), so nonzero roots \(r=\pm\sqrt 2\) are simple. A second IFT in \(\tau=\sqrt h\) produces two real large-\(q_0\) branches for \(s<\beta(a,c)\) on a possibly smaller open \(U_+\). Completing \((q_1,q_2)\) from \(F_2=c\) and \(F_1=s\) (denominators nonzero for large \(|q_0|\)) gives a real preimage with \(\|q\|\to\infty\) as \(s\to\beta^-\). Thus selected orbits have a **finite upper** \(F_1\)-end. (Curve (6.1) is the case \((0,2)\); CAS regression: `cas_orbit_measure_IFT_A001.json`.)
 
 **Proposition 8.2 (backward wall).**  
 At \(a=\tfrac1{54}\), \(c=2\),
 \[
 A\bigl(s;\tfrac1{54},2\bigr)=-\frac{(2s-1)(3s^2-1)}{3},
 \]
-so \(A(\tfrac12)=0\), \(\partial_s A(\tfrac12)=\tfrac16>0\), and \(B(\tfrac12)=-1\neq 0\). For \(s=\tfrac12+h\) with \(h\downarrow 0^+\,\) the cubic admits large real roots \(q_0=\pm\sqrt{6/h}+O(1)\), and the fiber equations reconstruct real \((q_1,q_2)\) with \(\|q\|\to\infty\). By IFT there is an open \(U_-\ni(\tfrac1{54},2)\) and a wall \(\alpha:U_-\to\mathbb{R}\) of **finite lower** \(F_1\)-ends. (Machine check: `cas_backward_incomplete_wall_A001.json`.)
+so \(A(\tfrac12)=0\), \(\partial_s A(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\). With \(h=s-\tfrac12\downarrow 0^+\) and \(q_0=r/\sqrt h\), the leading balance gives simple roots \(r=\pm\sqrt 6\). IFT in \(\tau=\sqrt h\) yields two real large-\(q_0\) branches for \(s>\alpha(a,c)\) on open \(U_-\ni(\tfrac1{54},2)\), with \(\|q\|\to\infty\) as \(s\downarrow\alpha^+\). Thus selected orbits have a **finite lower** \(F_1\)-end. (Numeric regression only: `cas_backward_incomplete_wall_A001.json`.)
 
-**Lemma 8.3 (positive measure).**  
-\(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\) and \(\mathrm{Leb}_3(\{T_-^{X_1}>-\infty\})>0\).
+**Lemma 8.3 (saturated inverse sheets).**  
+Fix a nonempty open relatively compact \(W_+\Subset U_+\) and a smooth local cross-section \(\Sigma_+\) of the selected large-\(q_0\) branch with \(s=\beta-\varepsilon_0\) for small \(\varepsilon_0>0\). Because \(X_1 F_1=1\), the flow of \(X_1\) is a global time-shift in the \(s\)-coordinate on the maximal existence interval. Saturating \(\Sigma_+\) under the flow produces an open invariant set \(\Omega_+\) and a \(C^\infty\) diffeomorphism
+\[
+\Psi_+:D_+\to\Omega_+,
+\qquad
+D_+=\bigl\{(a,c,s):(a,c)\in W_+,\;\ell_+(a,c)<s<\beta(a,c)\bigr\},
+\]
+with \(F\circ\Psi_+=(a,s,c)\), where \((\ell_+(a,c),\beta(a,c))\) is the **entire maximal** \(s\)-interval of that orbit (\(\ell_+\) may be finite or \(-\infty\)).  
+An analogous saturation \(\Psi_-:D_-\to\Omega_-\) exists for \(W_-\Subset U_-\) with maximal intervals \((\alpha(a,c),r_-(a,c))\).  
+Injectivity of \(\Psi_\pm\) follows from uniqueness of ODE solutions and strict monotonicity of \(F_1\) along the flow; the constant Jacobian gives the measure identity (7.1) on \(\Omega_\pm\).
 
-*Proof.* Let \(V_+\subset U_+\times\mathbb{R}\) be a nonempty open slab of points \((a,s,c)\) with \(s\in(\beta(a,c)-\delta,\beta(a,c))\) for small \(\delta>0\). On \(V_+\) a continuous local inverse branch of \(F\) exists and is a \(C^1\) diffeomorphism onto its image (7.1). That image is open of positive Lebesgue measure and lies in \(\{T_+<\infty\}\). The same argument with a slab just above \(\alpha\) on \(U_-\) gives positive measure for \(\{T_->-\infty\}\). ∎
+**Lemma 8.4 (whole-orbit deficiency vectors — no interior \(s\)-cutoff).**  
+For \(\chi\in C_c^\infty(W_+)\) define \(u_-\) on \(\Omega_+\) by
+\begin{equation}
+u_-\bigl(\Psi_+(a,c,s)\bigr)
+:=
+\chi(a,c)\,e^{s-\beta(a,c)}
+\qquad
+\bigl(\ell_+(a,c)<s<\beta(a,c)\bigr),
+\tag{8.1}
+\end{equation}
+and \(u_-=0\) off \(\Omega_+\).  
+**No characteristic cutoff in \(s\)** is used: only the transverse cutoff \(\chi(a,c)\). Then
+\[
+\int_{\mathbb{R}^3}|u_-|^2\,\mathrm{d}q
+=
+\tfrac12\int_{W_+}|\chi|^2
+\Bigl(\int_{\ell_+}^{\beta}e^{2(s-\beta)}\,\mathrm{d}s\Bigr)
+\mathrm{d}a\,\mathrm{d}c
+\le
+\tfrac14\|\chi\|_{L^2(W_+)}^2,
+\]
+so \(u_-\in L^2(\mathbb{R}^3)\). For \(\varphi\in C_c^\infty(\mathbb{R}^3)\), integration by parts along orbits uses \(H=-i\partial_s\) and \(\operatorname{div} X_1=0\): the finite escape end \(s=\beta\) lies at spatial infinity (support of \(\varphi\) never meets it), and \(\chi\) vanishes near the lateral boundary of \(W_+\), so no boundary term arises. Hence \((H^*+i)u_-=0\). The map \(\chi\mapsto u_-\) is injective, so \(n_-=\infty\).
 
-**Lemma 8.4 (model deficiency functions).**  
-On an orbit interval with a finite upper end \(\beta\) (resp. lower end \(\alpha\)), the functions of \(s\) proportional to \(e^{s-\beta}\) (resp. \(e^{-(s-\alpha)}\)) solve \((-i\partial_s)^* u=\mp i\,u\) in the distributional sense on the open interval and are square-integrable near the finite end [2, §X.1].
+Similarly, on \(\Omega_-\),
+\begin{equation}
+u_+\bigl(\Psi_-(a,c,s)\bigr)
+:=
+\chi(a,c)\,e^{-(s-\alpha(a,c))}
+\qquad
+\bigl(\alpha(a,c)<s<r_-(a,c)\bigr)
+\tag{8.2}
+\end{equation}
+gives \(u_+\in L^2\), \((H^*-i)u_+=0\), and \(n_+=\infty\).
+
+**Remark.** Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) (as in a previous draft) produce \(\delta\)-masses at artificial cross-sections and take the candidate **out** of \(\operatorname{Dom}(H^*)\). That construction is **withdrawn**.
 
 **Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
 
-**Proof.**  
-Fix a nonempty open relatively compact \(W_+\Subset U_+\) and \(\chi\in C_c^\infty(W_+)\). In flow-box coordinates define
-\begin{equation}
-u_-(a,s,c)
-:=
-\chi(a,c)\,e^{s-\beta(a,c)}
-\cdot
-\mathbf{1}_{(\beta(a,c)-\delta,\beta(a,c))}(s)
-\tag{8.1}
-\end{equation}
-for small \(\delta>0\) so that the indicator stays in the local chart. Then \(u_-\in L^2(\mathbb{R}^3)\) by (7.1) and exponential decay as \(s\to\beta^-\), and \((H^*+i)u_-=0\). The linear map \(\chi\mapsto u_-\) is injective on an infinite-dimensional subspace of \(L^2(W_+)\), hence \(n_-=\infty\).
-
-Likewise, with \(W_-\Subset U_-\) and
-\begin{equation}
-u_+(a,s,c)
-:=
-\chi(a,c)\,e^{-(s-\alpha(a,c))}
-\cdot
-\mathbf{1}_{(\alpha(a,c),\alpha(a,c)+\delta)}(s),
-\tag{8.2}
-\end{equation}
-one obtains \((H^*-i)u_+=0\) and \(n_+=\infty\).
-
-Since \(L^2(\mathbb{R}^3)\) is separable, both dimensions equal \(\aleph_0\). ∎
+**Proof.** Lemmas 8.3–8.4 and Propositions 8.1–8.2. Separability of \(L^2(\mathbb{R}^3)\) caps both dimensions at \(\aleph_0\). ∎
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
 **Proof.** \(n_-\ge 1\) (or \(n_+\ge 1\)) by Theorem F. ∎
 
 **Corollary 8.5 (extensions).**  
-von Neumann’s theorem: self-adjoint extensions exist iff \(n_+=n_-\). Here both are infinite, so there is a continuum of self-adjoint extensions. The polynomial Poisson/CCR data of Theorems B–C do not select a preferred extension. Strong CCR after extension is open.
+Since \(n_+=n_-=\infty\), von Neumann’s theorem yields a continuum of self-adjoint extensions. The polynomial Poisson/CCR data of Theorems B–C select none of them. Strong CCR after extension remains open.
 
-**Erratum.** The v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn**. It omitted the backward wall (Proposition 8.2) and would have incorrectly implied the absence of self-adjoint extensions.
+**Conceptual point.** The same local-to-global gap that makes \(F\) a noninjective Keller map (constant nonzero Jacobian, yet incomplete dual flow) leaves the algebraic CCR lift underdetermined as a unique self-adjoint momentum.
+
+**Erratum.** v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn** (missed backward wall). v0.3.0 indicator cutoffs in \(s\) are **withdrawn** (not in \(\operatorname{Dom}(H^*)\)). Corrected proof: whole maximal orbits (8.1)–(8.2).
 
 ---
 
 ## 9. Non-claims
 
 1. No unitary quantum gate, quantum channel, CP instrument, or computational advantage is claimed.  
-2. Essential-self-adjointness failure is not claimed for \(P_0^{\mathrm{sym}}\) or \(P_2^{\mathrm{sym}}\).  
+2. Essential-self-adjointness failure is not claimed for \(H_0=-iX_0\) or \(H_2=-iX_2\).  
 3. No strong-commutation / joint unbounded CCR theorem after choosing extensions is claimed.  
 4. No unique physically preferred self-adjoint extension is selected.  
 5. No von Neumann inclusion index tied to generic degree is claimed.  

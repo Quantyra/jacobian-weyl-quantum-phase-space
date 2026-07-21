@@ -166,16 +166,15 @@ Open flow-box slabs below \(\beta\) (resp.\ above \(\alpha\)), pushed by local i
 \((n_+,n_-)=(\infty,\infty)\).
 \end{theorem}
 \begin{proof}
-For \(\chi\in C_c^\infty(W_+)\), \(W_+\Subset U_+\), set
+Saturate a transverse cross-section under the \(X_1\)-flow to obtain full maximal orbit intervals \((\ell_+,\beta)\) and \((\alpha,r_-)\). For \(\chi\in C_c^\infty(W_\pm)\) define
+\emph{whole-orbit} deficiency vectors (no interior \(s\)-cutoff)
 \[
-u_-(a,s,c)=\chi(a,c)\,e^{s-\beta(a,c)}\,\mathbf{1}_{(\beta-\delta,\beta)}(s).
+u_-=\chi(a,c)\,e^{s-\beta(a,c)}
+\quad\text{on }(\ell_+,\beta),\qquad
+u_+=\chi(a,c)\,e^{-(s-\alpha(a,c))}
+\quad\text{on }(\alpha,r_-).
 \]
-Then \(u_-\in L^2\) and \((H^*+i)u_-=0\). Varying \(\chi\) gives \(n_-=\infty\).
-Similarly
-\[
-u_+(a,s,c)=\chi(a,c)\,e^{-(s-\alpha(a,c))}\,\mathbf{1}_{(\alpha,\alpha+\delta)}(s)
-\]
-gives \(n_+=\infty\). Separability yields countably infinite dimensions~\cite{RS2}.
+Then \(u_\pm\in L^2\), \((H^*+i)u_-=0\), and \((H^*-i)u_+=0\) (escape ends at spatial infinity; only transverse cutoffs). Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}\) are invalid. Separability yields \((\infty,\infty)\)~\cite{RS2}.
 \end{proof}
 
 \begin{theorem}[E]
@@ -189,8 +188,8 @@ Immediate from \(n_\pm\ge 1\) in Theorem~F.
 Since \(n_+=n_-=\infty\), infinitely many self-adjoint extensions exist. Algebraic CCR/Poisson data do not select a preferred extension.
 \end{corollary}
 
-\paragraph{Erratum.}
-The v0.2.2 claim \((0,\infty)\) is withdrawn.
+\paragraph{Errata.}
+v0.2.2 claim \((0,\infty)\) withdrawn. v0.3.0 \(s\)-indicator deficiency proof withdrawn (not in \(\operatorname{Dom}(H^*)\)).
 
 \section{Non-claims}
 No unitary gate, channel, CP map, or computational advantage. No ESS claim for \(H_0,H_2\). No strong CCR after extensions. No discovery claim for \(F\). No preferred physical extension.

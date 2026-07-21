@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.1 — 2026-07-21
+
+### Critical proof repair (Theorem F)
+- **Withdrawn:** v0.3.0 deficiency vectors with interior \(s\)-indicators (not in \(\operatorname{Dom}(H^*)\))
+- **Corrected:** whole maximal-orbit deficiency vectors; transverse cutoffs only
+- Saturated inverse-sheet lemma; per-orbit dictionary; rescaled IFT for wall branches
+- PDF/TeX/draft/dossier synced; claim remains \((n_+,n_-)=(\infty,\infty)\)
+
 ## v0.3.0 — 2026-07-21
 
 ### Erratum (critical)
