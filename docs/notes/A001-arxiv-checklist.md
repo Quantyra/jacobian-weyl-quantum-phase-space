@@ -1,125 +1,58 @@
-# A001 arXiv submission checklist
+# A001 arXiv submission checklist (v0.3.0)
 
 **Draft:** [`A001-arxiv-draft.md`](A001-arxiv-draft.md)  
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Software freeze:** release **v0.2.2** (orbit-measure + exact deficiency pair)  
-**Date prepared:** 2026-07-21  
+**Software freeze:** **v0.3.0** (erratum: v0.2.2 pair \((0,\infty)\) withdrawn)  
+**Seed attribution:** Alpöge–Fable [restated]; novelty B–F  
 
 ---
 
-## 1. Claims freeze (what may be asserted)
+## 1. Claims freeze
 
 | ID | Claim | Allowed? |
 |----|--------|----------|
-| A | \(\det DF=-2\); three-point collision; non-injective Keller | **Yes** |
-| B | \(\Phi=(F,J^{-T}p)\) Poisson on generators; non-injective | **Yes** |
-| C | Weyl \(\psi\) preserves poly CCR; \(\operatorname{div} B=0\); \(P_j^{\mathrm{sym}}=-iX_j\) | **Yes** |
-| D | \(X_1\) incomplete (explicit curve, \(T=\tfrac12\)) | **Yes** |
-| E | \(P_1^{\mathrm{sym}}\) not ESS on \(C_c^\infty(\mathbb{R}^3)\) | **Yes** |
-| F-Leb | \(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\) | **Yes** |
-| F-def | Global \((n_+,n_-)=(0,\infty)\) for \(P_1^{\mathrm{sym}}\) | **Yes** |
-| Def-orbit | Half-line model \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\) | **Yes** |
+| A | \(\det DF=-2\); 3-collision (Alpöge–Fable seed restated) | **Yes** |
+| B | \(\Phi\) Poisson on generators; non-injective | **Yes** |
+| C | Dual fields commute; Piola \(\Rightarrow\operatorname{div} B=0\); \(H_j=-iX_j\) symmetric | **Yes** |
+| D | \(X_1\) incomplete (explicit curve) | **Yes** |
+| E | \(H=-iX_1\) not ESS | **Yes** (via deficiency) |
+| F-Leb | \(\mathrm{Leb}_3(\mathcal{I}_\pm)>0\) | **Yes** |
+| F-def | \((n_+,n_-)=(\infty,\infty)\) | **Yes** |
+| F-ext | Infinitely many self-adjoint extensions; none preferred | **Yes** |
+| v0.2.2 pair \((0,\infty)\) | | **No** (withdrawn) |
 | Gate/channel/advantage | | **No** |
-| All three \(P_j\) fail ESS | | **No** |
-| Unique physical momenta / preferred extension | | **No** |
-| Index \(\sim d\) / factory-false slogan | | **No** |
+| Discovery of seed \(F\) | | **No** |
+| Unique physical momenta | | **No** |
 
-Living ledger: [`A001-minimum-result-note.md`](A001-minimum-result-note.md).  
-Orbit-measure dossier: [`../validation/G4-P1-orbit-measure-deficiency.md`](../validation/G4-P1-orbit-measure-deficiency.md).
+Erratum: [`A001-ERRATUM-v0.2.2.md`](A001-ERRATUM-v0.2.2.md).
 
 ---
 
-## 2. Non-claims (must appear in abstract or §Non-claims)
+## 2. Bundle
 
-- No unitary quantum gate, channel, CP map, or computational advantage.  
-- No ESS failure claimed for \(P_0^{\mathrm{sym}}\) or \(P_2^{\mathrm{sym}}\).  
-- No strong CCR / unique extension claim.  
-- No von Neumann degree-index claim.  
-- No “factory false” slogan beyond finite identities used.
-
----
-
-## 3. Source files (bundle for submission / referees)
-
-### Paper
-- [x] `docs/notes/A001-arxiv-draft.md` — main text  
-- [x] `docs/notes/A001-arxiv-checklist.md` — this file  
-- [x] `docs/notes/A001-minimum-result-note.md` — compact ledger  
-- [x] `docs/notes/A001-submission-bundle.md` — packing list  
-
-### Proof dossiers (normative for details)
-- [x] `docs/validation/D0-seed-validation-dossier.md`  
-- [x] `docs/validation/G2-poisson-A001-dossier.md`  
-- [x] `docs/validation/G3-weyl-A001-dossier.md`  
-- [x] `docs/validation/G4-X1-incompleteness.md`  
-- [x] `docs/validation/G4-Chernoff-discharge.md`  
-- [x] `docs/validation/G4-P1-deficiency-indices.md`  
-- [x] `docs/validation/G4-P1-orbit-measure-deficiency.md`  
-- [x] `docs/validation/G4-domains-CCR-A001-dossier.md`  
-
-### Machine certificates (reproduce)
-- [x] `scripts/cas/verify_anchor_sympy.py` / `verify_anchor_purepython.py`  
-- [x] `scripts/cas/verify_poisson_A001_*.py`  
-- [x] `scripts/cas/verify_weyl_A001_*.py`  
-- [x] `scripts/cas/verify_X1_blowup_curve_A001.py`  
-- [x] `scripts/cas/verify_F0_zero_incomplete_sheet_A001.py`  
-- [x] `scripts/cas/verify_orbit_measure_IFT_A001.py`  
-- [x] `data/anchor/cas_*.json` (PASS reports)  
-- [x] Lean: https://github.com/Quantyra/exotic-ccr-lean  
-
-### Metadata / cite
-- [x] `CITATION.cff` — author Daniel Eric Fredriksen  
-- [x] `.zenodo.json`  
-- [x] Concept DOI `10.5281/zenodo.21474351`; v0.2.2 version DOI `10.5281/zenodo.21476665`  
-- [x] `README.md` — Start here → arxiv draft  
+- [x] `A001-arxiv-draft.md`  
+- [x] `A001-arxiv-checklist.md`  
+- [x] `A001-submission-bundle.md`  
+- [x] `A001-ERRATUM-v0.2.2.md`  
+- [x] `G4-P1-orbit-measure-deficiency.md`  
+- [x] CAS: forward IFT, sheet, backward wall, X1 curve, anchors  
 
 ---
 
-## 4. Suggested arXiv metadata
-
-| Field | Value |
-|-------|--------|
-| Title | Algebraic CCR lifts of a Keller counterexample and failure of essential self-adjointness for a dual momentum |
-| Authors | Daniel Eric Fredriksen |
-| Comments | Deficiency indices (0,∞) for one dual momentum; software DOI 10.5281/zenodo.21476665 (concept 10.5281/zenodo.21474351); GitHub Quantyra/jacobian-weyl-quantum-phase-space; Lean Quantyra/exotic-ccr-lean |
-| Primary class | math.FA |
-| Cross-lists | math.AG, math-ph, quant-ph |
-| MSC | 47B25, 81S05, 14R15, 37C10, 53D17 |
-| License | Recommend CC-BY-4.0 for the text; code remains Apache-2.0 |
-
----
-
-## 5. Pre-submit human steps
-
-- [ ] Author read-through of `A001-arxiv-draft.md` for tone and typos  
-- [ ] Optional: convert MD → LaTeX/PDF (pandoc or manual)  
-- [ ] Confirm abstract non-claims paragraph retained  
-- [x] Tag **v0.2.2** + GitHub release (https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.2)  
-- [x] Zenodo v0.2.2 version DOI `10.5281/zenodo.21476665` recorded  
-- [ ] arXiv account / endorsement if needed  
-- [ ] After arXiv ID: add `eprint` to `CITATION.cff` and README  
-
----
-
-## 6. Reproduce commands (smoke)
+## 3. Smoke
 
 ```bash
-python scripts/cas/verify_anchor_sympy.py
-python scripts/cas/verify_anchor_purepython.py
-python scripts/cas/verify_poisson_A001_sympy.py
-python scripts/cas/verify_weyl_A001_sympy.py
 python scripts/cas/verify_X1_blowup_curve_A001.py
-python scripts/cas/verify_F0_zero_incomplete_sheet_A001.py
 python scripts/cas/verify_orbit_measure_IFT_A001.py
+python scripts/cas/verify_backward_incomplete_wall_A001.py
+python scripts/cas/verify_F0_zero_incomplete_sheet_A001.py
 ```
-
-All should exit 0 / print PASS.
 
 ---
 
-## 7. Out of scope for this submission
+## 4. Pre-submit human
 
-- G5 index claims  
-- Gate/channel/advantage language  
-- Changing Zenodo creator away from Daniel Eric Fredriksen  
-- ESS claims for \(P_0^{\mathrm{sym}}\) or \(P_2^{\mathrm{sym}}\)  
+- [ ] Author read-through  
+- [ ] MD → PDF  
+- [ ] arXiv endorsement if needed  
+- [ ] After arXiv ID: update CITATION.cff  

@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.3.0 — 2026-07-21
+
+### Erratum (critical)
+- **Withdrawn:** v0.2.2 claim \((n_+,n_-)=(0,\infty)\) for \(H=-iX_1\)
+- **Corrected:** \((n_+,n_-)=(\infty,\infty)\) via open forward- and backward-incomplete families
+- Self-adjoint extensions exist in abundance (von Neumann); none preferred by algebraic data
+- See `docs/notes/A001-ERRATUM-v0.2.2.md`
+
+### Paper / attribution
+- Title and abstract attribute seed map to **Alpöge–Fable**; novelty is B–F
+- Theorem E is corollary of explicit deficiency functions (no general Stone/transport necessity)
+- Theorem C rewritten with Piola + dual-coframe commutation; Schrödinger convention clarified
+- arXiv draft + checklist + submission bundle updated for v0.3.0
+
+### CAS
+- `verify_backward_incomplete_wall_A001.py` + JSON anchor
+
 ## v0.2.2 — 2026-07-21
 
 ### Science

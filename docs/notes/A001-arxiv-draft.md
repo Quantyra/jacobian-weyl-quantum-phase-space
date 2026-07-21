@@ -1,5 +1,5 @@
 ---
-title: "Algebraic CCR lifts of a Keller counterexample and failure of essential self-adjointness for a dual momentum"
+title: "Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
@@ -8,7 +8,6 @@ arxiv_categories:
   - math.FA
   - math.AG
   - math-ph
-  - quant-ph
 MSC:
   - "47B25"   # Unbounded operators; essential self-adjointness
   - "81S05"   # Canonical commutation relations
@@ -27,27 +26,33 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "10.5281/zenodo.21476665"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 through G4 orbit-measure: Leb3(I)>0 and (n+,n-)=(0,inf) for P1^sym; G4-P1-orbit-measure-deficiency.md"
+claims_freeze: "A001 v0.3.0: Alpöge–Fable seed restated; B–D lifts/blow-up; E non-ESS via deficiency; F (n+,n-)=(inf,inf). Erratum: v0.2.2 (0,inf) withdrawn."
 ---
 
-# Algebraic CCR lifts of a Keller counterexample and failure of essential self-adjointness for a dual momentum
+# Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
 
 **Daniel Eric Fredriksen**  
 Quantyra Inc.  
 https://github.com/Quantyra/jacobian-weyl-quantum-phase-space  
 
 **MSC 2020:** 47B25, 81S05, 14R15, 37C10, 53D17  
-**arXiv classes (suggested):** math.FA, math.AG, math-ph, quant-ph  
+**arXiv classes (suggested):** math.FA, math.AG, math-ph  
+
+**Erratum.** Release v0.2.2 claimed global deficiency indices \((0,\infty)\). An open backward-incomplete family forces \(n_+=\infty\) as well; the corrected pair is \((\infty,\infty)\) (Theorem F). Self-adjoint extensions therefore exist in abundance but are non-unique.
 
 ---
 
 ## Abstract
 
-We study an explicit three-dimensional Keller map \(F\) (constant Jacobian determinant \(\det DF=-2\) and a three-point collision). We construct the classical cotangent lift \(\Phi(q,p)=(F(q),J(q)^{-T}p)\) and verify, by dual exact computer-algebra checks, that \(\Phi\) preserves the canonical Poisson brackets on generators and is non-injective. The same matrix \(B=J^{-T}\) induces a polynomial Weyl-algebra endomorphism preserving the canonical commutation relations; moreover \(\operatorname{div} B=0\), so the Schrödinger candidates \(P_j^{\mathrm{sym}}=\frac12\{B_{j\cdot},p\}\) equal \(-iX_j\) for the dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\).
+We study the three-dimensional Keller map \(F\) announced by Alpöge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B–F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The Schrödinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
 
-We prove that \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in forward time \(T=\frac12\). Hence \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\). The incomplete set has positive Lebesgue measure. With orbit time \(s=F_1\), the half-line model for \(A=-i\mathrm{d}/\mathrm{d}s\) has deficiency indices \((0,1)\); a positive-measure family of such orbits yields the global pair \((n_+,n_-)=(0,\infty)\) on \(L^2(\mathbb{R}^3)\).
+We prove \(X_1\) is incomplete by an explicit integral curve escaping as \(t\to\tfrac12^-\). In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open transverse families with finite **upper** \(F_1\)-ends and finite **lower** \(F_1\)-ends yield square-integrable deficiency functions, so
+\[
+(n_+,n_-)=(\infty,\infty)
+\]
+for \(H=-iX_1\). Hence \(H\) is not essentially self-adjoint, yet von Neumann’s theorem supplies infinitely many self-adjoint extensions; the algebraic CCR data select none of them.
 
-We do not claim unitary gates, quantum channels, computational advantage, or unique physical momenta without self-adjoint extension choices.
+We claim no unitary gates, channels, computational advantage, or preferred physical extension.
 
 **Keywords:** Jacobian conjecture, Keller map, cotangent lift, Weyl algebra, essential self-adjointness, dual vector field, deficiency indices.
 
@@ -55,31 +60,29 @@ We do not claim unitary gates, quantum channels, computational advantage, or uni
 
 ## 1. Introduction
 
-### 1.1 Motivation
-A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts that every Keller map is a polynomial automorphism. Explicit three-variable examples with constant Jacobian determinant and collisions provide Keller maps that are not injective. Independently of any broader claim about the status of a particular announcement in the literature, such maps yield concrete endomorphisms of classical and noncommutative phase-space algebras.
+### 1.1 Motivation and attribution
+A *Keller map* is a polynomial endomorphism \(F\) of affine space with \(\det DF\) a nonzero constant. The Jacobian conjecture predicts every Keller map is a polynomial automorphism. On 19–20 July 2026, **Levent Alpöge** announced an explicit map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the AI system **Fable** [8]; independent checks and Lean formalizations followed promptly (e.g. Cureton [11]; Speyer’s commentary [12]). **This paper does not claim discovery of \(F\).** Repository atlas label: **A001**.
 
-The cotangent (Piola) lift
-\[
-\Phi(q,p)=\bigl(F(q),\,J(q)^{-T}p\bigr)
-\]
-is the standard classical candidate when \(\det J\) is a nonzero constant. The same coefficients define a Weyl-algebra substitution for the generators \((q,p)\). A basic question for continuous-variable quantum mechanics is whether algebraic preservation of canonical relations produces uniquely determined self-adjoint Schrödinger operators on the usual dense domain.
+The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual transport fields \(X_j\) are standard when \(\det J\) is a nonzero constant. The question studied here is whether algebraic preservation of Poisson/CCR data selects a unique self-adjoint \(L^2\) realization of a dual transport generator on \(C_c^\infty(\mathbb{R}^3)\).
 
 ### 1.2 Main results
-For the seed map \(F\) studied here (repository atlas label **A001**):
+1. **(A, restatement)** \(\det DF\equiv-2\) and the three-point collision (2.4) hold.  
+2. **(B)** \(\Phi\) is a polynomial Poisson map on generators and is non-injective.  
+3. **(C)** Dual fields commute and are divergence-free (Piola + constant Jacobian); \(H_j=-iX_j\) is symmetric on \(C_c^\infty\).  
+4. **(D)** \(X_1\) is incomplete via the explicit curve (6.1).  
+5. **(E)** \(H=-iX_1\) is not essentially self-adjoint (corollary of explicit deficiency vectors).  
+6. **(F)** Open forward- and backward-incomplete families give \((n_+,n_-)=(\infty,\infty)\); infinitely many self-adjoint extensions exist, none selected by the algebraic data.
 
-1. \(\Phi\) is a polynomial Poisson map on generators and is non-injective (Theorem B).  
-2. The associated Weyl substitution preserves polynomial CCR, and \(\operatorname{div} B=0\) (Theorem C).  
-3. The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\), via an explicit escaping integral curve (Theorem D).  
-4. Consequently \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\) (Theorem E).  
-5. The incomplete set has positive Lebesgue measure, and the global deficiency indices are \((n_+,n_-)=(0,\infty)\) (Theorem F).
-
-**Message.** Algebraic CCR/Poisson lifts can exist while the standard dense-domain recipe fails to select a unique self-adjoint dual momentum.
+**Message.** Algebraic CCR/Poisson lifts of a noninjective Keller map can coexist with a dual transport generator that is symmetric but not essentially self-adjoint, with a large self-adjoint extension theory.
 
 ### 1.3 Related work
-Seed formulas and collision witnesses match the public counterexample record and independent Lean formalizations (repository provenance; companion package [6]). Equivalences among Jacobian, Dixmier, and Poisson conjectures motivate the Weyl lift but are not re-proved. Essential self-adjointness for vector-field operators is treated via Stone’s theorem and characteristic transport [1, 2].
+Jacobian conjecture background: Keller [4], Bass–Connell–Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed–Simon [2]; direct integrals: [9], Schmüdgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
-### 1.4 Reproducible evidence
-Identities marked certified are backed by dual computer-algebra scripts and JSON reports under `data/anchor/`, with validation dossiers under `docs/validation/`. Lean certificates for Theorem A appear in [6]. Software DOI: [5].
+### 1.4 Evidence layers
+- **Lean-proved:** Theorem A seed identities [6].  
+- **Exact CAS (two engines) + conceptual proof:** B–C polynomial identities; D curve.  
+- **Analytic construction:** E–F deficiency functions in flow-box coordinates.  
+Software DOI: [5].
 
 ---
 
@@ -153,30 +156,27 @@ F\bigl(0,0,-\tfrac14\bigr)
 
 ---
 
-## 5. Theorem C — Polynomial Weyl endomorphism
+## 5. Theorem C — Dual fields, Piola, and Schrödinger convention
 
-**Theorem C.** On the polynomial Weyl algebra with \([q_i,p_j]=\delta_{ij}\), the substitution
-\[
-Q_i=F_i(q),\qquad
-P_j=\sum_k B_{jk}(q)\,p_k
-\]
-satisfies
-\[
-[Q_i,Q_j]=0,\quad
-[P_i,P_j]=0,\quad
-[Q_i,P_j]=\delta_{ij}.
-\]
-Moreover each row of \(B\) is divergence-free, hence (2.3) holds.
+**Theorem C.** Let \(B=J^{-T}\) and \(X_j=\sum_k B_{jk}\partial_{q_k}\). Then:
+1. \(X_j(F_i)=\delta_{ij}\), and \([X_i,X_j]=0\);  
+2. \(\operatorname{div} X_j=0\) (equivalently, each row of \(B\) is divergence-free);  
+3. On \(C_c^\infty(\mathbb{R}^3)\), the operators \(H_j:=-i X_j\) are symmetric, and
+   \[
+   [F_i,\,H_j]=i\,\delta_{ij}
+   \]
+   (Schrödinger CCR with \(\hbar=1\)).
+
+**Convention.** Algebraic generators with \([q_i,\pi_j]=\delta_{ij}\) correspond to \(\pi_j\sim -\partial_{q_j}\). The physical Schrödinger momenta are \(\widehat p_j=-i\partial_{q_j}\). We write \(H_j=-iX_j\) for the latter normalization; earlier drafts’ mixed use of \(p\) is superseded by this split.
 
 **Proof sketch.**  
-\([Q_i,P_j]=\sum_k B_{jk}\partial_k F_i=(JB^{T})_{ij}=\delta_{ij}\).  
-The relations \([P_i,P_j]=0\) reduce to
-\[
-\sum_k\bigl(B_{jk}\partial_k B_{il}-B_{ik}\partial_k B_{jl}\bigr)=0,
-\]
-checked by dual CAS. Row divergences vanish identically (CAS).
+(1) \(X_j(F_i)=(JB^{T})_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe (\(\det DF\neq 0\)), \([X_i,X_j]=0\).  
+(2) \(\operatorname{Cof}(DF)=(\det DF)\,B\). Piola: \(\operatorname{Div}\operatorname{Cof}(DF)=0\). Constant \(\det DF=-2\) ⇒ \(\operatorname{Div} B=0\).  
+(3) Symmetry of \(-iX\) on \(C_c^\infty\) when \(\operatorname{div} X=0\) is standard; the commutator with multiplication by \(F_i\) is \(i X_j(F_i)=i\delta_{ij}\).  
 
-**Evidence pointers:** `docs/validation/G3-weyl-A001-dossier.md`; `data/anchor/psi_weyl_A001.json`; `cas_weyl_A001_*.json`.
+Dual CAS reports remain regression tests (`cas_weyl_A001_*.json`), not the primary proof.
+
+**Evidence pointers:** `docs/validation/G3-weyl-A001-dossier.md`.
 
 ---
 
@@ -219,66 +219,64 @@ Therefore \(X_1\) is incomplete. ∎
 
 ---
 
-## 7. Theorem E — Failure of essential self-adjointness
+## 7–8. Theorems E–F — Deficiency indices and non-ESS
 
-**Theorem E.** The operator
+Write \(H:=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\) and
 \[
-P_1^{\mathrm{sym}}=-i X_1
-\quad\text{on}\quad
-C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)
+n_+:=\dim\ker(H^*-i),\qquad
+n_-:=\dim\ker(H^*+i).
 \]
-is not essentially self-adjoint.
-
-**Proof sketch.**  
-By Theorem C, \(\operatorname{div} X_1=0\), so \(P_1^{\mathrm{sym}}=-i X_1\) is symmetric on \(C_c^\infty(\mathbb{R}^3)\). By Theorem D, \(X_1\) is incomplete. For a smooth real divergence-free vector field \(X\) on \(\mathbb{R}^n\), incompleteness implies that \(H=-iX\) on \(C_c^\infty(\mathbb{R}^n)\) is not essentially self-adjoint: essential self-adjointness would produce, via Stone’s theorem [2], a global unitary group implementing characteristic transport along the flow, which cannot exist globally when the flow is incomplete. (Chernoff [1] is the classical reference point for Chernoff-type ESS criteria for related first-order / hyperbolic generators; the necessity half used here is the transport/Stone package recorded in `docs/validation/G4-Chernoff-discharge.md`.) The hypotheses of that necessity argument—smoothness and vanishing divergence on \(\mathbb{R}^3\)—hold for \(X_1\). ∎
-
-**Interpretation.** Non-essential-self-adjointness means the \(C_c^\infty\) recipe does not determine a unique self-adjoint observable; self-adjoint extensions may exist but require additional choices at the incomplete end. We do not claim that no self-adjoint extension exists.
-
----
-
-## 8. Deficiency indices
-
-Write
+On every local inverse sheet of \(F\), set \((a,s,c)=F(q)\). Then \(|\det DF|=2\) gives
 \[
-n_+:=\dim\ker\bigl((P_1^{\mathrm{sym}})^*-i\bigr),\qquad
-n_-:=\dim\ker\bigl((P_1^{\mathrm{sym}})^*+i\bigr).
+\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
+\qquad
+X_1=\partial_s,
+\qquad
+H=-i\partial_s.
 \]
 
-**Proposition 8.1.** \(\max(n_+,n_-)\ge 1\).
-
-*Proof.* Immediate from Theorem E. ∎
-
-### 8.1 Half-line model (orientation fixed)
-
-The curve (6.1) extends to all \(t\in(-\infty,\tfrac12)\). Backward escape occurs only as \(t\to-\infty\), so the distinguished orbit is a half-line \(I=(-\infty,T)\) with \(T=\tfrac12\). Along orbits, \(F_1\) is time for \(X_1\) and
+### Escape walls
+Eliminating variables from \(F(q)=(a,s,c)\) yields the cubic
 \[
-A=-i X_1=-i\frac{\mathrm{d}}{\mathrm{d}s}\qquad(s=F_1).
+A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0
 \]
-Mapping \(x=T-s\in(0,\infty)\) sends \(a=-i\mathrm{d}/\mathrm{d}s\) to \(-b\) where \(b=-i\mathrm{d}/\mathrm{d}x\) on \((0,\infty)\). By the standard half-line computation [2, §X.1], \(b\) has indices \((1,0)\), hence \(a\) has
-\begin{equation}
-(n_+,n_-)_{\mathrm{orbit}}=(0,1).
-\tag{8.1}
-\end{equation}
-(The opposite pair would require the opposite operator orientation; with \(A=-iX_1\) and \(F_1\) increasing along the flow, (8.1) is fixed.)
+with \(A=-cs^3+s^2+18acs-27a^2c^2-16a\), \(B=3cs-4\), \(C=2c\). Zeros of \(A\) with \(B\neq 0\) force \(|q_0|\to\infty\).
 
-### 8.2 Positive measure incomplete set
+**Forward wall.** At \((a,s,c)=(0,\tfrac12,2)\), \(A=0\) and \(\partial_s A=-\tfrac12\neq 0\). IFT produces an open set \(U_+\) of transverse labels with a finite **upper** end \(s=\beta(a,c)\). (Matches the explicit curve (6.1) at \((0,2)\).)
 
-**Theorem F (orbit measure).**  
-(1) \(\mathrm{Leb}_3(\mathcal{I})>0\) where \(\mathcal{I}=\{q:T_+^{X_1}(q)<\infty\}\).  
-(2) \((n_+,n_-)=(0,\infty)\).
-
-**Proof sketch.**  
-*Escape locus.* Eliminating variables from \(F(q)=(a,s,c)\) yields a cubic constraint \(A(s;a,c)\,q_0^3+B\,q_0+C=0\). At \((a,s,c)=(0,\tfrac12,2)\) one has \(A=0\) and \(\partial_s A\neq 0\). The implicit function theorem produces a smooth forward escape time \(s_\star(a,c)\) on an open neighborhood \(U\ni(0,2)\).  
-
-*Lebesgue positivity.* On \(V=\{(a,s,c):(a,c)\in U,\,s\in(0.2,0.35)\}\) a local inverse branch of \(F\) exists (\(\det DF\equiv-2\)). Its image has positive measure and lies in \(\mathcal{I}\).  
-
-*Half-line family.* For \((a,c)\in U\) the incomplete branch is of type \((-\infty,s_\star(a,c))\): forward blow-up at \(s_\star\), backward continuation for \(s\to-\infty\) via the algebraic balance \(q_0\sim k/s\) with \(k\in\{2,-1\}\). Each such orbit contributes (8.1).  
-
-*Direct integral.* Since \(\operatorname{div} X_1=0\), Lebesgue measure disintegrates into arc-time on orbits times a transverse measure \(\mu\) [9, §II.2], [10, Ch. 11]. The label set \(U\) carries non-atomic positive \(\mu\)-measure. Deficiency indices of the decomposable operator dominate the direct integral of the fiber indices [10, §11.3–11.4]: each fiber contributes \(n_+=0\), \(n_-=1\), and \(L^2(U,\mu)\) is infinite-dimensional, so
+**Backward wall.** At \((a,s,c)=(\tfrac1{54},\tfrac12,2)\),
 \[
-(n_+,n_-)=(0,\infty).
+A=-\frac{(2s-1)(3s^2-1)}{3},
+\qquad
+\partial_s A(\tfrac12)=\tfrac16>0,
+\qquad
+B(\tfrac12)=-1.
 \]
-Full write-up: `docs/validation/G4-P1-orbit-measure-deficiency.md`. ∎
+For \(s=\tfrac12+h\), \(h\downarrow 0^+\), large roots \(q_0=\pm\sqrt{6/h}+O(1)\) give \(\|q\|\to\infty\). IFT yields an open set \(U_-\) of finite **lower** ends \(s=\alpha(a,c)\).  
+CAS: `cas_backward_incomplete_wall_A001.json`.
+
+**Theorem F.**  
+(1) \(\mathrm{Leb}_3(\{T_+<\infty\})>0\) and \(\mathrm{Leb}_3(\{T_->-\infty\})>0\) (images of open flow-box slabs under local inverses of \(F\)).  
+(2) \((n_+,n_-)=(\infty,\infty)\).
+
+**Proof of (2).** Transverse cutoffs \(\chi\in C_c^\infty(U_\pm)\) give \(L^2\) deficiency functions
+\begin{align*}
+u_-(a,s,c)&=\chi(a,c)\,e^{s-\beta(a,c)}
+&&\text{near upper walls,}
+&&(H^*+i)u_-=0,\\
+u_+(a,s,c)&=\chi(a,c)\,e^{-(s-\alpha(a,c))}
+&&\text{near lower walls,}
+&&(H^*-i)u_+=0.
+\end{align*}
+Varying \(\chi\) over infinite-dimensional subspaces of \(L^2(U_\pm)\) yields \(n_\pm=\infty\). Separability caps the dimensions at \(\aleph_0\). Full write-up: `G4-P1-orbit-measure-deficiency.md`. ∎
+
+**Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
+
+**Proof.** Immediate from \(n_-\ge 1\) (or \(n_+\ge 1\)) in Theorem F. No general “incompleteness ⇒ non-ESS for every div-free field” lemma is used. ∎
+
+**Corollary (extensions).** Since \(n_+=n_-=\infty\), von Neumann’s theorem supplies a continuum of self-adjoint extensions. The polynomial CCR/Poisson data do not select a preferred extension; strong CCR after extension remains open.
+
+**Erratum.** The v0.2.2 claim \((n_+,n_-)=(0,\infty)\) is **withdrawn**. It ignored the open backward-incomplete family and would have incorrectly implied *no* self-adjoint extension.
 
 ---
 
@@ -290,7 +288,8 @@ Full write-up: `docs/validation/G4-P1-orbit-measure-deficiency.md`. ∎
 4. No unique physically preferred self-adjoint extension is selected.  
 5. No von Neumann inclusion index tied to generic degree is claimed.  
 6. No slogan claim that the Jacobian conjecture is “factory false” is made beyond the finite identities actually used.  
-7. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems A–E unless separately cited.
+7. Discovery of the seed map \(F\) is not claimed (Alpöge–Fable [8]).  
+8. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems A–F unless separately cited.
 
 ---
 
@@ -306,7 +305,7 @@ Full write-up: `docs/validation/G4-P1-orbit-measure-deficiency.md`. ∎
 
 ## 11. Conclusion
 
-For the A001 seed Keller map we construct polynomial Poisson and Weyl lifts of the canonical relations, prove incompleteness of the dual field \(X_1\) by an explicit escaping integral curve, and conclude that \(P_1^{\mathrm{sym}}=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\), with global deficiency indices \((n_+,n_-)=(0,\infty)\). Algebraic preservation of CCR-type relations is therefore compatible with failure of the standard unique-observable recipe for at least one dual momentum. Strong CCR after extensions remains open.
+Starting from the Alpöge–Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
 
 ---
 
@@ -322,12 +321,14 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [2] M. Reed and B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press, 1975.  
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287–330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299–306.  
-[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21476665](https://doi.org/10.5281/zenodo.21476665) (v0.2.2); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
+[5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space (see release v0.3.0).  
 [6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
-[7] Repository validation dossiers and CAS reports under `docs/validation/` and `data/anchor/` in [5], including `G2-poisson-A001-dossier.md`, `G3-weyl-A001-dossier.md`, `G4-X1-incompleteness.md`, `G4-Chernoff-discharge.md`, `G4-P1-deficiency-indices.md`, and `G4-P1-orbit-measure-deficiency.md`.  
-[8] Public seed-map provenance as recorded in `docs/provenance/` and `docs/literature/` of [5] (announcement lineage and independent public Lean formalizations).  
-[9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980 (direct integrals).  
-[10] K. Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012 (Ch. 11: direct integrals of operators).
+[7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
+[8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19–20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
+[9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
+[10] K. Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.  
+[11] D. Cureton, independent Lean 4 formalization of the Alpöge/Fable seed, https://github.com/deancureton/jacobian.  
+[12] D. Speyer, *The new counterexample to the Jacobian conjecture*, Secret Blogging Seminar, 20 July 2026.
 
 ---
 
@@ -339,8 +340,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 | Theorem B | `docs/validation/G2-poisson-A001-dossier.md` | `cas_poisson_A001_*.json` |
 | Theorem C | `docs/validation/G3-weyl-A001-dossier.md` | `cas_weyl_A001_*.json` |
 | Theorem D | `docs/validation/G4-X1-incompleteness.md` | `cas_X1_blowup_curve_A001.json` |
-| Theorem E | `docs/validation/G4-Chernoff-discharge.md` | logic + D |
-| Theorem F | `docs/validation/G4-P1-orbit-measure-deficiency.md` | `cas_orbit_measure_IFT_A001.json`, sheet CAS |
+| Theorems E–F | `docs/validation/G4-P1-orbit-measure-deficiency.md` | forward IFT + backward wall CAS |
 
 ---
 

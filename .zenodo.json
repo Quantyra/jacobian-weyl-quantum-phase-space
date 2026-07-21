@@ -1,5 +1,5 @@
 {
-  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts of a Jacobian counterexample seed with dual-field incompleteness and ESS obstruction",
+  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts of the Alpöge–Fable Keller map with dual-transport deficiency (∞,∞)",
   "upload_type": "software",
   "creators": [
     {
@@ -8,16 +8,14 @@
     }
   ],
   "license": "Apache-2.0",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "keywords": [
     "jacobian-conjecture",
+    "alpoge-fable",
     "keller-map",
     "weyl-algebra",
-    "poisson-geometry",
     "essential-self-adjointness",
     "deficiency-indices",
-    "continuous-variable-qc",
-    "formal-methods",
     "quantyra",
     "exotic-ccr"
   ],
@@ -26,7 +24,12 @@
       "identifier": "https://github.com/Quantyra/exotic-ccr-lean",
       "relation": "isSupplementedBy",
       "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.21476665",
+      "relation": "isNewVersionOf",
+      "resource_type": "software"
     }
   ],
-  "description": "<p><strong>EXOTIC-CCR v0.2.2 (A001 arXiv package)</strong> — Author: <strong>Daniel Eric Fredriksen</strong> (Quantyra Inc).</p><p><strong>Certified results:</strong></p><ul><li>Seed: det DF = −2; three-point collision (dual CAS + Lean)</li><li>Poisson cotangent lift Φ and polynomial Weyl endomorphism ψ; div B = 0</li><li>X_1 incomplete on R³ (explicit blow-up curve)</li><li>P_1^sym = −i X_1 not ESS on C_c^∞(R³)</li><li>Leb_3({T_+ &lt; ∞}) &gt; 0; deficiency indices (n_+, n_-) = (0, ∞)</li></ul><p><strong>Paper:</strong> docs/notes/A001-arxiv-draft.md</p><p><strong>Non-claims:</strong> No unitary gate, channel, CP map, or computational advantage. No unique physical momenta without extension choices. No ESS claim for all three dual momenta.</p><p>Apache-2.0. https://github.com/Quantyra/jacobian-weyl-quantum-phase-space</p>"
+  "description": "<p><strong>EXOTIC-CCR v0.3.0</strong> — Author: <strong>Daniel Eric Fredriksen</strong> (Quantyra Inc).</p><p><strong>Erratum:</strong> v0.2.2 claimed deficiency indices (0,∞). Corrected to <strong>(∞,∞)</strong> after identifying an open backward-incomplete orbit family. See docs/notes/A001-ERRATUM-v0.2.2.md.</p><p><strong>Results:</strong> Alpöge–Fable seed restated (det DF=−2, 3-collision); Poisson/Weyl lifts; X_1 incomplete; H=−iX_1 not ESS; (n_+,n_−)=(∞,∞); infinitely many self-adjoint extensions, none preferred by algebraic CCR data.</p><p><strong>Non-claims:</strong> No gate/channel/advantage; seed discovery not claimed.</p><p>https://github.com/Quantyra/jacobian-weyl-quantum-phase-space</p>"
 }

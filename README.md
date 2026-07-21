@@ -1,8 +1,8 @@
 # EXOTIC-CCR — Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release:** [v0.2.2](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.2)  
-**DOI:** [10.5281/zenodo.21476665](https://doi.org/10.5281/zenodo.21476665) (concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351))
+**Release:** [v0.3.0](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0)  
+**DOI:** concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (v0.3.0 version DOI after Zenodo ingest; **do not use v0.2.2 pair claim**)
 
 ---
 
@@ -10,7 +10,8 @@
 
 ### **[docs/notes/A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)** ← main paper draft
 
-arXiv-ready markdown: Theorems A–F (\(X_1\) blow-up, \(P_1^{\mathrm{sym}}\) not ESS, \(\mathrm{Leb}_3(\mathcal{I})>0\), deficiency indices \((0,\infty)\)), non-claims, bibliography.
+Theorems A–F: Alpöge–Fable seed **restated**; Poisson/Weyl lifts; \(X_1\) incomplete; \(H=-iX_1\) not ESS with **\((n_+,n_-)=(\infty,\infty)\)**.  
+**Erratum:** [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) (withdraws \((0,\infty)\)).
 
 | Doc | Role |
 |-----|------|
@@ -23,7 +24,7 @@ arXiv-ready markdown: Theorems A–F (\(X_1\) blow-up, \(P_1^{\mathrm{sym}}\) no
 
 ## One-sentence result
 
-For the seed Keller map \(F\), algebraic Poisson/Weyl CCR lifts exist, but \(P_1^{\mathrm{sym}}=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(0,\infty)\).
+For the Alpöge–Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, but \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\) (infinitely many extensions; none preferred).
 
 ## Non-claims
 
@@ -47,7 +48,7 @@ https://github.com/Quantyra/exotic-ccr-lean
 | G1 atlas | A001/A002 | [atlas index](data/atlas/index.json) |
 | G2 Poisson | certified | [G2](docs/validation/G2-poisson-A001-dossier.md) |
 | G3 Weyl | certified | [G3](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(X_1\) / \(P_1\) ESS | **proved** \((n_+,n_-)=(0,\infty)\) | [G4-X1](docs/validation/G4-X1-incompleteness.md) · [orbit measure](docs/validation/G4-P1-orbit-measure-deficiency.md) · [G4 summary](docs/validation/G4-domains-CCR-A001-dossier.md) |
+| G4 \(X_1\) / \(H=-iX_1\) | **proved** \((n_+,n_-)=(\infty,\infty)\) | [orbit measure](docs/validation/G4-P1-orbit-measure-deficiency.md) · [erratum](docs/notes/A001-ERRATUM-v0.2.2.md) |
 | G5–G7 | packages | [closeout](docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md) |
 
 ## Repository layout
@@ -63,7 +64,7 @@ scripts/cas/          # reproducible verifiers
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Prefer concept DOI `10.5281/zenodo.21474351`; version DOI `10.5281/zenodo.21476665` for v0.2.2.
+See [CITATION.cff](CITATION.cff). Prefer concept DOI `10.5281/zenodo.21474351` and **v0.3.0** (not the withdrawn v0.2.2 pair claim).
 
 ## License
 

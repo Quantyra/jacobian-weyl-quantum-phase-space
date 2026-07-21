@@ -1,8 +1,9 @@
 # Global deficiency indices of \(P_1^{\mathrm{sym}}\) via \(X_1\) orbit geometry
 
 **Date:** 2026-07-21  
-**Status:** **Resolved** — \(\mathrm{Leb}_3(\mathcal{I})>0\); \((n_+,n_-)=(0,\infty)\)  
-**Operator:** \(A=P_1^{\mathrm{sym}}=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)
+**Status:** **Corrected** — \(\mathrm{Leb}_3(\mathcal{I}_\pm)>0\); \((n_+,n_-)=(\infty,\infty)\)  
+**Erratum:** v0.2.2 claimed \((0,\infty)\); open backward-incomplete family forces \(n_+=\infty\) as well.  
+**Operator:** \(H=P_1^{\mathrm{sym}}=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)
 
 ---
 
@@ -10,38 +11,39 @@
 
 | Fact | Status |
 |------|--------|
-| \(A\) not ESS | **proved** |
-| Orbit through \((1,0,0)\): time \((-\infty,\tfrac12)\) | **proved** |
-| 1D model on that half-line | \((n_+,n_-)=(0,1)\) (§5.1) |
-| Incomplete 2D sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** |
-| \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** (§4) |
-| Half-line structure on open transverse set \(U\) | **proved** (§5.2) |
-| Global \((n_+,n_-)=(0,\infty)\) | **proved** (§5.3) |
+| \(H\) not ESS | **proved** (explicit deficiency vectors) |
+| Forward-incomplete open family | **proved** (§3–4) |
+| Backward-incomplete open family | **proved** (§3.3; CAS) |
+| Global \((n_+,n_-)=(\infty,\infty)\) | **proved** (§5) |
+| Self-adjoint extensions exist | **yes** (von Neumann: \(n_+=n_-\)) — non-unique |
 
-Convention: \(n_+=\dim\ker(A^*-i)\), \(n_-=\dim\ker(A^*+i)\), \(\mathcal{I}=\{q:T_+^{X_1}(q)<\infty\}\).
+Convention: \(n_+=\dim\ker(H^*-i)\), \(n_-=\dim\ker(H^*+i)\).
 
 ---
 
-## 2. Foliation
+## 2. Flow-box coordinates
 
 Along the \(X_1\) flow (where it exists):
 \[
-\frac{d}{dt}F_0=0,\qquad
-\frac{d}{dt}F_2=0,\qquad
-\frac{d}{dt}F_1=1.
+X_1 F_0=0,\qquad X_1 F_2=0,\qquad X_1 F_1=1.
 \]
-Orbits lie in levels \(L_{a,c}=\{F_0=a,\,F_2=c\}\); \(F_1\) is orbit time.
-Also \(\det DF\equiv-2\neq 0\), so \(F\) is a local diffeomorphism everywhere.
+On every local inverse sheet of \(F\), \((a,s,c)=F(q)\) are coordinates and
+\[
+|\det DF|=2\quad\Rightarrow\quad \mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
+\qquad
+X_1=\partial_s.
+\]
+Thus
+\[
+H=-i\partial_s
+\]
+in these coordinates (no undetermined density).
 
 ---
 
-## 3. Algebraic escape locus
+## 3. Algebraic escape walls
 
-Eliminate \(q_2\) from \(F_2=c\) (\(q_0\neq 0\)):
-\[
-q_2=\frac{-c-3q_0^2 q_1+2q_0}{q_0^3}.
-\]
-Resultant elimination yields
+Eliminating \(q_2\) from \(F_2=c\) and \(q_1\) from \((F_0,F_1)=(a,s)\) yields
 \begin{equation}
 A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0,
 \tag{3.1}
@@ -57,132 +59,113 @@ C(c)
 &=
 2c.
 \end{align*}
+When \(A\to 0\) with \(B\neq 0\), Vieta forces at least one \(|q_0|\to\infty\).
 
-**Blow-up criterion.** Along a root branch of (3.1), if \(A\to 0\) and that branch is the infinite Vieta root, then \(|q_0|\to\infty\).
+### 3.1 Forward wall (upper endpoint) near \((a,c)=(0,2)\)
+At \((a,s,c)=(0,\tfrac12,2)\): \(A=0\), \(\partial_s A=-\tfrac12\neq 0\)  
+(`cas_orbit_measure_IFT_A001.json`). IFT ⇒ smooth \(s_\star(a,c)\) on open \(U_+\ni(0,2)\).  
+Orbits on the IFT branch exist for \(s<s_\star\) and \(\|q\|\to\infty\) as \(s\to s_\star^-\) (**finite upper end**).
 
-### 3.1 Base case \(a=0\)
+### 3.2 Sheet \(\Sigma_0\subset\{F_0=0\}\)
+Closed form for \(a=0\), \(c>0\), \(0<s<1/c\) (`cas_F0_zero_incomplete_sheet_A001.json`):  
+escape as \(s\to(1/c)^-\); backward \(s\to-\infty\) complete on that sheet.
+
+### 3.3 Backward wall (lower endpoint) near \((a,c)=(1/54,2)\)
+**Proposition.** At \(a=\tfrac1{54}\), \(c=2\),
 \[
-A(s;0,c)=s^2(1-c s).
+A\bigl(s;\tfrac1{54},2\bigr)=-\frac{(2s-1)(3s^2-1)}{3},
 \]
-Forward escape at \(s=1/c\) (\(c>0\)); closed form sheet \(\Sigma_0\) (`cas_F0_zero_incomplete_sheet_A001.json`).
+so \(A(\tfrac12)=0\) and \(\partial_s A(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\neq 0\).
 
-### 3.2 IFT continuation
-At \((a,s,c)=(0,\tfrac12,2)\): \(A=0\), \(\partial_s A=-\tfrac12\neq 0\) (`cas_orbit_measure_IFT_A001.json`).  
-Hence a \(C^\infty\) escape time \(s_\star(a,c)\) on an open neighborhood \(U\ni(0,2)\) with \(s_\star(0,2)=\tfrac12\).
-
-### 3.3 Backward asymptotics
-For large negative \(s\), the balance \(A q_0^3+B q_0+C=0\) admits
+For \(s=\tfrac12+h\) with \(h\downarrow 0^+\), (3.1) admits large real roots
 \[
-q_0\sim \frac{k}{s},\qquad k\in\{2,-1\}
+q_0=\pm\sqrt{6/h}+O(1),
 \]
-(roots of \(-k^3+3k+2=0\)). Thus finite-\(q_0\) algebraic branches exist for all sufficiently negative \(s\). Grid check on \(U\)-scale parameters: real \(F\)-preimages at \(s\in\{-1,-5,-20,-50\}\) for all tested \((a,c)\) near \((0,2)\) (484/484).
+and corresponding real \((q_1,q_2)\) with \(\|q\|\to\infty\) as \(h\downarrow 0\).  
+Thus these orbits exist for \(s>\tfrac12\) and enter from infinity as \(s\downarrow\tfrac12^+\) (**finite lower end**).
+
+IFT at this base point gives an open neighborhood \(U_-\ni(\tfrac1{54},2)\) of transverse parameters with the same lower wall.  
+CAS: `cas_backward_incomplete_wall_A001.json` (PASS).
 
 ---
 
-## 4. Positive Lebesgue measure of \(\mathcal{I}\)
+## 4. Positive measure of incomplete sets
 
-**Theorem 4.1.** \(\mathrm{Leb}_3(\mathcal{I})>0\).
-
-**Proof.** Shrink \(U\) so \(s_\star(a,c)>\tfrac25\). Set
+Let
 \[
-V:=\bigl\{(a,s,c):(a,c)\in U,\; s\in(0.2,\,0.35)\bigr\}.
+\mathcal{I}_+:=\{q:T_+^{X_1}(q)<\infty\},\qquad
+\mathcal{I}_-:=\{q:T_-^{X_1}(q)>-\infty\}.
 \]
-Then \(\mathrm{Leb}_3(V)>0\). On \(V\), a continuous local inverse branch \(\Psi=F^{-1}\) exists (\(\det DF\equiv-2\); no blow-up yet). \(\Psi\) is a \(C^1\) diffeomorphism onto its image, so \(\mathrm{Leb}_3(\Psi(V))>0\). Every \(q\in\Psi(V)\) has remaining forward time \(\le s_\star(F_0(q),F_2(q))-F_1(q)<\infty\), hence \(\Psi(V)\subset\mathcal{I}\). ∎
+
+**Theorem 4.1.** \(\mathrm{Leb}_3(\mathcal{I}_+)>0\) and \(\mathrm{Leb}_3(\mathcal{I}_-)>0\).
+
+**Proof.**  
+- Forward: on \(V_+=\{(a,s,c):(a,c)\in U_+,\,s\in(s_\star- \delta,s_\star)\}\) (shrink so \(s\) stays below the wall), local inverse of \(F\) is a diffeomorphism (\(\det DF\equiv-2\)); image has positive measure ⊂ \(\mathcal{I}_+\).  
+- Backward: same with \(V_-=\{(a,s,c):(a,c)\in U_-,\,s\in(\alpha,s_\star^-+\delta)\}\) just above the lower wall; image ⊂ \(\mathcal{I}_-\).  
+
+In flow-box coordinates both sets contain nonempty open pieces of \((a,s,c)\)-space, hence open sets of positive Lebesgue measure in \(q\). ∎
 
 ---
 
-## 5. Global deficiency indices
+## 5. Deficiency indices \((\infty,\infty)\)
 
-### 5.1 Half-line model with fixed orientation
-Parameterize by orbit time \(s=F_1\), so \(X_1=\mathrm{d}/\mathrm{d}s\) and
+**Lemma 5.1** (half-line models).  
+On \(L^2((\alpha,\beta),\mathrm{d}s)\) with \(h=-i\partial_s\) minimal:
+- finite **upper** end only: contributes to \(\ker(h^*+i)\) (dimension 1 per orbit);
+- finite **lower** end only: contributes to \(\ker(h^*-i)\) (dimension 1 per orbit);
+- both ends finite: contributes \((1,1)\).
+
+Explicit deficiency functions in flow-box coordinates (transverse cutoff \(\chi\in C_c^\infty(U)\)):
+\begin{align*}
+u_-(a,s,c)
+&=
+\chi(a,c)\,e^{s-\beta(a,c)}
+&&\text{near a finite upper wall }\beta,
+&&
+(H^*+i)u_-=0,\\
+u_+(a,s,c)
+&=
+\chi(a,c)\,e^{-(s-\alpha(a,c))}
+&&\text{near a finite lower wall }\alpha,
+&&
+(H^*-i)u_+=0.
+\end{align*}
+Both are square-integrable near the finite end (exponential decay into the orbit). Varying \(\chi\) over an infinite-dimensional subspace of \(L^2(U)\) yields infinite-dimensional deficiency spaces.
+
+**Theorem 5.2.**
 \[
-A=-i X_1=-i\frac{\mathrm{d}}{\mathrm{d}s}
-\quad\text{on}\quad
-C_c^\infty(I)\subset L^2(I,\mathrm{d}s)
-\]
-along a single orbit (the \(\operatorname{div} X_1=0\) condition makes Lebesgue arc-time the correct 1D measure class up to a smooth positive density, which does not change deficiency indices).
-
-**Lemma 5.1** (Reed–Simon [2, §X.1]).  
-For \(b=-i\,\mathrm{d}/\mathrm{d}x\) on \(C_c^\infty(0,\infty)\subset L^2(0,\infty)\),
-\[
-(n_+,n_-)=(1,0).
-\]
-
-**Proposition 5.2.** On a half-line \(I=(-\infty,T)\) with the operator \(a=-i\,\mathrm{d}/\mathrm{d}s\),
-\[
-(n_+,n_-)=(0,1).
-\]
-
-**Proof.** Set \(x=T-s\in(0,\infty)\). Then \(\mathrm{d}/\mathrm{d}s=-\mathrm{d}/\mathrm{d}x\), so
-\[
-a=-i\bigl(-\tfrac{\mathrm{d}}{\mathrm{d}x}\bigr)=i\tfrac{\mathrm{d}}{\mathrm{d}x}=-b.
-\]
-Hence \(\ker(a^*-i)=\ker(b^*+i)\) has dimension \(0\) and \(\ker(a^*+i)=\ker(b^*-i)\) has dimension \(1\). ∎
-
-(The opposite pair \((1,0)\) would require the opposite time orientation or \(+i X_1\). With \(A=-i X_1\) and \(F_1\) increasing along the flow, the pair is **pinned** to \((0,1)\).)
-
-### 5.2 Half-line structure on open \(U\)
-**Proposition 5.3.** There is a nonempty open \(U\ni(0,2)\) such that for every \((a,c)\in U\), the incomplete \(X_1\)-orbit through the IFT branch with forward escape \(s_\star(a,c)\) is of half-line type
-\[
-I_{a,c}\cong(-\infty,\,s_\star(a,c))
-\]
-in \(F_1\)-time: forward-incomplete, backward-complete.
-
-**Proof sketch.**  
-- Forward: IFT gives finite \(s_\star(a,c)\) and \(\|q\|\to\infty\) along the infinite root of (3.1) as \(s\to s_\star^-\) (base case \(a=0\) is the closed form; the infinite root persists by Vieta as \(A\to 0\)).  
-- Backward: leading balance (3.3) yields finite \(q_0\sim k/s\) as \(s\to-\infty\); completing \((q_1,q_2)\) from \(F_2=c\) and \(F_1=s\) gives a real-analytic continuation of a finite branch for all \(s\ll 0\). On the compact \(s\)-intervals between, the only possible finite-time blow-downs are poles at zeros of \(A\); the moderate (finite) root of (3.1) remains finite across those zeros (it limits to \(-C/B\) when \(A=0\), \(B\neq 0\)). Thus the moderate incomplete branch that matches the IFT sheet at \(s\in(0.2,0.35)\) extends to all \(s\in(-\infty,s_\star)\). ∎
-
-### 5.3 Direct integral ⇒ exact global pair
-**Theorem 5.4.** 
-\[
-\boxed{(n_+,n_-)=(0,\infty)}.
+\boxed{(n_+,n_-)=(\infty,\infty)}.
 \]
 
 **Proof.**  
-1. By Theorem 4.1 and Proposition 5.3, there is a positive-measure set of points lying on a measurable family of half-line orbits labeled by an open set \(U\subset\mathbb{R}^2\) of transverse invariants \((a,c)=(F_0,F_2)\), each unitarily equivalent to the model of Proposition 5.2 with indices \((0,1)\).  
+1. Open family \(U_+\) of finite **upper** ends ⇒ \(n_-=\infty\) via \(\{u_-\}\).  
+2. Open family \(U_-\) of finite **lower** ends ⇒ \(n_+=\infty\) via \(\{u_+\}\).  
+3. Separability of \(L^2(\mathbb{R}^3)\) ⇒ dimensions are countably infinite. ∎
 
-2. Because \(\operatorname{div} X_1=0\), the Lebesgue measure on \(\mathbb{R}^3\) disintegrates along the \(X_1\)-foliation into arc-time measure on orbits times a transverse measure \(\mu\) on a cross-section (standard disintegration for a divergence-free flow / Liouville foliation; cf. the direct-integral framework in Reed–Simon I [9, §II.2] and the treatment of decomposable operators in Schmüdgen [10, Ch. 11]). The set \(U\) carries a non-atomic positive \(\mu\)-measure (push-forward of positive Lebesgue measure under the local diffeomorphism \(F\)).  
+**Corollary 5.3 (non-ESS).** \(n_-\ge 1\) (or \(n_+\ge 1\)) ⇒ \(H\) is not essentially self-adjoint.  
+No general “any incomplete div-free field is non-ESS” lemma is required.
 
-3. The minimal operator \(A\) is decomposable as a direct integral of the orbit operators \(a_{a,c}\). Deficiency subspaces of a direct integral of symmetric operators contain the direct integrals of the fiber deficiency subspaces (Schmüdgen [10, §11.3–11.4]; Reed–Simon II [2, §X.1] for the fiber computation). Therefore
-\[
-n_
--
-\ge
-\dim L^2(U,\mu)=\infty,
-\qquad
-n_+
-=
-0
-\]
-on this sub-family: every fiber contributes \(n_+=0\), \(n_-=1\), and the transverse space is infinite-dimensional.  
-
-4. Contributions from other orbit types cannot cancel these deficiency dimensions. Orbits that are complete contribute \((0,0)\). Finite-interval orbits would contribute \((1,1)\) and could only **increase** \(n_+\); they are not needed for the lower bound \(n_-=\infty\). To pin \(n_+=0\) globally it is enough that either (i) finite-interval / opposite-orientation orbits form a \(\mu\)-null set, or (ii) one restricts the claim to the reducing subspace generated by the half-line family over \(U\). On that reducing subspace the pair is exactly \((0,\infty)\). The ambient operator then satisfies \(n_-=\infty\) and \(n_+\ge 0\); combined with the half-line orientation on a full-measure subset of the incomplete support constructed in §4–5.2 (algebraic backward continuation), one obtains \(n_+=0\) for the ambient operator as well.  
-
-Thus \((n_+,n_-)=(0,\infty)\). ∎
-
-**Remark.** The single-orbit lower bound \(\max(n_+,n_-)\ge 1\) is elementary from non-ESS. The orbit-measure upgrade replaces it by the exact infinite pair.
+**Corollary 5.4 (extensions).** By von Neumann, \(n_+=n_-=\infty\) ⇒ **infinitely many** self-adjoint extensions exist. The algebraic CCR data do **not** select a canonical one.
 
 ---
 
-## 6. Claims ledger
+## 6. Erratum relative to v0.2.2
 
-| ID | Statement | Status |
-|----|-----------|--------|
-| OM-1 | \(\max(n_+,n_-)\ge 1\) | **proved** (absorbed) |
-| OM-2 | Half-line model \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\) | **proved** |
-| OM-3 | Incomplete sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** |
-| OM-4 | \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** |
-| OM-5 | \(\max(n_+,n_-)=\infty\) | **proved** |
-| OM-6 | Global \((n_+,n_-)=(0,\infty)\) | **proved** |
+| Claim in v0.2.2 | Status |
+|-----------------|--------|
+| \(\mathrm{Leb}_3(\mathcal{I}_+)>0\) | **kept** |
+| Half-line model \((0,1)\) on pure forward half-lines | **kept** (fiber model) |
+| Global \((n_+,n_-)=(0,\infty)\) | **withdrawn** |
+| “No self-adjoint extension” implication of \((0,\infty)\) | **never intended; inconsistent with text** |
+| Global \((n_+,n_-)=(\infty,\infty)\) | **corrected claim** |
 
 ---
 
 ## 7. Non-claims
-No channel/gate/advantage. No unique physical momenta without boundary conditions. Infinite deficiency blocks unique ESS quantization of \(P_1^{\mathrm{sym}}\); it does not yield computational advantage.
+No channel/gate/advantage. No preferred self-adjoint extension. No strong CCR after extension.
 
----
-
-## 8. References (local)
-- [2] Reed–Simon II (half-line deficiency).  
-- [9] Reed–Simon I (direct integrals).  
-- [10] Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer (2012), Ch. 11.
+## 8. Evidence
+- `cas_orbit_measure_IFT_A001.json` — forward wall IFT  
+- `cas_F0_zero_incomplete_sheet_A001.json` — \(\Sigma_0\)  
+- `cas_backward_incomplete_wall_A001.json` — backward wall  
+- `scripts/cas/verify_*_A001.py`

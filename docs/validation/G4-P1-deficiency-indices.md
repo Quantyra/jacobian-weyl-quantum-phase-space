@@ -1,7 +1,7 @@
 # G4 Deficiency indices of \(P_1^{\mathrm{sym}}=-i X_1\) (A001)
 
 **Date:** 2026-07-21  
-**Status:** **Resolved** — global \((n_+,n_-)=(0,\infty)\); see `G4-P1-orbit-measure-deficiency.md`  
+**Status:** **Corrected** — global \((n_+,n_-)=(\infty,\infty)\); see `G4-P1-orbit-measure-deficiency.md` (v0.2.2 pair withdrawn)  
 **Operator:** \(A:=P_1^{\mathrm{sym}}=-i X_1\) on \(C_c^\infty(\mathbb{R}^3)\subset L^2(\mathbb{R}^3)\)  
 **Conventions:** \(n_\pm:=\dim\ker(A^*\mp i)\) would vary by text; we use  
 \[
@@ -100,20 +100,20 @@ for \(A=-i X_1=-i\mathrm{d}/\mathrm{d}s\) (orientation fixed by the flow).
 **Full write-up:** `G4-P1-orbit-measure-deficiency.md`
 
 \[
-\boxed{(n_+,n_-)=(0,\infty)}
+\boxed{(n_+,n_-)=(\infty,\infty)}
 \]
 \[
-\boxed{(n_+,n_-)_{\mathrm{orbit}}=(0,1)
-\text{ for }A=-i\mathrm{d}/\mathrm{d}s\text{ on half-line }(-\infty,T)}
+\text{forward half-line fiber model }(0,1);\quad
+\text{backward half-line fiber model }(1,0)
 \]
 
 | Piece | Status |
 |-------|--------|
-| 2D sheet \(\Sigma_0\subset\{F_0=0\}\) | **proved** |
-| IFT escape locus off \(a=0\) | **proved** |
-| \(\mathrm{Leb}_3(\mathcal{I})>0\) | **proved** |
-| Half-line orientation \((0,1)\) | **proved** |
-| Direct integral \(\Rightarrow(0,\infty)\) | **proved** |
+| Forward wall open family | **proved** |
+| Backward wall open family | **proved** |
+| \(\mathrm{Leb}_3(\mathcal{I}_\pm)>0\) | **proved** |
+| Explicit deficiency functions \(u_\pm\) | **proved** |
+| Self-adjoint extensions exist (non-unique) | **proved** |
 
 ---
 
@@ -129,7 +129,7 @@ ESS of \(P_0^{\mathrm{sym}}\), \(P_2^{\mathrm{sym}}\); strong CCR after extensio
 |----|-----------|--------|
 | Def-min | \(\max(n_+,n_-)\ge 1\) | **proved** |
 | Def-orbit-model | half-line indices \((0,1)\) | **proved** |
-| Def-global-exact | \((n_+,n_-)=(0,\infty)\) | **proved** |
+| Def-global-exact | \((n_+,n_-)=(\infty,\infty)\) | **proved** |
 | Channel/gate | — | **not claimed** |
 
 ---

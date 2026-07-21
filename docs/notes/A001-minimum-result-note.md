@@ -140,9 +140,9 @@ is **not essentially self-adjoint**.
 | T-E1 | \(P_1^{\mathrm{sym}}=-i X_1\) not ESS on \(C_c^\infty\) | **proved** |
 | T-which-j | Explicit index \(j\) | **settled: \(j=1\)** (others open) |
 | T-def | \(\max(n_+,n_-)\ge 1\) for \(P_1^{\mathrm{sym}}\) | **proved** |
-| T-def-pair | \((n_+,n_-)=(0,\infty)\) | **proved** |
+| T-def-pair | \((n_+,n_-)=(\infty,\infty)\) | **proved** (v0.2.2 pair withdrawn) |
 | T-def-orbit | 1D orbit model indices \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\) | **proved** |
-| T-def-global | Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **proved** \((0,\infty)\) |
+| T-def-global | Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **proved** \((\infty,\infty)\) |
 | T-sCCR | Strong CCR / joint spectral package | **open** |
 | T-phys | Reversible physical symmetry / unique momenta / channel / gate | **not authorized** |
 
@@ -184,7 +184,7 @@ is **not essentially self-adjoint**.
 
 ## 6. One-paragraph summary
 
-For the seed Jacobian-counterexample map we construct and dual-CAS-certify a classical Poisson cotangent lift and a polynomial Weyl-algebra endomorphism preserving CCR relations. We prove that the dual field \(X_1\) is incomplete on \(\mathbb{R}^3\) by an explicit integral curve through \((1,0,0)\) that escapes to infinity in time \(1/2\), and hence that \(P_1^{\mathrm{sym}}=-i X_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\), with global deficiency indices \((n_+,n_-)=(0,\infty)\). Algebraic CCR preservation therefore does not yield uniquely determined Schrödinger momenta without additional boundary choices. Strong commutation and any channel/gate interpretation remain open and are not claimed.
+Starting from the Alpöge–Fable seed map (restated, not claimed as discovery), we construct Poisson/Weyl lifts, prove \(X_1\) incomplete, and show \(H=-iX_1\) has deficiency indices \((\infty,\infty)\): not ESS, infinitely many self-adjoint extensions, none preferred by algebraic CCR data. Channel/gate claims are not made.
 
 ---
 
@@ -210,6 +210,6 @@ See [../validation/G4-P1-deficiency-indices.md](../validation/G4-P1-deficiency-i
 - \(\max(n_+,n_-)\ge 1\): **proved** (non-ESS).
 - Orbit through \((1,0,0)\) is a half-line \((-\infty,\tfrac12)\): backward complete, forward escape at \(\tfrac12\).
 - 1D model indices: \((0,1)\) for \(A=-i\mathrm{d}/\mathrm{d}s\).
-- Global deficiency: \((n_+,n_-)=(0,\infty)\).
+- Global deficiency: \((n_+,n_-)=(\infty,\infty)\) (forward + backward walls).
 - Incomplete set: 2D sheet in \(\{F_0=0\}\) + \(\mathrm{Leb}_3>0\) (IFT off \(a=0\), \(\det DF\equiv-2\)).
 - Details: [../validation/G4-P1-orbit-measure-deficiency.md](../validation/G4-P1-orbit-measure-deficiency.md).
