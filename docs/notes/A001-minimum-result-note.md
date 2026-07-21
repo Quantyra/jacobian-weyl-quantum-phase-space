@@ -139,7 +139,9 @@ is **not essentially self-adjoint**.
 | T-E | ∃ \(j\) with \(P_j^{\mathrm{sym}}\) not ESS on \(C_c^\infty\) | **proved** |
 | T-E1 | \(P_1^{\mathrm{sym}}=-i X_1\) not ESS on \(C_c^\infty\) | **proved** |
 | T-which-j | Explicit index \(j\) | **settled: \(j=1\)** (others open) |
-| T-def | Exact deficiency indices \((n_+,n_-)\) for \(P_1^{\mathrm{sym}}\) | **open** (\(\max(n_+,n_-)\ge 1\) only) |
+| T-def | \(\max(n_+,n_-)\ge 1\) for \(P_1^{\mathrm{sym}}\) | **proved** |
+| T-def-orbit | 1D orbit model indices \((1,0)\) or \((0,1)\) | **proved** (model) |
+| T-def-global | Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **open** |
 | T-sCCR | Strong CCR / joint spectral package | **open** |
 | T-phys | Reversible physical symmetry / unique momenta / channel / gate | **not authorized** |
 
@@ -172,7 +174,7 @@ is **not essentially self-adjoint**.
 
 ## 5. Open problems (next math)
 
-1. **Deficiency indices** \((n_+,n_-)\) of \(P_1^{\mathrm{sym}}\).  
+1. **Exact global deficiency indices** of \(P_1^{\mathrm{sym}}\) (orbit-measure / direct-integral analysis).  
 2. **ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\)**.  
 3. **Strong CCR** after choosing self-adjoint extensions (if any coherent joint theory exists).  
 4. **Lean** formalization of Theorems B–E1 (or selected lemmas).  
@@ -203,4 +205,9 @@ q_2(t)&=t^2\bigl(2t-3\sqrt{1-2t}-1\bigr).
 Then \(F(q(t))=(0,t,2)\), \(q'(t)=X_1(q(t))\), and \(q_0(t)\to+\infty\) as \(t\to\tfrac12^-\).
 
 ### Deficiency indices
-Non-ESS \(\Rightarrow\max(n_+,n_-)\ge 1\). Exact pair \((n_+,n_-)\) for \(P_1^{\mathrm{sym}}\) is **not computed**.
+See [../validation/G4-P1-deficiency-indices.md](../validation/G4-P1-deficiency-indices.md).
+
+- \(\max(n_+,n_-)\ge 1\): **proved** (non-ESS).
+- Orbit through \((1,0,0)\) is a half-line \((-\infty,	frac12)\): backward complete, forward escape at \(	frac12\).
+- 1D model indices: \((1,0)\) or \((0,1)\) (orientation).
+- Exact **global** \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\): **open** (orbit-measure analysis).

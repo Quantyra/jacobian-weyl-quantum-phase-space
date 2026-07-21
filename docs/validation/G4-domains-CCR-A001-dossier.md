@@ -1,45 +1,42 @@
 # G4 Domains / self-adjointness / strong CCR — A001
 
-**Status:** **\(X_1\) incomplete proved; \(P_1^{\mathrm{sym}}\) not ESS proved**; strong CCR open  
+**Status:** \(X_1\) incomplete + \(P_1^{\mathrm{sym}}\) not ESS **proved**; deficiency indices **bounded / modeled**  
 **Date:** 2026-07-21  
 
 ## Documents
 | Doc | Content |
 |-----|---------|
-| [`G4-X1-incompleteness.md`](G4-X1-incompleteness.md) | **\(j=1\)** explicit blow-up curve |
-| [`G4-Xj-incompleteness.md`](G4-Xj-incompleteness.md) | Existential incompleteness (any \(j\)) |
-| [`G4-Chernoff-discharge.md`](G4-Chernoff-discharge.md) | incomplete ⇒ not ESS |
-| CAS | `data/anchor/cas_X1_blowup_curve_A001.json` |
+| [`G4-X1-incompleteness.md`](G4-X1-incompleteness.md) | \(X_1\) explicit blow-up |
+| [`G4-P1-deficiency-indices.md`](G4-P1-deficiency-indices.md) | **deficiency index bounds + plan** |
+| [`G4-Chernoff-discharge.md`](G4-Chernoff-discharge.md) | not ESS from incompleteness |
 
-## Main results
-| Result | Status |
-|--------|--------|
-| \(X_1\) incomplete on \(\mathbb{R}^3\) | **proved** (explicit \(\gamma(t)\), escape at \(t=\tfrac12\)) |
-| \(P_1^{\mathrm{sym}}=-i X_1\) not ESS on \(C_c^\infty\) | **proved** |
-| Deficiency indices \((n_+,n_-)\) | **open** (only \(\max(n_+,n_-)\ge 1\)) |
-| Status of \(P_0^{\mathrm{sym}},P_2^{\mathrm{sym}}\) | **not settled here** |
+## Results
+| Item | Status |
+|------|--------|
+| \(X_1\) incomplete | **proved** |
+| \(P_1^{\mathrm{sym}}\) not ESS | **proved** |
+| \(\max(n_+,n_-)\ge 1\) | **proved** |
+| Orbit through \((1,0,0)\): time \((-\infty,\tfrac12)\) | **proved** (forward finite end, backward complete) |
+| 1D orbit model indices | **\((1,0)\) or \((0,1)\)** (orientation) |
+| Exact global \((n_+,n_-)\) on \(L^2(\mathbb{R}^3)\) | **open** |
 | Strong CCR | **open** |
 
-## Explicit curve (summary)
-Through \(q_\star=(1,0,0)\), for \(t\in[0,\tfrac12)\):
+## Deficiency indices (summary)
 \[
-q_1=t,\quad
-q_0=\frac{-2t-\sqrt{1-2t}+1}{t(2t-1)}\ (q_0(0)=1),\quad
-F(q(t))=(0,t,2),\quad
-q'(t)=X_1(q(t)),\quad
-q_0(t)\to+\infty\ (t\to\tfrac12^-).
+(n_+,n_-)\neq(0,0),\quad \max(n_+,n_-)\ge 1.
 \]
+Distinguished orbit model predicts half-line indices \(\{(1,0),(0,1)\}\).  
+Global exact pair requires orbit-measure analysis (plan in deficiency note §5).
 
 ## Claims ledger
 | ID | Status |
 |----|--------|
-| G4-formal-symmetric | **certified** |
 | G4-X1-incomplete | **proved** |
 | G4-P1-not-ESS | **proved** |
-| G4-deficiency-indices-exact | **open** |
-| G4-P0-P2-ESS | **open** |
-| G4-strong-CCR | **open** |
+| G4-def-max-ge-1 | **proved** |
+| G4-def-orbit-model-half-line | **proved** |
+| G4-def-global-exact | **open** |
 | G4-physical-unique-momenta | **not authorized** |
 
 ## Non-claims
-No channel/gate/advantage. No claim all three momenta fail ESS.
+No channel/gate/advantage. No claim global indices are exactly \((1,0)\) without further measure theory.
