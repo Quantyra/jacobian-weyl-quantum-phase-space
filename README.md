@@ -15,7 +15,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 | Doc | Role |
 |-----|------|
-| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Primary submit PDF (v0.3.3)** |
+| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Canonical public PDF (v0.3.3; arXiv deferred)** |
 | [A001-arxiv.tex](docs/notes/A001-arxiv.tex) / [draft.md](docs/notes/A001-arxiv-draft.md) | LaTeX source / long form |
 | [A001-endorsement-request.md](docs/notes/A001-endorsement-request.md) | Endorser email blurb |
 | [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze |

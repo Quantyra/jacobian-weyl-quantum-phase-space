@@ -1,22 +1,21 @@
-﻿# A001 arXiv checklist (v0.3.3)
+﻿# A001 publication checklist (v0.3.3)
 
-**PDF:** `docs/notes/A001-arxiv.pdf`  
-**TeX:** `docs/notes/A001-arxiv.tex`  
-**Long form:** `docs/notes/A001-arxiv-draft.md`  
-**Claim:** \((n_+,n_-)=(\infty,\infty)\); whole-orbit Dom(H*); analytic walls  
-**Forbidden:** \((0,\infty)\); gates/channels; seed discovery  
+**Status:** Dan-approved public freeze on **GitHub + Zenodo**. **arXiv deferred.**
 
-## Freeze
-- [x] Theorem F expanded (reconstruction, IFT scaling, saturation, Dom(H*))
-- [x] Version **0.3.3** in CITATION / .zenodo.json / CHANGELOG / README
-- [ ] Zenodo version DOI after tag ingest
-- [ ] Publication adversarial 3-role PASS
-- [ ] Dan PDF read-through
-- [ ] arXiv endorse + submit
+PDF: docs/notes/A001-arxiv.pdf
+Tag: v0.3.3
+Concept DOI: 10.5281/zenodo.21474351
 
-## Smoke
-```bash
-python scripts/cas/verify_X1_blowup_curve_A001.py
-python scripts/cas/verify_orbit_measure_IFT_A001.py
-python scripts/cas/verify_backward_incomplete_wall_A001.py
-```
+## Done
+- [x] Theorem package A--F with (n+,n-)=(inf,inf)
+- [x] Discussion section
+- [x] Dan approval
+- [x] GitHub release v0.3.3
+- [x] arXiv skipped for now (no endorsement path required)
+
+## Optional later
+- [ ] arXiv math.FA if endorsement available
+- [ ] After eprint: CITATION.cff + README
+
+## Non-claims
+No gates/channels/advantage. No (0,inf). Seed restated only.
