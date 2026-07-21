@@ -13,7 +13,7 @@ Not claimed: gates, channels, advantage, seed discovery, pair (0,infinity).
 
 Artifacts:
 - PDF: docs/notes/A001-arxiv.pdf (tag v0.3.2)
-- DOI: https://doi.org/10.5281/zenodo.21478672
+- DOI: https://doi.org/10.5281/zenodo.21478679
 - GitHub: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space
 
 I will send the arXiv endorsement code after starting submission.

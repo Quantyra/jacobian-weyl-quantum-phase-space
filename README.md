@@ -2,7 +2,7 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Release:** [v0.3.2](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.2)  
-**DOI:** [10.5281/zenodo.21478672](https://doi.org/10.5281/zenodo.21478672) (v0.3.2; concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); do not use v0.2.2 pair or v0.3.0 Dom(H*) proof)
+**DOI:** [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.2; concept [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); do not use v0.2.2 pair or v0.3.0 Dom(H*) proof)
 
 ---
 
@@ -65,7 +65,7 @@ scripts/cas/          # reproducible verifiers
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Prefer version DOI `10.5281/zenodo.21478672` (v0.3.2) or concept `10.5281/zenodo.21474351`. Do not use v0.2.2 pair or v0.3.0 Dom(H*) proof.
+See [CITATION.cff](CITATION.cff). Prefer version DOI `10.5281/zenodo.21478679` (v0.3.2) or concept `10.5281/zenodo.21474351`. Do not use v0.2.2 pair or v0.3.0 Dom(H*) proof.
 
 ## License
 
