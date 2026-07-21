@@ -22,14 +22,15 @@ If the von Neumann closure of \(\psi(A_n)''\) is a **proper subalgebra**, ask wh
 
 ### Outcome 3 — Operators fail admissibility before completion
 If G4 ESS/strong CCR fails, completion discussion is moot for Schrödinger; exoticness is **obstruction**, not index.  
-**Status:** **Preferred reading given G4 package** until ESS is settled.
+**Status:** **CONFIRMED** for dual-flow package (Phases 1–3): all \(H_j\) not ESS; dual-flow strong CCR obstructed (`PHASE3-levels-DE-A001.md`).
 
 ## Claims
 | ID | Status |
 |----|--------|
 | G5-trichotomy | **documented** |
-| G5-index-theorem | **not proved** |
-| G5-degree-survives | **open** |
+| G5-outcome-3 | **selected** for dual-flow A001 |
+| G5-index-theorem | **not proved** / moot under Outcome 3 |
+| G5-degree-survives | **open** only for hypothetical alternate realizations |
 
 ## Non-claims
 No claim that \(d\) is a quantized index; no claim SvN is evaded.

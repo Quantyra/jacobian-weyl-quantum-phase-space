@@ -1,0 +1,7 @@
+{
+  "L_at_wall": "0",
+  "L_zero": true,
+  "dL_ds": "-16",
+  "dL_ds_nonzero": true,
+  "pass": true
+}

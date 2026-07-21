@@ -1,6 +1,6 @@
 # G4 Domains / self-adjointness / strong CCR — A001
 
-**Status:** \(X_0,X_1\) incomplete + \(H_0,H_1\) not ESS **proved**; \(H_1\) indices \((\infty,\infty)\); \(X_2/H_2\) provisional (see `G4-X0-X2-ESS-status.md`)  
+**Status:** **G4 closed (obstruction).** All \(X_j\) incomplete; all \(H_j\) not ESS; \(H_1\) pair \((\infty,\infty)\); \(H_0,H_2\) have \(\max n_\pm=\infty\); dual-flow strong CCR obstructed. See `G4-PHASE1-CLOSEOUT.md`.  
 **Date:** 2026-07-21  
 
 ## Documents
