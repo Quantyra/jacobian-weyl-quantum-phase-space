@@ -22,6 +22,12 @@ This repository is infrastructure and research scaffolding only.
 
 See [INTEGRITY.md](INTEGRITY.md) for the standing non-claims boundary.
 
+## Related Lean artifact (Gate 0)
+
+Formal Gate-0 algebraic certificates live in a separate public repo (not merged here):
+
+- **[Quantyra/exotic-ccr-lean](https://github.com/Quantyra/exotic-ccr-lean)** — Lean 4 T0.1/T0.2 Jacobian anchor (`det DF = -2`, three-point collision, non-injectivity packaging). Release `v0.1.0`.
+
 ## Repository structure
 
 ```
@@ -32,7 +38,7 @@ docs/
   notes/          # working notes
   zenodo-release-path.md
 src/              # future code (optional)
-lean/             # future Lean formalization (optional)
+lean/             # optional local notes only; active Lean surface is exotic-ccr-lean
 ```
 
 ## License
