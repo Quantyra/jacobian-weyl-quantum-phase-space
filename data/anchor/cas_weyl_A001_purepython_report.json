@@ -1,0 +1,7 @@
+{
+  "engine": "purepython_dual2",
+  "samples": 25,
+  "pass_count": 25,
+  "fail_count": 0,
+  "pass_g3_pilot": true
+}

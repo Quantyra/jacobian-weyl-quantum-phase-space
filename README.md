@@ -22,13 +22,19 @@ This repository is infrastructure and research scaffolding only.
 
 See [INTEGRITY.md](INTEGRITY.md) for the standing non-claims boundary.
 
-## Gate status (2026-07-21)
+## Gate status (2026-07-21) — A001 spine through G7
 
 | Gate | Status |
 |------|--------|
-| G0-seed | [D0-seed dossier](docs/validation/D0-seed-validation-dossier.md) · [anchor](data/anchor/F_announced_det_m2.json) · Lean [v0.1.1](https://github.com/Quantyra/exotic-ccr-lean) |
-| G0-family pilot d=4 | [D0-family dossier](docs/validation/D0-family-pilot-dossier.md) · [anchor](data/anchor/F_family_d4_cor53_pilot.json) |
-| G1 atlas bootstrap | [schema](data/atlas/schema.json) · [index](data/atlas/index.json) · rows A001, A002 |
+| G0-seed | [D0-seed](docs/validation/D0-seed-validation-dossier.md) · Lean [v0.1.1](https://github.com/Quantyra/exotic-ccr-lean) |
+| G0-family d=4 | [D0-family](docs/validation/D0-family-pilot-dossier.md) |
+| G1 atlas | [index](data/atlas/index.json) A001/A002 |
+| G2 Poisson A001 | [dossier](docs/validation/G2-poisson-A001-dossier.md) **certified** |
+| G3 Weyl A001 | [dossier](docs/validation/G3-weyl-A001-dossier.md) **certified** |
+| G4–G7 | [G4](docs/validation/G4-domains-CCR-A001-dossier.md) · [G5](docs/validation/G5-completion-degree-A001-dossier.md) · [G6](docs/validation/G6-CP-dilation-A001-dossier.md) · [G7](docs/validation/G7-semigroup-index-A001-dossier.md) |
+| **Closeout** | [PROGRAM-CLOSEOUT-G0-G7-A001.md](docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md) |
+
+Physical reversible quantum symmetry is **not** claimed (G4 ESS open; G6 not a channel).
 
 ## Repository structure
 

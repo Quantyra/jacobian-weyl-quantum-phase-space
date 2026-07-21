@@ -1,0 +1,11 @@
+{
+  "atlas_id": "A001-seed-d3",
+  "psi": {
+    "Q": "F(q)",
+    "P": "B(q) p",
+    "B": "J^{-T}",
+    "B_ref": "data/anchor/Phi_A001_seed_d3.json"
+  },
+  "relations_target": "[Q_i,Q_j]=0, [P_i,P_j]=0, [Q_i,P_j]=delta_ij",
+  "cas": "data/anchor/cas_weyl_A001_sympy_report.json"
+}

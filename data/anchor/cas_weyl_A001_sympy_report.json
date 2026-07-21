@@ -1,0 +1,64 @@
+{
+  "engine": "sympy",
+  "sympy_version": "1.14.0",
+  "atlas_id": "A001-seed-d3",
+  "hbar_convention": "[q_i,p_j]=delta_ij (algebraic \u0127=1)",
+  "definition": {
+    "Q_i": "F_i(q)",
+    "P_j": "sum_k B_jk(q) * p_k  (coefficient-left)",
+    "B": "J^{-T}"
+  },
+  "commutators": {
+    "QQ_ok": true,
+    "QP_is_I": true,
+    "QP_matrix": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "PP_coeff_ok": true,
+    "PP_coeffs": {
+      "P0_P0_p0": "0",
+      "P0_P0_p1": "0",
+      "P0_P0_p2": "0",
+      "P0_P1_p0": "0",
+      "P0_P1_p1": "0",
+      "P0_P1_p2": "0",
+      "P0_P2_p0": "0",
+      "P0_P2_p1": "0",
+      "P0_P2_p2": "0",
+      "P1_P1_p0": "0",
+      "P1_P1_p1": "0",
+      "P1_P1_p2": "0",
+      "P1_P2_p0": "0",
+      "P1_P2_p1": "0",
+      "P1_P2_p2": "0",
+      "P2_P2_p0": "0",
+      "P2_P2_p1": "0",
+      "P2_P2_p2": "0"
+    }
+  },
+  "div_B_rows": [
+    "0",
+    "0",
+    "0"
+  ],
+  "pass_g3_pilot": true,
+  "non_claims": [
+    "Polynomial Weyl algebra identities only",
+    "Not essential self-adjointness or strong CCR (G4)",
+    "Not physical gate/channel"
+  ]
+}
