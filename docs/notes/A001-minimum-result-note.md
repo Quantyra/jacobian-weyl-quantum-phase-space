@@ -1,5 +1,6 @@
 # EXOTIC-CCR A001 — Minimum result note
 
+**Author:** Daniel Eric Fredriksen (Quantyra Inc.)
 **Program:** EXOTIC-CCR (Quantyra Inc.)  
 **Object:** Atlas row **A001-seed-d3** (announced seed Keller map \(F\))  
 **Date:** 2026-07-21  

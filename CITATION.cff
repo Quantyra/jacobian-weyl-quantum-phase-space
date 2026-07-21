@@ -4,7 +4,7 @@ title: "EXOTIC-CCR A001: Poisson/Weyl lifts of a Jacobian counterexample seed wi
 type: software
 authors:
   - family-names: Fredriksen
-    given-names: Daniel
+    given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 # doi: pending Zenodo deposit from GitHub release v0.2.0
 version: 0.2.0
