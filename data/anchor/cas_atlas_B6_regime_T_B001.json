@@ -1,0 +1,568 @@
+{
+  "program": "B001-v0.6",
+  "title": "Regime T partial exclusion package B6",
+  "pass": true,
+  "verdict": "PARTIAL",
+  "B6_0_reduction": {
+    "lemma": "B6.0",
+    "statement": "T iff chambers good and Bad nonempty finite subset of Atyp(P)",
+    "atlas": {
+      "A010": "regime E",
+      "A009": "regime O (open Bad_P)",
+      "regime_T": "no_atlas_example"
+    },
+    "full_T_excluded": false,
+    "pass": true
+  },
+  "B6_1_proper": {
+    "lemma": "B6.1",
+    "statement": "proper/global-diffeo samples => regime E",
+    "checks": [
+      {
+        "name": "identity",
+        "P": "x",
+        "Q": "y",
+        "det": "1",
+        "min_abs_det_on_grid": 1.0,
+        "inverse_roundtrip_max_err": 0.0,
+        "regime": "E_empty",
+        "ok": true
+      },
+      {
+        "name": "shear_x2",
+        "P": "x",
+        "Q": "x**2 + y",
+        "det": "1",
+        "min_abs_det_on_grid": 1.0,
+        "inverse_roundtrip_max_err": 0.0,
+        "regime": "E_empty",
+        "ok": true
+      },
+      {
+        "name": "triangular_alpha",
+        "P": "x",
+        "Q": "y*(x**2 + 1)",
+        "det": "x**2 + 1",
+        "min_abs_det_on_grid": 1.0,
+        "inverse_roundtrip_max_err": 0.0,
+        "regime": "E_empty",
+        "ok": true
+      },
+      {
+        "name": "swap_graph",
+        "P": "y*(x**2 + 1)",
+        "Q": "x",
+        "det": "-x**2 - 1",
+        "min_abs_det_on_grid": 1.0,
+        "inverse_roundtrip_max_err": 0.0,
+        "regime": "E_empty",
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "B6_3_deg1": {
+    "lemma": "B6.3",
+    "statement": "deg P=1 polynomial local diffeo => regime E (samples)",
+    "samples": [
+      {
+        "name": "P=x, Q=y",
+        "P": "x",
+        "Q": "y",
+        "det": "1",
+        "deg_P": 1,
+        "min_abs_det_on_grid": 1.0,
+        "newton_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "P=x, Q=y**3/3+y",
+        "P": "x",
+        "Q": "y**3/3 + y",
+        "det": "y**2 + 1",
+        "deg_P": 1,
+        "min_abs_det_on_grid": 1.0,
+        "newton_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "P=x, Q=(x**2+1)*y + x**2",
+        "P": "x",
+        "Q": "x**2 + y*(x**2 + 1)",
+        "det": "x**2 + 1",
+        "deg_P": 1,
+        "min_abs_det_on_grid": 1.0,
+        "newton_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "P=x+y, Q=x-y",
+        "P": "x + y",
+        "Q": "x - y",
+        "det": "-2",
+        "deg_P": 1,
+        "min_abs_det_on_grid": 2.0,
+        "newton_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "P=2*x-y+1, Q=y**3/3+y+x",
+        "P": "2*x - y + 1",
+        "Q": "x + y**3/3 + y",
+        "det": "2*y**2 + 3",
+        "deg_P": 1,
+        "min_abs_det_on_grid": 3.0,
+        "newton_max_err": 0.0,
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "B6_7_linear_y_P0": {
+    "lemma": "B6.7",
+    "statement": "linear-in-y Q for P0=x+x^2 y => Jacobian vanishes somewhere",
+    "samples": [
+      {
+        "q1": "A",
+        "q0": "C",
+        "j": "2*A*x*y + A",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A",
+        "q0": "C + D*x",
+        "j": "2*A*x*y + A - D*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A",
+        "q0": "C + D*x**2",
+        "j": "2*A*x*y + A - 2*D*x**3",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x",
+        "q0": "C",
+        "j": "A*x**2*y + A*x",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x",
+        "q0": "C + D*x",
+        "j": "A*x**2*y + A*x - D*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x",
+        "q0": "C + D*x**2",
+        "j": "A*x**2*y + A*x - 2*D*x**3",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2",
+        "q0": "C",
+        "j": "A*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2",
+        "q0": "C + D*x",
+        "j": "A*x**2 - D*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2",
+        "q0": "C + D*x**2",
+        "j": "A*x**2 - 2*D*x**3",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2 + B",
+        "q0": "C",
+        "j": "A*x**2 + 2*B*x*y + B",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2 + B",
+        "q0": "C + D*x",
+        "j": "A*x**2 + 2*B*x*y + B - D*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**2 + B",
+        "q0": "C + D*x**2",
+        "j": "A*x**2 + 2*B*x*y + B - 2*D*x**3",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**3 + B*x",
+        "q0": "C",
+        "j": "-A*x**4*y + A*x**3 + B*x**2*y + B*x",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**3 + B*x",
+        "q0": "C + D*x",
+        "j": "-A*x**4*y + A*x**3 + B*x**2*y + B*x - D*x**2",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      },
+      {
+        "q1": "A*x**3 + B*x",
+        "q0": "C + D*x**2",
+        "j": "-A*x**4*y + A*x**3 + B*x**2*y + B*x - 2*D*x**3",
+        "has_real_zero_on_grid": true,
+        "ok": true
+      }
+    ],
+    "structural_family_q1_Ax2": {
+      "j": "x**2*(A - 2*B*x - D)",
+      "vanishes_on_x_equals_0": true,
+      "ok": true
+    },
+    "pass": true
+  },
+  "B6_8_P0_completion": {
+    "lemma": "B6.8",
+    "statement": "deg Q<=6: {P0,Q} never equals listed never-zero targets",
+    "P0": "x + x**2 * y",
+    "by_degree": [
+      {
+        "maxdeg_Q": 1,
+        "n_monomials": 3,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      },
+      {
+        "maxdeg_Q": 2,
+        "n_monomials": 6,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      },
+      {
+        "maxdeg_Q": 3,
+        "n_monomials": 10,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      },
+      {
+        "maxdeg_Q": 4,
+        "n_monomials": 15,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      },
+      {
+        "maxdeg_Q": 5,
+        "n_monomials": 21,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      },
+      {
+        "maxdeg_Q": 6,
+        "n_monomials": 28,
+        "targets": [
+          {
+            "target": "1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "-1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "x**2 + y**2 + 1",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)*(y**2 + 1)",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(x**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          },
+          {
+            "target": "(y**2 + 1)**2",
+            "nsols": 0,
+            "empty": true
+          }
+        ],
+        "all_targets_empty": true
+      }
+    ],
+    "pass": true
+  },
+  "construction_log": {
+    "title": "construction_log_anchors",
+    "items": [
+      {
+        "name": "vertical_SF_P=x_Q=xy",
+        "det": "x",
+        "det_vanishes": true,
+        "ok": true
+      },
+      {
+        "name": "swap_graph_global_diffeo",
+        "det": "-x**2 - 1",
+        "min_abs_det": 1.0,
+        "regime": "E_empty",
+        "ok": true
+      },
+      {
+        "name": "P0_no_critical_points",
+        "n_crit": 0,
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "theorem_summary": {
+    "T_excluded_for_proper": true,
+    "T_excluded_for_injective": true,
+    "T_excluded_for_deg1_first_component": true,
+    "T_excluded_for_product_triangular": true,
+    "T_full_exclusion_for_all_poly_local_diffeos": false,
+    "OPEN_T": "existence of poly local diffeo with Bad_P nonempty finite subset of Atyp(P) and all Hardt chambers good"
+  },
+  "non_claims": [
+    "No full polynomial dichotomy theorem",
+    "No claim that regime T is completely impossible",
+    "B6.8 is finite-degree CAS, not all-degree",
+    "No gates/channels/advantage/deficiency indices",
+    "No complex JC progress",
+    "Injective=>automorphism cited not re-proved"
+  ]
+}

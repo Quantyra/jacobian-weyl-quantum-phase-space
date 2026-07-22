@@ -11,7 +11,7 @@ structural incompleteness, schema, and examples}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
-\date{21 July 2026}
+\date{22 July 2026}
 
 \begin{document}
 \maketitle
@@ -30,16 +30,20 @@ automorphism with complete dual fields). We prove restricted dichotomy lemmas:
 polynomial product local diffeos have complete dual fields; the A007
 zero-dimensional asymptotic mechanism is impossible for polynomials (Jelonek);
 in dimension~2 dual incompleteness is fiber-saturated and falls into empty /
-open / residual-thin regimes, with residual-thin still open. No gates, channels,
-or computational advantage are claimed. Companion pack:
+open / residual-thin regimes. Residual-thin regime~T is excluded on proper,
+injective, degree-one-component, product, and triangular classes, and reduced
+to incompleteness only on atypical fibers; full exclusion of~T remains open.
+No gates, channels, or computational advantage are claimed. Companion pack:
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.5.\\
+\textbf{Version:} B001 draft v0.6.\\
 \textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
 \texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json},
-\texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json}.
+\texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json},
+\texttt{cas\_atlas\_B6\_regime\_T\_B001.json}.
+
 
 \section{Introduction}
 Cotangent lifts and dual fields are standard when \(\det DF\neq 0\). After the
@@ -238,6 +242,56 @@ thin incompleteness for polynomial \emph{product} maps and ban the A007 mechanis
 for all polynomial local diffeos. Full exclusion of regime T in
 Lemma~\ref{lem:B545} remains open; no atlas example realizes T.
 
+\section{Regime T partial exclusion (new in v0.6)}
+\label{sec:B6}
+Full proofs: \texttt{PROGRAM-B-B6-regime-T.md}.
+CAS: \texttt{cas\_atlas\_B6\_regime\_T\_B001.json}.
+
+\begin{lemma}[Chamber reduction for regime T]
+\label{lem:B60}
+For polynomial \(F=(P,Q)\) as in Lemma~\ref{lem:B545}, Hardt chambers have constant
+\(Q\)-end type. Hence regime T occurs if and only if every open Hardt chamber of
+\(P\) is good and \(\operatorname{Bad}_P(F)\) is a nonempty finite subset of the
+atypical values of \(P\).
+\end{lemma}
+
+\begin{lemma}[Structured exclusions of regime T]
+\label{lem:B61-4}
+Regime T is impossible for a polynomial local diffeomorphism \(F:\mathbb{R}^2\to\mathbb{R}^2\)
+in any of the following classes:
+\begin{enumerate}
+\item \(F\) proper (then \(F\) is a global diffeomorphism; duals complete);
+\item \(F\) injective (then \(F\) is a polynomial automorphism; duals complete);
+\item one component has total degree \(1\) (after affine domain change the map is a
+global diffeomorphism);
+\item product maps as in Lemma~\ref{lem:B53}, or triangular maps
+\(F=(f(x),\alpha(x)y+\beta(x))\) with \(f',\alpha\) never zero.
+\end{enumerate}
+\end{lemma}
+\begin{proof}[Proof sketch]
+(1) Proper local diffeos \(\mathbb{R}^n\to\mathbb{R}^n\) are coverings, hence global
+diffeos. (2) Injective polynomial endomorphisms of \(\mathbb{R}^n\) are automorphisms
+(standard; cf.\ van den Essen). (3) Reduce to \(P=x\); then \(Q_y\neq 0\) forces each
+univariate \(y\mapsto Q(u,y)\) to be a global diffeo by Lemma~\ref{lem:B52}, yielding
+an explicit global inverse. (4) Lemmas~\ref{lem:B53} and B5.7.
+\end{proof}
+
+\begin{lemma}[Model atypical submersion is not a coordinate]
+\label{lem:B66}
+Let \(P_0=x+x^2 y\). Then \(\nabla P_0\neq 0\) everywhere and \(0\) is atypical, but
+there is no \(Q\in\mathbb{R}[x,y]\) with \(\det D(P_0,Q)\) a nonzero constant. Moreover
+every \(Q\) that is linear in \(y\) has \(\det D(P_0,Q)\) vanishing somewhere; CAS
+finds no \(Q\) of total degree \(\leq 6\) with Jacobian equal to any of
+\(\pm 1,x^2+1,y^2+1,x^2+y^2+1,(x^2+1)(y^2+1),(x^2+1)^2,(y^2+1)^2\).
+\end{lemma}
+
+\noindent\textbf{Partial T package.} Lemmas~\ref{lem:B60}--\ref{lem:B66} exclude T on
+structured subclasses and block the standard atypical first-component model at low
+degree. The residual \textbf{OPEN-T} asks whether any polynomial local diffeo has
+\(\operatorname{Bad}_P\) a nonempty finite subset of \(\operatorname{Atyp}(P)\) with
+all Hardt chambers good. No atlas example realizes T; full dichotomy remains a
+conjecture.
+
 \section{Prior examples (v0.1--v0.2)}
 A000 identity; A003 half-plane; A001 Keller seed with \(X_1\) incomplete and
 \(H=-iX_1\) deficiency \((\infty,\infty)\) in~\cite{A001} (other \(X_j\) incompleteness
@@ -251,7 +305,9 @@ a classical strong-real-JC counterexample (\(\det>0\), not injective) but not a
 complex Jacobian conjecture counterexample (\(\det\) not constant; JC\((2)\) over
 \(\mathbb{C}\) remains open). A010 is an automorphism. T4: no dual \(F\)-translation
 package claimed here. The full polynomial-only dichotomy remains a conjecture
-(\S8--\S9): regime T of Lemma~\ref{lem:B545} is not excluded. C's joint \(q\)--\(p\)
+(\S\ref{sec:B5}--\S\ref{sec:B6}): regime T of Lemma~\ref{lem:B545} is excluded only
+on structured classes (Lemma~\ref{lem:B61-4}); residual OPEN-T is named in
+\S\ref{sec:B6}. C's joint \(q\)--\(p\)
 sector~\cite{C001} (v0.8) splits: position CONSTRUCT (Koopman); J2/J3
 Joint-Stone CONDITIONAL OBSTRUCTIONS; J4 Joint-Stone-Hom-1 OBSTRUCTION;
 J5 mere-CP Joint-Stone-CP-1 OBSTRUCTION; J6 Unitary-Image-CP-1 OBSTRUCTION;

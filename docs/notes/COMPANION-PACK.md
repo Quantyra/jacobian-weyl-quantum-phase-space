@@ -18,17 +18,18 @@
 
 ---
 
-## Companion B001 — classification v0.5
+## Companion B001 — classification v0.6
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
-| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.5, adversarial PASS) |
-| Tag / release | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) |
-| Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json` |
-| Claims | B1 lemma; schema; atlas A000–A010; A007 thin vs A009 open (Pinchuk); **B5 restricted poly dichotomy lemmas** (univariate/product complete; 2D fiber saturation; Jelonek kills A007-style 0-dim asymptotic set for poly); residual thin regime **T** still open; full poly dichotomy still a **conjecture** |
+| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.6, B6 PARTIAL) |
+| Tag / release | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) (content bumped to v0.6; retag optional) |
+| Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json`, `cas_atlas_B6_regime_T_B001.json` |
+| Claims | B1 lemma; schema; atlas A000–A010; A007 thin vs A009 open (Pinchuk); **B5 restricted poly dichotomy lemmas**; **B6 regime-T PARTIAL** (T excluded for proper / injective / deg-1 component / product / triangular; reduced to OPEN-T: Bad only on atypical fibers; model \(P_0=x+x^2y\) blocked at low degree); full poly dichotomy still a **conjecture** |
 | B5 note | [`PROGRAM-B-B5-poly-dichotomy-lemmas.md`](../validation/PROGRAM-B-B5-poly-dichotomy-lemmas.md) |
+| B6 note | [`PROGRAM-B-B6-regime-T.md`](../validation/PROGRAM-B-B6-regime-T.md) |
 
 ---
 
@@ -51,7 +52,7 @@
 ## Cite
 
 1. Deficiency: A001 + concept DOI  
-2. Classification: B001 `v0.2.0-b001-draft` tag (v0.5)  
+2. Classification: B001 `v0.2.0-b001-draft` tag (content v0.6)  
 3. Completions of \(\psi\): C001 `v0.3.0-c001-companion` tag (v0.8)  
 
 ## Non-claims

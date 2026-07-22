@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-22  
 **Status:** theorem-grade restricted lemmas (full dichotomy still open)  
-**Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.5)  
+**Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.6; B5 content from v0.5)  
 **CAS:** `data/anchor/cas_atlas_B5_poly_dichotomy_B001.json`  
 **Non-claims:** no general dichotomy theorem; no gates; Pinchuk ≠ complex JC counterexample; no T4
 
@@ -261,6 +261,10 @@ Does regime (T) ever occur for a polynomial local diffeomorphism? Equivalently: 
 repo. The candidate claim “polynomial ⇒ never thin” remains a **conjecture**, now reduced to
 excluding (T).
 
+**Follow-on (B6):** partial exclusion of T on proper / injective / deg-1 / product /
+triangular classes, chamber reduction to atypical fibers only, and model obstruction for
+\(P_0=x+x^2 y\) — see `PROGRAM-B-B6-regime-T.md`. Residual **OPEN-T** named there.
+
 ---
 
 ## 10. Non-claims
@@ -269,12 +273,13 @@ excluding (T).
 - No complex Jacobian conjecture progress; A009 has non-constant \(\det>0\).
 - No gates, channels, advantage, or dual-\(F\) unitary package (T4).
 - Jelonek’s dimension theorem is cited, not re-proved.
-- Regime (T) exclusion is explicitly open.
+- Regime (T) full exclusion is explicitly open (partial exclusions in B6).
 
 ## 11. References
 
 - B1: `PROGRAM-B-B1-structural-lemma.md`
 - B4 evidence: `PROGRAM-B-B4-2D-dichotomy.md` (A007–A010)
+- B6 residual: `PROGRAM-B-B6-regime-T.md`
 - Z. Jelonek, The set of points at which a polynomial map is not proper, Ann. Polon. Math. 58 (1993) 259–266
 - Z. Jelonek, Testing sets for properness of polynomial mappings, Math. Ann. 315 (1999) 1–12
 - S. Pinchuk, Math. Z. 217 (1994); L.A. Campbell, arXiv:1001.3318
