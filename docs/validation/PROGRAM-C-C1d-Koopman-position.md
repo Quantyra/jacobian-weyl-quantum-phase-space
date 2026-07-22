@@ -1,7 +1,7 @@
 # Program C — C1d: Koopman position-sector construct (Free-Strict-Abstract)
 
 **Date:** 2026-07-22  
-**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (Joint-Stone-Canonical **NO-GO** per J2; residual **OPEN**)  
+**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J5 NO-GOs on Stone packages; residual **OPEN** = CP of \(\Phi_0\) without Stone only)  
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`
 
 ---
@@ -76,7 +76,7 @@ obstruction on the *vanishing-at-infinity* subalgebra still stands).
 momentum sector \(\psi(p_j)=\sum_k B_{jk}(q)p_k\) does **not** commute with
 \(Q\) and cannot be captured by a Koopman/composition operator alone.
 
-**Refined write-up:** `PROGRAM-C-Free-Strict-Abstract-Joint.md` (Theorems J1–J3).
+**Refined write-up:** `PROGRAM-C-Free-Strict-Abstract-Joint.md` (Theorems J1–J5); J4/J5 detail notes under `PROGRAM-C-residual-*.md`.
 
 ### 3.1 Joint-Stone-Canonical — NO-GO (J2)
 
@@ -88,8 +88,8 @@ A **Joint-Stone-Canonical** package would require self-adjoint extensions
 
 **Theorem J2:** A001 gives \((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\), so
 von Neumann supplies a continuum of inequivalent SA extensions; algebraic
-data do not pick one. **Joint-Stone-Canonical fails** (does *not* rule out
-every choice-dependent Joint-Stone package).
+data do not pick one. **Joint-Stone-Canonical fails**. Choice-dependent
+CP+Stone is separately ruled out by J5 (not by J2 alone).
 
 **Theorem J3 (G4 companion):** `G4-H0-H2-deficiency-bounds.md` records
 \(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal

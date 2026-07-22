@@ -65,7 +65,7 @@ where:
 
 A **Joint-Form package** requires only sesquilinear-form (or quadratic-form) agreement of the momentum sector with \(\psi(p_j)=\sum_k B_{jk}(Q)p_k\) on a common dense core, **without** demanding self-adjoint extensions or unitary-group / Stone agreement.
 
-**Status of Tier B:** left **OPEN**. This note does **not** force a no-go for Joint-Form.
+**Status of Tier B (split):** Joint-Form-Core **CONSTRUCT** (forms of minimal \(H_j\) on \(C_c^\infty\)); Joint-Form-ESS-1 **OBSTRUCT** (ESS uniqueness fails by A001 \(H_1\) indices). Bare form-level agreement without ESS is not left as a vague OPEN blob.
 
 ---
 
@@ -106,8 +106,8 @@ There is **no** Joint-Stone-Canonical package for the A001 dual-lift data, alrea
 3. The algebraic data \((\psi,F,B)\) alone — polynomial Weyl endomorphism, seed map, and Piola matrix — are the **same** for every such extension: they fix only the minimal operator on \(C_c^\infty\), not a boundary condition at incomplete \(X_1\)-ends (A001 Discussion / Theorem F reading).
 4. Therefore no package is **uniquely determined** by \((\psi,F,B)\) alone. Joint-Stone-Canonical fails.
 
-**Explicit non-claim of J2.**  
-J2 does **not** prove non-existence of every choice-dependent Joint-Stone package. It proves only that **no canonical** (choice-free, uniquely fixed by algebraic data) Joint-Stone package exists for the \(H_1\) sector. Existence of some (non-unique) Joint-Stone package that picks one extension by hand, and its compatibility with a global CP \(\Phi\) extending \(\Phi_0\), remains **OPEN**.
+**Explicit non-claim of J2 (historical scope; superseded for CP+Stone).**  
+J2 alone does **not** prove non-existence of every choice-dependent Joint-Stone package — only that **no canonical** package exists. **Later:** J4 kills Hom+Stone and **J5 kills mere unital normal CP+Stone** (Joint-Stone-CP-1). The residual that remains **OPEN** is CP of \(\Phi_0\) **without** any Stone/SA momentum axiom — not choice-dependent Joint-Stone+CP.
 
 ---
 
