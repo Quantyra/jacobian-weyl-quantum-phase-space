@@ -1,0 +1,59 @@
+{
+  "atlas_id": "A008-shear-sine-global-diffeo",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_shear_sine_padded",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "x0",
+      "F1": "x1 + sin(x0)",
+      "F2": "x2"
+    },
+    "construction": "F(x,y,z)=(x, y+sin x, z), a genuinely 2D nontrivial (non-polynomial, non-triangular-affine coefficient) global diffeomorphism of R^2 padded by idle z. det DF=1 everywhere. Inverse (x,y-sin x) exists globally: F is bijective, dual fields X0=dx-cos(x)dy, X1=dy are both complete (X0 flow: x(t)=x0+t, y(t)=y0-sin(x0+t)+sin(x0), bounded oscillation, no blowup for any t). Pass-like baseline contrasting A007's thin-incompleteness case: here NO incompleteness occurs at all (F surjective, matches B1 vacuously).",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "1",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["0", "0", "0"],
+    "inputs": [["0", "0", "0"]],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "B=[[1,-cos x],[0,1]] (triangular, non-constant)",
+    "weyl_formula": "Q=F(q), P=Bp",
+    "star_domain_status": "X0,X1 complete; ESS standard on R^3 expected"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B4-2D-dichotomy.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A007_A008_B001.json"],
+    "literature": []
+  },
+  "composition_notes": "B001 v0.3 pass-like baseline; genuinely 2D nonlinear coupling (not diagonal/triangular-affine like A004/A005) yet globally complete.",
+  "non_claims": [
+    "Not a Jacobian counterexample",
+    "No gates/channels/advantage",
+    "No dual-F unitary package (T4 N/A, no dual-F claim needed since this is pass-like)"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "pass",
+    "b_ess": "pass",
+    "b_def": "(0,0) expected",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B4-2D-dichotomy.md",
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A007_A008_B001.json",
+      "global diffeomorphism (F,Finv roundtrip verified); X0 flow bounded over wide t range"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "program": "B001-v0.3",
+  "A007": {
+    "atlas_id": "A007-complex-exp-null-incomplete",
+    "det_formula": "exp(2*x0)",
+    "det_check_max_err": 1.3305125889928604e-09,
+    "det_matches_numeric": true,
+    "origin_min_norm_on_grid": 0.04978706836786394,
+    "origin_never_hit": true,
+    "complete_orbit_Im_w0_nonzero": {
+      "z0": [
+        0.5,
+        1.5707963267948966
+      ],
+      "stays_finite_over_wide_t_range": true
+    },
+    "incomplete_orbit_Im_w0_zero": {
+      "z0": [
+        0.5,
+        0.0
+      ],
+      "t_wall": -1.6487212707001282,
+      "x_near_wall": [
+        -2.302585092994045,
+        -4.605170185988091,
+        -6.907755278982247,
+        -9.210340371976294
+      ],
+      "escapes_to_minus_infty": true
+    },
+    "b_incomplete": "fail",
+    "incompleteness_is_null_set_only": true,
+    "pass": true
+  },
+  "A008": {
+    "atlas_id": "A008-shear-sine-global-diffeo",
+    "det_num": 1.0000000000020002,
+    "det_is_1": true,
+    "roundtrip_max_err": 2.220446049250313e-16,
+    "global_diffeomorphism": true,
+    "X0_flow_bounded_over_wide_t": true,
+    "max_abs_y_deviation": 1.2954438372193833,
+    "b_incomplete": "pass",
+    "pass": true
+  },
+  "pass": true,
+  "non_claims": [
+    "No gates",
+    "A007/A008 not Jacobian counterexamples",
+    "A007 is a classical covering-map example (complex exponential), not novel"
+  ]
+}

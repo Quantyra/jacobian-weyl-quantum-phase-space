@@ -1,0 +1,61 @@
+{
+  "atlas_id": "A007-complex-exp-null-incomplete",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_complex_exp_padded",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "exp(x0)*cos(x1)",
+      "F1": "exp(x0)*sin(x1)",
+      "F2": "x2"
+    },
+    "construction": "Complex exponential map z=x0+i*x1 -> e^z, padded by idle x2. Conformal (holomorphic), det DF=exp(2*x0)>0, genuinely 2D coupled (rotation-scaling Jacobian). Non-surjective: image misses origin. Dual field X0 solves dz/dt=e^{-z} (w=e^z, dw/dt=1). On orbits with Im(w0)!=0 (full-measure set), w(t)=w0+t never hits 0: X0 COMPLETE. On the null set Im(w0)=0 (branch rays), w(t) hits 0 at finite t: X0 INCOMPLETE, x(t)->-infty. This is a minimal/thin incompleteness example, contrasting A006's open-set incompleteness, and refines the B1 corollary: non-surjectivity forces SOME incompleteness but not necessarily on a positive-measure set.",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "exp(2*x0) (not constant in x0, but nonzero and smooth: local diffeo everywhere)",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["1", "0", "0"],
+    "inputs": [["0", "0", "0"], ["0", "6.283185307", "0"]],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "B=e^{-x0}*rotation(x1) (conformal)",
+    "weyl_formula": "Q=F(q), P=Bp",
+    "star_domain_status": "X0 incomplete on null set only; X1 complete (rotation direction, periodic)"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B4-2D-dichotomy.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A007_A008_B001.json"],
+    "literature": ["classical complex exponential / covering map z->e^z"]
+  },
+  "composition_notes": "B001 v0.3 dichotomy example: thin (null-set) vs open-set (A006/A001) incompleteness. Not a Jacobian counterexample; not polynomial.",
+  "non_claims": [
+    "Not a Jacobian counterexample (not polynomial)",
+    "Not novel mathematics (classical exp map)",
+    "No gates/channels/advantage",
+    "No dual-F unitary package (T4)",
+    "No full deficiency-index computation"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "fail",
+    "b_ess": "open",
+    "b_def": "open (null-set incompleteness suggests possibly finite/thin deficiency, not computed)",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B4-2D-dichotomy.md",
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A007_A008_B001.json",
+      "w=e^z, dw/dt=1; incomplete iff Im(w0)=0 (measure zero); B1 satisfied minimally"
+    ]
+  }
+}

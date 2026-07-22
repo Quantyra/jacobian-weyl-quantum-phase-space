@@ -53,12 +53,22 @@
       "atlas_id": "A006-exp-quadrant",
       "path": "data/atlas/entries/A006-exp-quadrant.json",
       "status": "active"
+    },
+    {
+      "atlas_id": "A007-complex-exp-null-incomplete",
+      "path": "data/atlas/entries/A007-complex-exp-null-incomplete.json",
+      "status": "active"
+    },
+    {
+      "atlas_id": "A008-shear-sine-global-diffeo",
+      "path": "data/atlas/entries/A008-shear-sine-global-diffeo.json",
+      "status": "active"
     }
   ],
   "counts": {
     "active": 2,
     "draft": 0,
-    "entries": 7
+    "entries": 9
   },
   "non_claims": [
     "Atlas bootstrap registers existing G0 certificates only",

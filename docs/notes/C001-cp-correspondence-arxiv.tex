@@ -24,13 +24,16 @@ endomorphism correspondence and obstruct: (i)~unital/\allowbreak nondegenerate
 \(*\)-endomorphisms of \(C_0(\mathbb{R}^3)\) extending composition with non-proper
 \(F\); (ii)~Bogoliubov/quasifree endomorphisms of the CCR algebra (nonlinear
 \(F\)). A former ``Free-Strict-Regular-v2'' nondegeneracy obstruction is
-\textbf{withdrawn} as incorrect. Fully abstract C\(^*\) CP+Stinespring without
-spatial axioms remains open. No dual \(F\)-translations, gates, or advantage.
-Companion to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
+\textbf{withdrawn} as incorrect. We then \textbf{construct} a genuine normal
+unital \(*\)-homomorphism (Koopman pullback) on the bounded-Borel position
+sector, valid for any local-diffeomorphism \(F\) regardless of properness or
+surjectivity. Extending this to the full \(q\)--\(p\) endomorphism \(\psi\)
+(joint Stinespring dilation) remains open. No dual \(F\)-translations, gates,
+or advantage. Companion to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 companion v0.3.1 (green re-gate).\\
+\textbf{Version:} C001 companion v0.4 (Koopman position construct).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
 \paragraph{Erratum.}
@@ -115,16 +118,51 @@ the abelian composition map need not implement the momentum part of \(\psi\).
 \section{Withdrawn}
 Free-Strict-Regular-v2 nondegeneracy NO-GO: \textbf{withdrawn} (see erratum).
 
-\section{Open}
-Unital CP+Stinespring on a \(C^*\) completion built from \emph{bounded transforms}
-of \(\mathcal{W}\) (resolvents, Weyl unitaries, or other bounded generators---not
-a literal C\(^*\) norm on unbounded polynomials satisfying CCR) with no
-C0-composition and no Bogoliubov axioms: not constructed beyond the algebraic
-correspondence and finite-level algebraic CP; not ruled out.
+\section{Construct: Koopman position sector}
+\begin{theorem}[Koopman pullback]
+Let \(\mathcal{B}_b(\mathbb{R}^3)\) be the abelian von Neumann algebra of
+bounded Borel functions of \(Q\). For \(F\) a local diffeomorphism
+(\(\det DF\neq 0\) everywhere, in particular the A001 seed), the pullback
+\[
+\Phi_0(f):=f\circ F,
+\qquad f\in\mathcal{B}_b(\mathbb{R}^3),
+\]
+is a well-defined \textbf{unital normal \(*\)-homomorphism}
+\(\mathcal{B}_b(\mathbb{R}^3)\to\mathcal{B}_b(\mathbb{R}^3)\) (hence a normal
+unital CP map), for \emph{any} such \(F\)---regardless of properness or
+surjectivity.
+\end{theorem}
+\begin{proof}
+\(F\) continuous \(\Rightarrow f\circ F\) Borel and bounded whenever \(f\) is.
+Local diffeomorphism \(\Rightarrow\) \(F\) is Lebesgue-nonsingular (preimages
+of null sets are null, by the inverse function theorem on a countable cover
+of charts), so \(\Phi_0\) descends to a.e.-equivalence classes.
+\((f\circ F)^*=\overline{f\circ F}\) and \((fg)\circ F=(f\circ F)(g\circ F)\)
+pointwise, hence a.e. A unital \(*\)-homomorphism of von Neumann algebras is
+automatically normal and completely positive.
+\end{proof}
+
+\begin{remark}
+This resolves, at the position-sector level, the intuition behind the
+withdrawn Regular-v2: non-surjectivity of \(F\) does \emph{not} obstruct the
+bounded-Borel Koopman pullback. The C0 obstruction (Theorem~5) is specific to
+the \emph{vanishing-at-infinity} algebra \(C_0\), not to bounded Borel
+functions.
+\end{remark}
+
+\section{Open: joint \(q\)--\(p\) extension}
+\(\Phi_0\) only captures \(\psi\) on the position generators. Whether some
+normal unital CP \(\Phi\) (or Stinespring dilation) extends \(\Phi_0\) to
+also reproduce \(\psi(p_j)=\sum_k B_{jk}(Q)p_k\) on a common dense domain,
+with no dual-\(F\) translation dynamics required, is
+\textbf{not constructed, not ruled out}. See~\texttt{PROGRAM-C-C1d-Koopman-position.md}
+for candidate routes and why a unitary composition-operator route is blocked
+by T4/G4 while a non-unitary route remains open.
 
 \section{Non-claims}
-No channel on \(B(H)\). No gates/advantage. No dual \(F\)-translations.
-No ``all quantization fails.'' No full abstract C\(^*\) Stinespring construct.
+No channel on \(B(H)\) implementing the full \(\psi\) (position sector only).
+No gates/advantage. No dual \(F\)-translations. No ``all quantization fails.''
+No full joint \(q\)--\(p\) Stinespring construct.
 
 \begin{thebibliography}{99}
 \bibitem{A001}

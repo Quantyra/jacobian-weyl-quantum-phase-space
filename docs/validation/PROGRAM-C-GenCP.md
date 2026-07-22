@@ -82,7 +82,8 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | GenCP-C0-compatible CP | **NO-GO** |
 | Free CCR \*-hom | **NO-GO** |
 | Free-Strict-Regular-v2 | **WITHDRAWN** (false) |
-| Free-Strict-Abstract | OPEN (correspondence only; bounded-transform C*) |
+| Free-Strict-Abstract-Koopman (position sector) | **CONSTRUCT** (`PROGRAM-C-C1d-Koopman-position.md`) |
+| Free-Strict-Abstract-Joint (q and p together) | **OPEN** |
 
 ## Non-claims
 No channel on \(B(H)\). No advantage. Algebraic correspondence ≠ physical instrument.

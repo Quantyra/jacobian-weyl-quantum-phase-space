@@ -22,14 +22,17 @@ We isolate a structural lemma for dual vector fields of local diffeomorphisms
 are all complete, then \(F\) is surjective. Hence any non-surjective dual system
 has at least one incomplete dual field. We propose a classification schema
 (B-incomplete / B-ESS / B-Def / B-CCR / B-CP) and populate it on atlas rows
-A000--A006 (pass and fail baselines, Keller seed A001, family pilot A002).
+A000--A008 (pass and fail baselines, Keller seed A001, family pilot A002, and
+a genuinely 2D pair A007/A008 illustrating that the forced incomplete set can
+be as thin as measure zero, contrasting the open-set failures of A001/A006).
 No gates, channels, or computational advantage are claimed. Companion pack:
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.2.\\
-\textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json}.
+\textbf{Version:} B001 draft v0.3.\\
+\textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
+\texttt{cas\_atlas\_A007\_A008\_B001.json}.
 
 \section{Introduction}
 Cotangent lifts and dual fields are standard when \(\det DF\neq 0\). After the
@@ -55,7 +58,7 @@ Non-surjective dual systems have some incomplete \(X_j\).
 B-incomplete / B-ESS / B-Def / B-CCR / B-CP with values
 \texttt{open} / \texttt{fail} / \texttt{pass}.
 
-\section{Atlas scoreboard (v0.2)}
+\section{Atlas scoreboard (v0.3)}
 \begin{center}
 \begin{tabular}{llll}
 \hline
@@ -64,8 +67,10 @@ ID & Map (sketch) & B-inc. & Role \\
 A000 & \(\mathrm{id}\) & pass & baseline \\
 A004 & shear \((x,y+x,z)\) & pass & linear auto \\
 A005 & \(\mathrm{diag}(2,\tfrac12,1)\) & pass & linear stretch (CAS) \\
+A008 & \((x,y+\sin x,z)\) & pass & 2D nonlinear global diffeo (CAS) \\
 A003 & \((x,e^y)\) pad & fail & smooth B1 example \\
-A006 & \((e^x,e^y,z)\) & fail & two incomplete fields (CAS) \\
+A006 & \((e^x,e^y,z)\) & fail & two incomplete fields, open set (CAS) \\
+A007 & \(z\mapsto e^z\) pad & fail & incomplete on \emph{null set only} (CAS) \\
 A001 & Keller seed & fail & \(X_1\) + \(H_1\) analytic~\cite{A001} \\
 A002 & family d4 pilot & open & geometry pending \\
 \hline
@@ -86,16 +91,51 @@ CAS: \texttt{cas\_atlas\_A005\_A006\_B001.json}.
 Lemma~\ref{lem:B1}. CAS same file.
 \end{example}
 
-\section{Prior examples (v0.1)}
+\section{Examples (new in v0.3): a genuine dichotomy}
+\begin{example}[A007 --- complex exponential, thin fail-like]
+\(F(x,y,z)=(e^x\cos y,\,e^x\sin y,\,z)\), i.e.\ \(z\mapsto e^z\) padded.
+Conformal, \(\det DF=e^{2x}>0\); image misses the origin (non-surjective).
+Writing \(w=e^{x+iy}\), the dual field \(X_0\) solves \(\dot w=1\), so
+\(w(t)=w(0)+t\). If \(\operatorname{Im}w(0)\neq 0\) (full measure), the orbit
+never reaches \(w=0\): \textbf{complete}. If \(\operatorname{Im}w(0)=0\) (a
+measure-zero pair of rays), \(w(t)\) hits \(0\) at finite \(t\) and
+\(x(t)\to-\infty\): \textbf{incomplete}. Thus Lemma~\ref{lem:B1}'s corollary
+is satisfied by an incomplete set of \emph{measure zero}, sharply contrasting
+A006/A001 where incompleteness occupies an \emph{open} set. CAS:
+\texttt{cas\_atlas\_A007\_A008\_B001.json}.
+\end{example}
+
+\begin{example}[A008 --- shear + sine, 2D global diffeomorphism]
+\(F(x,y,z)=(x,\,y+\sin x,\,z)\), \(\det DF=1\). Explicit global inverse
+\((x,y)\mapsto(x,y-\sin x)\) (verified by CAS roundtrip). Dual fields
+\(X_0=\partial_x-\cos x\,\partial_y\), \(X_1=\partial_y\); the \(X_0\) flow
+\(y(t)=y_0-\sin(x_0+t)+\sin(x_0)\) is bounded for all \(t\): \textbf{complete}.
+A genuinely nonlinear, non-triangular-affine 2D coupling (unlike A004/A005)
+that nonetheless has no incompleteness at all.
+\end{example}
+
+\section{Toward a dichotomy (open)}
+A007 shows the incomplete locus forced by Lemma~\ref{lem:B1} can be as thin
+as measure zero for general smooth local diffeomorphisms. A007 is
+\emph{not} polynomial, so it does not settle whether \textbf{polynomial}
+Keller maps specifically always force an \emph{open} incomplete set (as in
+A001/A006) or could also exhibit thin failure. We record this as an open
+classification question (see \texttt{PROGRAM-B-B4-2D-dichotomy.md}) rather
+than claim a theorem.
+
+\section{Prior examples (v0.1--v0.2)}
 A000 identity; A003 half-plane; A001 Keller seed with \(X_1\) incomplete and
 \(H=-iX_1\) deficiency \((\infty,\infty)\) in~\cite{A001} (other \(X_j\) incompleteness
 is recorded in companion validation dossiers, not re-proved here);
 A002 open; A004 shear pass.
 
 \section{Non-claims}
-No gates, channels, advantage. No dual-flow repair. A003/A005/A006 are not
-Jacobian counterexamples. T4: no dual \(F\)-translation package claimed here.
-C Free-Strict-Abstract remains open~\cite{C001}.
+No gates, channels, advantage. No dual-flow repair. A003/A005/A006/A007/A008
+are not Jacobian counterexamples (A007/A008 are not even polynomial). T4: no
+dual \(F\)-translation package claimed here. No theorem is claimed for the
+polynomial-only dichotomy question (\S7, open). C Free-Strict-Abstract-Joint
+remains open~\cite{C001} (position sector now constructed via Koopman
+pullback).
 
 \begin{thebibliography}{99}
 \bibitem{A001}
