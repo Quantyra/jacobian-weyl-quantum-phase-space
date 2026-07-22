@@ -1,8 +1,8 @@
-﻿# C001 companion freeze (green re-gate)
+﻿# C001 companion freeze (v0.4, green gate)
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
-**Tag:** v0.3.0-c001-companion (points at green HEAD)  
+**Tag:** v0.3.0-c001-companion (points at green v0.4 HEAD)  
 **Pack:** COMPANION-PACK.md  
 
 ## Scoreboard
@@ -13,7 +13,8 @@
 | C0→C0 composition | NO-GO |
 | Bogoliubov/quasifree | NO-GO |
 | Free-Strict-Regular-v2 | WITHDRAWN |
-| Abstract bounded-transform C* CP | OPEN |
+| **Koopman position-sector CP** | **CONSTRUCT** (new v0.4) |
+| Joint q–p abstract Stinespring | OPEN |
 
 ## Adversarial
-3-role green re-gate: Proof **PASS**, Package **PASS**, Non-claims **PASS** (orchestrator audit + no forbidden overclaims). Aggregate **PASS**.
+3-role gate on v0.4: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.
