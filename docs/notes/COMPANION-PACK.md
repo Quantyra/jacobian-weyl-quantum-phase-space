@@ -37,7 +37,7 @@
 |----------|-----|
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
-| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.3 adversarial REVISE) |
+| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.3.1 green re-gate PASS) |
 | Tag / release | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) |
 | Prior tags | `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
 | Claims | Algebraic \*-SOS (physics \([q,p]=i\)); algebraic correspondence; C0-composition endo NO-GO; Bogoliubov NO-GO |
