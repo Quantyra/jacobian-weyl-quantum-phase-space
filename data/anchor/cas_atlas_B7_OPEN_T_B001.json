@@ -148,7 +148,7 @@
   },
   "B7_3_deg_le2": {
     "lemma": "B7.3",
-    "statement": "deg P<=2 polynomial local diffeo samples => regime E",
+    "statement": "deg P<=2 polynomial local diffeo samples => global C^inf diffeo / regime E (poly inverse only when explicit)",
     "samples": [
       {
         "name": "shear_P=y+x2_Q=x",
@@ -259,7 +259,7 @@
         "Q_axis": "y**3/3 + y",
         "j_axis": "y**2 + 1",
         "j_axis_eq_dQ": true,
-        "axis_univariate_diffeo": false,
+        "axis_univariate_diffeo": true,
         "ok": true
       },
       {
@@ -714,6 +714,6 @@
     "No gates/channels/advantage/deficiency indices",
     "No complex JC progress",
     "No A001 pair changes",
-    "Injective=>automorphism cited not re-proved"
+    "Bijective real poly local diffeo => global C^inf diffeo / E; poly inverse not automatic"
   ]
 }

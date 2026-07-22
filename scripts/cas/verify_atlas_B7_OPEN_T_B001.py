@@ -2,14 +2,15 @@
 """CAS for B001 v0.7 — OPEN-T sharpened package (B7).
 
 Certifies:
-  B7.3  deg P <= 2 samples => automorphism / regime E
+  B7.3  deg P <= 2 samples => global C^inf diffeo / regime E
   B7.2  graph-type fiberwise q_c bijective when j != 0
   B7.7  odd deg_y leading-form freeze identity for P0
   B7.8  n=1 forced a1 = C x^2 => j vanishes on x=0
   B7.9  deg Q <= 8: {P0,Q} never equals listed never-zero targets
-  B7.6  P0 axis: Q(0,y) univariate diffeo when j != 0 on samples
+  B7.6  P0 axis: Q(0,y) univariate diffeo when dQ never zero on R
 
 Does NOT claim full exclusion of regime T.
+Does NOT claim polynomial inverse over R from bijective poly local diffeos.
 """
 from __future__ import annotations
 
@@ -39,8 +40,33 @@ def _minmax_abs_det(P, Q, grid=41, span=5.0):
     return float(np.nanmin(np.abs(Z))), det
 
 
+def _poly_never_zero_on_R(expr, var):
+    """True if univariate polynomial expr has no real root and is not identically 0.
+
+    Constants: nonzero constant => True.
+    Higher degree: no real roots (e.g. y**2+1) => True even if deg > 0.
+    """
+    poly = sp.Poly(sp.expand(expr), var)
+    if poly.is_zero:
+        return False
+    if poly.degree() == 0:
+        return poly.LC() != 0
+    try:
+        return len(sp.real_roots(poly)) == 0
+    except Exception:
+        # fallback: dense sample + leading-sign consistency
+        fn = sp.lambdify(var, expr, "numpy")
+        xs = np.linspace(-50.0, 50.0, 5001)
+        vals = np.asarray(fn(xs), dtype=float)
+        if not np.all(np.isfinite(vals)):
+            return False
+        if np.nanmin(np.abs(vals)) < 1e-12:
+            return False
+        return bool(np.all(vals > 0) or np.all(vals < 0))
+
+
 def check_B7_3_deg_le2():
-    """Theorem B7.3 samples: deg P <= 2 => global diffeo / regime E."""
+    """Theorem B7.3 samples: deg P <= 2 => global C^inf diffeo / regime E."""
     x, y = sp.symbols("x y", real=True)
     samples = []
     all_ok = True
@@ -169,7 +195,10 @@ def check_B7_3_deg_le2():
         )
     return {
         "lemma": "B7.3",
-        "statement": "deg P<=2 polynomial local diffeo samples => regime E",
+        "statement": (
+            "deg P<=2 polynomial local diffeo samples => global C^inf diffeo / regime E "
+            "(poly inverse only when explicit)"
+        ),
         "samples": samples,
         "pass": all_ok,
     }
@@ -379,10 +408,8 @@ def check_B7_6_axis():
         # identity: j(0,y) should equal Q_y(0,y) * P0_x(0,y) - ... P0=(0+0), P0_x(0,y)=1, P0_y=0
         # j = P0_x Q_y - P0_y Q_x = 1*Q_y - 0 = Q_y on x=0
         id_ok = sp.expand(j_axis - dQ) == 0
-        # if dQ never zero on R, univariate diffeo
-        dpoly = sp.Poly(sp.expand(dQ), y)
-        # never-zero univariate poly <=> constant nonzero
-        never0 = dpoly.degree() == 0 and dpoly.LC() != 0
+        # if dQ never zero on R, univariate diffeo (incl. y**2+1, not only constants)
+        never0 = _poly_never_zero_on_R(dQ, y)
         ok = bool(id_ok)
         all_ok = all_ok and ok
         items.append(
@@ -466,7 +493,7 @@ def main():
             "No gates/channels/advantage/deficiency indices",
             "No complex JC progress",
             "No A001 pair changes",
-            "Injective=>automorphism cited not re-proved",
+            "Bijective real poly local diffeo => global C^inf diffeo / E; poly inverse not automatic",
         ],
     }
     path = ROOT / "data" / "anchor" / "cas_atlas_B7_OPEN_T_B001.json"

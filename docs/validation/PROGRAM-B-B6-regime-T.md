@@ -111,20 +111,35 @@ is 1-sheeted, hence a global diffeomorphism. Dual flows are
 
 **Dichotomy role.** Proper polynomial local diffeos never realize T (or O).
 
-### Lemma B6.2 (injective polynomial ⇒ regime E)
+### Lemma B6.2 (injective polynomial local diffeo ⇒ regime E)
 
 **Statement.**  
-Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be an injective polynomial map. Then \(F\) is bijective
-and the inverse is polynomial (hence \(F\) is a polynomial automorphism). In particular
-\(F\) is a global diffeomorphism, dual fields are complete, and regime E holds.
+Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be an injective polynomial **local diffeomorphism**
+(\(\det DF\neq 0\) everywhere). Then \(F\) is bijective and a **global \(C^\infty\)
+diffeomorphism** of \(\mathbb{R}^n\). Dual fields are complete (path-lift formula), and
+regime E holds.
+
+**Polynomial inverse is a separate claim.** Over \(\mathbb{R}\), bijective polynomial
+local diffeomorphisms need **not** have a polynomial inverse. Standard counterexample
+class: \(F(x,y)=(y,\,x+x^3)\) (or \(P=y\), \(Q=x+x^3\)) is a smooth global diffeomorphism
+of \(\mathbb{R}^2\) with nowhere-vanishing Jacobian, but the inverse is not polynomial.
+Assert a **polynomial automorphism** only when a polynomial inverse is proved
+(e.g.\ triangular/graph forms with explicit poly inverse). Over algebraically closed
+fields of char 0, injective polynomial endomorphisms of \(\mathbb{A}^n\) *are*
+automorphisms (Białynicki-Birula–Rosenlicht); that algebraic statement does **not**
+transfer as “poly inverse over \(\mathbb{R}\)” without extra work.
 
 **Proof / citation.**  
-Injective polynomial endomorphisms of \(\mathbb{R}^n\) are automorphisms
-(Białynicki-Birula–Rosenlicht over algebraically closed fields of char 0, via
-complexification; real form standard in the Jacobian-conjecture literature — cf.
-van den Essen, *Polynomial Automorphisms*). Completeness of duals as in B6.1. ∎
+Injectivity + local diffeo \(\Rightarrow\) \(F\) is a covering onto its image; image is
+open. Injective continuous polynomial maps \(\mathbb{R}^n\to\mathbb{R}^n\) are surjective
+(standard; cf.\ real Jacobian literature / van den Essen for context), so \(F\) is
+bijective. The global inverse is \(C^\infty\) by the inverse-function theorem (local
+smooth inverses glue uniquely on a bijective local diffeo). Completeness of duals as
+in B6.1. ∎
 
 **Dichotomy role.** Any realization of T (or O) must be **non-injective** (Pinchuk-type).
+Regime E follows from the global \(C^\infty\) diffeomorphism alone; poly-automorphism
+language is reserved for cases with proved poly inverse.
 
 ### Lemma B6.3 (degree-one first component ⇒ regime E)
 
@@ -280,7 +295,7 @@ Let \(F:\mathbb{R}^2\to\mathbb{R}^2\) be a polynomial local diffeomorphism.
 
 1. **(Structured exclusions)** Regime T is impossible if any of the following holds:  
    - \(F\) is proper (B6.1);  
-   - \(F\) is injective (B6.2);  
+   - \(F\) is injective (B6.2: global \(C^\infty\) diffeo, regime E; not poly inverse);  
    - after affine domain change, one component of \(F\) has degree 1 (B6.3);  
    - \(F\) is product or triangular of B5.3/B5.7 type (B6.4).  
 
@@ -321,7 +336,8 @@ No proof and no counterexample in this repository. Atlas status: **no example of
 - No assertion that regime T is fully excluded for all polynomial local diffeos.  
 - No assertion that OPEN-T is independent or hard in a formal sense — only that it is
   unresolved here.  
-- B6.2 cites the injective-automorphism theorem; it is not re-proved.  
+- B6.2 claims only global \(C^\infty\) diffeomorphism + regime E for injective poly
+  local diffeos; it does **not** claim a polynomial inverse over \(\mathbb{R}\).  
 - B6.8 is a finite-degree CAS obstruction, not an all-degree theorem.  
 - No gates, channels, advantage, deficiency indices, or dual-\(F\) unitary package.  
 - No complex Jacobian conjecture progress (A009 has non-constant \(\det>0\)).  

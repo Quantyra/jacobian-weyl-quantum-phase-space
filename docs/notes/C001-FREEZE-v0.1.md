@@ -29,3 +29,4 @@
 - v0.8 package re-gate (`9445e95`): Package surfaces synced; aggregate pending package re-review  
 - v0.9 J7 (content at `60f543c` / `d2c8488` lineage): Full-ψ abstract C\* **SPLIT** (BT-Envelope form-level CONSTRUCT + CFC-SA NO-GO via J6 checklist + CP-Weyl-C\* OPEN)  
 - v0.9 package+wording re-gate (`61bf3da`): J7-C naming lock; J7→J6 hypothesis checklist; J3 G4-conditional qualifier; TeX path breaks; freeze SHA pinned; **do not claim Aggregate PASS** — package fixed awaiting re-review.
+- B001 v0.7 real-poly auto-language erratum (post-`61bf3da` main): **C001 content untouched**; prior dual freeze tags `v0.2.2-b001-draft` / `v0.3.2-c001-companion` @ `61bf3da` stay frozen (do not move). B auto wording superseded on new SHA; pending new tags after gate (retag B only, or dual-tag same SHA if desired). **No Aggregate PASS.**

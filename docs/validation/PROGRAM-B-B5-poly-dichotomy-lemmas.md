@@ -265,7 +265,7 @@ excluding (T).
 triangular classes, chamber reduction to atypical fibers only, and model obstruction for
 \(P_0=x+x^2 y\) — see `PROGRAM-B-B6-regime-T.md`.
 
-**Follow-on (B7):** graph-type / \(\deg P\le 2\) ⇒ automorphism (regime E only);
+**Follow-on (B7):** graph-type / \(\deg P\le 2\) ⇒ global \(C^\infty\) diffeo (regime E only; poly inverse only when proved);
 sharpened OPEN-T residual — see `PROGRAM-B-B7-OPEN-T.md`.
 
 ---

@@ -18,15 +18,16 @@ block for \(P_0=x+x^2 y\).
 This note **sharpens OPEN-T**:
 
 1. **Exclude T (and O) for all graph-type first components**, including every
-   polynomial local diffeo with \(\deg P\le 2\): such maps are automorphisms
-   (regime E only).
+   polynomial local diffeo with \(\deg P\le 2\): such maps are **global \(C^\infty\)
+   diffeomorphisms** of \(\mathbb{R}^2\) (regime E only). Polynomial inverse is
+   **not** automatic over \(\mathbb{R}\) (see B6.2 / Lemma B7.2 remark).
 2. **Structural filter** for any hypothetical T-example: \(P\) must be a
    non-coordinate polynomial submersion of degree \(\ge 3\) with nonempty
    atypical set, and badness can only live on bifurcation-born components.
 3. **P0 axis lemma:** any never-zero Jacobian partner of \(P_0\) (if one exists)
    forces the atypical axis component to be *good*, so T cannot be realized by
    “axis bad, chambers good” for \(P_0\).
-4. **CAS:** deg-\(\le 2\) automorphism samples; graph parity / bijectivity checks;
+4. **CAS:** deg-\(\le 2\) global-diffeo samples; graph parity / bijectivity checks;
    extended \(P_0\) never-zero-target search to deg \(8\); odd-\(\deg_y\) leading-form
    identities.
 
@@ -112,13 +113,23 @@ quadratic part: it equals \(\partial_y(Q_1)\), a constant. If that constant is \
 then \(\nabla P=(2ax+\ell_1,0)\) vanishes on a line. So \(\partial_y P\) is a nonzero
 constant. Scaling/translating yields \(P=y+a x^2+b x+c\). ∎
 
-### Lemma B7.2 (graph type ⇒ automorphism, regime E only)
+### Lemma B7.2 (graph type ⇒ global \(C^\infty\) diffeo, regime E only)
 
 **Statement.**  
 Let \(F=(P,Q):\mathbb{R}^2\to\mathbb{R}^2\) be polynomial with \(\det DF\neq 0\) and
-\(P\) of graph type. Then \(F\) is a polynomial automorphism, both dual fields are
-complete, and \(\operatorname{Bad}_P(F)=\emptyset\) (regime E). In particular
-regime T and regime O are impossible for graph-type first components.
+\(P\) of graph type. Then \(F\) is a **global \(C^\infty\) diffeomorphism** of
+\(\mathbb{R}^2\) (a polynomial map that is a \(C^\infty\) automorphism of
+\(\mathbb{R}^2\)), both dual fields are complete, and
+\(\operatorname{Bad}_P(F)=\emptyset\) (regime E). In particular regime T and
+regime O are impossible for graph-type first components.
+
+**Polynomial inverse only when proved.** The smooth inverse need **not** be
+polynomial. Counterexample class (inherited from B6.2): after swapping to
+\(P=y\), \(Q=x+x^3\), one has a graph-type first component and a global smooth
+diffeo whose inverse is non-polynomial. When the fiberwise maps \(q_c\) are
+degree one (or otherwise admit an explicit polynomial inverse — e.g.\ elementary
+shears \(F=(y+f(x),x)\)), \(F\) **is** a polynomial automorphism; assert that
+stronger label only in those cases.
 
 **Proof.**  
 After an affine domain change (Remark B7.0a: preserves \(\det DF\neq 0\),
@@ -136,11 +147,13 @@ Differentiating,
 q_c'(x)=Q_x-f'(x)\,Q_y=-j\bigl(x,c-f(x)\bigr)\neq 0
 \]
 for all \(x\). Thus each \(q_c\) is a strictly monotone univariate polynomial, so
-\(\deg q_c\) is odd and \(q_c:\mathbb{R}\to\mathbb{R}\) is bijective (B5.2).  
+\(\deg q_c\) is odd and \(q_c:\mathbb{R}\to\mathbb{R}\) is a \(C^\infty\)
+diffeomorphism (B5.2).  
 Given \((u,v)\in\mathbb{R}^2\), there is a unique \(x\) with \(q_u(x)=v\), and then
 \(y=u-f(x)\) yields the unique preimage of \((u,v)\). Hence \(F\) is bijective.
 A bijective polynomial local diffeomorphism \(\mathbb{R}^2\to\mathbb{R}^2\) is a
-polynomial automorphism (B6.2). Dual fields are complete by the global path-lift
+global \(C^\infty\) diffeomorphism (B6.2); the inverse is \(C^\infty\) by IFT but
+need not be polynomial. Dual fields are complete by the global path-lift
 formula (B6.1). Every fiber of \(P\) is a single graph on which \(Q\) is bijective
 onto \(\mathbb{R}\), so \(\operatorname{Bad}_P=\emptyset\). ∎
 
@@ -148,14 +161,16 @@ onto \(\mathbb{R}\), so \(\operatorname{Bad}_P=\emptyset\). ∎
 A univariate polynomial of even degree cannot be strictly monotone. So the
 fiberwise composition \(q_c\) is automatically of odd degree once \(j\neq 0\);
 there is no “even leading form ⇒ half-line image” branch inside the local-diffeo
-class. The only possibility is global bijectivity.
+class. The only possibility is global bijectivity (as a smooth map).
 
 ### Theorem B7.3 (\(\deg P\le 2\) package)
 
 **Statement.**  
 Let \(F=(P,Q):\mathbb{R}^2\to\mathbb{R}^2\) be a polynomial local diffeomorphism with
-\(\deg P\le 2\). Then \(F\) is a polynomial automorphism, dual fields are complete,
-and regime E holds for the \(X_1\)-side. Regimes O and T are impossible.
+\(\deg P\le 2\). Then \(F\) is a **global \(C^\infty\) diffeomorphism** of
+\(\mathbb{R}^2\), dual fields are complete, and regime E holds for the \(X_1\)-side.
+Regimes O and T are impossible. (Polynomial inverse only when separately proved —
+see Lemma B7.2.)
 
 **Proof.**  
 Lemmas B7.1 and B7.2 (and B6.3 when \(\deg P=1\)). ∎
@@ -285,13 +300,15 @@ x^2+y^2+1,\;
 **Method.** Same bilinear coefficient solve as B6.8, extended in degree and targets.  
 **CAS:** `B7_9_P0_completion` in `cas_atlas_B7_OPEN_T_B001.json`.
 
-### Proposition B7.10 (CAS: deg-≤2 maps are automorphisms on samples)
+### Proposition B7.10 (CAS: deg-≤2 maps are global diffeos on samples)
 
 **Statement (computational).**  
-Representative polynomial local diffeos with \(\deg P\le 2\) (shears, triangular
-completions, swapped graphs, cubic-in-fiber automorphisms) have never-zero
-Jacobian on a grid, admit global inverses (analytic or Newton-certified), and
-have empty Bad on sampled fibers — consistent with Theorem B7.3.
+Representative polynomial local diffeos with \(\deg P\le 2\) (shears with
+explicit poly inverse, triangular completions, swapped graphs, cubic-in-fiber
+smooth diffeos) have never-zero Jacobian on a grid, admit global inverses
+(analytic or Newton-certified \(C^\infty\)), and have empty Bad on sampled fibers
+— consistent with Theorem B7.3. Where an inverse formula is polynomial it is
+recorded as such; otherwise only smooth global invertibility is claimed.
 
 **CAS:** `B7_3_deg_le2`.
 
@@ -301,15 +318,15 @@ have empty Bad on sampled fibers — consistent with Theorem B7.3.
 
 | Attempt | Form | Outcome |
 |---------|------|---------|
-| Graph \(P=y+f(x)\) | any poly \(Q\), \(j\neq 0\) | Always automorphism, regime E (B7.2) |
-| \(\deg P\le 2\) | any poly local diffeo | Always E (B7.3) |
-| Deg-1 first component | B6.3 | Always E |
+| Graph \(P=y+f(x)\) | any poly \(Q\), \(j\neq 0\) | Always global \(C^\infty\) diffeo, regime E (B7.2); poly auto only if inverse poly |
+| \(\deg P\le 2\) | any poly local diffeo | Always global \(C^\infty\) diffeo / E (B7.3) |
+| Deg-1 first component | B6.3 | Always E (smooth global diffeo) |
 | \(P_0\) + linear-in-\(y\) | B6.7 / B7.8 | Jacobian zero forced |
 | \(P_0\) + deg \(\le 8\) standard targets | B7.9 | No solution |
 | \(P_0\) axis as only bad component | B7.6 | Impossible under \(j\neq 0\) |
 | Pinchuk family | A009 | Regime **O**, not T |
 | Vertical \(S_F\) via \(P=x,Q=xy\) | — | \(\det=x\) vanishes |
-| Product / triangular / proper / injective | B6 | Always E |
+| Product / triangular / proper / injective | B6 | Always E (smooth; poly inverse only if proved) |
 
 **Heuristic update.** Every low-degree or graph-type attempt collapses to E.
 Every known non-injective example is high-degree Pinchuk-type and lands in O.
@@ -326,10 +343,12 @@ no example known.
 Let \(F:\mathbb{R}^2\to\mathbb{R}^2\) be a polynomial local diffeomorphism.
 
 1. **(Graph / low degree)** If \(P\) is graph type — in particular if \(\deg P\le 2\) —
-   then \(F\) is a polynomial automorphism and regime E holds; T and O are
-   impossible (B7.2–B7.3).  
+   then \(F\) is a global \(C^\infty\) diffeomorphism of \(\mathbb{R}^2\) and regime E
+   holds; T and O are impossible (B7.2–B7.3). Polynomial inverse only when
+   separately proved.  
 2. **(Inherited structured exclusions)** T is impossible if \(F\) is proper,
-   injective, product, or triangular of B5.3/B5.7 type (B6.1–B6.4).  
+   injective, product, or triangular of B5.3/B5.7 type (B6.1–B6.4; injective
+   gives global \(C^\infty\) diffeo / E, not automatic poly inverse over \(\mathbb{R}\)).  
 3. **(Reduction)** T can occur only inside the residual class of Lemma B7.4:
    non-coordinate \(P\) of degree \(\ge 3\), nonempty \(\operatorname{Atyp}(P)\),
    all chambers good, Bad a nonempty finite subset of \(\operatorname{Atyp}(P)\),
@@ -374,7 +393,13 @@ Degree lower bound: any example needs \(\deg P\ge 3\) (and symmetrically
 - No gates, channels, advantage, deficiency indices, or dual-\(F\) unitary package.  
 - No complex Jacobian conjecture progress.  
 - No changes to A001 pair, gates, or C001 claims.  
-- Injective\(\Rightarrow\)automorphism and Jelonek dimension remain cited (B6.2, B5.6).
+- Injective poly local diffeo \(\Rightarrow\) global \(C^\infty\) diffeo / regime E
+  (B6.2); poly inverse over \(\mathbb{R}\) is **not** claimed in general. Jelonek
+  dimension remains cited (B5.6).  
+- **Erratum vs freeze `61bf3da`:** prior B7/B6 wording that concluded “polynomial
+  automorphism” from bijective poly local diffeos over \(\mathbb{R}\) is
+  **superseded**; regime-E conclusions stand via global \(C^\infty\) diffeo +
+  path-lift completeness.
 
 ---
 
