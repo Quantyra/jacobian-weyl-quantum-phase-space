@@ -1,9 +1,10 @@
 ﻿\documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
 \newtheorem{lemma}{Lemma}
 \newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
 \title{Poisson and Weyl lifts of the Alp\"oge--Fable Keller map\\
 and nonunique self-adjoint realizations of a dual transport operator}
 \author{Daniel Eric Fredriksen\\
@@ -15,147 +16,342 @@ Quantyra Inc.\\
 \maketitle
 
 \begin{abstract}
-We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fable credited): \(\det DF\equiv -2\) and a three-point collision. Theorem~A restates those finite identities; novelty is Theorems~B--F. The cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) is a polynomial Poisson map and non-injective. Dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\) commute and are divergence-free (Piola), so \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). The field \(X_1\) is incomplete. In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open forward and backward escape walls yield whole-orbit deficiency vectors in \(\operatorname{Dom}(H^*)\) (transverse cutoffs only; no interior \(s\)-indicators), hence
+We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fable credited): \(\det DF\equiv -2\) and a three-point collision. Theorem~A restates those finite identities; novelty is Theorems~B--F. The cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) is a polynomial Poisson map and non-injective. Dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\) commute and are divergence-free (Piola), so \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). We define the induced polynomial Weyl endomorphism \(\psi\). The field \(X_1\) is incomplete via an explicit integral curve. In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open forward and backward escape walls yield whole-orbit deficiency vectors in \(\operatorname{Dom}(H^*)\) (transverse cutoffs only; no interior \(s\)-indicators), hence
 \[
 (n_+,n_-)=(\infty,\infty)
 \]
-for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; algebraic CCR/Poisson data select none. No gates, channels, computational advantage, or seed discovery claim.
+for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. No gates, channels, computational advantage, or seed discovery claim. Companion code release \textbf{v0.3.4-submit}.
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
-\textbf{Software:} v0.3.3; concept DOI 10.5281/zenodo.21474351 (version DOI on Zenodo ingest).
+\textbf{Software:} v0.3.4-submit; concept DOI 10.5281/zenodo.21474351.\\
+\textbf{Categories (suggested):} math.FA (primary); math-ph, math.SP (secondary).
 
-\paragraph{Errata.}
-v0.2.2 pair \((0,\infty)\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)).
+\paragraph{Errata (prior releases).}
+v0.2.2 pair \((0,\infty)\) for \(H\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)). This submission is \textbf{\(H=-iX_1\) only}: we do \emph{not} claim exact deficiency pairs for \(H_0,H_2\), nor a theorem-level dual-flow strong CCR no-go (companion notes only).
 
 \section{Introduction}
-On 19--20 July 2026, Levent Alp\"oge announced \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision (credits Fable)~\cite{Alpoge2026}. \textbf{We do not claim discovery of \(F\).} We ask whether algebraic Poisson/CCR lifts select a unique self-adjoint dual transport generator on \(C_c^\infty(\mathbb{R}^3)\). Answer: no for \(H=-iX_1\); deficiency indices \((\infty,\infty)\).
+On 19--20 July 2026, Levent Alp\"oge announced an explicit polynomial map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the system Fable~\cite{Alpoge2026,UlamJacobian}. \textbf{We do not claim discovery of \(F\).} Independent checks and Lean formalizations of the seed identities appeared promptly~\cite{FredriksenLean}.
+
+We ask whether the standard Poisson/CCR lifts of \(F\) select a unique self-adjoint dual transport generator on \(C_c^\infty(\mathbb{R}^3)\). For \(H=-iX_1\) the answer is negative: deficiency indices \((\infty,\infty)\).
+
+\paragraph{Scope.} Theorems A--F below concern the algebra of the lifts and the analytic deficiency theory of \(H=-iX_1\). Remarks on other dual fields or alternative realizations are deferred to companion validation notes and are not claimed as theorems here.
 
 \section{Setup}
+Let \(q=(q_0,q_1,q_2)=(x,y,z)\) and
 \begin{align*}
 F_0&=(1+xy)^3 z + y^2(1+xy)(4+3xy),\\
 F_1&=y + 3x(1+xy)^2 z + 3xy^2(4+3xy),\\
 F_2&=2x - 3x^2 y - x^3 z.
 \end{align*}
-\(B=J^{-T}\), \(X_j=\sum_k B_{jk}\partial_{q_k}\), \(H:=-iX_1\).
+Write \(J=DF\) and \(B:=J^{-T}\). Dual fields:
+\[
+X_j:=\sum_{k=0}^{2} B_{jk}(q)\,\partial_{q_k},\qquad j=0,1,2.
+\]
+On \(L^2(\mathbb{R}^3)\) set \(p_k=-i\partial_{q_k}\) (\(\hbar=1\)). When \(\operatorname{div} X_j=0\),
+\[
+H_j:=-iX_j
+\]
+is symmetric on \(C_c^\infty(\mathbb{R}^3)\). Collision data (char \(\neq 2\)):
+\begin{equation}
+F\bigl(0,0,-\tfrac14\bigr)
+=F\bigl(1,-\tfrac32,\tfrac{13}2\bigr)
+=F\bigl(-1,\tfrac32,\tfrac{13}2\bigr)
+=\bigl(-\tfrac14,0,0\bigr).
+\label{eq:collision}
+\end{equation}
 
-\section{Theorems A--D (summary)}
+\section{Theorem A --- seed identities}
 \begin{theorem}[A]
-\(\det DF\equiv-2\); three-point collision; \(F\) noninjective. (Restatement; Lean+CAS.)
+(1) \(\det DF\equiv -2\).
+(2) The collision identities \eqref{eq:collision} hold over any field of characteristic not \(2\).
+(3) Hence \(F\) is not injective.
 \end{theorem}
-\begin{theorem}[B--C]
-\(\Phi\) is polynomial Poisson and noninjective. \(X_j(F_i)=\delta_{ij}\), \([X_i,X_j]=0\), \(\operatorname{div}X_j=0\) (Piola), \(H_j=-iX_j\) symmetric, \([F_i,H_j]=i\delta_{ij}\) on \(C_c^\infty\).
+\begin{proof}
+Expand \(\det J\) as a polynomial identity, or evaluate the formal determinant in a computer algebra system; independently formalized in Lean 4 (\(\mathtt{jacobianDet\_F}\), \(\mathtt{evalMap\_F\_p0/p1/p2}\))~\cite{FredriksenLean}. Non-injectivity is immediate from \eqref{eq:collision}.
+\end{proof}
+
+\begin{remark}[Complex vs real]
+Over \(\mathbb{C}\), constant nonzero Jacobian and non-injectivity would be extraordinary for the Jacobian conjecture. We treat \(F\) as an externally announced seed~\cite{Alpoge2026,UlamJacobian}; Theorem~A is a restatement with independent verification, not a priority claim. Our analytic results use the real \(L^2(\mathbb{R}^3)\) dual-field package.
+\end{remark}
+
+\section{Theorem B --- Poisson cotangent lift}
+\begin{theorem}[B]
+Let \(\Phi(q,p)=(F(q),B(q)p)\) with \(B=J^{-T}\). Then:
+\begin{enumerate}
+\item \(B\) is polynomial and \(JB^{T}=I\);
+\item writing \(Q_i=F_i(q)\) and \(P_j=\sum_k B_{jk}(q)p_k\),
+\[
+\{Q_i,Q_j\}=0,\quad
+\{P_i,P_j\}=0,\quad
+\{Q_i,P_j\}=\delta_{ij}
+\]
+for the canonical Poisson structure on \(T^*\mathbb{R}^3\);
+\item \(\Phi\) is not injective (lift the three collision sources with matching \(p\)).
+\end{enumerate}
 \end{theorem}
+\begin{proof}
+(1) follows from \(B=J^{-T}\) and \(\det J\equiv-2\neq 0\); polynomiality of \(B\) is the classical adjugate formula \(B=-(\operatorname{adj} J)^{T}/2\).
+(2) The identities \(\{Q_i,P_j\}=(JB^{T})_{ij}=\delta_{ij}\) are immediate; vanishing of \(\{Q_i,Q_j\}\) is clear; vanishing of \(\{P_i,P_j\}\) is the standard cotangent-lift calculation for \(B=J^{-T}\) (equivalently dual-CAS generator checks in the companion release~\cite{FredriksenSoft}).
+(3) If \(F(q^{(a)})=Q_\star\) and \(p^{(a)}=J(q^{(a)})^{T}P_\star\), then \(\Phi(q^{(a)},p^{(a)})=(Q_\star,P_\star)\) for each collision source in \eqref{eq:collision}.
+\end{proof}
+
+\section{Theorem C --- dual fields, Piola, Weyl endomorphism}
+\begin{theorem}[C]
+\begin{enumerate}
+\item \(X_j(F_i)=\delta_{ij}\), \([X_i,X_j]=0\), and \(\operatorname{div} X_j=0\).
+\item Each \(H_j=-iX_j\) is symmetric on \(C_c^\infty(\mathbb{R}^3)\), and \([M_{F_i},H_j]=i\delta_{ij}\) on that domain.
+\item Let \(\mathcal{W}\) be the polynomial Weyl algebra over \(\mathbb{C}\) generated by \(q_k,p_\ell\) with \([q_i,p_j]=\delta_{ij}\) and all other generators commuting. The assignment
+\[
+\psi(q_i)=F_i(q),\qquad
+\psi(p_j)=\sum_k B_{jk}(q)\,p_k
+\]
+extends uniquely to a unital algebra endomorphism \(\psi:\mathcal{W}\to\mathcal{W}\) preserving the Weyl relations on generators (ordering: coefficients \(B_{jk}(q)\) to the left of \(p_k\)).
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+(1) \(X_j(F_i)=(JB^{T})_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe, \([X_i,X_j]=0\). Piola: \(\operatorname{Div}\operatorname{Cof}(DF)=0\); with \(\det DF\equiv-2\), \(\operatorname{Div} B=0\), i.e.\ \(\operatorname{div} X_j=0\).
+(2) Divergence-free smooth vector fields give symmetric \(-iX\) on \(C_c^\infty\)~\cite{RS2}; the multiplication commutator is \(iX_j(F_i)\).
+(3) Universal property of the Weyl algebra: it suffices to check the images satisfy the same commutation relations, which is the content of the Poisson/CCR generator calculation in Theorem~B (with \(\{,\}\mapsto\frac1i[,]\))~\cite{DixmierWeyl}.
+\end{proof}
+
+\begin{remark}
+\(\psi\) is \emph{not} claimed to extend to a unitary conjugation on \(L^2\), a \(C^*\) automorphism, or a quantum channel.
+\end{remark}
+
+\section{Theorem D --- incompleteness of \(X_1\)}
 \begin{theorem}[D]
-\(X_1\) incomplete: explicit \(\gamma\) through \((1,0,0)\) with \(F(\gamma(t))=(0,t,2)\) escapes as \(t\to\tfrac12^-\).
+The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\).
 \end{theorem}
+\begin{proof}
+For \(t\in[0,\tfrac12)\), with continuous extension \(\gamma(0)=(1,0,0)\), set
+\begin{align*}
+q_0(t)&=\frac{-2t-\sqrt{1-2t}+1}{t(2t-1)},\\
+q_1(t)&=t,\\
+q_2(t)&=t^2\bigl(2t-3\sqrt{1-2t}-1\bigr)
+\end{align*}
+on \((0,\tfrac12)\), and \(\gamma(t)=(q_0(t),q_1(t),q_2(t))\). Then \(\gamma\) is \(C^\infty\) on \((0,\tfrac12)\) and extends \(C^1\) to \(t=0\). Computer algebra gives the polynomial/algebraic identity \(F(\gamma(t))=(0,t,2)\) on \((0,\tfrac12)\)~\cite{FredriksenSoft}. Differentiating yields \(DF_{\gamma(t)}\gamma'(t)=e_1\). Since \(DF\cdot X_1=e_1\) uniquely, \(\gamma'=X_1\circ\gamma\).
+
+As \(t=\tfrac12-\varepsilon\) with \(\varepsilon\downarrow 0\),
+\[
+q_0(t)=\sqrt{2/\varepsilon}+O(1)\to+\infty,
+\]
+so \(\gamma(t)\) leaves every compact of \(\mathbb{R}^3\) in finite time. Hence \(X_1\) is incomplete.
+\end{proof}
 
 \section{Flow-box coordinates}
-On local inverse sheets, \((a,s,c)=F(q)\) gives
+Along the \(X_1\) flow (where defined), \(X_1 F_0=X_1 F_2=0\) and \(X_1 F_1=1\). On any open set carrying a smooth local inverse of \(F\) (locally everywhere: \(\det DF\equiv-2\neq 0\)), the coordinates \((a,s,c)=F(q)\) satisfy
 \begin{equation}
-\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,\qquad X_1=\partial_s,\qquad H=-i\partial_s.
+\mathrm{d}q
+=\frac{1}{|\det DF|}\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c
+=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c,
+\qquad
+X_1=\partial_s,
+\qquad
+H:=-iX_1=-i\partial_s.
 \tag{7.1}
+\label{eq:flowbox}
 \end{equation}
-Elimination yields \(A(s;a,c)q_0^3+B(s;c)q_0+C(c)=0\) with
-\(A=-cs^3+s^2+18acs-27a^2c^2-16a\), \(B=3cs-4\), \(C=2c\).
+Indeed, if \(\Psi\) is a local inverse sheet, \(D\Psi=(DF)^{-1}\) and
+\[
+\bigl|\det D\Psi\bigr|
+=\frac{1}{|\det DF|}=\tfrac12,
+\]
+so Lebesgue measure pushes forward with factor \(\tfrac12\) (orientation chosen so the factor is positive).
+
+Eliminating \(q_2\) from \(F_2=c\) and \(q_1\) from \((F_0,F_1)=(a,s)\) yields
+\begin{equation}
+A(s;a,c)\,q_0^3+B(s;c)\,q_0+C(c)=0,
+\tag{7.2}
+\label{eq:cubic}
+\end{equation}
+with
+\[
+A=-cs^3+s^2+18acs-27a^2c^2-16a,\quad
+B=3cs-4,\quad
+C=2c.
+\]
+If \(A\to 0\) with \(B\neq 0\), Vieta forces some \(|q_0|\to\infty\).
 
 \paragraph{Reconstruction.}
-If \(x=q_0\) solves the cubic and denominators are nonzero,
+If \(x=q_0\neq 0\) solves \eqref{eq:cubic} and the denominators below are nonzero,
+\begin{equation}
+\begin{aligned}
+q_1
+&=\frac{9acx^2-3csx-3c-sx^2+6x}{x\bigl((3cs-4)x+3c\bigr)},\\
+q_2
+&=\frac{2x-3x^2q_1-c}{x^3},
+\end{aligned}
+\tag{8.0}
+\label{eq:recon}
+\end{equation}
+then \(F(x,q_1,q_2)=(a,s,c)\) by polynomial identity.
+
+\section{Escape walls and deficiency indices}
+Write
 \[
-q_1=\frac{9acx^2-3csx-3c-sx^2+6x}{x((3cs-4)x+3c)},\quad
-q_2=\frac{2x-3x^2q_1-c}{x^3},
+n_+:=\dim\ker(H^*-i),\qquad
+n_-:=\dim\ker(H^*+i).
 \]
-then \(F(x,q_1,q_2)=(a,s,c)\).
 
-\section{Theorems E--F}
-\paragraph{Dictionary.}
-On \((\ell,r)\): finite upper end \(\Rightarrow n_-=1\) (model \(e^{s-r}\)); finite lower end \(\Rightarrow n_+=1\) (model \(e^{-(s-\ell)}\)).
+\subsection{Per-orbit dictionary}
+On \(L^2((\ell,r),\mathrm{d}s)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\)~\cite{RS2}:
+finite upper end \(\Rightarrow\dim\ker(h^*+i)=1\) (model \(e^{s-r}\));
+finite lower end \(\Rightarrow\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\)).
 
+\subsection{Forward wall}
 \begin{proposition}[Forward wall]
-At \((0,\tfrac12,2)\), \(A=0\), \(\partial_sA=-\tfrac12\), \(B=-1\). IFT gives wall \(\beta\). Set \(\tau=\sqrt{\beta-s}\), \(q_0=r/\tau\), and
-\[
-G_+=\frac{A(\beta-\tau^2)}{\tau^2}r^3+B(\beta-\tau^2)r+C\tau,
-\]
-extended at \(\tau=0\) by \((-A_s)r^3+Br\). Simple roots \(r=\pm\sqrt2\) (\(\partial_rG_+=-2B\neq0\)) continue by IFT; reconstruct by the formulas above.
+There exist a nonempty open \(U_+\subset\mathbb{R}^2\) and \(\beta\in C^\infty(U_+)\) such that for every \((a,c)\in U_+\) a selected real inverse branch of \(F\) exists on an \(s\)-interval with finite upper end \(s=\beta(a,c)\) and \(\|q\|\to\infty\) as \(s\to\beta^-\).
 \end{proposition}
+\begin{proof}
+At the base \(p_\star=(a,s,c)=(0,\tfrac12,2)\): \(A(p_\star)=0\), \(A_s:=\partial_s A(p_\star)=-\tfrac12\neq 0\), \(B(p_\star)=-1\neq 0\). By the implicit function theorem there is a neighborhood of \((0,2)\) and \(\beta\in C^\infty\) with \(\beta(0,2)=\tfrac12\) and \(A(\beta(a,c);a,c)=0\).
 
+Set \(\tau=\sqrt{\beta-s}\) and \(q_0=r/\tau\). Define
+\[
+G_+(a,c,\tau,r)
+:=\frac{A(\beta-\tau^2;a,c)}{\tau^2}\,r^3
++B(\beta-\tau^2;c)\,r
++C(c)\,\tau
+\quad(\tau\neq 0),
+\]
+and extend at \(\tau=0\) by
+\[
+G_+(a,c,0,r)=(-A_s(\beta;a,c))r^3+B(\beta;c)r.
+\]
+Smoothness of the extension follows from \(A(\beta)=0\) and the Taylor expansion \(A(\beta-\tau^2)=-A_s(\beta)\tau^2+O(\tau^4)\) in \(\tau^2\). At the base, \(G_+(0,2,0,r)=\tfrac12 r^3-r\) has simple roots \(r=\pm\sqrt{2}\) because \(\partial_r G_+=\tfrac32 r^2-1\) and \(\partial_r G_+(\pm\sqrt{2})=-2B=2\neq 0\). The IFT continues \(r_\pm(a,c,\tau)\) on an open set \(U_+\times(0,\tau_0)\). Then \(|q_0|=|r_\pm|/\tau\to\infty\) as \(\tau\downarrow 0\).
+
+For reconstruction, the denominator in \eqref{eq:recon} behaves as \(q_0(Bq_0+3c)\sim B q_0^2\) with \(B\to-1\neq 0\), hence is nonzero for small \(\tau\) after shrinking \(U_+\). The formulas for \(q_1,q_2\) are rational in \((q_0,s,a,c)\) with this nonvanishing denominator; combined with \(q_0\sim r/\tau\) one obtains the spatial escape lower bound
+\[
+\|q\|\ge |q_0|\ge \frac{c_0}{\sqrt{\beta-s}}
+\]
+for some \(c_0>0\) on a possibly smaller relatively compact \(W_+\Subset U_+\) and \(s\) near \(\beta\). Regression checks: \texttt{data/anchor/cas\_orbit\_measure\_IFT\_A001.json}~\cite{FredriksenSoft}.
+\end{proof}
+
+\subsection{Backward wall}
 \begin{proposition}[Backward wall]
-At \(a=\tfrac1{54}\), \(c=2\), wall \(\alpha\) with \(A_s=\tfrac16\), \(B=-1\). Set \(\tau=\sqrt{s-\alpha}\) and analogous \(G_-\) extended by \(A_sr^3+Br\). Simple roots \(r=\pm\sqrt6\) continue by IFT on an open transverse set.
+There exist a nonempty open \(U_-\) and \(\alpha\in C^\infty(U_-)\) such that for \((a,c)\in U_-\) a selected real branch exists for \(s>\alpha(a,c)\) with \(\|q\|\to\infty\) as \(s\downarrow\alpha^+\).
 \end{proposition}
+\begin{proof}
+At \(a=\tfrac1{54}\), \(c=2\),
+\[
+A\bigl(s;\tfrac1{54},2\bigr)=-\frac{(2s-1)(3s^2-1)}{3},
+\]
+so \(A(\tfrac12)=0\), \(A_s(\tfrac12)=\tfrac16>0\), \(B(\tfrac12)=-1\). IFT gives a wall \(\alpha\) near \(\tfrac12\). Set \(\tau=\sqrt{s-\alpha}\) and \(q_0=r/\tau\), and define \(G_-\) analogously, extended at \(\tau=0\) by \(A_s(\alpha)r^3+B(\alpha)r\). At the base, simple roots \(r=\pm\sqrt{6}\) (\(\partial_r G_-=-2B\neq 0\)). IFT yields open \(U_-\) and large-\(q_0\) branches; reconstruct via \eqref{eq:recon}. Escape: \(\|q\|\ge c_0'/\sqrt{s-\alpha}\). Regression: \texttt{cas\_backward\_incomplete\_wall\_A001.json}.
+\end{proof}
 
+\subsection{Saturated maximal sheets}
 \begin{lemma}[Saturated maximal sheets]
-Cross-section the selected branch below/above the wall; saturate under the flow of \(X_1\). Since \(X_1F_1=1\), \(s\) is time. ODE theory yields a \(C^\infty\) diffeomorphism \(\Psi_+\) from
+Let \(W_+\Subset U_+\) be nonempty, open, and relatively compact. On the selected large-\(q_0\) forward branch, pick \(\varepsilon_0>0\) small and the smooth cross-section
 \[
-D_+=\{(a,c,s):(a,c)\in W_+\Subset U_+,\;\ell_+(a,c)<s<\beta(a,c)\}
+\Sigma_+=\bigl\{q:F(q)=(a,\beta(a,c)-\varepsilon_0,c),\;(a,c)\in W_+\bigr\}.
 \]
-onto an open invariant set \(\Omega_+\subset\mathbb{R}^3\), with \(F\circ\Psi_+=(a,s,c)\). The end \(s\to\beta^-\) is at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well. Analogous \(\Psi_-,\Omega_-\) for the lower wall.
+Let \(\phi_t\) be the maximal flow of \(X_1\). Because \(X_1 F_1=1\), \(F_1(\phi_t(q))=F_1(q)+t\) on the existence interval. Define
+\[
+D_+=\bigl\{(a,c,s):(a,c)\in W_+,\;\ell_+(a,c)<s<\beta(a,c)\bigr\},
+\]
+where \((\ell_+,\beta)\) is the maximal open \(s\)-interval of the selected immersed branch. Then
+\[
+\Psi_+:D_+\to\Omega_+\subset\mathbb{R}^3,
+\qquad
+\Psi_+(a,c,s)=\phi_{s-(\beta-\varepsilon_0)}(q_\Sigma(a,c))
+\]
+is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Psi_+=(a,s,c)\), and \(s\to\beta^-\) occurs at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well. An analogous \(\Psi_-,\Omega_-\) exists for the lower wall.
 \end{lemma}
+\begin{proof}
+The flow domain of a smooth vector field is open and the flow is \(C^\infty\)~\cite{LeeSmooth}. Uniqueness gives injectivity of \(\Psi_+\). Local invertibility of \(F\) and the flowbox theorem imply \(\Omega_+\) is open. The upper end is the wall of the forward-wall proposition, hence not attained in \(\mathbb{R}^3\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
+\end{proof}
 
-\begin{lemma}[Deficiency vectors in \(\operatorname{Dom}(H^*)\)]
-For \(\chi\in C_c^\infty(W_+)\) define on the \emph{entire} maximal interval
+\subsection{Deficiency vectors in \(\operatorname{Dom}(H^*)\)}
+\begin{lemma}[Deficiency vectors]
+For \(\chi\in C_c^\infty(W_+)\) define on the entire maximal interval
 \[
-u_-(\Psi_+(a,c,s))=\chi(a,c)\,e^{s-\beta(a,c)},
+u_-\bigl(\Psi_+(a,c,s)\bigr)
+:=\chi(a,c)\,e^{s-\beta(a,c)},
 \]
-and \(u_-=0\) off \(\Omega_+\). No interior \(s\)-cutoff. Then
+and \(u_-=0\) off \(\Omega_+\). No interior \(s\)-cutoff. Then \(u_-\in L^2(\mathbb{R}^3)\), \(u_-\in\operatorname{Dom}(H^*)\), and \((H^*+i)u_-=0\). The linear map \(\chi\mapsto u_-\) is injective, so \(n_-=\infty\). Likewise
 \[
-\|u_-\|_2^2=\tfrac12\int_{W_+}|\chi|^2\int_{\ell_+}^{\beta}e^{2(s-\beta)}\,ds\,da\,dc\le\tfrac14\|\chi\|_{L^2}^2.
-\]
-For \(\varphi\in C_c^\infty(\mathbb{R}^3)\), \(\operatorname{supp}\varphi\) meets orbits in compact \(s\)-segments strictly inside \((\ell_+,\beta)\). Integration by parts with \(\operatorname{div}X_1=0\) gives no jump and no endpoint terms, so \(u_-\in\operatorname{Dom}(H^*)\) and \((H^*+i)u_-=0\). Thus \(n_-=\infty\). Likewise
-\[
-u_+(\Psi_-(a,c,s))=\chi(a,c)\,e^{-(s-\alpha(a,c))}
+u_+\bigl(\Psi_-(a,c,s)\bigr)
+:=\chi(a,c)\,e^{-(s-\alpha(a,c))}
 \]
 on \((\alpha,r_-)\) yields \(n_+=\infty\).
 \end{lemma}
+\begin{proof}
+\textit{Square-integrability.} By \eqref{eq:flowbox},
+\[
+\|u_-\|_2^2
+=\tfrac12\int_{W_+}|\chi|^2
+\Bigl(\int_{\ell_+}^{\beta}e^{2(s-\beta)}\,\mathrm{d}s\Bigr)
+\mathrm{d}a\,\mathrm{d}c
+\le\tfrac14\|\chi\|_{L^2(W_+)}^2,
+\]
+since the inner integral equals \(\tfrac12\bigl(1-e^{2(\ell_+-\beta)}\bigr)\le\tfrac12\).
+
+\textit{Adjoint equation.} Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\). Compact support meets each orbit in a closed bounded \(s\)-segment strictly inside \((\ell_+,\beta)\) whenever it meets \(\Omega_+\) (escape ends lie outside every compact). On \(\Omega_+\), \(H=-i\partial_s\) in the flow-box chart with density \(\tfrac12\), and \(\operatorname{div} X_1=0\), so the formal adjoint of \(-iX_1\) is again \(-iX_1\). Integrating by parts in \(s\) for almost every \((a,c)\) (Fubini) produces no endpoint contributions inside \(\operatorname{supp}\varphi\). There is no interior jump because \(u_-\) has no artificial \(s\)-cutoff. Off \(\Omega_+\), \(u_-=0\). Lateral boundaries of \(W_+\) contribute nothing because \(\chi|_{\partial W_+}=0\), so no transverse surface measure appears in the distributional pairing. Hence
+\[
+\langle u_-,H\varphi\rangle=\langle -iu_-,\varphi\rangle,
+\]
+i.e.\ \(u_-\in\operatorname{Dom}(H^*)\) and \((H^*+i)u_-=0\).
+
+\textit{Infinite dimension.} If \(u_-=0\) a.e., then \(\chi=0\) a.e.\ on \(W_+\) because \(\Psi_+\) is a diffeomorphism and the exponential factor never vanishes. Thus \(\chi\mapsto u_-\) embeds an infinite-dimensional space into \(\ker(H^*+i)\).
+
+The lower-wall argument is symmetric.
+\end{proof}
+
+\begin{remark}[Withdrawn device]
+Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-masses and exit \(\operatorname{Dom}(H^*)\). That construction is withdrawn.
+\end{remark}
 
 \begin{theorem}[F]
 \((n_+,n_-)=(\infty,\infty)\).
 \end{theorem}
 \begin{proof}
-The two walls, saturation, and deficiency lemmas; separability.
+Forward and backward walls, saturation, and the deficiency lemma. Separability of \(L^2(\mathbb{R}^3)\) makes both dimensions countably infinite.
 \end{proof}
 
 \begin{theorem}[E]
-\(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
+\(H=-iX_1\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 \end{theorem}
 \begin{proof}
-\(n_\pm\ge1\).
+\(n_\pm\ge 1\) by Theorem~F.
 \end{proof}
 
 \begin{corollary}
-Infinitely many self-adjoint extensions exist. Core algebraic Poisson/CCR relations do not distinguish among them.
+By von Neumann's theorem, infinitely many self-adjoint extensions of \(H\) exist. Every such extension agrees with the same minimal operator on \(C_c^\infty(\mathbb{R}^3)\); the core algebraic Poisson/CCR relations recorded in Theorems~B--C therefore do not, by themselves, distinguish a unique extension.
 \end{corollary}
 
 \section{Discussion}
-The example separates two layers that are often collapsed in practice. On the algebraic side, the Poisson cotangent lift and the dual-field/CCR identities are clean: brackets close, rows of \(B\) are divergence-free, and \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). On the analytic side, \emph{all three} dual fields \(X_j\) are incomplete, so each \(H_j=-iX_j\) fails to be essentially self-adjoint. For the middle momentum one obtains
-\[
-(n_+,n_-)=(\infty,\infty)
-\quad(H_1),
-\]
-while the one-sided wall/omission models give
-\[
-(n_+,n_-)=(\infty,0)\ \text{for }H_0
-\quad\text{and}\quad
-(0,\infty)\ \text{for }H_2
-\]
-(so \(H_0\) and \(H_2\) admit \emph{no} self-adjoint extensions of the minimal operators). A working algebraic CCR/Poisson presentation therefore does \emph{not} select unique quantum dual momenta.
+The example separates algebraic and analytic layers. The Poisson cotangent lift and dual-field/CCR identities are clean, and \(\psi\) is a well-defined polynomial Weyl endomorphism. Nonetheless \(X_1\) is incomplete and \(H=-iX_1\) has deficiency indices \((\infty,\infty)\). Algebraic CCR/Poisson data therefore do not select a unique self-adjoint dual momentum for this generator.
 
-Moreover, no reducing subspace of \(L^2(\mathbb{R}^3)\) can carry unitary groups implementing dual \(F\)-translations in all three directions with open \(F\)-support: the same non-surjectivity of \(F\) blocks that repair. The same obstruction covers dilation compressions and reversible automorphism groups that reproduce global dual \(F\)-dynamics, and \(F\)-supported spectral translation covariance. Dual-flow strong CCR on this Hilbert space is obstructed. Roadmap Phases 1--3 classify the dual-flow Schrödinger program as a \textbf{no-go}. Remaining research is \emph{not} a fix of \(H_j=-iX_j\) dual flows on \(C_c^\infty\); it is separate work on classification and on constructions that drop dual \(F\)-translation axioms (e.g.\ irreversible CP), deferred to companion notes.
+We do \emph{not} claim here exact deficiency indices for \(H_0\) or \(H_2\), nor a theorem classifying all strong CCR or dual-translation packages; those topics appear only in companion repository notes and may be incomplete relative to theorem grade.
 
-This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality: incomplete flows and half-line models are classical~\cite{RS2}. The point is geometric and structural for this Keller dual lift.
-
-What the paper does \emph{not} establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; a preferred boundary condition; or that every abstract quantization route fails. Lean certification covers the seed identities (Theorem~A) and the adjugate identity for \(DF\); full G2--G4 formalization remains open.
+Classical incomplete flows and half-line models are standard~\cite{RS2}. The contribution is the geometric dual-lift package for this Keller seed together with an explicit two-sided wall construction for \(H=-iX_1\).
 
 \section{Non-claims}
-No unitary gate, channel, CP map, or computational advantage. No dual-flow strong CCR. No preferred physical extension. No claim all quantization routes fail. Discovery of \(F\) not claimed. Lean: seed + adjugate identity only.
+No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: seed identities and algebraic dual-matrix packaging only~\cite{FredriksenLean}. No theorem-level dual-flow strong CCR obstruction in this note.
 
 \begin{thebibliography}{99}
 \bibitem{RS2}
-M.~Reed and B.~Simon, \emph{Methods of Modern Mathematical Physics II}, Academic Press, 1975.
+M.~Reed and B.~Simon, \emph{Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness}, Academic Press, 1975.
+
+\bibitem{DixmierWeyl}
+J.~Dixmier, \emph{Sur les alg\`ebres de Weyl}, Bull.\ Soc.\ Math.\ France \textbf{96} (1968), 209--242.
+
+\bibitem{LeeSmooth}
+J.~M.~Lee, \emph{Introduction to Smooth Manifolds}, 2nd ed., Springer, 2013.
+
+\bibitem{BassCW}
+H.~Bass, E.~H.~Connell, and D.~Wright, The Jacobian conjecture: reduction of degree and formal expansion of the inverse, Bull.\ Amer.\ Math.\ Soc.\ \textbf{7} (1982), 287--330.
+
 \bibitem{Alpoge2026}
-L.~Alp\"oge, announcement, July 2026 (credits Fable).
+L.~Alp\"oge, announcement of a Keller map with constant Jacobian and collision, July 2026 (credits Fable); see also~\cite{UlamJacobian}.
+
+\bibitem{UlamJacobian}
+Ulam / related public write-ups of the July 2026 Jacobian counterexample announcement (seed provenance for \(F\)); archived snapshots and collision data in the companion repository~\cite{FredriksenSoft}.
+
 \bibitem{FredriksenSoft}
-D.~E.~Fredriksen, EXOTIC-CCR A001, GitHub Quantyra/jacobian-weyl-quantum-phase-space v0.3.3.
+D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates, GitHub \texttt{Quantyra/jacobian-weyl-quantum-phase-space}, release \texttt{v0.3.4-submit}, concept DOI 10.5281/zenodo.21474351.
+
 \bibitem{FredriksenLean}
-D.~E.~Fredriksen, exotic-ccr-lean, GitHub Quantyra/exotic-ccr-lean.
+D.~E.~Fredriksen, \texttt{exotic-ccr-lean}, GitHub \texttt{Quantyra/exotic-ccr-lean} (Lean 4 seed and dual-matrix algebra).
 \end{thebibliography}
 \end{document}
