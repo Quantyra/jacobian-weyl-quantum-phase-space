@@ -61,9 +61,13 @@ Restriction to the abelian \(C_0\) copy would yield a positive unital map extend
 
 | Item | Status |
 |------|--------|
-| Existence of some free unital CP extension | **OPEN** |
-| Stinespring dilation of such | **OPEN** |
+| CCR unital \*-hom extending \(\psi\) | **NO-GO** (Free-Hom; see `PROGRAM-C-GenCP-Free-progress.md`) |
+| C0-composition-compatible CP | **NO-GO** |
+| Strict free CP (no spatial/Bogoliubov axioms) | **OPEN** |
+| Stinespring of strict free CP | **OPEN** |
 | “Impossible in all axiomatics” | **not claimed** |
+
+Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 
 ---
 
@@ -76,7 +80,8 @@ Restriction to the abelian \(C_0\) copy would yield a positive unital map extend
 | C1c-Bogoliubov | NO-GO |
 | GenCP-Alg correspondence | **CONSTRUCT** |
 | GenCP-C0-compatible CP | **NO-GO** |
-| GenCP-Free | OPEN |
+| Free CCR \*-hom | **NO-GO** |
+| Free GenCP-Strict | OPEN |
 
 ## Non-claims
 No channel on \(B(H)\). No advantage. Algebraic correspondence ≠ physical instrument.

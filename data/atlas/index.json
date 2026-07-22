@@ -38,12 +38,17 @@
       "atlas_id": "A003-exp-halfplane",
       "path": "data/atlas/entries/A003-exp-halfplane.json",
       "status": "active"
+    },
+    {
+      "atlas_id": "A004-shear-automorphism",
+      "path": "data/atlas/entries/A004-shear-automorphism.json",
+      "status": "active"
     }
   ],
   "counts": {
     "active": 2,
     "draft": 0,
-    "entries": 4
+    "entries": 5
   },
   "non_claims": [
     "Atlas bootstrap registers existing G0 certificates only",
