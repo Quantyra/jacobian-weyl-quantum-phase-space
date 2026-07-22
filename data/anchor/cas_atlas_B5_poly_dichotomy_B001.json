@@ -1,0 +1,271 @@
+{
+  "program": "B001-v0.5",
+  "title": "Restricted polynomial dichotomy lemmas B5",
+  "pass": true,
+  "B5_2_univariate": {
+    "lemma": "B5.2",
+    "statement": "univariate poly local diffeo => global diffeo",
+    "positive_samples": [
+      {
+        "f": "t",
+        "f_prime": "1",
+        "degree": 1,
+        "degree_odd": true,
+        "real_critical_points": [],
+        "min_abs_fprime_on_grid": 1.0,
+        "strictly_mono_on_grid": true,
+        "ok": true
+      },
+      {
+        "f": "2*t + 1",
+        "f_prime": "2",
+        "degree": 1,
+        "degree_odd": true,
+        "real_critical_points": [],
+        "min_abs_fprime_on_grid": 2.0,
+        "strictly_mono_on_grid": true,
+        "ok": true
+      },
+      {
+        "f": "t**3/3 + t",
+        "f_prime": "t**2 + 1",
+        "degree": 3,
+        "degree_odd": true,
+        "real_critical_points": [],
+        "min_abs_fprime_on_grid": 1.0,
+        "strictly_mono_on_grid": true,
+        "ok": true
+      },
+      {
+        "f": "t**5/5 + t**3/3 + t",
+        "f_prime": "t**4 + t**2 + 1",
+        "degree": 5,
+        "degree_odd": true,
+        "real_critical_points": [],
+        "min_abs_fprime_on_grid": 1.0,
+        "strictly_mono_on_grid": true,
+        "ok": true
+      },
+      {
+        "f": "-t**3 - t",
+        "f_prime": "-3*t**2 - 1",
+        "degree": 3,
+        "degree_odd": true,
+        "real_critical_points": [],
+        "min_abs_fprime_on_grid": 1.0,
+        "strictly_mono_on_grid": true,
+        "ok": true
+      }
+    ],
+    "even_degree_must_have_crit": [
+      {
+        "f": "t**2",
+        "deg_f": 2,
+        "deg_fprime": 1,
+        "fprime_has_real_root": true,
+        "ok": true
+      },
+      {
+        "f": "t**4 - t**2",
+        "deg_f": 4,
+        "deg_fprime": 3,
+        "fprime_has_real_root": true,
+        "ok": true
+      },
+      {
+        "f": "t**2 + 1",
+        "deg_f": 2,
+        "deg_fprime": 1,
+        "fprime_has_real_root": true,
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "B5_3_product": {
+    "lemma": "B5.3",
+    "statement": "polynomial product local diffeo => global diffeo + complete duals",
+    "checks": [
+      {
+        "name": "identity",
+        "f": "x",
+        "g": "y",
+        "det": "1",
+        "min_abs_fx_on_grid": 1.0,
+        "min_abs_gy_on_grid": 1.0,
+        "min_abs_det_on_grid": 1.0,
+        "det_never_zero_on_grid": true,
+        "dual_flow_lift_max_err": 0.0,
+        "dual_flows_complete_on_samples": true,
+        "F_inverse_roundtrip_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "cubic_x_times_id",
+        "f": "x**3/3 + x",
+        "g": "y",
+        "det": "x**2 + 1",
+        "min_abs_fx_on_grid": 1.0,
+        "min_abs_gy_on_grid": 1.0,
+        "min_abs_det_on_grid": 1.0,
+        "det_never_zero_on_grid": true,
+        "dual_flow_lift_max_err": 3.552713678800501e-15,
+        "dual_flows_complete_on_samples": true,
+        "F_inverse_roundtrip_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "id_times_cubic_y",
+        "f": "x",
+        "g": "y**3/3 + y",
+        "det": "y**2 + 1",
+        "min_abs_fx_on_grid": 1.0,
+        "min_abs_gy_on_grid": 1.0,
+        "min_abs_det_on_grid": 1.0,
+        "det_never_zero_on_grid": true,
+        "dual_flow_lift_max_err": 8.881784197001252e-16,
+        "dual_flows_complete_on_samples": true,
+        "F_inverse_roundtrip_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "cubic_product",
+        "f": "x**3/3 + x",
+        "g": "y**3/3 + y",
+        "det": "(x**2 + 1)*(y**2 + 1)",
+        "min_abs_fx_on_grid": 1.0,
+        "min_abs_gy_on_grid": 1.0,
+        "min_abs_det_on_grid": 1.0,
+        "det_never_zero_on_grid": true,
+        "dual_flow_lift_max_err": 3.552713678800501e-15,
+        "dual_flows_complete_on_samples": true,
+        "F_inverse_roundtrip_max_err": 0.0,
+        "ok": true
+      },
+      {
+        "name": "linear_times_neg_cubic",
+        "f": "2*x + 1",
+        "g": "-y**3 - y",
+        "det": "-6*y**2 - 2",
+        "min_abs_fx_on_grid": 2.0,
+        "min_abs_gy_on_grid": 1.0,
+        "min_abs_det_on_grid": 2.0,
+        "det_never_zero_on_grid": true,
+        "dual_flow_lift_max_err": 5.329070518200751e-15,
+        "dual_flows_complete_on_samples": true,
+        "F_inverse_roundtrip_max_err": 0.0,
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "B5_7_triangular": {
+    "lemma": "B5.7",
+    "statement": "triangular poly local diffeos of the stated form are global diffeos",
+    "checks": [
+      {
+        "name": "shear_x2",
+        "roundtrip_max_err": 2.220446049250313e-16,
+        "global_inverse_ok": true,
+        "min_abs_det_on_samples": 0.9999999996134221,
+        "det_never_zero_on_samples": true,
+        "ok": true
+      },
+      {
+        "name": "alpha_x2p1",
+        "roundtrip_max_err": 2.220446049250313e-16,
+        "global_inverse_ok": true,
+        "min_abs_det_on_samples": 1.0007447076586533,
+        "det_never_zero_on_samples": true,
+        "ok": true
+      },
+      {
+        "name": "cubic_f_shear",
+        "roundtrip_max_err": 2.220446049250313e-16,
+        "global_inverse_ok": true,
+        "min_abs_det_on_samples": 1.0026735940076887,
+        "det_never_zero_on_samples": true,
+        "ok": true
+      }
+    ],
+    "pass": true
+  },
+  "B5_4_B5_5_fiber_Bad": {
+    "lemma": "B5.4+B5.5",
+    "statement": "fiber saturation; Bad semi-algebraic regimes E/O/T",
+    "A010": {
+      "map": "(x, y+x^2)",
+      "Bad_empty_on_sampled_levels": true,
+      "X0_poly_flow_complete": true,
+      "regime": "E_empty"
+    },
+    "A009_proxy": {
+      "open_levels_c_gt_minus1": [
+        {
+          "c": -0.5,
+          "h_pole": -0.2928932188134524,
+          "in_Bad_proxy": true
+        },
+        {
+          "c": 0.0,
+          "h_pole": 0.0,
+          "in_Bad_proxy": true
+        },
+        {
+          "c": 0.5,
+          "h_pole": 0.22474487139158894,
+          "in_Bad_proxy": true
+        },
+        {
+          "c": 1.0,
+          "h_pole": 0.41421356237309515,
+          "in_Bad_proxy": true
+        },
+        {
+          "c": 2.0,
+          "h_pole": 0.7320508075688772,
+          "in_Bad_proxy": true
+        }
+      ],
+      "regime": "O_open",
+      "has_open_Bad_proxy": true
+    },
+    "regime_T_status": "no_atlas_example_open_question",
+    "pass": true
+  },
+  "B5_1_cylinder": {
+    "lemma": "B5.1",
+    "statement": "int pi_j(V) nonempty => U_j contains nonempty open set",
+    "proof": "docs/validation/PROGRAM-B-B5-poly-dichotomy-lemmas.md",
+    "cas": "logical (no numeric beyond A006/A007 contrast already anchored)"
+  },
+  "B5_6_Jelonek": {
+    "lemma": "B5.6",
+    "statement": "poly generically finite + S_F nonempty => dim S_F = n-1",
+    "citation": [
+      "Z. Jelonek, Ann. Polon. Math. 58 (1993) 259-266",
+      "Z. Jelonek, Math. Ann. 315 (1999) 1-12"
+    ],
+    "corollary": "A007-style 0-dimensional asymptotic set impossible for polynomials",
+    "cas": "citation only (not re-proved computationally)"
+  },
+  "restricted_theorem_summary": {
+    "product_class_no_incompleteness": true,
+    "A007_mechanism_banned_for_polynomials": true,
+    "2D_regimes": [
+      "E_empty",
+      "O_open",
+      "T_thin_residual_open_question"
+    ],
+    "full_dichotomy_theorem_claimed": false,
+    "regime_T_excluded": false
+  },
+  "non_claims": [
+    "No full polynomial-Keller dichotomy theorem",
+    "No gates/channels/advantage",
+    "No complex JC progress",
+    "Regime (T) exclusion remains open",
+    "Jelonek dimension theorem cited not re-proved",
+    "No dual-F unitary package (T4)"
+  ]
+}

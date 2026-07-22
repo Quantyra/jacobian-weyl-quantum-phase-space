@@ -1,9 +1,10 @@
 ﻿# Program B — B4: dichotomy evidence (null-set vs open-set incompleteness)
 
 **Date:** 2026-07-22  
-**Status:** done (evidence gathered; polynomial-only dichotomy conjecture still open)  
+**Status:** done (evidence gathered; polynomial-only dichotomy conjecture still open; **restricted lemmas in B5**)  
 **Atlas:** A007 (fail, null-set, non-polynomial), A008 (pass, smooth), A009 (fail, open-set, **polynomial Pinchuk**), A010 (pass, **polynomial** shear)  
-**CAS:** `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`
+**CAS:** `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json`  
+**Follow-on:** `PROGRAM-B-B5-poly-dichotomy-lemmas.md` (v0.5 restricted theorems)
 
 ---
 
@@ -152,18 +153,23 @@ dual fields, the incomplete locus can range from:
 | Open, all directions | positive-measure, every \(X_j\) | A001 | yes (3D Keller seed) |
 | Empty (complete) | — | A008, **A010** | A008 no; **A010 yes** |
 
-**Candidate B4 dichotomy (still open as a theorem; sharpened by A009):** for
+**Candidate B4 dichotomy (still open as a full theorem; sharpened by A009 and B5):** for
 polynomial Keller-type maps specifically (as opposed to general smooth local
 diffeos), is the "thin" case (A007-style) ever possible, or does polynomiality
 force an **open** incomplete set whenever some dual field is incomplete?
 
 - A007 shows thin failure **is** possible smoothly, but is **not** polynomial.
 - **A009 (Pinchuk) shows a genuine 2D polynomial non-injective example with
-  open-set incompleteness** — real evidence on the polynomial side of the
+  open-set incompleteness** - real evidence on the polynomial side of the
   ledger, consistent with A001's open failures in 3D.
 - A010 shows polynomial maps can also be fully complete (automorphisms).
+- **B5 restricted lemmas (v0.5):** product polynomial local diffeos never
+  incomplete; A007's 0-dim asymptotic mechanism banned by Jelonek; 2D dual
+  incompleteness is fiber-saturated into regimes E (empty) / O (open) /
+  T (residual thin = finite bad levels only). Regime T has no atlas example
+  and is the only remaining channel for thin polynomial incompleteness.
 - **No counterexample** to "polynomial \(\Rightarrow\) open-only" is known in
-  this atlas; **no general proof** is claimed either.
+  this atlas; **no general proof** excluding regime T is claimed either.
 
 ---
 
@@ -173,8 +179,8 @@ A007/A008 are not Jacobian counterexamples (not polynomial). A009 is a
 classical strong-real-JC counterexample (det\(>0\), not injective) but is
 **not** a complex Jacobian conjecture counterexample (det not constant; JC(2)
 over \(\mathbb{C}\) remains open). A010 is an automorphism. No gates. No claim
-resolving the polynomial-only dichotomy as a theorem (left open; A009 is
-supporting evidence only). No deficiency indices for A009. No dual-\(F\)
-unitary package (T4).
+resolving the polynomial-only dichotomy as a full theorem (regime T open; A009
+is supporting evidence; B5 is a restricted package). No deficiency indices for
+A009. No dual-\(F\) unitary package (T4).
 
 (End of file)

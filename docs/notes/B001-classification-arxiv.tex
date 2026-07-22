@@ -26,15 +26,20 @@ A000--A010 (pass and fail baselines, Keller seed A001, family pilot A002,
 a smooth 2D pair A007/A008 illustrating that the forced incomplete set can
 be as thin as measure zero, and a polynomial 2D pair A009/A010: Pinchuk's
 real-plane map with \emph{open-set} incompleteness, and a polynomial shear
-automorphism with complete dual fields). No gates, channels, or computational
-advantage are claimed. Companion pack:
+automorphism with complete dual fields). We prove restricted dichotomy lemmas:
+polynomial product local diffeos have complete dual fields; the A007
+zero-dimensional asymptotic mechanism is impossible for polynomials (Jelonek);
+in dimension~2 dual incompleteness is fiber-saturated and falls into empty /
+open / residual-thin regimes, with residual-thin still open. No gates, channels,
+or computational advantage are claimed. Companion pack:
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.4.\\
+\textbf{Version:} B001 draft v0.5.\\
 \textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
-\texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json}.
+\texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json},
+\texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json}.
 
 \section{Introduction}
 Cotangent lifts and dual fields are standard when \(\det DF\neq 0\). After the
@@ -161,10 +166,77 @@ as measure zero for general smooth local diffeomorphisms. A007 is
 \emph{not} polynomial. A009 (Pinchuk) supplies the first atlas polynomial
 2D non-injective example with \emph{open-set} incompleteness, consistent with
 A001's open failures in dimension~3 and with A010 as a polynomial complete
-baseline. We record the candidate claim --- polynomial Keller-type maps never
-exhibit A007-style thin incompleteness --- as an open classification
-question supported by A009, not as a theorem (see
-\texttt{PROGRAM-B-B4-2D-dichotomy.md}).
+baseline. The candidate claim --- polynomial Keller-type maps never exhibit
+A007-style thin incompleteness --- remains open as a \emph{full} theorem, but
+is reduced by the restricted lemmas of \S\ref{sec:B5}.
+
+\section{Restricted dichotomy lemmas (new in v0.5)}
+\label{sec:B5}
+Full proofs: \texttt{PROGRAM-B-B5-poly-dichotomy-lemmas.md}.
+CAS: \texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json}.
+
+\begin{lemma}[Univariate polynomial local diffeos are global]
+\label{lem:B52}
+If \(f\in\mathbb{R}[t]\) satisfies \(f'(t)\neq 0\) for all \(t\in\mathbb{R}\), then
+\(f:\mathbb{R}\to\mathbb{R}\) is a global diffeomorphism.
+\end{lemma}
+\begin{proof}
+\(f'\) has constant strict sign, so \(f\) is strictly monotone. Even degree is
+impossible (equal infinite limits \(\Rightarrow\) not injective). Odd degree gives
+opposite infinite limits, hence bijectivity; inverse is \(C^\infty\) by IFT.
+\end{proof}
+
+\begin{lemma}[Polynomial product maps have complete duals]
+\label{lem:B53}
+If \(F(x)=\bigl(f_1(x_1),\ldots,f_n(x_n)\bigr)\) with each \(f_i\in\mathbb{R}[t]\) and
+\(\prod_i f_i'\neq 0\), then \(F\) is a global diffeomorphism and every dual field
+\(X_i=(1/f_i')\partial_{x_i}\) is complete.
+\end{lemma}
+\begin{proof}
+Apply Lemma~\ref{lem:B52} coordinatewise; dual ODEs integrate by
+\(f_i(x_i(t))=f_i(x_i(0))+t\).
+\end{proof}
+
+\begin{lemma}[Cylinder criterion]
+\label{lem:B51}
+If \(\operatorname{int}\pi_j\bigl(\mathbb{R}^n\setminus F(\mathbb{R}^n)\bigr)\neq\emptyset\),
+then the incompleteness locus of \(X_j\) contains a nonempty open set.
+\end{lemma}
+\begin{proof}
+On the open set of domain points whose \(F\)-image projects into that interior,
+the straight-line orbit in the target meets the complement of the image in finite
+time, so the dual lift is incomplete.
+\end{proof}
+
+\begin{lemma}[2D fiber saturation and three regimes]
+\label{lem:B545}
+Let \(F=(P,Q):\mathbb{R}^2\to\mathbb{R}^2\) be polynomial with \(\det DF\neq 0\).
+The incompleteness locus \(U_1\) of the dual field with \(\dot Q=1\) is a union of
+connected components of levels of \(P\). The set of bad level values is
+semi-algebraic in \(\mathbb{R}\), hence a finite union of points and open intervals.
+Thus either \(U_1=\emptyset\) (regime E; e.g.\ A010), or \(U_1\) contains a
+nonempty open set (regime O; e.g.\ A009), or \(U_1\) is a finite union of real
+algebraic curves (regime T, measure zero) --- the only residual thin channel.
+\end{lemma}
+\begin{proof}[Proof sketch]
+No critical points of \(P\); levels are unions of lines; \(Q\) is a chart on each
+component with speed \(1\); completeness iff \(Q\) hits all of \(\mathbb{R}\) on that
+component. Semi-algebraicity of the bad-value set is Tarski--Seidenberg.
+\end{proof}
+
+\begin{lemma}[Jelonek blocks the A007 asymptotic mechanism]
+\label{lem:B56}
+If \(F:\mathbb{R}^n\to\mathbb{R}^n\) is polynomial and generically finite and the
+asymptotic set \(S_F\) is nonempty, then \(\dim S_F=n-1\)~\cite{Jel93,Jel99}.
+In particular \(S_F\) cannot be a nonempty finite set of points, so the A007
+pattern (single asymptotic value, thin cylindrical projection, null incomplete
+locus) is unavailable to polynomials.
+\end{lemma}
+
+\noindent\textbf{Restricted package.} Lemmas~\ref{lem:B52}--\ref{lem:B56} eliminate
+thin incompleteness for polynomial \emph{product} maps and ban the A007 mechanism
+for all polynomial local diffeos. Full exclusion of regime T in
+Lemma~\ref{lem:B545} remains open; no atlas example realizes T.
 
 \section{Prior examples (v0.1--v0.2)}
 A000 identity; A003 half-plane; A001 Keller seed with \(X_1\) incomplete and
@@ -178,8 +250,8 @@ are not Jacobian counterexamples (A007/A008 are not even polynomial). A009 is
 a classical strong-real-JC counterexample (\(\det>0\), not injective) but not a
 complex Jacobian conjecture counterexample (\(\det\) not constant; JC\((2)\) over
 \(\mathbb{C}\) remains open). A010 is an automorphism. T4: no dual \(F\)-translation
-package claimed here. No theorem is claimed for the polynomial-only dichotomy
-question (\S8, open; A009 is supporting evidence only). C's joint \(q\)--\(p\)
+package claimed here. The full polynomial-only dichotomy remains a conjecture
+(\S8--\S9): regime T of Lemma~\ref{lem:B545} is not excluded. C's joint \(q\)--\(p\)
 sector~\cite{C001} splits three ways: position sector CONSTRUCT (Koopman
 pullback); Joint-Stone-Canonical and full-triple Joint-Stone CONDITIONAL
 OBSTRUCTIONS (J2/J3); residual choice-dependent Joint-Stone and Joint-Form
@@ -200,5 +272,11 @@ Math.~Z.~217 (1994), 1--4.
 \bibitem{Cam10}
 L.~A.~Campbell, The asymptotic variety of a Pinchuk map as a polynomial curve,
 Appl.~Math.~Lett.~24 (2011), 62--65; arXiv:1001.3318.
+\bibitem{Jel93}
+Z.~Jelonek, The set of points at which a polynomial map is not proper,
+Ann.~Polon.~Math.~58 (1993), 259--266.
+\bibitem{Jel99}
+Z.~Jelonek, Testing sets for properness of polynomial mappings,
+Math.~Ann.~315 (1999), 1--12.
 \end{thebibliography}
 \end{document}
