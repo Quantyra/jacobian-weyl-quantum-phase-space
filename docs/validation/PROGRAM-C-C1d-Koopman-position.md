@@ -63,9 +63,10 @@ diffeomorphism (in particular for the A001 seed, \(\det DF\equiv -2\neq 0\)).
    trivially). \(\blacksquare\)
 
 **Corollary.** The Regular-v2 intuition (that non-surjectivity should
-obstruct something) is confirmed to be **false** at this level: the Koopman
-pullback \(\Phi_0\) exists for *every* non-vanishing-Jacobian \(F\),
-surjective or not, proper or not.
+obstruct something) is confirmed to be **false** at the bounded-Borel level:
+the Koopman pullback \(\Phi_0\) exists for *every* non-vanishing-Jacobian
+\(F\), surjective or not, proper or not (though the retained \(C_0\)
+obstruction on the *vanishing-at-infinity* subalgebra still stands).
 
 ---
 
