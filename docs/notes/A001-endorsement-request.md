@@ -12,13 +12,13 @@ I am requesting arXiv endorsement for a short math.FA (secondaries math-ph, math
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)
 
-**One-sentence claim:** For the Alpöge–Fable Keller seed (restated, not discovered here), the dual-field operator \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\); the Poisson/Weyl lifts do not select a preferred self-adjoint extension, and global dual \(F\)-translation unitary packages are obstructed.
+**One-sentence claim:** For the Alpöge–Fable Keller seed (restated, not discovered here), the dual-field operator \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\); the Poisson/Weyl lifts do not, by themselves, select a unique self-adjoint extension of that minimal operator.
 
-**Explicitly not claimed:** unitary gates, channels, computational advantage, seed discovery, or that all quantization routes fail.
+**Explicitly not claimed:** unitary gates, channels, computational advantage, seed discovery, exact pairs for \(H_0/H_2\), or dual-flow strong CCR theorems.
 
 **PDF / code:**  
-- PDF: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.3/docs/notes/A001-arxiv.pdf  
-- Release: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3  
+- PDF: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.5-submit/docs/notes/A001-arxiv.pdf  
+- Release: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit  
 - Concept DOI: https://doi.org/10.5281/zenodo.21474351  
 
 **Endorsement code:** [PASTE CODE FROM arXiv SUBMIT UI]  
@@ -29,11 +29,3 @@ Thank you for considering this.
 Best regards,  
 Daniel Eric Fredriksen  
 Quantyra Inc.
-
----
-
-## Dan checklist
-1. Start arXiv submission until endorsement code appears.  
-2. Paste code above.  
-3. Send to endorser with PDF.  
-4. After endorse, complete submit.

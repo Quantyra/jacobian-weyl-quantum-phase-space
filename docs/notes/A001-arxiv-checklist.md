@@ -1,9 +1,9 @@
 ﻿# A001 publication checklist (wind-down)
 
-**Status:** **v0.3.4-submit** after external LLM REVISE. arXiv submit pending Dan.
+**Status:** **v0.3.5-submit** after external LLM REVISE. arXiv submit pending Dan.
 
 PDF: `docs/notes/A001-arxiv.pdf` (10 pp)  
-Tag: `v0.3.4-submit`  
+Tag: `v0.3.5-submit`  
 Log: `docs/notes/A001-external-llm-review-log.md`
 
 ## Done
@@ -12,10 +12,10 @@ Log: `docs/notes/A001-external-llm-review-log.md`
 - [x] Errata; stripped H0/H2 + dual-flow no-go from theorem boundary  
 - [x] External LLM reviews ingested (Grok/Claude/ChatGPT → REVISE fixes)  
 - [x] Endorsement email + packet  
-- [x] Tag `v0.3.4-submit` pushed  
+- [x] Tag `v0.3.5-submit` pushed  
 
 ## Dan now
-- [ ] Quick re-skim of v0.3.4-submit PDF  
+- [ ] Quick re-skim of v0.3.5-submit PDF  
 - [ ] Optional second LLM pass on new PDF  
 - [ ] Start arXiv submission → endorsement code  
 - [ ] Send endorsement request  

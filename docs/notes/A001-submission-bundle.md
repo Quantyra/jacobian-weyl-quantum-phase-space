@@ -1,9 +1,7 @@
-﻿# A001 public bundle (v0.3.3) — arXiv deferred
+﻿# A001 public bundle (v0.3.5-submit)
 
-Canonical PDF: docs/notes/A001-arxiv.pdf
-GitHub: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3
-Concept DOI: 10.5281/zenodo.21474351
+Canonical PDF: docs/notes/A001-arxiv.pdf  
+GitHub: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit  
+Concept DOI: 10.5281/zenodo.21474351  
 
-arXiv: not submitted (deferred by author).
-
-Claim: (n+,n-)=(inf,inf). No gates. Seed restated.
+Claim: (n+,n-)=(inf,inf) for H=-iX_1 only. No gates. Seed restated.

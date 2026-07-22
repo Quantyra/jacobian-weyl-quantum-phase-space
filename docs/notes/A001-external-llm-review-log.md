@@ -25,5 +25,20 @@
 - Dual-flow / H4 no-gos as paper theorems.  
 - Full JC priority discussion beyond Remark under Theorem A.
 
+## Round 2 (v0.3.4 → v0.3.5-submit)
+| Model | Verdict |
+|-------|---------|
+| Grok | PASS |
+| ChatGPT | REVISE (backward wall, Weyl norm, provenance, package sync) |
+| Claude | REVISE minor (Dom ℓ=-∞ decay; Weyl direct commutators; cites) |
+
+### Round-2 fixes
+1. Full backward \(G_-\) + escape/denominator bounds (not “analogously”).  
+2. Dom(H*): escape upper; finite lower escape; \(\ell=-\infty\) exponential decay.  
+3. Weyl: abstract \([q,p]=\delta\) vs Schrödinger \(p=-i\partial\); direct \([\psi(q),\psi(p)]\) proof.  
+4. Saturation: maximal-flow domain pullback + \(F\circ\Psi=\mathrm{id}\).  
+5. Softened novelty; stable seed cites (Alpöge X, Ulam PDF, Speyer).  
+6. Synced packet/endorsement/README/brief to v0.3.5-submit H₁-only.
+
 ## Next
-Rebuild PDF; tag `v0.3.4-submit`; Dan re-skim; arXiv start submit.
+Dan skims PDF → arXiv start submit.
