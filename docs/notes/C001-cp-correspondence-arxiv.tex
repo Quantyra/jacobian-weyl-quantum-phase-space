@@ -54,33 +54,49 @@ Let \(\mathcal{W}\) be the polynomial Weyl algebra over \(\mathbb{C}\) on genera
 
 \section{Program}
 \begin{enumerate}
-\item \textbf{C1b.} Probe complete positivity on matrix levels over a standard
-positive cone, or record the first obstruction.
-\item \textbf{C1c.} If positive: Stinespring/correspondence sketch. If not:
-axiomized no-go.
-\item \textbf{T4.} Every constructive claim carries: does \emph{not} implement
-dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
+\item \textbf{C1b.} Algebraic \(*\)-SOS positivity.
+\item \textbf{C1c.} \(C^*\) completion axioms: construct or obstruct.
+\item \textbf{T4.} Does \emph{not} implement dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 \end{enumerate}
 
 \section{Status}
-C1a domain frozen.
 
-\paragraph{C1b (algebraic).}
-With involution \(q_i^*=q_i\), \(p_j^*=p_j\) and real \(F,B\), the map \(\psi\) is a unital
-\(*\)-endomorphism of \(\mathcal{W}\). Hence it preserves sums of hermitian squares at all
-matrix levels \(\mathrm{id}_n\otimes\psi\). Companion CAS re-checks \(JB^{T}=I\) and
-reality of \(B\) on samples (\texttt{cas\_psi\_positivity\_C1b\_A001.json}): algebraic layer
-\textbf{PASS}.
+\paragraph{C1b (algebraic) --- PASS.}
+With involution \(q_i^*=q_i\), \(p_j^*=p_j\) and real \(F,B\), \(\psi\) is a unital
+\(*\)-endomorphism of \(\mathcal{W}\), hence preserves hermitian-square cones at all
+matrix levels. CAS: \texttt{cas\_psi\_positivity\_C1b\_A001.json}.
 
-\paragraph{C1b (C*/continuous).}
-Whether \(\psi\) extends to a normal unital CP map on a \(C^*\) completion of the
-Weyl/CCR algebra remains \textbf{OPEN}. Since \(F\) is non-injective, \(\psi\) is not an
-automorphism; a CP extension would be a proper endomorphism realization, not a
-unitary conjugation.
+\paragraph{C1c --- NO-GO under two axiom packs; general CP OPEN.}
+
+\begin{theorem}[Non-properness]
+The seed \(F:\mathbb{R}^3\to\mathbb{R}^3\) is not proper: along the explicit incomplete
+\(X_1\)-orbit \(\gamma(t)\) one has \(F(\gamma(t))=(0,t,2)\) bounded while
+\(\|\gamma(t)\|\to\infty\) as \(t\to\tfrac12^-\) (CAS:
+\texttt{cas\_F\_not\_proper\_C1c\_A001.json}).
+\end{theorem}
+
+\begin{theorem}[C0 \(*\)-extension blocked]
+There is no unital \(*\)-endomorphism of \(C_0(\mathbb{R}^3)\) extending
+\(f\mapsto f\circ F\) on polynomials. Indeed non-proper \(F\) makes composition
+fail to preserve vanishing at infinity.
+\end{theorem}
+
+\begin{theorem}[Bogoliubov / quasifree blocked]
+No Bogoliubov endomorphism of the CCR \(C^*\)-algebra restricts to \(\psi\) on
+\(\mathcal{W}\): Bogoliubov maps act linearly on one-particle fields, while
+\(\psi(q_i)=F_i(q)\) is nonlinear of degree \(3\).
+\end{theorem}
+
+\paragraph{General unital CP.}
+Existence of some unital CP extension of \(\psi\) to a \(C^*\) completion
+\emph{without} the C0-endomorphism or Bogoliubov requirements remains
+\textbf{OPEN} (not constructed). Correspondence/Stinespring data for that
+open case are deferred; any future claim requires adversarial review.
 
 \section{Non-claims}
-No CP map on a \(C^*\) algebra is asserted constructed. No gates/channels/advantage.
+No channel on \(B(H)\) constructed. No gates/advantage.
 No dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
+No claim that every CP extension in every axiomatics is impossible.
 
 \begin{thebibliography}{99}
 \bibitem{A001}
