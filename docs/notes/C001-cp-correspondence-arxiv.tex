@@ -59,8 +59,16 @@ inconsistent under \(*\). This note uses the standard physics normalization
 \end{remark}
 
 \begin{theorem}[Algebraic \(*\)-SOS]
-Real \(F,B\) \(\Rightarrow\) \(\psi\) is a unital \(*\)-endomorphism of \(\mathcal{W}\),
-hence \(\mathrm{id}_n\otimes\psi\) preserves hermitian-square cones.
+Assume \(F,B\) real and the Piola/\allowbreak dual-field identity \(\operatorname{div} B=0\)
+(row divergence free; true for the A001 cotangent lift). Then each
+\(P_j=\sum_k B_{jk}(q)p_k\) is essentially self-adjoint on the obvious
+polynomial core in the Schr\"odinger picture, and at the algebraic level
+\[
+P_j^* = P_j
+\]
+in \(\mathcal{W}\) (the formal adjoint correction \(-i\sum_k\partial_k B_{jk}\)
+vanishes). Hence \(\psi\) is a unital \(*\)-endomorphism and
+\(\mathrm{id}_n\otimes\psi\) preserves hermitian-square cones.
 \end{theorem}
 
 \begin{definition}[Algebraic correspondence]
@@ -84,24 +92,33 @@ so \(f\circ F\notin C_0\) for some \(f\in C_0\).
 \end{theorem}
 
 \begin{theorem}[Bogoliubov / quasifree]
-No Bogoliubov (linear quasifree) endomorphism of the CCR \(C^*\)-algebra
-restricts to \(\psi\) on the polynomial generators: such maps act linearly on
-one-particle fields, while \(F\) is nonlinear of degree \(3\).
+No Bogoliubov (linear quasifree) endomorphism of the CCR \(C^*\)-algebra---i.e.\ a
+map induced by a linear symplectic contraction on the one-particle space,
+acting on Weyl unitaries by \(W(z)\mapsto W(Tz)\)---can reproduce the Heisenberg
+picture dynamics of \(\psi\) on the Weyl one-parameter groups associated with the
+field coordinates in a regular representation: those Bogoliubov maps act
+linearly on one-particle fields, while \(q\mapsto F(q)\) is nonlinear of degree
+\(3\).
 \end{theorem}
 
 \begin{remark}[Not claimed]
-We do \emph{not} claim every continuous unital \(*\)-endomorphism of the CCR
-algebra fails---only the Bogoliubov/quasifree class. We do \emph{not} claim
-that \(f\mapsto M_{f\circ F}\) fails as a map \(C_b\to B(L^2)\).
+Polynomial \(q,p\) are not themselves elements of the CCR \(C^*\)-algebra; the
+comparison is through regular representations / affiliated fields / Weyl
+groups. We do \emph{not} claim every continuous unital \(*\)-endo of the CCR
+algebra fails---only Bogoliubov/quasifree. We do \emph{not} claim
+\(f\mapsto M_{f\circ F}\) fails as a map \(C_b\to B(L^2)\). Arveson extensions of
+the abelian composition map need not implement the momentum part of \(\psi\).
 \end{remark}
 
 \section{Withdrawn}
 Free-Strict-Regular-v2 nondegeneracy NO-GO: \textbf{withdrawn} (see erratum).
 
 \section{Open}
-Unital CP+Stinespring on a fully abstract \(C^*\) envelope of \(\mathcal{W}\) with
-no C0-composition and no Bogoliubov axioms: not constructed (beyond algebraic
-correspondence and finite-level algebraic CP), not ruled out.
+Unital CP+Stinespring on a \(C^*\) completion built from \emph{bounded transforms}
+of \(\mathcal{W}\) (resolvents, Weyl unitaries, or other bounded generators---not
+a literal C\(^*\) norm on unbounded polynomials satisfying CCR) with no
+C0-composition and no Bogoliubov axioms: not constructed beyond the algebraic
+correspondence and finite-level algebraic CP; not ruled out.
 
 \section{Non-claims}
 No channel on \(B(H)\). No gates/advantage. No dual \(F\)-translations.
