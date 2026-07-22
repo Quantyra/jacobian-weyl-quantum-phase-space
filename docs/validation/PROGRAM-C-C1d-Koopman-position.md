@@ -95,19 +95,20 @@ every choice-dependent Joint-Stone package).
 \(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal
 operators — so no full-triple Joint-Stone package exists under those pairs.
 
-### 3.2 Residual update (J4)
+### 3.2 Residual update (J4–J5)
 
 | Slice | Verdict |
 |-------|---------|
 | Joint-Stone-Hom-1 (multiplicative single \(j=1\)) | **OBSTRUCT (J4)** — see `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` |
+| Joint-Stone-CP-1 (mere CP + Stone \(j=1\) + \(\Phi_0\)) | **OBSTRUCT (J5)** — see `PROGRAM-C-residual-mere-CP-Joint-Stone.md` |
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT (J4-F)** |
 | Joint-Form-ESS-1 | **OBSTRUCT (J4-E)** |
-| Choice-dependent Joint-Stone + **mere CP** with \(\Phi_0\) | **OPEN** |
+| CP extension of \(\Phi_0\) **without** Stone | **OPEN** (not Joint-Stone) |
 
-Still open (not ruled out): mere-CP single-extension Joint-Stone compatibility
-with \(\Phi_0\). Candidate approaches (not executed): non-multiplicative
-Stinespring / operator-system interpolation; non-unitary weighted composition
-(not forbidden by T4, not constructed).
+J5: unital CP + unitary Stone agreement puts \(e^{is P_1^{\mathrm{Sch}}}\) in the
+multiplicative domain, recovers dual-\(F_1\) Heisenberg covariance, and dies
+by the same SvN / sheet-count geometry as J4. Remaining open routes drop the
+Stone axiom (CP of \(\Phi_0\) alone, abstract \(C^*\) envelope, form-level only).
 
 ---
 
@@ -122,15 +123,16 @@ Stinespring / operator-system interpolation; non-unitary weighted composition
 | Free-Strict-Abstract-Joint / **Joint-Stone-Canonical** | **NO-GO (J2)** — see `PROGRAM-C-Free-Strict-Abstract-Joint.md` |
 | Free-Strict-Abstract-Joint / full-triple Joint-Stone | **NO-GO (J3, G4 companion)** |
 | Free-Strict-Abstract-Joint / Joint-Stone-Hom-1 | **NO-GO (J4)** |
+| Free-Strict-Abstract-Joint / Joint-Stone-CP-1 | **NO-GO (J5)** |
 | Free-Strict-Abstract-Joint / Joint-Form-Core | **CONSTRUCT (J4-F)** |
-| Free-Strict-Abstract-Joint / residual mere-CP Joint-Stone | **OPEN** |
+| CP of \(\Phi_0\) without Stone | **OPEN** |
 
 ---
 
 ## 5. Non-claims
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
 translation dynamics (T4). Joint-Stone-Canonical (J2), full-triple under G4
-(J3), and multiplicative Joint-Stone-Hom-1 (J4) are ruled out; mere-CP
-choice-dependent Joint-Stone is **not** claimed impossible. Joint-Form-Core
-is form-level only. \(\Phi_0\) alone does **not** realize \(\psi\); it
-realizes only the abelian position-generator part.
+(J3), multiplicative Joint-Stone-Hom-1 (J4), and mere-CP Joint-Stone-CP-1
+(J5) are ruled out; CP of \(\Phi_0\) without Stone is **not** claimed
+impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
+**not** realize \(\psi\); it realizes only the abelian position-generator part.

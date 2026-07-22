@@ -1,9 +1,10 @@
 # Program C residual — Theorem J4: Joint-Stone-Hom-1 obstruction
 
 **Date:** 2026-07-22  
-**Status:** **OBSTRUCT** for the named pack **Joint-Stone-Hom-1**; plain CP choice-dependent Joint-Stone remains **OPEN**  
+**Status:** **OBSTRUCT** for the named pack **Joint-Stone-Hom-1**; mere-CP Joint-Stone-CP-1 separately **OBSTRUCT** by J5 (see sibling note)  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
-**Companion:** C001 (v0.6 cites J4)
+**Companion:** C001 (v0.7 cites J4/J5)  
+**Sibling:** `PROGRAM-C-residual-mere-CP-Joint-Stone.md`
 
 ---
 
@@ -11,7 +12,7 @@
 
 This note closes **one named slice** of residual (A) from the Joint scoreboard:
 
-- residual (A) plain CP / choice-dependent single-extension Joint-Stone + \(\Phi_0\) — still **OPEN**
+- residual (A) plain CP / choice-dependent single-extension Joint-Stone + \(\Phi_0\) — **NO-GO (Theorem J5)**; see sibling note
 - residual (A-Hom) **Joint-Stone-Hom-1** — **NO-GO (Theorem J4)**
 - residual (B) bare Joint-Form-Core — **CONSTRUCT** (see §5 and parent note)
 - residual (B-ESS) Joint-Form with ESS uniqueness — **NO-GO** (see §5)
@@ -168,8 +169,8 @@ There is **no** Joint-Stone-Hom-1 package for the A001 dual-lift data.
 **Proof.**  
 Assume \((\Phi,\widetilde H_1)\) is such a package. By Corollary J4.3 the Lebesgue density \(\rho\) of \(\mu=F_{\#}\lambda\) is independent of \(s\) a.e. By Lemma J4.5, \(\rho=m/2\) on the image. Hence \(m(a,s,c)\) is independent of \(s\) for a.e. \((a,s,c)\). This contradicts Lemma J4.4, where \(m\) takes the distinct constant values \(3\) and \(1\) on two positive-measure open slabs \(W\times I_3\) and \(W\times I_1\). \(\square\)
 
-**Explicit non-claim of J4.**  
-J4 uses multiplicativity of \(\Phi\) in an essential way (to obtain dual-\(F_1\) Heisenberg covariance and then SvN product structure). It does **not** rule out a merely completely positive (non-multiplicative) choice-dependent Joint-Stone package extending \(\Phi_0\). That residual stays **OPEN**.
+**Explicit non-claim of J4 (historical; closed by J5).**  
+J4 uses multiplicativity of \(\Phi\) **as an axiom** (to obtain dual-\(F_1\) Heisenberg covariance and then SvN product structure). The mere-CP pack with the same Stone axiom is **not** left open: Theorem J5 derives the same covariance from the multiplicative domain of a unital CP map and applies the same geometric kill (`PROGRAM-C-residual-mere-CP-Joint-Stone.md`).
 
 ---
 
@@ -206,17 +207,18 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 | Pack | Verdict | Anchor |
 |------|---------|--------|
 | Joint-Stone-Hom-1 (multiplicative, single \(j=1\)) | **OBSTRUCT / NO-GO** | **J4** |
-| Joint-Stone-CP-1 (mere CP, choice-dependent, single \(j=1\)) | **OPEN** | residual (A) |
+| Joint-Stone-CP-1 (mere CP, choice-dependent, single \(j=1\)) | **OBSTRUCT / NO-GO** | **J5** (sibling note) |
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT** | **J4-F** |
 | Joint-Form-ESS-1 (form + ESS uniqueness for \(j=1\)) | **OBSTRUCT / NO-GO** | **J4-E** + A001 E–F |
 | Joint-Stone-Canonical | NO-GO | J2 (prior) |
 | Full-triple Joint-Stone under G4 pairs | NO-GO | J3 (prior, G4 companion) |
+| CP of \(\Phi_0\) without Stone | OPEN | non-Stone residual |
 
 ---
 
 ## 8. Non-claims
 
-1. No claim that all CP joint extensions fail — only Hom-multiplicative Joint-Stone-1 (J4) and ESS-forced Joint-Form (J4-E).  
+1. No claim that all CP joint extensions fail — only Hom-multiplicative Joint-Stone-1 (J4), mere-CP Joint-Stone-CP-1 (J5), and ESS-forced Joint-Form (J4-E).  
 2. No dual-\(F\) translation dynamics (T4); J4 never builds a dual-flow unitary group on wavefunctions.  
 3. No preferred physical boundary condition among the continuum of SA extensions of \(H_1\).  
 4. No promotion of G4 \(H_0/H_2\) deficiency pairs to A001.  
