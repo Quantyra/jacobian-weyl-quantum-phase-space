@@ -33,11 +33,17 @@
       "mu_generic_degree": 4,
       "evidence_level": "A_algebra_pilot",
       "status": "active"
+    },
+    {
+      "atlas_id": "A003-exp-halfplane",
+      "path": "data/atlas/entries/A003-exp-halfplane.json",
+      "status": "active"
     }
   ],
   "counts": {
     "active": 2,
-    "draft": 0
+    "draft": 0,
+    "entries": 4
   },
   "non_claims": [
     "Atlas bootstrap registers existing G0 certificates only",

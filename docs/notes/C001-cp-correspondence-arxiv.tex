@@ -5,12 +5,12 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
 \newtheorem{remark}{Remark}
-\title{Toward completely positive realizations of an exotic Weyl endomorphism\\
-(without dual \(F\)-translations)}
+\title{Completely positive readings of an exotic Weyl endomorphism:\\
+algebraic correspondence, and obstructions for standard completions}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
-\date{\today}
+\date{21 July 2026}
 
 \begin{document}
 \maketitle
@@ -18,89 +18,81 @@ Quantyra Inc.\\
 \begin{abstract}
 Let \(\psi\) be the polynomial Weyl-algebra endomorphism induced by the
 Alp\"oge--Fable Keller seed (restated) via \(Q=F(q)\) and \(P=J^{-T}p\).
-We freeze the algebraic domain of \(\psi\) and open a program to decide whether
-\(\psi\) admits a unital completely positive extension to a \(C^*\) completion
-(or a Hilbert \(C^*\)-module correspondence), explicitly \emph{without}
-implementing dual \(F\)-translations on \(L^2(\mathbb{R}^3)\). No channel capacity,
-gate, or computational advantage is claimed. Companion to the A001 deficiency
-note and Program~B classification.
+We prove \(\psi\) is a unital \(*\)-endomorphism (algebraic SOS positivity),
+construct its algebraic endomorphism correspondence, and obstruct two standard
+continuous packages: unital \(*\)-endomorphisms of \(C_0(\mathbb{R}^3)\) extending
+composition with \(F\), and Bogoliubov endomorphisms of the CCR \(C^*\)-algebra.
+We also obstruct unital CP maps that are \(C_0\)-composition compatible.
+A free (non-C0, non-Bogoliubov) unital CP extension to some \(C^*\) completion
+remains open. No dual \(F\)-translations, gates, or advantage are claimed.
+Companion to the A001 deficiency note~\cite{A001}.
 \end{abstract}
 
-\noindent\textbf{MSC:} 46L07, 81S05, 47L90.\\
-\textbf{Status:} draft (Program C / bet C1). Software track: EXOTIC-CCR C001.
+\noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
+\textbf{Version:} C001 obstruction freeze v0.1.\\
+\textbf{T4:} does not implement dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
-\section{Non-goals (binding)}
-\begin{itemize}
-\item No dual \(F\)-translation unitary package on \(L^2(\mathbb{R}^3)\)~\cite{A001}.
-\item No reversible-gate reading of a proper endomorphism.
-\item No advantage / capacity claims.
-\end{itemize}
-
-\section{Domain (C1a)}
+\section{Domain}
 \begin{definition}
-Let \(\mathcal{W}\) be the polynomial Weyl algebra over \(\mathbb{C}\) on generators
-\(q_i,p_j\) with \([q_i,p_j]=\delta_{ij}\). With \(B=J^{-T}\),
+\(\mathcal{W}\): polynomial Weyl algebra over \(\mathbb{C}\), \([q_i,p_j]=\delta_{ij}\),
+involution \(q_i^*=q_i\), \(p_j^*=p_j\). With \(B=J^{-T}\),
 \[
 \psi(q_i)=F_i(q),\qquad
 \psi(p_j)=\sum_k B_{jk}(q)\,p_k
 \]
-(coefficients left of momenta) extends to a unital endomorphism
-\(\psi:\mathcal{W}\to\mathcal{W}\).
+extends to a unital algebra endomorphism \(\psi:\mathcal{W}\to\mathcal{W}\).
 \end{definition}
 
-\begin{remark}
-\(\psi\) is not an automorphism (classical non-injectivity of \(F\)).
-\end{remark}
-
-\section{Program}
-\begin{enumerate}
-\item \textbf{C1b.} Algebraic \(*\)-SOS positivity.
-\item \textbf{C1c.} \(C^*\) completion axioms: construct or obstruct.
-\item \textbf{T4.} Does \emph{not} implement dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
-\end{enumerate}
-
-\section{Status}
-
-\paragraph{C1b (algebraic) --- PASS.}
-With involution \(q_i^*=q_i\), \(p_j^*=p_j\) and real \(F,B\), \(\psi\) is a unital
-\(*\)-endomorphism of \(\mathcal{W}\), hence preserves hermitian-square cones at all
-matrix levels. CAS: \texttt{cas\_psi\_positivity\_C1b\_A001.json}.
-
-\paragraph{C1c --- NO-GO under two axiom packs; general CP OPEN.}
-
-\begin{theorem}[Non-properness]
-The seed \(F:\mathbb{R}^3\to\mathbb{R}^3\) is not proper: along the explicit incomplete
-\(X_1\)-orbit \(\gamma(t)\) one has \(F(\gamma(t))=(0,t,2)\) bounded while
-\(\|\gamma(t)\|\to\infty\) as \(t\to\tfrac12^-\) (CAS:
-\texttt{cas\_F\_not\_proper\_C1c\_A001.json}).
+\begin{theorem}[Algebraic \(*\)-SOS]
+If \(F,B\) are real, then \(\psi\) is a unital \(*\)-endomorphism, hence preserves
+hermitian-square cones at all matrix levels \(\mathrm{id}_n\otimes\psi\).
 \end{theorem}
 
-\begin{theorem}[C0 \(*\)-extension blocked]
-There is no unital \(*\)-endomorphism of \(C_0(\mathbb{R}^3)\) extending
-\(f\mapsto f\circ F\) on polynomials. Indeed non-proper \(F\) makes composition
-fail to preserve vanishing at infinity.
+\section{Non-properness}
+\begin{theorem}
+\(F:\mathbb{R}^3\to\mathbb{R}^3\) is not proper: along the explicit incomplete
+\(X_1\)-orbit \(\gamma(t)\) of~\cite{A001}, \(F(\gamma(t))=(0,t,2)\) stays bounded
+while \(\|\gamma(t)\|\to\infty\) (CAS \texttt{cas\_F\_not\_proper\_C1c\_A001.json}).
 \end{theorem}
 
-\begin{theorem}[Bogoliubov / quasifree blocked]
+\section{Obstructions}
+\begin{theorem}[C0 \(*\)-endo]
+No unital \(*\)-endomorphism of \(C_0(\mathbb{R}^3)\) extends \(f\mapsto f\circ F\)
+on polynomials.
+\end{theorem}
+
+\begin{theorem}[Bogoliubov]
 No Bogoliubov endomorphism of the CCR \(C^*\)-algebra restricts to \(\psi\) on
-\(\mathcal{W}\): Bogoliubov maps act linearly on one-particle fields, while
-\(\psi(q_i)=F_i(q)\) is nonlinear of degree \(3\).
+\(\mathcal{W}\) (\(F\) is nonlinear).
 \end{theorem}
 
-\paragraph{General unital CP.}
-Existence of some unital CP extension of \(\psi\) to a \(C^*\) completion
-\emph{without} the C0-endomorphism or Bogoliubov requirements remains
-\textbf{OPEN} (not constructed). Correspondence/Stinespring data for that
-open case are deferred; any future claim requires adversarial review.
+\begin{theorem}[C0-compatible CP]
+No unital CP map on a \(C^*\) algebra containing \(C_0(\mathbb{R}^3)\) as position
+functions can extend \(\psi\) while agreeing with composition on a dense
+subalgebra of that \(C_0\).
+\end{theorem}
+
+\section{Construct: algebraic correspondence}
+\begin{definition}[Endomorphism correspondence]
+Let \(E=\mathcal{W}\) as a right \(\mathcal{W}\)-module, left action
+\(a\cdot\xi=\psi(a)\xi\), and \(\langle\xi,\eta\rangle=\xi^*\eta\).
+\end{definition}
+This is the standard algebraic Hilbert-module correspondence implementing the
+unital \(*\)-endo \(\psi\). It does \emph{not} by itself yield a continuous CP map
+on a \(C^*\) completion.
+
+\section{Open}
+Free unital CP extension of \(\psi\) to some \(C^*\) completion of \(\mathcal{W}\)
+without C0-composition or Bogoliubov axioms: \textbf{not constructed, not ruled out}.
 
 \section{Non-claims}
-No channel on \(B(H)\) constructed. No gates/advantage.
-No dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
-No claim that every CP extension in every axiomatics is impossible.
+No channel on \(B(H)\). No gates/advantage. No dual \(F\)-translations.
+No claim every CP extension is impossible in every axiomatics.
+Algebraic correspondence \(\neq\) physical instrument.
 
 \begin{thebibliography}{99}
 \bibitem{A001}
-D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, companion v0.3.6-submit,
+D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, v0.3.6-submit,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \end{thebibliography}
 \end{document}

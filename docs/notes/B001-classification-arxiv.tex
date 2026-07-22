@@ -5,12 +5,13 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
 \title{Dual-lift realizability for Keller-type maps:\\
-a structural incompleteness lemma and classification schema}
+structural incompleteness, schema, and examples}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
-\date{\today}
+\date{21 July 2026}
 
 \begin{document}
 \maketitle
@@ -19,26 +20,28 @@ Quantyra Inc.\\
 We isolate a structural lemma for dual vector fields of local diffeomorphisms
 \(F:\mathbb{R}^n\to\mathbb{R}^n\): if global dual fields \(X_j\) with \(DF\cdot X_j=e_j\)
 are all complete, then \(F\) is surjective. Hence any non-surjective dual system
-has at least one incomplete dual field. We propose a coarse classification
-schema (B-ESS / B-Def / B-CCR / B-CP) for Poisson/Weyl lifts of Keller-type maps
-and record the A001 seed as a maximal analytic failure mode for one generator.
+has at least one incomplete dual field. We propose a classification schema
+(B-incomplete / B-ESS / B-Def / B-CCR / B-CP), populate it on four atlas rows
+(identity baseline; exponential half-plane; A001 Keller seed; A002 family pilot),
+and record how A001 is a maximal analytic failure mode for one dual generator.
 No gates, channels, or computational advantage are claimed. Companion to the
-A001 deficiency note for \(H=-iX_1\).
+A001 deficiency note~\cite{A001} and the C001 completion obstructions~\cite{C001}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Status:} draft (Program B). Soft\-ware track: EXOTIC-CCR B001.
+\textbf{Version:} B001 draft v0.1.\\
+\textbf{Software:} EXOTIC-CCR atlas \texttt{program\_b} columns.
 
 \section{Introduction}
 Cotangent lifts \(\Phi(q,p)=(F(q),J^{-T}p)\) and dual fields \(X_j\) are standard
-when \(\det DF\) is a nonzero constant. After the A001 analysis of one dual
-transport operator~\cite{A001}, a natural question is which maps admit
-essentially self-adjoint dual momenta or strong CCR packages. This note begins
-a classification program with a sharp structural lemma and a schema; it does
-not repair dual-flow dynamics on \(L^2\).
+when \(\det DF\) is nowhere zero. After the A001 analysis of one dual transport
+operator~\cite{A001}, one asks which maps admit essentially self-adjoint dual
+momenta or standard \(C^*\) packages. This note supplies a structural lemma, a
+schema, and worked examples. It does not repair dual-flow dynamics on \(L^2\).
 
 \section{Structural lemma}
 \begin{lemma}[Complete dual fields imply surjectivity]
+\label{lem:B1}
 Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be \(C^\infty\) and a local diffeomorphism.
 Suppose \(X_1,\ldots,X_n\) are \(C^\infty\) dual fields, \(DF\cdot X_j=e_j\).
 If every \(X_j\) is complete, then \(F(\mathbb{R}^n)=\mathbb{R}^n\).
@@ -54,35 +57,70 @@ makes the image open; translation invariance forces surjectivity.
 If dual fields exist and \(F(\mathbb{R}^n)\neq\mathbb{R}^n\), then some \(X_j\) is incomplete.
 \end{corollary}
 
-\section{Classification schema (draft)}
+\section{Classification schema}
 \begin{center}
 \begin{tabular}{ll}
 \hline
 Label & Meaning \\
 \hline
+B-incomplete & some/all \(X_j\) incomplete \\
 B-ESS & some/all \(H_j=-iX_j\) essentially self-adjoint \\
 B-Def & deficiency index pattern \\
-B-CCR & dual-translation / strong CCR package possible \\
-B-CP & unital CP extension of Weyl lift (Program C) \\
+B-CCR & dual-translation / Bogoliubov-type package \\
+B-CP & unital CP / \(C^*\) package for Weyl lift \\
 \hline
 \end{tabular}
 \end{center}
 Values: \texttt{open} / \texttt{fail} / \texttt{pass} with evidence pointers.
-Non-surjective dual systems are \texttt{fail} at the incompleteness layer by the lemma.
+Non-surjective dual systems are \texttt{fail} at B-incomplete by Lemma~\ref{lem:B1}.
 
-\section{A001 pointer}
-For the Alp\"oge--Fable seed (restated in~\cite{A001}), all three dual fields are
-incomplete and \(H=-iX_1\) has deficiency indices \((\infty,\infty)\). That is a
-stronger, seed-specific package beyond the structural corollary.
+\section{Examples}
+
+\begin{example}[A000 --- identity baseline]
+\(F=\mathrm{id}\) on \(\mathbb{R}^3\). Dual fields \(\partial_{q_j}\) complete.
+B-incomplete \texttt{pass}. Schema sanity check.
+\end{example}
+
+\begin{example}[A003 --- exponential half-plane, non-A001]
+On \(\mathbb{R}^2\), \(F(x,y)=(x,e^y)\), padded by an idle coordinate in the atlas.
+Then \(\det DF=e^y\neq 0\), image \(\mathbb{R}\times(0,\infty)\), dual fields
+\(X_0=\partial_x\), \(X_1=e^{-y}\partial_y\). The field \(X_1\) is incomplete
+backward (\(e^y=e^{y_0}+t\) hits a wall in finite time). Thus B-incomplete
+\texttt{fail}, matching Lemma~\ref{lem:B1}. This is smooth and \emph{not} a
+Jacobian-counterexample seed.
+\end{example}
+
+\begin{example}[A001 --- Keller seed]
+Alp\"oge--Fable seed restated in~\cite{A001}: all three dual fields incomplete;
+\(H=-iX_1\) has deficiency indices \((\infty,\infty)\). B-incomplete and B-ESS
+\texttt{fail} for that generator; B-CP fails for C0-\(*\) and Bogoliubov packs
+in the companion C001 note~\cite{C001}.
+\end{example}
+
+\begin{example}[A002 --- family d4 pilot]
+Algebraic det/collision pilot certified; real non-surjectivity and dual-field
+completeness not yet curve-certified. B-columns remain \texttt{open}
+(conditional on geometry).
+\end{example}
+
+\section{Discussion}
+Lemma~\ref{lem:B1} is the coarse filter. A001 shows a Keller seed can saturate
+analytic failure beyond mere incompleteness of one field. A003 shows the
+incompleteness half of the lemma on a elementary smooth example. Completion-level
+CP questions for Weyl lifts are separated into~\cite{C001}.
 
 \section{Non-claims}
 No gates, channels, advantage. No claim every Keller map fails ESS. No dual-flow
-repair. No preferred extension.
+repair. A003 is not a Jacobian counterexample.
 
 \begin{thebibliography}{99}
 \bibitem{A001}
 D.~E.~Fredriksen, Poisson and Weyl lifts of the Alp\"oge--Fable Keller map\ldots,
-companion note v0.3.6-submit,
+v0.3.6-submit,
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
+\bibitem{C001}
+D.~E.~Fredriksen, Toward CP realizations of an exotic Weyl endomorphism\ldots,
+C001 obstruction freeze,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \end{thebibliography}
 \end{document}

@@ -1,0 +1,59 @@
+{
+  "atlas_id": "A003-exp-halfplane",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_exp_halfplane_R2_pad",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "x0",
+      "F1": "exp(x1)",
+      "F2": "x2",
+      "note": "Pad of R^2 example F(x,y)=(x,e^y) with idle z=x2; ambient_dimension 3 for schema const."
+    },
+    "construction": "Program B B3 smooth non-Keller example: local diffeo, image R x (0,inf) x R, dual fields X0=d/dx0, X1=e^{-x1}d/dx1, X2=d/dx2. X1 incomplete backward.",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "exp(x1)",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["0", "1", "0"],
+    "inputs": [["0", "0", "0"]],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "standard cotangent with B=J^{-T}=diag(1,e^{-x1},1)",
+    "weyl_formula": "Q=F(q), P=Bp",
+    "star_domain_status": "X1 incomplete; ESS not fully computed"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B3-non-A001.md"],
+    "cas_reports": [],
+    "literature": []
+  },
+  "composition_notes": "B3 classification example only; not Keller; not A001 family.",
+  "non_claims": [
+    "Not a Jacobian counterexample",
+    "Not a claim of full deficiency indices",
+    "No gates/channels/advantage"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "fail",
+    "b_ess": "open",
+    "b_def": "open",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B3-non-A001.md",
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "X1=e^{-x1} partial_x1 incomplete backward: e^{x1}=e^{x1_0}+t"
+    ]
+  }
+}

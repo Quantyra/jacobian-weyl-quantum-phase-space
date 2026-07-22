@@ -143,11 +143,14 @@
     "b_ess": "fail",
     "b_def": "H1=(inf,inf); H0/H2 companion notes only",
     "b_ccr": "fail",
-    "b_cp": "open",
+    "b_cp": "fail",
     "evidence": [
       "docs/validation/PROGRAM-B-B1-structural-lemma.md",
       "docs/notes/A001-arxiv.pdf",
-      "docs/validation/G4-Xj-incompleteness.md"
+      "docs/validation/G4-Xj-incompleteness.md",
+      "docs/validation/PROGRAM-C-C1c-obstruction.md",
+      "docs/validation/PROGRAM-C-GenCP.md",
+      "C0-star and Bogoliubov and C0-compatible CP NO-GO; GenCP-Alg construct; GenCP-Free OPEN"
     ]
   }
 }
