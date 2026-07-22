@@ -1,7 +1,15 @@
 ﻿\documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage[hyphens]{url}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+% Allow line breaks in paths/URLs at many characters (no xurl dependency).
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\do\/\do\-\do\.\do\_\do\~\do\=\do\&\do\?\do\%}
+\def\UrlFont{\ttfamily}
+\makeatother
 \usepackage[hidelinks,breaklinks]{hyperref}
+% Breakable monospaced path/filename (wraps like \url).
+\newcommand{\filepath}[1]{\path{#1}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
 \newtheorem{lemma}{Lemma}
@@ -11,7 +19,7 @@
 and nonunique self-adjoint realizations of a dual transport operator}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
-\texttt{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
 \date{21 July 2026}
 
 \begin{document}
@@ -26,7 +34,9 @@ for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebra
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
-\textbf{Software:} v0.3.6-submit; concept DOI 10.5281/zenodo.21474351 (project-level; version DOI pending Zenodo ingest of this tag).\\
+\textbf{Software:} v0.3.6-submit; concept DOI
+\url{https://doi.org/10.5281/zenodo.21474351}
+(project-level; version DOI pending Zenodo ingest).\\
 \textbf{Categories (suggested):} math.SP (primary); math.FA, math-ph (secondary).
 
 \paragraph{Errata (prior releases).}
@@ -67,7 +77,9 @@ F\bigl(0,0,-\tfrac14\bigr)
 (3) Hence \(F\) is not injective.
 \end{theorem}
 \begin{proof}
-Expand \(\det J\) as a polynomial identity, or evaluate the formal determinant in a computer algebra system; formalized in Lean 4 in the companion repository (\(\mathtt{jacobianDet\_F}\), \(\mathtt{evalMap\_F\_p0/p1/p2}\))~\cite{FredriksenLean}. Non-injectivity is immediate from \eqref{eq:collision}.
+Expand \(\det J\) as a polynomial identity, or evaluate the formal determinant in a computer algebra system; formalized in Lean~4 in the companion repository
+(\filepath{ExoticCCR/AnchorF.lean}: \texttt{jacobianDet\_F}, \texttt{evalMap\_F\_p*})~\cite{FredriksenLean}.
+Non-injectivity is immediate from \eqref{eq:collision}.
 \end{proof}
 
 \begin{remark}[Complex vs real]
@@ -112,13 +124,12 @@ extends uniquely to a unital algebra endomorphism \(\psi:\mathcal{W}\to\mathcal{
 (1) \(X_j(F_i)=(JB^{T})_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe, \([X_i,X_j]=0\). Piola: \(\operatorname{Div}\operatorname{Cof}(DF)=0\); with \(\det DF\equiv-2\), \(\operatorname{Div} B=0\), i.e.\ \(\operatorname{div} X_j=0\).
 (2) Divergence-free smooth vector fields give symmetric \(-iX\) on \(C_c^\infty\)~\cite{RS2}; the multiplication commutator is \(iX_j(F_i)\) in the Schr\"odinger package.
 (3) By the universal property of \(\mathcal{W}\)~\cite{DixmierWeyl} it is enough to check the images of generators satisfy the same relations. Directly (no Poisson-to-commutator dictionary): with left-ordered coefficients,
-\[
+\begin{align*}
 \bigl[\psi(q_i),\psi(p_j)\bigr]
-=X_j(F_i)=\delta_{ij},
-\qquad
+&=X_j(F_i)=\delta_{ij},\\
 \bigl[\psi(p_i),\psi(p_j)\bigr]
-=\text{the first-order operator associated to }[X_i,X_j]=0.
-\]
+&=\text{the first-order operator of }[X_i,X_j]=0.
+\end{align*}
 (The identities are algebraic in the Weyl algebra and match the dual-CAS generator checks in~\cite{FredriksenSoft}.)
 \end{proof}
 
@@ -231,7 +242,9 @@ For reconstruction, the denominator in \eqref{eq:recon} behaves as \(q_0(Bq_0+3c
 \[
 \|q\|\ge |q_0|\ge \frac{c_0}{\sqrt{\beta-s}}
 \]
-for some \(c_0>0\) on a possibly smaller relatively compact \(W_+\Subset U_+\) and \(s\) near \(\beta\). Regression checks: \texttt{data/anchor/cas\_orbit\_measure\_IFT\_A001.json}~\cite{FredriksenSoft}.
+for some \(c_0>0\) on a possibly smaller relatively compact \(W_+\Subset U_+\) and \(s\) near \(\beta\).
+Regression certificate (companion release~\cite{FredriksenSoft}):
+\filepath{data/anchor/cas_orbit_measure_IFT_A001.json}.
 \end{proof}
 
 \subsection{Backward wall}
@@ -263,7 +276,9 @@ For reconstruction, the denominator in \eqref{eq:recon} behaves as \(q_0(Bq_0+3c
 \[
 \|q\|\ge |q_0|\ge \frac{c_0'}{\sqrt{s-\alpha}}
 \]
-on a relatively compact \(W_-\Subset U_-\) near the wall. Regression: \texttt{data/anchor/cas\_backward\_incomplete\_wall\_A001.json}~\cite{FredriksenSoft}.
+on a relatively compact \(W_-\Subset U_-\) near the wall.
+Regression certificate (companion release~\cite{FredriksenSoft}):
+\filepath{data/anchor/cas_backward_incomplete_wall_A001.json}.
 \end{proof}
 
 \subsection{Saturated maximal sheets}
@@ -390,13 +405,15 @@ D.~Speyer, \emph{The new counterexample to the Jacobian conjecture}, Secret Blog
 \url{https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/}.
 
 \bibitem{FredriksenSoft}
-D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates, GitHub \texttt{Quantyra/jacobian-weyl-quantum-phase-space}, release \texttt{v0.3.6-submit},
+D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates,
+GitHub Quantyra/jacobian-weyl-quantum-phase-space, release v0.3.6-submit,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit};
-concept DOI 10.5281/zenodo.21474351 (project-level).
+concept DOI \url{https://doi.org/10.5281/zenodo.21474351} (project-level).
 
 \bibitem{FredriksenLean}
-D.~E.~Fredriksen, \texttt{exotic-ccr-lean}, GitHub \texttt{Quantyra/exotic-ccr-lean}, tag \texttt{v0.1.1-collision},
+D.~E.~Fredriksen, exotic-ccr-lean, GitHub Quantyra/exotic-ccr-lean,
+tag v0.1.1-collision,
 \url{https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.1-collision}
-(Lean 4 formalization of the seed identities and dual-matrix algebra).
+(Lean~4 formalization of the seed identities and dual-matrix algebra).
 \end{thebibliography}
 \end{document}
