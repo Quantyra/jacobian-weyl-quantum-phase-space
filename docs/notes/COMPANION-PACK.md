@@ -25,7 +25,7 @@
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
 | Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.7, B7 PARTIAL) |
-| Tag / release | `v0.2.2-b001-draft` (exact freeze SHA = `git rev-parse v0.2.2-b001-draft`; supersedes `v0.2.1-b001-draft`; do not retag) |
+| Tag / release | `v0.2.2-b001-draft` @ `61bf3da13798a8a4d12405af487bafe6e0e5aa07` (supersedes `v0.2.1-b001-draft`; do not retag) |
 | Prior tags | `v0.2.1-b001-draft` (v0.6; do not retag); `v0.2.0-b001-draft` (pre-B6; do not retag) |
 | Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json`, `cas_atlas_B6_regime_T_B001.json`, `cas_atlas_B7_OPEN_T_B001.json` |
 | Claims | B1 lemma; schema; atlas A000–A010; A007 thin vs A009 open (Pinchuk); **B5 restricted poly dichotomy lemmas**; **B6 regime-T PARTIAL**; **B7 OPEN-T sharpened** (affine-invariant graph-type / \(\deg P\le 2\) ⇒ automorphism / regime E; T-filter deg≥3 non-coordinate; \(P_0\)-axis cannot carry T; CAS through deg 8); full poly dichotomy still a **conjecture** |
@@ -43,7 +43,7 @@
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
 | Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.9) |
-| Tag / release | `v0.3.2-c001-companion` (exact freeze SHA = `git rev-parse v0.3.2-c001-companion`; supersedes `v0.3.1-c001-companion`; do not retag) |
+| Tag / release | `v0.3.2-c001-companion` @ `61bf3da13798a8a4d12405af487bafe6e0e5aa07` (supersedes `v0.3.1-c001-companion`; do not retag) |
 | Prior tags | `v0.3.1-c001-companion` (v0.8; do not retag); `v0.3.0-c001-companion`; `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
 | Claims | Algebraic \*-SOS; correspondence; C0/Bogoliubov NO-GO; Koopman position **CONSTRUCT**; J2 Joint-Stone-Canonical NO-GO; J3 full-triple Joint-Stone NO-GO (**G4-conditional**, not A001); **J4 Joint-Stone-Hom-1 NO-GO**; **J5 Joint-Stone-CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**; **J7-C Full-ψ-BT-Envelope CONSTRUCT** (bounded dual-momentum transforms + Φ₀ positions; form-level only; **not** Full-ψ-CFC / **not** Weyl-C* / **not** Stinespring); **J7 Full-ψ-CFC-SA-1 NO-GO** (reduces to J6 on same joint vNa + normal CP) |
 | Joint notes | [`PROGRAM-C-Free-Strict-Abstract-Joint.md`](../validation/PROGRAM-C-Free-Strict-Abstract-Joint.md), [`PROGRAM-C-residual-J4-Joint-Stone-Hom.md`](../validation/PROGRAM-C-residual-J4-Joint-Stone-Hom.md), [`PROGRAM-C-residual-mere-CP-Joint-Stone.md`](../validation/PROGRAM-C-residual-mere-CP-Joint-Stone.md), [`PROGRAM-C-residual-CP-without-Stone.md`](../validation/PROGRAM-C-residual-CP-without-Stone.md), [`PROGRAM-C-residual-abstract-Cstar-full-psi.md`](../validation/PROGRAM-C-residual-abstract-Cstar-full-psi.md) |

@@ -4,7 +4,7 @@
 **PDF:** docs/notes/B001-classification-arxiv.pdf  
 **Status:** v0.7 — atlas A000–A010 + B5 restricted poly dichotomy + B6 regime-T partial + **B7 OPEN-T sharpened** (graph / deg≤2 ⇒ E; affine-invariant)  
 **Tag:** `v0.2.2-b001-draft` (supersedes `v0.2.1-b001-draft`; do not move old tags)  
-**Freeze SHA:** exact hex of annotated tag `v0.2.2-b001-draft` (package+wording re-gate commit; **not** mutable `HEAD`) — resolve with `git rev-parse v0.2.2-b001-draft`  
+**Freeze SHA:** `61bf3da13798a8a4d12405af487bafe6e0e5aa07` (annotated tag `v0.2.2-b001-draft`; **not** mutable `HEAD`)  
 **Pack:** COMPANION-PACK.md  
 **A001:** parked VIPN6B (human only)  
 **C:** C001 v0.9 — J2 NO-GO; J3 **G4-conditional** NO-GO; J4–J7 split; Diag-CP-Φ₀ CONSTRUCT; Full-ψ-BT-Envelope (bounded dual-momentum transforms + Φ₀ positions; form-level; **not** CFC / **not** Weyl-C* / **not** Stinespring) CONSTRUCT; Full-ψ-CFC-SA-1 OBSTRUCT via J6; Full-ψ-CP-Weyl-C* OPEN (narrow)  
@@ -24,4 +24,4 @@
 ## Adversarial
 v0.6 package re-gate at `9445e95`.  
 v0.7 B7 content at `d2c8488` lineage.  
-v0.7 package+wording re-gate (this commit): affine-invariance note; TeX path breaks; tag pending exact freeze SHA; **do not claim Aggregate PASS** — proof/non-claims/package re-gate pending or package fixed awaiting re-review.
+v0.7 package+wording re-gate (`61bf3da`): affine-invariance note; TeX path breaks; freeze SHA pinned; **do not claim Aggregate PASS** — package fixed awaiting re-review.

@@ -3,7 +3,7 @@
 **Date:** 2026-07-22  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
 **Tag:** `v0.3.2-c001-companion` (supersedes `v0.3.1-c001-companion`; do not move old tags)  
-**Freeze SHA:** exact hex of annotated tag `v0.3.2-c001-companion` (package+wording re-gate commit; **not** mutable `HEAD`) — resolve with `git rev-parse v0.3.2-c001-companion`  
+**Freeze SHA:** `61bf3da13798a8a4d12405af487bafe6e0e5aa07` (annotated tag `v0.3.2-c001-companion`; **not** mutable `HEAD`)  
 **Pack:** COMPANION-PACK.md  
 
 ## Scoreboard
@@ -28,4 +28,4 @@
 - v0.8 J6 (content at `95a0bc9`): Proof **PASS** (Unitary-Image NO-GO + Diag-CP CONSTRUCT); Non-claims **PASS** (no J5 weaken; full-ψ still OPEN); Package **REVISE** (stale tag/README/aggregate green)  
 - v0.8 package re-gate (`9445e95`): Package surfaces synced; aggregate pending package re-review  
 - v0.9 J7 (content at `60f543c` / `d2c8488` lineage): Full-ψ abstract C\* **SPLIT** (BT-Envelope form-level CONSTRUCT + CFC-SA NO-GO via J6 checklist + CP-Weyl-C\* OPEN)  
-- v0.9 package+wording re-gate (this commit): J7-C naming lock; J7→J6 hypothesis checklist; J3 G4-conditional qualifier; TeX path breaks; **do not claim Aggregate PASS** — proof/non-claims/package re-gate pending or package fixed awaiting re-review.
+- v0.9 package+wording re-gate (`61bf3da`): J7-C naming lock; J7→J6 hypothesis checklist; J3 G4-conditional qualifier; TeX path breaks; freeze SHA pinned; **do not claim Aggregate PASS** — package fixed awaiting re-review.
