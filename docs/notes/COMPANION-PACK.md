@@ -18,16 +18,16 @@
 
 ---
 
-## Companion B001 — classification v0.2
+## Companion B001 — classification v0.4
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
-| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.3, adversarial PASS) |
-| Tag / release | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) |
-| Atlas | A000–A008; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json` |
-| Claims | B1 lemma; schema; pass A000/A004/A005/A008; fail A003/A006/A007; A001 fail + H1 indices only for \(H=-iX_1\); A002 open; A007 = thin (null-set) forced incompleteness vs A006/A001 open-set |
+| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.4, adversarial PASS) |
+| Tag / release | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) (prior green; v0.4 pending retag) |
+| Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json` |
+| Claims | B1 lemma; schema; pass A000/A004/A005/A008/A010; fail A003/A006/A007/A009; A001 fail + H1 indices only for \(H=-iX_1\); A002 open; A007 = thin (null-set) vs A006/A001/**A009** open-set; A009 = Pinchuk (polynomial, non-injective, open-set incompleteness); A010 = polynomial shear automorphism; polynomial-only dichotomy still an open conjecture (evidence, not theorem) |
 
 ---
 
@@ -50,8 +50,8 @@
 ## Cite
 
 1. Deficiency: A001 + concept DOI  
-2. Classification: B001 `v0.2.0-b001-draft`  
-3. Completions of \(\psi\): C001 `v0.3.0-c001-companion`  
+2. Classification: B001 `v0.2.0-b001-draft` tag (content ahead: v0.4 on main)  
+3. Completions of \(\psi\): C001 `v0.3.0-c001-companion` tag (content ahead: v0.5 on main)  
 
 ## Non-claims
 No gates/channels/advantage. No dual-flow repair. No all-quantization-fails.

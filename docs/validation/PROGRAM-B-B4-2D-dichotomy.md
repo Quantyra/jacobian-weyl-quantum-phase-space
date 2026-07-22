@@ -1,7 +1,7 @@
-﻿# Program B — B4: a genuine 2D dichotomy (null-set vs open-set incompleteness)
+﻿# Program B — B4: dichotomy evidence (null-set vs open-set incompleteness)
 
 **Date:** 2026-07-22  
-**Status:** done (toward a real dichotomy claim, not just isolated examples)  
+**Status:** done (evidence gathered; polynomial-only dichotomy conjecture still open)  
 **Atlas:** A007 (fail, null-set, non-polynomial), A008 (pass, smooth), A009 (fail, open-set, **polynomial Pinchuk**), A010 (pass, **polynomial** shear)  
 **CAS:** `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`
 
@@ -113,7 +113,8 @@ B1 is matched: non-surjectivity forces some incompleteness; here it is open.
 
 ### 4.3 Dichotomy role
 
-A009 is the first atlas row that is:
+A009 is the first *atlas* entry (i.e., first among the rows catalogued in
+this repo, not a claim of literature priority) that is:
 
 1. genuinely **polynomial** of degree \(>1\),
 2. **Keller-type** (\(\det DF\neq 0\) everywhere) in dimension 2,

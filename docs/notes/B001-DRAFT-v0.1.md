@@ -1,12 +1,13 @@
-﻿# B001 draft v0.3
+﻿# B001 draft v0.4
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/B001-classification-arxiv.pdf  
-**Status:** v0.3 — A007 (thin/null-set incompleteness) + A008 (2D global diffeo), adversarial PASS  
-**Tag:** v0.2.0-b001-draft  
+**Status:** v0.4 — A007 (thin/null-set) + A008 (2D global diffeo) + A009 (Pinchuk, polynomial, open-set incompleteness) + A010 (polynomial shear automorphism), adversarial PASS  
+**Tag:** v0.2.0-b001-draft (prior green at v0.3; content ahead on main is v0.4, retag pending)  
 **Pack:** COMPANION-PACK.md  
 **A001:** parked VIPN6B (math-ph)  
-**C Abstract:** joint q–p Stinespring left OPEN (position sector now constructed)
+**C Abstract:** Joint-Stone-Canonical CONDITIONAL-OBSTRUCTION (J2/J3, C001 v0.5); residual choice-dependent Joint-Stone and Joint-Form remain OPEN  
+**Dichotomy:** polynomial-only "thin vs open incompleteness" still an open conjecture, sharpened by A009 (evidence, not theorem)
 
 ## Adversarial
 3-role gate: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.
