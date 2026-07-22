@@ -1,0 +1,30 @@
+{
+  "program": "C1b",
+  "atlas_id": "A001-seed-d3",
+  "T4": "does_not_implement_dual_F_translations_on_L2",
+  "involution": "q_i^*=q_i, p_j^*=p_j (Dixmier hermitian generators)",
+  "layer_A_algebraic": {
+    "F_real_polynomial": true,
+    "B_real_rational_on_samples": true,
+    "det_DF_const_m2_on_samples": true,
+    "JB_T_is_I_on_samples": true,
+    "star_endomorphism_on_generators": true,
+    "algebraic_SOS_cone_preserved": true,
+    "homo_square_identity": true,
+    "matrix_levels": "id_n\u2297\u03c8 is *-hom if \u03c8 is; SOS preserved all n",
+    "verdict": "PASS"
+  },
+  "layer_B_Cstar_extension": {
+    "verdict": "OPEN",
+    "reason": "\u03c8 is a proper (non-auto) unital *-endomorphism of the polynomial Weyl algebra. Algebraic positivity is automatic; continuous CP extension to a C* completion of Weyl/CCR algebra is not constructed and not ruled out in this probe."
+  },
+  "n_samples": 40,
+  "pass_c1b_algebraic": true,
+  "pass_c1b_cstar": false,
+  "pass": true,
+  "non_claims": [
+    "No CP map on a C* algebra constructed",
+    "No channel/gate/advantage",
+    "No dual F-translation implementation"
+  ]
+}

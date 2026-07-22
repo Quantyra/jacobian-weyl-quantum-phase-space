@@ -63,10 +63,24 @@ dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 \end{enumerate}
 
 \section{Status}
-C1a domain frozen. C1b positivity log: \emph{in progress} (no claim yet).
+C1a domain frozen.
+
+\paragraph{C1b (algebraic).}
+With involution \(q_i^*=q_i\), \(p_j^*=p_j\) and real \(F,B\), the map \(\psi\) is a unital
+\(*\)-endomorphism of \(\mathcal{W}\). Hence it preserves sums of hermitian squares at all
+matrix levels \(\mathrm{id}_n\otimes\psi\). Companion CAS re-checks \(JB^{T}=I\) and
+reality of \(B\) on samples (\texttt{cas\_psi\_positivity\_C1b\_A001.json}): algebraic layer
+\textbf{PASS}.
+
+\paragraph{C1b (C*/continuous).}
+Whether \(\psi\) extends to a normal unital CP map on a \(C^*\) completion of the
+Weyl/CCR algebra remains \textbf{OPEN}. Since \(F\) is non-injective, \(\psi\) is not an
+automorphism; a CP extension would be a proper endomorphism realization, not a
+unitary conjugation.
 
 \section{Non-claims}
-No CP map is asserted constructed in this draft. No gates/channels/advantage.
+No CP map on a \(C^*\) algebra is asserted constructed. No gates/channels/advantage.
+No dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
 \begin{thebibliography}{99}
 \bibitem{A001}
