@@ -1,8 +1,9 @@
 # Dual-track closeout — Polish ∥ H4 trunk
 
 **Date:** 2026-07-21  
-**Science SHA:** `8ab4213`  
+**Science SHA:** (see git log; P4 closeout `f9d48a3`+)  
 **Rules honored:** no gates/advantage; no dual-flow CCR repair; no false \(H_1\) pair revival  
+**Follow-on:** all residual open tracks closed in `OPEN-TRACKS-CLOSEOUT.md` / `H4-TRUNK-CLOSEOUT.md` 
 
 ---
 
@@ -31,15 +32,16 @@
 | H2 | Pilot H4-S construct or no-go | **done (NO-GO)** | `H4-S-pilot-no-go.md` |
 | H3 | Planning packet | **done** | `Quantyra-Planning2/docs/claim-boundary-packets/2026-07-21-H4-trunk-opening.md` |
 
-**H4 status after H:**  
-Subspace repair with dual \(F\)-translations on \(L^2(\mathbb{R}^3)\) is **no-go**.  
-Open: dilation (H4-D), nonregular (H4-N), open-system CP (H4-O).
+**H4 status after H + open-track wave:**  
+H4-S/D dual \(F\)-packages **no-go**; H4-N labeled **no-go**; H4-O reversible **no-go**.  
+Still open only: wild unlabeled nonregular; irreversible CP without dual \(F\)-axioms (not constructed).
 
 ---
 
 ## Residual
-1. Optional public freeze of P1 pairs / H4-S via adversarial three-role gate  
-2. Next H4 pilot: pick H4-D or H4-N  
+1. Optional public freeze via three-role gate (`2026-07-21-open-tracks-closeout-freeze.md`) + Dan  
+2. arXiv submit when Dan/endorsement unblocks (`A001-arxiv-optional-readiness.md`)  
+3. Optional future program: unlabeled nonregular or irreversible CP **without** dual \(F\)-claims
 
 ## Non-claims
 No channels/gates/advantage. No claim all quantization fails.

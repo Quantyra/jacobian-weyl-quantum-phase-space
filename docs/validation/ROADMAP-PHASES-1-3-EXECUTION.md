@@ -9,7 +9,7 @@
 | 1A \(H_0/H_2\) deficiency bounds | **done** | `G4-H0-H2-deficiency-bounds.md` |
 | 1B Strong CCR after extensions | **done (obstructed)** | `G4-strong-CCR-extensions-A001.md` |
 | 1C \(H_1\) extension taxonomy | **done (structured)** | `G4-H1-extension-taxonomy.md` |
-| 1D Lean | **partial** (DualFields pushed; full G2/G3 Lean open) | exotic-ccr-lean |
+| 1D Lean | **deepened** (DualFields + Collision packaging; full analytic G4 Lean still open) | exotic-ccr-lean |
 | Closeout | **G4 closed obstruction-level** | `G4-PHASE1-CLOSEOUT.md` |
 
 ## Phase 2 — Genericity
@@ -24,7 +24,7 @@
 |-------------|--------|-----|
 | Level D dual-flow CCR | **FAIL / obstructed** | `PHASE3-levels-DE-A001.md` |
 | Level E completion | **NO GO** (Outcome 3) | same + G5 |
-| Alternative realizations | **open, not claimed** | charter H4 |
+| Alternative realizations | **H4 pilots closed** (dual-\(F\) no-gos; wild CP open) | `H4-TRUNK-CLOSEOUT.md` |
 
 ## Honesty bound
 Phases 1–3 are **complete at the obstruction-classification level** authorized by proofs.  

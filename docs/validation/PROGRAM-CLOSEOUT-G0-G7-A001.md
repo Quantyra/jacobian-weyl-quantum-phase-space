@@ -43,12 +43,13 @@
 - https://github.com/Quantyra/jacobian-weyl-quantum-phase-space  
 - https://github.com/Quantyra/exotic-ccr-lean  
 
-## Index pairs (dual-flow)`n| \(H_0\) | \((\\infty,0)\) |`n| \(H_1\) | \((\\infty,\\infty)\) |`n| \(H_2\) | \((0,\\infty)\) |`n`n## Follow-on (post Phases 1â€“3)
-1. Exact \((n_+,n_-)\) for \(H_0,H_2\)  
-2. Alternative realizations (H4): subspace / dilation / nonregular â€” **new charter gate** before claims  
-3. Family atlas ESS spot-checks  
-4. Lean deepen beyond DualFields  
-5. Optional arXiv when endorsement is easy  
+## Index pairs (dual-flow)`n| \(H_0\) | \((\\infty,0)\) |`n| \(H_1\) | \((\\infty,\\infty)\) |`n| \(H_2\) | \((0,\\infty)\) |`n`n## Follow-on (post Phases 1-3) -- status 2026-07-21
+1. Exact (n+,n-) for H0,H2 -- **done** (P1)
+2. H4 dual-F pilots S/D/N/O -- **done** (no-gos; see H4-TRUNK-CLOSEOUT.md)
+3. Family atlas ESS spot-checks -- **done** at authorized depth
+4. Lean deepen beyond DualFields -- **done** (Collision.lean)
+5. Optional arXiv -- readiness only; submit deferred
+6. Still open: wild unlabeled nonregular; irreversible CP without dual F; analytic G4 Lean
 
 ## Binding non-claims
 No factory-false slogan; no channel/gate/advantage; no P-vs-NP; no preferred extension; no \((0,\infty)\) for \(H_0/H_2\); no claim every quantization route fails.
