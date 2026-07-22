@@ -31,18 +31,21 @@ polynomial product local diffeos have complete dual fields; the A007
 zero-dimensional asymptotic mechanism is impossible for polynomials (Jelonek);
 in dimension~2 dual incompleteness is fiber-saturated and falls into empty /
 open / residual-thin regimes. Residual-thin regime~T is excluded on proper,
-injective, degree-one-component, product, and triangular classes, and reduced
-to incompleteness only on atypical fibers; full exclusion of~T remains open.
+injective, degree-one-component, product, triangular, and graph-type
+(including all \(\deg P\le 2\)) classes, and reduced to incompleteness only on
+atypical fibers of non-coordinate \(P\) of degree \(\ge 3\); full exclusion
+of~T remains open.
 No gates, channels, or computational advantage are claimed. Companion pack:
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.6.\\
+\textbf{Version:} B001 draft v0.7.\\
 \textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
 \texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json},
 \texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json},
-\texttt{cas\_atlas\_B6\_regime\_T\_B001.json}.
+\texttt{cas\_atlas\_B6\_regime\_T\_B001.json},
+\texttt{cas\_atlas\_B7\_OPEN\_T\_B001.json}.
 
 
 \section{Introduction}
@@ -292,6 +295,47 @@ degree. The residual \textbf{OPEN-T} asks whether any polynomial local diffeo ha
 all Hardt chambers good. No atlas example realizes T; full dichotomy remains a
 conjecture.
 
+\section{OPEN-T sharpened: graph type and \(\deg P\le 2\) (new in v0.7)}
+\label{sec:B7}
+Full proofs: \texttt{PROGRAM-B-B7-OPEN-T.md}.
+CAS: \texttt{cas\_atlas\_B7\_OPEN\_T\_B001.json}.
+
+\begin{lemma}[Graph-type first component \(\Rightarrow\) automorphism]
+\label{lem:B72}
+Call \(P\) \emph{graph type} if after an affine domain automorphism,
+\(P=y+f(x)\) for some \(f\in\mathbb{R}[x]\). If \(F=(P,Q)\) is polynomial with
+\(\det DF\neq 0\) and \(P\) graph type, then on each fiber \(y=c-f(x)\) the
+restriction \(q_c(x)=Q(x,c-f(x))\) is a strictly monotone univariate polynomial
+(derivative \(-j\neq 0\)), hence a diffeomorphism \(\mathbb{R}\to\mathbb{R}\).
+Solving fiberwise yields a global inverse, so \(F\) is a polynomial automorphism
+and \(\operatorname{Bad}_P=\emptyset\) (regime E). Regimes O and T are impossible.
+\end{lemma}
+
+\begin{theorem}[Degree \(\le 2\) first component]
+\label{thm:B73}
+If \(F=(P,Q)\) is a polynomial local diffeomorphism and \(\deg P\le 2\), then after
+an affine domain change \(P\) is graph type (the Hessian of a critical-point-free
+quadratic is rank one), hence \(F\) is a polynomial automorphism and regime E
+holds. In particular regime T requires \(\deg P\ge 3\).
+\end{theorem}
+
+\begin{lemma}[$P_0$-axis cannot carry T]
+\label{lem:B76}
+For \(P_0=x+x^2 y\), any \(Q\) with \(\{P_0,Q\}\neq 0\) everywhere makes the
+atypical axis component \(\{x=0\}\subset P_0^{-1}(0)\) good (univariate
+diffeomorphism in \(y\)). Thus T cannot be realized by ``only the axis is bad.''
+Odd vertical degree forces the leading coefficient freeze \(a_n=C x^{2n}\); the
+linear-in-\(y\) case collapses as in Lemma~\ref{lem:B66}. CAS finds no \(Q\) of
+total degree \(\le 8\) with Jacobian equal to standard never-zero targets
+(including \((x^2+y^2+1)^2\)).
+\end{lemma}
+
+\noindent\textbf{Sharpened OPEN-T.} Lemmas~\ref{lem:B72}--\ref{lem:B76} and
+Theorem~\ref{thm:B73} exclude T on all graph-type / \(\deg P\le 2\) maps and
+filter residual candidates to non-coordinate \(P\) of degree \(\ge 3\) with
+badness on bifurcation-born components. Full exclusion and existence both remain
+open; no atlas example realizes T.
+
 \section{Prior examples (v0.1--v0.2)}
 A000 identity; A003 half-plane; A001 Keller seed with \(X_1\) incomplete and
 \(H=-iX_1\) deficiency \((\infty,\infty)\) in~\cite{A001} (other \(X_j\) incompleteness
@@ -305,9 +349,10 @@ a classical strong-real-JC counterexample (\(\det>0\), not injective) but not a
 complex Jacobian conjecture counterexample (\(\det\) not constant; JC\((2)\) over
 \(\mathbb{C}\) remains open). A010 is an automorphism. T4: no dual \(F\)-translation
 package claimed here. The full polynomial-only dichotomy remains a conjecture
-(\S\ref{sec:B5}--\S\ref{sec:B6}): regime T of Lemma~\ref{lem:B545} is excluded only
-on structured classes (Lemma~\ref{lem:B61-4}); residual OPEN-T is named in
-\S\ref{sec:B6}. C's joint \(q\)--\(p\)
+(\S\ref{sec:B5}--\S\ref{sec:B7}): regime T of Lemma~\ref{lem:B545} is excluded on
+structured classes (Lemma~\ref{lem:B61-4}) and on graph-type / \(\deg P\le 2\)
+maps (Theorem~\ref{thm:B73}); residual OPEN-T is named in \S\ref{sec:B7}.
+C's joint \(q\)--\(p\)
 sector~\cite{C001} (v0.9) splits: position CONSTRUCT (Koopman); J2/J3
 Joint-Stone CONDITIONAL OBSTRUCTIONS; J4 Joint-Stone-Hom-1 OBSTRUCTION;
 J5 mere-CP Joint-Stone-CP-1 OBSTRUCTION; J6 Unitary-Image-CP-1 OBSTRUCTION;

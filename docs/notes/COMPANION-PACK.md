@@ -18,20 +18,21 @@
 
 ---
 
-## Companion B001 — classification v0.6
+## Companion B001 — classification v0.7
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
-| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.6, B6 PARTIAL) |
-| Tag / release | [v0.2.1-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.1-b001-draft) (v0.6 freeze SHA; supersedes `v0.2.0-b001-draft`) |
-| Prior tags | `v0.2.0-b001-draft` (pre-B6 content pin; do not retag) |
-| Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json`, `cas_atlas_B6_regime_T_B001.json` |
-| Claims | B1 lemma; schema; atlas A000–A010; A007 thin vs A009 open (Pinchuk); **B5 restricted poly dichotomy lemmas**; **B6 regime-T PARTIAL** (T excluded for proper / injective / deg-1 component / product / triangular; reduced to OPEN-T: Bad only on atypical fibers; model \(P_0=x+x^2y\) blocked at low degree); full poly dichotomy still a **conjecture** |
+| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.7, B7 PARTIAL) |
+| Tag / release | `v0.2.2-b001-draft` (v0.7 freeze SHA; supersedes `v0.2.1-b001-draft`; create after commit) |
+| Prior tags | `v0.2.1-b001-draft` (v0.6; do not retag); `v0.2.0-b001-draft` (pre-B6; do not retag) |
+| Atlas | A000–A010; CAS `cas_atlas_A005_A006_B001.json`, `cas_atlas_A007_A008_B001.json`, `cas_atlas_A009_A010_B001.json`, `cas_atlas_B5_poly_dichotomy_B001.json`, `cas_atlas_B6_regime_T_B001.json`, `cas_atlas_B7_OPEN_T_B001.json` |
+| Claims | B1 lemma; schema; atlas A000–A010; A007 thin vs A009 open (Pinchuk); **B5 restricted poly dichotomy lemmas**; **B6 regime-T PARTIAL**; **B7 OPEN-T sharpened** (graph-type / \(\deg P\le 2\) ⇒ automorphism / regime E; T-filter deg≥3 non-coordinate; \(P_0\)-axis cannot carry T; CAS through deg 8); full poly dichotomy still a **conjecture** |
 | B5 note | [`PROGRAM-B-B5-poly-dichotomy-lemmas.md`](../validation/PROGRAM-B-B5-poly-dichotomy-lemmas.md) |
 | B6 note | [`PROGRAM-B-B6-regime-T.md`](../validation/PROGRAM-B-B6-regime-T.md) |
-| Gate status | proof + non-claims surfaces at prior SHA `95a0bc9`; **package surfaces synced this commit**; aggregate pending package re-review |
+| B7 note | [`PROGRAM-B-B7-OPEN-T.md`](../validation/PROGRAM-B-B7-OPEN-T.md) |
+| Gate status | v0.7 B7 content this commit; **aggregate pending package re-review** |
 
 ---
 
@@ -55,7 +56,7 @@
 ## Cite
 
 1. Deficiency: A001 + concept DOI  
-2. Classification: B001 `v0.2.1-b001-draft` tag (content v0.6)  
+2. Classification: B001 `v0.2.2-b001-draft` tag (content v0.7)  
 3. Completions of \(\psi\): C001 `v0.3.2-c001-companion` tag (v0.9)  
 
 ## Non-claims

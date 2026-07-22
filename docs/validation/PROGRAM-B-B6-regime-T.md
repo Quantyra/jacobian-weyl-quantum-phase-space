@@ -2,9 +2,10 @@
 
 **Date:** 2026-07-22  
 **Status:** theorem-grade **partial** exclusion package (full T-exclusion still open)  
-**Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.6)  
+**Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.7; B6 content from v0.6)  
 **CAS:** `data/anchor/cas_atlas_B6_regime_T_B001.json`  
 **Baseline:** `PROGRAM-B-B5-poly-dichotomy-lemmas.md`  
+**Follow-on:** `PROGRAM-B-B7-OPEN-T.md` (graph / deg≤2 exclusion; sharpened OPEN-T)  
 **Non-claims:** no full polynomial dichotomy; no gates/channels/deficiency indices; no complex JC progress
 
 ---
@@ -309,6 +310,9 @@ Equivalent forms:
 - Is the candidate dichotomy “polynomial \(\Rightarrow\) never thin” a theorem?
 
 No proof and no counterexample in this repository. Atlas status: **no example of T**.
+
+**B7 update:** graph-type and \(\deg P\le 2\) maps are fully excluded from T
+(they force regime E). Refined OPEN-T statement: see `PROGRAM-B-B7-OPEN-T.md`.
 
 ---
 

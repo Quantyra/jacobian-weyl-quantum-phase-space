@@ -263,7 +263,10 @@ excluding (T).
 
 **Follow-on (B6):** partial exclusion of T on proper / injective / deg-1 / product /
 triangular classes, chamber reduction to atypical fibers only, and model obstruction for
-\(P_0=x+x^2 y\) — see `PROGRAM-B-B6-regime-T.md`. Residual **OPEN-T** named there.
+\(P_0=x+x^2 y\) — see `PROGRAM-B-B6-regime-T.md`.
+
+**Follow-on (B7):** graph-type / \(\deg P\le 2\) ⇒ automorphism (regime E only);
+sharpened OPEN-T residual — see `PROGRAM-B-B7-OPEN-T.md`.
 
 ---
 
@@ -273,13 +276,14 @@ triangular classes, chamber reduction to atypical fibers only, and model obstruc
 - No complex Jacobian conjecture progress; A009 has non-constant \(\det>0\).
 - No gates, channels, advantage, or dual-\(F\) unitary package (T4).
 - Jelonek’s dimension theorem is cited, not re-proved.
-- Regime (T) full exclusion is explicitly open (partial exclusions in B6).
+- Regime (T) full exclusion is explicitly open (partial exclusions in B6–B7).
 
 ## 11. References
 
 - B1: `PROGRAM-B-B1-structural-lemma.md`
 - B4 evidence: `PROGRAM-B-B4-2D-dichotomy.md` (A007–A010)
 - B6 residual: `PROGRAM-B-B6-regime-T.md`
+- B7 sharpened OPEN-T: `PROGRAM-B-B7-OPEN-T.md`
 - Z. Jelonek, The set of points at which a polynomial map is not proper, Ann. Polon. Math. 58 (1993) 259–266
 - Z. Jelonek, Testing sets for properness of polynomial mappings, Math. Ann. 315 (1999) 1–12
 - S. Pinchuk, Math. Z. 217 (1994); L.A. Campbell, arXiv:1001.3318
