@@ -1,23 +1,23 @@
 ﻿# A001 publication checklist (wind-down)
 
-**Status:** GitHub+Zenodo freeze v0.3.3 done. **arXiv packet ready; submit pending Dan.**
+**Status:** **v0.3.4-submit** after external LLM REVISE. arXiv submit pending Dan.
 
-PDF: `docs/notes/A001-arxiv.pdf`  
-Packet: `docs/notes/A001-arxiv-submission-packet.md`  
-LLM brief: `docs/notes/A001-external-llm-review-brief.md`
+PDF: `docs/notes/A001-arxiv.pdf` (10 pp)  
+Tag: `v0.3.4-submit`  
+Log: `docs/notes/A001-external-llm-review-log.md`
 
 ## Done
-- [x] Theorems A–F + Discussion + Non-claims  
-- [x] Errata lines  
-- [x] Dan public freeze v0.3.3  
-- [x] External LLM review brief (ChatGPT Pro / Claude / Grok)  
-- [x] Endorsement email + how to get endorsement code/link  
-- [x] Submission packet metadata (math.FA + math-ph, math.SP)
+- [x] Theorems A–F + Discussion + Non-claims (**H₁-only**)  
+- [x] Expanded walls / Dom(H*) / volume factor / Weyl endomorphism  
+- [x] Errata; stripped H0/H2 + dual-flow no-go from theorem boundary  
+- [x] External LLM reviews ingested (Grok/Claude/ChatGPT → REVISE fixes)  
+- [x] Endorsement email + packet  
+- [x] Tag `v0.3.4-submit` pushed  
 
 ## Dan now
-- [ ] Run three external LLM reviews; log issues  
-- [ ] `pdflatex` clean build  
-- [ ] Start arXiv submission → copy endorsement code  
+- [ ] Quick re-skim of v0.3.4-submit PDF  
+- [ ] Optional second LLM pass on new PDF  
+- [ ] Start arXiv submission → endorsement code  
 - [ ] Send endorsement request  
 - [ ] Complete submit  
 - [ ] After eprint: CITATION.cff + README + Zenodo related ID  
