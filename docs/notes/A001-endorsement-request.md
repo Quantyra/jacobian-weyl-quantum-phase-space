@@ -1,6 +1,6 @@
 ﻿# arXiv endorsement request (email body)
 
-**Subject:** arXiv endorsement request — math.SP / math.FA — dual transport deficiency
+**Subject:** arXiv endorsement request — math-ph — dual transport deficiency
 
 ---
 
@@ -11,7 +11,8 @@ I request arXiv endorsement for:
 **Title:** Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator  
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Categories:** math.SP (primary preferred) or math.FA; secondary math-ph  
+- **Endorsement category:** math-ph
+- **Planned submission:** math.SP primary preferred; math.FA / math-ph as appropriate
 
 **Claim:** For the Alpöge–Fable Keller seed (restated), \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\); algebraic Poisson/Weyl data alone do not select a unique self-adjoint extension of that minimal operator.
 
