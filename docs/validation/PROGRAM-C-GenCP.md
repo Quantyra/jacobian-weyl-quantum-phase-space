@@ -87,9 +87,11 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | Free-Strict-Abstract full-triple Joint-Stone (under G4 H0/H2 pairs) | **CONDITIONAL-OBSTRUCTION** (J3) |
 | Free-Strict-Abstract Joint-Stone-Hom-1 | **OBSTRUCTION** (J4) |
 | Free-Strict-Abstract Joint-Stone-CP-1 | **OBSTRUCTION** (J5) |
+| Free-Strict-Abstract Unitary-Image-CP-1 | **OBSTRUCTION** (J6) |
+| Free-Strict-Abstract Diag-CP-Φ₀ | **CONSTRUCT** (J6-C) |
 | Joint-Form-Core | **CONSTRUCT** |
 | Joint-Form-ESS-1 | **OBSTRUCT** |
-| CP of \(\Phi_0\) without Stone | **OPEN** |
+| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
 
 ## Non-claims
 No channel on \(B(H)\). No advantage. Algebraic correspondence ≠ physical instrument.

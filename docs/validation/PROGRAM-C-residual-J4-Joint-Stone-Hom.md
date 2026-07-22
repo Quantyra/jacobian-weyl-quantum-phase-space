@@ -3,7 +3,7 @@
 **Date:** 2026-07-22  
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-Hom-1**; mere-CP Joint-Stone-CP-1 separately **OBSTRUCT** by J5 (see sibling note)  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
-**Companion:** C001 (v0.7 cites J4/J5)  
+**Companion:** C001 (v0.8 cites J4/J5/J6)  
 **Sibling:** `PROGRAM-C-residual-mere-CP-Joint-Stone.md`
 
 ---
@@ -212,7 +212,9 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 | Joint-Form-ESS-1 (form + ESS uniqueness for \(j=1\)) | **OBSTRUCT / NO-GO** | **J4-E** + A001 E–F |
 | Joint-Stone-Canonical | NO-GO | J2 (prior) |
 | Full-triple Joint-Stone under G4 pairs | NO-GO | J3 (prior, G4 companion) |
-| CP of \(\Phi_0\) without Stone | OPEN | non-Stone residual |
+| Unitary-Image-CP-1 | OBSTRUCT | J6 (`PROGRAM-C-residual-CP-without-Stone.md`) |
+| Diag-CP-Φ₀ | CONSTRUCT | J6-C |
+| Full-\(\psi\) abstract \(C^*\) | OPEN | GenCP residual |
 
 ---
 

@@ -1,7 +1,7 @@
 # Program C — C1d: Koopman position-sector construct (Free-Strict-Abstract)
 
 **Date:** 2026-07-22  
-**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J5 NO-GOs on Stone packages; residual **OPEN** = CP of \(\Phi_0\) without Stone only)  
+**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J6 NO-GOs on Stone/unitary-image packages; Diag-CP-Φ₀ **CONSTRUCT**; full-\(\psi\) abstract \(C^*\) **OPEN**)  
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`
 
 ---
@@ -76,7 +76,7 @@ obstruction on the *vanishing-at-infinity* subalgebra still stands).
 momentum sector \(\psi(p_j)=\sum_k B_{jk}(q)p_k\) does **not** commute with
 \(Q\) and cannot be captured by a Koopman/composition operator alone.
 
-**Refined write-up:** `PROGRAM-C-Free-Strict-Abstract-Joint.md` (Theorems J1–J5); J4/J5 detail notes under `PROGRAM-C-residual-*.md`.
+**Refined write-up:** `PROGRAM-C-Free-Strict-Abstract-Joint.md` (Theorems J1–J6); residual detail notes under `PROGRAM-C-residual-*.md`.
 
 ### 3.1 Joint-Stone-Canonical — NO-GO (J2)
 
@@ -89,26 +89,29 @@ A **Joint-Stone-Canonical** package would require self-adjoint extensions
 **Theorem J2:** A001 gives \((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\), so
 von Neumann supplies a continuum of inequivalent SA extensions; algebraic
 data do not pick one. **Joint-Stone-Canonical fails**. Choice-dependent
-CP+Stone is separately ruled out by J5 (not by J2 alone).
+CP+Stone is separately ruled out by J5; unitary image without SA link by J6.
 
 **Theorem J3 (G4 companion):** `G4-H0-H2-deficiency-bounds.md` records
 \(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal
 operators — so no full-triple Joint-Stone package exists under those pairs.
 
-### 3.2 Residual update (J4–J5)
+### 3.2 Residual update (J4–J6)
 
 | Slice | Verdict |
 |-------|---------|
 | Joint-Stone-Hom-1 (multiplicative single \(j=1\)) | **OBSTRUCT (J4)** — see `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` |
 | Joint-Stone-CP-1 (mere CP + Stone \(j=1\) + \(\Phi_0\)) | **OBSTRUCT (J5)** — see `PROGRAM-C-residual-mere-CP-Joint-Stone.md` |
+| Unitary-Image-CP-1 (unitary image of \(U(s)\), no SA link) | **OBSTRUCT (J6)** — see `PROGRAM-C-residual-CP-without-Stone.md` |
+| Diag-CP-Φ₀ (\(\Phi_0\circ E\) on joint vNa) | **CONSTRUCT (J6-C)** — same note |
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT (J4-F)** |
 | Joint-Form-ESS-1 | **OBSTRUCT (J4-E)** |
-| CP extension of \(\Phi_0\) **without** Stone | **OPEN** (not Joint-Stone) |
+| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
 
-J5: unital CP + unitary Stone agreement puts \(e^{is P_1^{\mathrm{Sch}}}\) in the
-multiplicative domain, recovers dual-\(F_1\) Heisenberg covariance, and dies
-by the same SvN / sheet-count geometry as J4. Remaining open routes drop the
-Stone axiom (CP of \(\Phi_0\) alone, abstract \(C^*\) envelope, form-level only).
+J5–J6: unital CP + unitary image of \(e^{is P_1^{\mathrm{Sch}}}\) puts those
+unitaries in the multiplicative domain, recovers dual-\(F_1\) Heisenberg
+covariance, and dies by SvN / sheet-count geometry (SA-extension-of-\(H_1\)
+inessential). Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\).
+Remaining open: full-\(\psi\) abstract \(C^*\) envelope.
 
 ---
 
@@ -124,15 +127,18 @@ Stone axiom (CP of \(\Phi_0\) alone, abstract \(C^*\) envelope, form-level only)
 | Free-Strict-Abstract-Joint / full-triple Joint-Stone | **NO-GO (J3, G4 companion)** |
 | Free-Strict-Abstract-Joint / Joint-Stone-Hom-1 | **NO-GO (J4)** |
 | Free-Strict-Abstract-Joint / Joint-Stone-CP-1 | **NO-GO (J5)** |
+| Free-Strict-Abstract-Joint / Unitary-Image-CP-1 | **NO-GO (J6)** |
+| Free-Strict-Abstract-Joint / Diag-CP-Φ₀ | **CONSTRUCT (J6-C)** |
 | Free-Strict-Abstract-Joint / Joint-Form-Core | **CONSTRUCT (J4-F)** |
-| CP of \(\Phi_0\) without Stone | **OPEN** |
+| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
 
 ---
 
 ## 5. Non-claims
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
 translation dynamics (T4). Joint-Stone-Canonical (J2), full-triple under G4
-(J3), multiplicative Joint-Stone-Hom-1 (J4), and mere-CP Joint-Stone-CP-1
-(J5) are ruled out; CP of \(\Phi_0\) without Stone is **not** claimed
-impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
+(J3), multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1
+(J5), and Unitary-Image-CP-1 (J6) are ruled out; Diag-CP-Φ₀ is constructed
+and is not a momentum channel. Full-\(\psi\) abstract \(C^*\) is **not**
+claimed impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
 **not** realize \(\psi\); it realizes only the abelian position-generator part.

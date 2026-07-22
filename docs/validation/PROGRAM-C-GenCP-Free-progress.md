@@ -1,7 +1,7 @@
-# GenCP-Free progress (post-J5)
+# GenCP-Free progress (post-J6)
 
-**Status:** Regular-v2 **WITHDRAWN**. Retained: C0→C0 composition NO-GO; Bogoliubov NO-GO.  
-**Position:** Koopman **CONSTRUCT** (`PROGRAM-C-C1d-Koopman-position.md`).  
-**Joint:** J2 Canonical NO-GO; J3 full-triple NO-GO (G4); **J4 Hom-1 NO-GO**; **J5 CP-1 NO-GO**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**.  
-**Residual OPEN:** CP of \(\Phi_0\) **without** Stone; abstract \(C^*\) envelope without Hom/Stone.  
-**Detail:** `PROGRAM-C-GenCP-Free-Strict.md`, `PROGRAM-C-Free-Strict-Abstract-Joint.md`, `PROGRAM-C-residual-J4-Joint-Stone-Hom.md`, `PROGRAM-C-residual-mere-CP-Joint-Stone.md` · C001 **v0.7**
+**Date:** 2026-07-22  
+**Position sector:** Koopman \(\Phi_0\) **CONSTRUCT** (C1d).  
+**Joint:** J2 Canonical NO-GO; J3 full-triple NO-GO (G4); **J4 Hom-1 NO-GO**; **J5 CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**.  
+**Residual OPEN:** full-\(\psi\) abstract \(C^*\) envelope without Hom/unitary-image; CP recovering \(\psi(p_j)\) functional calculus on a \(C^*\) completion.  
+**Detail:** `PROGRAM-C-GenCP-Free-Strict.md`, `PROGRAM-C-Free-Strict-Abstract-Joint.md`, `PROGRAM-C-residual-J4-Joint-Stone-Hom.md`, `PROGRAM-C-residual-mere-CP-Joint-Stone.md`, `PROGRAM-C-residual-CP-without-Stone.md` · C001 **v0.8**

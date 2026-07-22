@@ -4,7 +4,7 @@
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-CP-1** (mere unital normal CP + choice-dependent Stone for \(j=1\))  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` (Hom pack NO-GO; left mere-CP open)  
-**Companion:** C001 (v0.7 cites J5)
+**Companion:** C001 (v0.8 cites J5; J6 weakens residual without reopening J5)
 
 ---
 
@@ -208,20 +208,23 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 | Full-triple Joint-Stone under G4 pairs | **OBSTRUCT** | J3 (G4 companion) |
 | Joint-Form-Core | **CONSTRUCT** | J4-F |
 | Joint-Form-ESS-1 | **OBSTRUCT** | J4-E |
-| CP extension of \(\Phi_0\) **without** Stone / SA momentum | **OPEN** (not Joint-Stone) | weaker than residual (A) |
-| Abstract \(C^*\) envelope of \(\psi\) without Hom/Stone | **OPEN** | GenCP charter |
+| Unitary-Image-CP-1 (no SA link) | **OBSTRUCT** | **J6** (`PROGRAM-C-residual-CP-without-Stone.md`) |
+| Diag-CP-Φ₀ | **CONSTRUCT** | **J6-C** |
+| Abstract \(C^*\) envelope of full \(\psi\) without Hom/unitary-image | **OPEN** | GenCP charter |
 
-**Reading.** The former residual (A) — “mere-CP choice-dependent Joint-Stone” — is **closed** as NO-GO. What remains open is no longer a Joint-Stone package: it is CP or correspondence structure **without** the Stone unitary-implementation axiom for dual momenta.
+**Reading.** The former residual (A) — “mere-CP choice-dependent Joint-Stone” — is **closed** as NO-GO. The non-Stone residual is further split by J6/J6-C (Unitary-Image NO-GO; Diag-CP CONSTRUCT); full-\(\psi\) abstract \(C^*\) remains OPEN.
 
 ---
 
 ## 7. Scoreboard delta
 
-| Pack | Before J5 | After J5 |
-|------|-----------|----------|
-| Joint-Stone-CP-1 | OPEN | **OBSTRUCT (J5)** |
-| Joint-Stone-Hom-1 | OBSTRUCT (J4) | OBSTRUCT (J4) — unchanged |
-| CP of \(\Phi_0\) without Stone | (not named) | OPEN (non-Stone) |
+| Pack | Before J5 | After J5 | After J6 |
+|------|-----------|----------|----------|
+| Joint-Stone-CP-1 | OPEN | **OBSTRUCT (J5)** | OBSTRUCT (J5) |
+| Joint-Stone-Hom-1 | OBSTRUCT (J4) | OBSTRUCT (J4) | OBSTRUCT (J4) |
+| Unitary-Image-CP-1 | (not named) | (not named) | **OBSTRUCT (J6)** |
+| Diag-CP-Φ₀ | (not named) | (not named) | **CONSTRUCT (J6-C)** |
+| Full-\(\psi\) abstract \(C^*\) | OPEN | OPEN | OPEN |
 
 ---
 
