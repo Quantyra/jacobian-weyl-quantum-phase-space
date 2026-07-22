@@ -48,8 +48,8 @@ https://github.com/Quantyra/exotic-ccr-lean
 
 | Paper | PDF | Tag | One-line |
 |-------|-----|-----|----------|
-| **B001** classification (v0.7) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | prior `v0.2.2-b001-draft` @ `61bf3da` **immutable historical pin** (superseded for auto wording); pending `v0.2.3-b001-draft` after gate | B1 + atlas A000–A010; B5–B6; **B7 OPEN-T sharpened** (affine-invariant graph/degP≤2 ⇒ **global \(C^\infty\) diffeo** / E; not automatic poly inverse); residual **OPEN-T** (deg≥3 non-coordinate, Bad on atypical fibers); full dichotomy conjecture |
-| **C001** completions of \(\psi\) (v0.9) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | prior `v0.3.2-c001-companion` @ `61bf3da` **immutable historical pin, package-superseded** (C math unchanged; dual snapshot retired with B auto defect); pending `v0.3.3-c001-companion` after gate | Koopman CONSTRUCT; J2 NO-GO; J3 **G4-conditional** NO-GO; J4–J6/J7 CFC-SA NO-GOs; Diag-CP-Φ₀ CONSTRUCT; **Full-ψ-BT-Envelope** (bounded dual-momentum transforms + Φ₀ positions; form-level; not CFC / not Weyl-C* / not Stinespring) CONSTRUCT; Full-ψ-CP-Weyl-C* OPEN |
+| **B001** classification (v0.7) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) @ `45e7d53` | B1 + atlas A000–A010; B5–B7; graph/degP≤2 ⇒ global \(C^\infty\) diffeo / E (not automatic poly inverse); residual **OPEN-T**; full dichotomy conjecture; Aggregate PASS |
+| **C001** completions of \(\psi\) (v0.9) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) @ `45e7d53` | Koopman CONSTRUCT; J2–J6 NO-GOs; J3 **G4-conditional**; J7-C BT-Envelope CONSTRUCT (form-level); J7 CFC-SA NO-GO; J7-O OPEN; Aggregate PASS |
 
 A001 remains citable via **concept DOI** even before arXiv endorsement.
 
