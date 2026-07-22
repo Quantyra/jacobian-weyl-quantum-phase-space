@@ -21,8 +21,12 @@ I request arXiv endorsement for:
 **Tag:** https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit  
 **Concept DOI:** https://doi.org/10.5281/zenodo.21474351  
 
-**Endorsement code:** [PASTE FROM arXiv UI]  
-**Form:** https://arxiv.org/auth/endorse  
+**Endorsement code:** `VIPN6B`  
+**Endorser link:** https://arxiv.org/auth/endorse?x=VIPN6B  
+**Fallback form:** https://arxiv.org/auth/endorse.php (enter `VIPN6B`)  
+**Category:** math-ph  
+
+**Live status log:** `docs/notes/A001-endorsement-status.md`
 
 Thank you,  
 Daniel Eric Fredriksen  

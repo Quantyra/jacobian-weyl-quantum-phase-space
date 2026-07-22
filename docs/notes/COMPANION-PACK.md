@@ -15,7 +15,9 @@
 | Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) |
 | Claim | \(H=-iX_1\) has \((n_+,n_-)=(\infty,\infty)\); seed restated; H₁-only |
 
-**Citability:** DOI is enough for citation. arXiv is optional eprint layer.
+**Citability:** DOI is enough for citation. arXiv is optional eprint layer.  
+
+**Endorsement (math-ph):** code `VIPN6B` — see [A001-endorsement-status.md](A001-endorsement-status.md).
 
 ---
 
@@ -26,8 +28,9 @@
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
 | Draft marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) |
-| Tag | [v0.1.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.1.0-b001-draft) |
-| Claim core | B1: complete dual fields ⇒ surjective \(F\); schema + A000/A001/A002/A003 |
+| Tag | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) (v0.2); prior v0.1.0-b001-draft |
+| Atlas | A000–A006 (`program_b`); CAS `cas_atlas_A005_A006_B001.json` |
+| Claim core | B1 lemma; schema; pass rows A000/A004/A005; fail A003/A006/A001; A002 open |
 
 ---
 
