@@ -6,7 +6,7 @@
 **Tag:** v0.2.0-b001-draft  
 **Pack:** COMPANION-PACK.md  
 **A001:** parked VIPN6B (human only)  
-**C:** C001 v0.7 — J2/J3/J4/J5 + Joint-Form split; CP of \(\Phi_0\) without Stone OPEN  
+**C:** C001 v0.8 — J2–J6 + Joint-Form split; Diag-CP-Φ₀ CONSTRUCT; full-ψ abstract C* OPEN  
 **Dichotomy:** full poly thin-vs-open still conjecture; residual regime T open  
 
 ## Adversarial

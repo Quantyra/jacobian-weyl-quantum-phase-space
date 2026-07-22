@@ -32,17 +32,20 @@ Joint-Stone-Canonical package at the \(H_1\) leg (A001 deficiency
 \((\infty,\infty)\)); under the G4 companion \(H_0,H_2\) deficiency pairs
 (not an A001 claim)---no full-triple Joint-Stone package;
 \textbf{obstruction} for multiplicative single-generator Joint-Stone-Hom-1
-(Theorem~J4); and \textbf{obstruction} for mere unital-normal-CP
-Joint-Stone-CP-1 (Theorem~J5: multiplicative domain recovers dual-\(F_1\)
-covariance, then the same SvN / sheet-count kill). Bare Joint-Form-Core is
-constructed on \(C_c^\infty\); Joint-Form with ESS uniqueness fails for
-\(H_1\). Residual CP of the position pullback \emph{without} Stone remains
-open. No dual \(F\)-translations, gates, or advantage. Companion
+(Theorem~J4); \textbf{obstruction} for mere unital-normal-CP
+Joint-Stone-CP-1 (Theorem~J5); and \textbf{obstruction} for the weaker
+Unitary-Image-CP-1 pack (Theorem~J6: unitary image of Schr\"odinger Stone
+unitaries without any SA-extension-of-\(H_1\) axiom, same geometry).
+Bare Joint-Form-Core is constructed on \(C_c^\infty\); Joint-Form with ESS
+uniqueness fails for \(H_1\). Non-Stone CP of the position pullback
+\emph{splits}: Diag-CP-\(\Phi_0\) (\(\Phi_0\circ E\) on the joint vNa)
+\textbf{construct}; full-\(\psi\) abstract \(C^*\) without Hom/unitary-image
+remains open. No dual \(F\)-translations, gates, or advantage. Companion
 to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 companion v0.7 (J5 mere-CP Joint-Stone obstruction).\\
+\textbf{Version:} C001 companion v0.8 (J6 Unitary-Image-CP-1 NO-GO + Diag-CP-\(\Phi_0\) CONSTRUCT).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
 \paragraph{Erratum.}
@@ -160,12 +163,13 @@ specific to the \emph{vanishing-at-infinity} algebra \(C_0\), not to bounded
 Borel functions.
 \end{remark}
 
-\section{Joint \(q\)--\(p\) extension: six-slice status}
+\section{Joint \(q\)--\(p\) extension: seven-slice status}
 \(\Phi_0\) only captures \(\psi\) on the position generators. The joint
 sector splits as follows (full write-up:
 \texttt{PROGRAM-C-Free-Strict-Abstract-Joint.md};
 J4: \texttt{PROGRAM-C-residual-J4-Joint-Stone-Hom.md};
-J5: \texttt{PROGRAM-C-residual-mere-CP-Joint-Stone.md}).
+J5: \texttt{PROGRAM-C-residual-mere-CP-Joint-Stone.md};
+J6: \texttt{PROGRAM-C-residual-CP-without-Stone.md}).
 
 \paragraph{(i) Position sector --- CONSTRUCT.}
 The Koopman pullback \(\Phi_0\) is a normal unital \(*\)-homomorphism on
@@ -212,7 +216,7 @@ positive-measure open slabs near \((a,c)=(0,2)\). Contradiction.
 Full write-up: \texttt{PROGRAM-C-residual-J4-Joint-Stone-Hom.md}.
 \end{proof}
 
-\paragraph{(iv) Joint-Stone-CP-1 --- OBSTRUCTION (new).}
+\paragraph{(iv) Joint-Stone-CP-1 --- OBSTRUCTION.}
 A \emph{Joint-Stone-CP-1} package weakens Hom to mere unital normal CP:
 self-adjoint extension \(\widetilde H_1\supset H_1\), unital normal CP map
 \(\Phi\) on the same vNa, \(\Phi|_{\mathcal{B}_b(Q)}=\Phi_0\), and
@@ -230,10 +234,35 @@ J4. The SvN product structure and \(s\)-dependent A001 sheet count then yield
 the same contradiction. Full write-up:
 \texttt{PROGRAM-C-residual-mere-CP-Joint-Stone.md}.
 \end{proof}
-J5 does \emph{not} rule out unital normal CP extensions of \(\Phi_0\) that
-omit the Stone / SA-momentum axiom (those are not Joint-Stone packages).
 
-\paragraph{(v) Joint-Form split.}
+\paragraph{(v) Unitary-Image-CP-1 --- OBSTRUCTION (new); Diag-CP-\(\Phi_0\) --- CONSTRUCT.}
+Drop the SA-extension-of-\(H_1\) axiom entirely. Let \(M\) be the vNa generated
+by \(\mathcal{B}_b(Q)\) and \(\{U(s)=e^{is P_1^{\mathrm{Sch}}}\}\).
+\begin{itemize}
+\item \textbf{Unitary-Image-CP-1:} unital normal CP \(\Phi:M\to B(H)\) with
+\(\Phi|_{\mathcal{B}_b(Q)}=\Phi_0\) and \(\Phi(U(s))\) unitary for all \(s\)
+(no \(\widetilde H_1\supset H_1\) required).
+\item \textbf{Diag-CP-\(\Phi_0\):} \(\Phi_{\mathrm{diag}}=\Phi_0\circ E\) with
+\(E:M\to\mathcal{B}_b(Q)\) the normal conditional expectation onto positions
+(crossed-product / injectivity).
+\end{itemize}
+\begin{theorem}[J6]
+No Unitary-Image-CP-1 package exists for the A001 seed.
+\end{theorem}
+\begin{proof}[Proof sketch]
+Unitary image \(\Rightarrow U(s)\in\mathcal{D}_\Phi\) \(\Rightarrow\) same
+dual-\(F_1\) Heisenberg covariance as J4/J5 \(\Rightarrow\) same SvN /
+sheet-count contradiction. The dual-field SA link is inessential.
+\end{proof}
+\begin{theorem}[J6-C]
+\(\Phi_{\mathrm{diag}}=\Phi_0\circ E\) is a unital normal CP map on \(M\)
+extending \(\Phi_0\), with \(\Phi_{\mathrm{diag}}(U(s))=0\) for \(s\neq 0\)
+(hence no Stone/SA momentum implementation). Schr\"odinger--Heisenberg
+conjugates of position observables pull back by \(\Phi_0\) automatically.
+\end{theorem}
+Full write-up: \texttt{PROGRAM-C-residual-CP-without-Stone.md}.
+
+\paragraph{(vi) Joint-Form split.}
 \begin{itemize}
 \item \textbf{Joint-Form-Core --- CONSTRUCT:} sesquilinear forms of the
 minimal dual momenta \(H_j=-iX_j\) on \(C_c^\infty\) realize \(\psi(p_j)\)
@@ -242,21 +271,24 @@ together with \(\Phi_0\) on positions (no SA/Stone requirement).
 the \(j=1\) form fails by A001 Theorems~E--F.
 \end{itemize}
 
-\paragraph{(vi) Residual route without Stone --- OPEN.}
-Unital normal CP extensions of \(\Phi_0\) \emph{without} implementing any
-unitary group \(e^{is\widetilde H_1}\), and abstract \(C^*\) envelopes of
-\(\psi\) without Hom/Stone axioms, remain \textbf{open}.
-See~\texttt{PROGRAM-C-C1d-Koopman-position.md} and
-\texttt{PROGRAM-C-Free-Strict-Abstract-Joint.md}.
+\paragraph{(vii) Residual after J6 --- OPEN (narrowed).}
+Abstract \(C^*\) envelopes of the \emph{full} endomorphism \(\psi\)
+(positions \emph{and} momenta) without Hom/unitary-image axioms, and CP
+recovering continuous functional calculus of \(\psi(p_j)\) on a \(C^*\)
+completion, remain \textbf{open}. The former undifferentiated residual
+``CP of \(\Phi_0\) without Stone'' is \emph{split} by J6/J6-C (unitary-image
+NO-GO; diagonal extension CONSTRUCT).
 
 \section{Non-claims}
 No channel on \(B(H)\) implementing the full \(\psi\).
 No gates/advantage. No dual \(F\)-translations. No ``all quantization fails.''
 No claim that every joint CP construction is impossible---only
 Joint-Stone-Canonical (J2), full-triple Joint-Stone under G4 pairs (J3),
-multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5), and
-Joint-Form-ESS-1. CP of \(\Phi_0\) without Stone is not claimed impossible.
-No promotion of G4 \(H_0/H_2\) pairs to A001 theorems.
+multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5),
+Unitary-Image-CP-1 (J6), and Joint-Form-ESS-1. Diag-CP-\(\Phi_0\) is not a
+momentum channel. Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image
+is not claimed impossible. No promotion of G4 \(H_0/H_2\) pairs to A001
+theorems.
 
 \begin{thebibliography}{99}
 \bibitem{A001}

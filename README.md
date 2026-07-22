@@ -49,7 +49,7 @@ https://github.com/Quantyra/exotic-ccr-lean
 | Paper | PDF | Tag | One-line |
 |-------|-----|-----|----------|
 | **B001** classification (v0.5) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) | B1 + atlas A000–A010; B5 restricted poly dichotomy lemmas; residual regime T open; full dichotomy conjecture |
-| **C001** completions of \(\psi\) (v0.7) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) | Koopman CONSTRUCT; J2–J5 Stone/Hom/CP-1 NO-GOs; Joint-Form-Core CONSTRUCT; CP without Stone OPEN |
+| **C001** completions of \(\psi\) (v0.8) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) | Koopman CONSTRUCT; J2–J6 Stone/Hom/CP/Unitary-Image NO-GOs; Diag-CP-Φ₀ CONSTRUCT; Joint-Form-Core CONSTRUCT; full-ψ abstract C* OPEN |
 
 A001 remains citable via **concept DOI** even before arXiv endorsement.
 
