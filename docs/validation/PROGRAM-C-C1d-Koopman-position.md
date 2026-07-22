@@ -95,26 +95,19 @@ every choice-dependent Joint-Stone package).
 \(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal
 operators — so no full-triple Joint-Stone package exists under those pairs.
 
-### 3.2 Residual OPEN
+### 3.2 Residual update (J4)
 
-Still open (not ruled out here):
+| Slice | Verdict |
+|-------|---------|
+| Joint-Stone-Hom-1 (multiplicative single \(j=1\)) | **OBSTRUCT (J4)** — see `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` |
+| Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT (J4-F)** |
+| Joint-Form-ESS-1 | **OBSTRUCT (J4-E)** |
+| Choice-dependent Joint-Stone + **mere CP** with \(\Phi_0\) | **OPEN** |
 
-1. Choice-dependent single-extension Joint-Stone + CP compatibility with \(\Phi_0\).
-2. **Joint-Form:** sesquilinear/form-only agreement on a dense core (no SA /
-   unitary-group requirement).
-
-Candidate approaches (not executed):
-- Composition-operator route: \((C_F\varphi)(q):=|\det DF(q)|^{1/2}\varphi(F(q))\),
-  a weighted Koopman operator on \(L^2\); check if \(C_F\) is bounded/isometric
-  on a suitable subspace and whether conjugation by \(C_F\) reproduces
-  \(\psi\) on **both** \(Q\) and \(P\) — this would revive a dual-\(F\)-style
-  translation and is **blocked by T4 / the G4 obstruction** if \(C_F\) is
-  required unitary; a **non-unitary, non-isometric** \(C_F\) is not
-  forbidden by T4 but has not been shown to exist with the right domain
-  properties.
-- Direct Stinespring dilation of the full \(\mathrm{id}_n\otimes\psi\) matrix
-  levels (already known algebraically, C1b) completed in a \(C^*\)-norm
-  compatible with \(\Phi_0\) on the abelian part: **not constructed**.
+Still open (not ruled out): mere-CP single-extension Joint-Stone compatibility
+with \(\Phi_0\). Candidate approaches (not executed): non-multiplicative
+Stinespring / operator-system interpolation; non-unitary weighted composition
+(not forbidden by T4, not constructed).
 
 ---
 
@@ -128,13 +121,16 @@ Candidate approaches (not executed):
 | **Free-Strict-Abstract-Koopman (position sector)** | **CONSTRUCT** (this note) |
 | Free-Strict-Abstract-Joint / **Joint-Stone-Canonical** | **NO-GO (J2)** — see `PROGRAM-C-Free-Strict-Abstract-Joint.md` |
 | Free-Strict-Abstract-Joint / full-triple Joint-Stone | **NO-GO (J3, G4 companion)** |
-| Free-Strict-Abstract-Joint / residual (choice-dep.\ Joint-Stone; Joint-Form) | **OPEN** |
+| Free-Strict-Abstract-Joint / Joint-Stone-Hom-1 | **NO-GO (J4)** |
+| Free-Strict-Abstract-Joint / Joint-Form-Core | **CONSTRUCT (J4-F)** |
+| Free-Strict-Abstract-Joint / residual mere-CP Joint-Stone | **OPEN** |
 
 ---
 
 ## 5. Non-claims
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
-translation dynamics (T4). Joint-Stone-Canonical is ruled out (J2); residual
-choice-dependent Joint-Stone and Joint-Form are **not** claimed impossible.
-\(\Phi_0\) alone does **not** realize \(\psi\); it realizes only the abelian
-position-generator part.
+translation dynamics (T4). Joint-Stone-Canonical (J2), full-triple under G4
+(J3), and multiplicative Joint-Stone-Hom-1 (J4) are ruled out; mere-CP
+choice-dependent Joint-Stone is **not** claimed impossible. Joint-Form-Core
+is form-level only. \(\Phi_0\) alone does **not** realize \(\psi\); it
+realizes only the abelian position-generator part.
