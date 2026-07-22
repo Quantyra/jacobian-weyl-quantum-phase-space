@@ -1,24 +1,26 @@
-# GenCP Free-Strict — status after adversarial REVISE
+# GenCP Free-Strict — status after J4
 
-**Date:** 2026-07-21  
-**Status:** Regular-v2 **WITHDRAWN**; retained NO-GOs as below; Joint-Stone-Canonical **NO-GO (J2)**; residual Abstract/Joint-Form **OPEN**
+**Date:** 2026-07-22  
+**Status:** Regular-v2 **WITHDRAWN**; J2/J3/J4 as below; mere-CP residual **OPEN**
 
 ## Withdrawn
-**Free-Strict-Regular-v2** (nondegeneracy via \(P=1_{\mathbb{R}^3\setminus\overline{\mathrm{im} F}}\)):  
-**false**. \(q\notin\overline{\mathrm{im} F}\) does not imply \(f(F(q))=0\).  
-\(M_f\mapsto M_{f\circ F}\) on \(C_b(Q)\) is a unital \*-hom; Arveson can extend to UCP on \(B(H)\).
+**Free-Strict-Regular-v2**: **false**.
 
-## Retained NO-GOs
+## Retained / new verdicts
 | Pack | Status |
 |------|--------|
-| C0 → C0 composition \*-homo | NO-GO (non-proper \(F\)) |
-| Bogoliubov / quasifree | NO-GO (nonlinear \(F\)) |
-| Algebraic \*-SOS + correspondence | PASS / CONSTRUCT (use \([q,p]=i\)) |
-| Joint-Stone-Canonical (choice-free) | NO-GO (J2; `PROGRAM-C-Free-Strict-Abstract-Joint.md`) |
-| Full-triple Joint-Stone (under G4 \(H_0/H_2\) pairs) | NO-GO (J3; G4 companion) |
+| C0 → C0 composition \*-homo | NO-GO |
+| Bogoliubov / quasifree | NO-GO |
+| Algebraic \*-SOS + correspondence | PASS / CONSTRUCT |
+| Koopman position sector | CONSTRUCT |
+| Joint-Stone-Canonical | NO-GO (J2) |
+| Full-triple Joint-Stone (G4) | NO-GO (J3) |
+| Joint-Stone-Hom-1 | NO-GO (J4) |
+| Joint-Form-Core | CONSTRUCT |
+| Joint-Form-ESS-1 | OBSTRUCT |
 
 ## Open
-Abstract C\* envelope CP+Stinespring with no spatial axioms; choice-dependent Joint-Stone+CP; Joint-Form (form-only).
+Mere-CP (non-multiplicative) choice-dependent Joint-Stone + \(\Phi_0\); abstract C\* envelope without Hom/Stone axioms.
 
 ## Non-claims
 No channel. T4. No “all CP impossible.”

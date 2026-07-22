@@ -48,8 +48,8 @@ https://github.com/Quantyra/exotic-ccr-lean
 
 | Paper | PDF | Tag | One-line |
 |-------|-----|-----|----------|
-| **B001** classification (v0.4) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) | Complete dual fields ⇒ surjective \(F\); schema + atlas A000–A010; A009 Pinchuk (polynomial, open-set incompleteness) vs A007 (thin) — dichotomy evidence, not theorem |
-| **C001** completions of \(\psi\) (v0.5) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) | Algebraic \*-SOS OK; C0/Bogoliubov NO-GO; Koopman position-sector CP CONSTRUCT; Joint-Stone-Canonical CONDITIONAL-OBSTRUCTION (J2/J3); residual joint CP OPEN |
+| **B001** classification (v0.5) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) | B1 + atlas A000–A010; B5 restricted poly dichotomy lemmas; residual regime T open; full dichotomy conjecture |
+| **C001** completions of \(\psi\) (v0.6) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) | Koopman CONSTRUCT; J2/J3/J4 Stone-Hom obstructions; Joint-Form-Core CONSTRUCT; mere-CP Joint-Stone OPEN |
 
 A001 remains citable via **concept DOI** even before arXiv endorsement.
 

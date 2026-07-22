@@ -1,10 +1,10 @@
-﻿# C001 companion freeze (v0.5, green gate)
+﻿# C001 companion freeze (v0.6, green gate)
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
-**Tag:** v0.3.0-c001-companion (retagged at v0.5)  
+**Tag:** v0.3.0-c001-companion  
 **Pack:** COMPANION-PACK.md  
-**Joint note:** docs/validation/PROGRAM-C-Free-Strict-Abstract-Joint.md
+**Joint notes:** PROGRAM-C-Free-Strict-Abstract-Joint.md, PROGRAM-C-residual-J4-Joint-Stone-Hom.md  
 
 ## Scoreboard
 | Item | Status |
@@ -14,11 +14,13 @@
 | C0→C0 composition | NO-GO |
 | Bogoliubov/quasifree | NO-GO |
 | Free-Strict-Regular-v2 | WITHDRAWN |
-| Koopman position-sector CP | CONSTRUCT (v0.4) |
-| **Joint-Stone-Canonical** (choice-free, H1) | **CONDITIONAL-OBSTRUCTION** (J2, new v0.5) |
-| **Full-triple Joint-Stone** (H0,H1,H2, under G4 pairs) | **CONDITIONAL-OBSTRUCTION** (J3, new v0.5) |
-| Choice-dependent single-extension Joint-Stone + CP | OPEN |
-| Joint-Form (sesquilinear, no SA requirement) | OPEN |
+| Koopman position-sector CP | CONSTRUCT |
+| Joint-Stone-Canonical (J2) | CONDITIONAL-OBSTRUCTION |
+| Full-triple Joint-Stone (J3, G4) | CONDITIONAL-OBSTRUCTION |
+| **Joint-Stone-Hom-1 (J4)** | **OBSTRUCTION** |
+| Joint-Form-Core | CONSTRUCT |
+| Joint-Form-ESS-1 | OBSTRUCT |
+| Mere-CP choice-dependent Joint-Stone | OPEN |
 
 ## Adversarial
-3-role gate on v0.5: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.
+3-role gate on v0.6: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.

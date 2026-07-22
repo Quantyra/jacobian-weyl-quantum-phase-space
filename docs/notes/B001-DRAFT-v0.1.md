@@ -1,13 +1,13 @@
-﻿# B001 draft v0.4
+﻿# B001 draft v0.5
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/B001-classification-arxiv.pdf  
-**Status:** v0.4 — A007 (thin/null-set) + A008 (2D global diffeo) + A009 (Pinchuk, polynomial, open-set incompleteness) + A010 (polynomial shear automorphism), adversarial PASS  
-**Tag:** v0.2.0-b001-draft (retagged at v0.4)  
+**Status:** v0.5 — atlas A000–A010 + B5 restricted polynomial dichotomy lemmas (adversarial PASS)  
+**Tag:** v0.2.0-b001-draft  
 **Pack:** COMPANION-PACK.md  
-**A001:** parked VIPN6B (math-ph)  
-**C Abstract:** Joint-Stone-Canonical CONDITIONAL-OBSTRUCTION (J2/J3, C001 v0.5); residual choice-dependent Joint-Stone and Joint-Form remain OPEN  
-**Dichotomy:** polynomial-only "thin vs open incompleteness" still an open conjecture, sharpened by A009 (evidence, not theorem)
+**A001:** parked VIPN6B (human only)  
+**C:** C001 v0.6 — J2/J3/J4 + Joint-Form split; mere-CP Joint-Stone OPEN  
+**Dichotomy:** full poly thin-vs-open still conjecture; residual regime T open  
 
 ## Adversarial
-3-role gate: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.
+3-role gate on v0.5: Proof **PASS**, Non-claims **PASS**, Package **REVISE→fixed→PASS**. Aggregate **PASS**.
