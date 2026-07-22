@@ -42,5 +42,6 @@ local/
 
 docs/notes/*.aux
 docs/notes/*.log
+docs/notes/*.out
 docs/notes/*-pass*.log
 docs/notes/*-build.log
