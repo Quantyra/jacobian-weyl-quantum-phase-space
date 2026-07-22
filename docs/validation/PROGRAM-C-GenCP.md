@@ -81,7 +81,8 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | GenCP-Alg correspondence | **CONSTRUCT** |
 | GenCP-C0-compatible CP | **NO-GO** |
 | Free CCR \*-hom | **NO-GO** |
-| Free GenCP-Strict | OPEN |
+| Free-Strict-Regular-v2 | **NO-GO** |
+| Free-Strict-Abstract | OPEN (correspondence only) |
 
 ## Non-claims
 No channel on \(B(H)\). No advantage. Algebraic correspondence ≠ physical instrument.

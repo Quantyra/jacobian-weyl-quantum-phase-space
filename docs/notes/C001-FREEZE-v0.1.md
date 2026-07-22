@@ -1,8 +1,18 @@
-﻿# C001 obstruction freeze v0.1.1
+﻿# C001 freeze v0.2 (Free-Strict)
 
 **Date:** 2026-07-21  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
-**Status:** FREEZE companion (A001 arXiv blocked on endorsement — DOI still cites A001)  
-**Contents:** algebraic *-SOS PASS; C0/Bogoliubov/C0-CP/CCR-*-hom NO-GO; algebraic correspondence CONSTRUCT; Free GenCP-Strict OPEN  
-**Pack:** docs/notes/COMPANION-PACK.md  
-**Tag:** v0.1.0-c001-obstruction (content bump 0.1.1 in freeze note)
+**Status:** companion freeze; A001 arXiv parked  
+**Tag:** bump content on main (was v0.1.0-c001-obstruction)
+
+## Scoreboard
+| Pack | Verdict |
+|------|---------|
+| Algebraic *-SOS | PASS |
+| Algebraic correspondence | CONSTRUCT |
+| C0 / Bogoliubov / CCR-*-hom / C0-CP | NO-GO |
+| Free-Strict-Regular-v2 | NO-GO |
+| Free-Strict-Abstract C* Stinespring | OPEN |
+
+## Pack index
+docs/notes/COMPANION-PACK.md
