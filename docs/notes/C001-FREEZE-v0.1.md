@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
-**Tag:** v0.3.0-c001-companion (prior green at v0.4; content ahead on main is v0.5, retag pending)  
+**Tag:** v0.3.0-c001-companion (retagged at v0.5)  
 **Pack:** COMPANION-PACK.md  
 **Joint note:** docs/validation/PROGRAM-C-Free-Strict-Abstract-Joint.md
 
