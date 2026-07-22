@@ -27,13 +27,16 @@ endomorphism correspondence and obstruct: (i)~unital/\allowbreak nondegenerate
 \textbf{withdrawn} as incorrect. We then \textbf{construct} a genuine normal
 unital \(*\)-homomorphism (Koopman pullback) on the bounded-Borel position
 sector, valid for any local-diffeomorphism \(F\) regardless of properness or
-surjectivity. Extending this to the full \(q\)--\(p\) endomorphism \(\psi\)
-(joint Stinespring dilation) remains open. No dual \(F\)-translations, gates,
-or advantage. Companion to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
+surjectivity. For the joint \(q\)--\(p\) sector we record a
+\textbf{conditional obstruction} to any choice-free Joint-Stone-Canonical
+package (A001 \(H_1\) deficiency \((\infty,\infty)\)); residual
+choice-dependent Joint-Stone and form-only Joint-Form routes remain open.
+No dual \(F\)-translations, gates, or advantage. Companion to~\cite{A001}.
+Pack: \texttt{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 companion v0.4 (Koopman position construct).\\
+\textbf{Version:} C001 companion v0.5 (Joint-Stone conditional obstruction).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
 \paragraph{Erratum.}
@@ -150,19 +153,51 @@ the \emph{vanishing-at-infinity} algebra \(C_0\), not to bounded Borel
 functions.
 \end{remark}
 
-\section{Open: joint \(q\)--\(p\) extension}
-\(\Phi_0\) only captures \(\psi\) on the position generators. Whether some
-normal unital CP \(\Phi\) (or Stinespring dilation) extends \(\Phi_0\) to
-also reproduce \(\psi(p_j)=\sum_k B_{jk}(Q)p_k\) on a common dense domain,
-with no dual-\(F\) translation dynamics required, is
-\textbf{not constructed, not ruled out}. See~\texttt{PROGRAM-C-C1d-Koopman-position.md}
-for candidate routes and why a unitary composition-operator route is blocked
-by T4/G4 while a non-unitary route remains open.
+\section{Joint \(q\)--\(p\) extension: three-part status}
+\(\Phi_0\) only captures \(\psi\) on the position generators. The joint
+sector is no longer a single vague ``open''; it splits as follows
+(full write-up:
+\texttt{PROGRAM-C-Free-Strict-Abstract-Joint.md}).
+
+\paragraph{(i) Position sector --- CONSTRUCT.}
+The Koopman pullback \(\Phi_0\) is a normal unital \(*\)-homomorphism on
+bounded Borel functions of \(Q\) (previous section).
+
+\paragraph{(ii) Joint-Stone-Canonical --- CONDITIONAL-OBSTRUCTION.}
+A \emph{Joint-Stone} package asks for self-adjoint extensions
+\(\widetilde H_j\supset H_j=-iX_j\) together with a unital normal CP map
+\(\Phi\) extending \(\Phi_0\) and implementing
+\(\Phi(e^{is P_j^{\mathrm{Sch}}})=e^{is\widetilde H_j}\).
+\emph{Joint-Stone-Canonical} further requires the package to be uniquely
+fixed by the algebraic data \((\psi,F,B)\) alone.
+\begin{itemize}
+\item \textbf{Theorem J2} (A001 \(H_1\) only): since
+\((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\)~\cite{A001}, von Neumann's
+theorem yields a continuum of inequivalent SA extensions; \((\psi,F,B)\)
+does not select one. Hence no Joint-Stone-Canonical package exists.
+This does \emph{not} rule out every choice-dependent Joint-Stone package.
+\item \textbf{Theorem J3} (G4 companion, not A001): the companion note
+\texttt{G4-H0-H2-deficiency-bounds.md} records
+\((n_+,n_-)=(\infty,0)\) for \(H_0\) and \((0,\infty)\) for \(H_2\), so
+those minimal operators admit \emph{no} SA extensions. Under those pairs,
+no full-triple Joint-Stone package \((\Phi;\widetilde H_0,\widetilde H_1,\widetilde H_2)\)
+exists at all.
+\end{itemize}
+
+\paragraph{(iii) Residual routes --- OPEN.}
+Choice-dependent single-extension Joint-Stone existence and CP compatibility
+with \(\Phi_0\), and the weaker form-only \emph{Joint-Form} pack
+(sesquilinear agreement on a dense core, no SA/unitary-group requirement),
+remain \textbf{open}. A unitary composition-operator route is blocked by
+T4/G4; a non-unitary route is not forbidden by T4 but is not constructed.
+See~\texttt{PROGRAM-C-C1d-Koopman-position.md}.
 
 \section{Non-claims}
-No channel on \(B(H)\) implementing the full \(\psi\) (position sector only).
+No channel on \(B(H)\) implementing the full \(\psi\).
 No gates/advantage. No dual \(F\)-translations. No ``all quantization fails.''
-No full joint \(q\)--\(p\) Stinespring construct.
+No claim that every joint CP construction is impossible---only
+Joint-Stone-Canonical (J2) and, under G4 pairs, full-triple Joint-Stone (J3).
+No promotion of G4 \(H_0/H_2\) pairs to A001 theorems.
 
 \begin{thebibliography}{99}
 \bibitem{A001}

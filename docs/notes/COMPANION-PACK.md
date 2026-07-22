@@ -31,18 +31,19 @@
 
 ---
 
-## Companion C001 — Weyl endomorphism packages v0.3
+## Companion C001 — Weyl endomorphism packages v0.5
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
-| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.4, adversarial PASS) |
-| Tag / release | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) |
+| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.5; prior v0.4 adversarial PASS) |
+| Tag / release | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) (prior green; v0.5 pending retag) |
 | Prior tags | `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
-| Claims | Algebraic \*-SOS (physics \([q,p]=i\)); algebraic correspondence; C0-composition endo NO-GO; Bogoliubov NO-GO; **Koopman position-sector CP CONSTRUCT** |
+| Claims | Algebraic \*-SOS (physics \([q,p]=i\)); algebraic correspondence; C0-composition endo NO-GO; Bogoliubov NO-GO; **Koopman position-sector CP CONSTRUCT**; **Joint-Stone-Canonical CONDITIONAL-OBSTRUCTION (J2)** |
+| Joint note | [`PROGRAM-C-Free-Strict-Abstract-Joint.md`](../validation/PROGRAM-C-Free-Strict-Abstract-Joint.md) |
 | Withdrawn | Free-Strict-Regular-v2 |
-| Open | Joint \(q,p\) C\* CP+Stinespring (position sector alone is now constructed) |
+| Open | Choice-dependent Joint-Stone+CP; Joint-Form (form-only); abstract C\* envelope |
 
 ---
 
