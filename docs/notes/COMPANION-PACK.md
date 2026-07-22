@@ -35,20 +35,20 @@
 
 ---
 
-## Companion C001 — Weyl endomorphism packages v0.8
+## Companion C001 — Weyl endomorphism packages v0.9
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
-| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.8; package re-gate in progress) |
-| Tag / release | [v0.3.1-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.1-c001-companion) (v0.8 freeze SHA; supersedes `v0.3.0-c001-companion`) |
-| Prior tags | `v0.3.0-c001-companion` (pre-re-gate pin; do not retag); `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
-| Claims | Algebraic \*-SOS; correspondence; C0/Bogoliubov NO-GO; Koopman position **CONSTRUCT**; J2 Joint-Stone-Canonical NO-GO; J3 full-triple Joint-Stone NO-GO (G4); **J4 Joint-Stone-Hom-1 NO-GO**; **J5 Joint-Stone-CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT** |
-| Joint notes | [`PROGRAM-C-Free-Strict-Abstract-Joint.md`](../validation/PROGRAM-C-Free-Strict-Abstract-Joint.md), [`PROGRAM-C-residual-J4-Joint-Stone-Hom.md`](../validation/PROGRAM-C-residual-J4-Joint-Stone-Hom.md), [`PROGRAM-C-residual-mere-CP-Joint-Stone.md`](../validation/PROGRAM-C-residual-mere-CP-Joint-Stone.md), [`PROGRAM-C-residual-CP-without-Stone.md`](../validation/PROGRAM-C-residual-CP-without-Stone.md) |
+| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.9) |
+| Tag / release | `v0.3.2-c001-companion` (v0.9 freeze SHA; supersedes `v0.3.1-c001-companion`; create after commit) |
+| Prior tags | `v0.3.1-c001-companion` (v0.8; do not retag); `v0.3.0-c001-companion`; `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
+| Claims | Algebraic \*-SOS; correspondence; C0/Bogoliubov NO-GO; Koopman position **CONSTRUCT**; J2 Joint-Stone-Canonical NO-GO; J3 full-triple Joint-Stone NO-GO (G4); **J4 Joint-Stone-Hom-1 NO-GO**; **J5 Joint-Stone-CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**; **J7-C Full-ψ-BT-Envelope CONSTRUCT**; **J7 Full-ψ-CFC-SA-1 NO-GO** |
+| Joint notes | [`PROGRAM-C-Free-Strict-Abstract-Joint.md`](../validation/PROGRAM-C-Free-Strict-Abstract-Joint.md), [`PROGRAM-C-residual-J4-Joint-Stone-Hom.md`](../validation/PROGRAM-C-residual-J4-Joint-Stone-Hom.md), [`PROGRAM-C-residual-mere-CP-Joint-Stone.md`](../validation/PROGRAM-C-residual-mere-CP-Joint-Stone.md), [`PROGRAM-C-residual-CP-without-Stone.md`](../validation/PROGRAM-C-residual-CP-without-Stone.md), [`PROGRAM-C-residual-abstract-Cstar-full-psi.md`](../validation/PROGRAM-C-residual-abstract-Cstar-full-psi.md) |
 | Withdrawn | Free-Strict-Regular-v2 |
-| Open | Full-\(\psi\) abstract C\* envelope without Hom/unitary-image; CP recovering \(\psi(p_j)\) functional calculus on a C\* completion |
-| Gate status | proof + non-claims **PASS** at `95a0bc9`; package **REVISE→fixed** this commit; **aggregate pending package re-review** (do not claim adversarial Aggregate PASS until re-gate) |
+| Open | Full-ψ-CP-Weyl-C\* (CP from a completion of \(\mathcal{W}\), no SA-CFC/unitary-image); sub-residual Full-ψ-BT-CP-Bridge |
+| Gate status | v0.9 content this commit; **aggregate pending adversarial package re-review** (do not claim Aggregate PASS until re-gate) |
 
 ---
 
@@ -56,7 +56,7 @@
 
 1. Deficiency: A001 + concept DOI  
 2. Classification: B001 `v0.2.1-b001-draft` tag (content v0.6)  
-3. Completions of \(\psi\): C001 `v0.3.1-c001-companion` tag (v0.8)  
+3. Completions of \(\psi\): C001 `v0.3.2-c001-companion` tag (v0.9)  
 
 ## Non-claims
 No gates/channels/advantage. No dual-flow repair. No all-quantization-fails. No “all CP impossible.”

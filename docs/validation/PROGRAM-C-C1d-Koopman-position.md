@@ -1,7 +1,7 @@
 # Program C — C1d: Koopman position-sector construct (Free-Strict-Abstract)
 
 **Date:** 2026-07-22  
-**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J6 NO-GOs on Stone/unitary-image packages; Diag-CP-Φ₀ **CONSTRUCT**; full-\(\psi\) abstract \(C^*\) **OPEN**)  
+**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J6 NO-GOs on Stone/unitary-image packages; Diag-CP-Φ₀ **CONSTRUCT**; full-\(\psi\) abstract \(C^*\) **SPLIT J7**: BT-Envelope **CONSTRUCT**, CFC-SA **NO-GO**, CP-Weyl-C\* **OPEN**)  
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`
 
 ---
@@ -95,7 +95,7 @@ CP+Stone is separately ruled out by J5; unitary image without SA link by J6.
 \(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal
 operators — so no full-triple Joint-Stone package exists under those pairs.
 
-### 3.2 Residual update (J4–J6)
+### 3.2 Residual update (J4–J7)
 
 | Slice | Verdict |
 |-------|---------|
@@ -105,13 +105,16 @@ operators — so no full-triple Joint-Stone package exists under those pairs.
 | Diag-CP-Φ₀ (\(\Phi_0\circ E\) on joint vNa) | **CONSTRUCT (J6-C)** — same note |
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT (J4-F)** |
 | Joint-Form-ESS-1 | **OBSTRUCT (J4-E)** |
-| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
+| Full-ψ-BT-Envelope | **CONSTRUCT (J7-C)** — see `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
+| Full-ψ-CFC-SA-1 | **OBSTRUCT (J7)** — same note |
+| Full-ψ-CP-Weyl-C\* | **OPEN (J7-O)** — same note |
 
 J5–J6: unital CP + unitary image of \(e^{is P_1^{\mathrm{Sch}}}\) puts those
 unitaries in the multiplicative domain, recovers dual-\(F_1\) Heisenberg
 covariance, and dies by SvN / sheet-count geometry (SA-extension-of-\(H_1\)
 inessential). Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\).
-Remaining open: full-\(\psi\) abstract \(C^*\) envelope.
+J7 splits full-\(\psi\) abstract \(C^*\): BT-Envelope CONSTRUCT; CFC-SA NO-GO;
+CP-Weyl-C\* OPEN.
 
 ---
 
@@ -130,7 +133,9 @@ Remaining open: full-\(\psi\) abstract \(C^*\) envelope.
 | Free-Strict-Abstract-Joint / Unitary-Image-CP-1 | **NO-GO (J6)** |
 | Free-Strict-Abstract-Joint / Diag-CP-Φ₀ | **CONSTRUCT (J6-C)** |
 | Free-Strict-Abstract-Joint / Joint-Form-Core | **CONSTRUCT (J4-F)** |
-| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
+| Free-Strict-Abstract-Joint / Full-ψ-BT-Envelope | **CONSTRUCT (J7-C)** |
+| Free-Strict-Abstract-Joint / Full-ψ-CFC-SA-1 | **NO-GO (J7)** |
+| Free-Strict-Abstract-Joint / Full-ψ-CP-Weyl-C\* | **OPEN (J7-O)** |
 
 ---
 
@@ -138,7 +143,9 @@ Remaining open: full-\(\psi\) abstract \(C^*\) envelope.
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
 translation dynamics (T4). Joint-Stone-Canonical (J2), full-triple under G4
 (J3), multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1
-(J5), and Unitary-Image-CP-1 (J6) are ruled out; Diag-CP-Φ₀ is constructed
-and is not a momentum channel. Full-\(\psi\) abstract \(C^*\) is **not**
+(J5), Unitary-Image-CP-1 (J6), and Full-ψ-CFC-SA-1 (J7) are ruled out;
+Diag-CP-Φ₀ is constructed and is not a momentum channel; BT-Envelope is a
+concrete \(C^*\) envelope, not a channel. Full-ψ-CP-Weyl-C\* is **not**
 claimed impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
 **not** realize \(\psi\); it realizes only the abelian position-generator part.
+Diag-CP is **not** full-\(\psi\).

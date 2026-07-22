@@ -6,7 +6,7 @@
 **Tag:** v0.2.1-b001-draft (v0.6 freeze SHA; supersedes `v0.2.0-b001-draft`; do not move old tags)  
 **Pack:** COMPANION-PACK.md  
 **A001:** parked VIPN6B (human only)  
-**C:** C001 v0.8 — J2–J6 + Joint-Form split; Diag-CP-Φ₀ CONSTRUCT; full-ψ abstract C* OPEN  
+**C:** C001 v0.9 — J2–J7 + Joint-Form split; Diag-CP-Φ₀ + Full-ψ-BT-Envelope CONSTRUCT; Full-ψ-CFC-SA NO-GO; Full-ψ-CP-Weyl-C* OPEN  
 **Dichotomy:** full poly thin-vs-open still conjecture; regime T excluded on proper/injective/deg-1/product/triangular; residual **OPEN-T** (Bad only on atypical fibers)  
 
 ## B6

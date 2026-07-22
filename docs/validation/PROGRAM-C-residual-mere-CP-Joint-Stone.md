@@ -4,7 +4,7 @@
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-CP-1** (mere unital normal CP + choice-dependent Stone for \(j=1\))  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` (Hom pack NO-GO; left mere-CP open)  
-**Companion:** C001 (v0.8 cites J5; J6 weakens residual without reopening J5)
+**Companion:** C001 (v0.9 cites J5–J7; J6/J7 refine residual without reopening J5)
 
 ---
 
@@ -212,7 +212,7 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 | Diag-CP-Φ₀ | **CONSTRUCT** | **J6-C** |
 | Abstract \(C^*\) envelope of full \(\psi\) without Hom/unitary-image | **OPEN** | GenCP charter |
 
-**Reading.** The former residual (A) — “mere-CP choice-dependent Joint-Stone” — is **closed** as NO-GO. The non-Stone residual is further split by J6/J6-C (Unitary-Image NO-GO; Diag-CP CONSTRUCT); full-\(\psi\) abstract \(C^*\) remains OPEN.
+**Reading.** The former residual (A) — “mere-CP choice-dependent Joint-Stone” — is **closed** as NO-GO. The non-Stone residual is further split by J6/J6-C (Unitary-Image NO-GO; Diag-CP CONSTRUCT); full-\(\psi\) abstract \(C^*\) is further **SPLIT by J7** (BT-Envelope CONSTRUCT; CFC-SA NO-GO; CP-Weyl-C\* OPEN).
 
 ---
 

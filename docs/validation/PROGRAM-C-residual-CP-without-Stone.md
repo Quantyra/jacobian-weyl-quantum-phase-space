@@ -1,10 +1,11 @@
 # Program C residual — Theorem J6: CP of Φ₀ without Stone/SA momentum
 
 **Date:** 2026-07-22  
-**Status:** **SPLIT** — pack **Unitary-Image-CP-1** = **OBSTRUCT (J6)**; pack **Diag-CP-Φ₀** = **CONSTRUCT (J6-C)**; full-\(\psi\) abstract \(C^*\) without Hom/unitary-image remains **OPEN**  
+**Status:** **SPLIT** — pack **Unitary-Image-CP-1** = **OBSTRUCT (J6)**; pack **Diag-CP-Φ₀** = **CONSTRUCT (J6-C)**; full-\(\psi\) abstract \(C^*\) further **SPLIT by J7** (see `PROGRAM-C-residual-abstract-Cstar-full-psi.md`)  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-mere-CP-Joint-Stone.md` (J5: Joint-Stone-CP-1 NO-GO)  
-**Companion:** C001 (v0.8 cites J6)
+**Companion:** C001 (v0.9 cites J6/J7)  
+**Next slice:** `PROGRAM-C-residual-abstract-Cstar-full-psi.md` (J7)
 
 ---
 
@@ -268,15 +269,17 @@ Diag-CP-Φ₀ is a CP map on the joint vNa \(M\); Joint-Form-Core is a form-leve
 | **Diag-CP-Φ₀** ( \(\Phi_0\circ E\) on \(M\) ) | **CONSTRUCT** | **J6-C** |
 | Joint-Form-Core | **CONSTRUCT** | J4-F |
 | Joint-Form-ESS-1 | **OBSTRUCT** | J4-E |
-| Abstract \(C^*\) envelope of full \(\psi\) without Hom / unitary-image axioms | **OPEN** | GenCP-Free charter |
-| CP recovering continuous functional calculus of \(\psi(p_j)\) on a \(C^*\) completion | **OPEN** | not constructed; not ruled out by J6 |
+| Abstract \(C^*\) envelope of full \(\psi\) without Hom / unitary-image axioms | **SPLIT (J7)** | `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
+| Full-ψ-BT-Envelope | **CONSTRUCT** | J7-C |
+| Full-ψ-CFC-SA-1 (SA-CFC / unitary Cayley) | **OBSTRUCT** | J7 |
+| Full-ψ-CP-Weyl-C\* (CP from completion of \(\mathcal{W}\), no SA-CFC) | **OPEN** | J7-O |
 
 **Reading.**  
 The former residual “CP of \(\Phi_0\) without Stone” splits:
 
 - **unitary-image** slice on \(M\) → **closed NO-GO (J6)**;
 - **diagonal / non-unitary-image** slice on \(M\) → **closed CONSTRUCT (J6-C)**;
-- **full-\(\psi\) abstract \(C^*\)** (momenta as well as positions, no Hom/unitary-image) → still **OPEN**.
+- **full-\(\psi\) abstract \(C^*\)** (momenta as well as positions, no Hom/unitary-image) → further **SPLIT by J7** (BT-Envelope CONSTRUCT; CFC-SA NO-GO; CP-Weyl-C\* OPEN).
 
 ---
 
@@ -288,7 +291,7 @@ The former residual “CP of \(\Phi_0\) without Stone” splits:
 | Unitary-Image-CP-1 | (unnamed part of residual) | **OBSTRUCT (J6)** |
 | Diag-CP-Φ₀ / Mere-CP-Ext on \(M\) | (unnamed) | **CONSTRUCT (J6-C)** |
 | CP of \(\Phi_0\) without Stone (undifferentiated) | OPEN | **SPLIT** (see §7) |
-| Abstract \(C^*\) of full \(\psi\) | OPEN | OPEN |
+| Abstract \(C^*\) of full \(\psi\) | OPEN | **SPLIT (J7)** |
 
 ---
 
@@ -322,6 +325,7 @@ No new numeric CAS required. Geometric lemmas J4.4–J4.5 are inherited from
 | Koopman position | `PROGRAM-C-C1d-Koopman-position.md` |
 | Multiplicative domain | Paulsen, CB maps, Thm.~3.18 |
 | Conditional expectation / injectivity | Takesaki II; abelian vNa injective |
+| J7 full-ψ abstract C* | `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
 | C001 companion | `docs/notes/C001-cp-correspondence-arxiv.tex` |
 
 (End of file)

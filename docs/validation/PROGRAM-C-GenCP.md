@@ -91,7 +91,9 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | Free-Strict-Abstract Diag-CP-Φ₀ | **CONSTRUCT** (J6-C) |
 | Joint-Form-Core | **CONSTRUCT** |
 | Joint-Form-ESS-1 | **OBSTRUCT** |
-| Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image | **OPEN** |
+| Full-ψ-BT-Envelope | **CONSTRUCT** (J7-C) |
+| Full-ψ-CFC-SA-1 | **OBSTRUCTION** (J7) |
+| Full-ψ-CP-Weyl-C\* | **OPEN** (J7-O) |
 
 ## Non-claims
 No channel on \(B(H)\). No advantage. Algebraic correspondence ≠ physical instrument.
