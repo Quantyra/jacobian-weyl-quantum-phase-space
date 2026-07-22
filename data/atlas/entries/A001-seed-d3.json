@@ -137,5 +137,17 @@
     "G4_incompleteness": "docs/validation/G4-Xj-incompleteness.md",
     "G4_Chernoff": "docs/validation/G4-Chernoff-discharge.md",
     "G4_X1": "docs/validation/G4-X1-incompleteness.md"
+  },
+  "program_b": {
+    "b_incomplete": "fail",
+    "b_ess": "fail",
+    "b_def": "H1=(inf,inf); H0/H2 companion notes only",
+    "b_ccr": "fail",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "docs/notes/A001-arxiv.pdf",
+      "docs/validation/G4-Xj-incompleteness.md"
+    ]
   }
 }

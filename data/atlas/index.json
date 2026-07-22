@@ -16,6 +16,11 @@
   },
   "entries": [
     {
+      "atlas_id": "A000-toy-exp1d-lift",
+      "path": "data/atlas/entries/A000-toy-exp1d-lift.json",
+      "status": "draft"
+    },
+    {
       "atlas_id": "A001-seed-d3",
       "path": "data/atlas/entries/A001-seed-d3.json",
       "mu_generic_degree": 3,

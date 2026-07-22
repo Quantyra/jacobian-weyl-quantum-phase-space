@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,url}
+\geometry{margin=1in}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\title{Toward completely positive realizations of an exotic Weyl endomorphism\\
+(without dual \(F\)-translations)}
+\author{Daniel Eric Fredriksen\\
+Quantyra Inc.\\
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let \(\psi\) be the polynomial Weyl-algebra endomorphism induced by the
+Alp\"oge--Fable Keller seed (restated) via \(Q=F(q)\) and \(P=J^{-T}p\).
+We freeze the algebraic domain of \(\psi\) and open a program to decide whether
+\(\psi\) admits a unital completely positive extension to a \(C^*\) completion
+(or a Hilbert \(C^*\)-module correspondence), explicitly \emph{without}
+implementing dual \(F\)-translations on \(L^2(\mathbb{R}^3)\). No channel capacity,
+gate, or computational advantage is claimed. Companion to the A001 deficiency
+note and Program~B classification.
+\end{abstract}
+
+\noindent\textbf{MSC:} 46L07, 81S05, 47L90.\\
+\textbf{Status:} draft (Program C / bet C1). Software track: EXOTIC-CCR C001.
+
+\section{Non-goals (binding)}
+\begin{itemize}
+\item No dual \(F\)-translation unitary package on \(L^2(\mathbb{R}^3)\)~\cite{A001}.
+\item No reversible-gate reading of a proper endomorphism.
+\item No advantage / capacity claims.
+\end{itemize}
+
+\section{Domain (C1a)}
+\begin{definition}
+Let \(\mathcal{W}\) be the polynomial Weyl algebra over \(\mathbb{C}\) on generators
+\(q_i,p_j\) with \([q_i,p_j]=\delta_{ij}\). With \(B=J^{-T}\),
+\[
+\psi(q_i)=F_i(q),\qquad
+\psi(p_j)=\sum_k B_{jk}(q)\,p_k
+\]
+(coefficients left of momenta) extends to a unital endomorphism
+\(\psi:\mathcal{W}\to\mathcal{W}\).
+\end{definition}
+
+\begin{remark}
+\(\psi\) is not an automorphism (classical non-injectivity of \(F\)).
+\end{remark}
+
+\section{Program}
+\begin{enumerate}
+\item \textbf{C1b.} Probe complete positivity on matrix levels over a standard
+positive cone, or record the first obstruction.
+\item \textbf{C1c.} If positive: Stinespring/correspondence sketch. If not:
+axiomized no-go.
+\item \textbf{T4.} Every constructive claim carries: does \emph{not} implement
+dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
+\end{enumerate}
+
+\section{Status}
+C1a domain frozen. C1b positivity log: \emph{in progress} (no claim yet).
+
+\section{Non-claims}
+No CP map is asserted constructed in this draft. No gates/channels/advantage.
+
+\begin{thebibliography}{99}
+\bibitem{A001}
+D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, companion v0.3.6-submit,
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,72 @@
+{
+  "atlas_id": "A000-toy-exp1d-lift",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "toy_identity_R3",
+    "variables": [
+      "x0",
+      "x1",
+      "x2"
+    ],
+    "formula_display": {
+      "F0": "x0",
+      "F1": "x1",
+      "F2": "x2"
+    },
+    "construction": "Toy identity map F=id on R^3 (surjective local diffeo). Dual fields X_j=partial_j complete. B1 silent (surjective). Used only to populate B schema pass-path at incompleteness layer.",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "1",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": [
+      "0",
+      "0",
+      "0"
+    ],
+    "inputs": [
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "standard cotangent id",
+    "weyl_formula": "identity endomorphism",
+    "star_domain_status": "standard ESS on R^3"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": [
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md"
+    ],
+    "cas_reports": [],
+    "literature": []
+  },
+  "composition_notes": "Toy row for Program B schema; not a Keller counterexample.",
+  "non_claims": [
+    "Not a Jacobian counterexample",
+    "No exotic CCR claim",
+    "Schema exercise only"
+  ],
+  "status": "draft",
+  "program_b": {
+    "b_incomplete": "pass",
+    "b_ess": "pass",
+    "b_def": "(0,0) expected standard",
+    "b_ccr": "pass",
+    "b_cp": "open",
+    "evidence": [
+      "F=id surjective; dual fields partial_j complete; B1 does not force incompleteness"
+    ]
+  }
+}

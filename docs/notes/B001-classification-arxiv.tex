@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,url}
+\geometry{margin=1in}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\title{Dual-lift realizability for Keller-type maps:\\
+a structural incompleteness lemma and classification schema}
+\author{Daniel Eric Fredriksen\\
+Quantyra Inc.\\
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We isolate a structural lemma for dual vector fields of local diffeomorphisms
+\(F:\mathbb{R}^n\to\mathbb{R}^n\): if global dual fields \(X_j\) with \(DF\cdot X_j=e_j\)
+are all complete, then \(F\) is surjective. Hence any non-surjective dual system
+has at least one incomplete dual field. We propose a coarse classification
+schema (B-ESS / B-Def / B-CCR / B-CP) for Poisson/Weyl lifts of Keller-type maps
+and record the A001 seed as a maximal analytic failure mode for one generator.
+No gates, channels, or computational advantage are claimed. Companion to the
+A001 deficiency note for \(H=-iX_1\).
+\end{abstract}
+
+\noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
+\textbf{Status:} draft (Program B). Soft\-ware track: EXOTIC-CCR B001.
+
+\section{Introduction}
+Cotangent lifts \(\Phi(q,p)=(F(q),J^{-T}p)\) and dual fields \(X_j\) are standard
+when \(\det DF\) is a nonzero constant. After the A001 analysis of one dual
+transport operator~\cite{A001}, a natural question is which maps admit
+essentially self-adjoint dual momenta or strong CCR packages. This note begins
+a classification program with a sharp structural lemma and a schema; it does
+not repair dual-flow dynamics on \(L^2\).
+
+\section{Structural lemma}
+\begin{lemma}[Complete dual fields imply surjectivity]
+Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be \(C^\infty\) and a local diffeomorphism.
+Suppose \(X_1,\ldots,X_n\) are \(C^\infty\) dual fields, \(DF\cdot X_j=e_j\).
+If every \(X_j\) is complete, then \(F(\mathbb{R}^n)=\mathbb{R}^n\).
+\end{lemma}
+\begin{proof}
+Along the global flow \(\phi_t^{(j)}\) of \(X_j\),
+\(F(\phi_t^{(j)}(q))=F(q)+te_j\). Iterating shows
+\(F(\mathbb{R}^n)+\mathbb{R}^n\subset F(\mathbb{R}^n)\). Local diffeomorphism
+makes the image open; translation invariance forces surjectivity.
+\end{proof}
+
+\begin{corollary}
+If dual fields exist and \(F(\mathbb{R}^n)\neq\mathbb{R}^n\), then some \(X_j\) is incomplete.
+\end{corollary}
+
+\section{Classification schema (draft)}
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Label & Meaning \\
+\hline
+B-ESS & some/all \(H_j=-iX_j\) essentially self-adjoint \\
+B-Def & deficiency index pattern \\
+B-CCR & dual-translation / strong CCR package possible \\
+B-CP & unital CP extension of Weyl lift (Program C) \\
+\hline
+\end{tabular}
+\end{center}
+Values: \texttt{open} / \texttt{fail} / \texttt{pass} with evidence pointers.
+Non-surjective dual systems are \texttt{fail} at the incompleteness layer by the lemma.
+
+\section{A001 pointer}
+For the Alp\"oge--Fable seed (restated in~\cite{A001}), all three dual fields are
+incomplete and \(H=-iX_1\) has deficiency indices \((\infty,\infty)\). That is a
+stronger, seed-specific package beyond the structural corollary.
+
+\section{Non-claims}
+No gates, channels, advantage. No claim every Keller map fails ESS. No dual-flow
+repair. No preferred extension.
+
+\begin{thebibliography}{99}
+\bibitem{A001}
+D.~E.~Fredriksen, Poisson and Weyl lifts of the Alp\"oge--Fable Keller map\ldots,
+companion note v0.3.6-submit,
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
+\end{thebibliography}
+\end{document}

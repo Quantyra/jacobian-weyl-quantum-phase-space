@@ -6,7 +6,11 @@
   "ambient_dimension": 3,
   "map": {
     "name": "F_family_d4_cor53_pilot",
-    "variables": ["x0", "x1", "x2"],
+    "variables": [
+      "x0",
+      "x1",
+      "x2"
+    ],
     "formula_display": {
       "P": "A*B with A=1+xy, B=A^2 z + y^2(4+3xy)",
       "Q_psi": "Q + A^2 * x^2 * B^4 * psi_2(P)",
@@ -23,11 +27,27 @@
   },
   "collision": {
     "retained_seed_triple": true,
-    "target": ["-1/4", "0", "0"],
+    "target": [
+      "-1/4",
+      "0",
+      "0"
+    ],
     "inputs": [
-      ["0", "0", "-1/4"],
-      ["1", "-3/2", "13/2"],
-      ["-1", "3/2", "13/2"]
+      [
+        "0",
+        "0",
+        "-1/4"
+      ],
+      [
+        "1",
+        "-3/2",
+        "13/2"
+      ],
+      [
+        "-1",
+        "3/2",
+        "13/2"
+      ]
     ],
     "status": "certified_pilot"
   },
@@ -66,11 +86,23 @@
   },
   "composition_notes": "Instance of Cor 5.3 family at d=4. Not a composite of atlas rows. Further d via same recipe not bulk-registered.",
   "non_claims": [
-    "Pilot algebraic certification only — not full independent re-proof of Thm 5.2 for arbitrary psi",
+    "Pilot algebraic certification only \u2014 not full independent re-proof of Thm 5.2 for arbitrary psi",
     "mu=4 justified at fiber-polynomial degree + preprint; not full function-field re-proof in CAS",
     "Does not claim forall d machine certification",
     "Does not claim factory-false slogan as Quantyra theorem",
     "Does not claim Poisson/Weyl/physical/channel/gate/advantage results"
   ],
-  "status": "active"
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "open",
+    "b_ess": "open",
+    "b_def": "open",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "docs/validation/ATLAS-ESS-SPOTCHECK-A001-A002.md",
+      "note: real non-surjectivity pending; B1 applies if dual fields+non-surjective"
+    ]
+  }
 }

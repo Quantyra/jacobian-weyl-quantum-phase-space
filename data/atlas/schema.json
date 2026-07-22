@@ -173,6 +173,38 @@
     "status": {
       "type": "string",
       "enum": ["active", "superseded", "draft"]
+    },
+    "program_b": {
+      "type": "object",
+      "description": "Program B classification columns (B001 paper)",
+      "properties": {
+        "b_incomplete": {
+          "type": "string",
+          "enum": ["open", "fail", "pass"],
+          "description": "fail = some X_j incomplete forced/proved"
+        },
+        "b_ess": {
+          "type": "string",
+          "enum": ["open", "fail", "pass"],
+          "description": "ESS status for dual momenta package"
+        },
+        "b_def": {
+          "type": "string",
+          "description": "deficiency pattern summary or open"
+        },
+        "b_ccr": {
+          "type": "string",
+          "enum": ["open", "fail", "pass"]
+        },
+        "b_cp": {
+          "type": "string",
+          "enum": ["open", "fail", "pass"]
+        },
+        "evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
     }
   },
   "additionalProperties": true
