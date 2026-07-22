@@ -1,26 +1,19 @@
-﻿# A001 publication checklist (wind-down)
+﻿# A001 publication checklist (v0.3.6-submit)
 
-**Status:** **v0.3.5-submit** after external LLM REVISE. arXiv submit pending Dan.
+**Status:** Math PASS-level after triple LLM rounds; package synced. **arXiv submit pending Dan.**
 
-PDF: `docs/notes/A001-arxiv.pdf` (10 pp)  
-Tag: `v0.3.5-submit`  
-Log: `docs/notes/A001-external-llm-review-log.md`
+PDF: `docs/notes/A001-arxiv.pdf`  
+Tag: `v0.3.6-submit`  
+Scope: **H=-iX_1 only**
 
 ## Done
-- [x] Theorems A–F + Discussion + Non-claims (**H₁-only**)  
-- [x] Expanded walls / Dom(H*) / volume factor / Weyl endomorphism  
-- [x] Errata; stripped H0/H2 + dual-flow no-go from theorem boundary  
-- [x] External LLM reviews ingested (Grok/Claude/ChatGPT → REVISE fixes)  
-- [x] Endorsement email + packet  
-- [x] Tag `v0.3.5-submit` pushed  
+- [x] Theorems A–F self-contained (walls, Dom, Weyl, volume)  
+- [x] Round-2 + round-3 minor fixes (ε₀ window, dominating function, cites, package)  
+- [x] CITATION.cff / packet / endorsement / README = v0.3.6-submit  
+- [x] Concept DOI only (no stale version-DOI claim)  
+- [x] Lean pinned to tag v0.1.1-collision in biblio  
 
 ## Dan now
-- [ ] Quick re-skim of v0.3.5-submit PDF  
-- [ ] Optional second LLM pass on new PDF  
-- [ ] Start arXiv submission → endorsement code  
-- [ ] Send endorsement request  
-- [ ] Complete submit  
-- [ ] After eprint: CITATION.cff + README + Zenodo related ID  
-
-## Non-claims
-No gates/channels/advantage. No (0,∞) for \(H_1\). Seed restated only.
+- [ ] Final PDF skim  
+- [ ] Start arXiv submit (math.SP primary recommended; or math.FA) → endorsement  
+- [ ] After eprint: Zenodo version DOI from GitHub release ingest; update CITATION.cff  

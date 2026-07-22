@@ -1,5 +1,7 @@
 ﻿\documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,amsthm,hyperref}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks,breaklinks]{hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
 \newtheorem{lemma}{Lemma}
@@ -20,18 +22,18 @@ We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fabl
 \[
 (n_+,n_-)=(\infty,\infty)
 \]
-for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. No gates, channels, computational advantage, or seed discovery claim. Companion code release \textbf{v0.3.5-submit}.
+for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. No gates, channels, computational advantage, or seed discovery claim. Companion code release \textbf{v0.3.6-submit}.
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
-\textbf{Software:} v0.3.5-submit; concept DOI 10.5281/zenodo.21474351.\\
-\textbf{Categories (suggested):} math.FA (primary); math-ph, math.SP (secondary).
+\textbf{Software:} v0.3.6-submit; concept DOI 10.5281/zenodo.21474351 (project-level; version DOI pending Zenodo ingest of this tag).\\
+\textbf{Categories (suggested):} math.SP (primary); math.FA, math-ph (secondary).
 
 \paragraph{Errata (prior releases).}
 v0.2.2 pair \((0,\infty)\) for \(H\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)). This submission is \textbf{\(H=-iX_1\) only}: we do \emph{not} claim exact deficiency pairs for \(H_0,H_2\), nor a theorem-level dual-flow strong CCR no-go (companion notes only).
 
 \section{Introduction}
-On 19--20 July 2026, Levent Alp\"oge announced an explicit polynomial map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting the system Fable~\cite{Alpoge2026,UlamJacobian,SpeyerJC2026}. \textbf{We do not claim discovery of \(F\).} We re-verified the seed identities by CAS and recorded a Lean 4 formalization of those finite algebraic checks~\cite{FredriksenLean}.
+On 19--20 July 2026, Levent Alp\"oge announced an explicit polynomial map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting Fable (and related public discussion of the problem setup)~\cite{Alpoge2026,UlamJacobian,SpeyerJC2026}. \textbf{We do not claim discovery of \(F\).} The finite seed identities are \emph{verified} here by dual CAS and by a companion Lean 4 formalization~\cite{FredriksenLean,FredriksenSoft}; independent community checks of the announcement are already circulating~\cite{SpeyerJC2026}. Our contribution is the dual-lift deficiency analysis (Theorems~D--F), not the Jacobian-conjecture refutation itself.
 
 We ask whether the standard Poisson/CCR lifts of \(F\) select a unique self-adjoint dual transport generator on \(C_c^\infty(\mathbb{R}^3)\). For \(H=-iX_1\) the answer is negative: deficiency indices \((\infty,\infty)\).
 
@@ -270,20 +272,20 @@ Let \(W_+\Subset U_+\) be nonempty, open, and relatively compact. On the selecte
 \[
 \Sigma_+=\bigl\{q:F(q)=(a,\beta(a,c)-\varepsilon_0,c),\;(a,c)\in W_+\bigr\}.
 \]
-Let \(\phi_t\) be the maximal flow of \(X_1\). Because \(X_1 F_1=1\), \(F_1(\phi_t(q))=F_1(q)+t\) on the existence interval. Define
+Let \(\phi_t\) be the maximal flow of \(X_1\). Choose \(\varepsilon_0>0\) small enough that \(\varepsilon_0<\tau_0^2\) for the IFT window of the forward-wall proposition, so that on \(W_+\) the selected large-\(q_0\) branch is a single smooth immersed sheet with nonvanishing reconstruction denominator throughout the open interval \((\beta-\varepsilon_0,\beta)\). Because \(X_1 F_1=1\), \(F_1(\phi_t(q))=F_1(q)+t\) on the existence interval. Define
 \[
 D_+=\bigl\{(a,c,s):(a,c)\in W_+,\;\ell_+(a,c)<s<\beta(a,c)\bigr\},
 \]
-where \((\ell_+,\beta)\) is the maximal open \(s\)-interval of the selected immersed branch. Then
+where \(\beta\) is the wall value (hence the maximal upper \(s\)-time of this sheet) and \(\ell_+\) is the maximal lower \(s\)-time of the immersed branch through \(\Sigma_+\). Then
 \[
 \Psi_+:D_+\to\Omega_+\subset\mathbb{R}^3,
 \qquad
 \Psi_+(a,c,s)=\phi_{s-(\beta-\varepsilon_0)}(q_\Sigma(a,c))
 \]
-is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Psi_+=(a,s,c)\), and \(s\to\beta^-\) occurs at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well. An analogous \(\Psi_-,\Omega_-\) exists for the lower wall.
+is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Psi_+=(a,s,c)\), and \(s\to\beta^-\) occurs at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well. An analogous \(\Psi_-,\Omega_-\) exists for the lower wall (with \(\varepsilon_0\) inside the backward IFT window).
 \end{lemma}
 \begin{proof}
-The maximal-flow domain \(\mathcal{D}\subset\mathbb{R}\times\mathbb{R}^3\) of the smooth vector field \(X_1\) is open and the flow \(\phi\) is \(C^\infty\) on \(\mathcal{D}\)~\cite{LeeSmooth}. The set \(D_+\) is (up to the smooth reparameterization \(s=F_1\)) the pullback of \(\mathcal{D}\) through the cross-section \(\Sigma_+\); openness of \(\mathcal{D}\) therefore yields openness of \(D_+\). Uniqueness of ODE solutions gives injectivity of \(\Psi_+\). Since \(F\circ\Psi_+=(a,s,c)\) identically on \(D_+\) and \(\det DF\neq 0\), \(\Psi_+\) is a local diffeomorphism, hence a \(C^\infty\) diffeomorphism onto its open image \(\Omega_+\). The upper end is the wall of the forward-wall proposition, hence not attained in \(\mathbb{R}^3\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
+The maximal-flow domain \(\mathcal{D}\subset\mathbb{R}\times\mathbb{R}^3\) of the smooth vector field \(X_1\) is open and the flow \(\phi\) is \(C^\infty\) on \(\mathcal{D}\)~\cite{LeeSmooth}. The set \(D_+\) is (up to the smooth reparameterization \(s=F_1\)) the pullback of \(\mathcal{D}\) through the cross-section \(\Sigma_+\); openness of \(\mathcal{D}\) therefore yields openness of \(D_+\). Uniqueness of ODE solutions gives injectivity of \(\Psi_+\). Since \(F\circ\Psi_+=(a,s,c)\) identically on \(D_+\) and \(\det DF\neq 0\), \(\Psi_+\) is a local diffeomorphism, hence a \(C^\infty\) diffeomorphism onto its open image \(\Omega_+\). By the \(\varepsilon_0\)-window choice, the selected branch does not degenerate before the wall, so the maximal upper time equals \(\beta\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
 \end{proof}
 
 \subsection{Deficiency vectors in \(\operatorname{Dom}(H^*)\)}
@@ -313,7 +315,13 @@ since the inner integral equals \(\tfrac12\bigl(1-e^{2(\ell_+-\beta)}\bigr)\le\t
 
 \textit{Adjoint equation.} Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\). On \(\Omega_+\), \(H=-i\partial_s\) in the flow-box chart with density \(\tfrac12\), and \(\operatorname{div} X_1=0\), so the formal adjoint of \(-iX_1\) is again \(-iX_1\). There is no interior jump because \(u_-\) has no artificial \(s\)-cutoff. Off \(\Omega_+\), \(u_-=0\). Lateral boundaries of \(W_+\) contribute nothing because \(\chi|_{\partial W_+}=0\).
 
-For the upper end: \(s\to\beta^-\) occurs at spatial infinity, so \(\varphi\) vanishes in a neighborhood of that end along each orbit it meets. For the lower end: if \(\ell_+\) is finite then maximality forces escape to infinity as \(s\downarrow\ell_+\), and again \(\varphi\) vanishes near that end; if \(\ell_+=-\infty\), the factor \(e^{s-\beta}\) decays exponentially as \(s\to-\infty\), so both the integrated boundary term at \(-\infty\) and the \(L^2\) tail vanish (no appeal to a compact lower \(s\)-cut is needed). Integrating by parts in \(s\) for almost every \((a,c)\) (Fubini) therefore yields
+For the upper end: \(s\to\beta^-\) occurs at spatial infinity, so \(\varphi\) vanishes in a neighborhood of that end along each orbit it meets. For the lower end: if \(\ell_+\) is finite then maximality forces escape to infinity as \(s\downarrow\ell_+\), and again \(\varphi\) vanishes near that end; if \(\ell_+=-\infty\), the factor \(e^{s-\beta}\) decays exponentially as \(s\to-\infty\), so both the integrated boundary term at \(-\infty\) and the \(L^2\) tail vanish (no appeal to a compact lower \(s\)-cut is needed). The Fubini/IBP interchange is justified by the integrable dominant
+\[
+\bigl|\chi(a,c)\,e^{s-\beta(a,c)}\,\varphi(\Psi_+(a,c,s))\bigr|
+\le
+\|\varphi\|_\infty\,|\chi(a,c)|\,e^{s-\beta(a,c)}
+\]
+on \(D_+\) (and \(0\) off \(\Omega_+\)), which is in \(L^1(D_+,\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c)\) by the same bound used for \(\|u_-\|_2\). Integrating by parts in \(s\) for almost every \((a,c)\) therefore yields
 \[
 \langle u_-,H\varphi\rangle=\langle -iu_-,\varphi\rangle,
 \]
@@ -382,9 +390,13 @@ D.~Speyer, \emph{The new counterexample to the Jacobian conjecture}, Secret Blog
 \url{https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/}.
 
 \bibitem{FredriksenSoft}
-D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates, GitHub \texttt{Quantyra/jacobian-weyl-quantum-phase-space}, release \texttt{v0.3.5-submit}, concept DOI 10.5281/zenodo.21474351.
+D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates, GitHub \texttt{Quantyra/jacobian-weyl-quantum-phase-space}, release \texttt{v0.3.6-submit},
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit};
+concept DOI 10.5281/zenodo.21474351 (project-level).
 
 \bibitem{FredriksenLean}
-D.~E.~Fredriksen, \texttt{exotic-ccr-lean}, GitHub \texttt{Quantyra/exotic-ccr-lean} (Lean 4 formalization of the seed identities and dual-matrix algebra for this companion).
+D.~E.~Fredriksen, \texttt{exotic-ccr-lean}, GitHub \texttt{Quantyra/exotic-ccr-lean}, tag \texttt{v0.1.1-collision},
+\url{https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.1-collision}
+(Lean 4 formalization of the seed identities and dual-matrix algebra).
 \end{thebibliography}
 \end{document}

@@ -1,31 +1,28 @@
 ﻿# arXiv endorsement request (email body)
 
-**Subject:** arXiv endorsement request — math.FA — dual transport deficiency / Keller lift
+**Subject:** arXiv endorsement request — math.SP / math.FA — dual transport deficiency
 
 ---
 
 Dear [Name],
 
-I am requesting arXiv endorsement for a short math.FA (secondaries math-ph, math.SP) note:
+I request arXiv endorsement for:
 
 **Title:** Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator  
 
-**Author:** Daniel Eric Fredriksen (Quantyra Inc.)
+**Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
+**Categories:** math.SP (primary preferred) or math.FA; secondary math-ph  
 
-**One-sentence claim:** For the Alpöge–Fable Keller seed (restated, not discovered here), the dual-field operator \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\); the Poisson/Weyl lifts do not, by themselves, select a unique self-adjoint extension of that minimal operator.
+**Claim:** For the Alpöge–Fable Keller seed (restated), \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\); algebraic Poisson/Weyl data alone do not select a unique self-adjoint extension of that minimal operator.
 
-**Explicitly not claimed:** unitary gates, channels, computational advantage, seed discovery, exact pairs for \(H_0/H_2\), or dual-flow strong CCR theorems.
+**Not claimed:** gates/channels/advantage; seed discovery; H0/H2 pairs; dual-flow CCR theorems.
 
-**PDF / code:**  
-- PDF: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.5-submit/docs/notes/A001-arxiv.pdf  
-- Release: https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit  
-- Concept DOI: https://doi.org/10.5281/zenodo.21474351  
+**PDF:** https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.6-submit/docs/notes/A001-arxiv.pdf  
+**Tag:** https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit  
+**Concept DOI:** https://doi.org/10.5281/zenodo.21474351  
 
-**Endorsement code:** [PASTE CODE FROM arXiv SUBMIT UI]  
-**Endorser form:** https://arxiv.org/auth/endorse  
+**Endorsement code:** [PASTE FROM arXiv UI]  
+**Form:** https://arxiv.org/auth/endorse  
 
-Thank you for considering this.
-
-Best regards,  
+Thank you,  
 Daniel Eric Fredriksen  
-Quantyra Inc.
