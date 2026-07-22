@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+﻿\documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsthm,geometry,url}
 \geometry{margin=1in}
 \usepackage[hidelinks,breaklinks]{hyperref}
@@ -22,17 +22,19 @@ We isolate a structural lemma for dual vector fields of local diffeomorphisms
 are all complete, then \(F\) is surjective. Hence any non-surjective dual system
 has at least one incomplete dual field. We propose a classification schema
 (B-incomplete / B-ESS / B-Def / B-CCR / B-CP) and populate it on atlas rows
-A000--A008 (pass and fail baselines, Keller seed A001, family pilot A002, and
-a genuinely 2D pair A007/A008 illustrating that the forced incomplete set can
-be as thin as measure zero, contrasting the open-set failures of A001/A006).
-No gates, channels, or computational advantage are claimed. Companion pack:
+A000--A010 (pass and fail baselines, Keller seed A001, family pilot A002,
+a smooth 2D pair A007/A008 illustrating that the forced incomplete set can
+be as thin as measure zero, and a polynomial 2D pair A009/A010: Pinchuk's
+real-plane map with \emph{open-set} incompleteness, and a polynomial shear
+automorphism with complete dual fields). No gates, channels, or computational
+advantage are claimed. Companion pack:
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.3.\\
+\textbf{Version:} B001 draft v0.4.\\
 \textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
-\texttt{cas\_atlas\_A007\_A008\_B001.json}.
+\texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json}.
 
 \section{Introduction}
 Cotangent lifts and dual fields are standard when \(\det DF\neq 0\). After the
@@ -59,7 +61,7 @@ Non-surjective dual systems have some incomplete \(X_j\).
 B-incomplete / B-ESS / B-Def / B-CCR / B-CP with values
 \texttt{open} / \texttt{fail} / \texttt{pass}.
 
-\section{Atlas scoreboard (v0.3)}
+\section{Atlas scoreboard (v0.4)}
 \begin{center}
 \begin{tabular}{llll}
 \hline
@@ -68,10 +70,12 @@ ID & Map (sketch) & B-inc. & Role \\
 A000 & \(\mathrm{id}\) & pass & baseline \\
 A004 & shear \((x,y+x,z)\) & pass & linear auto \\
 A005 & \(\mathrm{diag}(2,\tfrac12,1)\) & pass & linear stretch (CAS) \\
-A008 & \((x,y+\sin x,z)\) & pass & 2D nonlinear global diffeo (CAS) \\
+A008 & \((x,y+\sin x,z)\) & pass & 2D smooth global diffeo (CAS) \\
+A010 & \((x,y+x^2,z)\) & pass & 2D \emph{polynomial} auto (CAS) \\
 A003 & \((x,e^y)\) pad & fail & smooth B1 example \\
 A006 & \((e^x,e^y,z)\) & fail & two incomplete fields, open set (CAS) \\
 A007 & \(z\mapsto e^z\) pad & fail & incomplete on \emph{null set only} (CAS) \\
+A009 & Pinchuk \((P,Q)\) pad & fail & poly, incomplete on \emph{open set} (CAS) \\
 A001 & Keller seed & fail & \(X_1\) + \(H_1\) analytic~\cite{A001} \\
 A002 & family d4 pilot & open & geometry pending \\
 \hline
@@ -115,14 +119,52 @@ A genuinely nonlinear, non-triangular-affine 2D coupling (unlike A004/A005)
 that nonetheless has no incompleteness at all.
 \end{example}
 
+\section{Examples (new in v0.4): polynomial 2D evidence}
+\begin{example}[A009 --- Pinchuk real plane map, open fail-like]
+\label{ex:A009}
+Let \(t=xy-1\), \(h=t(xt+1)\), \(f=(xt+1)^2(t^2+y)\), and
+\[
+P=f+h,\qquad
+Q=-t^2-6th(h+1)-u(f,h),
+\]
+with the Campbell/van~den~Essen auxiliary
+\(u=170fh+91h^2+195fh^2+69h^3+75fh^3+\tfrac{75}{4}h^4\)
+(Pinchuk~\cite{Pin94}, Campbell~\cite{Cam10}). Then
+\(F=(P,Q):\mathbb{R}^2\to\mathbb{R}^2\) (padded by idle \(z\)) is polynomial of
+degrees \((10,25)\), with
+\[
+\det DF=t^2+\bigl(t+f(13+15h)\bigr)^2+f^2>0
+\]
+everywhere (sum of squares; \(t=f=0\) is impossible over \(\mathbb{R}\)).
+It is not injective (CAS-certified collisions) and not surjective (misses
+exactly two points~\cite{Cam10}). The dual field
+\(X_1=H(P)/j=(-P_y,P_x)/j\) satisfies \(DF\cdot X_1=e_1\) and \(\dot Q=1\).
+On every level \(P=c\) with \(c>-1\), the real level curve has poles
+\(h=-1\pm\sqrt{1+c}\) at which \((x,y)\to\infty\) while \(Q\) approaches a
+finite asymptotic value: escape in finite \(X_1\)-time. Hence the
+incompleteness locus of \(X_1\) contains the open set \(\{P>-1\}\).
+\textbf{Open-set incompleteness for a genuinely polynomial 2D Keller-type map},
+contrasting A007's thin failure. CAS:
+\texttt{cas\_atlas\_A009\_A010\_B001.json}.
+\end{example}
+
+\begin{example}[A010 --- polynomial shear automorphism, pass-like]
+\(F(x,y,z)=(x,\,y+x^2,\,z)\), \(\det DF=1\), inverse \((x,y-x^2,z)\).
+Dual fields \(X_0=\partial_x-2x\,\partial_y\), \(X_1=\partial_y\); the \(X_0\)
+flow \(y(t)=y_0-2x_0 t-t^2\) is polynomial in \(t\): \textbf{complete}.
+A polynomial pass baseline paralleling A008.
+\end{example}
+
 \section{Toward a dichotomy (open)}
 A007 shows the incomplete locus forced by Lemma~\ref{lem:B1} can be as thin
 as measure zero for general smooth local diffeomorphisms. A007 is
-\emph{not} polynomial, so it does not settle whether \textbf{polynomial}
-Keller maps specifically always force an \emph{open} incomplete set (as in
-A001/A006) or could also exhibit thin failure. We record this as an open
-classification question (see \texttt{PROGRAM-B-B4-2D-dichotomy.md}) rather
-than claim a theorem.
+\emph{not} polynomial. A009 (Pinchuk) supplies the first atlas polynomial
+2D non-injective example with \emph{open-set} incompleteness, consistent with
+A001's open failures in dimension~3 and with A010 as a polynomial complete
+baseline. We record the candidate claim --- polynomial Keller-type maps never
+exhibit A007-style thin incompleteness --- as an open classification
+question supported by A009, not as a theorem (see
+\texttt{PROGRAM-B-B4-2D-dichotomy.md}).
 
 \section{Prior examples (v0.1--v0.2)}
 A000 identity; A003 half-plane; A001 Keller seed with \(X_1\) incomplete and
@@ -132,9 +174,12 @@ A002 open; A004 shear pass.
 
 \section{Non-claims}
 No gates, channels, advantage. No dual-flow repair. A003/A005/A006/A007/A008
-are not Jacobian counterexamples (A007/A008 are not even polynomial). T4: no
-dual \(F\)-translation package claimed here. No theorem is claimed for the
-polynomial-only dichotomy question (\S7, open). C Free-Strict-Abstract-Joint
+are not Jacobian counterexamples (A007/A008 are not even polynomial). A009 is
+a classical strong-real-JC counterexample (\(\det>0\), not injective) but not a
+complex Jacobian conjecture counterexample (\(\det\) not constant; JC\((2)\) over
+\(\mathbb{C}\) remains open). A010 is an automorphism. T4: no dual \(F\)-translation
+package claimed here. No theorem is claimed for the polynomial-only dichotomy
+question (\S8, open; A009 is supporting evidence only). C Free-Strict-Abstract-Joint
 remains open~\cite{C001} (position sector now constructed via Koopman
 pullback).
 
@@ -147,5 +192,11 @@ D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, v0.3.6-submit / concept DOI
 D.~E.~Fredriksen, CP readings of an exotic Weyl endomorphism\ldots,
 C001 companion v0.4 (Koopman position construct),
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
+\bibitem{Pin94}
+S.~Pinchuk, A counterexample to the strong real Jacobian conjecture,
+Math.~Z.~217 (1994), 1--4.
+\bibitem{Cam10}
+L.~A.~Campbell, The asymptotic variety of a Pinchuk map as a polynomial curve,
+Appl.~Math.~Lett.~24 (2011), 62--65; arXiv:1001.3318.
 \end{thebibliography}
 \end{document}

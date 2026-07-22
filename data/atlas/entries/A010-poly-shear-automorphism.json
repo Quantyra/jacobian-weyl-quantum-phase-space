@@ -1,0 +1,59 @@
+﻿{
+  "atlas_id": "A010-poly-shear-automorphism",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "automorphism_poly_inverse",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_poly_shear_x2_padded",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "x0",
+      "F1": "x1 + x0^2",
+      "F2": "x2"
+    },
+    "construction": "Polynomial shear automorphism F(x,y,z)=(x, y+x^2, z) of R^3 (genuinely 2D nontrivial polynomial coupling padded by idle z). det DF=1 (Keller). Explicit polynomial inverse (x, y-x^2, z). Dual fields X0=dx-2x dy, X1=dy are complete: X0 flow x(t)=x0+t, y(t)=y0-2*x0*t-t^2 is polynomial in t (global for all real t). Pass-like polynomial baseline contrasting A009's open-set incompleteness and paralleling A008's smooth shear+sine pass, but here fully polynomial.",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "1",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["0", "0", "0"],
+    "inputs": [["0", "0", "0"]],
+    "status": "injective_automorphism"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "B=[[1,-2x],[0,1]] (triangular polynomial)",
+    "weyl_formula": "Q=F(q), P=Bp",
+    "star_domain_status": "X0,X1 complete; ESS standard on R^3 expected"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B4-2D-dichotomy.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A009_A010_B001.json"],
+    "literature": []
+  },
+  "composition_notes": "B001 v0.4 polynomial pass baseline for dichotomy scoreboard (complete dual fields; surjective Keller automorphism).",
+  "non_claims": [
+    "Not a Jacobian counterexample (is an automorphism)",
+    "No gates/channels/advantage",
+    "No dual-F unitary package (T4 N/A, pass-like)"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "pass",
+    "b_ess": "pass",
+    "b_def": "(0,0) expected",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B4-2D-dichotomy.md",
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A009_A010_B001.json",
+      "polynomial inverse roundtrip; X0 flow polynomial complete"
+    ]
+  }
+}

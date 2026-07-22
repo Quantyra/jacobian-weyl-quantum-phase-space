@@ -1,0 +1,431 @@
+{
+  "program": "B001-v0.4",
+  "A009": {
+    "atlas_id": "A009-pinchuk-real-plane",
+    "map": "Pinchuk (Campbell form): t=xy-1, h=t(xt+1), f=(xt+1)^2(t^2+y), P=f+h, Q=-t^2-6th(h+1)-u(f,h)",
+    "degrees": {
+      "P": 10,
+      "Q": 25
+    },
+    "det_formula": "t^2 + (t + f*(13+15*h))^2 + f^2",
+    "det_symbolic_identity": true,
+    "det_check_max_err": 4.411049303598702e-11,
+    "det_matches_exact_partials": true,
+    "det_min_on_grid": 0.1693486802252178,
+    "det_positive_on_grid": true,
+    "det_never_zero_sum_of_squares": true,
+    "det_samples": [
+      {
+        "xy": [
+          0.0,
+          0.0
+        ],
+        "P": 0.0,
+        "Q": 26.25,
+        "j_formula": 11.0,
+        "det_exact_partials": 11.000000000000002,
+        "err": 1.7763568394002505e-15
+      },
+      {
+        "xy": [
+          0.1,
+          0.1
+        ],
+        "P": -0.015163739899999973,
+        "Q": 18.130702972264874,
+        "j_formula": 3.4994185499642843,
+        "det_exact_partials": 3.4994185499642785,
+        "err": 2.220446049250313e-15
+      },
+      {
+        "xy": [
+          0.2,
+          -0.2
+        ],
+        "P": -0.2706840575999999,
+        "Q": 1.937691445354164,
+        "j_formula": 1.8544786392011956,
+        "det_exact_partials": 1.8544786392011956,
+        "err": 3.774758283725532e-15
+      },
+      {
+        "xy": [
+          -0.15,
+          0.25
+        ],
+        "P": 0.5724136773071293,
+        "Q": 80.44897006409407,
+        "j_formula": 101.56721676378817,
+        "det_exact_partials": 101.567216763788,
+        "err": 4.263256414560601e-14
+      },
+      {
+        "xy": [
+          0.5,
+          -1.0
+        ],
+        "P": -0.296875,
+        "Q": -10.385284423828125,
+        "j_formula": 3.1095619201660156,
+        "det_exact_partials": 3.1095619201660147,
+        "err": 8.881784197001252e-16
+      },
+      {
+        "xy": [
+          1.0,
+          1.0
+        ],
+        "P": 1.0,
+        "Q": -0.0,
+        "j_formula": 170.0,
+        "det_exact_partials": 170.00000000000006,
+        "err": 5.684341886080802e-14
+      },
+      {
+        "xy": [
+          -0.7,
+          0.4
+        ],
+        "P": 4.9007929344,
+        "Q": 2912.0483516018835,
+        "j_formula": 29905.149979372698,
+        "det_exact_partials": 29905.1499793727,
+        "err": 2.546585164964199e-11
+      },
+      {
+        "xy": [
+          1.2,
+          -0.5
+        ],
+        "P": 3.2155839999999998,
+        "Q": -1978.5086214406144,
+        "j_formula": 3553.5805803240255,
+        "det_exact_partials": 3553.580580324074,
+        "err": 4.411049303598702e-11
+      }
+    ],
+    "dual_fields_DF_Xj_ej_max_err": 5.825209497812027e-14,
+    "dual_fields_ok": true,
+    "missing_points": [
+      [
+        -1.0,
+        -40.75
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "min_dist_to_missing_on_grid": [
+      0.10808953530897115,
+      0.025064922989005423
+    ],
+    "missing_points_not_hit_on_grid": true,
+    "collision_checks": [
+      {
+        "p1": [
+          0.0,
+          0.0
+        ],
+        "p2": [
+          -0.5262125000719114,
+          -4.04287779263451
+        ],
+        "F1": [
+          0.0,
+          26.25
+        ],
+        "F2": [
+          -9.43689570931383e-16,
+          26.24999999999926
+        ],
+        "dF": 7.399081347614356e-13,
+        "dX": 4.569090292706421,
+        "ok": true
+      },
+      {
+        "p1": [
+          1.0,
+          0.0
+        ],
+        "p2": [
+          -1.0,
+          -2.0
+        ],
+        "F1": [
+          0.0,
+          -1.0
+        ],
+        "F2": [
+          0.0,
+          -1.0
+        ],
+        "dF": 0.0,
+        "dX": 4.0,
+        "ok": true
+      },
+      {
+        "p1": [
+          0.3,
+          0.3
+        ],
+        "p2": [
+          -1.1778930200345479,
+          -1.195573344999586
+        ],
+        "F1": [
+          -0.06533643509999998,
+          7.074582655618414
+        ],
+        "F2": [
+          -0.06533643510000031,
+          7.074582655618429
+        ],
+        "dF": 1.5432100042289676e-14,
+        "dX": 2.9734663650341338,
+        "ok": true
+      }
+    ],
+    "non_injective": true,
+    "literature": [
+      "S. Pinchuk, Math. Z. 217 (1994), 1-4",
+      "L.A. Campbell, arXiv:1001.3318 (asymptotic variety; u-polynomial)",
+      "L.A. Campbell, arXiv:math/9812032"
+    ],
+    "incompleteness": {
+      "type": "open_set",
+      "dual_field": "X1 = H(P)/j = (-P_y, P_x)/j  (satisfies DF\u00b7X1 = e1, dQ/dt=1)",
+      "mechanism": "On each level P=c with c>-1 the real level curve admits poles h=-1\u00b1sqrt(1+c) at which (x,y)->infinity while Q approaches a finite asymptotic value Q_asymp. Since dQ/dt=1 along X1, the escape occurs in finite X1-time |Q - Q_asymp|. Hence every point of the open set {P>-1} lies on an X1-incomplete orbit (at least in one time direction).",
+      "open_set": "{(x,y) in R^2 : P(x,y) > -1}",
+      "fraction_P_gt_minus1_gaussian_samples": 0.8904,
+      "level_set_pole_approach_c2": [
+        {
+          "dh": 0.1,
+          "h": 0.6320508075688772,
+          "norm": 19.727286197758627,
+          "P": 1.999999999999997,
+          "Q": -334.33460565261214,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 69.31874229470884,
+          "j": 957.198438416552
+        },
+        {
+          "dh": 0.01,
+          "h": 0.7220508075688772,
+          "norm": 1844.545315179937,
+          "P": 1.9999999999999574,
+          "Q": -396.63795812998654,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 7.015389817334437,
+          "j": 930.2993769015603
+        },
+        {
+          "dh": 0.001,
+          "h": 0.7310508075688772,
+          "norm": 183157.0241875802,
+          "P": 1.9999999999996105,
+          "Q": -402.95122010259666,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 0.7021278447243162,
+          "j": 926.5808532605147
+        },
+        {
+          "dh": 0.0001,
+          "h": 0.7319508075688772,
+          "norm": 18302713.549607005,
+          "P": 1.999999999994845,
+          "Q": -403.5831295317413,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 0.07021841557968855,
+          "j": 926.1987006543604
+        },
+        {
+          "dh": 1e-05,
+          "h": 0.7320408075688772,
+          "norm": 1830141452.6429434,
+          "P": 2.000000000018314,
+          "Q": -403.64632605850136,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 0.007021888819622291,
+          "j": 926.1603824340563
+        },
+        {
+          "dh": 1e-06,
+          "h": 0.7320498075688772,
+          "norm": 183012846183.04245,
+          "P": 1.999999999470553,
+          "Q": -403.652645510586,
+          "Q_asymp": -403.653347947321,
+          "delta_Q": 0.0007024367349686145,
+          "j": 926.1565488267922
+        }
+      ],
+      "family_of_levels": [
+        {
+          "c": -0.5,
+          "h_pole": -0.2928932188134524,
+          "Q_asymp": -13.316332842599833,
+          "approach": [
+            {
+              "dh": 0.01,
+              "norm": 696.8423660472008,
+              "delta_Q": -0.1283427759682354,
+              "P": -0.5000000000000011
+            },
+            {
+              "dh": 0.0001,
+              "norm": 7318794.899839645,
+              "delta_Q": -0.0013730084628296169,
+              "P": -0.5000000000010708
+            },
+            {
+              "dh": 1e-06,
+              "norm": 73222951161.17154,
+              "delta_Q": -1.37373123312301e-05,
+              "P": -0.4999999999621717
+            }
+          ]
+        },
+        {
+          "c": 0.5,
+          "h_pole": 0.22474487139158894,
+          "Q_asymp": -18.84367580335078,
+          "approach": [
+            {
+              "dh": 0.01,
+              "norm": 582.2648087028097,
+              "delta_Q": 0.7424670787399315,
+              "P": 0.5000000000000132
+            },
+            {
+              "dh": 0.0001,
+              "norm": 5620663.016862682,
+              "delta_Q": 0.007324101113468373,
+              "P": 0.5000000000015548
+            },
+            {
+              "dh": 1e-06,
+              "norm": 56186421959.583145,
+              "delta_Q": 7.322400051634759e-05,
+              "P": 0.5000000000824605
+            }
+          ]
+        },
+        {
+          "c": 1.0,
+          "h_pole": 0.41421356237309515,
+          "Q_asymp": -84.5085848021566,
+          "approach": [
+            {
+              "dh": 0.01,
+              "norm": 1053.1983167305102,
+              "delta_Q": 2.1241184873873777,
+              "P": 1.0000000000000067
+            },
+            {
+              "dh": 0.0001,
+              "norm": 10357106.813355498,
+              "delta_Q": 0.021171763849110903,
+              "P": 0.9999999999991129
+            },
+            {
+              "dh": 1e-06,
+              "norm": 103553567395.595,
+              "delta_Q": 0.0002116435754402346,
+              "P": 1.0000000003581933
+            }
+          ]
+        },
+        {
+          "c": 2.0,
+          "h_pole": 0.7320508075688772,
+          "Q_asymp": -403.653347947321,
+          "approach": [
+            {
+              "dh": 0.01,
+              "norm": 1844.545315179937,
+              "delta_Q": 7.015389817334437,
+              "P": 1.9999999999999574
+            },
+            {
+              "dh": 0.0001,
+              "norm": 18302713.549607005,
+              "delta_Q": 0.07021841557968855,
+              "P": 1.999999999994845
+            },
+            {
+              "dh": 1e-06,
+              "norm": 183012846183.04245,
+              "delta_Q": 0.0007024367349686145,
+              "P": 1.999999999470553
+            }
+          ]
+        },
+        {
+          "c": 5.0,
+          "h_pole": 1.4494897427831779,
+          "Q_asymp": -3545.1263511215734,
+          "approach": [
+            {
+              "dh": 0.01,
+              "norm": 3633.9153608378188,
+              "delta_Q": 40.60331067429934,
+              "P": 4.999999999999879
+            },
+            {
+              "dh": 0.0001,
+              "norm": 36238264.175040185,
+              "delta_Q": 0.40697604019078426,
+              "P": 5.000000000019998
+            },
+            {
+              "dh": 1e-06,
+              "norm": 362372537629.5024,
+              "delta_Q": 0.004069394458383613,
+              "P": 5.000000000267017
+            }
+          ]
+        }
+      ],
+      "pole_escape_norms_increase": true,
+      "delta_Q_shrinks_to_zero": true,
+      "incompleteness_is_null_set_only": false,
+      "incompleteness_is_open": true
+    },
+    "b_incomplete": "fail",
+    "dichotomy_role": "polynomial Keller-type (det>0, deg>1, non-injective) with OPEN incompleteness \u2014 supports (does not prove) the polynomial=>open-only dichotomy vs A007 thin smooth example",
+    "pass": true
+  },
+  "A010": {
+    "atlas_id": "A010-poly-shear-automorphism",
+    "map": "F(x,y)=(x, y+x^2)",
+    "det_num": 1.0000000000575113,
+    "det_is_1": true,
+    "roundtrip_max_err": 3.3306690738754696e-16,
+    "global_diffeomorphism_poly_inverse": true,
+    "X0_flow": "x=x0+t, y=y0-2*x0*t-t^2 (polynomial, complete)",
+    "X0_poly_complete_over_wide_t": true,
+    "max_abs_y_on_sample": 1000601.7,
+    "b_incomplete": "pass",
+    "dichotomy_role": "polynomial Keller automorphism baseline (complete dual fields; B1 silent / surjective)",
+    "pass": true
+  },
+  "pass": true,
+  "dichotomy_evidence": {
+    "conjecture": "For polynomial Keller-type maps (det DF nowhere zero, deg>1), incompleteness of dual fields \u2014 when it occurs \u2014 is open-set, never merely thin/measure-zero. Thin incompleteness (A007) requires non-polynomial smooth maps.",
+    "A009_supports": true,
+    "A009_type": "open_set_incompleteness",
+    "A010_type": "complete_everywhere",
+    "A007_contrast": "thin/null-set incompleteness, non-polynomial",
+    "not_a_general_theorem": true,
+    "note": "A009 (Pinchuk) is genuine 2D polynomial evidence supporting the open-only side; one family of examples does not prove the universal claim."
+  },
+  "non_claims": [
+    "No gates/channels/advantage",
+    "No general polynomial-Keller dichotomy theorem claimed",
+    "Pinchuk is classical (1994), not novel",
+    "A009 has det DF > 0 but not constant (strong real JC counterexample; complex JC still open in dim 2)",
+    "No dual-F unitary package (T4)",
+    "No full deficiency-index computation for A009"
+  ]
+}

@@ -1,4 +1,4 @@
-{
+﻿{
   "program": "EXOTIC-CCR",
   "gate": "G1-bootstrap",
   "schema": "data/atlas/schema.json",
@@ -63,12 +63,22 @@
       "atlas_id": "A008-shear-sine-global-diffeo",
       "path": "data/atlas/entries/A008-shear-sine-global-diffeo.json",
       "status": "active"
+    },
+    {
+      "atlas_id": "A009-pinchuk-real-plane",
+      "path": "data/atlas/entries/A009-pinchuk-real-plane.json",
+      "status": "active"
+    },
+    {
+      "atlas_id": "A010-poly-shear-automorphism",
+      "path": "data/atlas/entries/A010-poly-shear-automorphism.json",
+      "status": "active"
     }
   ],
   "counts": {
-    "active": 8,
+    "active": 10,
     "draft": 1,
-    "entries": 9
+    "entries": 11
   },
   "non_claims": [
     "Atlas bootstrap registers existing G0 certificates only",

@@ -1,0 +1,71 @@
+﻿{
+  "atlas_id": "A009-pinchuk-real-plane",
+  "version": "0.1.0",
+  "mu_generic_degree": 25,
+  "mu_evidence": "literature_fiber_cardinality_two_generic",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_Pinchuk_Campbell_padded",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "t": "x0*x1 - 1",
+      "h": "t*(x0*t + 1)",
+      "f": "(x0*t + 1)^2 * (t^2 + x1)",
+      "F0": "P = f + h  (deg 10)",
+      "F1": "Q = -t^2 - 6*t*h*(h+1) - u(f,h)  (deg 25)",
+      "u": "170*f*h + 91*h^2 + 195*f*h^2 + 69*h^3 + 75*f*h^3 + (75/4)*h^4",
+      "F2": "x2"
+    },
+    "construction": "Pinchuk 1994 real-plane counterexample to the strong real Jacobian conjecture, in the Campbell/van den Essen explicit form (arXiv:1001.3318): polynomial F=(P,Q):R^2->R^2 of degrees (10,25), padded by idle z. det DF = t^2+(t+f(13+15h))^2+f^2 > 0 everywhere (sum of squares; t=f=0 impossible over R). Not injective (explicit collisions certified by CAS). Not surjective (misses exactly two points: (0,0) and (-1,-163/4) per Campbell). Dual field X1 = H(P)/j = (-P_y, P_x)/j satisfies DF·X1=e1 and dQ/dt=1. On every level P=c with c>-1 the real level curve has poles h=-1±sqrt(1+c) at which (x,y)->infinity while Q approaches a finite asymptotic value: X1 incomplete in finite time. The incompleteness locus therefore contains the open set {P>-1} (positive measure) — OPEN-SET incompleteness for a genuinely polynomial 2D Keller-type map, contrasting A007's thin/null-set incompleteness (non-polynomial).",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "t^2 + (t + f*(13+15*h))^2 + f^2  (not constant; nowhere zero / certified sum-of-squares)",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["0", "26.25", "0"],
+    "inputs": [["0", "0", "0"], ["-0.5262125000719114", "-4.04287779263451", "0"]],
+    "status": "certified_cas"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "B = J^{-T}; J polynomial, det nowhere zero so B rational/smooth",
+    "weyl_formula": "Q=F(q), P=Bp (not developed for A009)",
+    "star_domain_status": "X1 incomplete on open set {P>-1}; X0 incomplete at least on level sets through missing values (thin forced set) and possibly more; ESS/deficiency not computed"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B4-2D-dichotomy.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A009_A010_B001.json"],
+    "literature": [
+      "S. Pinchuk, A counterexample to the strong real Jacobian conjecture, Math. Z. 217 (1994), 1-4",
+      "L.A. Campbell, The asymptotic variety of a Pinchuk map as a polynomial curve, arXiv:1001.3318",
+      "L.A. Campbell, Picturing Pinchuk's plane polynomial pair, arXiv:math/9812032",
+      "A. van den Essen, Polynomial automorphisms and the Jacobian conjecture, PM 190, Birkhauser, 2000"
+    ]
+  },
+  "composition_notes": "B001 v0.4 dichotomy evidence: first genuinely 2D polynomial non-injective Keller-type atlas row with OPEN incompleteness locus. Supports (does not prove) polynomial=>open-only dichotomy vs A007 thin smooth failure. det>0 not constant: counterexample to strong real JC, not to complex JC(2).",
+  "non_claims": [
+    "Not a complex Jacobian conjecture counterexample (real plane; det not constant)",
+    "Not novel mathematics (classical Pinchuk 1994)",
+    "No general polynomial-Keller dichotomy theorem (single example is evidence)",
+    "No gates/channels/advantage",
+    "No dual-F unitary package (T4)",
+    "No full deficiency-index computation"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "fail",
+    "b_ess": "open",
+    "b_def": "open (open-set incompleteness; indices not computed)",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B4-2D-dichotomy.md",
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A009_A010_B001.json",
+      "det DF = sum of squares > 0; collisions CAS-certified; X1 incomplete on open set {P>-1} via level-set pole / finite Delta-Q argument (Campbell asymptotic variety)"
+    ]
+  }
+}
