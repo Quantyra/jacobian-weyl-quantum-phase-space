@@ -1,7 +1,9 @@
-﻿# B001 draft v0.1.1
+﻿# B001 draft v0.2
 
 **Date:** 2026-07-21  
 **PDF:** docs/notes/B001-classification-arxiv.pdf  
-**Status:** draft v0.1 + atlas A004 shear baseline  
+**Status:** draft v0.2 — atlas A005 (pass) + A006 (fail) + CAS  
+**Tag:** v0.2.0-b001-draft  
 **Pack:** docs/notes/COMPANION-PACK.md  
-**Tag:** v0.1.0-b001-draft
+**A001:** parked on arXiv endorsement (DOI still cites)  
+**C Abstract:** left OPEN  

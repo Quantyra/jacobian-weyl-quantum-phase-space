@@ -1,0 +1,58 @@
+{
+  "atlas_id": "A005-linear-stretch",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_diag_stretch",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "2*x0",
+      "F1": "x1/2",
+      "F2": "x2"
+    },
+    "construction": "Linear automorphism F=diag(2,1/2,1), det=1. Dual fields X=B partial with B=J^{-T}=diag(1/2,2,1), all complete. B001 v0.2 pass-like row.",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "1",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["0", "0", "0"],
+    "inputs": [["0", "0", "0"]],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "linear cotangent",
+    "weyl_formula": "linear Bogoliubov",
+    "star_domain_status": "ESS standard"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/notes/B001-DRAFT-v0.1.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A005_A006_B001.json"],
+    "literature": []
+  },
+  "composition_notes": "Pass-like baseline for program_b; contrasts A001/A003/A006.",
+  "non_claims": [
+    "Not exotic Keller",
+    "No gates/channels/advantage",
+    "T4 N/A (no dual-F claim)"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "pass",
+    "b_ess": "pass",
+    "b_def": "(0,0) expected",
+    "b_ccr": "pass",
+    "b_cp": "pass",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A005_A006_B001.json",
+      "linear auto det=1; dual fields constant multiples of partial_j, complete"
+    ]
+  }
+}

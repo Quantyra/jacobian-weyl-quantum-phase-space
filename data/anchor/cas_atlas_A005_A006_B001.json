@@ -1,0 +1,49 @@
+{
+  "program": "B001-v0.2",
+  "A005": {
+    "atlas_id": "A005-linear-stretch",
+    "det_DF": 1.0,
+    "det_is_1": true,
+    "B": [
+      [
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dual_fields": "X0=(1/2)dx, X1=2 dy, X2=dz",
+    "complete_all": true,
+    "b_incomplete": "pass",
+    "pass": true
+  },
+  "A006": {
+    "atlas_id": "A006-exp-quadrant",
+    "det_DF_formula": "exp(x+y)",
+    "det_positive": true,
+    "image": "(0,inf) x (0,inf) x R",
+    "surjective_on_R3": false,
+    "dual_fields": "X0=e^{-x}dx, X1=e^{-y}dy, X2=dz",
+    "X0_backward_escape_x_at_t_m0p99": -4.605170185988091,
+    "X0_incomplete": true,
+    "X1_incomplete": true,
+    "X2_complete": true,
+    "b_incomplete": "fail",
+    "B1_match": true,
+    "pass": true
+  },
+  "pass": true,
+  "non_claims": [
+    "No gates",
+    "A005/A006 not Keller counterexamples"
+  ]
+}

@@ -43,12 +43,22 @@
       "atlas_id": "A004-shear-automorphism",
       "path": "data/atlas/entries/A004-shear-automorphism.json",
       "status": "active"
+    },
+    {
+      "atlas_id": "A005-linear-stretch",
+      "path": "data/atlas/entries/A005-linear-stretch.json",
+      "status": "active"
+    },
+    {
+      "atlas_id": "A006-exp-quadrant",
+      "path": "data/atlas/entries/A006-exp-quadrant.json",
+      "status": "active"
     }
   ],
   "counts": {
     "active": 2,
     "draft": 0,
-    "entries": 5
+    "entries": 7
   },
   "non_claims": [
     "Atlas bootstrap registers existing G0 certificates only",

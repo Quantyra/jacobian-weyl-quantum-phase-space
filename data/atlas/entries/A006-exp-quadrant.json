@@ -1,0 +1,59 @@
+{
+  "atlas_id": "A006-exp-quadrant",
+  "version": "0.1.0",
+  "mu_generic_degree": 1,
+  "mu_evidence": "unknown",
+  "ambient_dimension": 3,
+  "map": {
+    "name": "F_exp_exp_id",
+    "variables": ["x0", "x1", "x2"],
+    "formula_display": {
+      "F0": "exp(x0)",
+      "F1": "exp(x1)",
+      "F2": "x2"
+    },
+    "construction": "F(x,y,z)=(e^x,e^y,z). Local diffeo det=e^{x+y}>0. Image (0,inf)^2 x R not all R^3. Dual fields X0=e^{-x}dx, X1=e^{-y}dy incomplete backward; X2=dz complete. B001 v0.2 fail-like row (B1 match).",
+    "anchor_ref": ""
+  },
+  "jacobian": {
+    "det_constant": "exp(x0+x1)",
+    "det_status": "certified"
+  },
+  "collision": {
+    "retained_seed_triple": false,
+    "target": ["1", "1", "0"],
+    "inputs": [["0", "0", "0"]],
+    "status": "unknown"
+  },
+  "placeholders": {
+    "poisson_lift_Phi": "B=diag(e^{-x},e^{-y},1)",
+    "weyl_formula": "Q=F(q), P=Bp",
+    "star_domain_status": "X0,X1 incomplete"
+  },
+  "evidence_level": "A_algebra_pilot",
+  "certificates": {
+    "dossiers": ["docs/validation/PROGRAM-B-B1-structural-lemma.md"],
+    "cas_reports": ["data/anchor/cas_atlas_A005_A006_B001.json"],
+    "literature": []
+  },
+  "composition_notes": "Fail-like smooth example; not Keller; not A001.",
+  "non_claims": [
+    "Not a Jacobian counterexample",
+    "No full deficiency indices claimed",
+    "No gates/channels/advantage",
+    "No dual-F unitary package (T4)"
+  ],
+  "status": "active",
+  "program_b": {
+    "b_incomplete": "fail",
+    "b_ess": "open",
+    "b_def": "open",
+    "b_ccr": "open",
+    "b_cp": "open",
+    "evidence": [
+      "docs/validation/PROGRAM-B-B1-structural-lemma.md",
+      "data/anchor/cas_atlas_A005_A006_B001.json",
+      "X0: e^x=e^{x0}+t incomplete backward; same X1; non-surjective => B1"
+    ]
+  }
+}

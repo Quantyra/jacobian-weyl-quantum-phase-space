@@ -21,112 +21,88 @@ We isolate a structural lemma for dual vector fields of local diffeomorphisms
 \(F:\mathbb{R}^n\to\mathbb{R}^n\): if global dual fields \(X_j\) with \(DF\cdot X_j=e_j\)
 are all complete, then \(F\) is surjective. Hence any non-surjective dual system
 has at least one incomplete dual field. We propose a classification schema
-(B-incomplete / B-ESS / B-Def / B-CCR / B-CP), populate it on four atlas rows
-(identity baseline; exponential half-plane; A001 Keller seed; A002 family pilot),
-and record how A001 is a maximal analytic failure mode for one dual generator.
-No gates, channels, or computational advantage are claimed. Companion to the
-A001 deficiency note~\cite{A001} and the C001 completion obstructions~\cite{C001}.
+(B-incomplete / B-ESS / B-Def / B-CCR / B-CP) and populate it on atlas rows
+A000--A006 (pass and fail baselines, Keller seed A001, family pilot A002).
+No gates, channels, or computational advantage are claimed. Companion pack:
+\url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/main/docs/notes/COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
-\textbf{Version:} B001 draft v0.1.\\
-\textbf{Software:} EXOTIC-CCR atlas \texttt{program\_b} columns.
+\textbf{Version:} B001 draft v0.2.\\
+\textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json}.
 
 \section{Introduction}
-Cotangent lifts \(\Phi(q,p)=(F(q),J^{-T}p)\) and dual fields \(X_j\) are standard
-when \(\det DF\) is nowhere zero. After the A001 analysis of one dual transport
-operator~\cite{A001}, one asks which maps admit essentially self-adjoint dual
-momenta or standard \(C^*\) packages. This note supplies a structural lemma, a
-schema, and worked examples. It does not repair dual-flow dynamics on \(L^2\).
+Cotangent lifts and dual fields are standard when \(\det DF\neq 0\). After the
+A001 deficiency analysis~\cite{A001}, we classify which maps force incomplete
+dual fields and how that interacts with ESS / CCR / CP packages~\cite{C001}.
+A001 arXiv endorsement may be pending; the concept DOI still cites A001.
 
 \section{Structural lemma}
 \begin{lemma}[Complete dual fields imply surjectivity]
 \label{lem:B1}
-Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be \(C^\infty\) and a local diffeomorphism.
-Suppose \(X_1,\ldots,X_n\) are \(C^\infty\) dual fields, \(DF\cdot X_j=e_j\).
-If every \(X_j\) is complete, then \(F(\mathbb{R}^n)=\mathbb{R}^n\).
+Let \(F:\mathbb{R}^n\to\mathbb{R}^n\) be \(C^\infty\) and a local diffeomorphism
+with dual fields \(X_j\), \(DF\cdot X_j=e_j\). If every \(X_j\) is complete, then
+\(F(\mathbb{R}^n)=\mathbb{R}^n\).
 \end{lemma}
 \begin{proof}
-Along the global flow \(\phi_t^{(j)}\) of \(X_j\),
-\(F(\phi_t^{(j)}(q))=F(q)+te_j\). Iterating shows
-\(F(\mathbb{R}^n)+\mathbb{R}^n\subset F(\mathbb{R}^n)\). Local diffeomorphism
-makes the image open; translation invariance forces surjectivity.
+\(F(\phi_t^{(j)}(q))=F(q)+te_j\); iterate; image open and translation-invariant.
 \end{proof}
-
 \begin{corollary}
-If dual fields exist and \(F(\mathbb{R}^n)\neq\mathbb{R}^n\), then some \(X_j\) is incomplete.
+Non-surjective dual systems have some incomplete \(X_j\).
 \end{corollary}
 
-\section{Classification schema}
+\section{Schema}
+B-incomplete / B-ESS / B-Def / B-CCR / B-CP with values
+\texttt{open}|(\texttt{fail}|(\texttt{pass}.
+
+\section{Atlas scoreboard (v0.2)}
 \begin{center}
-\begin{tabular}{ll}
+\begin{tabular}{llll}
 \hline
-Label & Meaning \\
+ID & Map (sketch) & B-inc. & Role \\
 \hline
-B-incomplete & some/all \(X_j\) incomplete \\
-B-ESS & some/all \(H_j=-iX_j\) essentially self-adjoint \\
-B-Def & deficiency index pattern \\
-B-CCR & dual-translation / Bogoliubov-type package \\
-B-CP & unital CP / \(C^*\) package for Weyl lift \\
+A000 & \(\mathrm{id}\) & pass & baseline \\
+A004 & shear \((x,y+x,z)\) & pass & linear auto \\
+A005 & \(\mathrm{diag}(2,\tfrac12,1)\) & pass & linear stretch (CAS) \\
+A003 & \((x,e^y)\) pad & fail & smooth B1 example \\
+A006 & \((e^x,e^y,z)\) & fail & two incomplete fields (CAS) \\
+A001 & Keller seed & fail & maximal analytic~\cite{A001} \\
+A002 & family d4 pilot & open & geometry pending \\
 \hline
 \end{tabular}
 \end{center}
-Values: \texttt{open} / \texttt{fail} / \texttt{pass} with evidence pointers.
-Non-surjective dual systems are \texttt{fail} at B-incomplete by Lemma~\ref{lem:B1}.
 
-\section{Examples}
-
-\begin{example}[A000 --- identity baseline]
-\(F=\mathrm{id}\) on \(\mathbb{R}^3\). Dual fields \(\partial_{q_j}\) complete.
-B-incomplete \texttt{pass}. Schema sanity check.
+\section{Examples (new in v0.2)}
+\begin{example}[A005 --- linear stretch, pass-like]
+\(F=\mathrm{diag}(2,\tfrac12,1)\), \(\det DF=1\). Dual fields
+\(X_0=\tfrac12\partial_x\), \(X_1=2\partial_y\), \(X_2=\partial_z\) are complete.
+CAS: \texttt{cas\_atlas\_A005\_A006\_B001.json}.
 \end{example}
 
-\begin{example}[A003 --- exponential half-plane, non-A001]
-On \(\mathbb{R}^2\), \(F(x,y)=(x,e^y)\), padded by an idle coordinate in the atlas.
-Then \(\det DF=e^y\neq 0\), image \(\mathbb{R}\times(0,\infty)\), dual fields
-\(X_0=\partial_x\), \(X_1=e^{-y}\partial_y\). The field \(X_1\) is incomplete
-backward (\(e^y=e^{y_0}+t\) hits a wall in finite time). Thus B-incomplete
-\texttt{fail}, matching Lemma~\ref{lem:B1}. This is smooth and \emph{not} a
-Jacobian-counterexample seed.
+\begin{example}[A006 --- exp quadrant, fail-like]
+\(F(x,y,z)=(e^x,e^y,z)\), \(\det DF=e^{x+y}>0\), image
+\((0,\infty)^2\times\mathbb{R}\). Dual fields \(X_0=e^{-x}\partial_x\),
+\(X_1=e^{-y}\partial_y\) incomplete backward (\(e^x=e^{x_0}+t\)). Matches
+Lemma~\ref{lem:B1}. CAS same file.
 \end{example}
 
-\begin{example}[A001 --- Keller seed]
-Alp\"oge--Fable seed restated in~\cite{A001}: all three dual fields incomplete;
-\(H=-iX_1\) has deficiency indices \((\infty,\infty)\). B-incomplete and B-ESS
-\texttt{fail} for that generator; B-CP fails for C0-\(*\) and Bogoliubov packs
-in the companion C001 note~\cite{C001}.
-\end{example}
-
-\begin{example}[A002 --- family d4 pilot]
-Algebraic det/collision pilot certified; real non-surjectivity and dual-field
-completeness not yet curve-certified. B-columns remain \texttt{open}
-(conditional on geometry).
-\end{example}
-
-\begin{example}[A004 --- linear shear automorphism]
-\(F(x,y,z)=(x,y+x,z)\), \(\det DF=1\). Dual fields constant and complete.
-B-incomplete / B-CCR \texttt{pass} at the linear level --- positive baseline
-contrasting A001/A003.
-\end{example}
-
-\section{Discussion}
-Lemma~\ref{lem:B1} is the coarse filter. A001 shows a Keller seed can saturate
-analytic failure beyond mere incompleteness of one field. A003 shows the
-incompleteness half of the lemma on a elementary smooth example. Completion-level
-CP questions for Weyl lifts are separated into~\cite{C001}.
+\section{Prior examples (v0.1)}
+A000 identity; A003 half-plane; A001 Keller+\((n_+,n_-)=(\infty,\infty)\) for
+\(H=-iX_1\)~\cite{A001}; A002 open; A004 shear pass.
 
 \section{Non-claims}
-No gates, channels, advantage. No claim every Keller map fails ESS. No dual-flow
-repair. A003 is not a Jacobian counterexample.
+No gates, channels, advantage. No dual-flow repair. A003/A005/A006 are not
+Jacobian counterexamples. T4: no dual \(F\)-translation package claimed here.
+C Free-Strict-Abstract remains open~\cite{C001}.
 
 \begin{thebibliography}{99}
 \bibitem{A001}
-D.~E.~Fredriksen, Poisson and Weyl lifts of the Alp\"oge--Fable Keller map\ldots,
-v0.3.6-submit,
+D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, v0.3.6-submit / concept DOI
+10.5281/zenodo.21474351,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \bibitem{C001}
-D.~E.~Fredriksen, Toward CP realizations of an exotic Weyl endomorphism\ldots,
-C001 obstruction freeze,
+D.~E.~Fredriksen, CP readings of an exotic Weyl endomorphism\ldots,
+v0.2.0-c001-free-strict,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \end{thebibliography}
 \end{document}
