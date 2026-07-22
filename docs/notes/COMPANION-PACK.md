@@ -43,7 +43,7 @@
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
 | Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.9) |
-| Tag / release | prior freeze `v0.3.2-c001-companion` @ `61bf3da` **immutable historical pin** (do not move tag). Pending after gate only if dual-tagged with B: e.g. `v0.3.3-c001-companion` same SHA, else leave C pin (B auto wording superseded on new SHA) |
+| Tag / release | prior freeze `v0.3.2-c001-companion` @ `61bf3da` **immutable historical pin, package-superseded** with the dual B snapshot (C math content unchanged; do not cite as current package). Pending dual successor after gate: `v0.3.3-c001-companion` |
 | Prior tags | `v0.3.2-c001-companion` @ `61bf3da` (v0.9; do not retag); `v0.3.1-c001-companion` (v0.8; do not retag); `v0.3.0-c001-companion`; `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
 | Claims | Algebraic \*-SOS; correspondence; C0/Bogoliubov NO-GO; Koopman position **CONSTRUCT**; J2 Joint-Stone-Canonical NO-GO; J3 full-triple Joint-Stone NO-GO (**G4-conditional**, not A001); **J4 Joint-Stone-Hom-1 NO-GO**; **J5 Joint-Stone-CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**; **J7-C Full-ψ-BT-Envelope CONSTRUCT** (bounded dual-momentum transforms + Φ₀ positions; form-level only; **not** Full-ψ-CFC / **not** Weyl-C* / **not** Stinespring); **J7 Full-ψ-CFC-SA-1 NO-GO** (reduces to J6 on same joint vNa + normal CP) |
 | Joint notes | [`PROGRAM-C-Free-Strict-Abstract-Joint.md`](../validation/PROGRAM-C-Free-Strict-Abstract-Joint.md), [`PROGRAM-C-residual-J4-Joint-Stone-Hom.md`](../validation/PROGRAM-C-residual-J4-Joint-Stone-Hom.md), [`PROGRAM-C-residual-mere-CP-Joint-Stone.md`](../validation/PROGRAM-C-residual-mere-CP-Joint-Stone.md), [`PROGRAM-C-residual-CP-without-Stone.md`](../validation/PROGRAM-C-residual-CP-without-Stone.md), [`PROGRAM-C-residual-abstract-Cstar-full-psi.md`](../validation/PROGRAM-C-residual-abstract-Cstar-full-psi.md) |
@@ -57,7 +57,7 @@
 
 1. Deficiency: A001 + concept DOI  
 2. Classification: B001 v0.7 (erratum: global \(C^\infty\) diffeo language; prior tag `v0.2.2-b001-draft` @ `61bf3da` superseded for auto wording; pin post-gate SHA/tag when cut)  
-3. Completions of \(\psi\): C001 `v0.3.2-c001-companion` tag (v0.9; pin exact freeze SHA) — C content untouched by this B erratum  
+3. Completions of \(\psi\): C001 v0.9 — cite post-gate `v0.3.3-c001-companion` when cut; prior `v0.3.2` @ `61bf3da` is package-superseded historical pin (C math unchanged)  
 
 ## Non-claims
 No gates/channels/advantage. No dual-flow repair. No all-quantization-fails. No “all CP impossible.”  

@@ -124,12 +124,12 @@ Let \(F=(P,Q):\mathbb{R}^2\to\mathbb{R}^2\) be polynomial with \(\det DF\neq 0\)
 regime O are impossible for graph-type first components.
 
 **Polynomial inverse only when proved.** The smooth inverse need **not** be
-polynomial. Counterexample class (inherited from B6.2): after swapping to
-\(P=y\), \(Q=x+x^3\), one has a graph-type first component and a global smooth
-diffeo whose inverse is non-polynomial. When the fiberwise maps \(q_c\) are
-degree one (or otherwise admit an explicit polynomial inverse — e.g.\ elementary
-shears \(F=(y+f(x),x)\)), \(F\) **is** a polynomial automorphism; assert that
-stronger label only in those cases.
+polynomial. Counterexamples (graph type, global \(C^\infty\) diffeo, non-poly inverse):
+\(P=y\), \(Q=x+x^3\); and **degree-one fibers are not enough** —
+\(P=y\), \(Q=(y^2+1)x\) has \(q_c(x)=(c^2+1)x\) (deg 1) but inverse
+\(x=v/(u^2+1)\) is not polynomial. Assert **polynomial automorphism** only when
+an explicit polynomial inverse is exhibited (e.g.\ elementary shears
+\(F=(y+f(x),x)\) or \(F=(x,y+f(x))\)).
 
 **Proof.**  
 After an affine domain change (Remark B7.0a: preserves \(\det DF\neq 0\),

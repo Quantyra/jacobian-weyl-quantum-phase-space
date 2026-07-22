@@ -427,7 +427,7 @@ def main():
             "B6.8 is finite-degree CAS, not all-degree",
             "No gates/channels/advantage/deficiency indices",
             "No complex JC progress",
-            "Injective=>automorphism cited not re-proved",
+            "Injective poly local diffeo => global C^inf diffeo / E; poly inverse only when proved",
         ],
     }
     path = ROOT / "data" / "anchor" / "cas_atlas_B6_regime_T_B001.json"
