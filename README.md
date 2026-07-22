@@ -48,8 +48,8 @@ https://github.com/Quantyra/exotic-ccr-lean
 
 | Paper | PDF | Tag | One-line |
 |-------|-----|-----|----------|
-| **B001** classification (v0.7) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | `v0.2.2-b001-draft` (create after freeze) | B1 + atlas A000–A010; B5–B6; **B7 OPEN-T sharpened** (graph/degP≤2 ⇒ E); residual **OPEN-T** (deg≥3 non-coordinate, Bad on atypical fibers); full dichotomy conjecture |
-| **C001** completions of \(\psi\) (v0.9) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | `v0.3.2-c001-companion` (create after freeze) | Koopman CONSTRUCT; J2–J7 Stone/Hom/CP/Unitary-Image/CFC-SA NO-GOs; Diag-CP-Φ₀ + Full-ψ-BT-Envelope CONSTRUCT; Full-ψ-CP-Weyl-C* OPEN |
+| **B001** classification (v0.7) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | `v0.2.2-b001-draft` (exact SHA via `git rev-parse`) | B1 + atlas A000–A010; B5–B6; **B7 OPEN-T sharpened** (affine-invariant graph/degP≤2 ⇒ E); residual **OPEN-T** (deg≥3 non-coordinate, Bad on atypical fibers); full dichotomy conjecture |
+| **C001** completions of \(\psi\) (v0.9) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | `v0.3.2-c001-companion` (exact SHA via `git rev-parse`) | Koopman CONSTRUCT; J2 NO-GO; J3 **G4-conditional** NO-GO; J4–J6/J7 CFC-SA NO-GOs; Diag-CP-Φ₀ CONSTRUCT; **Full-ψ-BT-Envelope** (bounded dual-momentum transforms + Φ₀ positions; form-level; not CFC / not Weyl-C* / not Stinespring) CONSTRUCT; Full-ψ-CP-Weyl-C* OPEN |
 
 A001 remains citable via **concept DOI** even before arXiv endorsement.
 

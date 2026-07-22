@@ -43,6 +43,37 @@ locus \(U_1\) and bad values \(\operatorname{Bad}_P(F)\) as in B5.4–B5.5.
 Regimes E / O / T as in B5.5. Chamber reduction (B6.0): T iff every Hardt chamber
 is good and \(\operatorname{Bad}_P\) is a nonempty finite subset of \(\operatorname{Atyp}(P)\).
 
+### Remark B7.0a (affine invariance of the local-diffeo / dual / regime package)
+
+Let \(\varphi,\psi:\mathbb{R}^2\to\mathbb{R}^2\) be affine automorphisms (domain and
+codomain changes). Set \(\widetilde F:=\psi\circ F\circ\varphi\). Then:
+
+1. **Jacobian nonvanishing.**  
+   \(\det D\widetilde F=( \det D\psi)\,(\det DF\circ\varphi)\,(\det D\varphi)\).  
+   Constants \(\det D\varphi,\det D\psi\) are nonzero, so  
+   \(\det DF\neq 0\) everywhere \(\Leftrightarrow\) \(\det D\widetilde F\neq 0\) everywhere.
+   Polynomial class is preserved.
+
+2. **Dual completeness.** Dual fields of \(\widetilde F\) are the \(\varphi\)-pushforwards
+   of dual fields of \(F\), reparametrized by the constant linear parts of
+   \(\varphi,\psi\). Completeness of a smooth vector field is preserved by
+   affine conjugacy (maximal integral curves map to maximal integral curves;
+   finite-time blow-up is affine-invariant). Hence the incomplete locus is
+   empty / open / residual-thin according as it was for \(F\).
+
+3. **Regime E / O / T.** Bad values \(\operatorname{Bad}_P\) and atypical sets
+   transform under the induced affine action on the first-component range;
+   emptiness, openness, and residual thinness are preserved. Therefore the
+   E / O / T classification is **affine-invariant**.
+
+**Role for B7.** Graph-type normal form \(P=y+f(x)\) and the \(\deg P\le 2\)
+reduction (Lemma B7.1) may always be arranged by an affine domain change
+without leaving the polynomial local-diffeo class or changing the regime
+label. In particular the deg-\(\le 2\) \(\Rightarrow\) graph-type statement is
+**non-vacuous**: every critical-point-free quadratic \(P\) is affine-equivalent
+to \(y+ax^2+\cdots\) (Lemma B7.1), and that normal form is attained inside the
+same E/O/T package.
+
 ---
 
 ## 2. Graph-type first components
@@ -55,6 +86,7 @@ Call \(P\in\mathbb{R}[x,y]\) **graph type** if there is an affine automorphism
 P\circ\varphi(x,y)=y+f(x)
 \]
 for some univariate \(f\in\mathbb{R}[x]\).
+(Affine changes are regime-safe by Remark B7.0a.)
 
 ### Lemma B7.1 (classification: \(\deg P\le 2\) ⇒ graph type or linear)
 
@@ -89,8 +121,8 @@ complete, and \(\operatorname{Bad}_P(F)=\emptyset\) (regime E). In particular
 regime T and regime O are impossible for graph-type first components.
 
 **Proof.**  
-After an affine domain change (which preserves the local-diffeo property, polynomial
-class, completeness of duals up to reparametrization of the atlas, and the E/O/T
+After an affine domain change (Remark B7.0a: preserves \(\det DF\neq 0\),
+polynomial class, dual completeness up to reparametrization, and E/O/T
 regime labels), take \(P=y+f(x)\). Then
 \[
 j:=\det DF=P_x Q_y-P_y Q_x=f'(x)\,Q_y-Q_x\neq 0

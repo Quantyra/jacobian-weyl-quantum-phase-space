@@ -1,7 +1,13 @@
 ﻿\documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsthm,geometry,url}
 \geometry{margin=1in}
+% Allow line breaks in paths/URLs at many characters (no xurl dependency).
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\do\/\do\-\do\.\do\_\do\~\do\=\do\&\do\?\do\%}
+\def\UrlFont{\ttfamily}
+\makeatother
 \usepackage[hidelinks,breaklinks]{hyperref}
+\newcommand{\filepath}[1]{\path{#1}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem{corollary}{Corollary}
@@ -41,11 +47,13 @@ No gates, channels, or computational advantage are claimed. Companion pack:
 
 \noindent\textbf{MSC:} 37C10, 47B25, 53D17, 14R15.\\
 \textbf{Version:} B001 draft v0.7.\\
-\textbf{Software:} atlas \texttt{program\_b}; CAS \texttt{cas\_atlas\_A005\_A006\_B001.json},
-\texttt{cas\_atlas\_A007\_A008\_B001.json}, \texttt{cas\_atlas\_A009\_A010\_B001.json},
-\texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json},
-\texttt{cas\_atlas\_B6\_regime\_T\_B001.json},
-\texttt{cas\_atlas\_B7\_OPEN\_T\_B001.json}.
+\textbf{Software:} atlas \texttt{program\_b}; CAS anchors:\\
+\filepath{cas_atlas_A005_A006_B001.json},
+\filepath{cas_atlas_A007_A008_B001.json},\\
+\filepath{cas_atlas_A009_A010_B001.json},
+\filepath{cas_atlas_B5_poly_dichotomy_B001.json},\\
+\filepath{cas_atlas_B6_regime_T_B001.json},
+\filepath{cas_atlas_B7_OPEN_T_B001.json}.
 
 
 \section{Introduction}
@@ -98,7 +106,7 @@ A002 & family d4 pilot & open & geometry pending \\
 \begin{example}[A005 --- linear stretch, pass-like]
 \(F=\mathrm{diag}(2,\tfrac12,1)\), \(\det DF=1\). Dual fields
 \(X_0=\tfrac12\partial_x\), \(X_1=2\partial_y\), \(X_2=\partial_z\) are complete.
-CAS: \texttt{cas\_atlas\_A005\_A006\_B001.json}.
+CAS: \filepath{cas_atlas_A005_A006_B001.json}.
 \end{example}
 
 \begin{example}[A006 --- exp quadrant, fail-like]
@@ -119,7 +127,7 @@ measure-zero pair of rays), \(w(t)\) hits \(0\) at finite \(t\) and
 \(x(t)\to-\infty\): \textbf{incomplete}. Thus Lemma~\ref{lem:B1}'s corollary
 is satisfied by an incomplete set of \emph{measure zero}, sharply contrasting
 A006/A001 where incompleteness occupies an \emph{open} set. CAS:
-\texttt{cas\_atlas\_A007\_A008\_B001.json}.
+\filepath{cas_atlas_A007_A008_B001.json}.
 \end{example}
 
 \begin{example}[A008 --- shear + sine, 2D global diffeomorphism]
@@ -157,7 +165,7 @@ finite asymptotic value: escape in finite \(X_1\)-time. Hence the
 incompleteness locus of \(X_1\) contains the open set \(\{P>-1\}\).
 \textbf{Open-set incompleteness for a genuinely polynomial 2D Keller-type map},
 contrasting A007's thin failure. CAS:
-\texttt{cas\_atlas\_A009\_A010\_B001.json}.
+\filepath{cas_atlas_A009_A010_B001.json}.
 \end{example}
 
 \begin{example}[A010 --- polynomial shear automorphism, pass-like]
@@ -179,8 +187,8 @@ is reduced by the restricted lemmas of \S\ref{sec:B5}.
 
 \section{Restricted dichotomy lemmas (new in v0.5)}
 \label{sec:B5}
-Full proofs: \texttt{PROGRAM-B-B5-poly-dichotomy-lemmas.md}.
-CAS: \texttt{cas\_atlas\_B5\_poly\_dichotomy\_B001.json}.
+Full proofs: \filepath{PROGRAM-B-B5-poly-dichotomy-lemmas.md}.
+CAS: \filepath{cas_atlas_B5_poly_dichotomy_B001.json}.
 
 \begin{lemma}[Univariate polynomial local diffeos are global]
 \label{lem:B52}
@@ -247,8 +255,8 @@ Lemma~\ref{lem:B545} remains open; no atlas example realizes T.
 
 \section{Regime T partial exclusion (new in v0.6)}
 \label{sec:B6}
-Full proofs: \texttt{PROGRAM-B-B6-regime-T.md}.
-CAS: \texttt{cas\_atlas\_B6\_regime\_T\_B001.json}.
+Full proofs: \filepath{PROGRAM-B-B6-regime-T.md}.
+CAS: \filepath{cas_atlas_B6_regime_T_B001.json}.
 
 \begin{lemma}[Chamber reduction for regime T]
 \label{lem:B60}
@@ -297,8 +305,14 @@ conjecture.
 
 \section{OPEN-T sharpened: graph type and \(\deg P\le 2\) (new in v0.7)}
 \label{sec:B7}
-Full proofs: \texttt{PROGRAM-B-B7-OPEN-T.md}.
-CAS: \texttt{cas\_atlas\_B7\_OPEN\_T\_B001.json}.
+Full proofs: \filepath{PROGRAM-B-B7-OPEN-T.md}.
+CAS: \filepath{cas_atlas_B7_OPEN_T_B001.json}.
+
+\noindent\textbf{Affine invariance.} Affine domain/codomain changes preserve
+\(\det DF\neq 0\), polynomial class, dual completeness (affine conjugacy of
+flows), and the E/O/T regime labels; the graph-type normal form and
+\(\deg P\le 2\) reduction are therefore non-vacuous inside the same package
+(\filepath{PROGRAM-B-B7-OPEN-T.md}, Remark~B7.0a).
 
 \begin{lemma}[Graph-type first component \(\Rightarrow\) automorphism]
 \label{lem:B72}
@@ -353,12 +367,15 @@ package claimed here. The full polynomial-only dichotomy remains a conjecture
 structured classes (Lemma~\ref{lem:B61-4}) and on graph-type / \(\deg P\le 2\)
 maps (Theorem~\ref{thm:B73}); residual OPEN-T is named in \S\ref{sec:B7}.
 C's joint \(q\)--\(p\)
-sector~\cite{C001} (v0.9) splits: position CONSTRUCT (Koopman); J2/J3
-Joint-Stone CONDITIONAL OBSTRUCTIONS; J4 Joint-Stone-Hom-1 OBSTRUCTION;
+sector~\cite{C001} (v0.9) splits: position CONSTRUCT (Koopman); J2
+Joint-Stone-Canonical OBSTRUCTION; J3 full-triple Joint-Stone
+\textbf{G4-conditional} OBSTRUCTION; J4 Joint-Stone-Hom-1 OBSTRUCTION;
 J5 mere-CP Joint-Stone-CP-1 OBSTRUCTION; J6 Unitary-Image-CP-1 OBSTRUCTION;
 J6-C Diag-CP-\(\Phi_0\) CONSTRUCT; Joint-Form-Core CONSTRUCT /
-Joint-Form-ESS-1 OBSTRUCT; J7-C Full-$\psi$-BT-Envelope CONSTRUCT;
-J7 Full-$\psi$-CFC-SA-1 OBSTRUCTION; Full-$\psi$-CP-Weyl-\(C^*\) OPEN
+Joint-Form-ESS-1 OBSTRUCT; J7-C Full-$\psi$-BT-Envelope
+(bounded dual-momentum transforms + \(\Phi_0\) positions; form-level only,
+not CFC / not Weyl-\(C^*\) / not Stinespring) CONSTRUCT;
+J7 Full-$\psi$-CFC-SA-1 OBSTRUCTION (via J6); Full-$\psi$-CP-Weyl-\(C^*\) OPEN
 (narrow).
 
 \begin{thebibliography}{99}
@@ -368,7 +385,8 @@ D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, v0.3.6-submit / concept DOI
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \bibitem{C001}
 D.~E.~Fredriksen, CP readings of an exotic Weyl endomorphism\ldots,
-C001 companion v0.9 (J7 Full-$\psi$ abstract \(C^*\) SPLIT: BT-Envelope CONSTRUCT + CFC-SA NO-GO),
+C001 companion v0.9 (J7 SPLIT: Full-$\psi$-BT-Envelope form-level CONSTRUCT;
+CFC-SA NO-GO via J6; Weyl-\(C^*\) OPEN),
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \bibitem{Pin94}
 S.~Pinchuk, A counterexample to the strong real Jacobian conjecture,

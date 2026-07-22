@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/C001-cp-correspondence-arxiv.pdf  
-**Tag:** v0.3.2-c001-companion (supersedes `v0.3.1-c001-companion`; do not move old tags)  
-**Freeze SHA:** HEAD after v0.9 content commit (this round)  
+**Tag:** `v0.3.2-c001-companion` (supersedes `v0.3.1-c001-companion`; do not move old tags)  
+**Freeze SHA:** exact hex of annotated tag `v0.3.2-c001-companion` (package+wording re-gate commit; **not** mutable `HEAD`) — resolve with `git rev-parse v0.3.2-c001-companion`  
 **Pack:** COMPANION-PACK.md  
 
 ## Scoreboard
@@ -11,15 +11,15 @@
 |------|--------|
 | Koopman position-sector CP | CONSTRUCT |
 | Joint-Stone-Canonical (J2) | NO-GO |
-| Full-triple Joint-Stone (J3, G4) | NO-GO |
+| Full-triple Joint-Stone (J3, **G4-conditional**) | NO-GO (G4 pairs; not A001) |
 | Joint-Stone-Hom-1 (J4) | NO-GO |
 | Joint-Stone-CP-1 (J5) | NO-GO |
 | Unitary-Image-CP-1 (J6) | NO-GO |
 | Diag-CP-Φ₀ (J6-C) | CONSTRUCT |
 | Joint-Form-Core | CONSTRUCT |
 | Joint-Form-ESS-1 | OBSTRUCT |
-| **Full-ψ-BT-Envelope (J7-C)** | **CONSTRUCT** |
-| **Full-ψ-CFC-SA-1 (J7)** | **NO-GO** |
+| **Full-ψ-BT-Envelope (J7-C)** — bounded dual-momentum transforms + Φ₀ positions; form-level only; **not** Full-ψ-CFC / **not** Weyl-C* / **not** Stinespring | **CONSTRUCT** |
+| **Full-ψ-CFC-SA-1 (J7)** — reduces to J6 on same joint vNa + normal CP | **NO-GO** |
 | Full-ψ-CP-Weyl-C\* (J7-O) | OPEN (narrowed) |
 
 ## Adversarial
@@ -27,4 +27,5 @@
 - v0.7 J5: Proof PASS (multiplicative domain), Non-claims PASS, Package REVISE→fixed→PASS  
 - v0.8 J6 (content at `95a0bc9`): Proof **PASS** (Unitary-Image NO-GO + Diag-CP CONSTRUCT); Non-claims **PASS** (no J5 weaken; full-ψ still OPEN); Package **REVISE** (stale tag/README/aggregate green)  
 - v0.8 package re-gate (`9445e95`): Package surfaces synced; aggregate pending package re-review  
-- v0.9 J7 (this commit): Full-ψ abstract C\* **SPLIT** (BT-Envelope CONSTRUCT + CFC-SA NO-GO + CP-Weyl-C\* OPEN); do **not** claim Aggregate PASS until adversarial package re-review closes.
+- v0.9 J7 (content at `60f543c` / `d2c8488` lineage): Full-ψ abstract C\* **SPLIT** (BT-Envelope form-level CONSTRUCT + CFC-SA NO-GO via J6 checklist + CP-Weyl-C\* OPEN)  
+- v0.9 package+wording re-gate (this commit): J7-C naming lock; J7→J6 hypothesis checklist; J3 G4-conditional qualifier; TeX path breaks; **do not claim Aggregate PASS** — proof/non-claims/package re-gate pending or package fixed awaiting re-review.

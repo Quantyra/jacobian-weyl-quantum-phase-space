@@ -1,7 +1,14 @@
 \documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,amsthm,geometry,url}
 \geometry{margin=1in}
+% Allow line breaks in paths/URLs at many characters (no xurl dependency).
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\do\/\do\-\do\.\do\_\do\~\do\=\do\&\do\?\do\%}
+\def\UrlFont{\ttfamily}
+\makeatother
 \usepackage[hidelinks,breaklinks]{hyperref}
+% Breakable monospaced path/filename (wraps like \url).
+\newcommand{\filepath}[1]{\path{#1}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
 \newtheorem{remark}{Remark}
@@ -41,16 +48,20 @@ uniqueness fails for \(H_1\). Non-Stone CP of the position pullback
 \emph{splits}: Diag-CP-\(\Phi_0\) (\(\Phi_0\circ E\) on the joint vNa)
 \textbf{construct}. Full-\(\psi\) abstract \(C^*\) without Hom/unitary-image
 \emph{splits} further (Theorem~J7): Full-$\psi$-BT-Envelope
-\textbf{construct} (concrete \(C^*\) from \(\Phi_0(C_b)\) and bounded
-transforms of minimal dual momenta); Full-$\psi$-CFC-SA-1
+(bounded dual-momentum transforms + \(\Phi_0\) positions)
+\textbf{construct}---form-level / bounded-transform content only;
+\emph{not} Full-$\psi$-CFC, \emph{not} Weyl-\(C^*\), \emph{not}
+Stinespring; Full-$\psi$-CFC-SA-1
 \textbf{obstruction} (SA continuous functional calculus / unitary Cayley
-image reduces to J6); Full-$\psi$-CP-Weyl-\(C^*\) remains open (narrow).
+image reduces to J6 on the same joint vNa + normal CP setting);
+Full-$\psi$-CP-Weyl-\(C^*\) remains open (narrow).
 No dual \(F\)-translations, gates, or advantage. Companion
-to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
+to~\cite{A001}. Pack: \filepath{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 companion v0.9 (J7 Full-$\psi$ abstract \(C^*\) SPLIT: BT-Envelope CONSTRUCT + CFC-SA NO-GO).\\
+\textbf{Version:} C001 companion v0.9 (J7 SPLIT: Full-$\psi$-BT-Envelope
+form-level CONSTRUCT; CFC-SA NO-GO via J6; Weyl-\(C^*\) OPEN).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
 \paragraph{Erratum.}
@@ -102,7 +113,7 @@ with \emph{left} action \(a\cdot\xi=\psi(a)\xi\) and
 \section{Geometry}
 \begin{theorem}[Non-proper]
 \(F\) is not proper along the incomplete \(X_1\)-orbit of~\cite{A001}
-(CAS \texttt{cas\_F\_not\_proper\_C1c\_A001.json}).
+(CAS \filepath{cas_F_not_proper_C1c_A001.json}).
 \end{theorem}
 
 \section{Obstructions (retained)}
@@ -170,12 +181,15 @@ Borel functions.
 
 \section{Joint \(q\)--\(p\) extension: eight-slice status}
 \(\Phi_0\) only captures \(\psi\) on the position generators. The joint
-sector splits as follows (full write-up:
-\texttt{PROGRAM-C-Free-Strict-Abstract-Joint.md};
-J4: \texttt{PROGRAM-C-residual-J4-Joint-Stone-Hom.md};
-J5: \texttt{PROGRAM-C-residual-mere-CP-Joint-Stone.md};
-J6: \texttt{PROGRAM-C-residual-CP-without-Stone.md};
-J7: \texttt{PROGRAM-C-residual-abstract-Cstar-full-psi.md}).
+sector splits as follows. Full write-ups:
+\begin{itemize}
+\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}
+\item Joint: \filepath{PROGRAM-C-Free-Strict-Abstract-Joint.md}
+\item J4: \filepath{PROGRAM-C-residual-J4-Joint-Stone-Hom.md}
+\item J5: \filepath{PROGRAM-C-residual-mere-CP-Joint-Stone.md}
+\item J6: \filepath{PROGRAM-C-residual-CP-without-Stone.md}
+\item J7: \filepath{PROGRAM-C-residual-abstract-Cstar-full-psi.md}
+\end{itemize}
 
 \paragraph{(i) Position sector --- CONSTRUCT.}
 The Koopman pullback \(\Phi_0\) is a normal unital \(*\)-homomorphism on
@@ -193,12 +207,14 @@ fixed by the algebraic data \((\psi,F,B)\) alone.
 \((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\)~\cite{A001}, von Neumann's
 theorem yields a continuum of inequivalent SA extensions; \((\psi,F,B)\)
 does not select one. Hence no Joint-Stone-Canonical package exists.
-\item \textbf{Theorem J3} (G4 companion, not A001): the companion note
-\texttt{G4-H0-H2-deficiency-bounds.md} records
+\item \textbf{Theorem J3} (\textbf{G4-conditional}, not an A001 theorem):
+the companion note
+\filepath{G4-H0-H2-deficiency-bounds.md} records
 \((n_+,n_-)=(\infty,0)\) for \(H_0\) and \((0,\infty)\) for \(H_2\), so
-those minimal operators admit \emph{no} SA extensions. Under those pairs,
-no full-triple Joint-Stone package \((\Phi;\widetilde H_0,\widetilde H_1,\widetilde H_2)\)
-exists at all.
+those minimal operators admit \emph{no} SA extensions. \emph{Conditional
+on those G4 pairs}, no full-triple Joint-Stone package
+\((\Phi;\widetilde H_0,\widetilde H_1,\widetilde H_2)\)
+exists at all. (Do not promote G4 pairs to A001.)
 \end{itemize}
 
 \paragraph{(iii) Joint-Stone-Hom-1 --- OBSTRUCTION.}
@@ -219,7 +235,7 @@ Hence \((F_1,\widetilde H_1)\) is a regular Schr\"odinger couple and
 \(|\det DF|\equiv 2\), so that density equals \(m/2\) with
 \(m=\#F^{-1}\). For A001, \(m\) takes the values \(3\) and \(1\) on two
 positive-measure open slabs near \((a,c)=(0,2)\). Contradiction.
-Full write-up: \texttt{PROGRAM-C-residual-J4-Joint-Stone-Hom.md}.
+Full write-up: \filepath{PROGRAM-C-residual-J4-Joint-Stone-Hom.md}.
 \end{proof}
 
 \paragraph{(iv) Joint-Stone-CP-1 --- OBSTRUCTION.}
@@ -238,7 +254,7 @@ Unital CP and Kadison--Schwarz: if \(U(s)=e^{is P_1^{\mathrm{Sch}}}\) and
 Taking \(a=f(Q)\) recovers the same dual-\(F_1\) Heisenberg covariance as in
 J4. The SvN product structure and \(s\)-dependent A001 sheet count then yield
 the same contradiction. Full write-up:
-\texttt{PROGRAM-C-residual-mere-CP-Joint-Stone.md}.
+\filepath{PROGRAM-C-residual-mere-CP-Joint-Stone.md}.
 \end{proof}
 
 \paragraph{(v) Unitary-Image-CP-1 --- OBSTRUCTION (new); Diag-CP-\(\Phi_0\) --- CONSTRUCT.}
@@ -262,11 +278,13 @@ sheet-count contradiction. The dual-field SA link is inessential.
 \end{proof}
 \begin{theorem}[J6-C]
 \(\Phi_{\mathrm{diag}}=\Phi_0\circ E\) is a unital normal CP map on \(M\)
-extending \(\Phi_0\), with \(\Phi_{\mathrm{diag}}(U(s))=0\) for \(s\neq 0\)
-(hence no Stone/SA momentum implementation). Schr\"odinger--Heisenberg
-conjugates of position observables pull back by \(\Phi_0\) automatically.
+extending \(\Phi_0\), with
+\(\Phi_{\mathrm{diag}}(U(s))=0\) whenever \(s\neq 0\)
+(hence no Stone/SA momentum implementation).
+Schr\"odinger--Heisenberg conjugates of position observables pull back by
+\(\Phi_0\) automatically.
 \end{theorem}
-Full write-up: \texttt{PROGRAM-C-residual-CP-without-Stone.md}.
+Full write-up: \filepath{PROGRAM-C-residual-CP-without-Stone.md}.
 
 \paragraph{(vi) Joint-Form split.}
 \begin{itemize}
@@ -279,14 +297,18 @@ the \(j=1\) form fails by A001 Theorems~E--F.
 
 \paragraph{(vii) Full-\(\psi\) abstract \(C^*\) --- SPLIT (J7).}
 Three named packs (full write-up:
-\texttt{PROGRAM-C-residual-abstract-Cstar-full-psi.md}):
+\filepath{PROGRAM-C-residual-abstract-Cstar-full-psi.md}):
 \begin{itemize}
-\item \textbf{Full-$\psi$-BT-Envelope:} concrete
-\(C^*\)-algebra
+\item \textbf{Full-$\psi$-BT-Envelope
+(bounded dual-momentum transforms + \(\Phi_0\) positions):}
+concrete \(C^*\)-algebra
 \(\mathfrak{A}_\psi\subset B(H)\) generated by
 \(\{(f\circ F)(Q):f\in C_b(\mathbb{R}^3)\}\) and the bounded transforms
 \(Z_j=Z(\overline{H_j})\) of the closed minimal dual momenta
 (\(Z(A)=A(I+A^*A)^{-1/2}\)).
+\emph{Form-level / bounded-transform momentum content only}---
+\textbf{not} Full-$\psi$-CFC, \textbf{not} Weyl-\(C^*\),
+\textbf{not} a Stinespring channel.
 \item \textbf{Full-$\psi$-CFC-SA-1:} unital normal CP extending \(\Phi_0\)
 that recovers SA continuous functional calculus of some
 \(\widetilde A_1\) for \(P_1^{\mathrm{Sch}}\) (equivalently: unitary
@@ -296,11 +318,13 @@ completion of the polynomial Weyl algebra extending algebraic \(\psi\),
 without SA-CFC/unitary-image axioms.
 \end{itemize}
 \begin{theorem}[J7-C]
-Full-$\psi$-BT-Envelope is a well-defined unital \(C^*\)-subalgebra of
+Full-$\psi$-BT-Envelope (bounded dual-momentum transforms +
+\(\Phi_0\) positions) is a well-defined unital \(C^*\)-subalgebra of
 \(B(H)\) carrying position content of \(\psi\) via \(\Phi_0(C_b)\) and
-momentum-form content via \(\{Z_j\}\). For \(j=1\), \(Z_1\) is symmetric
-but not self-adjoint (A001: \(H_1\) not ESS). No SA-extension choice, no
-unitary Stone image, no \(*\)-hom of full CCR is used.
+momentum-\emph{form} content via \(\{Z_j\}\). For \(j=1\), \(Z_1\) is
+symmetric but not self-adjoint (A001: \(H_1\) not ESS). No SA-extension
+choice, no unitary Stone image, no \(*\)-hom of full CCR/Weyl-\(C^*\) is
+used. Not Full-$\psi$-CFC; not Stinespring.
 \end{theorem}
 \begin{theorem}[J7]
 No Full-$\psi$-CFC-SA-1 package exists for the A001 seed.
@@ -308,21 +332,28 @@ No Full-$\psi$-CFC-SA-1 package exists for the A001 seed.
 \begin{proof}[Proof sketch]
 Unitary Cayley image places \(C(P_1^{\mathrm{Sch}})\) in the multiplicative
 domain; continuous functional calculus recovers unitary Stone images
-\(\Phi(e^{is P_1^{\mathrm{Sch}}})\), yielding Unitary-Image-CP-1, which
-Theorem~J6 obstructs.
+\(\Phi(e^{is P_1^{\mathrm{Sch}}})\). The forced hypotheses match
+Unitary-Image-CP-1 on the same joint vNa \(M\) + normal CP setting
+(\filepath{PROGRAM-C-residual-CP-without-Stone.md}, J6~\S2 checklist in
+the J7 note), which Theorem~J6 obstructs.
 \end{proof}
 Full-$\psi$-CP-Weyl-\(C^*\) remains \textbf{open} (J7-O; narrowed residual).
 Diag-CP-\(\Phi_0\) is \emph{not} full-\(\psi\).
+Full-$\psi$-BT-Envelope is \emph{not} Full-$\psi$-CFC and
+\emph{not} Weyl-\(C^*\).
 
 \section{Non-claims}
 No channel on \(B(H)\) implementing the full \(\psi\).
 No gates/advantage. No dual \(F\)-translations. No ``all quantization fails.''
 No claim that every joint CP construction is impossible---only
-Joint-Stone-Canonical (J2), full-triple Joint-Stone under G4 pairs (J3),
+Joint-Stone-Canonical (J2), full-triple Joint-Stone
+\textbf{G4-conditional} (J3),
 multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5),
 Unitary-Image-CP-1 (J6), Full-$\psi$-CFC-SA-1 (J7), and Joint-Form-ESS-1.
 Diag-CP-\(\Phi_0\) is not a momentum channel and is not full-\(\psi\).
-Full-$\psi$-BT-Envelope is a concrete \(C^*\) envelope, not a channel.
+Full-$\psi$-BT-Envelope is a concrete form-level \(C^*\) envelope
+(bounded dual-momentum transforms + \(\Phi_0\) positions), not a channel,
+not Full-$\psi$-CFC, and not Weyl-\(C^*\).
 Full-$\psi$-CP-Weyl-\(C^*\) without SA-CFC is not claimed impossible.
 No promotion of G4 \(H_0/H_2\) pairs to A001 theorems.
 
