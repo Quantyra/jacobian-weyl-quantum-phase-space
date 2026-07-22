@@ -1,59 +1,56 @@
-# EXOTIC-CCR companion pack (milestone 2)
+# EXOTIC-CCR companion pack
 
 **Date:** 2026-07-21  
-**Status:** **ACTIVE** while A001 arXiv waits on endorsement  
+**Status:** ACTIVE (A001 arXiv waits on math-ph endorsement `VIPN6B`)  
 **Rule:** A001 PDF frozen at `v0.3.6-submit`; companions do not rewrite it.
 
 ---
 
-## Flagship (blocked only on arXiv endorsement — still citable)
+## Flagship A001 (DOI citable; arXiv pending)
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [A001-arxiv.pdf](A001-arxiv.pdf) |
 | Tag | [v0.3.6-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit) |
 | Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) |
+| Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has \((n_+,n_-)=(\infty,\infty)\); seed restated; H₁-only |
-
-**Citability:** DOI is enough for citation. arXiv is optional eprint layer.  
-
-**Endorsement (math-ph):** code `VIPN6B` — see [A001-endorsement-status.md](A001-endorsement-status.md).
 
 ---
 
-## Companion B — classification
+## Companion B001 — classification v0.2
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
-| Draft marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) |
-| Tag | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) (v0.2); prior v0.1.0-b001-draft |
-| Atlas | A000–A006 (`program_b`); CAS `cas_atlas_A005_A006_B001.json` |
-| Claim core | B1 lemma; schema; pass rows A000/A004/A005; fail A003/A006/A001; A002 open |
+| Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (content = v0.2) |
+| Tag / release | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) |
+| Atlas | A000–A006; CAS `cas_atlas_A005_A006_B001.json` |
+| Claims | B1 lemma; schema; pass A000/A004/A005; fail A003/A006; A001 fail + H1 indices only for \(H=-iX_1\); A002 open |
 
 ---
 
-## Companion C — Weyl endomorphism completions
+## Companion C001 — Weyl endomorphism packages v0.3
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
-| Freeze marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) |
-| Tag | [v0.1.0-c001-obstruction](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.1.0-c001-obstruction) |
-| GenCP detail | [PROGRAM-C-GenCP.md](../validation/PROGRAM-C-GenCP.md) |
-| Claim core | Algebraic \*-SOS PASS; C0/Bogoliubov/C0-CP NO-GO; algebraic correspondence CONSTRUCT; Free GenCP OPEN |
+| Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (content = v0.3 adversarial REVISE) |
+| Tag / release | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) |
+| Prior tags | `v0.2.0-c001-free-strict` (Regular-v2 **withdrawn**); `v0.1.0-c001-obstruction` |
+| Claims | Algebraic \*-SOS (physics \([q,p]=i\)); algebraic correspondence; C0-composition endo NO-GO; Bogoliubov NO-GO |
+| Withdrawn | Free-Strict-Regular-v2 |
+| Open | Abstract C\* CP+Stinespring without spatial axioms |
 
 ---
 
-## How to cite the pack
+## Cite
 
-1. **Deficiency / dual transport:** A001 + concept DOI.  
-2. **Classification lemma / schema:** B001 v0.1 tag.  
-3. **Completion boundary for \(\psi\):** C001 v0.1 tag.
+1. Deficiency: A001 + concept DOI  
+2. Classification: B001 `v0.2.0-b001-draft`  
+3. Completions of \(\psi\): C001 `v0.3.0-c001-companion`  
 
-Cross-links: each companion cites A001; A001 README points here.
-
-## Non-claims (pack-wide)
-No gates, channels, advantage. No dual-flow repair. No “all quantization fails.”
+## Non-claims
+No gates/channels/advantage. No dual-flow repair. No all-quantization-fails.

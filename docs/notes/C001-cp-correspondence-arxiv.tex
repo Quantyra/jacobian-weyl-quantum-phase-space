@@ -6,7 +6,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem{remark}{Remark}
 \title{Completely positive readings of an exotic Weyl endomorphism:\\
-algebraic correspondence, and Free-Strict obstructions}
+algebraic correspondence and standard-package obstructions}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
@@ -17,83 +17,95 @@ Quantyra Inc.\\
 
 \begin{abstract}
 Let \(\psi\) be the polynomial Weyl endomorphism of the Alp\"oge--Fable seed
-(restated): \(Q=F(q)\), \(P=J^{-T}p\). We record that \(\psi\) is a unital
-\(*\)-endomorphism (algebraic SOS positivity) and construct its algebraic
-endomorphism correspondence. We obstruct standard packages (C0 \(*\)-endo,
-Bogoliubov, CCR \(*\)-hom, C0-compatible CP) and a \textbf{Free-Strict-Regular}
-package: unital CP on \(B(L^2)\) with spectral implementation
-\(\Phi(f(Q))=M_{f\circ F}\) for \(f\in C_b\) and nondegeneracy on \(C_0(Q)\).
-A fully abstract C\(^*\) envelope CP map with no spatial axioms remains open.
-No dual \(F\)-translations, gates, or advantage. Companion to~\cite{A001}.
+(restated): \(Q=F(q)\), \(P=J^{-T}p\). With the physics normalization
+\([q_i,p_j]=i\delta_{ij}\) and \(q_i^*=q_i\), \(p_j^*=p_j\), \(\psi\) is a unital
+\(*\)-endomorphism (algebraic SOS positivity). We construct its algebraic
+endomorphism correspondence and obstruct: (i)~unital/\allowbreak nondegenerate
+\(*\)-endomorphisms of \(C_0(\mathbb{R}^3)\) extending composition with non-proper
+\(F\); (ii)~Bogoliubov/quasifree endomorphisms of the CCR algebra (nonlinear
+\(F\)). A former ``Free-Strict-Regular-v2'' nondegeneracy obstruction is
+\textbf{withdrawn} as incorrect. Fully abstract C\(^*\) CP+Stinespring without
+spatial axioms remains open. No dual \(F\)-translations, gates, or advantage.
+Companion to~\cite{A001}. Pack: \texttt{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 Free-Strict v0.2.\\
+\textbf{Version:} C001 companion v0.3 (adversarial REVISE).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
-\section{Domain and algebraic positivity}
+\paragraph{Erratum.}
+Free-Strict-Regular-v2 (projection off \(\overline{\mathrm{im}\,F}\)) is
+\textbf{withdrawn}: \(q\notin\overline{\mathrm{im}\,F}\) does not imply
+\(f(F(q))=0\), and \(M_f\mapsto M_{f\circ F}\) on \(C_b(Q)\) is a valid unital
+\(*\)-homomorphism extendable by Arveson. Do not cite v0.2 Regular-v2 as a theorem.
+
+\section{Domain}
 \begin{definition}
-\(\mathcal{W}\): polynomial Weyl algebra, \([q_i,p_j]=\delta_{ij}\), \(q_i^*=q_i\),
-\(p_j^*=p_j\). With \(B=J^{-T}\),
-\(\psi(q_i)=F_i(q)\), \(\psi(p_j)=\sum_k B_{jk}(q)p_k\).
+\(\mathcal{W}\): polynomial Weyl algebra over \(\mathbb{C}\) with
+\([q_i,p_j]=i\delta_{ij}\), \([q_i,q_j]=[p_i,p_j]=0\), and involution
+\(q_i^*=q_i\), \(p_j^*=p_j\). (Consistent: \([q,p]^*=-[q,p]\) and
+\((i\delta)^*=-i\delta\).) With real \(B=J^{-T}\),
+\[
+\psi(q_i)=F_i(q),\qquad
+\psi(p_j)=\sum_k B_{jk}(q)\,p_k
+\]
+(coefficients left of momenta) extends to a unital algebra endomorphism.
 \end{definition}
 
+\begin{remark}[Normalization]
+Earlier drafts used \([q,p]=\delta\) with self-adjoint generators, which is
+inconsistent under \(*\). This note uses the standard physics normalization
+\([q,p]=i\).
+\end{remark}
+
 \begin{theorem}[Algebraic \(*\)-SOS]
-Real \(F,B\) \(\Rightarrow\) \(\psi\) unital \(*\)-endo \(\Rightarrow\) SOS cones preserved
-at all matrix levels.
+Real \(F,B\) \(\Rightarrow\) \(\psi\) is a unital \(*\)-endomorphism of \(\mathcal{W}\),
+hence \(\mathrm{id}_n\otimes\psi\) preserves hermitian-square cones.
 \end{theorem}
 
 \begin{definition}[Algebraic correspondence]
-\(E=\mathcal{W}\) as right \(\mathcal{W}\)-module, \(a\cdot\xi=\psi(a)\xi\),
-\(\langle\xi,\eta\rangle=\xi^*\eta\).
+Let \(E=\mathcal{W}\) as a \emph{right} \(\mathcal{W}\)-module by \(\xi\cdot b=\xi b\),
+with \emph{left} action \(a\cdot\xi=\psi(a)\xi\) and
+\(\langle\xi,\eta\rangle_{\mathcal{W}}=\xi^*\eta\).
 \end{definition}
 
-\section{Geometric facts}
-\begin{theorem}[Non-proper / non-surjective]
-\(F\) is not proper (escape curve of~\cite{A001}; CAS
-\texttt{cas\_F\_not\_proper\_C1c\_A001.json}) and not surjective
-(\(\overline{F(\mathbb{R}^3)}\ne\mathbb{R}^3\)).
+\section{Geometry}
+\begin{theorem}[Non-proper]
+\(F\) is not proper along the incomplete \(X_1\)-orbit of~\cite{A001}
+(CAS \texttt{cas\_F\_not\_proper\_C1c\_A001.json}).
 \end{theorem}
 
-\section{Standard package NO-GOs}
-\begin{theorem}
-No unital \(*\)-endo of \(C_0(\mathbb{R}^3)\) extends \(f\mapsto f\circ F\).
-\end{theorem}
-\begin{theorem}
-No Bogoliubov / CCR unital \(*\)-endo restricts to \(\psi\) (\(F\) nonlinear).
-\end{theorem}
-\begin{theorem}
-No unital CP map that is C0-composition compatible extends \(\psi\).
+\section{Obstructions (retained)}
+\begin{theorem}[C0 composition endo]
+There is no \(*\)-homomorphism \(\alpha:C_0(\mathbb{R}^3)\to C_0(\mathbb{R}^3)\)
+(nondegenerate/\allowbreak approximately unital in the usual \(C_0\) sense) with
+\(\alpha(f)=f\circ F\) for all \(f\in C_0(\mathbb{R}^3)\), because \(F\) is not proper
+so \(f\circ F\notin C_0\) for some \(f\in C_0\).
 \end{theorem}
 
-\section{Free-Strict-Regular NO-GO}
-\begin{theorem}[Free-Strict-Regular-v2]
-There is no unital CP map \(\Phi:B(L^2(\mathbb{R}^3))\to B(L^2(\mathbb{R}^3))\) such that
-\begin{enumerate}
-\item \(\Phi(f(Q))=M_{f\circ F}\) for all \(f\in C_b(\mathbb{R}^3)\);
-\item whenever \(P\in B(L^2)\) satisfies \(\Phi(f(Q))P=0\) for all \(f\in C_0(\mathbb{R}^3)\),
-then \(P=0\) (nondegeneracy on positions).
-\end{enumerate}
+\begin{theorem}[Bogoliubov / quasifree]
+No Bogoliubov (linear quasifree) endomorphism of the CCR \(C^*\)-algebra
+restricts to \(\psi\) on the polynomial generators: such maps act linearly on
+one-particle fields, while \(F\) is nonlinear of degree \(3\).
 \end{theorem}
-\begin{proof}
-Let \(P=M_{1_{\mathbb{R}^3\setminus\overline{F(\mathbb{R}^3)}}}\). Non-surjectivity gives \(P\ne 0\).
-For \(f\in C_0(\mathbb{R}^3)\), \(f\circ F=0\) on \(\operatorname{supp}P\), hence
-\(M_{f\circ F}P=0\), i.e.\ \(\Phi(f(Q))P=0\), contradicting nondegeneracy.
-\end{proof}
 
-\begin{remark}
-Stinespring data for this pack are vacuous (empty domain).
+\begin{remark}[Not claimed]
+We do \emph{not} claim every continuous unital \(*\)-endomorphism of the CCR
+algebra fails---only the Bogoliubov/quasifree class. We do \emph{not} claim
+that \(f\mapsto M_{f\circ F}\) fails as a map \(C_b\to B(L^2)\).
 \end{remark}
 
-\section{Free-Strict-Abstract (residual OPEN)}
-Unital CP on some abstract C\(^*\) envelope of \(\mathcal{W}\) with
-\textbf{no} spectral-position, C0-composition, Bogoliubov, or CCR-\(*\)-hom axiom:
-not constructed beyond the algebraic correspondence and finite-level algebraic
-Stinespring; not ruled out.
+\section{Withdrawn}
+Free-Strict-Regular-v2 nondegeneracy NO-GO: \textbf{withdrawn} (see erratum).
+
+\section{Open}
+Unital CP+Stinespring on a fully abstract \(C^*\) envelope of \(\mathcal{W}\) with
+no C0-composition and no Bogoliubov axioms: not constructed (beyond algebraic
+correspondence and finite-level algebraic CP), not ruled out.
 
 \section{Non-claims}
-No channel on \(B(H)\) constructed. No gates/advantage. No dual \(F\)-translations.
-No claim every abstract CP extension fails.
+No channel on \(B(H)\). No gates/advantage. No dual \(F\)-translations.
+No ``all quantization fails.'' No full abstract C\(^*\) Stinespring construct.
 
 \begin{thebibliography}{99}
 \bibitem{A001}

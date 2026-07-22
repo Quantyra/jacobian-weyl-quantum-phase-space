@@ -48,8 +48,8 @@ https://github.com/Quantyra/exotic-ccr-lean
 
 | Paper | PDF | Tag | One-line |
 |-------|-----|-----|----------|
-| **B001** classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.1.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.1.0-b001-draft) | Complete dual fields ⇒ surjective \(F\); schema + examples |
-| **C001** completions of \(\psi\) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.1.0-c001-obstruction](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.1.0-c001-obstruction) | Algebraic \*-SOS OK; C0/Bogoliubov/CCR-\*-hom NO-GO; algebraic correspondence; strict free CP OPEN |
+| **B001** classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.0-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.0-b001-draft) | Complete dual fields ⇒ surjective \(F\); schema + examples |
+| **C001** completions of \(\psi\) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.0-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.0-c001-companion) | Algebraic \*-SOS OK; C0/Bogoliubov/CCR-\*-hom NO-GO; algebraic correspondence; strict free CP OPEN |
 
 A001 remains citable via **concept DOI** even before arXiv endorsement.
 
