@@ -11,7 +11,8 @@ Scope: **H=-iX_1 only**
 - [x] Round-2 + round-3 minor fixes (ε₀ window, dominating function, cites, package)  
 - [x] CITATION.cff / packet / endorsement / README = v0.3.6-submit  
 - [x] Concept DOI only (no stale version-DOI claim)  
-- [x] Lean pinned to tag v0.1.1-collision in biblio  
+- [x] Lean pinned to tag v0.1.2-theorem-c-algebra (c9bd0d2; T-C Piola + full dual-field brackets) in biblio  
+
 
 ## Dan now
 - [ ] Final PDF skim  
