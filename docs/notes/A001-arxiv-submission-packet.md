@@ -12,7 +12,7 @@
 | TeX | docs/notes/A001-arxiv.tex |
 | Release | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit |
 | Concept DOI | https://doi.org/10.5281/zenodo.21474351 (project-level only until version ingest) |
-| Lean | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.2-theorem-c-algebra (SHA c9bd0d2; push may lag if org auth needed) |
+| Lean | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.3-theorem-c-weyl (SHA ef4ee2f) |
 
 ## Comments line
 Seed map due to Alpöge (credits Fable); restated/verified only. Companion v0.3.6-submit; concept DOI 10.5281/zenodo.21474351. H=-iX_1 only. No gates/channels/advantage.
