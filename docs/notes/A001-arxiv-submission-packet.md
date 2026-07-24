@@ -12,7 +12,8 @@
 | TeX | docs/notes/A001-arxiv.tex |
 | Release | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit |
 | Concept DOI | https://doi.org/10.5281/zenodo.21474351 (project-level only until version ingest) |
-| Lean | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.4-theorem-d-incomplete (SHA 68f5fd3) |
+| Lean (paper biblio pin) | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.4-theorem-d-incomplete (SHA 68f5fd3) |
+| Lean (latest companion; E still open) | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.6-theorem-e-deficiency-bridge (SHA 348bf47) |
 
 ## Comments line
 Seed map due to Alpöge (credits Fable); restated/verified only. Companion v0.3.6-submit; concept DOI 10.5281/zenodo.21474351. H=-iX_1 only. No gates/channels/advantage.
