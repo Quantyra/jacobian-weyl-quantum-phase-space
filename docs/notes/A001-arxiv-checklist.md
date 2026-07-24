@@ -11,8 +11,9 @@ Scope: **H=-iX_1 only**
 - [x] Round-2 + round-3 minor fixes (ε₀ window, dominating function, cites, package)  
 - [x] CITATION.cff / packet / endorsement / README = v0.3.6-submit  
 - [x] Concept DOI only (no stale version-DOI claim)  
-- [x] Lean biblio (paper-proved surface): tag v0.1.4-theorem-d-incomplete (68f5fd3; T-C + Weyl \(\psi\) + T-D \(X_1\) incomplete)  
-- [x] Lean companion progress (not paper E claim): tag v0.1.6-theorem-e-deficiency-bridge (348bf47; minimal core + deficiency⇒not-ESS bridge; unconditional T-E still open)  
+- [x] Lean biblio (paper-proved surface through T-D): tag v0.1.4-theorem-d-incomplete (68f5fd3; T-C + Weyl \(\psi\) + T-D \(X_1\) incomplete)  
+- [x] Lean full paper Theorem B: tag v0.1.7-theorem-b-poisson (27e7136; \(JB^T=I\), Poisson generator brackets, \(\Phi\) non-injective)  
+- [x] Lean companion progress (not paper E claim): tag v0.1.6-theorem-e-deficiency-bridge (8b5ca4e; minimal core + deficiency⇒not-ESS bridge; unconditional T-E still open)  
 
 
 
