@@ -34,10 +34,17 @@ for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebra
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
-\textbf{Software:} v0.3.6-submit; concept DOI
+\textbf{Software:} v0.3.7-theorem-e (proposed, untagged); concept DOI
 \url{https://doi.org/10.5281/zenodo.21474351}
-(project-level; version DOI pending Zenodo ingest).\\
+(project-level; no new version DOI is asserted before release ingest).\\
 \textbf{Categories (suggested):} math.SP (primary); math.FA, math-ph (secondary).
+
+\paragraph{Lean coverage boundary.}
+The companion Lean artifact at SHA \texttt{a6bb091} proves the bounded canonical-core
+declaration \texttt{ExoticCCR.theoremE}: the minimal transport core for X1 is not
+essentially self-adjoint via a constructed weak minus-i witness. The
+deficiency-index value (infinity,infinity), extension multiplicity, and full
+Theorem~F remain paper-grade and are not claimed as Lean-covered.
 
 \paragraph{Errata (prior releases).}
 v0.2.2 pair \((0,\infty)\) for \(H\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)). This submission is \textbf{\(H=-iX_1\) only}: we do \emph{not} claim exact deficiency pairs for \(H_0,H_2\), nor a theorem-level dual-flow strong CCR no-go (companion notes only).
@@ -412,7 +419,7 @@ concept DOI \url{https://doi.org/10.5281/zenodo.21474351} (project-level).
 
 \bibitem{FredriksenLean}
 D.~E.~Fredriksen, exotic-ccr-lean, GitHub Quantyra/exotic-ccr-lean,
-tag v0.1.4-theorem-d-incomplete (commit 68f5fd3),
+untagged review SHA a6bb091 (bounded Theorem E),
 \url{https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.4-theorem-d-incomplete}
 (Lean~4 formalization of the seed identities, dual-matrix algebra, Piola row
 divergence, full dual-field commutation, the polynomial Weyl endomorphism

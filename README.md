@@ -1,7 +1,7 @@
 ﻿# EXOTIC-CCR â€” Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release (arXiv candidate):** [v0.3.6-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit)  
+**Release (arXiv candidate):** v0.3.7-theorem-e (proposed, untagged; bounded Lean Theorem E review)  
 **Prior:** [v0.3.5-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit) · [v0.3.3](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3)  
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (version DOI pending ingest)  
 **Do not use:** v0.2.2 pair or v0.3.0 Dom(H*) proof
@@ -27,7 +27,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 ## One-sentence result
 
-For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, but \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\) (infinitely many extensions; none preferred).
+For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The bounded Lean-backed result is the exact canonical-core conclusion `ExoticCCR.theoremE` at Lean SHA `a6bb091`; the index value and full Theorem F remain historical paper-grade, not Lean-covered.
 
 ## Non-claims
 
@@ -41,6 +41,10 @@ Full boundary: [INTEGRITY.md](INTEGRITY.md) Â· paper draft Â§9
 ## Companion Lean (Gate-0 seed)
 
 https://github.com/Quantyra/exotic-ccr-lean
+
+The proposed companion freeze is untagged at `a6bb091`. It proves the bounded
+canonical `X1` non-essential-self-adjointness theorem, but does not prove the
+historical deficiency-index value or full Theorem F.
 
 ## Companion papers (B001 / C001) — advance while A001 waits on arXiv endorsement
 
@@ -78,7 +82,9 @@ scripts/cas/          # reproducible verifiers
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Prefer version DOI `10.5281/zenodo.21478679` (v0.3.3) or concept `10.5281/zenodo.21474351`. Do not use v0.2.2 pair or v0.3.0 Dom(H*) proof.
+See [CITATION.cff](CITATION.cff). The proposed `v0.3.7-theorem-e` has no
+version DOI or tag yet. Existing DOI records refer to earlier artifacts and
+must not be relabeled. Do not use the v0.2.2 pair or v0.3.0 Dom(H*) proof.
 
 ## License
 
