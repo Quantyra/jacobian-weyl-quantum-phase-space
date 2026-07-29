@@ -12,7 +12,7 @@
 **Current tag/release:** none
 **Historical tag:** `v0.3.3-c001-companion` @ `45e7d53` (do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `7a3558063166ad044cda1dd8e8a258bad3edb07c3b90cf3fc111d2f26b115d04`
+**Current PDF SHA-256:** `346cbaa0be5150d3000238785a868d968c4a140e9155c66b164c4ae4184fc425`
 **Pack:** COMPANION-PACK.md  
 
 ## Scoreboard

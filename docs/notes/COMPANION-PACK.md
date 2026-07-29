@@ -29,7 +29,7 @@ not replace the mandatory independent publication gates.
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
-| Current PDF SHA-256 | `ed0472f3fc75dbc2aa12f6989644ffdb42ef0ea15d7bb067813eb2cd36d79747` |
+| Current PDF SHA-256 | `06502e13235d65582985e5afb927af56996494340ae1f511cfc665e98ddf95f2` |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
 | Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (current cross-companion correction; B001 content = v0.7, B7 PARTIAL) |
 | Current tag / release | none; corrected candidate is untagged/unreleased |
@@ -49,7 +49,7 @@ not replace the mandatory independent publication gates.
 | Artifact | Pin |
 |----------|-----|
 | PDF | [C001-cp-correspondence-arxiv.pdf](C001-cp-correspondence-arxiv.pdf) |
-| Current PDF SHA-256 | `7a3558063166ad044cda1dd8e8a258bad3edb07c3b90cf3fc111d2f26b115d04` |
+| Current PDF SHA-256 | `346cbaa0be5150d3000238785a868d968c4a140e9155c66b164c4ae4184fc425` |
 | TeX | [C001-cp-correspondence-arxiv.tex](C001-cp-correspondence-arxiv.tex) |
 | Marker | [C001-FREEZE-v0.1.md](C001-FREEZE-v0.1.md) (current correction status) |
 | Current tag / release | none; corrected candidate is untagged/unreleased |

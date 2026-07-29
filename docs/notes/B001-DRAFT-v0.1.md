@@ -12,7 +12,7 @@
 **Current tag/release:** none
 **Historical tag:** `v0.2.3-b001-draft` @ `45e7d53` (prior `v0.2.2` @ `61bf3da` package-superseded; do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `ed0472f3fc75dbc2aa12f6989644ffdb42ef0ea15d7bb067813eb2cd36d79747`
+**Current PDF SHA-256:** `06502e13235d65582985e5afb927af56996494340ae1f511cfc665e98ddf95f2`
 **Pack:** COMPANION-PACK.md  
 **A001:** proposed v0.3.9 untagged/unreleased with no version DOI; current non-claims and package/metadata re-gates pending, then Dan approval and endorsement/publication actions remain
 **C:** C001 v0.9 claim-boundary correction; J2 NO-GO (H1 only); historical J3 full-triple claim **WITHDRAWN / OPEN pending Lean**; J4–J7 split; Diag-CP-Φ₀ CONSTRUCT; Full-ψ-BT-Envelope (bounded dual-momentum transforms + Φ₀ positions; form-level; **not** CFC / **not** Weyl-C* / **not** Stinespring) CONSTRUCT; Full-ψ-CFC-SA-1 OBSTRUCT via J6; Full-ψ-CP-Weyl-C* OPEN (narrow)

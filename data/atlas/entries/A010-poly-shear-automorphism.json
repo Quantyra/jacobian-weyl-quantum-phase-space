@@ -2,7 +2,7 @@
   "atlas_id": "A010-poly-shear-automorphism",
   "version": "0.1.0",
   "mu_generic_degree": 1,
-  "mu_evidence": "automorphism_poly_inverse",
+  "mu_evidence": "certified",
   "ambient_dimension": 3,
   "map": {
     "name": "F_poly_shear_x2_padded",
@@ -23,7 +23,7 @@
     "retained_seed_triple": false,
     "target": ["0", "0", "0"],
     "inputs": [["0", "0", "0"]],
-    "status": "injective_automorphism"
+    "status": "unknown"
   },
   "placeholders": {
     "poisson_lift_Phi": "B=[[1,-2x],[0,1]] (triangular polynomial)",

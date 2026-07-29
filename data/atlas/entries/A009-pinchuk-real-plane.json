@@ -2,7 +2,7 @@
   "atlas_id": "A009-pinchuk-real-plane",
   "version": "0.1.0",
   "mu_generic_degree": 25,
-  "mu_evidence": "literature_fiber_cardinality_two_generic",
+  "mu_evidence": "unknown",
   "ambient_dimension": 3,
   "map": {
     "name": "F_Pinchuk_Campbell_padded",
@@ -27,7 +27,7 @@
     "retained_seed_triple": false,
     "target": ["0", "26.25", "0"],
     "inputs": [["0", "0", "0"], ["-0.5262125000719114", "-4.04287779263451", "0"]],
-    "status": "certified_cas"
+    "status": "certified"
   },
   "placeholders": {
     "poisson_lift_Phi": "B = J^{-T}; J polynomial, det nowhere zero so B rational/smooth",
