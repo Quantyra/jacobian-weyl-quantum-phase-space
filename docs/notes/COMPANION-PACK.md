@@ -2,7 +2,9 @@
 
 **Date:** 2026-07-22  
 **Status:** ACTIVE (A001 arXiv waits on math-ph endorsement `VIPN6B` — human only; no agent work)  
-**Rule:** A001 PDF frozen at `v0.3.6-submit`; companions do not rewrite it.
+**Rule:** The current A001 review candidate is `v0.3.8-theorem-f` (proposed,
+untagged). The earlier `v0.3.6-submit` package is a historical prior recorded
+in the external review log; companions do not rewrite that historical record.
 
 ---
 
@@ -11,7 +13,7 @@
 | Artifact | Pin |
 |----------|-----|
 | PDF | [A001-arxiv.pdf](A001-arxiv.pdf) |
-| Tag | [v0.3.6-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit) |
+| Candidate | `v0.3.8-theorem-f` (proposed, untagged; no release or version DOI) |
 | Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) |
 | Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has \((n_+,n_-)=(\infty,\infty)\); seed restated; H₁-only |

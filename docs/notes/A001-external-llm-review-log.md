@@ -40,7 +40,7 @@
 5. Softened novelty; stable seed cites (Alpöge X, Ulam PDF, Speyer).  
 6. Synced packet/endorsement/README/brief to v0.3.5-submit H₁-only.
 
-## Round 3 (v0.3.5 → v0.3.6-submit)
+## Round 3 historical prior (v0.3.5 → v0.3.6-submit)
 | Source | Verdict |
 |--------|---------|
 | ChatGPT A | PASS (math) |
@@ -51,7 +51,8 @@
 ### Round-3 fixes
 1. Saturation: ε₀ < τ₀²; maximal upper time = β.  
 2. Dom: explicit L¹ dominant for Fubini/IBP.  
-3. Package: CITATION.cff, packet, endorsement, README → v0.3.6-submit.  
+3. Historical package state: CITATION.cff, packet, endorsement, README →
+   v0.3.6-submit.
 4. DOI: concept only; no stale version-DOI claim.  
 5. Lean biblio pin `v0.1.1-collision`; hidelinks; categories math.SP primary suggested.  
 6. Framing: seed *verified*; contribution = D–F dual-lift deficiency.
