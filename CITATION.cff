@@ -1,13 +1,11 @@
 cff-version: 1.2.0
 message: "This is an untagged scientific-revision candidate; cite a released version when available."
-title: "EXOTIC-CCR A001: Poisson/Weyl lifts and Lean-backed dual-transport deficiency theory"
+title: "Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
-doi: 10.5281/zenodo.21474351
-version: "0.3.9-referee-revision"
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 license: Apache-2.0
@@ -17,22 +15,28 @@ keywords:
   - essential-self-adjointness
   - exotic-ccr
 abstract: >-
-  Proposed, untagged targeted revision of the A001 paper package. For the
+  Proposed, untagged v0.3.9-referee-revision candidate of the A001 paper
+  package. The project-level concept DOI 10.5281/zenodo.21474351 identifies
+  the continuing project record, not this candidate; no version DOI exists
+  for this untagged revision. For the
   canonical real dual transport operator H=-i X_1 associated with the
-  restated Alpoge-Fable Keller seed, the paper gives Hilbert deficiency
+  restated Alpöge–Fable Keller seed, the paper gives Hilbert deficiency
   indices n_+=n_-=aleph0. The revised main proof constructs the minus-i
   family from a forward maximal sheet and obtains the plus-i family through
   the measure-preserving sign involution. The synchronized Lean publication
-  freeze is b8bc72ea87531b88d50ed588ec6268ae743a662f; it is untagged and
+  freeze is 0735757f7f1a3a2875fcd29e31e03a203c3c8a74; it is untagged and
   unreleased. The historical theorem-source root is
-  ff50f4a2a312591c2e5b26e71eb390ade9164b34. Math.FA, math.AG, Lean/build,
-  non-claims, and package/metadata gates pass; only Dan approval remains
-  pending. Lean proves the exact aleph0 Hilbert-basis
+  ff50f4a2a312591c2e5b26e71eb390ade9164b34. The repository records successful
+  targeted and full Lean builds for that freeze; the current wording and
+  metadata revision requires fresh technical review before human approval.
+  Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
   classification for the specific H_X1_min, and an injective family of
   distinct self-adjoint-extension witnesses parameterized by unitary complex
-  phases. This exhibits a continuum-sized lower family but does not identify
-  the exact cardinality of the full extension type. No preferred extension,
+  phases. The continuum lower-family corollary additionally uses the classical
+  cardinality of the complex unit circle; that cardinal identification is not
+  one of the cited Lean declarations. The paper does not identify the exact
+  cardinality of the full extension type. No preferred extension,
   arbitrary-operator theorem, exact Hamel rank, strong CCR, physical selection,
   or rank-three Dixmier counterexample is claimed. The backward
   wall is retained as independent paper geometry and is not used in the main

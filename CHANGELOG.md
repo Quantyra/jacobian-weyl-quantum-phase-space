@@ -2,13 +2,30 @@
 
 ## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
 
+- Corrected the public claim boundary after external adversarial review:
+  Lean proves the injective unit-phase parameterization, while the continuum
+  cardinality conclusion separately uses the classical size of the complex
+  unit circle.
+- Renamed the Lean algebraic index reference to `hamelDeficiencyRank`, clearly
+  separating it from the Hilbert deficiency index.
+- Corrected Theorem E provenance: tag `v0.1.8-theorem-e` targets `be4f330`,
+  while `a6bb091` is the reviewed theorem-source anchor.
+- Marked the maximal-sheet diffeomorphism/invariance package, the quantitative
+  cutoff lower bound, and all-\(j\) analytic symmetry as paper-level routes
+  while recording the exact named Lean coverage used for Theorems E–F.
+- Aligned the paper title and candidate/DOI semantics across metadata, stated
+  the complex inner-product convention, and qualified every deficiency-space
+  dimension as Hilbert dimension.
+- Replaced public internal PASS language with factual recorded-build
+  provenance; fresh technical re-gating is required after this revision.
 - Repinned the full science package to synchronized, untagged Lean freeze
-  `b8bc72ea87531b88d50ed588ec6268ae743a662f`, whose strict cache retrieval,
-  full build, and executable publication axiom audit pass.
+  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74`; its repository provenance
+  records focused 8,684- and 8,692-job builds, a full 8,702-job build, and an
+  executable publication axiom audit.
 - Added the Lean-proved injective unit-phase family of distinct
-  `SelfAdjointExtension H_X1_min` witnesses. This exhibits a
-  continuum-sized lower family without claiming the exact cardinality of the
-  full extension type.
+  `SelfAdjointExtension H_X1_min` witnesses. Together with the classical
+  cardinality of the complex unit circle, this gives a continuum-sized lower
+  family without claiming the exact cardinality of the full extension type.
 - Expanded the central weak-adjoint proof to control both weak pairings and
   state the compact-interval integration by parts and escape/decay steps.
 - Proved the absolutely convergent improper identity separately on each
@@ -29,8 +46,8 @@
   D–F do not use the collision.
 - Repaired README UTF-8 corruption and separated paper-package, Lean
   theorem-source, and Lean synchronized-snapshot version streams.
-- Recorded the final technical re-gate state: math.FA, math.AG, Lean/build,
-  non-claims, and package/metadata PASS; only Dan approval remains pending.
+- Recorded the prior technical re-gate state, which is superseded by the
+  present claim-boundary revision and must be rerun before human approval.
 - No tag, release, arXiv submission, or DOI minting performed.
 
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)
@@ -38,7 +55,10 @@
 ### Lean supplement
 - Updated the untagged publication candidate to verified Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - Added the exact Hilbert-space result `hilbertDeficiencyIndex_X1_eq_aleph0` for the closed adjoint eigenspaces.
-- Preserved the distinction that `standardDeficiencyIndex`/`Module.rank` is algebraic (Hamel) rank, with the verified lower bounds `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` only; no exact Hamel-rank equality is claimed.
+- Preserved the distinction that the `Module.rank` definition—then named
+  `standardDeficiencyIndex`, now renamed `hamelDeficiencyRank`—is algebraic
+  (Hamel) rank, with the verified lower bounds `Cardinal.aleph0 ≤ n_+` and
+  `Cardinal.aleph0 ≤ n_-` only; no exact Hamel-rank equality is claimed.
 - Added the specific `H_X1_min` bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses and the at-least-two-distinct-extensions corollary.
 - At that historical candidate, the Lean corollary did not yet include the
   paper's infinitely-many/continuum consequence; the synchronized v0.3.9

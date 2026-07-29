@@ -1,14 +1,30 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — math.FA, math.AG, Lean/build, non-claims,
-and package/metadata PASS; only Dan approval pending.
+**Status:** SCIENTIFIC REVISION — claim-boundary corrections applied; fresh
+math.FA, math.AG, Lean/build, non-claims, and package/metadata re-gates pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
+PDF SHA-256: `b4f4a8882d828134a6aa15462d3d888c411186aa0c865632fa564a34fe24352d`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
 ## Targeted revision
 
+- [x] Lean-proved unit-phase injection is separated from the classical
+  continuum-cardinality corollary.
+- [x] The algebraic index is named `hamelDeficiencyRank` and distinguished
+  from Hilbert deficiency dimension.
+- [x] Theorem E provenance distinguishes tag target `be4f330` from reviewed
+  theorem-source anchor `a6bb091`.
+- [x] Complex inner products are explicitly conjugate-linear in the first
+  argument.
+- [x] Every deficiency-space `dim` in the paper is qualified as Hilbert
+  dimension.
+- [x] Paper-level maximal-sheet diffeomorphism/invariance, quantitative cutoff
+  bound, and all-\(j\) operator symmetry are distinguished from exact named
+  Lean coverage.
+- [x] Paper title, candidate/release status, and concept-versus-version DOI
+  semantics are aligned across the current metadata surfaces.
 - [x] Weak-adjoint proof dominates both the test-function and transport
   pairings.
 - [x] The absolutely convergent improper identity is proved on each fixed
@@ -46,7 +62,7 @@ Scope: **specific canonical \(H=-iX_1\) only**
 ## Lean boundary
 
 - Synchronized publication freeze:
-  `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased).
+  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.
@@ -59,21 +75,25 @@ The existing Lean results remain bounded to the specific `H_X1_min`:
 `ExoticCCR.theoremE`, `ExoticCCR.theoremF`,
 `hilbertDeficiencyIndex_X1_eq_aleph0`,
 `theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and
-`theoremFUnitPhaseExtension_injective`. The last two declarations exhibit an
-injective unit-phase family, hence a continuum-sized lower family of distinct
-extension witnesses. No preferred extension, arbitrary-operator
+`theoremFUnitPhaseExtension_injective`. The last two declarations prove an
+injective unit-phase family. The continuum-sized lower-family conclusion
+additionally uses the classical cardinality of the complex unit circle; that
+cardinal identification is not one of the cited Lean declarations. No
+preferred extension, arbitrary-operator
 classification, exact Hamel rank, exact cardinality of the full extension
 type, strong CCR, physical selection, or paper backward-wall formalization is
 asserted.
 
 ## Fresh mandatory gate
 
-- [x] math.FA/operator-theory proof-adversarial review PASS
-- [x] math.AG/Weyl–Dixmier review PASS
-- [x] Lean/build/axiom audit PASS on the synchronized freeze
-- [x] Non-claims review PASS
-- [x] Package/metadata review PASS
-- [x] Final PDF rendered as 11 letter-size pages and visually inspected
+- [ ] Fresh math.FA/operator-theory proof-adversarial review
+- [ ] Fresh math.AG/Weyl–Dixmier review
+- [x] Fresh Lean/build/axiom audit on the synchronized corrected freeze:
+  focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit
+- [ ] Fresh non-claims review
+- [ ] Fresh package/metadata review
+- [x] Revised PDF built twice without warnings, rendered as 11 letter-size
+  pages, and visually inspected page by page
 - [ ] Dan approval recorded
 
 No tag, release, DOI minting, or arXiv submission is authorized while any item

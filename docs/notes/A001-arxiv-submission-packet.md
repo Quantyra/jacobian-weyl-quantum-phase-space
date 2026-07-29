@@ -7,17 +7,17 @@
 
 | Item | Current value |
 |---|---|
-| PDF | `docs/notes/A001-arxiv.pdf` |
+| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `b4f4a8882d828134a6aa15462d3d888c411186aa0c865632fa564a34fe24352d` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Tag/release | none |
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
 | New version DOI | none; do not predict |
-| Synchronized Lean freeze | `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased) |
+| Synchronized Lean freeze | `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean build/axiom provenance | PASS at synchronized freeze |
-| Technical gates | math.FA, math.AG, Lean/build, and non-claims PASS |
-| Package/metadata recheck | PASS |
+| Lean build/axiom provenance | corrected freeze records focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit |
+| Technical gates | Lean/build complete; fresh math.FA, math.AG, and non-claims re-gates pending |
+| Package/metadata recheck | pending |
 | Human approval | pending Dan |
 
 ## Exact scope
@@ -31,7 +31,9 @@ The companion Lean artifact proves the bounded canonical-core Theorems E–F,
 the exact \(\aleph_0\) Hilbert-basis indices, the bijective von Neumann
 classification for the specific `H_X1_min`, and an injective family of
 distinct self-adjoint-extension witnesses parameterized by unitary complex
-phases. This exhibits a continuum-sized lower family. It does not prove a
+phases. Lean proves the phase injection; the continuum lower-family conclusion
+additionally uses the classical cardinality of the complex unit circle. It
+does not prove a
 preferred extension, an arbitrary-operator theorem, exact Hamel rank, exact
 cardinality of the full extension type, strong CCR, physical selection, or the
 paper backward-wall construction.
@@ -41,5 +43,5 @@ paper backward-wall construction.
 Seed map due to Alpöge and Claude Fable, with Akhil Mathew credited for
 prompting the question; restated and independently checked, not discovered
 here. No gates, channels, computational advantage, or rank-three Dixmier
-counterexample is claimed. All five technical gates PASS; the package remains
-blocked only pending Dan approval.
+counterexample is claimed. Fresh technical re-gates are required before the
+package can return to Dan for approval.

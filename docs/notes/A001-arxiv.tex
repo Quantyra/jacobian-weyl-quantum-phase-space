@@ -8,6 +8,12 @@
 \def\UrlFont{\ttfamily}
 \makeatother
 \usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{
+  pdftitle={Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator},
+  pdfauthor={Daniel Eric Fredriksen},
+  pdfsubject={Deficiency indices and self-adjoint extensions of a dual transport operator},
+  pdfkeywords={Jacobian conjecture, deficiency indices, self-adjoint extensions, Weyl algebra}
+}
 % Breakable monospaced path/filename (wraps like \url).
 \newcommand{\filepath}[1]{\path{#1}}
 \newtheorem{theorem}{Theorem}
@@ -40,20 +46,25 @@ equivalently \((\infty,\infty)\) in conventional deficiency-index notation, for 
 \textbf{Categories (suggested):} math.SP (primary); math.FA, math-ph (secondary).
 
 \paragraph{Lean coverage boundary.}
+\begingroup
+\emergencystretch=2em
 The companion Lean artifact proves the bounded canonical-core declaration
-\texttt{ExoticCCR.theoremE} (released tag \texttt{v0.1.8-theorem-e}, SHA
-\texttt{a6bb091}): the minimal transport core for X1 is not essentially
-self-adjoint via a constructed weak minus-i witness. The synchronized Lean
+\texttt{ExoticCCR.theoremE}: the minimal transport core for \(X_1\) is not
+essentially self-adjoint via a constructed weak \(-i\) witness. The historical
+release tag \texttt{v0.1.8-theorem-e} targets commit \texttt{be4f330};
+\texttt{a6bb091} is the reviewed Theorem~E source anchor within that release
+history, not the tag target. The synchronized Lean
 publication freeze is
-\texttt{b8bc72ea87531b88d50ed588ec6268ae743a662f}; it is untagged and
+{\small\texttt{0735757f7f1a3a2875fcd29e31e03a203c3c8a74}}; it is untagged and
 unreleased. The earlier commit
 \texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34} is retained only as the
 historical Theorem~F source root. At the synchronized freeze the artifact proves
 the bounded Theorem~F declaration \texttt{ExoticCCR.theoremF}: both adjoint
 eigenspaces $\ker(H^\dagger \mp i)$ of the canonical minimal core are not
-finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$, and
-the standard cardinal-valued lower bounds $\operatorname{Cardinal.aleph0}\le n_+$
-and $\operatorname{Cardinal.aleph0}\le n_-$. The
+finite-dimensional and the bounded reading of
+$(n_+,n_-)=(\infty,\infty)$. It also proves \(\operatorname{aleph0}\) lower
+bounds for the corresponding \texttt{Module.rank}-valued algebraic/Hamel
+ranks. The
 Lean route to the $+i$ side is a measure-preserving sign-involution transport
 ($\sigma(q_0,q_1,q_2)=(-q_0,-q_1,q_2)$, $X_1\circ\sigma=-\sigma_*X_1$) of the
 forward minus-i families, not this paper's backward-wall construction; the
@@ -62,18 +73,21 @@ of a chosen Hilbert basis for each closed adjoint eigenspace and proves the
 exact-index application theorem
 \texttt{hilbertDeficiencyIndex}\allowbreak\texttt{\_X1\_eq\_aleph0}; thus the exact Hilbert-space
 indices are $\operatorname{aleph0}$ on both sides. This is distinct from
-\texttt{standardDeficiencyIndex}, which is \texttt{Module.rank}
+\texttt{hamelDeficiencyRank}, which is \texttt{Module.rank}
 (algebraic/Hamel rank) and has lower bounds only. For the specific canonical
 minimal operator \texttt{H\_X1\_min}, the same SHA proves a bijective von
-Neumann classification of all \texttt{SelfAdjointExtension H\_X1\_min}
+Neumann classification of all
+\texttt{SelfAdjoint}\allowbreak\texttt{Extension H\_X1\_min}
 witnesses (self-adjoint \texttt{LinearPMap}s extending
 \texttt{H\_X1\_min}) by complex-linear isometric equivalences from the $+i$
 adjoint eigenspace to the $-i$ adjoint eigenspace. The declarations
-\texttt{theoremFUnitPhaseExtension} and
-\texttt{theoremFUnitPhaseExtension\_injective} prove that unitary complex
-phases parameterize distinct such witnesses. Thus Lean exhibits a
-continuum-sized lower family of self-adjoint-extension witnesses
-~\cite{FredriksenLeanF}.
+\texttt{theoremF}\allowbreak\texttt{UnitPhase}\allowbreak\texttt{Extension} and
+\texttt{theoremF}\allowbreak\texttt{UnitPhase}\allowbreak\texttt{Extension\_injective}
+prove that unitary complex
+phases inject into distinct such witnesses. The further conclusion that this
+is a continuum-sized lower family uses the classical cardinality of the
+complex unit circle; that cardinal identification is not part of these Lean
+declarations~\cite{FredriksenLeanF}.
 
 The paper's independent backward-wall proposition, the exact cardinality of
 the full extension type, preferred extension, arbitrary-operator
@@ -86,6 +100,8 @@ Lean-formalized at Stage~A SHA \texttt{bc679df} in
 graph-space foundations in
 \texttt{TheoremF}\allowbreak\texttt{VonNeumannGraph}. This is not an arbitrary-operator or
 arbitrary-transport-realization symmetry theorem.
+\par
+\endgroup
 
 \paragraph{Errata (prior releases).}
 v0.2.2 pair \((0,\infty)\) for \(H\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)). This submission is \textbf{\(H=-iX_1\) only}: we do \emph{not} claim exact deficiency pairs for \(H_0,H_2\), nor a theorem-level dual-flow strong CCR no-go (companion notes only).
@@ -137,7 +153,7 @@ Write \(J=DF\) and \(B:=J^{-T}\). Dual fields:
 X_j:=\sum_{k=0}^{2} B_{jk}(q)\,\partial_{q_k},\qquad j=0,1,2.
 \]
 \paragraph{Normalizations.}
-We use two compatible packages. (i)~\emph{Abstract Weyl algebra} \(\mathcal{W}\): generators \(q_k,p_\ell\) with \([q_i,p_j]=\delta_{ij}\) (Dixmier convention). (ii)~\emph{Schr\"odinger representation} on \(L^2(\mathbb{R}^3)\): multiplication by \(q_k\) and \(p_k^{\mathrm{Sch}}=-i\partial_{q_k}\), so \([q_i,p_j^{\mathrm{Sch}}]=i\delta_{ij}\). The operators \(H_j:=-iX_j\) live in package~(ii). When \(\operatorname{div} X_j=0\), each \(H_j\) is symmetric on \(C_c^\infty(\mathbb{R}^3)\). Collision data (char \(\neq 2\)):
+We use two compatible packages. (i)~\emph{Abstract Weyl algebra} \(\mathcal{W}\): generators \(q_k,p_\ell\) with \([q_i,p_j]=\delta_{ij}\) (Dixmier convention). (ii)~\emph{Schr\"odinger representation} on \(L^2(\mathbb{R}^3)\): multiplication by \(q_k\) and \(p_k^{\mathrm{Sch}}=-i\partial_{q_k}\), so \([q_i,p_j^{\mathrm{Sch}}]=i\delta_{ij}\). The operators \(H_j:=-iX_j\) live in package~(ii). When \(\operatorname{div} X_j=0\), each \(H_j\) is symmetric on \(C_c^\infty(\mathbb{R}^3)\). Our complex inner products are conjugate-linear in the first argument and linear in the second. Collision data (char \(\neq 2\)):
 \begin{equation}
 F\bigl(0,0,-\tfrac14\bigr)
 =F\bigl(1,-\tfrac32,\tfrac{13}2\bigr)
@@ -215,11 +231,19 @@ extends uniquely to a unital algebra endomorphism \(\psi:\mathcal{W}\to\mathcal{
 (The identities are algebraic in the Weyl algebra and match the dual-CAS generator checks in~\cite{FredriksenSoft}.)
 \end{proof}
 
+\paragraph{Lean coverage for Theorem~C(2).}
+The all-\(j\) analytic symmetry and commutator assertion above
+is the classical paper-level consequence of the Lean-verified polynomial
+divergence and dual-field identities. The pinned operator-level Lean theorem
+\filepath{H_X1_min_isFormalAdjoint_H_X1_min} formalizes the specific
+\(j=1\) compactly supported core used in Theorems~E--F; the freeze does not
+claim a named all-\(j\) operator theorem.
+
 \begin{remark}
 \(\psi\) is \emph{not} claimed to extend to a unitary conjugation on \(L^2\), a \(C^*\) automorphism, or a quantum channel.
 \end{remark}
 
-\section{Theorem D --- incompleteness of \(X_1\)}
+\section{Theorem D --- incompleteness of \texorpdfstring{\(X_1\)}{X1}}
 \begin{theorem}[D]
 The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\).
 \end{theorem}
@@ -299,14 +323,16 @@ then \(F(x,q_1,q_2)=(a,s,c)\) by polynomial identity.
 \section{Escape walls and deficiency indices}
 Write
 \[
-n_+:=\dim\ker(H^*-i),\qquad
-n_-:=\dim\ker(H^*+i).
+n_+:=\dim_{\mathrm H}\ker(H^*-i),\qquad
+n_-:=\dim_{\mathrm H}\ker(H^*+i),
 \]
+where \(\dim_{\mathrm H}\) denotes Hilbert dimension, i.e.\ orthonormal-basis
+cardinality, not algebraic/Hamel dimension.
 
 \subsection{Per-orbit dictionary}
 On \(L^2((\ell,r),\mathrm{d}s)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\)~\cite{RS2}:
-finite upper end \(\Rightarrow\dim\ker(h^*+i)=1\) (model \(e^{s-r}\));
-finite lower end \(\Rightarrow\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\)).
+finite upper end \(\Rightarrow\dim_{\mathrm H}\ker(h^*+i)=1\) (model \(e^{s-r}\));
+finite lower end \(\Rightarrow\dim_{\mathrm H}\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\)).
 
 \subsection{Forward wall}
 \begin{proposition}[Forward wall]
@@ -402,7 +428,17 @@ carried out directly on the open variable domain \(D_+\), rather than through
 a global assertion about the finite boundary of \(\Omega_+\).
 \end{proof}
 
-\subsection{Deficiency vectors in \(\operatorname{Dom}(H^*)\)}
+\paragraph{Lean coverage for the maximal sheet.}
+The diffeomorphism and \(X_1\)-invariance formulation in this lemma is the
+paper-level maximal-flow packaging. The pinned Lean route formalizes the
+ingredients consumed by the deficiency proof, including
+\texttt{injOn\_PsiFin3}, \texttt{isOpen\_image\_Psi},
+\texttt{measurableEmbedding\_PsiFin3}, the exact coordinate identity, and
+\texttt{abs\_det\_fderiv\_PsiFin3}; it does not package a named global
+diffeomorphism or \(X_1\)-invariance theorem.
+
+\subsection{Deficiency vectors in
+\texorpdfstring{\(\operatorname{Dom}(H^*)\)}{Dom(H*)}}
 \begin{lemma}[Deficiency vectors]
 For \(\chi\in C_c^\infty(W_+)\), so in particular
 \(\operatorname{supp}\chi\Subset W_+\), define on the entire maximal interval
@@ -485,6 +521,14 @@ Thus \(\chi\mapsto u_-\) is bounded below, hence injective, and embeds the
 infinite-dimensional space \(C_c^\infty(W_+)\) into \(\ker(H^*+i)\).
 \end{proof}
 
+\paragraph{Lean coverage for the cutoff family.}
+The displayed bounded-below map and its uniform quantitative constant are
+paper-level. The pinned Lean proof reaches the same required
+non-finite-dimensional conclusion through
+\texttt{exists\_finite\_weakAdjointEigenvector\_negI\_family}: for every
+finite cardinality it constructs linearly independent deficiency vectors
+from disjoint compactly supported transverse cutoffs.
+
 \subsection{Sign involution and the opposite deficiency space}
 \begin{lemma}[Sign transport]
 Let
@@ -554,8 +598,10 @@ to the closed symmetric operator \(\overline H\). Since
 moreover, a self-adjoint operator extends \(H\) if and only if it extends
 \(\overline H\). Fixing one deficiency-space isometry and multiplying it by
 the unit phases \(\lambda\in\mathbb C\), \(|\lambda|=1\), gives distinct
-extensions under the von Neumann bijection. Hence a continuum-sized family of
-self-adjoint extensions exists. Every
+extensions under the von Neumann bijection. Lean proves the injectivity of
+this phase parameterization; the classical fact that the complex unit circle
+has cardinality continuum then gives a continuum-sized family of
+self-adjoint extensions. Every
 such extension agrees with the same minimal operator on
 \(C_c^\infty(\mathbb{R}^3)\); the core algebraic Poisson/CCR relations
 recorded in Theorems~B--C therefore do not, by themselves, distinguish a
@@ -586,14 +632,16 @@ covers the bounded canonical-core Theorems E--F, the exact Hilbert-basis
 cardinal result, the specific \texttt{H\_X1\_min} von Neumann classification,
 and the injective unit-phase family of distinct extension witnesses at the
 synchronized freeze identified above. The algebraic index
-\texttt{standardDeficiency}\allowbreak\texttt{Index}, defined using
+\texttt{hamelDeficiency}\allowbreak\texttt{Rank}, defined using
 \texttt{Module.rank}, has lower bounds only.
 The independent backward-wall construction, exact cardinality of the full
 extension type, arbitrary-operator theorem, strong CCR, preferred extension,
 and algebraic or physical selection remain outside the Lean corollary. No
 theorem-level dual-flow strong CCR obstruction is claimed in this note.
+In particular, the artifact constructs the displayed Weyl endomorphism
+\(\psi\) but does not establish that \(\psi\) is noninvertible.
 
-\small
+\footnotesize
 \sloppy
 \raggedright
 \begin{thebibliography}{99}
@@ -665,31 +713,34 @@ concept DOI \url{https://doi.org/10.5281/zenodo.21474351} (project-level).
 
 \bibitem{FredriksenLean}
 D.~E.~Fredriksen, exotic-ccr-lean, GitHub Quantyra/exotic-ccr-lean,
-released tag v0.1.8-theorem-e, SHA a6bb091 (bounded Theorem E),
+released tag v0.1.8-theorem-e, tag target be4f330; reviewed bounded
+Theorem~E source anchor a6bb091,
 \url{https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.8-theorem-e}
 (Lean~4 formalization of the seed identities, dual-matrix algebra, Piola row
 divergence, full dual-field commutation, the polynomial Weyl endomorphism
 \(\psi\), and incompleteness of the dual field \(X_1\)).
 \bibitem{FredriksenLeanF}
 Theorem F supplement: synchronized, untagged, unreleased Lean publication
-freeze b8bc72ea87531b88d50ed588ec6268ae743a662f (historical theorem-source
+freeze 0735757f7f1a3a2875fcd29e31e03a203c3c8a74 (historical theorem-source
 root ff50f4a2a312591c2e5b26e71eb390ade9164b34);
 \path{ExoticCCR.theoremF},
-\path{aleph0_le_standardDeficiencyIndex_X1}, and
+\path{aleph0_le_hamelDeficiencyRank_X1}, and
 \path{hilbertDeficiencyIndex_X1_eq_aleph0},
 \texttt{theoremFVonNeumannClassification},
 \texttt{theoremFUnitPhaseExtension}, and
 \texttt{theoremFUnitPhaseExtension\_injective}. Both standard
 adjoint eigenspaces are not finite-dimensional, and
-\(\operatorname{Cardinal.aleph0}\le n_+\) and
-\(\operatorname{Cardinal.aleph0}\le n_-\). The separate Hilbert-basis
+\(\operatorname{Cardinal.aleph0}\) is a lower bound for each
+\texttt{hamelDeficiencyRank}. The separate Hilbert-basis
 cardinal is exactly \(\operatorname{aleph0}\) for both closed eigenspaces;
-\texttt{standardDeficiencyIndex} is the algebraic (Hamel) rank and its exact
+\texttt{hamelDeficiencyRank} is the algebraic (Hamel) rank and its exact
 value is not claimed. For the specific canonical minimal operator, all
 self-adjoint-extension witnesses are classified bijectively by complex-linear
 isometric equivalences from the $+i$ to the $-i$ adjoint eigenspace, and
-unitary complex phases inject into distinct witnesses, exhibiting a
-continuum-sized lower family. No exact cardinality of the full extension type,
+unitary complex phases inject into distinct witnesses. Together with the
+classical cardinality of the unit circle, this yields a continuum-sized lower
+family; the cardinal identification is not asserted as a Lean declaration.
+No exact cardinality of the full extension type,
 preferred extension, arbitrary-operator theorem, backward-wall construction,
 or algebraic/physical selection theorem is claimed.
 \end{thebibliography}

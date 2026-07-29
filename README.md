@@ -2,8 +2,8 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** math.FA, math.AG, Lean/build, non-claims, and package/metadata PASS; only Dan approval pending
-**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level only)
+**Scientific status:** targeted claim-boundary revision in progress; fresh technical re-gate required before Dan approval
+**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
 ## Start here
@@ -41,28 +41,33 @@ surjectivity/completeness equivalence.
 
 Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
-- Released Theorem E milestone: `v0.1.8-theorem-e`, SHA `a6bb091`.
+- Released Theorem E milestone: tag `v0.1.8-theorem-e` targets `be4f330`;
+  `a6bb091` is its reviewed theorem-source anchor.
 - Synchronized Lean publication freeze:
-  `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged and unreleased).
+  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged and unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 
-The synchronized freeze includes theorem sources, documentation, strict
-cache/build provenance, and the executable headline-theorem axiom audit.
-Math.FA, math.AG, Lean/build, non-claims, and package/metadata gates PASS. Only
-Dan approval remains pending.
+The synchronized freeze includes theorem sources, documentation, recorded
+strict cache/build provenance, and an executable headline-theorem axiom audit.
+Those records report successful focused 8,684- and 8,692-job builds, a full
+8,702-job build, and the executable axiom audit at the pinned SHA.
+The present wording/metadata revision requires a fresh technical re-gate
+before the candidate returns to Dan for approval.
 
 At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.
 `hilbertDeficiencyIndex_X1_eq_aleph0` gives exact \(\aleph_0\) Hilbert-basis
-cardinality for both closed eigenspaces. `standardDeficiencyIndex` is
+cardinality for both closed eigenspaces. `hamelDeficiencyRank` is
 `Module.rank` (algebraic/Hamel rank), for which only lower bounds are claimed.
 For the specific `H_X1_min`, `theoremFVonNeumannClassification` classifies all
 `SelfAdjointExtension H_X1_min` witnesses by complex-linear isometric
 equivalences from the \(+i\) to the \(-i\) adjoint eigenspace.
 `theoremFUnitPhaseExtension` and
 `theoremFUnitPhaseExtension_injective` prove that unitary complex phases inject
-into distinct extension witnesses, giving a continuum-sized lower family.
+into distinct extension witnesses. The continuum-sized lower-family conclusion
+also uses the classical fact that the complex unit circle has cardinality
+continuum; that cardinal identification is not part of those Lean declarations.
 
 ## Non-claims
 
@@ -72,6 +77,8 @@ into distinct extension witnesses, giving a continuum-sized lower family.
 - No arbitrary-operator classification, exact Hamel rank, or exact cardinality
   of the full extension type claimed as Lean corollaries.
 - No new rank-three Dixmier counterexample claim.
+- The displayed Weyl endomorphism is constructed, but its noninvertibility is
+  not established by this artifact.
 - No seed-discovery or priority claim.
 
 See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
@@ -90,7 +97,7 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 | G0 seed | certified | [D0 seed dossier](docs/validation/D0-seed-validation-dossier.md) |
 | G2 Poisson | certified | [G2 dossier](docs/validation/G2-poisson-A001-dossier.md) |
 | G3 Weyl | certified | [G3 dossier](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(H=-iX_1\) | proved; revised paper technical re-gate PASS | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
+| G4 \(H=-iX_1\) | theorem surface proved; revised package re-gate pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
 
 ## Citation and release status
 

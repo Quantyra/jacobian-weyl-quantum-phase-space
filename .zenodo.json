@@ -1,5 +1,5 @@
 {
-  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts and Lean-backed dual-transport deficiency theory",
+  "title": "Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator",
   "upload_type": "software",
   "creators": [
     {
@@ -8,7 +8,6 @@
     }
   ],
   "license": "Apache-2.0",
-  "version": "0.3.9-referee-revision",
   "keywords": [
     "jacobian-conjecture",
     "deficiency-indices",
@@ -22,5 +21,5 @@
       "resource_type": "software"
     }
   ],
-  "description": "Proposed, untagged A001 scientific-revision candidate. The revised paper states Hilbert deficiency indices n_+=n_-=aleph0 for the canonical H=-iX1, using the forward maximal sheet and sign-involution transport in the main proof. The synchronized Lean publication freeze is b8bc72ea87531b88d50ed588ec6268ae743a662f; it is untagged and unreleased. The historical theorem-source root is ff50f4a2a312591c2e5b26e71eb390ade9164b34. Lean proves an injective family of distinct self-adjoint-extension witnesses parameterized by unitary complex phases, exhibiting a continuum-sized lower family without identifying the exact cardinality of the full extension type. Math.FA, math.AG, Lean/build, non-claims, and package/metadata gates pass; only Dan approval remains pending. No preferred extension, arbitrary-operator theorem, exact Hamel rank, strong CCR, physical selection, or rank-three Dixmier counterexample is claimed. No tag, release, arXiv identifier, or new version DOI is asserted."
+  "description": "Proposed, untagged A001 v0.3.9-referee-revision candidate. The revised paper states Hilbert deficiency indices n_+=n_-=aleph0 for the canonical H=-iX1, using the forward maximal sheet and sign-involution transport in the main proof. The synchronized Lean publication freeze is 0735757f7f1a3a2875fcd29e31e03a203c3c8a74; it is untagged and unreleased. The historical theorem-source root is ff50f4a2a312591c2e5b26e71eb390ade9164b34. Lean proves an injective family of distinct self-adjoint-extension witnesses parameterized by unitary complex phases. The continuum lower-family corollary additionally uses the classical cardinality of the complex unit circle; that cardinal identification is not one of the cited Lean declarations. The repository records successful focused and full Lean builds plus the executable axiom audit at the pinned freeze, while this wording and metadata revision requires fresh math.FA, math.AG, non-claims, and package/metadata review before human approval. No preferred extension, arbitrary-operator theorem, exact Hamel rank, exact cardinality of the full extension type, strong CCR, physical selection, or rank-three Dixmier counterexample is claimed. The project-level concept DOI 10.5281/zenodo.21474351 does not identify this candidate. No tag, release, arXiv identifier, or new version DOI is asserted."
 }
