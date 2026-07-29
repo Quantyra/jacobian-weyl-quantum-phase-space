@@ -1,7 +1,7 @@
 ﻿# EXOTIC-CCR â€” Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release (arXiv candidate):** v0.3.8-theorem-f (proposed, untagged; Hilbert-index Lean update under review)  
+**Release (arXiv candidate):** v0.3.8-theorem-f (proposed, untagged; Hilbert-index plus bounded `H_X1_min` von Neumann-classification Lean update under review)
 **Prior:** [v0.3.5-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit) · [v0.3.3](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3)  
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (version DOI pending ingest)  
 **Do not use:** v0.2.2 pair or v0.3.0 Dom(H*) proof

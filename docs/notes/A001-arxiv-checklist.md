@@ -21,7 +21,7 @@ Scope: **H=-iX_1 only**
 
 - [ ] Non-claims review PASS on final paper and README surfaces after this update
 - [ ] Package/metadata review PASS on final candidate version/SHA/DOI ledger after this update
-- [ ] Lean/build/audit review PASS on final Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
+- [x] Lean/build/audit review PASS on final Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
 - [x] Final PDF rendered and visually inspected from the updated candidate TeX
 - [ ] Dan approval recorded
 
