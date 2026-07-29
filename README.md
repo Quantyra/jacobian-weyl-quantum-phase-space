@@ -46,7 +46,8 @@ The companion Theorem E freeze is released as `v0.1.8-theorem-e` (theorem SHA
 `a6bb091`): the bounded canonical `X1` non-essential-self-adjointness theorem.
 The proposed companion Theorem F classification freeze is untagged at
 `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
-(`ExoticCCR.theoremF`, under four-role review): both adjoint eigenspaces
+(`ExoticCCR.theoremF`; four-role technical review PASS, Dan approval pending):
+both adjoint eigenspaces
 \(\ker(H^\dagger \mp i)\) of the canonical minimal core are proved
 infinite-dimensional by sign-involution transport, with the additional
 standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0
