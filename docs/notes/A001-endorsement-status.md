@@ -1,6 +1,6 @@
 # A001 arXiv endorsement status
 
-**Last updated:** 2026-07-29  
+**Last updated:** 2026-07-28  
 **Category requested:** `math-ph` (Mathematical Physics)  
 
 | Field | Value |

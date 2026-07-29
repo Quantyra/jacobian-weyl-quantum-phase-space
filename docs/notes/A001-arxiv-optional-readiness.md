@@ -1,6 +1,6 @@
 # A001 arXiv — optional readiness (no submission)
 
-**Date:** 2026-07-29  
+**Date:** 2026-07-28  
 **Status:** **READY LOCALLY** for package inspection; **SUBMIT DEFERRED** (Dan/endorsement)  
 **Non-claims:** this file is not an arXiv submission
 

@@ -19,6 +19,7 @@ Lean-covered.
 | Field | Value |
 |-------|-------|
 | Proposed version | `0.3.8-theorem-f` |
+| Candidate science commit | `a6257775885fea8a526498a20d9f1a9222ebed2` |
 | Git tag/release | **none; review blocked** |
 | Lean supplement | `ExoticCCR.theoremF` and `hilbertDeficiencyIndex_X1_eq_aleph0` @ `f1fe83785add60ccc5f012b51e7576aab5627a74` (Theorem E @ `a6bb091`) |
 | New version DOI | **not yet minted; do not predict** |
