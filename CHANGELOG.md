@@ -2,6 +2,13 @@
 
 ## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
 
+- Repinned the full science package to synchronized, untagged Lean freeze
+  `b8bc72ea87531b88d50ed588ec6268ae743a662f`, whose strict cache retrieval,
+  full build, and executable publication axiom audit pass.
+- Added the Lean-proved injective unit-phase family of distinct
+  `SelfAdjointExtension H_X1_min` witnesses. This exhibits a
+  continuum-sized lower family without claiming the exact cardinality of the
+  full extension type.
 - Expanded the central weak-adjoint proof to control both weak pairings and
   state the compact-interval integration by parts and escape/decay steps.
 - Proved the absolutely convergent improper identity separately on each
@@ -33,7 +40,12 @@
 - Added the exact Hilbert-space result `hilbertDeficiencyIndex_X1_eq_aleph0` for the closed adjoint eigenspaces.
 - Preserved the distinction that `standardDeficiencyIndex`/`Module.rank` is algebraic (Hamel) rank, with the verified lower bounds `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` only; no exact Hamel-rank equality is claimed.
 - Added the specific `H_X1_min` bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses and the at-least-two-distinct-extensions corollary.
-- Preserved as nonclaims: a preferred extension, an arbitrary-operator theorem, exact extension cardinality, the paper's infinitely-many/continuum and algebraic-selection consequences as new Lean corollaries, and the paper-grade backward-wall construction.
+- At that historical candidate, the Lean corollary did not yet include the
+  paper's infinitely-many/continuum consequence; the synchronized v0.3.9
+  freeze supersedes that limitation with the injective unit-phase family.
+  Exact cardinality of the full extension type, preferred extension,
+  arbitrary-operator theorem, algebraic selection, and the paper-grade
+  backward-wall construction remained nonclaims.
 - No tag, release, version DOI, or final approval created.
 
 ## v0.3.3 — 2026-07-21

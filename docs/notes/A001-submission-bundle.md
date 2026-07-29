@@ -6,10 +6,12 @@ This is a local scientific-revision candidate, not a public freeze.
 - TeX: `docs/notes/A001-arxiv.tex`
 - Tag/release/arXiv identifier/new version DOI: none
 - Concept DOI: `10.5281/zenodo.21474351` (project-level only)
-- Lean theorem source: `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
-- Lean synchronized snapshot:
-  `94351f38d7d84fd073db14ff8764708fa9d2942b`
-- New final Lean freeze and fresh review gates: pending
+- Synchronized Lean freeze:
+  `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased)
+- Historical Theorem F source root:
+  `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
+- Lean cache/build/axiom provenance: PASS at synchronized freeze
+- Fresh scientific, non-claims, and package review gates: pending
 - Dan approval: pending
 
 Paper claim: the specific canonical \(H=-iX_1\) has Hilbert deficiency indices

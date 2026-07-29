@@ -8,7 +8,7 @@
 | Item | Path | Status |
 |---|---|---|
 | Canonical source | `docs/notes/A001-arxiv.tex` | revised |
-| PDF | `docs/notes/A001-arxiv.pdf` | final rebuild/inspection pending |
+| PDF | `docs/notes/A001-arxiv.pdf` | rebuild/inspection required after each revision |
 | Checklist | `docs/notes/A001-arxiv-checklist.md` | fresh gates open |
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | HOLD |
@@ -17,11 +17,14 @@
 
 ## Blocking gates
 
-1. New single-SHA Lean freeze with clean cache/build and axiom provenance.
-2. Fresh math.FA/operator-theory adversarial PASS.
-3. Fresh math.AG/Weyl–Dixmier PASS.
-4. Fresh Lean/build, non-claims, and package/metadata PASS.
-5. Final PDF visual inspection.
-6. Dan approval and any required arXiv endorsement.
+1. Fresh math.FA/operator-theory adversarial PASS.
+2. Fresh math.AG/Weyl--Dixmier PASS.
+3. Fresh non-claims and package/metadata PASS.
+4. Final PDF visual inspection.
+5. Dan approval and any required arXiv endorsement.
+
+Lean synchronized-freeze, cache/build, and executable axiom-audit gates are
+complete at `b8bc72ea87531b88d50ed588ec6268ae743a662f`; the freeze remains
+untagged and unreleased.
 
 No upload, tag, release, or DOI action is authorized before all blockers close.

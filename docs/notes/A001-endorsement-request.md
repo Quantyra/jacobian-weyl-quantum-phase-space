@@ -25,10 +25,12 @@ CCR, or rank-three Dixmier claim is made.
 **Tag/release/arXiv identifier:** none
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
-The Lean theorem-source root
-`ff50f4a2a312591c2e5b26e71eb390ade9164b34` and synchronized snapshot
-`94351f38d7d84fd073db14ff8764708fa9d2942b` are not one final immutable
-freeze. A new single-SHA freeze and clean build/axiom provenance remain
+The synchronized Lean publication freeze is
+`b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged and unreleased);
+strict cache retrieval, full build, and executable headline-theorem axiom
+audit are recorded there. The earlier
+`ff50f4a2a312591c2e5b26e71eb390ade9164b34` remains only the historical
+Theorem F source root. Fresh scientific/package gates and Dan approval remain
 required before submission.
 
 **Endorsement code:** `VIPN6B`  

@@ -45,29 +45,32 @@ Scope: **specific canonical \(H=-iX_1\) only**
 
 ## Lean boundary
 
-- Theorem-source root:
+- Synchronized publication freeze:
+  `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased).
+- Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
-- Synchronized repository snapshot:
-  `94351f38d7d84fd073db14ff8764708fa9d2942b`.
-- These are not one final immutable freeze.
-- [ ] Produce a new single-SHA Lean freeze with synchronized documentation.
-- [ ] Record clean `lake exe cache get` and `lake build` at that SHA.
-- [ ] Record headline-theorem axiom output in CI/provenance.
+- [x] Produce a single-SHA Lean freeze with synchronized documentation.
+- [x] Record strict `lake exe cache get`, targeted multiplicity build, and
+  full `lake build` at that SHA.
+- [x] Record and validate headline-theorem axiom output in executable
+  publication provenance.
 
 The existing Lean results remain bounded to the specific `H_X1_min`:
 `ExoticCCR.theoremE`, `ExoticCCR.theoremF`,
 `hilbertDeficiencyIndex_X1_eq_aleph0`,
-`theoremFVonNeumannClassification`, and
-`theoremF_exists_two_distinct_selfAdjointExtensions`. No preferred extension,
-arbitrary-operator classification, exact Hamel rank, exact extension
-cardinality, strong CCR, physical selection, or paper backward-wall
-formalization is asserted.
+`theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and
+`theoremFUnitPhaseExtension_injective`. The last two declarations exhibit an
+injective unit-phase family, hence a continuum-sized lower family of distinct
+extension witnesses. No preferred extension, arbitrary-operator
+classification, exact Hamel rank, exact cardinality of the full extension
+type, strong CCR, physical selection, or paper backward-wall formalization is
+asserted.
 
 ## Fresh mandatory gate
 
 - [ ] math.FA/operator-theory proof-adversarial review PASS
 - [ ] math.AG/Weyl–Dixmier review PASS
-- [ ] Lean/build/axiom audit PASS on the new single-SHA freeze
+- [x] Lean/build/axiom audit PASS on the synchronized freeze
 - [ ] Non-claims review PASS
 - [ ] Package/metadata review PASS
 - [x] Final PDF rendered as 11 letter-size pages and visually inspected

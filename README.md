@@ -42,33 +42,34 @@ surjectivity/completeness equivalence.
 Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
 - Released Theorem E milestone: `v0.1.8-theorem-e`, SHA `a6bb091`.
-- Theorem F source root:
+- Synchronized Lean publication freeze:
+  `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged and unreleased).
+- Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
-- Synchronized Lean repository snapshot:
-  `94351f38d7d84fd073db14ff8764708fa9d2942b`.
 
-The source root and synchronized snapshot are separate milestones, not a final
-immutable release. A new single-SHA Lean freeze, clean build/axiom provenance,
-fresh adversarial review, and Dan approval remain pending.
+The synchronized freeze includes theorem sources, documentation, strict
+cache/build provenance, and the executable headline-theorem axiom audit.
+Fresh adversarial review and Dan approval remain pending.
 
-At the theorem-source root, `ExoticCCR.theoremF` proves that both adjoint
+At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.
 `hilbertDeficiencyIndex_X1_eq_aleph0` gives exact \(\aleph_0\) Hilbert-basis
 cardinality for both closed eigenspaces. `standardDeficiencyIndex` is
 `Module.rank` (algebraic/Hamel rank), for which only lower bounds are claimed.
 For the specific `H_X1_min`, `theoremFVonNeumannClassification` classifies all
 `SelfAdjointExtension H_X1_min` witnesses by complex-linear isometric
-equivalences from the \(+i\) to the \(-i\) adjoint eigenspace, and
-`theoremF_exists_two_distinct_selfAdjointExtensions` proves at least two
-distinct witnesses exist.
+equivalences from the \(+i\) to the \(-i\) adjoint eigenspace.
+`theoremFUnitPhaseExtension` and
+`theoremFUnitPhaseExtension_injective` prove that unitary complex phases inject
+into distinct extension witnesses, giving a continuum-sized lower family.
 
 ## Non-claims
 
 - No unitary quantum gate, channel, or computational advantage.
 - No preferred physical extension.
 - No essential-self-adjointness conclusion for the other two dual momenta.
-- No arbitrary-operator classification, exact Hamel rank, or exact extension
-  cardinality claimed as Lean corollaries.
+- No arbitrary-operator classification, exact Hamel rank, or exact cardinality
+  of the full extension type claimed as Lean corollaries.
 - No new rank-three Dixmier counterexample claim.
 - No seed-discovery or priority claim.
 

@@ -13,9 +13,9 @@
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
 | New version DOI | none; do not predict |
-| Lean theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean synchronized snapshot | `94351f38d7d84fd073db14ff8764708fa9d2942b` |
-| Final Lean freeze | pending new single-SHA build/axiom audit |
+| Synchronized Lean freeze | `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased) |
+| Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
+| Lean build/axiom provenance | PASS at synchronized freeze |
 | Scientific gates | pending fresh math.FA and math.AG review |
 | Human approval | pending Dan |
 
@@ -28,10 +28,12 @@ wall is retained as independent geometry only.
 
 The companion Lean artifact proves the bounded canonical-core Theorems E–F,
 the exact \(\aleph_0\) Hilbert-basis indices, the bijective von Neumann
-classification for the specific `H_X1_min`, and at least two distinct
-self-adjoint-extension witnesses. It does not prove a preferred extension,
-an arbitrary-operator theorem, exact Hamel rank, exact extension cardinality,
-strong CCR, physical selection, or the paper backward-wall construction.
+classification for the specific `H_X1_min`, and an injective family of
+distinct self-adjoint-extension witnesses parameterized by unitary complex
+phases. This exhibits a continuum-sized lower family. It does not prove a
+preferred extension, an arbitrary-operator theorem, exact Hamel rank, exact
+cardinality of the full extension type, strong CCR, physical selection, or the
+paper backward-wall construction.
 
 ## Submission comment
 

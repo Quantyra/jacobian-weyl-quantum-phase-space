@@ -22,16 +22,17 @@ abstract: >-
   restated Alpoge-Fable Keller seed, the paper gives Hilbert deficiency
   indices n_+=n_-=aleph0. The revised main proof constructs the minus-i
   family from a forward maximal sheet and obtains the plus-i family through
-  the measure-preserving sign involution. The theorem-source root of the
-  companion Lean artifact is ff50f4a2a312591c2e5b26e71eb390ade9164b34;
-  its synchronized repository snapshot is
-  94351f38d7d84fd073db14ff8764708fa9d2942b. These are not a final immutable
-  release: a new single-SHA Lean freeze, fresh scientific and package gates,
-  and Dan approval remain pending. Lean proves the exact aleph0 Hilbert-basis
+  the measure-preserving sign involution. The synchronized Lean publication
+  freeze is b8bc72ea87531b88d50ed588ec6268ae743a662f; it is untagged and
+  unreleased. The historical theorem-source root is
+  ff50f4a2a312591c2e5b26e71eb390ade9164b34. Fresh scientific and package
+  gates and Dan approval remain pending. Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
-  classification for the specific H_X1_min, and at least two distinct
-  self-adjoint-extension witnesses. No preferred extension, arbitrary-operator
-  theorem, exact Hamel rank, exact extension cardinality, strong CCR, physical
-  selection, or rank-three Dixmier counterexample is claimed. The backward
+  classification for the specific H_X1_min, and an injective family of
+  distinct self-adjoint-extension witnesses parameterized by unitary complex
+  phases. This exhibits a continuum-sized lower family but does not identify
+  the exact cardinality of the full extension type. No preferred extension,
+  arbitrary-operator theorem, exact Hamel rank, strong CCR, physical selection,
+  or rank-three Dixmier counterexample is claimed. The backward
   wall is retained as independent paper geometry and is not used in the main
   deficiency proof. Prior withdrawn claims remain documented in the erratum.

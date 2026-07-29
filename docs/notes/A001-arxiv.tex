@@ -30,7 +30,7 @@ We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fabl
 \[
 (n_+,n_-)=(\aleph_0,\aleph_0),
 \]
-equivalently \((\infty,\infty)\) in conventional deficiency-index notation, for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. The operator-theory mechanism is classical; the contribution is its explicit realization for this dual field. No gates, channels, computational advantage, or seed discovery claim. Paper-package candidate \textbf{v0.3.9-referee-revision} (proposed, untagged).
+equivalently \((\infty,\infty)\) in conventional deficiency-index notation, for \(H=-iX_1\). A continuum-sized family of distinct self-adjoint extensions exists; the core algebraic CCR/Poisson data alone do not distinguish among them. The operator-theory mechanism is classical; the contribution is its explicit realization for this dual field. No gates, channels, computational advantage, or seed discovery claim. Paper-package candidate \textbf{v0.3.9-referee-revision} (proposed, untagged).
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
@@ -43,12 +43,12 @@ equivalently \((\infty,\infty)\) in conventional deficiency-index notation, for 
 The companion Lean artifact proves the bounded canonical-core declaration
 \texttt{ExoticCCR.theoremE} (released tag \texttt{v0.1.8-theorem-e}, SHA
 \texttt{a6bb091}): the minimal transport core for X1 is not essentially
-self-adjoint via a constructed weak minus-i witness. The theorem-source root is
-\texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34}; the synchronized Lean
-repository snapshot is
-\texttt{94351f38d7d84fd073db14ff8764708fa9d2942b}. Neither is a final release
-tag, and a new single-SHA Lean publication freeze remains pending. At the
-theorem-source root the artifact proves
+self-adjoint via a constructed weak minus-i witness. The synchronized Lean
+publication freeze is
+\texttt{b8bc72ea87531b88d50ed588ec6268ae743a662f}; it is untagged and
+unreleased. The earlier commit
+\texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34} is retained only as the
+historical Theorem~F source root. At the synchronized freeze the artifact proves
 the bounded Theorem~F declaration \texttt{ExoticCCR.theoremF}: both adjoint
 eigenspaces $\ker(H^\dagger \mp i)$ of the canonical minimal core are not
 finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$, and
@@ -68,13 +68,17 @@ minimal operator \texttt{H\_X1\_min}, the same SHA proves a bijective von
 Neumann classification of all \texttt{SelfAdjointExtension H\_X1\_min}
 witnesses (self-adjoint \texttt{LinearPMap}s extending
 \texttt{H\_X1\_min}) by complex-linear isometric equivalences from the $+i$
-adjoint eigenspace to the $-i$ adjoint eigenspace; it also proves at least two
-distinct such self-adjoint extensions exist~\cite{FredriksenLeanF}.
+adjoint eigenspace to the $-i$ adjoint eigenspace. The declarations
+\texttt{theoremFUnitPhaseExtension} and
+\texttt{theoremFUnitPhaseExtension\_injective} prove that unitary complex
+phases parameterize distinct such witnesses. Thus Lean exhibits a
+continuum-sized lower family of self-adjoint-extension witnesses
+~\cite{FredriksenLeanF}.
 
-The paper's independent backward-wall proposition, exact extension cardinality,
-infinitely-many/continuum and algebraic-selection consequences, preferred
-extension, and arbitrary-operator classification remain outside the new Lean
-corollary.
+The paper's independent backward-wall proposition, the exact cardinality of
+the full extension type, preferred extension, arbitrary-operator
+classification, and algebraic/physical selection claims remain outside the
+Lean corollary.
 Formal symmetry of the specific canonical minimal core
 \texttt{H\_X1\_min} on its $C_c^\infty$ test-function domain is separately
 Lean-formalized at Stage~A SHA \texttt{bc679df} in
@@ -539,7 +543,10 @@ Let \(\overline H\) denote the closure of \(H\). Von Neumann's theorem applies
 to the closed symmetric operator \(\overline H\). Since
 \(H^*=(\overline H)^*\), its deficiency spaces are those computed above;
 moreover, a self-adjoint operator extends \(H\) if and only if it extends
-\(\overline H\). Hence infinitely many self-adjoint extensions exist. Every
+\(\overline H\). Fixing one deficiency-space isometry and multiplying it by
+the unit phases \(\lambda\in\mathbb C\), \(|\lambda|=1\), gives distinct
+extensions under the von Neumann bijection. Hence a continuum-sized family of
+self-adjoint extensions exists. Every
 such extension agrees with the same minimal operator on
 \(C_c^\infty(\mathbb{R}^3)\); the core algebraic Poisson/CCR relations
 recorded in Theorems~B--C therefore do not, by themselves, distinguish a
@@ -568,16 +575,14 @@ physical extension. No claim that all quantization routes fail. Discovery of
 \(F\) is not claimed. No rank-three Dixmier counterexample is claimed. Lean
 covers the bounded canonical-core Theorems E--F, the exact Hilbert-basis
 cardinal result, the specific \texttt{H\_X1\_min} von Neumann classification,
-and existence of at least two distinct extension witnesses at the source root
-identified above; the later synchronized snapshot is not yet a final
-single-SHA release. The algebraic index
+and the injective unit-phase family of distinct extension witnesses at the
+synchronized freeze identified above. The algebraic index
 \texttt{standardDeficiency}\allowbreak\texttt{Index}, defined using
 \texttt{Module.rank}, has lower bounds only.
-The independent backward-wall construction, exact extension cardinality,
-infinitely-many/continuum and algebraic-selection consequences,
-arbitrary-operator theorem, strong CCR, and physical selection remain outside
-the Lean corollary. No theorem-level dual-flow strong CCR obstruction is
-claimed in this note.
+The independent backward-wall construction, exact cardinality of the full
+extension type, arbitrary-operator theorem, strong CCR, preferred extension,
+and algebraic or physical selection remain outside the Lean corollary. No
+theorem-level dual-flow strong CCR obstruction is claimed in this note.
 
 \small
 \sloppy
@@ -657,14 +662,15 @@ released tag v0.1.8-theorem-e, SHA a6bb091 (bounded Theorem E),
 divergence, full dual-field commutation, the polynomial Weyl endomorphism
 \(\psi\), and incompleteness of the dual field \(X_1\)).
 \bibitem{FredriksenLeanF}
-Theorem F supplement: theorem-source root
-ff50f4a2a312591c2e5b26e71eb390ade9164b34 and synchronized repository
-snapshot 94351f38d7d84fd073db14ff8764708fa9d2942b (both untagged);
+Theorem F supplement: synchronized, untagged, unreleased Lean publication
+freeze b8bc72ea87531b88d50ed588ec6268ae743a662f (historical theorem-source
+root ff50f4a2a312591c2e5b26e71eb390ade9164b34);
 \path{ExoticCCR.theoremF},
 \path{aleph0_le_standardDeficiencyIndex_X1}, and
 \path{hilbertDeficiencyIndex_X1_eq_aleph0},
-\texttt{theoremFVonNeumannClassification}, and
-\texttt{theoremF\_exists\_two\_distinct\_selfAdjointExtensions}. Both standard
+\texttt{theoremFVonNeumannClassification},
+\texttt{theoremFUnitPhaseExtension}, and
+\texttt{theoremFUnitPhaseExtension\_injective}. Both standard
 adjoint eigenspaces are not finite-dimensional, and
 \(\operatorname{Cardinal.aleph0}\le n_+\) and
 \(\operatorname{Cardinal.aleph0}\le n_-\). The separate Hilbert-basis
@@ -672,10 +678,10 @@ cardinal is exactly \(\operatorname{aleph0}\) for both closed eigenspaces;
 \texttt{standardDeficiencyIndex} is the algebraic (Hamel) rank and its exact
 value is not claimed. For the specific canonical minimal operator, all
 self-adjoint-extension witnesses are classified bijectively by complex-linear
-isometric equivalences from the $+i$ to the $-i$ adjoint eigenspace, and at
-least two distinct witnesses exist. No exact extension cardinality, preferred
-extension, arbitrary-operator theorem, backward-wall construction, or promotion
-of the paper's infinitely-many/continuum and algebraic-selection consequences
-is claimed.
+isometric equivalences from the $+i$ to the $-i$ adjoint eigenspace, and
+unitary complex phases inject into distinct witnesses, exhibiting a
+continuum-sized lower family. No exact cardinality of the full extension type,
+preferred extension, arbitrary-operator theorem, backward-wall construction,
+or algebraic/physical selection theorem is claimed.
 \end{thebibliography}
 \end{document}

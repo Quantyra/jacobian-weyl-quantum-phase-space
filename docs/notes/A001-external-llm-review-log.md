@@ -75,9 +75,10 @@ Blocking consensus:
 5. Synchronize one final Lean freeze and repair release/encoding surfaces.
 
 The first four items and the paper/package side of item 5 are implemented in
-`v0.3.9-referee-revision`. A new single-SHA Lean freeze, clean build/axiom
-provenance, fresh math.FA/math.AG/Lean/non-claims/package gates, final PDF
-inspection, and Dan approval remain open.
+`v0.3.9-referee-revision`. At that round, a new single-SHA Lean freeze and
+clean build/axiom provenance remained open; Round 6 below records their later
+completion. Fresh math.FA/math.AG/non-claims/package gates, final PDF
+inspection, and Dan approval remained open.
 
 ## Next
 
@@ -113,3 +114,22 @@ von Neumann corollary also now applies explicitly to the closure
 
 Fresh math.FA review is still required; this response does not mark the gate
 PASS.
+
+## Round 6 synchronized Lean freeze
+
+**Date:** 2026-07-29
+
+The science package is repinned to the synchronized, untagged, unreleased Lean
+freeze `b8bc72ea87531b88d50ed588ec6268ae743a662f`. Its publication provenance
+records strict cache retrieval, targeted and full builds, an executable
+headline-theorem axiom audit, and a forbidden-marker scan. The earlier
+`ff50f4a2a312591c2e5b26e71eb390ade9164b34` is retained only as the historical
+Theorem F source root.
+
+The freeze adds `theoremFUnitPhaseExtension` and
+`theoremFUnitPhaseExtension_injective`, which prove that unitary complex phases
+inject into distinct `SelfAdjointExtension H_X1_min` witnesses. The paper and
+package therefore state a continuum-sized lower family of distinct witnesses,
+while continuing not to claim the exact cardinality of the full extension
+type. No tag, release, DOI minting, arXiv submission, or Dan approval is
+recorded.
