@@ -12,9 +12,9 @@
 **Current tag/release:** none
 **Historical tag:** `v0.2.3-b001-draft` @ `45e7d53` (prior `v0.2.2` @ `61bf3da` package-superseded; do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `1523e08e4fad72b0818a49e9f28c855dbba8d3e0d66a064f3402c6d9319288cd`
+**Current PDF SHA-256:** `ed0472f3fc75dbc2aa12f6989644ffdb42ef0ea15d7bb067813eb2cd36d79747`
 **Pack:** COMPANION-PACK.md  
-**A001:** parked VIPN6B (human only)  
+**A001:** proposed v0.3.9 untagged/unreleased with no version DOI; current non-claims and package/metadata re-gates pending, then Dan approval and endorsement/publication actions remain
 **C:** C001 v0.9 claim-boundary correction; J2 NO-GO (H1 only); historical J3 full-triple claim **WITHDRAWN / OPEN pending Lean**; J4–J7 split; Diag-CP-Φ₀ CONSTRUCT; Full-ψ-BT-Envelope (bounded dual-momentum transforms + Φ₀ positions; form-level; **not** CFC / **not** Weyl-C* / **not** Stinespring) CONSTRUCT; Full-ψ-CFC-SA-1 OBSTRUCT via J6; Full-ψ-CP-Weyl-C* OPEN (narrow)
 **Dichotomy:** full poly thin-vs-open still conjecture; regime T excluded on proper/injective/deg-1/product/triangular/**graph-type / deg P≤2** (as global \(C^\infty\) diffeos / E); residual **OPEN-T** (non-coordinate deg≥3, Bad on atypical/bifurcation-born fibers)
 

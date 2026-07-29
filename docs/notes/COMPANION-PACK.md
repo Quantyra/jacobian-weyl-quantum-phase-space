@@ -29,7 +29,7 @@ not replace the mandatory independent publication gates.
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
-| Current PDF SHA-256 | `1523e08e4fad72b0818a49e9f28c855dbba8d3e0d66a064f3402c6d9319288cd` |
+| Current PDF SHA-256 | `ed0472f3fc75dbc2aa12f6989644ffdb42ef0ea15d7bb067813eb2cd36d79747` |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
 | Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (current cross-companion correction; B001 content = v0.7, B7 PARTIAL) |
 | Current tag / release | none; corrected candidate is untagged/unreleased |
@@ -66,7 +66,7 @@ not replace the mandatory independent publication gates.
 ## Cite
 
 1. Deficiency: cite no unreleased A001 version; the concept DOI does not identify the current candidate
-2. Classification: B001 v0.7 / `v0.2.3-b001-draft` @ `45e7d53`  
+2. Classification: do not cite the corrected B001 candidate until re-gated; historical `v0.2.3-b001-draft` does not identify its current PDF
 3. Completions of \(\psi\): do not cite the corrected C001 candidate until re-gated; historical `v0.3.3-c001-companion` contains withdrawn J3
 
 ## Non-claims

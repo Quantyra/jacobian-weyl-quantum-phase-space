@@ -91,7 +91,11 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 
 ## Companion papers
 
-| Paper | PDF | Existing release |
+The linked local PDFs are corrected, untagged, and unreleased candidates.
+The releases in the last column are historical and do **not** identify those
+current local PDF binaries.
+
+| Paper | Current local PDF (untagged correction) | Historical release (not this PDF) |
 |---|---|---|
 | B001 classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) |
 | C001 completions | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
