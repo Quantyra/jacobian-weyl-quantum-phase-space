@@ -1,7 +1,7 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — math.FA, math.AG, Lean/build, and non-claims
-PASS; package/metadata recheck and Dan approval pending.
+**Status:** SCIENTIFIC REVISION — math.FA, math.AG, Lean/build, non-claims,
+and package/metadata PASS; only Dan approval pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
 Tag/release: none
@@ -72,7 +72,7 @@ asserted.
 - [x] math.AG/Weyl–Dixmier review PASS
 - [x] Lean/build/axiom audit PASS on the synchronized freeze
 - [x] Non-claims review PASS
-- [ ] Package/metadata review PASS
+- [x] Package/metadata review PASS
 - [x] Final PDF rendered as 11 letter-size pages and visually inspected
 - [ ] Dan approval recorded
 

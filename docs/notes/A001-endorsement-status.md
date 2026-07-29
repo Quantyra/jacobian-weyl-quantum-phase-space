@@ -12,9 +12,8 @@
 | Tag/release/arXiv ID | none |
 | Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
 | Technical gates | math.FA, math.AG, Lean/build, and non-claims PASS |
-| Package/metadata recheck | pending |
+| Package/metadata recheck | PASS |
 | Dan approval | pending |
 
-Endorsement does not authorize submission. The revised package must first pass
-the package/metadata recheck recorded in `A001-arxiv-checklist.md`, followed by
-Dan's final approval.
+Endorsement does not authorize submission. All five technical gates recorded
+in `A001-arxiv-checklist.md` PASS; only Dan's final approval remains pending.

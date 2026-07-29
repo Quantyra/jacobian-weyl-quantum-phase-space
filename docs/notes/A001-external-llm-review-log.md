@@ -142,3 +142,14 @@ Math.FA, math.AG, Lean/build, and non-claims gates are now recorded PASS.
 Package/metadata recheck and Dan approval remain pending. Current checklist,
 README, endorsement, submission, and metadata surfaces use that same status.
 No tag, release, DOI minting, arXiv submission, or Dan approval is recorded.
+
+## Round 8 package/metadata exact re-gate
+
+**Date:** 2026-07-29
+
+Package/metadata exact re-gate PASS was recorded against science commit
+`02bbbfaf037238eb61f751e98ad806e8d5e7c7a3` and Lean freeze
+`b8bc72ea87531b88d50ed588ec6268ae743a662f`. All five technical gates now
+PASS; only Dan approval remains pending. This is a status-only update: the
+canonical TeX theorem content, rendered PDF, and Lean SHA are unchanged. No
+tag, release, DOI minting, arXiv submission, or Dan approval is recorded.

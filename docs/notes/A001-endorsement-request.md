@@ -1,7 +1,6 @@
 # arXiv endorsement request (draft email)
 
-> **HOLD — package/metadata recheck and Dan approval pending. Do not send
-> until the checklist and Dan approval are complete.**
+> **HOLD — Dan approval pending. Do not send until Dan approval is recorded.**
 
 **Subject:** arXiv endorsement request — math-ph — dual transport deficiency
 
@@ -30,8 +29,9 @@ The synchronized Lean publication freeze is
 strict cache retrieval, full build, and executable headline-theorem axiom
 audit are recorded there. The earlier
 `ff50f4a2a312591c2e5b26e71eb390ade9164b34` remains only the historical
-Theorem F source root. Math.FA, math.AG, Lean/build, and non-claims gates PASS;
-package/metadata recheck and Dan approval remain required before submission.
+Theorem F source root. Math.FA, math.AG, Lean/build, non-claims, and
+package/metadata gates PASS; only Dan approval remains required before
+submission.
 
 **Endorsement code:** `VIPN6B`  
 **Endorser link:** <https://arxiv.org/auth/endorse?x=VIPN6B>

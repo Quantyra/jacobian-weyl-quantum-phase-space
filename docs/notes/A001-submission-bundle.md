@@ -12,7 +12,7 @@ This is a local scientific-revision candidate, not a public freeze.
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
 - Lean cache/build/axiom provenance: PASS at synchronized freeze
 - Math.FA, math.AG, Lean/build, and non-claims gates: PASS
-- Package/metadata recheck: pending
+- Package/metadata recheck: PASS
 - Dan approval: pending
 
 Paper claim: the specific canonical \(H=-iX_1\) has Hilbert deficiency indices

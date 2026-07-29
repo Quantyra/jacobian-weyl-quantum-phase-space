@@ -2,7 +2,7 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** math.FA, math.AG, Lean/build, and non-claims PASS; package/metadata recheck and Dan approval pending
+**Scientific status:** math.FA, math.AG, Lean/build, non-claims, and package/metadata PASS; only Dan approval pending
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level only)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -49,8 +49,8 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
 The synchronized freeze includes theorem sources, documentation, strict
 cache/build provenance, and the executable headline-theorem axiom audit.
-Math.FA, math.AG, Lean/build, and non-claims gates PASS. Package/metadata
-recheck and Dan approval remain pending.
+Math.FA, math.AG, Lean/build, non-claims, and package/metadata gates PASS. Only
+Dan approval remains pending.
 
 At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.
@@ -90,7 +90,7 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 | G0 seed | certified | [D0 seed dossier](docs/validation/D0-seed-validation-dossier.md) |
 | G2 Poisson | certified | [G2 dossier](docs/validation/G2-poisson-A001-dossier.md) |
 | G3 Weyl | certified | [G3 dossier](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(H=-iX_1\) | proved; revised paper re-gate pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
+| G4 \(H=-iX_1\) | proved; revised paper technical re-gate PASS | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
 
 ## Citation and release status
 
