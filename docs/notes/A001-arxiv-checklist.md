@@ -10,8 +10,8 @@ Scope: **H=-iX_1 only**
 
 - [x] Theorems A-F and prior errata retained in the paper package
 - [x] Lean-backed bounded Theorem E recorded as `ExoticCCR.theoremE` at SHA `a6bb091`
-- [x] Lean-backed bounded Theorem F recorded as `ExoticCCR.theoremF` at SHA `8a08cf4c5803a19a5ae3dd9e980734d4595d636b`
-- [x] Paper explicitly separates the bounded Lean statement from paper-grade exact cardinal index, extension multiplicity, and backward-wall construction
+- [x] Lean-backed bounded Theorem F recorded as `ExoticCCR.theoremF` at SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2`
+- [x] Bounded supplement records `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` via `aleph0_le_standardDeficiencyIndex_X1`; equality `n_±=aleph0`, extension multiplicity/classification, and backward-wall construction remain paper-grade
 - [x] Metadata uses proposed version `v0.3.8-theorem-f` without inventing a DOI or tag
 
 ## Required re-gate

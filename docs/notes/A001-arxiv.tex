@@ -44,15 +44,18 @@ The companion Lean artifact proves the bounded canonical-core declaration
 \texttt{ExoticCCR.theoremE} (released tag \texttt{v0.1.8-theorem-e}, SHA
 \texttt{a6bb091}): the minimal transport core for X1 is not essentially
 self-adjoint via a constructed weak minus-i witness. At companion SHA
-\texttt{8a08cf4c5803a19a5ae3dd9e980734d4595d636b} (proposed, untagged, under review) the artifact further proves
+\texttt{30df8bcd310cab7a2c53d18500fcf847f1e284d2} (proposed, untagged, under review) the artifact further proves
 the bounded Theorem~F declaration \texttt{ExoticCCR.theoremF}: both adjoint
 eigenspaces $\ker(H^\dagger \mp i)$ of the canonical minimal core are not
-finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$. The
+finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$, and
+the standard cardinal-valued lower bounds $\operatorname{Cardinal.aleph0}\le n_+$
+and $\operatorname{Cardinal.aleph0}\le n_-$. The
 Lean route to the $+i$ side is a measure-preserving sign-involution transport
 ($\sigma(q_0,q_1,q_2)=(-q_0,-q_1,q_2)$, $X_1\circ\sigma=-\sigma_*X_1$) of the
 forward minus-i families, not this paper's backward-wall construction; the
-backward-wall propositions, the exact countable index value as a cardinal, and
-extension multiplicity remain paper-grade and are not claimed as Lean-covered.
+backward-wall propositions, equality $n_\pm=\operatorname{aleph0}$, and extension
+multiplicity/classification remain paper-grade and are not claimed as
+Lean-covered.
 Symmetry of the minimal core on $C_c^\infty$ is classical from
 $\operatorname{div}X_1=0$ and is likewise not separately Lean-formalized.
 
@@ -394,7 +397,7 @@ We do \emph{not} claim here exact deficiency indices for \(H_0\) or \(H_2\), nor
 Classical incomplete flows and half-line models are standard~\cite{RS2}. The contribution is the geometric dual-lift package for this Keller seed together with an explicit two-sided wall construction for \(H=-iX_1\).
 
 \section{Non-claims}
-No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: bounded canonical-core Theorems E--F only as described above; the exact cardinal index, extension multiplicity, and backward-wall construction remain paper-grade. No theorem-level dual-flow strong CCR obstruction in this note.
+No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: bounded canonical-core Theorems E--F only as described above; equality \(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, and backward-wall construction remain paper-grade. No theorem-level dual-flow strong CCR obstruction in this note.
 
 \small
 \begin{thebibliography}{99}
@@ -436,10 +439,13 @@ untagged review SHA a6bb091 (bounded Theorem E),
 divergence, full dual-field commutation, the polynomial Weyl endomorphism
 \(\psi\), and incompleteness of the dual field \(X_1\)).
 \bibitem{FredriksenLeanF}
-Theorem F supplement: `ExoticCCR.theoremF` at SHA
-8a08cf4c5803a19a5ae3dd9e980734d4595d636b (untagged review). Both standard
-adjoint eigenspaces are not finite-dimensional; the exact cardinal index,
-extension multiplicity, and paper backward-wall construction are not
-Lean-covered.
+Theorem F supplement: \texttt{ExoticCCR.theoremF} and
+\texttt{aleph0\_le\_standardDeficiencyIndex\_X1} at SHA
+30df8bcd310cab7a2c53d18500fcf847f1e284d2 (untagged review). Both standard
+adjoint eigenspaces are not finite-dimensional, and
+\(\operatorname{Cardinal.aleph0}\le n_+\) and
+\(\operatorname{Cardinal.aleph0}\le n_-\). Equality
+\(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, and
+paper backward-wall construction are not Lean-covered.
 \end{thebibliography}
 \end{document}

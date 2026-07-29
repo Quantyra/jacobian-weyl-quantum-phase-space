@@ -10,15 +10,17 @@
 | **Endorser URL** | https://arxiv.org/auth/endorse?x=VIPN6B |
 | **Fallback** | https://arxiv.org/auth/endorse.php + code `VIPN6B` |
 | **Candidate** | `v0.3.8-theorem-f` proposed, untagged |
-| **Lean Theorem F** | `ExoticCCR.theoremF` @ `8a08cf4c5803a19a5ae3dd9e980734d4595d636b` |
+| **Lean Theorem F** | `ExoticCCR.theoremF` @ `30df8bcd310cab7a2c53d18500fcf847f1e284d2` |
 | **Version DOI** | None; concept DOI only: `10.5281/zenodo.21474351` |
 
 The endorsement request remains a human action. No arXiv identifier, tag,
 release, version DOI, or final approval is asserted. The package boundary is
 H=-iX_1 only: the paper retains its paper-grade deficiency-index argument,
 while Lean coverage is bounded to both standard adjoint eigenspaces being not
-finite-dimensional. Exact cardinal index, extension multiplicity, and the
-paper's backward-wall construction remain outside Lean coverage.
+finite-dimensional, with standard cardinal-valued lower bounds `Cardinal.aleph0
+≤ n_+` and `Cardinal.aleph0 ≤ n_-`. Equality `n_±=aleph0`, extension
+multiplicity/classification, and the paper's backward-wall construction remain
+outside Lean coverage.
 
 ## Next human actions
 

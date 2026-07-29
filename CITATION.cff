@@ -21,11 +21,14 @@ abstract: >-
   with deficiency indices (infinity, infinity) via whole-orbit deficiency vectors.
   The companion Lean artifact proves the bounded canonical-core Theorem E via
   ExoticCCR.theoremE (tag v0.1.8-theorem-e, SHA a6bb091) and, proposed and under
-  review, the bounded Theorem F via ExoticCCR.theoremF at SHA 8a08cf4: both
+  review, the bounded Theorem F via ExoticCCR.theoremF at SHA
+  30df8bcd310cab7a2c53d18500fcf847f1e284d2: both
   adjoint eigenspaces ker(H-dagger -+ i) of the canonical minimal core are
   infinite-dimensional, obtained by a measure-preserving sign-involution
   transport of the forward minus-i families. The exact countable index value as
-  a cardinal, extension multiplicity, and the paper's backward-wall construction
-  remain not Lean-covered. Prior withdrawn: v0.2.2 pair (0,infinity); v0.3.0
+  a cardinal, extension multiplicity/classification, and the paper's backward-wall
+  construction remain not Lean-covered. The standard cardinal-valued lower
+  bounds are Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-; equality is not
+  claimed. Prior withdrawn: v0.2.2 pair (0,infinity); v0.3.0
   s-indicator proof. No gates/channels. This is a proposed untagged review
   artifact; no new version DOI is asserted.

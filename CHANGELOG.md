@@ -1,5 +1,13 @@
 ﻿# Changelog
 
+## v0.3.8-theorem-f — 2026-07-28 (candidate update)
+
+### Lean supplement
+- Updated the untagged publication candidate to Lean SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2`.
+- Added the verified standard cardinal-valued lower bounds `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-`.
+- Equality `n_±=aleph0`, extension multiplicity/classification, and the paper-grade backward-wall construction remain explicit non-claims of Lean coverage.
+- No tag, release, version DOI, or final approval created.
+
 ## v0.3.3 â€” 2026-07-21
 
 ### Theorem F (publication freeze candidate)

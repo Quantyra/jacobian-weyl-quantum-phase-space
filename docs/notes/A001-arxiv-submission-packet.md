@@ -13,8 +13,9 @@
 | Release | none; do not create until review and Dan approval |
 | Concept DOI | https://doi.org/10.5281/zenodo.21474351 (project-level only until version ingest) |
 | Lean (bounded Theorem E) | `ExoticCCR.theoremE` @ SHA `a6bb091` |
-| Lean (bounded Theorem F) | `ExoticCCR.theoremF` @ SHA `8a08cf4c5803a19a5ae3dd9e980734d4595d636b` |
-| Lean boundary | Exact cardinal index, extension multiplicity, and paper backward-wall construction remain paper-grade |
+| Lean (bounded Theorem F) | `ExoticCCR.theoremF` @ SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2` |
+| Lean supplement | `aleph0_le_standardDeficiencyIndex_X1`: `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` |
+| Lean boundary | Equality `n_±=aleph0`, extension multiplicity/classification, and paper backward-wall construction remain paper-grade |
 
 ## Comments line
 Seed map due to Alpöge (credits Fable); restated/verified only. Candidate

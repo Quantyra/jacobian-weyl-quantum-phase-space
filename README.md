@@ -27,7 +27,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 ## One-sentence result
 
-For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The bounded Lean-backed results are the canonical-core conclusions `ExoticCCR.theoremE` (Lean tag `v0.1.8-theorem-e`, SHA `a6bb091`) and — proposed, under review — `ExoticCCR.theoremF` at Lean SHA `8a08cf4`, which proves both adjoint eigenspaces \(\ker(H^\dagger \mp i)\) of the canonical minimal core infinite-dimensional (the bounded reading of \((n_+,n_-)=(\infty,\infty)\)) via a measure-preserving sign-involution transport of the forward \(-i\) families. The exact countable index value as a cardinal, extension multiplicity, and the paper's backward-wall construction remain paper-grade, not Lean-covered.
+For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The bounded Lean-backed results are the canonical-core conclusions `ExoticCCR.theoremE` (Lean tag `v0.1.8-theorem-e`, SHA `a6bb091`) and — proposed, under review — `ExoticCCR.theoremF` at Lean SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2`, which proves both adjoint eigenspaces \(\ker(H^\dagger \mp i)\) of the canonical minimal core are not finite-dimensional and verifies the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-, via a measure-preserving sign-involution transport of the forward \(-i\) families. Equality \(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, and the paper's backward-wall construction remain paper-grade, not Lean-covered.
 
 ## Non-claims
 
@@ -45,12 +45,13 @@ https://github.com/Quantyra/exotic-ccr-lean
 The companion Theorem E freeze is released as `v0.1.8-theorem-e` (theorem SHA
 `a6bb091`): the bounded canonical `X1` non-essential-self-adjointness theorem.
 The proposed companion Theorem F freeze is untagged at
-`8a08cf4c5803a19a5ae3dd9e980734d4595d636b`
+`30df8bcd310cab7a2c53d18500fcf847f1e284d2`
 (`ExoticCCR.theoremF`, under four-role review): both adjoint eigenspaces
 \(\ker(H^\dagger \mp i)\) of the canonical minimal core are proved
-infinite-dimensional by sign-involution transport. The paper's backward-wall
-construction, the exact countable index value as a cardinal, and extension
-multiplicity are not Lean-covered.
+infinite-dimensional by sign-involution transport, with the additional
+standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0
+≤ n_-. Equality n_±=aleph0, extension multiplicity/classification, and the
+paper's backward-wall construction are not Lean-covered.
 
 ## Companion papers (B001 / C001) — advance while A001 waits on arXiv endorsement
 

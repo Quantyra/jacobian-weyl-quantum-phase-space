@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "pending-v0.3.8-theorem-f-zenodo"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); bounded Lean companion ExoticCCR.theoremF at SHA 8a08cf4c5803a19a5ae3dd9e980734d4595d636b proves both standard adjoint eigenspaces are not finite-dimensional. Exact cardinal index, extension multiplicity, and backward-wall construction remain paper-grade. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
+claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); bounded Lean companion ExoticCCR.theoremF at SHA 30df8bcd310cab7a2c53d18500fcf847f1e284d2 proves both standard adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-. Equality n_±=aleph0, extension multiplicity/classification, and backward-wall construction remain paper-grade. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
 # Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -79,7 +79,7 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
-- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at companion SHAs recorded in the package metadata. Theorem F proves both standard adjoint eigenspaces are not finite-dimensional; it does not formalize the paper's backward-wall construction or exact cardinal index.  
+- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at companion SHAs recorded in the package metadata. Theorem F proves both standard adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds \(\operatorname{Cardinal.aleph0}\le n_+\) and \(\operatorname{Cardinal.aleph0}\le n_-\); it does not formalize equality \(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, or the paper's backward-wall construction.  
 - **Exact CAS (two engines) + conceptual proof:** B--C polynomial identities; D curve.  
 - **Analytic construction:** E--F deficiency functions in flow-box coordinates.  
 Software DOI: [5].
