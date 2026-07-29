@@ -20,21 +20,21 @@ and nonunique self-adjoint realizations of a dual transport operator}
 \author{Daniel Eric Fredriksen\\
 Quantyra Inc.\\
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}}
-\date{28 July 2026}
+\date{29 July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fable credited): \(\det DF\equiv -2\) and a three-point collision. Theorem~A restates those finite identities. Theorems~B--C record the standard cotangent/Piola/Weyl package for this seed; the novel analytic contribution is Theorems~D--F. The cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) is a polynomial Poisson map and non-injective. Dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\) commute and are divergence-free (Piola), so \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). We define the induced polynomial Weyl endomorphism \(\psi\). The field \(X_1\) is incomplete via an explicit integral curve. In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open forward and backward escape walls yield whole-orbit deficiency vectors in \(\operatorname{Dom}(H^*)\) (transverse cutoffs only; no interior \(s\)-indicators), hence
+We study the three-dimensional Keller map \(F\) announced by Alp\"oge (with Fable credited): \(\det DF\equiv -2\) and a three-point collision. Theorem~A restates those finite identities. Theorems~B--C record the standard cotangent/Piola/Weyl package for this seed; the analytic contribution is Theorems~D--F. The cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) is a polynomial Poisson map and non-injective. Dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\) commute and are divergence-free (Piola), so \(H_j=-iX_j\) are symmetric on \(C_c^\infty(\mathbb{R}^3)\). We define the induced polynomial Weyl endomorphism \(\psi\). The field \(X_1\) is incomplete via an explicit integral curve. In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). An open forward escape wall yields whole-orbit vectors in \(\ker(H^*+i)\) (transverse cutoffs only; no interior \(s\)-indicators); a measure-preserving sign involution transports them isometrically to \(\ker(H^*-i)\). Thus the Hilbert deficiency indices are
 \[
-(n_+,n_-)=(\infty,\infty)
+(n_+,n_-)=(\aleph_0,\aleph_0),
 \]
-for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. No gates, channels, computational advantage, or seed discovery claim. Companion code candidate \textbf{v0.3.8-theorem-f} (proposed, untagged).
+equivalently \((\infty,\infty)\) in conventional deficiency-index notation, for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebraic CCR/Poisson data alone do not distinguish among them. The operator-theory mechanism is classical; the contribution is its explicit realization for this dual field. No gates, channels, computational advantage, or seed discovery claim. Paper-package candidate \textbf{v0.3.9-referee-revision} (proposed, untagged).
 \end{abstract}
 
 \noindent\textbf{MSC 2020:} 47B25, 81S05, 14R15, 37C10, 53D17.\\
-\textbf{Software:} v0.3.8-theorem-f (proposed, untagged); concept DOI\\
+\textbf{Paper package:} v0.3.9-referee-revision (proposed, untagged); concept DOI\\
 \url{https://doi.org/10.5281/zenodo.21474351}
 (project-level; no new version DOI is asserted before release ingest).\\
 \textbf{Categories (suggested):} math.SP (primary); math.FA, math-ph (secondary).
@@ -43,8 +43,12 @@ for \(H=-iX_1\). Infinitely many self-adjoint extensions exist; the core algebra
 The companion Lean artifact proves the bounded canonical-core declaration
 \texttt{ExoticCCR.theoremE} (released tag \texttt{v0.1.8-theorem-e}, SHA
 \texttt{a6bb091}): the minimal transport core for X1 is not essentially
-self-adjoint via a constructed weak minus-i witness. At companion SHA
-\texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34} (proposed, untagged, under review) the artifact further proves
+self-adjoint via a constructed weak minus-i witness. The theorem-source root is
+\texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34}; the synchronized Lean
+repository snapshot is
+\texttt{94351f38d7d84fd073db14ff8764708fa9d2942b}. Neither is a final release
+tag, and a new single-SHA Lean publication freeze remains pending. At the
+theorem-source root the artifact proves
 the bounded Theorem~F declaration \texttt{ExoticCCR.theoremF}: both adjoint
 eigenspaces $\ker(H^\dagger \mp i)$ of the canonical minimal core are not
 finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$, and
@@ -65,9 +69,9 @@ Neumann classification of all \texttt{SelfAdjointExtension H\_X1\_min}
 witnesses (self-adjoint \texttt{LinearPMap}s extending
 \texttt{H\_X1\_min}) by complex-linear isometric equivalences from the $+i$
 adjoint eigenspace to the $-i$ adjoint eigenspace; it also proves at least two
-distinct such self-adjoint extensions exist.
+distinct such self-adjoint extensions exist~\cite{FredriksenLeanF}.
 
-The backward-wall propositions, exact extension cardinality,
+The paper's independent backward-wall proposition, exact extension cardinality,
 infinitely-many/continuum and algebraic-selection consequences, preferred
 extension, and arbitrary-operator classification remain outside the new Lean
 corollary.
@@ -83,11 +87,39 @@ arbitrary-transport-realization symmetry theorem.
 v0.2.2 pair \((0,\infty)\) for \(H\) withdrawn. v0.3.0 interior \(s\)-indicator deficiency proof withdrawn (\(\notin\operatorname{Dom}(H^*)\)). This submission is \textbf{\(H=-iX_1\) only}: we do \emph{not} claim exact deficiency pairs for \(H_0,H_2\), nor a theorem-level dual-flow strong CCR no-go (companion notes only).
 
 \section{Introduction}
-On 19--20 July 2026, Levent Alp\"oge announced an explicit polynomial map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision, crediting Fable (and related public discussion of the problem setup)~\cite{Alpoge2026,UlamJacobian,SpeyerJC2026}. \textbf{We do not claim discovery of \(F\).} The finite seed identities are \emph{verified} here by dual CAS and by a companion Lean 4 formalization~\cite{FredriksenLean,FredriksenSoft}; independent community checks of the announcement are already circulating~\cite{SpeyerJC2026}. Our contribution is the dual-lift deficiency analysis (Theorems~D--F), not the Jacobian-conjecture refutation itself.
+On 19--20 July 2026, Levent Alp\"oge announced an explicit polynomial map \(F:\mathbb{C}^3\to\mathbb{C}^3\) with \(\det DF\equiv-2\) and a three-point collision. The announcement credits Akhil Mathew with prompting the question and Claude Fable with work leading to the map~\cite{Alpoge2026,AFPJacobian}. \textbf{We do not claim discovery of \(F\).} The finite seed identities are \emph{verified} here by dual CAS and by a companion Lean 4 formalization~\cite{FredriksenLean,FredriksenSoft}; an independent Isabelle/HOL development verifies the determinant and collision and records the same attribution~\cite{AFPJacobian}. Our contribution is the dual-lift deficiency analysis (Theorems~D--F), not the Jacobian-conjecture refutation itself.
 
 We ask whether the standard Poisson/CCR lifts of \(F\) select a unique self-adjoint dual transport generator on \(C_c^\infty(\mathbb{R}^3)\). For \(H=-iX_1\) the answer is negative: deficiency indices \((\infty,\infty)\).
 
 \paragraph{Scope.} Theorems A--F below concern the algebra of the lifts and the analytic deficiency theory of \(H=-iX_1\). Remarks on other dual fields or alternative realizations are deferred to companion validation notes and are not claimed as theorems here.
+
+\subsection*{Algebraic and geometric context}
+The cotangent, Piola, and Weyl constructions in Theorems~B--C are standard
+once a Keller map is given; they are included to fix conventions and connect
+the seed to the analytic problem, not claimed as a new construction. Their
+Weyl-algebra setting is related to the Dixmier conjecture; for classical
+Jacobian-conjecture background see~\cite{BassCW}. The classical
+same-rank implication is \(\mathrm{DC}_n\Rightarrow\mathrm{JC}_n\), whereas
+Tsuchimoto and, independently, Belov--Kanel--Kontsevich proved the
+dimension-doubling converse
+\(\mathrm{JC}_{2n}\Rightarrow\mathrm{DC}_n\); together these give stable
+equivalence~\cite{Tsuchimoto2005,BKK2007,AdjamagboEssen2007}. In particular,
+one must not replace the latter by a dimension-preserving
+\(\mathrm{JC}_n\Rightarrow\mathrm{DC}_n\). We do not derive or claim here a
+new rank-three Dixmier counterexample, nor do we claim that the explicitly
+defined \(\psi\) is noninvertible.
+
+The July 2026 follow-on literature is developing rapidly. The Ulam preprint
+analyzes the seed's fibers and nonproperness~\cite{UlamJacobian}; Shaska studies
+its mixed-sign grading, quotient geometry, discriminant, and nonproperness
+mechanism~\cite{Shaska2026}; Speyer records an early public algebraic
+discussion~\cite{SpeyerJC2026}; and the Isabelle/AFP entry supplies an independent
+formal check of the finite seed identities~\cite{AFPJacobian}. These recent
+sources are cited as current preprints or formal artifacts, not as completed
+peer review. More generally, nonproperness sets of generically finite
+polynomial maps have an established literature~\cite{JelonekLason2018}. The
+escape wall below is an operator-theoretic use of explicit behavior at
+infinity; it does not purport to classify the full nonproperness set.
 
 \section{Setup}
 Let \(q=(q_0,q_1,q_2)=(x,y,z)\) and
@@ -123,7 +155,13 @@ Non-injectivity is immediate from \eqref{eq:collision}.
 \end{proof}
 
 \begin{remark}[Complex vs real]
-Over \(\mathbb{C}\), constant nonzero Jacobian and non-injectivity would be extraordinary for the Jacobian conjecture~\cite{BassCW}. We treat \(F\) as an externally announced seed~\cite{Alpoge2026,UlamJacobian,SpeyerJC2026}; Theorem~A is a restatement with CAS/Lean re-verification, not a priority claim. Our analytic results use the real \(L^2(\mathbb{R}^3)\) dual-field package.
+The seed is stated algebraically over \(\mathbb{C}^3\), but all three collision
+points in \eqref{eq:collision} are rational and hence real. Thus the same
+polynomial formulas restrict to a noninjective local diffeomorphism of
+\(\mathbb{R}^3\). We treat \(F\) as an externally announced
+seed~\cite{Alpoge2026,UlamJacobian,AFPJacobian}; Theorem~A is a restatement
+with CAS/Lean re-verification, not a priority claim. Theorems~D--F concern this
+real restriction and the associated \(L^2(\mathbb{R}^3)\) dual-field package.
 \end{remark}
 
 \section{Theorem B --- Poisson cotangent lift}
@@ -287,7 +325,10 @@ Regression certificate (companion release~\cite{FredriksenSoft}):
 \filepath{data/anchor/cas_orbit_measure_IFT_A001.json}.
 \end{proof}
 
-\subsection{Backward wall}
+\subsection{Independent backward-wall geometry (not used in Theorem~F)}
+The following calculation is retained as a geometric comparison with the
+forward wall. The deficiency proof below does not use it; the \(+i\) space is
+obtained from the forward \(-i\) space by the Lean-backed sign involution.
 \begin{proposition}[Backward wall]
 There exist a nonempty open \(U_-\) and \(\alpha\in C^\infty(U_-)\) such that for \((a,c)\in U_-\) a selected real branch exists for \(s>\alpha(a,c)\) with \(\|q\|\to\infty\) as \(s\downarrow\alpha^+\).
 \end{proposition}
@@ -337,25 +378,35 @@ where \(\beta\) is the wall value (hence the maximal upper \(s\)-time of this sh
 \qquad
 \Psi_+(a,c,s)=\phi_{s-(\beta-\varepsilon_0)}(q_\Sigma(a,c))
 \]
-is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Psi_+=(a,s,c)\), and \(s\to\beta^-\) occurs at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well. An analogous \(\Psi_-,\Omega_-\) exists for the lower wall (with \(\varepsilon_0\) inside the backward IFT window).
+is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Psi_+=(a,s,c)\), and \(s\to\beta^-\) occurs at spatial infinity. If \(\ell_+\) is finite, maximality forces escape as \(s\downarrow\ell_+\) as well.
 \end{lemma}
 \begin{proof}
-The maximal-flow domain \(\mathcal{D}\subset\mathbb{R}\times\mathbb{R}^3\) of the smooth vector field \(X_1\) is open and the flow \(\phi\) is \(C^\infty\) on \(\mathcal{D}\)~\cite{LeeSmooth}. The set \(D_+\) is (up to the smooth reparameterization \(s=F_1\)) the pullback of \(\mathcal{D}\) through the cross-section \(\Sigma_+\); openness of \(\mathcal{D}\) therefore yields openness of \(D_+\). Uniqueness of ODE solutions gives injectivity of \(\Psi_+\). Since \(F\circ\Psi_+=(a,s,c)\) identically on \(D_+\) and \(\det DF\neq 0\), \(\Psi_+\) is a local diffeomorphism, hence a \(C^\infty\) diffeomorphism onto its open image \(\Omega_+\). By the \(\varepsilon_0\)-window choice, the selected branch does not degenerate before the wall, so the maximal upper time equals \(\beta\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
+The maximal-flow domain \(\mathcal{D}\subset\mathbb{R}\times\mathbb{R}^3\) of the smooth vector field \(X_1\) is open and the flow \(\phi\) is \(C^\infty\) on \(\mathcal{D}\)~\cite{LeeSmooth}. The set \(D_+\) is (up to the smooth reparameterization \(s=F_1\)) the pullback of \(\mathcal{D}\) through the cross-section \(\Sigma_+\); openness of \(\mathcal{D}\) therefore yields openness of \(D_+\). Along every orbit, \(F_0\) and \(F_2\) are constant and \(F_1\) is the time coordinate. Hence two points of the parameter domain with different \((a,c)\) cannot map to the same orbit, while ODE uniqueness handles two parameterizations on a fixed orbit. Equivalently, the identity \(F\circ\Psi_+=(a,s,c)\) immediately gives injectivity of \(\Psi_+\). Since \(\det DF\neq 0\), \(\Psi_+\) is a local diffeomorphism, hence a \(C^\infty\) diffeomorphism onto its open image \(\Omega_+\). By the \(\varepsilon_0\)-window choice, the selected branch does not degenerate before the wall, so the maximal upper time equals \(\beta\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
+
+We also record the boundary fact used when extending deficiency functions by
+zero. Fix \(K\Subset W_+\) and suppose a sequence
+\(\Psi_+(a_m,c_m,s_m)\) with \((a_m,c_m)\in K\) converges to a finite point
+\(p\), after taking \((a_m,c_m)\to(a_*,c_*)\in K\). If
+\(s_m\to\beta(a_*,c_*)\), the uniform wall estimate forces
+\(\|\Psi_+(a_m,c_m,s_m)\|\to\infty\), a contradiction. If
+\(\ell_+(a_*,c_*)<s_*<\beta(a_*,c_*)\), continuity of the flow gives
+\(p=\Psi_+(a_*,c_*,s_*)\in\Omega_+\). Finally, a finite limit at
+\(s_*=\ell_+(a_*,c_*)\) would, by openness of the maximal-flow domain and
+continuous dependence on initial data, extend the selected orbit below its
+maximal lower time. Thus no finite boundary of \(\Omega_+\) lies over
+\(K\). This excludes a hidden surface contribution wherever a transverse
+cutoff supported in \(K\) is nonzero.
 \end{proof}
 
 \subsection{Deficiency vectors in \(\operatorname{Dom}(H^*)\)}
 \begin{lemma}[Deficiency vectors]
-For \(\chi\in C_c^\infty(W_+)\) define on the entire maximal interval
+For \(\chi\in C_c^\infty(W_+)\), so in particular
+\(\operatorname{supp}\chi\Subset W_+\), define on the entire maximal interval
 \[
 u_-\bigl(\Psi_+(a,c,s)\bigr)
 :=\chi(a,c)\,e^{s-\beta(a,c)},
 \]
-and \(u_-=0\) off \(\Omega_+\). No interior \(s\)-cutoff. Then \(u_-\in L^2(\mathbb{R}^3)\), \(u_-\in\operatorname{Dom}(H^*)\), and \((H^*+i)u_-=0\). The linear map \(\chi\mapsto u_-\) is injective, so \(n_-=\infty\). Likewise
-\[
-u_+\bigl(\Psi_-(a,c,s)\bigr)
-:=\chi(a,c)\,e^{-(s-\alpha(a,c))}
-\]
-on \((\alpha,r_-)\) yields \(n_+=\infty\).
+and \(u_-=0\) off \(\Omega_+\). No interior \(s\)-cutoff. Then \(u_-\in L^2(\mathbb{R}^3)\), \(u_-\in\operatorname{Dom}(H^*)\), and \((H^*+i)u_-=0\). The linear map \(\chi\mapsto u_-\) is injective, so \(n_-=\infty\).
 \end{lemma}
 \begin{proof}
 \textit{Square-integrability.} By \eqref{eq:flowbox},
@@ -368,23 +419,97 @@ on \((\alpha,r_-)\) yields \(n_+=\infty\).
 \]
 since the inner integral equals \(\tfrac12\bigl(1-e^{2(\ell_+-\beta)}\bigr)\le\tfrac12\).
 
-\textit{Adjoint equation.} Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\). On \(\Omega_+\), \(H=-i\partial_s\) in the flow-box chart with density \(\tfrac12\), and \(\operatorname{div} X_1=0\), so the formal adjoint of \(-iX_1\) is again \(-iX_1\). There is no interior jump because \(u_-\) has no artificial \(s\)-cutoff. Off \(\Omega_+\), \(u_-=0\). Lateral boundaries of \(W_+\) contribute nothing because \(\chi|_{\partial W_+}=0\).
+\textit{Adjoint equation.} Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\) and
+put \(K=\operatorname{supp}\chi\Subset W_+\). On \(\Omega_+\),
+\(H=-i\partial_s\) in the flow-box chart with density \(\tfrac12\), and
+\(\operatorname{div}X_1=0\). There is no interior jump because \(u_-\) has no
+artificial \(s\)-cutoff. There is also no finite jump across
+\(\partial\Omega_+\): near the lateral boundary \(\chi\) vanishes on a
+neighborhood, and the boundary conclusion of the saturated-sheet lemma
+excludes finite boundary points over \(K\). Thus extending by zero introduces
+no hidden surface distribution.
 
-For the upper end: \(s\to\beta^-\) occurs at spatial infinity, so \(\varphi\) vanishes in a neighborhood of that end along each orbit it meets. For the lower end: if \(\ell_+\) is finite then maximality forces escape to infinity as \(s\downarrow\ell_+\), and again \(\varphi\) vanishes near that end; if \(\ell_+=-\infty\), the factor \(e^{s-\beta}\) decays exponentially as \(s\to-\infty\), so both the integrated boundary term at \(-\infty\) and the \(L^2\) tail vanish (no appeal to a compact lower \(s\)-cut is needed). The Fubini/IBP interchange is justified by the integrable dominant
+Both terms in the weak-adjoint identity are absolutely integrable. Indeed,
+\(X_1\varphi\) is bounded because \(\varphi\) has compact support (the
+polynomial growth of \(X_1\) is irrelevant on that compact set), and on
+\(D_+\)
 \[
-\bigl|\chi(a,c)\,e^{s-\beta(a,c)}\,\varphi(\Psi_+(a,c,s))\bigr|
+\begin{split}
+&\bigl|\chi(a,c)e^{s-\beta(a,c)}
+  \varphi(\Psi_+(a,c,s))\bigr|\\
+&\quad+
+\bigl|\chi(a,c)e^{s-\beta(a,c)}
+  (X_1\varphi)(\Psi_+(a,c,s))\bigr|
 \le
-\|\varphi\|_\infty\,|\chi(a,c)|\,e^{s-\beta(a,c)}
+\bigl(\|\varphi\|_\infty+\|X_1\varphi\|_\infty\bigr)
+|\chi(a,c)|e^{s-\beta(a,c)} .
+\end{split}
 \]
-on \(D_+\) (and \(0\) off \(\Omega_+\)), which is in \(L^1(D_+,\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c)\) by the same bound used for \(\|u_-\|_2\). Integrating by parts in \(s\) for almost every \((a,c)\) therefore yields
+The right side is integrable because
+\(\int_{\ell_+(a,c)}^{\beta(a,c)}
+e^{s-\beta(a,c)}\,\mathrm{d}s\le1\) and \(\chi\) has compact transverse
+support.
+
+Apply Fubini first to the indicator of the open variable domain \(D_+\). For
+each fixed \((a,c)\), integrate by parts on compact subintervals of
+\((\ell_+(a,c),\beta(a,c))\), and then exhaust that particular maximal
+interval. This fiber-first procedure makes no measurable choice of the lower
+endpoint or of an exhaustion. At the upper endpoint the sheet escapes every
+compact set, so \(\varphi\) vanishes eventually. At the lower endpoint, either
+\(\ell_+\) is finite and maximality again forces spatial escape, or
+\(\ell_+=-\infty\) and \(e^{s-\beta}\to0\). Hence both endpoint terms vanish.
+The displayed majorant applies to the two bulk terms, so dominated convergence
+passes to the improper limits and then through the transverse integral.
+Consequently
 \[
 \langle u_-,H\varphi\rangle=\langle -iu_-,\varphi\rangle,
 \]
 i.e.\ \(u_-\in\operatorname{Dom}(H^*)\) and \((H^*+i)u_-=0\).
 
-\textit{Infinite dimension.} If \(u_-=0\) a.e., then \(\chi=0\) a.e.\ on \(W_+\) because \(\Psi_+\) is a diffeomorphism and the exponential factor never vanishes. Thus \(\chi\mapsto u_-\) embeds an infinite-dimensional space into \(\ker(H^*+i)\).
+\textit{Injectivity with a uniform bound.} The collar used to define
+\(\Sigma_+\) lies in every selected maximal interval, so
+\(\ell_+(a,c)<\beta(a,c)-\varepsilon_0\). Therefore
+\[
+\|u_-\|_2^2
+\ge \frac14\bigl(1-e^{-2\varepsilon_0}\bigr)
+\|\chi\|_{L^2(W_+)}^2 .
+\]
+Thus \(\chi\mapsto u_-\) is bounded below, hence injective, and embeds the
+infinite-dimensional space \(C_c^\infty(W_+)\) into \(\ker(H^*+i)\).
+\end{proof}
 
-The lower-wall argument is symmetric.
+\subsection{Sign involution and the opposite deficiency space}
+\begin{lemma}[Sign transport]
+Let
+\(\sigma(q_0,q_1,q_2)=(-q_0,-q_1,q_2)\) and
+\((U_\sigma f)(q)=f(\sigma(q))\). Then \(U_\sigma\) is a complex-linear
+unitary involution of \(L^2(\mathbb{R}^3)\), preserves
+\(C_c^\infty(\mathbb{R}^3)\), and
+\[
+H U_\sigma=-U_\sigma H
+\quad\hbox{on }C_c^\infty(\mathbb{R}^3).
+\]
+Consequently \(H^*U_\sigma=-U_\sigma H^*\), and \(U_\sigma\) restricts to a
+complex-linear isometric bijection
+\[
+\ker(H^*+i)\;\xrightarrow{\;\cong\;}\;\ker(H^*-i).
+\]
+\end{lemma}
+\begin{proof}
+The linear involution \(\sigma\) preserves Lebesgue measure, so its pullback is
+unitary and preserves the test-function core. Direct substitution in the
+explicit polynomial field gives
+\[
+X_1(f\circ\sigma)=-(X_1f)\circ\sigma,
+\]
+which is the displayed core anticommutation for \(H=-iX_1\). For
+\(v\in\operatorname{Dom}(H^*)\) and a core test function, unitarity and core
+anticommutation transfer the defining adjoint pairing and give
+\(U_\sigma v\in\operatorname{Dom}(H^*)\) with
+\(H^*U_\sigma v=-U_\sigma H^*v\). Since \(U_\sigma^2=I\), this transports the
+\(-i\) eigenspace isometrically and bijectively to the \(+i\) eigenspace. This
+is the route formalized for the specific canonical minimal operator
+\texttt{H\_X1\_min} in the companion Lean artifact.
 \end{proof}
 
 \begin{remark}[Withdrawn device]
@@ -392,10 +517,20 @@ Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-m
 \end{remark}
 
 \begin{theorem}[F]
-\((n_+,n_-)=(\infty,\infty)\).
+The Hilbert deficiency indices satisfy
+\[
+n_+=n_-=\aleph_0,
+\]
+equivalently \((n_+,n_-)=(\infty,\infty)\) in conventional notation.
 \end{theorem}
 \begin{proof}
-Forward and backward walls, saturation, and the deficiency lemma. Separability of \(L^2(\mathbb{R}^3)\) makes both Hilbert-space dimensions (orthonormal-basis cardinals) countably infinite. This is a Hilbert dimension statement, not an assertion that the algebraic Hamel rank is \(\operatorname{aleph0}\).
+The forward-wall deficiency lemma makes \(\ker(H^*+i)\)
+infinite-dimensional. Sign transport gives an isometric bijection with
+\(\ker(H^*-i)\), so the opposite space is infinite-dimensional as well.
+Both are closed subspaces of the separable Hilbert space
+\(L^2(\mathbb{R}^3)\); their Hilbert dimensions (orthonormal-basis cardinals)
+are therefore exactly \(\aleph_0\). This is a Hilbert-dimension statement, not
+an assertion that the algebraic Hamel rank is \(\aleph_0\).
 \end{proof}
 
 \begin{theorem}[E]
@@ -410,22 +545,64 @@ By von Neumann's theorem, infinitely many self-adjoint extensions of \(H\) exist
 \end{corollary}
 
 \section{Discussion}
-The example separates algebraic and analytic layers. The Poisson cotangent lift and dual-field/CCR identities are clean, and \(\psi\) is a well-defined polynomial Weyl endomorphism. Nonetheless \(X_1\) is incomplete and \(H=-iX_1\) has deficiency indices \((\infty,\infty)\). Algebraic CCR/Poisson data therefore do not select a unique self-adjoint dual momentum for this generator.
+The example separates algebraic and analytic layers. The Poisson cotangent lift and dual-field/CCR identities are clean, and \(\psi\) is a well-defined polynomial Weyl endomorphism. Nonetheless \(X_1\) is incomplete and \(H=-iX_1\) has Hilbert deficiency indices \((\aleph_0,\aleph_0)\). Algebraic CCR/Poisson data therefore do not select a unique self-adjoint dual momentum for this generator.
 
 We do \emph{not} claim here exact deficiency indices for \(H_0\) or \(H_2\), nor a theorem classifying all strong CCR or dual-translation packages; those topics appear only in companion repository notes and may be incomplete relative to theorem grade.
 
-Classical incomplete flows and half-line models are standard~\cite{RS2}. The contribution is the geometric dual-lift package for this Keller seed together with an explicit two-sided wall construction for \(H=-iX_1\).
+The collision is used in Theorem~A and in the noninjectivity clause of
+Theorem~B, but it is not an input to Theorems~D--F. Those analytic results use
+the constant nonzero Jacobian (to define the dual field and its invariant
+measure) and the explicit incompleteness/escape geometry of \(X_1\). Thus the
+logical claim is not ``counterexample implies quantization ambiguity.''
+Classical incomplete flows, half-line deficiency models, and von Neumann
+extension theory are standard~\cite{RS2}. The contribution is their explicit,
+Lean-backed realization for this dual transport operator. We make no new
+general theorem equating surjectivity of a real Keller map with completeness
+of all its dual fields.
 
 \section{Non-claims}
-No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: bounded canonical-core Theorems E--F, the exact Hilbert-basis cardinal result, the specific \texttt{H\_X1\_min} von Neumann classification, and existence of at least two distinct extension witnesses are covered at the updated SHA. The algebraic \texttt{standardDeficiencyIndex}/\texttt{Module.rank} has lower bounds only; the paper-grade backward-wall construction, exact extension cardinality, infinitely-many/continuum and algebraic-selection consequences, arbitrary-operator theorem, strong CCR, and physical selection remain outside the new Lean corollary. No theorem-level dual-flow strong CCR obstruction in this note.
+No unitary gate, channel, CP map, or computational advantage. No preferred
+physical extension. No claim that all quantization routes fail. Discovery of
+\(F\) is not claimed. No rank-three Dixmier counterexample is claimed. Lean
+covers the bounded canonical-core Theorems E--F, the exact Hilbert-basis
+cardinal result, the specific \texttt{H\_X1\_min} von Neumann classification,
+and existence of at least two distinct extension witnesses at the source root
+identified above; the later synchronized snapshot is not yet a final
+single-SHA release. The algebraic index
+\texttt{standardDeficiency}\allowbreak\texttt{Index}, defined using
+\texttt{Module.rank}, has lower bounds only.
+The independent backward-wall construction, exact extension cardinality,
+infinitely-many/continuum and algebraic-selection consequences,
+arbitrary-operator theorem, strong CCR, and physical selection remain outside
+the Lean corollary. No theorem-level dual-flow strong CCR obstruction is
+claimed in this note.
 
 \small
+\sloppy
+\raggedright
 \begin{thebibliography}{99}
 \bibitem{RS2}
 M.~Reed and B.~Simon, \emph{Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness}, Academic Press, 1975.
 
 \bibitem{DixmierWeyl}
 J.~Dixmier, \emph{Sur les alg\`ebres de Weyl}, Bull.\ Soc.\ Math.\ France \textbf{96} (1968), 209--242.
+
+\bibitem{Tsuchimoto2005}
+Y.~Tsuchimoto, \emph{Endomorphisms of Weyl algebra and
+\(p\)-curvatures}, Osaka J.\ Math.\ \textbf{42} (2005), 435--452,
+\url{https://doi.org/10.18910/7472}.
+
+\bibitem{BKK2007}
+A.~Belov--Kanel and M.~Kontsevich, \emph{The Jacobian conjecture is
+stably equivalent to the Dixmier conjecture}, Moscow Math.\ J.\
+\textbf{7} (2007), 209--218,
+\url{https://arxiv.org/abs/math/0512171}.
+
+\bibitem{AdjamagboEssen2007}
+P.~K.~Adjamagbo and A.~van den Essen, \emph{A proof of the equivalence of
+the Dixmier, Jacobian and Poisson conjectures}, Acta Math.\ Vietnam.\
+\textbf{32} (2007), 205--214,
+\url{https://math.ac.vn/uploads/files/0702205.pdf}.
 
 \bibitem{LeeSmooth}
 J.~M.~Lee, \emph{Introduction to Smooth Manifolds}, 2nd ed., Springer, 2013.
@@ -434,12 +611,31 @@ J.~M.~Lee, \emph{Introduction to Smooth Manifolds}, 2nd ed., Springer, 2013.
 H.~Bass, E.~H.~Connell, and D.~Wright, The Jacobian conjecture: reduction of degree and formal expansion of the inverse, Bull.\ Amer.\ Math.\ Soc.\ \textbf{7} (1982), 287--330.
 
 \bibitem{Alpoge2026}
-L.~Alp\"oge, informal public announcement of a Keller map with constant Jacobian and three-point collision (credits Fable), July 2026,
+L.~Alp\"oge, informal public announcement of a Keller map with constant
+Jacobian and three-point collision (credits Akhil Mathew for prompting the
+question and Claude Fable for work leading to the map), July 2026,
 \url{https://x.com/__alpoge__/status/2079028340955197566}.
 
 \bibitem{UlamJacobian}
-Ulam, \emph{A Counterexample to the Jacobian Conjecture} (public write-up of the July 2026 announcement),
+Ulam, \emph{A Counterexample to the Jacobian Conjecture}, preprint, July 2026,
 \url{https://www.ulam.ai/research/jacobian.pdf}.
+
+\bibitem{AFPJacobian}
+A.~Freitas Ramos, D.~Barros Hulak, and R.~J.~G.~Barretto de Queiroz,
+\emph{Formal Verification of an Explicit Counterexample to the Jacobian
+Conjecture}, Archive of Formal Proofs, 20 July 2026,
+\url{https://isa-afp.org/entries/Jacobian_Counterexample.html}.
+
+\bibitem{Shaska2026}
+T.~Shaska, \emph{Graded Keller maps and the Jacobian Conjecture},
+arXiv:2607.20210, 2026,
+\url{https://arxiv.org/abs/2607.20210}.
+
+\bibitem{JelonekLason2018}
+Z.~Jelonek and M.~Laso\'n, \emph{Quantitative properties of the
+non-properness set of a polynomial map}, Manuscripta Math.\
+\textbf{156} (2018), 383--397,
+\url{https://doi.org/10.1007/s00229-017-0965-0}.
 
 \bibitem{SpeyerJC2026}
 D.~Speyer, \emph{The new counterexample to the Jacobian conjecture}, Secret Blogging Seminar, 20 July 2026,
@@ -447,8 +643,8 @@ D.~Speyer, \emph{The new counterexample to the Jacobian conjecture}, Secret Blog
 
 \bibitem{FredriksenSoft}
 D.~E.~Fredriksen, EXOTIC-CCR A001 companion code and CAS certificates,
-GitHub Quantyra/jacobian-weyl-quantum-phase-space, proposed candidate
-v0.3.8-theorem-f (untagged);
+GitHub Quantyra/jacobian-weyl-quantum-phase-space, proposed paper-package
+candidate v0.3.9-referee-revision (untagged);
 concept DOI \url{https://doi.org/10.5281/zenodo.21474351} (project-level).
 
 \bibitem{FredriksenLean}
@@ -459,12 +655,14 @@ released tag v0.1.8-theorem-e, SHA a6bb091 (bounded Theorem E),
 divergence, full dual-field commutation, the polynomial Weyl endomorphism
 \(\psi\), and incompleteness of the dual field \(X_1\)).
 \bibitem{FredriksenLeanF}
-Theorem F supplement: \texttt{ExoticCCR.theoremF},
-\texttt{aleph0\_le\_standardDeficiencyIndex\_X1}, and
-\filepath{hilbertDeficiencyIndex\_X1\_eq\_aleph0},
+Theorem F supplement: theorem-source root
+ff50f4a2a312591c2e5b26e71eb390ade9164b34 and synchronized repository
+snapshot 94351f38d7d84fd073db14ff8764708fa9d2942b (both untagged);
+\path{ExoticCCR.theoremF},
+\path{aleph0_le_standardDeficiencyIndex_X1}, and
+\path{hilbertDeficiencyIndex_X1_eq_aleph0},
 \texttt{theoremFVonNeumannClassification}, and
-\texttt{theoremF\_exists\_two\_distinct\_selfAdjointExtensions} at SHA
-ff50f4a2a312591c2e5b26e71eb390ade9164b34 (untagged review). Both standard
+\texttt{theoremF\_exists\_two\_distinct\_selfAdjointExtensions}. Both standard
 adjoint eigenspaces are not finite-dimensional, and
 \(\operatorname{Cardinal.aleph0}\le n_+\) and
 \(\operatorname{Cardinal.aleph0}\le n_-\). The separate Hilbert-basis

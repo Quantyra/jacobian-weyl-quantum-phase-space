@@ -1,110 +1,100 @@
-﻿# EXOTIC-CCR â€” Jacobian / Weyl / quantum phase-space
+# EXOTIC-CCR — Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release (arXiv candidate):** v0.3.8-theorem-f (proposed, untagged; Hilbert-index plus bounded `H_X1_min` von Neumann-classification Lean update under review)
-**Prior:** [v0.3.5-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit) · [v0.3.3](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3)  
-**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (version DOI pending ingest)  
-**Do not use:** v0.2.2 pair or v0.3.0 Dom(H*) proof
+**Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
+**Scientific status:** targeted revision implemented; fresh math.FA/math.AG and package gates pending
+**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level only)
+**Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
----
+## Start here
 
-## Start here â€” paper (arXiv submission package)
+- [A001-arxiv.pdf](docs/notes/A001-arxiv.pdf) — rendered paper candidate
+- [A001-arxiv.tex](docs/notes/A001-arxiv.tex) — canonical paper source
+- [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) — current review status
+- [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) — withdrawn claims
 
-### **[docs/notes/A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md)** â† main paper draft
+The long-form [A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md) is a
+historical drafting notebook, not the freeze source.
 
-Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lifts; \(X_1\) incomplete; \(H=-iX_1\) not ESS with **\((n_+,n_-)=(\infty,\infty)\)**.  
-**Erratum:** [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) (withdraws \((0,\infty)\)).
+## Result and scope
 
-| Doc | Role |
-|-----|------|
-| **[A001-arxiv.pdf](docs/notes/A001-arxiv.pdf)** | **Rendered PDF for proposed v0.3.8-theorem-f (H₁-only; untagged review candidate)** |
-| [A001-arxiv.tex](docs/notes/A001-arxiv.tex) / [draft.md](docs/notes/A001-arxiv-draft.md) | LaTeX source / long form |
-| [A001-endorsement-request.md](docs/notes/A001-endorsement-request.md) | Endorser email blurb |
-| [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) | Claims freeze |
-| [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) | Withdrawn \((0,\infty)\) |
+For the Alpöge–Fable Keller map (restated), the paper records the standard
+Poisson/Weyl lifts and analyzes the canonical real dual field \(X_1\). The
+minimal transport operator \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) is not
+essentially self-adjoint and has Hilbert deficiency indices
+\[
+n_+=n_-=\aleph_0,
+\]
+conventionally written \((n_+,n_-)=(\infty,\infty)\).
 
----
+The revised main proof constructs the \(-i\) deficiency family from the
+forward maximal sheet and obtains the \(+i\) family through the
+measure-preserving sign involution already formalized in Lean. The backward
+wall is retained only as independent geometric material.
 
-## One-sentence result
+The collision is used for the seed and cotangent-lift noninjectivity claims.
+The analytic Theorems D–F instead use the constant Jacobian and the explicit
+incompleteness/escape geometry of \(X_1\). The paper does not claim a general
+surjectivity/completeness equivalence.
 
-For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). At proposed Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`, for the specific canonical minimal operator `H_X1_min`, Lean proves a bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear isometric equivalences from the \(+i\) adjoint eigenspace to the \(-i\) adjoint eigenspace; Lean also proves at least two distinct such self-adjoint extensions exist. The same SHA retains `ExoticCCR.theoremE`, `ExoticCCR.theoremF`, the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-, and `hilbertDeficiencyIndex_X1_eq_aleph0`, which gives exact \(\operatorname{aleph0}\) Hilbert-basis cardinality for both closed adjoint eigenspaces. `standardDeficiencyIndex` is `Module.rank` (algebraic/Hamel rank), with lower bounds only. The paper's claims of infinitely many/continuum many extensions and that algebraic data select none remain paper-grade/literature-level consequences, not consequences relabeled as proved by the new Lean corollary; the paper's backward-wall construction is also not Lean-covered.
+## Companion Lean
+
+Repository: <https://github.com/Quantyra/exotic-ccr-lean>
+
+- Released Theorem E milestone: `v0.1.8-theorem-e`, SHA `a6bb091`.
+- Theorem F source root:
+  `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
+- Synchronized Lean repository snapshot:
+  `94351f38d7d84fd073db14ff8764708fa9d2942b`.
+
+The source root and synchronized snapshot are separate milestones, not a final
+immutable release. A new single-SHA Lean freeze, clean build/axiom provenance,
+fresh adversarial review, and Dan approval remain pending.
+
+At the theorem-source root, `ExoticCCR.theoremF` proves that both adjoint
+eigenspaces of the specific canonical minimal core are not finite-dimensional.
+`hilbertDeficiencyIndex_X1_eq_aleph0` gives exact \(\aleph_0\) Hilbert-basis
+cardinality for both closed eigenspaces. `standardDeficiencyIndex` is
+`Module.rank` (algebraic/Hamel rank), for which only lower bounds are claimed.
+For the specific `H_X1_min`, `theoremFVonNeumannClassification` classifies all
+`SelfAdjointExtension H_X1_min` witnesses by complex-linear isometric
+equivalences from the \(+i\) to the \(-i\) adjoint eigenspace, and
+`theoremF_exists_two_distinct_selfAdjointExtensions` proves at least two
+distinct witnesses exist.
 
 ## Non-claims
 
-- **Not** a unitary quantum gate, channel, or computational advantage  
-- **Not** unique physical momenta without self-adjoint extension choices  
-- **Not** ESS failure claimed for all three dual momenta  
-- **Not** a slogan â€œfactory falseâ€ theorem beyond the finite identities used  
+- No unitary quantum gate, channel, or computational advantage.
+- No preferred physical extension.
+- No essential-self-adjointness conclusion for the other two dual momenta.
+- No arbitrary-operator classification, exact Hamel rank, or exact extension
+  cardinality claimed as Lean corollaries.
+- No new rank-three Dixmier counterexample claim.
+- No seed-discovery or priority claim.
 
-Full boundary: [INTEGRITY.md](INTEGRITY.md) Â· paper draft Â§9
+See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 
-## Companion Lean (Gate-0 seed)
+## Companion papers
 
-https://github.com/Quantyra/exotic-ccr-lean
+| Paper | PDF | Existing release |
+|---|---|---|
+| B001 classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) |
+| C001 completions | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
 
-The companion Theorem E freeze is released as `v0.1.8-theorem-e` (theorem SHA
-`a6bb091`): the bounded canonical `X1` non-essential-self-adjointness theorem.
-The proposed companion Theorem F classification freeze is untagged at
-`ff50f4a2a312591c2e5b26e71eb390ade9164b34`
-(`ExoticCCR.theoremF`; four-role technical review PASS, Dan approval pending):
-both adjoint eigenspaces
-\(\ker(H^\dagger \mp i)\) of the canonical minimal core are proved
-infinite-dimensional by sign-involution transport, with the additional
-standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0
-≤ n_-. The separate `hilbertDeficiencyIndex_X1_eq_aleph0` result gives exact
-\(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces.
-`standardDeficiencyIndex`/`Module.rank` remains algebraic (Hamel) rank with
-lower bounds only. For the specific `H_X1_min`, `theoremFVonNeumannClassification`
-classifies all `SelfAdjointExtension H_X1_min` witnesses bijectively by
-complex-linear isometric equivalences from the \(+i\) to the \(-i\) adjoint
-eigenspace, and `theoremF_exists_two_distinct_selfAdjointExtensions` proves at
-least two distinct witnesses exist. This does not select a preferred extension,
-prove an arbitrary-operator theorem, compute the exact extension cardinality,
-or cover the paper's backward-wall construction.
+## Evidence
 
-## Companion papers (B001 / C001) — advance while A001 waits on arXiv endorsement
+| Gate | Status | Evidence |
+|---|---|---|
+| G0 seed | certified | [D0 seed dossier](docs/validation/D0-seed-validation-dossier.md) |
+| G2 Poisson | certified | [G2 dossier](docs/validation/G2-poisson-A001-dossier.md) |
+| G3 Weyl | certified | [G3 dossier](docs/validation/G3-weyl-A001-dossier.md) |
+| G4 \(H=-iX_1\) | proved; revised paper re-gate pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
 
-**Index:** [docs/notes/COMPANION-PACK.md](docs/notes/COMPANION-PACK.md)
+## Citation and release status
 
-| Paper | PDF | Tag | One-line |
-|-------|-----|-----|----------|
-| **B001** classification (v0.7) | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) @ `45e7d53` | B1 + atlas A000–A010; B5–B7; graph/degP≤2 ⇒ global \(C^\infty\) diffeo / E (not automatic poly inverse); residual **OPEN-T**; full dichotomy conjecture; Aggregate PASS |
-| **C001** completions of \(\psi\) (v0.9) | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) @ `45e7d53` | Koopman CONSTRUCT; J2–J6 NO-GOs; J3 **G4-conditional**; J7-C BT-Envelope CONSTRUCT (form-level); J7 CFC-SA NO-GO; J7-O OPEN; Aggregate PASS |
-
-A001 remains citable via **concept DOI** even before arXiv endorsement.
-
-## Gate / evidence index
-
-| Gate | Status | Doc |
-|------|--------|-----|
-| G0 seed | certified | [D0-seed](docs/validation/D0-seed-validation-dossier.md) |
-| G0 family d=4 pilot | certified pilot | [D0-family](docs/validation/D0-family-pilot-dossier.md) |
-| G1 atlas | A001/A002 | [atlas index](data/atlas/index.json) |
-| G2 Poisson | certified | [G2](docs/validation/G2-poisson-A001-dossier.md) |
-| G3 Weyl | certified | [G3](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(X_1\) / \(H=-iX_1\) | **proved** \((n_+,n_-)=(\infty,\infty)\) | [orbit measure](docs/validation/G4-P1-orbit-measure-deficiency.md) Â· [erratum](docs/notes/A001-ERRATUM-v0.2.2.md) |
-| G5â€“G7 | packages | [closeout](docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md) |
-
-## Repository layout
-
-```
-docs/notes/           # A001-arxiv-draft.md  â† paper draft
-                      # A001-minimum-result-note.md
-docs/validation/      # theorem dossiers + CAS-linked proofs
-data/anchor/          # frozen maps + CAS JSON reports
-data/atlas/           # counterexample atlas
-scripts/cas/          # reproducible verifiers
-```
-
-## Citation
-
-See [CITATION.cff](CITATION.cff). The proposed `v0.3.8-theorem-f` has no
-version DOI or tag yet. Existing DOI records refer to earlier artifacts and
-must not be relabeled. Do not use the v0.2.2 pair or v0.3.0 Dom(H*) proof.
-
-## License
+See [CITATION.cff](CITATION.cff). The proposed
+`v0.3.9-referee-revision` paper package has no tag, GitHub release, arXiv
+identifier, or version DOI. Existing DOI records and releases refer to earlier
+artifacts and must not be relabeled.
 
 Apache-2.0. See [LICENSE](LICENSE).
-
-
-

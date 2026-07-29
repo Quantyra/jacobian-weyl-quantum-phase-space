@@ -1,5 +1,26 @@
 ﻿# Changelog
 
+## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
+
+- Expanded the central weak-adjoint proof to control both weak pairings and
+  state the fiber-first Fubini, compact-interval integration by parts,
+  endpoint exhaustion, escape/decay, and dominated-convergence steps.
+- Made the Lean-backed sign involution the main \(+i\) route; retained the
+  backward wall as independent geometry only.
+- Added the finite sheet-boundary argument, cross-orbit invariant-coordinate
+  argument, compact transverse support, and uniform-collar norm lower bound.
+- Stated Hilbert deficiency indices exactly as
+  \(n_+=n_-=\aleph_0\), with conventional \((\infty,\infty)\) notation.
+- Added accurate Dixmier/Jacobian directionality, current related work, AFP
+  verification, and Akhil Mathew attribution.
+- Clarified the complex seed versus real operator theory and that Theorems
+  D–F do not use the collision.
+- Repaired README UTF-8 corruption and separated paper-package, Lean
+  theorem-source, and Lean synchronized-snapshot version streams.
+- Superseded the prior technical PASS: fresh math.FA, math.AG, Lean/build,
+  non-claims, package, and Dan approval gates are pending.
+- No tag, release, arXiv submission, or DOI minting performed.
+
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)
 
 ### Lean supplement
@@ -10,7 +31,7 @@
 - Preserved as nonclaims: a preferred extension, an arbitrary-operator theorem, exact extension cardinality, the paper's infinitely-many/continuum and algebraic-selection consequences as new Lean corollaries, and the paper-grade backward-wall construction.
 - No tag, release, version DOI, or final approval created.
 
-## v0.3.3 â€” 2026-07-21
+## v0.3.3 — 2026-07-21
 
 ### Theorem F (publication freeze candidate)
 - Analytic wall IFT with correct forward scaling \((-A_s)r^3+Br=0\)
@@ -20,7 +41,7 @@
 - PDF/TeX expanded; metadata version **0.3.3**
 - Numeric wall scripts labeled regression only
 
-## v0.3.1 â€” 2026-07-21
+## v0.3.1 — 2026-07-21
 
 ### Critical proof repair (Theorem F)
 - **Withdrawn:** v0.3.0 deficiency vectors with interior \(s\)-indicators (not in \(\operatorname{Dom}(H^*)\))
@@ -28,7 +49,7 @@
 - Saturated inverse-sheet lemma; per-orbit dictionary; rescaled IFT for wall branches
 - PDF/TeX/draft/dossier synced; claim remains \((n_+,n_-)=(\infty,\infty)\)
 
-## v0.3.0 â€” 2026-07-21
+## v0.3.0 — 2026-07-21
 
 ### Erratum (critical)
 - **Withdrawn:** v0.2.2 claim \((n_+,n_-)=(0,\infty)\) for \(H=-iX_1\)
@@ -37,15 +58,15 @@
 - See `docs/notes/A001-ERRATUM-v0.2.2.md`
 
 ### Paper / attribution
-- Title and abstract attribute seed map to **AlpÃ¶geâ€“Fable**; novelty is Bâ€“F
+- Title and abstract attribute seed map to **Alpöge–Fable**; novelty is B–F
 - Theorem E is corollary of explicit deficiency functions (no general Stone/transport necessity)
-- Theorem C rewritten with Piola + dual-coframe commutation; SchrÃ¶dinger convention clarified
+- Theorem C rewritten with Piola + dual-coframe commutation; Schrödinger convention clarified
 - arXiv draft + checklist + submission bundle updated for v0.3.0
 
 ### CAS
 - `verify_backward_incomplete_wall_A001.py` + JSON anchor
 
-## v0.2.2 â€” 2026-07-21
+## v0.2.2 — 2026-07-21
 
 ### Science
 - Orbit-measure analysis: \(\mathrm{Leb}_3(\{T_+^{X_1}<\infty\})>0\)
@@ -56,13 +77,13 @@
 ### Non-claims
 Unchanged: no gate/channel/advantage; no unique physical momenta without extensions.
 
-## v0.2.1 â€” 2026-07-21
+## v0.2.1 — 2026-07-21
 
 ### Metadata
 - Author name standardized to **Daniel Eric Fredriksen** (Quantyra Inc) in Zenodo/CITATION
 - Concept DOI recorded: `10.5281/zenodo.21474351` (version DOI updates with this release)
 
-## v0.2.0 â€” 2026-07-21
+## v0.2.0 — 2026-07-21
 
 ### A001 minimum result package
 - G0 seed dual-CAS + Lean companion link; D0 dossiers
@@ -72,10 +93,10 @@ Unchanged: no gate/channel/advantage; no unique physical momenta without extensi
 - G3 polynomial Weyl endomorphism Ïˆ certified (A001); div B = 0
 - G4: dual-field incompleteness theorem; ESS obstruction (existential)
 - Internal note: `docs/notes/A001-minimum-result-note.md`
-- G5â€“G7 structured packages (index/channel still open / not claimed)
+- G5–G7 structured packages (index/channel still open / not claimed)
 
 ### Non-claims
-Algebraic + ESS-on-C_c^âˆž obstruction only. No gate/channel/advantage; no unique physical momenta without extensions.
+Algebraic + ESS-on-C_c^∞ obstruction only. No gate/channel/advantage; no unique physical momenta without extensions.
 
-## v0.0.1 â€” 2026-07-20
+## v0.0.1 — 2026-07-20
 - Initial public scaffold, INTEGRITY, Zenodo metadata path

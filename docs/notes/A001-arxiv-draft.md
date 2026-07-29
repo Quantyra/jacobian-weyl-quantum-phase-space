@@ -3,7 +3,7 @@ title: "Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique se
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
-date: "2026-07-28"
+date: "2026-07-29"
 arxiv_categories:
   - math.FA
   - math.AG
@@ -23,13 +23,17 @@ keywords:
   - dual vector field
   - deficiency indices
 software_doi_concept: "10.5281/zenodo.21474351"
-software_doi_version: "pending-v0.3.8-theorem-f-zenodo"
+software_doi_version: "none-v0.3.9-referee-revision-untagged"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); at Lean SHA ff50f4a2a312591c2e5b26e71eb390ade9164b34, the specific canonical minimal operator H_X1_min has a proved bijective von Neumann classification of all SelfAdjointExtension H_X1_min witnesses by complex-linear isometric equivalences from the +i to the -i adjoint eigenspace, and at least two distinct witnesses are proved to exist. ExoticCCR.theoremF, the standard Module.rank lower bounds, and exact aleph0 Hilbert-basis cardinality are retained. No exact Hamel rank, exact extension cardinality, preferred extension, arbitrary-operator theorem, backward-wall Lean coverage, or promotion of the paper's infinitely-many/continuum and algebraic-selection consequences to the new Lean corollary. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
+claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex; fresh scientific and package gates pending."
 ---
 
 # Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
+
+> **Historical drafting notebook.** The canonical scientific-revision source
+> is `A001-arxiv.tex`; this long-form Markdown has not been line-for-line
+> synchronized and must not be used as a freeze or submission source.
 
 **Daniel Eric Fredriksen**  
 Quantyra Inc.  
@@ -44,7 +48,7 @@ https://github.com/Quantyra/jacobian-weyl-quantum-phase-space
 
 ## Abstract
 
-We study the three-dimensional Keller map \(F\) announced by Alpöge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B--F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The SchrÃ¶dinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
+We study the three-dimensional Keller map \(F\) announced by Alpöge (with Fable credited) [8]: \(\det DF\equiv-2\) and a three-point collision. **Theorem A restates those finite identities** (independently dual-CAS and Lean checked); **novelty is Theorems B--F**. We construct the cotangent lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and show it is a polynomial Poisson map on generators and non-injective. The same \(B=J^{-T}\) defines dual fields \(X_j=\sum_k B_{jk}\partial_{q_k}\); by the Piola identity and constant \(\det DF\), \(\operatorname{div} B=0\), and the fields commute because they are dual to \(\mathrm{d}F_i\). The Schrödinger operators \(H_j=-iX_j\) are thus symmetric on \(C_c^\infty(\mathbb{R}^3)\).
 
 We prove \(X_1\) is incomplete by an explicit integral curve escaping as \(t\to\tfrac12^-\). In flow-box coordinates \((a,s,c)=F(q)\) one has \(X_1=\partial_s\) and \(\mathrm{d}q=\tfrac12\,\mathrm{d}a\,\mathrm{d}s\,\mathrm{d}c\). Open transverse families with finite **upper** \(F_1\)-ends and finite **lower** \(F_1\)-ends yield square-integrable deficiency functions, so
 \[
@@ -76,7 +80,7 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 **Message.** Algebraic CCR/Poisson lifts of a noninjective Keller map can coexist with a dual transport generator that is symmetric but not essentially self-adjoint, with a large self-adjoint extension theory.
 
 ### 1.3 Related work
-Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
+Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], Schmüdgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
 - **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at the companion SHAs recorded in the package metadata. At SHA ff50f4a2a312591c2e5b26e71eb390ade9164b34, for the specific canonical minimal operator `H_X1_min`, Lean proves a bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear isometric equivalences from the \(+i\) adjoint eigenspace to the \(-i\) adjoint eigenspace; Lean also proves at least two distinct such self-adjoint extensions exist. The same SHA retains the result that both adjoint eigenspaces are not finite-dimensional, the standard \(\operatorname{Module.rank}\) lower bounds \(\operatorname{Cardinal.aleph0}\le n_\pm\), and exact \(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces. Exact Hamel rank, exact extension cardinality, a preferred extension, arbitrary-operator classification, backward-wall construction, and the paper's infinitely-many/continuum and algebraic-selection consequences are not claimed as proved by the new Lean corollary.
@@ -120,7 +124,7 @@ F\bigl(0,0,-\tfrac14\bigr)
 
 ---
 
-## 3. Theorem A â€” Seed Keller identities
+## 3. Theorem A — Seed Keller identities
 
 **Theorem A.**  
 (1) \(\det DF\equiv -2\).  
@@ -133,7 +137,7 @@ F\bigl(0,0,-\tfrac14\bigr)
 
 ---
 
-## 4. Theorem B â€” Poisson cotangent lift
+## 4. Theorem B — Poisson cotangent lift
 
 **Theorem B.** Let \(\Phi(q,p)=(F(q),B(q)p)\) with \(B=J^{-T}\). Then:
 1. \(B\) is polynomial and \(JB^{T}=I\);  
@@ -154,7 +158,7 @@ F\bigl(0,0,-\tfrac14\bigr)
 
 ---
 
-## 5. Theorem C â€” Dual fields, Piola, and SchrÃ¶dinger convention
+## 5. Theorem C — Dual fields, Piola, and Schrödinger convention
 
 **Theorem C.** Let \(B=J^{-T}\) and \(X_j=\sum_k B_{jk}\partial_{q_k}\). Then:
 1. \(X_j(F_i)=\delta_{ij}\), and \([X_i,X_j]=0\);  
@@ -163,13 +167,13 @@ F\bigl(0,0,-\tfrac14\bigr)
    \[
    [F_i,\,H_j]=i\,\delta_{ij}
    \]
-   (SchrÃ¶dinger CCR with \(\hbar=1\)).
+   (Schrödinger CCR with \(\hbar=1\)).
 
-**Convention.** Algebraic generators with \([q_i,\pi_j]=\delta_{ij}\) correspond to \(\pi_j\sim -\partial_{q_j}\). The physical SchrÃ¶dinger momenta are \(\widehat p_j=-i\partial_{q_j}\). We write \(H_j=-iX_j\) for the latter normalization; earlier drafts' mixed use of \(p\) is superseded by this split.
+**Convention.** Algebraic generators with \([q_i,\pi_j]=\delta_{ij}\) correspond to \(\pi_j\sim -\partial_{q_j}\). The physical Schrödinger momenta are \(\widehat p_j=-i\partial_{q_j}\). We write \(H_j=-iX_j\) for the latter normalization; earlier drafts' mixed use of \(p\) is superseded by this split.
 
 **Proof sketch.**  
 (1) \(X_j(F_i)=(JB^{T})_{ij}=\delta_{ij}\). Then \([X_i,X_j](F_k)=0\) for all \(k\); since \(\mathrm{d}F\) is a coframe (\(\det DF\neq 0\)), \([X_i,X_j]=0\).  
-(2) \(\operatorname{Cof}(DF)=(\det DF)\,B\). Piola: \(\operatorname{Div}\operatorname{Cof}(DF)=0\). Constant \(\det DF=-2\) â‡’ \(\operatorname{Div} B=0\).  
+(2) \(\operatorname{Cof}(DF)=(\det DF)\,B\). Piola: \(\operatorname{Div}\operatorname{Cof}(DF)=0\). Constant \(\det DF=-2\) ⇒ \(\operatorname{Div} B=0\).
 (3) Symmetry of \(-iX\) on \(C_c^\infty\) when \(\operatorname{div} X=0\) is standard; the commutator with multiplication by \(F_i\) is \(i X_j(F_i)=i\delta_{ij}\).  
 
 Dual CAS reports remain regression tests (`cas_weyl_A001_*.json`), not the primary proof.
@@ -178,7 +182,7 @@ Dual CAS reports remain regression tests (`cas_weyl_A001_*.json`), not the prima
 
 ---
 
-## 6. Theorem D â€” Incompleteness of \(X_1\)
+## 6. Theorem D — Incompleteness of \(X_1\)
 
 **Theorem D.** The dual field \(X_1\) is incomplete on \(\mathbb{R}^3\).
 
@@ -251,13 +255,13 @@ If \(A\to 0\) with \(B\neq 0\), Vieta's formulas force at least one root with \(
 
 ---
 
-## 8. Theorem F â€” Escape walls and deficiency indices \((\infty,\infty)\)
+## 8. Theorem F — Escape walls and deficiency indices \((\infty,\infty)\)
 
 ### 8.0 Per-orbit dictionary
-On one orbit interval \((\ell,r)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\) [2, Â§X.1]:
-- finite upper end \(r<\infty\) â‡’ \(\dim\ker(h^*+i)=1\) (model \(e^{s-r}\), square-integrable on \((-\infty,r)\) after unitary shift);
-- finite lower end \(\ell>-\infty\) â‡’ \(\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\));
-- both finite â‡’ \((1,1)\); neither â‡’ \((0,0)\).
+On one orbit interval \((\ell,r)\) with \(h=-i\partial_s\) minimal on \(C_c^\infty(\ell,r)\) [2, §X.1]:
+- finite upper end \(r<\infty\) ⇒ \(\dim\ker(h^*+i)=1\) (model \(e^{s-r}\), square-integrable on \((-\infty,r)\) after unitary shift);
+- finite lower end \(\ell>-\infty\) ⇒ \(\dim\ker(h^*-i)=1\) (model \(e^{-(s-\ell)}\));
+- both finite ⇒ \((1,1)\); neither ⇒ \((0,0)\).
 
 ### 8.1 Branch reconstruction from the elimination cubic
 When \(x=q_0\neq 0\) solves (7.2) and the indicated denominators are nonzero, set
@@ -350,7 +354,7 @@ u_-\bigl(\Psi_+(a,c,s)\bigr)
 \tag{8.2}
 \end{equation}
 and \(u_-:=0\) on \(\mathbb{R}^3\setminus\Omega_+\).  
-**No cutoff in the orbit coordinate \(s\)** appearsâ€”only the transverse factor \(\chi(a,c)\).
+**No cutoff in the orbit coordinate \(s\)** appears—only the transverse factor \(\chi(a,c)\).
 
 *(i) Square-integrability.* By (7.1),
 \[
@@ -465,13 +469,13 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
 [8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
-[10] K. SchmÃ¼dgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.  
+[10] K. Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.
 [11] D. Cureton, independent Lean 4 formalization of the Alpöge/Fable seed, https://github.com/deancureton/jacobian.  
 [12] D. Speyer, *The new counterexample to the Jacobian conjecture*, Secret Blogging Seminar, 20 July 2026.
 
 ---
 
-## Appendix A â€” Evidence map
+## Appendix A — Evidence map
 
 | Result | Primary write-up | Machine check |
 |--------|------------------|---------------|
@@ -483,7 +487,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 
 ---
 
-## Appendix B â€” Claims freeze
+## Appendix B — Claims freeze
 
 Living software ledger: `docs/notes/A001-minimum-result-note.md`.  
 Submission checklist: `docs/notes/A001-arxiv-checklist.md`.

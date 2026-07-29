@@ -1,10 +1,26 @@
 {
-  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorems E-F",
+  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts and Lean-backed dual-transport deficiency theory",
   "upload_type": "software",
-  "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra Inc"
+    }
+  ],
   "license": "Apache-2.0",
-  "version": "0.3.8-theorem-f",
-  "keywords": ["jacobian-conjecture", "essential-self-adjointness", "exotic-ccr", "quantyra"],
-  "related_identifiers": [{"identifier": "https://github.com/Quantyra/exotic-ccr-lean", "relation": "isSupplementedBy", "resource_type": "software"}],
-  "description": "Proposed, untagged review artifact for A001. The paper-grade analysis states the H=-iX1 deficiency-index result (infinity,infinity). At Lean SHA ff50f4a2a312591c2e5b26e71eb390ade9164b34, the bounded canonical-core results include ExoticCCR.theoremE, ExoticCCR.theoremF, exact aleph0 Hilbert-basis cardinality for both closed adjoint eigenspaces, and a bijective von Neumann classification for the specific H_X1_min of all SelfAdjointExtension H_X1_min witnesses by complex-linear isometric equivalences from the +i to the -i adjoint eigenspace; at least two distinct witnesses exist. standardDeficiencyIndex is Module.rank, with lower bounds only. No preferred extension, arbitrary-operator theorem, exact Hamel rank, exact extension cardinality, backward-wall Lean coverage, or promotion of the paper's infinitely-many/continuum and algebraic-selection consequences is claimed. Prior withdrawn claims are preserved in the erratum. No new version DOI is asserted."
+  "version": "0.3.9-referee-revision",
+  "keywords": [
+    "jacobian-conjecture",
+    "deficiency-indices",
+    "essential-self-adjointness",
+    "exotic-ccr"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Quantyra/exotic-ccr-lean",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "description": "Proposed, untagged A001 scientific-revision candidate. The revised paper states Hilbert deficiency indices n_+=n_-=aleph0 for the canonical H=-iX1, using the forward maximal sheet and sign-involution transport in the main proof. The Lean theorem-source root is ff50f4a2a312591c2e5b26e71eb390ade9164b34 and the synchronized repository snapshot is 94351f38d7d84fd073db14ff8764708fa9d2942b; neither is a final immutable release. A new single-SHA Lean freeze, fresh scientific/package review, and Dan approval remain pending. No preferred extension, arbitrary-operator theorem, exact Hamel rank, exact extension cardinality, strong CCR, physical selection, or rank-three Dixmier counterexample is claimed. No tag, release, arXiv identifier, or new version DOI is asserted."
 }

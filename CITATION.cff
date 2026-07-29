@@ -1,13 +1,13 @@
-﻿cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file."
-title: "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorems E-F"
+cff-version: 1.2.0
+message: "This is an untagged scientific-revision candidate; cite a released version when available."
+title: "EXOTIC-CCR A001: Poisson/Weyl lifts and Lean-backed dual-transport deficiency theory"
 type: software
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
-version: "0.3.8-theorem-f"
+version: "0.3.9-referee-revision"
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 license: Apache-2.0
@@ -17,28 +17,21 @@ keywords:
   - essential-self-adjointness
   - exotic-ccr
 abstract: >-
-  Poisson/Weyl lifts of the Alpoge-Fable Keller seed (restated). H=-i X_1 not ESS
-  with deficiency indices (infinity, infinity) via whole-orbit deficiency vectors.
-  The companion Lean artifact proves the bounded canonical-core Theorem E via
-  ExoticCCR.theoremE (tag v0.1.8-theorem-e, SHA a6bb091) and, proposed and under
-  review, the bounded Theorem F via ExoticCCR.theoremF at SHA
-  ff50f4a2a312591c2e5b26e71eb390ade9164b34: both
-  adjoint eigenspaces ker(H-dagger -+ i) of the canonical minimal core are
-  infinite-dimensional, obtained by a measure-preserving sign-involution
-  transport of the forward minus-i families. A separate `hilbertDeficiencyIndex`
-  result at that SHA proves `hilbertDeficiencyIndex_X1_eq_aleph0` for the
-  closed adjoint eigenspaces. `standardDeficiencyIndex` is `Module.rank`, the
-  algebraic (Hamel) rank, for which the standard cardinal-valued lower bounds
-  Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_- are recorded but exact
-  equality is not claimed. At that SHA, for the specific canonical minimal
-  operator H_X1_min, Lean also proves a bijective von Neumann classification
-  of all SelfAdjointExtension H_X1_min witnesses (self-adjoint LinearPMaps
-  extending H_X1_min) by complex-linear isometric equivalences from the +i
-  adjoint eigenspace to the -i adjoint eigenspace, and proves that at least two
-  distinct such extensions exist. This does not prove a preferred extension,
-  an arbitrary-operator theorem, the exact extension cardinality, the paper's
-  claims of infinitely many/continuum many extensions or selection by
-  algebraic data, or the paper's backward-wall construction. Prior
-  withdrawn: v0.2.2 pair (0,infinity); v0.3.0
-  s-indicator proof. No gates/channels. This is a proposed untagged review
-  artifact; no new version DOI is asserted.
+  Proposed, untagged targeted revision of the A001 paper package. For the
+  canonical real dual transport operator H=-i X_1 associated with the
+  restated Alpoge-Fable Keller seed, the paper gives Hilbert deficiency
+  indices n_+=n_-=aleph0. The revised main proof constructs the minus-i
+  family from a forward maximal sheet and obtains the plus-i family through
+  the measure-preserving sign involution. The theorem-source root of the
+  companion Lean artifact is ff50f4a2a312591c2e5b26e71eb390ade9164b34;
+  its synchronized repository snapshot is
+  94351f38d7d84fd073db14ff8764708fa9d2942b. These are not a final immutable
+  release: a new single-SHA Lean freeze, fresh scientific and package gates,
+  and Dan approval remain pending. Lean proves the exact aleph0 Hilbert-basis
+  indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
+  classification for the specific H_X1_min, and at least two distinct
+  self-adjoint-extension witnesses. No preferred extension, arbitrary-operator
+  theorem, exact Hamel rank, exact extension cardinality, strong CCR, physical
+  selection, or rank-three Dixmier counterexample is claimed. The backward
+  wall is retained as independent paper geometry and is not used in the main
+  deficiency proof. Prior withdrawn claims remain documented in the erratum.

@@ -1,36 +1,19 @@
 # A001 arXiv endorsement status
 
 **Last updated:** 2026-07-29
-**Category requested:** `math-ph` (Mathematical Physics)  
+**Status:** endorsement logistics preserved; scientific revision blocks submission
 
 | Field | Value |
-|-------|-------|
-| **Status** | **Awaiting endorser action; candidate package updated** |
-| **Endorsement code** | `VIPN6B` |
-| **Endorser URL** | https://arxiv.org/auth/endorse?x=VIPN6B |
-| **Fallback** | https://arxiv.org/auth/endorse.php + code `VIPN6B` |
-| **Candidate** | `v0.3.8-theorem-f` proposed, untagged |
-| **Lean Theorem F** | `ExoticCCR.theoremF` + canonical-minimal von Neumann classification @ `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| **Version DOI** | None; concept DOI only: `10.5281/zenodo.21474351` |
+|---|---|
+| Category requested | `math-ph` |
+| Endorsement code | `VIPN6B` |
+| Endorser URL | `https://arxiv.org/auth/endorse?x=VIPN6B` |
+| Paper candidate | `v0.3.9-referee-revision` (proposed, untagged) |
+| Tag/release/arXiv ID | none |
+| Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
+| Fresh technical gates | pending |
+| Dan approval | pending |
 
-The endorsement request remains a human action. No arXiv identifier, tag,
-release, version DOI, or final approval is asserted. The package boundary is
-H=-iX_1 only: the paper retains its paper-grade deficiency-index argument,
-while Lean coverage includes both standard adjoint eigenspaces being not
-finite-dimensional, standard cardinal-valued lower bounds `Cardinal.aleph0
-≤ n_+` and `Cardinal.aleph0 ≤ n_-`, and the separate exact Hilbert-basis
-cardinal result `hilbertDeficiencyIndex_X1_eq_aleph0` for the closed
-eigenspaces. `standardDeficiencyIndex`/`Module.rank` remains Hamel rank with
-lower bounds only. For the specific `H_X1_min`, Lean also gives the bijective
-von Neumann classification of all self-adjoint-extension witnesses and proves
-at least two distinct witnesses exist. Preferred extension, arbitrary-operator
-classification, exact extension cardinality, the stronger paper-grade
-infinitely-many/continuum and algebraic-selection consequences, and the
-paper's backward-wall construction remain outside the new Lean corollary.
-
-## Next human actions
-
-1. Dan confirms the final category assignment and performs the final PDF skim.
-2. An eligible endorser opens the `VIPN6B` link and approves or denies it.
-3. After approval, Dan decides whether to submit the proposed candidate and records any arXiv identifier.
-4. After an approved release is archived, record the version DOI; do not predict it.
+Endorsement does not authorize submission. The revised package must first pass
+the fresh math.FA, math.AG, Lean/build, non-claims, and package gates recorded
+in `A001-arxiv-checklist.md`, followed by Dan's final approval.

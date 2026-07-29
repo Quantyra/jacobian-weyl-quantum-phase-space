@@ -1,35 +1,27 @@
 # Zenodo status
 
-## Proposed Theorem F artifact
-
-The proposed paper/package version is `0.3.8-theorem-f`, tied to the science
-worktree commit recorded below and supplemented by Lean SHA
-`ff50f4a2a312591c2e5b26e71eb390ade9164b34`. It is currently untagged pending
-the required review gates and Dan approval. The bounded Lean claims are
-`ExoticCCR.theoremE` at `a6bb091` and `ExoticCCR.theoremF` at the recorded SHA:
-both standard adjoint eigenspaces at `+i` and `-i` are not finite-dimensional,
-with standard cardinal-valued lower bounds `Cardinal.aleph0 ≤ n_+` and
-`Cardinal.aleph0 ≤ n_-`. A separate exact Hilbert-index result
-`hilbertDeficiencyIndex_X1_eq_aleph0` gives `Cardinal.aleph0` for both closed
-adjoint eigenspaces. `standardDeficiencyIndex`/`Module.rank` is Hamel rank with
-lower bounds only. For the specific canonical minimal operator `H_X1_min`,
-Lean now proves a bijective von Neumann classification of all
-`SelfAdjointExtension H_X1_min` witnesses (self-adjoint `LinearPMap`s extending
-`H_X1_min`) by complex-linear isometric equivalences from the `+i` adjoint
-eigenspace to the `-i` adjoint eigenspace, and proves at least two distinct such
-extensions exist. No preferred extension, arbitrary-operator theorem, exact
-extension cardinality, paper backward-wall construction, or Lean proof of the
-paper's infinitely-many/continuum or algebraic-selection consequences is
-claimed.
+## Proposed A001 scientific revision
 
 | Field | Value |
-|-------|-------|
-| Proposed version | `0.3.8-theorem-f` |
-| Candidate science commit | commit containing this status file (see repository history) |
-| Git tag/release | **none; review blocked** |
-| Lean supplement | `ExoticCCR.theoremF`, `hilbertDeficiencyIndex_X1_eq_aleph0`, `theoremFVonNeumannClassification`, and `theoremF_exists_two_distinct_selfAdjointExtensions` @ `ff50f4a2a312591c2e5b26e71eb390ade9164b34` (Theorem E release @ `a6bb091`) |
-| New version DOI | **not yet minted; do not predict** |
-| Existing concept DOI | 10.5281/zenodo.21474351 (historical/project-level reference) |
-| Existing v0.3.3 version DOI | 10.5281/zenodo.21478679 (do not relabel) |
+|---|---|
+| Proposed paper package | `0.3.9-referee-revision` |
+| Git tag/release | **none; scientific re-gate pending** |
+| arXiv identifier | none |
+| Lean theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
+| Lean synchronized snapshot | `94351f38d7d84fd073db14ff8764708fa9d2942b` |
+| Final single-SHA Lean freeze | pending |
+| New version DOI | **none; do not predict** |
+| Existing concept DOI | `10.5281/zenodo.21474351` (project-level) |
+| Existing v0.3.3 version DOI | `10.5281/zenodo.21478679` (do not relabel) |
 
-Do not cite v0.2.2 pair (0,inf) or v0.3.0 Dom(H*) indicator proof.
+The paper package now uses the forward maximal sheet and sign involution for
+the main deficiency proof and states exact Hilbert indices
+\(n_+=n_-=\aleph_0\). The backward wall is independent geometry. The Lean
+artifact remains bounded to the specific canonical `H_X1_min`; no preferred
+extension, arbitrary-operator theorem, exact Hamel rank, exact extension
+cardinality, strong CCR, physical selection, or rank-three Dixmier
+counterexample is claimed.
+
+Do not create a tag, release, Zenodo version, or arXiv submission until the
+fresh scientific, Lean/build, non-claims, package, and Dan approval gates pass.
+Do not cite the v0.2.2 pair or v0.3.0 interior-indicator proof.

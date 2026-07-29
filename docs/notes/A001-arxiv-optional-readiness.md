@@ -1,38 +1,27 @@
-# A001 arXiv — optional readiness (no submission)
+# A001 arXiv readiness (`v0.3.9-referee-revision`)
 
 **Date:** 2026-07-29
-**Status:** **READY LOCALLY** for package inspection; **SUBMIT DEFERRED** (Dan/endorsement)  
-**Non-claims:** this file is not an arXiv submission
+**Status:** **SCIENTIFIC REVISION; NOT READY TO SUBMIT**
 
----
+## Local bundle
 
-## Bundle checklist
+| Item | Path | Status |
+|---|---|---|
+| Canonical source | `docs/notes/A001-arxiv.tex` | revised |
+| PDF | `docs/notes/A001-arxiv.pdf` | final rebuild/inspection pending |
+| Checklist | `docs/notes/A001-arxiv-checklist.md` | fresh gates open |
+| Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
+| Endorsement draft | `docs/notes/A001-endorsement-request.md` | HOLD |
+| Errata | `docs/notes/A001-ERRATUM-v0.2.2.md` | retained |
+| Tag/release/version DOI | none | must remain absent |
 
-| Item | Path / note | OK? |
-|------|-------------|-----|
-| Source | `docs/notes/A001-arxiv.tex` | yes |
-| PDF | `docs/notes/A001-arxiv.pdf` | yes |
-| Checklist | `docs/notes/A001-arxiv-checklist.md` | yes |
-| Bundle note | `docs/notes/A001-submission-bundle.md` | yes |
-| Endorsement draft | `docs/notes/A001-endorsement-request.md` | yes |
-| Errata visible | abstract / PDF errata lines | yes |
-| Dual-flow Discussion | Phases 1–3 no-go | yes (P3) |
-| Software pin | v0.3.8-theorem-f + concept DOI in TeX | yes |
-| Lean classification pin | theoremFVonNeumannClassification + at-least-two corollary @ ff50f4a2a312591c2e5b26e71eb390ade9164b34 | yes |
-| Lean exact-index pin | hilbertDeficiencyIndex_X1_eq_aleph0 @ ff50f4a2a312591c2e5b26e71eb390ade9164b34 | yes |
-| Lean rank boundary | standardDeficiencyIndex/Module.rank is Hamel rank; lower bounds only | yes |
-| Lean cite | exotic-ccr-lean DualFields / Collision optional | optional |
-| Human approval | Dan arXiv click | **pending** |
-| Endorsement | category endorsement | **pending** |
+## Blocking gates
 
-## Submit blockers (intentional)
+1. New single-SHA Lean freeze with clean cache/build and axiom provenance.
+2. Fresh math.FA/operator-theory adversarial PASS.
+3. Fresh math.AG/Weyl–Dixmier PASS.
+4. Fresh Lean/build, non-claims, and package/metadata PASS.
+5. Final PDF visual inspection.
+6. Dan approval and any required arXiv endorsement.
 
-1. Dan final approval to upload.  
-2. Endorsement path if required for new submitter/category.  
-3. Optional freeze gate if claim text strengthens beyond the existing v0.3.8-theorem-f candidate.
-
-## Action when unblocking
-
-1. Re-run the publication-adversarial and package gates if PDF claims changed.  
-2. `pdflatex` clean build; upload source+PDF to arXiv.  
-3. Record arXiv ID in planning checkpoint + Zenodo related identifiers.
+No upload, tag, release, or DOI action is authorized before all blockers close.

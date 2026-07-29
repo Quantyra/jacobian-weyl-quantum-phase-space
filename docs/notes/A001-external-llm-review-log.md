@@ -57,5 +57,29 @@
 5. Lean biblio pin `v0.1.1-collision`; hidelinks; categories math.SP primary suggested.  
 6. Framing: seed *verified*; contribution = D–F dual-lift deficiency.
 
+## Round 4 scientific review (v0.3.8 → v0.3.9-referee-revision)
+
+**Date:** 2026-07-29
+**Inputs:** Claude, Codex, Grok
+**Aggregate:** REVISE. The earlier technical PASS is superseded.
+
+Blocking consensus:
+
+1. Expand the weak-adjoint argument to cover both weak pairings and the
+   fiberwise improper-limit passage.
+2. Use the formalized sign involution, rather than the paper-only backward
+   wall, as the main \(+i\) route.
+3. Strengthen sheet-boundary and cutoff-injectivity arguments.
+4. Add accurate Dixmier/Jacobian directionality and current nonproperness
+   literature.
+5. Synchronize one final Lean freeze and repair release/encoding surfaces.
+
+The first four items and the paper/package side of item 5 are implemented in
+`v0.3.9-referee-revision`. A new single-SHA Lean freeze, clean build/axiom
+provenance, fresh math.FA/math.AG/Lean/non-claims/package gates, final PDF
+inspection, and Dan approval remain open.
+
 ## Next
-Dan: arXiv start submit.
+
+Do not submit. Complete the fresh gate recorded in
+`A001-arxiv-checklist.md`.
