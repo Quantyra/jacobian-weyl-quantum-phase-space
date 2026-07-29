@@ -1,7 +1,7 @@
 # Program C — Free-Strict-Abstract-Joint (q and p together)
 
 **Date:** 2026-07-22  
-**Status:** **Joint-Stone-Canonical = CONDITIONAL-OBSTRUCTION** (J2–J3); **Joint-Stone-Hom-1 = OBSTRUCT** (J4); **Joint-Stone-CP-1 = OBSTRUCT** (J5); **Unitary-Image-CP-1 = OBSTRUCT** (J6); **Diag-CP-Φ₀ = CONSTRUCT** (J6-C); Joint-Form split (Core **CONSTRUCT**, ESS-1 **OBSTRUCT**); full-\(\psi\) abstract \(C^*\) **SPLIT (J7)**: BT-Envelope **CONSTRUCT**, CFC-SA-1 **OBSTRUCT**, CP-Weyl-C\* **OPEN**  
+**Status:** **Joint-Stone-Canonical = OBSTRUCT** (J2, H1 only); historical J3 full-triple claim **WITHDRAWN / OPEN pending Lean**; **Joint-Stone-Hom-1 = OBSTRUCT** (J4); **Joint-Stone-CP-1 = OBSTRUCT** (J5); **Unitary-Image-CP-1 = OBSTRUCT** (J6); **Diag-CP-Φ₀ = CONSTRUCT** (J6-C); Joint-Form split (Core **CONSTRUCT**, ESS-1 **OBSTRUCT**); full-\(\psi\) abstract \(C^*\) **SPLIT (J7)**: BT-Envelope **CONSTRUCT**, CFC-SA-1 **OBSTRUCT**, CP-Weyl-C\* **OPEN**
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`, `PROGRAM-C-C1d-Koopman-position.md`  
 **Companion note:** C001 v0.9 cites this file for the joint \(q\)–\(p\) sector.  
 **Residual detail:** `PROGRAM-C-residual-J4-Joint-Stone-Hom.md`, `PROGRAM-C-residual-mere-CP-Joint-Stone.md`, `PROGRAM-C-residual-CP-without-Stone.md`, `PROGRAM-C-residual-abstract-Cstar-full-psi.md`
@@ -112,34 +112,19 @@ J2 alone does **not** prove non-existence of every choice-dependent Joint-Stone 
 
 ---
 
-## 4. Theorem J3 — Full-triple Joint-Stone-Canonical obstruction (G4 companion)
+## 4. Historical J3 — withdrawn; full-triple question open
 
-**Standing citation (G4 companion — not A001).**  
-The validation note `G4-H0-H2-deficiency-bounds.md` records, for the dual-flow models of the A001 seed on \(L^2(\mathbb{R}^3)\):
-\[
-H_0:\quad (n_+,n_-)=(\infty,\,0),\qquad
-H_2:\quad (n_+,n_-)=(0,\,\infty).
-\]
-Hence, by Theorem J1, the minimal operators \(H_0\) and \(H_2\) admit **no** self-adjoint extensions.  
-These pairs are **G4 companion results**, not frozen A001 theorem-grade claims (A001 is \(H_1\)-only; see A001 errata / scope paragraph).
+Earlier versions imported paper-only G4 assertions about exact \(H_0,H_2\)
+deficiency pairs and used them to state a full-triple Joint-Stone no-go. Those
+operator assertions are not Lean-backed at the current freeze and are
+withdrawn as theorem evidence. They may not be rescued by calling them
+“G4 companion” results.
 
-**Theorem J3 (No full-triple Joint-Stone package — under G4 pairs).**  
-Assume the G4 companion pairs
-\[
-(n_+^{(0)},n_-^{(0)})=(\infty,0),\qquad
-(n_+^{(2)},n_-^{(2)})=(0,\infty)
-\]
-as in `G4-H0-H2-deficiency-bounds.md`. Then:
-
-1. No self-adjoint extension \(\widetilde H_0\) of minimal \(H_0\) exists (J1 + unequal indices).
-2. No self-adjoint extension \(\widetilde H_2\) of minimal \(H_2\) exists.
-3. Therefore **no** Joint-Stone package \((\Phi;\widetilde H_0,\widetilde H_1,\widetilde H_2)\) exists at all for the full triple — canonical or otherwise — because Tier A item 2 cannot be satisfied for \(j=0\) and \(j=2\).
-
-**Combined reading with J2.**  
-Even restricting attention to the \(H_1\) leg alone, Joint-Stone-Canonical already fails (J2). Under the G4 pairs, the full-triple Joint-Stone requirement fails outright (J3), strengthening the obstruction from “no canonical choice” to “no full-triple package.”
-
-**Scope discipline.**  
-Cite J3 as a **G4-companion-dependent** theorem of this Program C note. Do **not** promote the \(H_0/H_2\) pairs to A001 theorems.
+Accordingly, J3 is **withdrawn**, not a conditional theorem available for
+current use. H0/H2 deficiency, the existence of their self-adjoint
+extensions, and the full-triple Joint-Stone question are **OPEN pending
+Lean**. J2 remains an H1-only obstruction to a choice-free canonical package;
+it does not imply the withdrawn full-triple conclusion.
 
 ---
 
@@ -228,7 +213,7 @@ Unital CP from a \(C^*\) completion of \(\mathcal{W}\) extending algebraic \(\ps
 |--------------|---------|--------|
 | Position sector \(\Phi_0\) (Koopman) | **CONSTRUCT** | C1d / C001 |
 | Joint-Stone-Canonical (choice-free, \((\psi,F,B)\) alone) | **CONDITIONAL-OBSTRUCTION / NO-GO** | **J2** (\(H_1\) continuum of extensions) |
-| Full-triple Joint-Stone (all three \(\widetilde H_j\) SA) | **CONDITIONAL-OBSTRUCTION / NO-GO** | **J3** (G4: \(H_0,H_2\) unequal indices ⇒ no SA extensions) |
+| Full-triple Joint-Stone (all three \(\widetilde H_j\) SA) | **OPEN** | historical J3 withdrawn pending Lean-backed H0/H2 results |
 | Joint-Stone-Hom-1 (multiplicative, single \(j=1\), choice-dependent) | **OBSTRUCT / NO-GO** | **J4** (\(s\)-dependent preimage count vs SvN product) |
 | Joint-Stone-CP-1 (mere CP + Stone \(j=1\) + \(\Phi_0\), choice-dependent) | **OBSTRUCT / NO-GO** | **J5** (mult.\ domain \(\Rightarrow\) J4 geometry) |
 | Unitary-Image-CP-1 (unitary image of \(U(s)\), no SA link) | **OBSTRUCT / NO-GO** | **J6** |
@@ -243,7 +228,13 @@ Unital CP from a \(C^*\) completion of \(\mathcal{W}\) extending algebraic \(\ps
 | Free-Strict-Regular-v2 | WITHDRAWN | false |
 
 **Reading.**  
-“CONDITIONAL-OBSTRUCTION” for Joint-Stone-Canonical is unconditional on the verified A001 \(H_1\) pair (J2). The full-triple strengthening (J3) is conditional on accepting the G4 companion deficiency pairs for \(H_0,H_2\). J4–J6 close all unitary-image / Stone packs on the single-\(j=1\) joint vNa. Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\). Full-\(\psi\) abstract \(C^*\) **splits** (J7): concrete BT-Envelope **CONSTRUCT**; SA-CFC recovery **NO-GO**; CP from a Weyl \(C^*\) completion without SA-CFC remains **OPEN**.
+The verified A001 \(H_1\) pair supports J2. Historical J3 is withdrawn, so
+the full-triple strengthening is open pending Lean-backed H0/H2 results.
+J4–J6 close the named unitary-image / Stone packs on the single-\(j=1\)
+joint vNa. Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\).
+Full-\(\psi\) abstract \(C^*\) **splits** (J7): concrete BT-Envelope
+**CONSTRUCT**; SA-CFC recovery **NO-GO**; CP from a Weyl \(C^*\) completion
+without SA-CFC remains **OPEN**.
 
 ---
 
@@ -251,10 +242,10 @@ Unital CP from a \(C^*\) completion of \(\mathcal{W}\) extending algebraic \(\ps
 
 1. **No dual-\(F\) translation dynamics** beyond T4 framing; this note does not repair or claim dual-flow unitary groups on \(L^2(\mathbb{R}^3)\).
 2. **No gates, channels, or computational advantage.**
-3. **No claim that every joint CP construction is impossible** — only Joint-Stone-Canonical (J2), full-triple Joint-Stone under G4 pairs (J3), multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5), Unitary-Image-CP-1 (J6), Full-ψ-CFC-SA-1 (J7), and Joint-Form-ESS-1 (J4-E). Diag-CP-Φ₀ is constructed and is not a momentum channel. Full-ψ-BT-Envelope is a concrete \(C^*\) envelope, not a channel.
+3. **No claim that every joint CP construction is impossible** — historical J3 is withdrawn and the full-triple question is open. The retained named obstructions are Joint-Stone-Canonical (J2), multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5), Unitary-Image-CP-1 (J6), Full-ψ-CFC-SA-1 (J7), and Joint-Form-ESS-1 (J4-E). Diag-CP-Φ₀ is constructed and is not a momentum channel. Full-ψ-BT-Envelope is a concrete \(C^*\) envelope, not a channel.
 4. **No claim beyond what is proved here:**  
    - J2 uses only A001 \(H_1\) deficiency \((\infty,\infty)\) + von Neumann;  
-   - J3 uses G4 companion pairs for \(H_0,H_2\), cited as companion, not as A001;  
+   - historical J3 is withdrawn; H0/H2 and the full-triple question remain open pending Lean;
    - J4 uses multiplicativity + SvN product structure vs A001 sheet-count variation in \(s\);  
    - J5 uses unital CP multiplicative domain + the same geometric kill as J4;  
    - J6 drops the SA-extension-of-\(H_1\) axiom and still kills unitary image; J6-C constructs \(\Phi_0\circ E\);  
@@ -269,7 +260,7 @@ Unital CP from a \(C^*\) completion of \(\mathcal{W}\) extending algebraic \(\ps
 | Item | Path |
 |------|------|
 | A001 \(H_1\) pair \((\infty,\infty)\) | `docs/notes/A001-arxiv.tex` (Theorems E–F) |
-| G4 \(H_0,H_2\) pairs | `docs/validation/G4-H0-H2-deficiency-bounds.md` |
+| Historical withdrawn H0/H2/J3 source | `docs/validation/G4-H0-H2-deficiency-bounds.md` (not current theorem evidence) |
 | G4 \(H_1\) extension taxonomy | `docs/validation/G4-H1-extension-taxonomy.md` |
 | Position construct | `docs/validation/PROGRAM-C-C1d-Koopman-position.md` |
 | Parent Free-Strict | `docs/validation/PROGRAM-C-GenCP-Free-Strict.md` |

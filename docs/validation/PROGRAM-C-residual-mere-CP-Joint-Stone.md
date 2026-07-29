@@ -205,7 +205,7 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 | Joint-Stone-Hom-1 | **OBSTRUCT** | J4 |
 | **Joint-Stone-CP-1** (mere CP + Stone \(j=1\) + \(\Phi_0\)) | **OBSTRUCT** | **J5** |
 | Joint-Stone-Canonical | **OBSTRUCT** | J2 |
-| Full-triple Joint-Stone under G4 pairs | **OBSTRUCT** | J3 (G4 companion) |
+| Full-triple Joint-Stone | **OPEN** | historical J3 withdrawn pending Lean |
 | Joint-Form-Core | **CONSTRUCT** | J4-F |
 | Joint-Form-ESS-1 | **OBSTRUCT** | J4-E |
 | Unitary-Image-CP-1 (no SA link) | **OBSTRUCT** | **J6** (`PROGRAM-C-residual-CP-without-Stone.md`) |
@@ -233,7 +233,7 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 1. No claim that all CP maps extending \(\Phi_0\) fail — only Joint-Stone-CP-1 (CP **plus** Stone for \(j=1\)).  
 2. No dual-\(F\) translation dynamics (T4); J5 never builds a dual-flow unitary group as a physical channel.  
 3. No preferred physical boundary condition among SA extensions of \(H_1\).  
-4. No promotion of G4 \(H_0/H_2\) deficiency pairs to A001.  
+4. Historical G4 \(H_0/H_2\) pairs and J3 are withdrawn; the full-triple question is open pending Lean.
 5. No gates, channels, or computational advantage.  
 6. No claim that this proves the Jacobian conjecture or global quantization failure.  
 7. Multiplicative-domain reduction is standard CP theory; the geometric kill is the A001 sheet-count variation already used in J4.

@@ -376,7 +376,7 @@ The former residual “abstract \(C^*\) of full \(\psi\) without Hom/unitary-ima
 2. Full-ψ-BT-Envelope is **not** a quantum channel on \(B(H)\), **not** a Stinespring instrument, **not** a gate, **not** Full-ψ-CFC, and **not** Weyl-\(C^*\) / Full-ψ-CP-Weyl-C\*. It is form-level / bounded-transform momentum content + Φ₀ positions only.  
 3. Diag-CP-Φ₀ is **not** full-\(\psi\); do not relabel it.  
 4. No dual-\(F\) translation dynamics (T4).  
-5. No promotion of G4 \(H_0/H_2\) pairs to A001.  
+5. Historical G4 \(H_0/H_2\) pairs and J3 are withdrawn; the full-triple question is open pending Lean.
 6. No A001 endorsement work.  
 7. J7 does **not** weaken J2–J6: those packs remain NO-GO on their stated axioms; J7 names the CFC-SA specialization and reduces to J6 via the §3.2b checklist on the same joint vNa + normal CP setting (`PROGRAM-C-residual-CP-without-Stone.md`).  
 8. No claim that this proves the Jacobian conjecture or global quantization failure.  

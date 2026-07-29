@@ -14,7 +14,7 @@
 | Algebraic \*-SOS + correspondence | PASS / CONSTRUCT |
 | Koopman position sector | CONSTRUCT |
 | Joint-Stone-Canonical | NO-GO (J2) |
-| Full-triple Joint-Stone (G4) | NO-GO (J3) |
+| Full-triple Joint-Stone | **OPEN** (historical J3 withdrawn pending Lean) |
 | Joint-Stone-Hom-1 | NO-GO (J4) |
 | Joint-Stone-CP-1 | NO-GO (J5) |
 | Unitary-Image-CP-1 | NO-GO (J6) |

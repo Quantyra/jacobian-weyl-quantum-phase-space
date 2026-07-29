@@ -211,7 +211,7 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT** | **J4-F** |
 | Joint-Form-ESS-1 (form + ESS uniqueness for \(j=1\)) | **OBSTRUCT / NO-GO** | **J4-E** + A001 E–F |
 | Joint-Stone-Canonical | NO-GO | J2 (prior) |
-| Full-triple Joint-Stone under G4 pairs | NO-GO | J3 (prior, G4 companion) |
+| Full-triple Joint-Stone | **OPEN** | historical J3 withdrawn pending Lean |
 | Unitary-Image-CP-1 | OBSTRUCT | J6 (`PROGRAM-C-residual-CP-without-Stone.md`) |
 | Diag-CP-Φ₀ | CONSTRUCT | J6-C |
 | Full-\(\psi\) abstract \(C^*\) | **SPLIT (J7)** | `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
@@ -223,7 +223,7 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 1. No claim that all CP joint extensions fail — only Hom-multiplicative Joint-Stone-1 (J4), mere-CP Joint-Stone-CP-1 (J5), and ESS-forced Joint-Form (J4-E).  
 2. No dual-\(F\) translation dynamics (T4); J4 never builds a dual-flow unitary group on wavefunctions.  
 3. No preferred physical boundary condition among the continuum of SA extensions of \(H_1\).  
-4. No promotion of G4 \(H_0/H_2\) deficiency pairs to A001.  
+4. Historical G4 \(H_0/H_2\) pairs and J3 are withdrawn; the full-triple question is open pending Lean.
 5. Joint-Form-Core is form-level only; it is not a channel and not a Stone package.
 
 ---
@@ -235,7 +235,7 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 | Parent joint note | `PROGRAM-C-Free-Strict-Abstract-Joint.md` |
 | Koopman position | `PROGRAM-C-C1d-Koopman-position.md` |
 | A001 \(H_1\) pair / walls | `docs/notes/A001-arxiv.tex` (E–F, flow-box) |
-| G4 strong CCR (dual-flow, all three dirs) | `G4-strong-CCR-extensions-A001.md` |
+| Historical withdrawn G4 strong-CCR source | `G4-strong-CCR-extensions-A001.md` (not current theorem evidence) |
 | H4-O reversible dual-\(F\) | `H4-O-pilot-no-go.md` |
 
 (End of file)

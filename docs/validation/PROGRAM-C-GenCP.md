@@ -84,7 +84,7 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | Free-Strict-Regular-v2 | **WITHDRAWN** (false) |
 | Free-Strict-Abstract-Koopman (position sector) | **CONSTRUCT** (`PROGRAM-C-C1d-Koopman-position.md`) |
 | Free-Strict-Abstract-Joint-Stone-Canonical (H1 leg) | **CONDITIONAL-OBSTRUCTION** (J2; `PROGRAM-C-Free-Strict-Abstract-Joint.md`) |
-| Free-Strict-Abstract full-triple Joint-Stone (under G4 H0/H2 pairs) | **CONDITIONAL-OBSTRUCTION** (J3) |
+| Free-Strict-Abstract full-triple Joint-Stone | **OPEN** (historical J3 withdrawn pending Lean-backed H0/H2 results) |
 | Free-Strict-Abstract Joint-Stone-Hom-1 | **OBSTRUCTION** (J4) |
 | Free-Strict-Abstract Joint-Stone-CP-1 | **OBSTRUCTION** (J5) |
 | Free-Strict-Abstract Unitary-Image-CP-1 | **OBSTRUCTION** (J6) |

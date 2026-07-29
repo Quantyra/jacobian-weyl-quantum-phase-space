@@ -300,7 +300,7 @@ The former residual “CP of \(\Phi_0\) without Stone” splits:
 1. No claim that all CP extensions of \(\Phi_0\) fail — only Unitary-Image-CP-1 (and the stronger Joint-Stone packs J2–J5).  
 2. Diag-CP-Φ₀ does **not** implement \(\psi(p_j)\), dual-\(F\) translations, or a quantum channel on \(B(H)\).  
 3. No gates, channels, or computational advantage.  
-4. No promotion of G4 \(H_0/H_2\) pairs to A001.  
+4. Historical G4 \(H_0/H_2\) pairs and J3 are withdrawn; the full-triple question is open pending Lean.
 5. No claim that this proves the Jacobian conjecture or global quantization failure.  
 6. J6 does **not** weaken J5: Joint-Stone-CP-1 remains NO-GO on its own axioms; J6 removes the SA-extension axiom and still kills unitary image.  
 7. Multiplicative-domain and conditional-expectation ingredients are standard; the geometric kill is the A001 sheet-count variation (J4.4–J4.5).

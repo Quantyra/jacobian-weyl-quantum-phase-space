@@ -91,9 +91,11 @@ von Neumann supplies a continuum of inequivalent SA extensions; algebraic
 data do not pick one. **Joint-Stone-Canonical fails**. Choice-dependent
 CP+Stone is separately ruled out by J5; unitary image without SA link by J6.
 
-**Theorem J3 (G4 companion):** `G4-H0-H2-deficiency-bounds.md` records
-\(H_0:(\infty,0)\), \(H_2:(0,\infty)\) — no SA extensions for those minimal
-operators — so no full-triple Joint-Stone package exists under those pairs.
+**Withdrawn historical J3:** older G4 notes asserted exact \(H_0,H_2\)
+deficiency pairs and used them to claim that no full-triple Joint-Stone
+package exists. Those inputs are not Lean-backed and are withdrawn as current
+theorem evidence. H0/H2 deficiency, H0/H2 self-adjoint-extension existence,
+and the J3 full-triple question are **OPEN pending Lean**.
 
 ### 3.2 Residual update (J4–J7)
 
@@ -127,7 +129,7 @@ CP-Weyl-C\* OPEN.
 | Free-Strict-Regular-v2 | WITHDRAWN (false) |
 | **Free-Strict-Abstract-Koopman (position sector)** | **CONSTRUCT** (this note) |
 | Free-Strict-Abstract-Joint / **Joint-Stone-Canonical** | **NO-GO (J2)** — see `PROGRAM-C-Free-Strict-Abstract-Joint.md` |
-| Free-Strict-Abstract-Joint / full-triple Joint-Stone | **NO-GO (J3, G4 companion)** |
+| Free-Strict-Abstract-Joint / full-triple Joint-Stone | **OPEN; historical J3 withdrawn pending Lean** |
 | Free-Strict-Abstract-Joint / Joint-Stone-Hom-1 | **NO-GO (J4)** |
 | Free-Strict-Abstract-Joint / Joint-Stone-CP-1 | **NO-GO (J5)** |
 | Free-Strict-Abstract-Joint / Unitary-Image-CP-1 | **NO-GO (J6)** |
@@ -141,11 +143,13 @@ CP-Weyl-C\* OPEN.
 
 ## 5. Non-claims
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
-translation dynamics (T4). Joint-Stone-Canonical (J2), full-triple under G4
-(J3), multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1
+translation dynamics (T4). Joint-Stone-Canonical (J2), multiplicative
+Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1
 (J5), Unitary-Image-CP-1 (J6), and Full-ψ-CFC-SA-1 (J7) are ruled out;
 Diag-CP-Φ₀ is constructed and is not a momentum channel; BT-Envelope is a
 concrete \(C^*\) envelope, not a channel. Full-ψ-CP-Weyl-C\* is **not**
 claimed impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
 **not** realize \(\psi\); it realizes only the abelian position-generator part.
 Diag-CP is **not** full-\(\psi\).
+Historical J3 is withdrawn; the full-triple Joint-Stone question is open
+pending Lean-backed H0/H2 results.

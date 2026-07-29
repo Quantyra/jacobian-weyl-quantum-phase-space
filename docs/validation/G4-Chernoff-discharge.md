@@ -1,7 +1,15 @@
 # G4 Chernoff / transport discharge — A001 ESS obstruction
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL ARGUMENT ONLY.**
+> The generic “incomplete implies not ESS” argument below is not a current
+> Lean-backed theorem and does not discharge H0 or H2. It must not be used to
+> promote H0/H2 ESS or deficiency claims. The current active operator summary
+> is H1-only: Lean proves the canonical \(H_1=-iX_1\) is not essentially
+> self-adjoint and has Hilbert deficiency indices
+> \((\aleph_0,\aleph_0)\). H0/H2 remain open pending Lean.
+
 **Date:** 2026-07-21  
-**Status:** **Necessity direction discharged** for smooth dual fields on \(\mathbb{R}^3\)  
+**Historical status (withdrawn):** paper-only necessity argument
 **Depends on:** incompleteness theorem `G4-Xj-incompleteness.md` (∃ incomplete \(X_j\))
 
 ## 1. Operator
@@ -63,6 +71,11 @@ If \(X\) is **incomplete**, then \(H_X\) is **not** essentially self-adjoint.
 **No linear-growth hypothesis is required for Theorem N** (necessity only). Sufficiency (complete ⇒ ESS) may need extra conditions in some references; we do not use sufficiency.
 
 ## 4. Application to A001
+
+**Current active summary:** only \(H_1\) is discharged, by the named Lean
+Theorem E/F chain at freeze `b51b67d`. The table and paper-only argument below
+are historical and do not discharge H0/H2.
+
 | Step | Status |
 |------|--------|
 | \(H_j=P_j^{\mathrm{sym}}=-i X_j\), div-free | **certified** |
@@ -80,8 +93,8 @@ For the A001 seed dual momenta \(P_j^{\mathrm{sym}}=-i X_j\) on \(C_c^\infty(\ma
 ## 6. What remains open (honest)
 | Item | Status |
 |------|--------|
-| Which \(j\) fails ESS | **all three** \(j=0,1,2\) (see `G4-X0-X2-ESS-status.md`, `G4-X1-incompleteness.md`) |
-| Deficiency indices \(n_\pm\) | **not computed** |
+| Which \(j\) fails ESS | **current: \(j=1\) only**; H0/H2 open pending Lean |
+| Deficiency indices \(n_\pm\) | **current H1 Hilbert indices:** \((\aleph_0,\aleph_0)\); H0/H2 open |
 | Strong commutation of the \(Q\)'s and \(P\)'s as unbounded operators | **open** |
 | Unique self-adjoint extensions / boundary conditions at infinity | **open** |
 | Physical “observable” status after choosing an extension | **not authorized** as canonical |

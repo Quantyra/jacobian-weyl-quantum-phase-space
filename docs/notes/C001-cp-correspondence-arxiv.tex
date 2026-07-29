@@ -37,8 +37,9 @@ unital \(*\)-homomorphism (Koopman pullback) on the bounded-Borel position
 sector, valid for any local-diffeomorphism \(F\) regardless of properness or
 surjectivity. For the joint \(q\)--\(p\) sector we record: no choice-free
 Joint-Stone-Canonical package at the \(H_1\) leg (A001 deficiency
-\((\infty,\infty)\)); under the G4 companion \(H_0,H_2\) deficiency pairs
-(not an A001 claim)---no full-triple Joint-Stone package;
+\((\infty,\infty)\)); the former J3 full-triple claim based on paper-only
+\(H_0,H_2\) deficiency assertions is \textbf{withdrawn}, and the
+full-triple question remains \textbf{open pending Lean};
 \textbf{obstruction} for multiplicative single-generator Joint-Stone-Hom-1
 (Theorem~J4); \textbf{obstruction} for mere unital-normal-CP
 Joint-Stone-CP-1 (Theorem~J5); and \textbf{obstruction} for the weaker
@@ -61,7 +62,9 @@ to~\cite{A001}. Pack: \filepath{COMPANION-PACK.md}.
 \end{abstract}
 
 \noindent\textbf{MSC:} 46L07, 81S05, 47L90, 46L08.\\
-\textbf{Version:} C001 companion v0.9 (J7 SPLIT: Full-$\psi$-BT-Envelope
+\textbf{Version:} C001 companion v0.9 claim-boundary correction
+(untagged/unreleased; prior v0.3.3 tag is historical). J7 SPLIT:
+Full-$\psi$-BT-Envelope
 form-level CONSTRUCT; CFC-SA NO-GO via J6; Weyl-\(C^*\) OPEN).\\
 \textbf{T4:} no dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).
 
@@ -196,7 +199,7 @@ sector splits as follows. Full write-ups:
 The Koopman pullback \(\Phi_0\) is a normal unital \(*\)-homomorphism on
 bounded Borel functions of \(Q\) (previous section).
 
-\paragraph{(ii) Joint-Stone-Canonical --- CONDITIONAL-OBSTRUCTION.}
+\paragraph{(ii) Joint-Stone-Canonical --- OBSTRUCTION (H1 only).}
 A \emph{Joint-Stone} package asks for self-adjoint extensions
 \(\widetilde H_j\supset H_j=-iX_j\) together with a unital normal CP map
 \(\Phi\) extending \(\Phi_0\) and implementing
@@ -206,16 +209,15 @@ fixed by the algebraic data \((\psi,F,B)\) alone.
 \begin{itemize}
 \item \textbf{Theorem J2} (A001 \(H_1\) only): since
 \((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\)~\cite{A001}, von Neumann's
-theorem yields a continuum of inequivalent SA extensions; \((\psi,F,B)\)
+theorem and the phase family yield a continuum-sized lower family of distinct
+SA-extension witnesses; \((\psi,F,B)\)
 does not select one. Hence no Joint-Stone-Canonical package exists.
-\item \textbf{Theorem J3} (\textbf{G4-conditional}, not an A001 theorem):
-the companion note
-\filepath{G4-H0-H2-deficiency-bounds.md} records
-\((n_+,n_-)=(\infty,0)\) for \(H_0\) and \((0,\infty)\) for \(H_2\), so
-those minimal operators admit \emph{no} SA extensions. \emph{Conditional
-on those G4 pairs}, no full-triple Joint-Stone package
-\((\Phi;\widetilde H_0,\widetilde H_1,\widetilde H_2)\)
-exists at all. (Do not promote G4 pairs to A001.)
+\item \textbf{Historical J3---withdrawn.}
+Earlier versions imported paper-only G4 assertions about \(H_0,H_2\)
+deficiency and used them to state a full-triple Joint-Stone no-go. Those
+inputs are not Lean-backed and are withdrawn as theorem evidence. H0/H2
+deficiency, the existence of their self-adjoint extensions, and the
+full-triple Joint-Stone question remain \textbf{open pending Lean}.
 \end{itemize}
 
 \paragraph{(iii) Joint-Stone-Hom-1 --- OBSTRUCTION.}
@@ -347,21 +349,21 @@ Full-$\psi$-BT-Envelope is \emph{not} Full-$\psi$-CFC and
 No channel on \(B(H)\) implementing the full \(\psi\).
 No gates/advantage. No dual \(F\)-translations. No ``all quantization fails.''
 No claim that every joint CP construction is impossible---only
-Joint-Stone-Canonical (J2), full-triple Joint-Stone
-\textbf{G4-conditional} (J3),
-multiplicative Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1 (J5),
+Joint-Stone-Canonical (J2), multiplicative Joint-Stone-Hom-1 (J4),
+mere-CP Joint-Stone-CP-1 (J5),
 Unitary-Image-CP-1 (J6), Full-$\psi$-CFC-SA-1 (J7), and Joint-Form-ESS-1.
 Diag-CP-\(\Phi_0\) is not a momentum channel and is not full-\(\psi\).
 Full-$\psi$-BT-Envelope is a concrete form-level \(C^*\) envelope
 (bounded dual-momentum transforms + \(\Phi_0\) positions), not a channel,
 not Full-$\psi$-CFC, and not Weyl-\(C^*\).
 Full-$\psi$-CP-Weyl-\(C^*\) without SA-CFC is not claimed impossible.
-No promotion of G4 \(H_0/H_2\) pairs to A001 theorems.
+Historical G4 \(H_0/H_2\) claims and J3 are withdrawn; the full-triple
+question is open pending Lean.
 
 \begin{thebibliography}{99}
 \bibitem{A001}
-D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, proposed candidate
-v0.3.8-theorem-f,
+D.~E.~Fredriksen, Poisson and Weyl lifts\ldots, proposed untagged candidate
+v0.3.9-referee-revision,
 \url{https://github.com/Quantyra/jacobian-weyl-quantum-phase-space}.
 \end{thebibliography}
 \end{document}
