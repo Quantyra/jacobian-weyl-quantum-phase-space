@@ -40,8 +40,9 @@ paper backward-wall construction.
 
 ## Submission comment
 
-Seed map due to Alpöge and Claude Fable, with Akhil Mathew credited for
-prompting the question; restated and independently checked, not discovered
-here. No gates, channels, computational advantage, or rank-three Dixmier
-counterexample is claimed. Fresh technical re-gates are required before the
-package can return to Dan for approval.
+The map was announced by Alpöge; the announcement credits Claude Fable for
+work leading to it and Akhil Mathew for prompting the question. It is restated
+and independently checked here, not discovered here. No gates, channels,
+computational advantage, or rank-three Dixmier counterexample is claimed.
+Fresh technical re-gates are required before the package can return to Dan for
+approval.
