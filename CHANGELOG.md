@@ -29,8 +29,8 @@
   D–F do not use the collision.
 - Repaired README UTF-8 corruption and separated paper-package, Lean
   theorem-source, and Lean synchronized-snapshot version streams.
-- Superseded the prior technical PASS: fresh math.FA, math.AG, Lean/build,
-  non-claims, package, and Dan approval gates are pending.
+- Recorded the current re-gate state: math.FA, math.AG, Lean/build, and
+  non-claims PASS; package/metadata recheck and Dan approval remain pending.
 - No tag, release, arXiv submission, or DOI minting performed.
 
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)

@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "none-v0.3.9-referee-revision-untagged"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex; fresh scientific and package gates pending."
+claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex; math.FA, math.AG, Lean/build, and non-claims PASS; package recheck and Dan approval pending."
 ---
 
 # Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator

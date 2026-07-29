@@ -1,7 +1,7 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — prior technical PASS is superseded; fresh
-math.FA, math.AG, Lean/build, non-claims, and package review pending.
+**Status:** SCIENTIFIC REVISION — math.FA, math.AG, Lean/build, and non-claims
+PASS; package/metadata recheck and Dan approval pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
 Tag/release: none
@@ -68,10 +68,10 @@ asserted.
 
 ## Fresh mandatory gate
 
-- [ ] math.FA/operator-theory proof-adversarial review PASS
-- [ ] math.AG/Weyl–Dixmier review PASS
+- [x] math.FA/operator-theory proof-adversarial review PASS
+- [x] math.AG/Weyl–Dixmier review PASS
 - [x] Lean/build/axiom audit PASS on the synchronized freeze
-- [ ] Non-claims review PASS
+- [x] Non-claims review PASS
 - [ ] Package/metadata review PASS
 - [x] Final PDF rendered as 11 letter-size pages and visually inspected
 - [ ] Dan approval recorded

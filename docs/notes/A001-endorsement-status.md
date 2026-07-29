@@ -11,9 +11,10 @@
 | Paper candidate | `v0.3.9-referee-revision` (proposed, untagged) |
 | Tag/release/arXiv ID | none |
 | Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
-| Fresh technical gates | pending |
+| Technical gates | math.FA, math.AG, Lean/build, and non-claims PASS |
+| Package/metadata recheck | pending |
 | Dan approval | pending |
 
 Endorsement does not authorize submission. The revised package must first pass
-the fresh math.FA, math.AG, Lean/build, non-claims, and package gates recorded
-in `A001-arxiv-checklist.md`, followed by Dan's final approval.
+the package/metadata recheck recorded in `A001-arxiv-checklist.md`, followed by
+Dan's final approval.

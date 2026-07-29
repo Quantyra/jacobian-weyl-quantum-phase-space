@@ -25,8 +25,9 @@ abstract: >-
   the measure-preserving sign involution. The synchronized Lean publication
   freeze is b8bc72ea87531b88d50ed588ec6268ae743a662f; it is untagged and
   unreleased. The historical theorem-source root is
-  ff50f4a2a312591c2e5b26e71eb390ade9164b34. Fresh scientific and package
-  gates and Dan approval remain pending. Lean proves the exact aleph0 Hilbert-basis
+  ff50f4a2a312591c2e5b26e71eb390ade9164b34. Math.FA, math.AG, Lean/build,
+  and non-claims gates pass; package/metadata recheck and Dan approval remain
+  pending. Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
   classification for the specific H_X1_min, and an injective family of
   distinct self-adjoint-extension witnesses parameterized by unitary complex

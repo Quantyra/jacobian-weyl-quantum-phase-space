@@ -2,7 +2,7 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** targeted revision implemented; fresh math.FA/math.AG and package gates pending
+**Scientific status:** math.FA, math.AG, Lean/build, and non-claims PASS; package/metadata recheck and Dan approval pending
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level only)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -49,7 +49,8 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
 The synchronized freeze includes theorem sources, documentation, strict
 cache/build provenance, and the executable headline-theorem axiom audit.
-Fresh adversarial review and Dan approval remain pending.
+Math.FA, math.AG, Lean/build, and non-claims gates PASS. Package/metadata
+recheck and Dan approval remain pending.
 
 At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.

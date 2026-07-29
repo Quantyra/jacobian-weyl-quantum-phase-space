@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | Proposed paper package | `0.3.9-referee-revision` |
-| Git tag/release | **none; scientific re-gate pending** |
+| Git tag/release | **none; package recheck and Dan approval pending** |
 | arXiv identifier | none |
 | Synchronized Lean freeze | `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
@@ -24,6 +24,7 @@ rank-three Dixmier counterexample is claimed. The Lean declarations
 `theoremFUnitPhaseExtension` and `theoremFUnitPhaseExtension_injective`
 exhibit a continuum-sized lower family of distinct extension witnesses.
 
-Do not create a tag, release, Zenodo version, or arXiv submission until the
-fresh scientific, Lean/build, non-claims, package, and Dan approval gates pass.
+Math.FA, math.AG, Lean/build, and non-claims gates PASS. Do not create a tag,
+release, Zenodo version, or arXiv submission until the package/metadata recheck
+and Dan approval pass.
 Do not cite the v0.2.2 pair or v0.3.0 interior-indicator proof.

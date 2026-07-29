@@ -16,7 +16,8 @@
 | Synchronized Lean freeze | `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
 | Lean build/axiom provenance | PASS at synchronized freeze |
-| Scientific gates | pending fresh math.FA and math.AG review |
+| Technical gates | math.FA, math.AG, Lean/build, and non-claims PASS |
+| Package/metadata recheck | pending |
 | Human approval | pending Dan |
 
 ## Exact scope
@@ -40,5 +41,5 @@ paper backward-wall construction.
 Seed map due to Alpöge and Claude Fable, with Akhil Mathew credited for
 prompting the question; restated and independently checked, not discovered
 here. No gates, channels, computational advantage, or rank-three Dixmier
-counterexample is claimed. The package remains blocked pending fresh technical
-gates and Dan approval.
+counterexample is claimed. The package remains blocked pending package/metadata
+recheck and Dan approval.
