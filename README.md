@@ -45,14 +45,15 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 - Released Theorem E milestone: tag `v0.1.8-theorem-e` targets `be4f330`;
   `a6bb091` is its reviewed theorem-source anchor.
 - Synchronized Lean publication freeze:
-  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged and unreleased).
+  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged and unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 
 The synchronized freeze includes theorem sources, documentation, recorded
 strict cache/build provenance, and an executable headline-theorem axiom audit.
-Those records report successful focused 8,684- and 8,692-job builds, a full
-8,702-job build, and the executable axiom audit at the pinned SHA.
+Those records report successful focused Theorem C and Theorem C Weyl builds,
+a full 8,702-job build, and the inherited executable axiom audit at the pinned
+SHA.
 The present wording/metadata revision requires a fresh technical re-gate
 before the candidate returns to Dan for approval.
 

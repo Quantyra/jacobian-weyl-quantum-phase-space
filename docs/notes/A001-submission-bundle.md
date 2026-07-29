@@ -4,17 +4,18 @@ This is a local scientific-revision candidate, not a public freeze.
 
 - PDF: `docs/notes/A001-arxiv.pdf`
 - PDF SHA-256:
-  `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`
+  `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
 - TeX: `docs/notes/A001-arxiv.tex`
 - Tag/release/arXiv identifier/new version DOI: none
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not
   identify this candidate)
 - Synchronized Lean freeze:
-  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased)
+  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased)
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
 - Lean cache/build/axiom provenance: corrected freeze records focused
-  8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit
+  Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited
+  seven-declaration audit
 - Math.FA, math.AG, and non-claims re-gates: pending
 - Package/metadata recheck: pending
 - Dan approval: pending after technical gates

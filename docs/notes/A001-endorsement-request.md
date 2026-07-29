@@ -23,14 +23,14 @@ CCR, or rank-three Dixmier claim is made.
 
 **Candidate PDF:** `docs/notes/A001-arxiv.pdf`
 (`v0.3.9-referee-revision`, proposed and untagged)
-**PDF SHA-256:** `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`
+**PDF SHA-256:** `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
 **Tag/release/arXiv identifier:** none
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
 The synchronized Lean publication freeze is
-`0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged and unreleased);
-focused 8,684/8,692-job builds, the full 8,702-job build, and the executable
-headline-theorem axiom audit are recorded there. The earlier
+`b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged and unreleased);
+focused Theorem C/Theorem C Weyl builds, the full 8,702-job build, and the
+inherited executable headline-theorem axiom audit are recorded there. The earlier
 `ff50f4a2a312591c2e5b26e71eb390ade9164b34` remains only the historical
 Theorem F source root. Fresh math.FA, math.AG/Weyl, non-claims, and
 package/metadata re-gates remain required, followed by Dan approval, before

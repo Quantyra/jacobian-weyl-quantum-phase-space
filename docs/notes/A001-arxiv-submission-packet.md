@@ -7,15 +7,15 @@
 
 | Item | Current value |
 |---|---|
-| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785` |
+| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Tag/release | none |
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
 | New version DOI | none; do not predict |
-| Synchronized Lean freeze | `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased) |
+| Synchronized Lean freeze | `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean build/axiom provenance | corrected freeze records focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit |
+| Lean build/axiom provenance | corrected freeze records focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited seven-declaration audit |
 | Technical gates | Lean/build complete; fresh math.FA, math.AG, and non-claims re-gates pending |
 | Package/metadata recheck | pending |
 | Human approval | pending Dan |

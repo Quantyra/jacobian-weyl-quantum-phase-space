@@ -7,9 +7,9 @@
 | Proposed paper package | `0.3.9-referee-revision` |
 | Git tag/release | **none; fresh technical re-gates precede Dan approval** |
 | arXiv identifier | none |
-| Synchronized Lean freeze | `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased) |
+| Synchronized Lean freeze | `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean cache/build/axiom provenance | recorded focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit |
+| Lean cache/build/axiom provenance | recorded focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited seven-declaration audit |
 | New version DOI | **none; do not predict** |
 | Existing concept DOI | `10.5281/zenodo.21474351` (project-level) |
 | Existing v0.3.3 version DOI | `10.5281/zenodo.21478679` (do not relabel) |

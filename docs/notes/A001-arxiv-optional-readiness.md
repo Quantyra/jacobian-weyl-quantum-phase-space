@@ -8,7 +8,7 @@
 | Item | Path | Status |
 |---|---|---|
 | Canonical source | `docs/notes/A001-arxiv.tex` | revised |
-| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `f9e3b9bf…4e4e785` |
+| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `9cd41931…1a5020` |
 | Checklist | `docs/notes/A001-arxiv-checklist.md` | fresh technical re-gates open |
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | HOLD |
@@ -23,8 +23,9 @@
 
 The repository records successful cache/build and executable axiom-audit
 results for the corrected synchronized Lean freeze
-`0735757f7f1a3a2875fcd29e31e03a203c3c8a74`: focused 8,684- and
-8,692-job builds, the full 8,702-job build, and the executable axiom audit.
+`b51b67d03515d44e1cb1309cf8721a7ecf7803b2`: focused Theorem C and
+Theorem C Weyl builds, the full 8,702-job build, and the inherited executable
+axiom audit.
 Fresh math.FA, math.AG/Weyl, non-claims, and package/metadata reviews remain
 required. The freeze remains untagged and unreleased.
 

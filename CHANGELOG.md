@@ -22,9 +22,9 @@
 - Replaced public internal PASS language with factual recorded-build
   provenance; fresh technical re-gating is required after this revision.
 - Repinned the full science package to synchronized, untagged Lean freeze
-  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74`; its repository provenance
-  records focused 8,684- and 8,692-job builds, a full 8,702-job build, and an
-  executable publication axiom audit.
+  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2`; its repository provenance
+  records focused Theorem C and Theorem C Weyl builds, a full 8,702-job build,
+  and the inherited executable publication axiom audit.
 - Added the Lean-proved injective unit-phase family of distinct
   `SelfAdjointExtension H_X1_min` witnesses. Together with the classical
   cardinality of the complex unit circle, this gives a continuum-sized lower

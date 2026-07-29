@@ -4,7 +4,7 @@
 math.FA, math.AG, Lean/build, non-claims, and package/metadata re-gates pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
-PDF SHA-256: `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`
+PDF SHA-256: `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
@@ -68,7 +68,7 @@ Scope: **specific canonical \(H=-iX_1\) only**
 ## Lean boundary
 
 - Synchronized publication freeze:
-  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased).
+  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.
@@ -95,7 +95,8 @@ asserted.
 - [ ] Fresh math.FA/operator-theory proof-adversarial review
 - [ ] Fresh math.AG/Weyl–Dixmier review
 - [x] Fresh Lean/build/axiom audit on the synchronized corrected freeze:
-  focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit
+  focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited
+  seven-declaration audit
 - [ ] Fresh non-claims review
 - [ ] Fresh package/metadata review
 - [x] Revised PDF built twice without warnings, rendered as 11 letter-size
