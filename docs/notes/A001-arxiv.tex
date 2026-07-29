@@ -383,19 +383,10 @@ is a \(C^\infty\) diffeomorphism onto an open \(X_1\)-invariant set, \(F\circ\Ps
 \begin{proof}
 The maximal-flow domain \(\mathcal{D}\subset\mathbb{R}\times\mathbb{R}^3\) of the smooth vector field \(X_1\) is open and the flow \(\phi\) is \(C^\infty\) on \(\mathcal{D}\)~\cite{LeeSmooth}. The set \(D_+\) is (up to the smooth reparameterization \(s=F_1\)) the pullback of \(\mathcal{D}\) through the cross-section \(\Sigma_+\); openness of \(\mathcal{D}\) therefore yields openness of \(D_+\). Along every orbit, \(F_0\) and \(F_2\) are constant and \(F_1\) is the time coordinate. Hence two points of the parameter domain with different \((a,c)\) cannot map to the same orbit, while ODE uniqueness handles two parameterizations on a fixed orbit. Equivalently, the identity \(F\circ\Psi_+=(a,s,c)\) immediately gives injectivity of \(\Psi_+\). Since \(\det DF\neq 0\), \(\Psi_+\) is a local diffeomorphism, hence a \(C^\infty\) diffeomorphism onto its open image \(\Omega_+\). By the \(\varepsilon_0\)-window choice, the selected branch does not degenerate before the wall, so the maximal upper time equals \(\beta\). Finite lower maximal time forces escape from compacts by standard ODE maximality.
 
-We also record the boundary fact used when extending deficiency functions by
-zero. Fix \(K\Subset W_+\) and suppose a sequence
-\(\Psi_+(a_m,c_m,s_m)\) with \((a_m,c_m)\in K\) converges to a finite point
-\(p\), after taking \((a_m,c_m)\to(a_*,c_*)\in K\). If
-\(s_m\to\beta(a_*,c_*)\), the uniform wall estimate forces
-\(\|\Psi_+(a_m,c_m,s_m)\|\to\infty\), a contradiction. If
-\(\ell_+(a_*,c_*)<s_*<\beta(a_*,c_*)\), continuity of the flow gives
-\(p=\Psi_+(a_*,c_*,s_*)\in\Omega_+\). Finally, a finite limit at
-\(s_*=\ell_+(a_*,c_*)\) would, by openness of the maximal-flow domain and
-continuous dependence on initial data, extend the selected orbit below its
-maximal lower time. Thus no finite boundary of \(\Omega_+\) lies over
-\(K\). This excludes a hidden surface contribution wherever a transverse
-cutoff supported in \(K\) is nonzero.
+No continuity or semicontinuity of the variable endpoint
+\(\ell_+(a,c)\) is needed below. In particular, the weak-adjoint argument is
+carried out directly on the open variable domain \(D_+\), rather than through
+a global assertion about the finite boundary of \(\Omega_+\).
 \end{proof}
 
 \subsection{Deficiency vectors in \(\operatorname{Dom}(H^*)\)}
@@ -422,12 +413,9 @@ since the inner integral equals \(\tfrac12\bigl(1-e^{2(\ell_+-\beta)}\bigr)\le\t
 \textit{Adjoint equation.} Let \(\varphi\in C_c^\infty(\mathbb{R}^3)\) and
 put \(K=\operatorname{supp}\chi\Subset W_+\). On \(\Omega_+\),
 \(H=-i\partial_s\) in the flow-box chart with density \(\tfrac12\), and
-\(\operatorname{div}X_1=0\). There is no interior jump because \(u_-\) has no
-artificial \(s\)-cutoff. There is also no finite jump across
-\(\partial\Omega_+\): near the lateral boundary \(\chi\) vanishes on a
-neighborhood, and the boundary conclusion of the saturated-sheet lemma
-excludes finite boundary points over \(K\). Thus extending by zero introduces
-no hidden surface distribution.
+\(\operatorname{div}X_1=0\). We verify the weak identity for the zero extension
+directly. This avoids any inference of regularity across
+\(\partial\Omega_+\), and it uses no continuity property of \(\ell_+\).
 
 Both terms in the weak-adjoint identity are absolutely integrable. Indeed,
 \(X_1\varphi\) is bounded because \(\varphi\) has compact support (the
@@ -450,17 +438,23 @@ The right side is integrable because
 e^{s-\beta(a,c)}\,\mathrm{d}s\le1\) and \(\chi\) has compact transverse
 support.
 
-Apply Fubini first to the indicator of the open variable domain \(D_+\). For
-each fixed \((a,c)\), integrate by parts on compact subintervals of
-\((\ell_+(a,c),\beta(a,c))\), and then exhaust that particular maximal
-interval. This fiber-first procedure makes no measurable choice of the lower
-endpoint or of an exhaustion. At the upper endpoint the sheet escapes every
-compact set, so \(\varphi\) vanishes eventually. At the lower endpoint, either
-\(\ell_+\) is finite and maximality again forces spatial escape, or
-\(\ell_+=-\infty\) and \(e^{s-\beta}\to0\). Hence both endpoint terms vanish.
-The displayed majorant applies to the two bulk terms, so dominated convergence
-passes to the improper limits and then through the transverse integral.
-Consequently
+Change variables on \(\Omega_+\) and apply Fubini; the preceding majorant
+proves absolute integrability of both pairings. Now fix \((a,c)\). On every
+compact interval
+\([r,t]\Subset(\ell_+(a,c),\beta(a,c))\), ordinary one-dimensional
+integration by parts applies. Let \(t\uparrow\beta(a,c)\) and
+\(r\downarrow\ell_+(a,c)\) separately. These are limits on one fixed fiber:
+the two improper integrals converge absolutely by the same exponential
+estimate. At the upper endpoint the sheet escapes every compact set, so
+\(\varphi\) vanishes eventually. At the lower endpoint, either \(\ell_+\) is
+finite and maximality again forces spatial escape, or \(\ell_+=-\infty\) and
+\(e^{s-\beta}\to0\). Hence both endpoint terms vanish, and the desired
+one-dimensional weak identity holds on that fiber.
+
+We then integrate this already established fiberwise equality over \((a,c)\).
+Fubini applies to both sides by the global majorant above; there is no
+transverse limiting process, measurable exhaustion, or endpoint-selection
+argument. Consequently
 \[
 \langle u_-,H\varphi\rangle=\langle -iu_-,\varphi\rangle,
 \]
@@ -541,7 +535,15 @@ an assertion that the algebraic Hamel rank is \(\aleph_0\).
 \end{proof}
 
 \begin{corollary}
-By von Neumann's theorem, infinitely many self-adjoint extensions of \(H\) exist. Every such extension agrees with the same minimal operator on \(C_c^\infty(\mathbb{R}^3)\); the core algebraic Poisson/CCR relations recorded in Theorems~B--C therefore do not, by themselves, distinguish a unique extension.
+Let \(\overline H\) denote the closure of \(H\). Von Neumann's theorem applies
+to the closed symmetric operator \(\overline H\). Since
+\(H^*=(\overline H)^*\), its deficiency spaces are those computed above;
+moreover, a self-adjoint operator extends \(H\) if and only if it extends
+\(\overline H\). Hence infinitely many self-adjoint extensions exist. Every
+such extension agrees with the same minimal operator on
+\(C_c^\infty(\mathbb{R}^3)\); the core algebraic Poisson/CCR relations
+recorded in Theorems~B--C therefore do not, by themselves, distinguish a
+unique extension.
 \end{corollary}
 
 \section{Discussion}

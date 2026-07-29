@@ -3,12 +3,17 @@
 ## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
 
 - Expanded the central weak-adjoint proof to control both weak pairings and
-  state the fiber-first Fubini, compact-interval integration by parts,
-  endpoint exhaustion, escape/decay, and dominated-convergence steps.
+  state the compact-interval integration by parts and escape/decay steps.
+- Proved the absolutely convergent improper identity separately on each
+  fiber before integrating the established equality by Fubini; no transverse
+  dominated-convergence or measurable-exhaustion claim remains.
 - Made the Lean-backed sign involution the main \(+i\) route; retained the
   backward wall as independent geometry only.
-- Added the finite sheet-boundary argument, cross-orbit invariant-coordinate
-  argument, compact transverse support, and uniform-collar norm lower bound.
+- Avoided any unsupported continuity claim for the variable lower flow
+  endpoint; the direct weak formulation handles the zero extension without
+  a global finite-boundary assertion.
+- Added the cross-orbit invariant-coordinate argument, compact transverse
+  support, and uniform-collar norm lower bound.
 - Stated Hilbert deficiency indices exactly as
   \(n_+=n_-=\aleph_0\), with conventional \((\infty,\infty)\) notation.
 - Added accurate Dixmier/Jacobian directionality, current related work, AFP

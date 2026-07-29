@@ -11,20 +11,26 @@ Scope: **specific canonical \(H=-iX_1\) only**
 
 - [x] Weak-adjoint proof dominates both the test-function and transport
   pairings.
-- [x] Fiber-first Fubini, compact-subinterval integration by parts, endpoint
-  exhaustion, escape/decay alternatives, and dominated convergence are
-  explicit.
-- [x] No measurable lower-endpoint selection and no interior \(s\)-indicator.
+- [x] The absolutely convergent improper identity is proved on each fixed
+  fiber before the established equality is integrated transversely by
+  Fubini.
+- [x] No transverse dominated-convergence step, measurable lower-endpoint
+  selection, measurable exhaustion, or interior \(s\)-indicator is used.
 - [x] Cross-orbit injectivity uses invariance of \(F_0,F_2\).
 - [x] Transverse cutoffs satisfy
   \(\operatorname{supp}\chi\Subset W_+\).
-- [x] Finite sheet-boundary alternatives are addressed before zero extension.
+- [x] The zero extension is handled by the direct weak identity; no
+  unsupported continuity or global finite-boundary claim for the variable
+  lower endpoint is used.
 - [x] The uniform-collar norm lower bound makes cutoff injectivity explicit.
 - [x] The Lean-backed sign involution is the main \(+i\) route.
 - [x] Backward-wall material is labeled independent geometry and is not used
   for Theorem F.
 - [x] Theorem F states \(n_+=n_-=\aleph_0\), with conventional
   \((\infty,\infty)\) notation.
+- [x] The von Neumann corollary is stated for \(\overline H\), with the
+  equivalence between self-adjoint extensions of \(H\) and \(\overline H\)
+  explicit.
 - [x] Real-versus-complex seed scope and the collision/noncollision dependency
   boundary are explicit.
 - [x] Dixmier directions are stated accurately:

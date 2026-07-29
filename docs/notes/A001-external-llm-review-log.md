@@ -83,3 +83,33 @@ inspection, and Dan approval remain open.
 
 Do not submit. Complete the fresh gate recorded in
 `A001-arxiv-checklist.md`.
+
+## Round 5 math.FA re-gate response
+
+**Date:** 2026-07-29
+
+**Input:** proof-adversarial re-gate of science commit `73a90f8`
+
+**Decision:** REVISE; the math.FA PASS remains pending.
+
+The re-gate identified two exposition defects in the revised weak-adjoint
+argument:
+
+1. The finite-boundary trichotomy did not cover sequences for which the
+   limiting time lies below the limiting orbit's lower endpoint, and no
+   endpoint semicontinuity had been proved.
+2. The prose denied a measurable transverse exhaustion but then invoked
+   dominated convergence through the transverse integral.
+
+The paper now avoids both claims. It uses no continuity or semicontinuity of
+the variable lower endpoint and makes no global finite-boundary assertion.
+Instead, after establishing absolute integrability, it proves the improper
+one-dimensional integration-by-parts identity on each fixed fiber, including
+the escape/decay endpoint alternatives, and only then integrates the already
+proved equality in the transverse variables by Fubini. Thus no transverse
+limit, measurable exhaustion, or endpoint-selection argument is used. The
+von Neumann corollary also now applies explicitly to the closure
+\(\overline H\).
+
+Fresh math.FA review is still required; this response does not mark the gate
+PASS.
