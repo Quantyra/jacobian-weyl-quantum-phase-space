@@ -1,18 +1,21 @@
 # Zenodo status
 
-## Proposed Theorem E artifact
+## Proposed Theorem F artifact
 
-The proposed paper/package version is `0.3.7-theorem-e`, tied to the science
-worktree SHA under review and supplemented by Lean SHA `a6bb091`. It is
-currently untagged pending non-claims, package/metadata, and Lean/build/audit
-PASS plus Dan approval. The bounded Lean claim is `ExoticCCR.theoremE`; the
-paper-grade deficiency-index value and full Theorem F remain not Lean-covered.
+The proposed paper/package version is `0.3.8-theorem-f`, tied to the science
+worktree commit recorded below and supplemented by Lean SHA
+`8a08cf4c5803a19a5ae3dd9e980734d4595d636b`. It is currently untagged pending
+the required review gates and Dan approval. The bounded Lean claims are
+`ExoticCCR.theoremE` at `a6bb091` and `ExoticCCR.theoremF` at the recorded SHA:
+both standard adjoint eigenspaces at `+i` and `-i` are not finite-dimensional.
+The exact cardinal index value, extension multiplicity, and the paper's
+backward-wall construction remain paper-grade and are not Lean-covered.
 
 | Field | Value |
 |-------|-------|
-| Proposed version | `0.3.7-theorem-e` |
+| Proposed version | `0.3.8-theorem-f` |
 | Git tag/release | **none; review blocked** |
-| Lean supplement | `a6bb091` |
+| Lean supplement | `ExoticCCR.theoremF` @ `8a08cf4c5803a19a5ae3dd9e980734d4595d636b` (Theorem E @ `a6bb091`) |
 | New version DOI | **not yet minted; do not predict** |
 | Existing concept DOI | 10.5281/zenodo.21474351 (historical/project-level reference) |
 | Existing v0.3.3 version DOI | 10.5281/zenodo.21478679 (do not relabel) |

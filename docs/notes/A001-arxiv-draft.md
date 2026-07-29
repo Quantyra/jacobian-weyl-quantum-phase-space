@@ -3,7 +3,7 @@ title: "Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique se
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
-date: "2026-07-21"
+date: "2026-07-28"
 arxiv_categories:
   - math.FA
   - math.AG
@@ -23,10 +23,10 @@ keywords:
   - dual vector field
   - deficiency indices
 software_doi_concept: "10.5281/zenodo.21474351"
-software_doi_version: "pending-v0.3.3-zenodo"
+software_doi_version: "pending-v0.3.8-theorem-f-zenodo"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.3: Theorem F theorem-grade Dom(H*)+saturation+analytic wall IFT; (n+,n-)=(inf,inf). Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
+claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); bounded Lean companion ExoticCCR.theoremF at SHA 8a08cf4c5803a19a5ae3dd9e980734d4595d636b proves both standard adjoint eigenspaces are not finite-dimensional. Exact cardinal index, extension multiplicity, and backward-wall construction remain paper-grade. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
 # Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -79,7 +79,7 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
-- **Lean-proved:** Theorem A seed identities [6].  
+- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at companion SHAs recorded in the package metadata. Theorem F proves both standard adjoint eigenspaces are not finite-dimensional; it does not formalize the paper's backward-wall construction or exact cardinal index.  
 - **Exact CAS (two engines) + conceptual proof:** B--C polynomial identities; D curve.  
 - **Analytic construction:** E--F deficiency functions in flow-box coordinates.  
 Software DOI: [5].
@@ -413,7 +413,7 @@ Thus a working algebraic CCR/Poisson presentation does **not** select a unique s
 
 This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the abstract operator-theoretic phenomenon is new: incomplete flows and half-line models are classical [2]. The contribution is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alpöge–Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
 
-What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. Lean certification covers the seed identities (Theorem A) only.
+What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. The Lean companion separately covers the bounded canonical-core Theorems E--F statement; it does not cover the paper's backward-wall construction, exact cardinal index value, or extension multiplicity.
 
 Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) and \(H_2\), residual CCR after extensions, spectral theory of the extension family, and Lean coverage beyond Gate-0.
 
@@ -436,7 +436,7 @@ Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) a
 
 1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
 2. Strong CCR after extensions.  
-3. Lean formalization of Theorems B--F.  
+3. Lean formalization of the paper-grade analytic backward-wall construction and exact cardinal index beyond the bounded Theorem F statement.  
 4. The same depth of analysis for higher-degree family maps in the atlas.  
 5. Optional: finer spectral theory of self-adjoint extensions of \(P_1^{\mathrm{sym}}\).
 

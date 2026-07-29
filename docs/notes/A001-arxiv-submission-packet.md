@@ -1,23 +1,26 @@
-# A001 arXiv submission packet (v0.3.6-submit)
+# A001 arXiv submission packet (v0.3.8-theorem-f proposed, untagged)
 
-**Status:** READY — math cleared by multi-model review; package coherent  
+**Status:** REVIEW CANDIDATE — no final approval; tag/release/DOI not created  
 **Primary (recommended):** `math.SP` · alt `math.FA`  
 **Secondary:** `math.FA` or `math.SP`, `math-ph`  
-**Tag:** `v0.3.6-submit` · **Scope:** \(H=-iX_1\) only
+**Tag:** none · **Candidate:** `v0.3.8-theorem-f` · **Scope:** \(H=-iX_1\) only
 
 ## Artifacts
 | Item | URL / path |
 |------|------------|
-| PDF | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.6-submit/docs/notes/A001-arxiv.pdf |
+| PDF | `docs/notes/A001-arxiv.pdf` (rendered candidate; no tag URL) |
 | TeX | docs/notes/A001-arxiv.tex |
-| Release | https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit |
+| Release | none; do not create until review and Dan approval |
 | Concept DOI | https://doi.org/10.5281/zenodo.21474351 (project-level only until version ingest) |
-| Lean (paper biblio pin through T-D) | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.4-theorem-d-incomplete (SHA 68f5fd3) |
-| Lean (full paper Theorem B) | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.7-theorem-b-poisson (SHA 27e7136) |
-| Lean (T-E bridge; E still open) | https://github.com/Quantyra/exotic-ccr-lean/releases/tag/v0.1.6-theorem-e-deficiency-bridge (SHA 8b5ca4e) |
+| Lean (bounded Theorem E) | `ExoticCCR.theoremE` @ SHA `a6bb091` |
+| Lean (bounded Theorem F) | `ExoticCCR.theoremF` @ SHA `8a08cf4c5803a19a5ae3dd9e980734d4595d636b` |
+| Lean boundary | Exact cardinal index, extension multiplicity, and paper backward-wall construction remain paper-grade |
 
 ## Comments line
-Seed map due to Alpöge (credits Fable); restated/verified only. Companion v0.3.6-submit; concept DOI 10.5281/zenodo.21474351. H=-iX_1 only. No gates/channels/advantage.
+Seed map due to Alpöge (credits Fable); restated/verified only. Candidate
+v0.3.8-theorem-f; concept DOI 10.5281/zenodo.21474351. H=-iX_1 only.
+Bounded Lean Theorem F proves both standard adjoint eigenspaces are not
+finite-dimensional. No gates/channels/advantage.
 
 ## Endorsement
 Start submit → code → https://arxiv.org/auth/endorse → finish submit.

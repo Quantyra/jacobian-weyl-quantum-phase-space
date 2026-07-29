@@ -1,14 +1,13 @@
 ﻿cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
-title: "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorem E"
+title: "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorems E-F"
 type: software
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 doi: 10.5281/zenodo.21474351
-version: "0.3.7-theorem-e"
-date-released: 2026-07-21
+version: "0.3.8-theorem-f"
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 license: Apache-2.0
@@ -20,8 +19,13 @@ keywords:
 abstract: >-
   Poisson/Weyl lifts of the Alpoge-Fable Keller seed (restated). H=-i X_1 not ESS
   with deficiency indices (infinity, infinity) via whole-orbit deficiency vectors.
-  The companion Lean artifact separately proves the bounded canonical-core
-  Theorem E via ExoticCCR.theoremE at SHA a6bb091; the index value and full
-  Theorem F remain not Lean-covered. Prior withdrawn: v0.2.2 pair (0,infinity);
-  v0.3.0 s-indicator proof. No gates/channels. This is a proposed untagged
-  review artifact; no new version DOI is asserted.
+  The companion Lean artifact proves the bounded canonical-core Theorem E via
+  ExoticCCR.theoremE (tag v0.1.8-theorem-e, SHA a6bb091) and, proposed and under
+  review, the bounded Theorem F via ExoticCCR.theoremF at SHA 8a08cf4: both
+  adjoint eigenspaces ker(H-dagger -+ i) of the canonical minimal core are
+  infinite-dimensional, obtained by a measure-preserving sign-involution
+  transport of the forward minus-i families. The exact countable index value as
+  a cardinal, extension multiplicity, and the paper's backward-wall construction
+  remain not Lean-covered. Prior withdrawn: v0.2.2 pair (0,infinity); v0.3.0
+  s-indicator proof. No gates/channels. This is a proposed untagged review
+  artifact; no new version DOI is asserted.

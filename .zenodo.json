@@ -1,10 +1,10 @@
 {
-  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorem E",
+  "title": "EXOTIC-CCR A001: Poisson/Weyl lifts and bounded Lean-backed Theorems E-F",
   "upload_type": "software",
   "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
   "license": "Apache-2.0",
-  "version": "0.3.7-theorem-e",
+  "version": "0.3.8-theorem-f",
   "keywords": ["jacobian-conjecture", "essential-self-adjointness", "exotic-ccr", "quantyra"],
   "related_identifiers": [{"identifier": "https://github.com/Quantyra/exotic-ccr-lean", "relation": "isSupplementedBy", "resource_type": "software"}],
-  "description": "Proposed, untagged review artifact for A001. The paper-grade analysis states the H=-iX1 deficiency-index result (infinity,infinity); the companion Lean artifact separately proves the bounded canonical-core Theorem E via ExoticCCR.theoremE at SHA a6bb091. The index value and full Theorem F remain not Lean-covered. Prior withdrawn claims are preserved in the erratum. No new version DOI is asserted."
+  "description": "Proposed, untagged review artifact for A001. The paper-grade analysis states the H=-iX1 deficiency-index result (infinity,infinity); the companion Lean artifact proves the bounded canonical-core Theorem E via ExoticCCR.theoremE (tag v0.1.8-theorem-e, SHA a6bb091) and, proposed and under review, the bounded Theorem F via ExoticCCR.theoremF at SHA 8a08cf4 (both adjoint eigenspaces ker(H-dagger -+ i) infinite-dimensional, by measure-preserving sign-involution transport of the forward minus-i families). The exact countable index value as a cardinal, extension multiplicity, and the paper's backward-wall construction remain not Lean-covered. Prior withdrawn claims are preserved in the erratum. No new version DOI is asserted."
 }

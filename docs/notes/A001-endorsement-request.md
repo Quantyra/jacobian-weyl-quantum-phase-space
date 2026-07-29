@@ -18,8 +18,8 @@ I request arXiv endorsement for:
 
 **Not claimed:** gates/channels/advantage; seed discovery; H0/H2 pairs; dual-flow CCR theorems.
 
-**PDF:** https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/blob/v0.3.6-submit/docs/notes/A001-arxiv.pdf  
-**Tag:** https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.6-submit  
+**PDF:** `docs/notes/A001-arxiv.pdf` (proposed v0.3.8-theorem-f candidate; untagged)  
+**Tag:** none  
 **Concept DOI:** https://doi.org/10.5281/zenodo.21474351  
 
 **Endorsement code:** `VIPN6B`  
