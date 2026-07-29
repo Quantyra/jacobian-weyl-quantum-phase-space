@@ -44,7 +44,7 @@ The companion Lean artifact proves the bounded canonical-core declaration
 \texttt{ExoticCCR.theoremE} (released tag \texttt{v0.1.8-theorem-e}, SHA
 \texttt{a6bb091}): the minimal transport core for X1 is not essentially
 self-adjoint via a constructed weak minus-i witness. At companion SHA
-\texttt{f1fe83785add60ccc5f012b51e7576aab5627a74} (proposed, untagged, under review) the artifact further proves
+\texttt{ff50f4a2a312591c2e5b26e71eb390ade9164b34} (proposed, untagged, under review) the artifact further proves
 the bounded Theorem~F declaration \texttt{ExoticCCR.theoremF}: both adjoint
 eigenspaces $\ker(H^\dagger \mp i)$ of the canonical minimal core are not
 finite-dimensional, the bounded reading of $(n_+,n_-)=(\infty,\infty)$, and
@@ -59,11 +59,18 @@ exact-index application theorem
 \texttt{hilbertDeficiencyIndex}\allowbreak\texttt{\_X1\_eq\_aleph0}; thus the exact Hilbert-space
 indices are $\operatorname{aleph0}$ on both sides. This is distinct from
 \texttt{standardDeficiencyIndex}, which is \texttt{Module.rank}
-(algebraic/Hamel rank) and has lower bounds only.
+(algebraic/Hamel rank) and has lower bounds only. For the specific canonical
+minimal operator \texttt{H\_X1\_min}, the same SHA proves a bijective von
+Neumann classification of all \texttt{SelfAdjointExtension H\_X1\_min}
+witnesses (self-adjoint \texttt{LinearPMap}s extending
+\texttt{H\_X1\_min}) by complex-linear isometric equivalences from the $+i$
+adjoint eigenspace to the $-i$ adjoint eigenspace; it also proves at least two
+distinct such self-adjoint extensions exist.
 
-The backward-wall
-propositions and von Neumann extension multiplicity/classification remain
-paper-grade and are not claimed as Lean-covered.
+The backward-wall propositions, exact extension cardinality,
+infinitely-many/continuum and algebraic-selection consequences, preferred
+extension, and arbitrary-operator classification remain outside the new Lean
+corollary.
 Symmetry of the minimal core on $C_c^\infty$ is classical from
 $\operatorname{div}X_1=0$ and is likewise not separately Lean-formalized.
 
@@ -405,7 +412,7 @@ We do \emph{not} claim here exact deficiency indices for \(H_0\) or \(H_2\), nor
 Classical incomplete flows and half-line models are standard~\cite{RS2}. The contribution is the geometric dual-lift package for this Keller seed together with an explicit two-sided wall construction for \(H=-iX_1\).
 
 \section{Non-claims}
-No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: bounded canonical-core Theorems E--F and the exact Hilbert-basis cardinal result are covered at the updated SHA. The algebraic \texttt{standardDeficiencyIndex}/\texttt{Module.rank} has lower bounds only; the paper-grade backward-wall construction and von Neumann extension multiplicity/classification remain outside Lean coverage. No theorem-level dual-flow strong CCR obstruction in this note.
+No unitary gate, channel, CP map, or computational advantage. No preferred physical extension. No claim that all quantization routes fail. Discovery of \(F\) not claimed. Lean: bounded canonical-core Theorems E--F, the exact Hilbert-basis cardinal result, the specific \texttt{H\_X1\_min} von Neumann classification, and existence of at least two distinct extension witnesses are covered at the updated SHA. The algebraic \texttt{standardDeficiencyIndex}/\texttt{Module.rank} has lower bounds only; the paper-grade backward-wall construction, exact extension cardinality, infinitely-many/continuum and algebraic-selection consequences, arbitrary-operator theorem, strong CCR, and physical selection remain outside the new Lean corollary. No theorem-level dual-flow strong CCR obstruction in this note.
 
 \small
 \begin{thebibliography}{99}
@@ -449,14 +456,21 @@ divergence, full dual-field commutation, the polynomial Weyl endomorphism
 \bibitem{FredriksenLeanF}
 Theorem F supplement: \texttt{ExoticCCR.theoremF},
 \texttt{aleph0\_le\_standardDeficiencyIndex\_X1}, and
-\filepath{hilbertDeficiencyIndex\_X1\_eq\_aleph0} at SHA
-f1fe83785add60ccc5f012b51e7576aab5627a74 (untagged review). Both standard
+\filepath{hilbertDeficiencyIndex\_X1\_eq\_aleph0},
+\texttt{theoremFVonNeumannClassification}, and
+\texttt{theoremF\_exists\_two\_distinct\_selfAdjointExtensions} at SHA
+ff50f4a2a312591c2e5b26e71eb390ade9164b34 (untagged review). Both standard
 adjoint eigenspaces are not finite-dimensional, and
 \(\operatorname{Cardinal.aleph0}\le n_+\) and
 \(\operatorname{Cardinal.aleph0}\le n_-\). The separate Hilbert-basis
 cardinal is exactly \(\operatorname{aleph0}\) for both closed eigenspaces;
 \texttt{standardDeficiencyIndex} is the algebraic (Hamel) rank and its exact
-value is not claimed. Extension multiplicity/classification and paper
-backward-wall construction are not Lean-covered.
+value is not claimed. For the specific canonical minimal operator, all
+self-adjoint-extension witnesses are classified bijectively by complex-linear
+isometric equivalences from the $+i$ to the $-i$ adjoint eigenspace, and at
+least two distinct witnesses exist. No exact extension cardinality, preferred
+extension, arbitrary-operator theorem, backward-wall construction, or promotion
+of the paper's infinitely-many/continuum and algebraic-selection consequences
+is claimed.
 \end{thebibliography}
 \end{document}

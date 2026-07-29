@@ -3,10 +3,11 @@
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)
 
 ### Lean supplement
-- Updated the untagged publication candidate to verified Lean SHA `f1fe83785add60ccc5f012b51e7576aab5627a74`.
+- Updated the untagged publication candidate to verified Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - Added the exact Hilbert-space result `hilbertDeficiencyIndex_X1_eq_aleph0` for the closed adjoint eigenspaces.
 - Preserved the distinction that `standardDeficiencyIndex`/`Module.rank` is algebraic (Hamel) rank, with the verified lower bounds `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` only; no exact Hamel-rank equality is claimed.
-- Von Neumann extension multiplicity/classification and the paper-grade backward-wall construction remain explicit non-claims of Lean coverage.
+- Added the specific `H_X1_min` bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses and the at-least-two-distinct-extensions corollary.
+- Preserved as nonclaims: a preferred extension, an arbitrary-operator theorem, exact extension cardinality, the paper's infinitely-many/continuum and algebraic-selection consequences as new Lean corollaries, and the paper-grade backward-wall construction.
 - No tag, release, version DOI, or final approval created.
 
 ## v0.3.3 â€” 2026-07-21

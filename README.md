@@ -27,7 +27,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 ## One-sentence result
 
-For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The Lean-backed results are the canonical-core conclusions `ExoticCCR.theoremE` (Lean tag `v0.1.8-theorem-e`, SHA `a6bb091`) and `ExoticCCR.theoremF` at proposed Lean SHA `f1fe83785add60ccc5f012b51e7576aab5627a74`, which proves both adjoint eigenspaces \(\ker(H^\dagger \mp i)\) are not finite-dimensional and gives the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_- by measure-preserving sign-involution transport. A separate verified module at the same SHA proves `hilbertDeficiencyIndex_X1_eq_aleph0`: the Hilbert-basis cardinal of the closed eigenspaces is exactly \(\operatorname{aleph0}\) on both sides. This is distinct from `standardDeficiencyIndex`, which is `Module.rank` (algebraic/Hamel rank) and has lower bounds only. Von Neumann extension multiplicity/classification and the paper's backward-wall construction remain paper-grade, not Lean-covered.
+For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). At proposed Lean SHA `ff50f4a2a312591c2e5b26e71eb390ade9164b34`, for the specific canonical minimal operator `H_X1_min`, Lean proves a bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear isometric equivalences from the \(+i\) adjoint eigenspace to the \(-i\) adjoint eigenspace; Lean also proves at least two distinct such self-adjoint extensions exist. The same SHA retains `ExoticCCR.theoremE`, `ExoticCCR.theoremF`, the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-, and `hilbertDeficiencyIndex_X1_eq_aleph0`, which gives exact \(\operatorname{aleph0}\) Hilbert-basis cardinality for both closed adjoint eigenspaces. `standardDeficiencyIndex` is `Module.rank` (algebraic/Hamel rank), with lower bounds only. The paper's claims of infinitely many/continuum many extensions and that algebraic data select none remain paper-grade/literature-level consequences, not consequences relabeled as proved by the new Lean corollary; the paper's backward-wall construction is also not Lean-covered.
 
 ## Non-claims
 
@@ -44,8 +44,8 @@ https://github.com/Quantyra/exotic-ccr-lean
 
 The companion Theorem E freeze is released as `v0.1.8-theorem-e` (theorem SHA
 `a6bb091`): the bounded canonical `X1` non-essential-self-adjointness theorem.
-The proposed companion Theorem F freeze is untagged at
-`f1fe83785add60ccc5f012b51e7576aab5627a74`
+The proposed companion Theorem F classification freeze is untagged at
+`ff50f4a2a312591c2e5b26e71eb390ade9164b34`
 (`ExoticCCR.theoremF`, under four-role review): both adjoint eigenspaces
 \(\ker(H^\dagger \mp i)\) of the canonical minimal core are proved
 infinite-dimensional by sign-involution transport, with the additional
@@ -53,8 +53,13 @@ standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph
 ≤ n_-. The separate `hilbertDeficiencyIndex_X1_eq_aleph0` result gives exact
 \(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces.
 `standardDeficiencyIndex`/`Module.rank` remains algebraic (Hamel) rank with
-lower bounds only. Von Neumann extension multiplicity/classification and the
-paper's backward-wall construction are not Lean-covered.
+lower bounds only. For the specific `H_X1_min`, `theoremFVonNeumannClassification`
+classifies all `SelfAdjointExtension H_X1_min` witnesses bijectively by
+complex-linear isometric equivalences from the \(+i\) to the \(-i\) adjoint
+eigenspace, and `theoremF_exists_two_distinct_selfAdjointExtensions` proves at
+least two distinct witnesses exist. This does not select a preferred extension,
+prove an arbitrary-operator theorem, compute the exact extension cardinality,
+or cover the paper's backward-wall construction.
 
 ## Companion papers (B001 / C001) — advance while A001 waits on arXiv endorsement
 

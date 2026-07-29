@@ -1,6 +1,6 @@
 # A001 arXiv endorsement status
 
-**Last updated:** 2026-07-28  
+**Last updated:** 2026-07-29
 **Category requested:** `math-ph` (Mathematical Physics)  
 
 | Field | Value |
@@ -10,7 +10,7 @@
 | **Endorser URL** | https://arxiv.org/auth/endorse?x=VIPN6B |
 | **Fallback** | https://arxiv.org/auth/endorse.php + code `VIPN6B` |
 | **Candidate** | `v0.3.8-theorem-f` proposed, untagged |
-| **Lean Theorem F** | `ExoticCCR.theoremF` @ `f1fe83785add60ccc5f012b51e7576aab5627a74` |
+| **Lean Theorem F** | `ExoticCCR.theoremF` + canonical-minimal von Neumann classification @ `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
 | **Version DOI** | None; concept DOI only: `10.5281/zenodo.21474351` |
 
 The endorsement request remains a human action. No arXiv identifier, tag,
@@ -21,8 +21,12 @@ finite-dimensional, standard cardinal-valued lower bounds `Cardinal.aleph0
 ≤ n_+` and `Cardinal.aleph0 ≤ n_-`, and the separate exact Hilbert-basis
 cardinal result `hilbertDeficiencyIndex_X1_eq_aleph0` for the closed
 eigenspaces. `standardDeficiencyIndex`/`Module.rank` remains Hamel rank with
-lower bounds only. Von Neumann extension multiplicity/classification and the
-paper's backward-wall construction remain outside Lean coverage.
+lower bounds only. For the specific `H_X1_min`, Lean also gives the bijective
+von Neumann classification of all self-adjoint-extension witnesses and proves
+at least two distinct witnesses exist. Preferred extension, arbitrary-operator
+classification, exact extension cardinality, the stronger paper-grade
+infinitely-many/continuum and algebraic-selection consequences, and the
+paper's backward-wall construction remain outside the new Lean corollary.
 
 ## Next human actions
 

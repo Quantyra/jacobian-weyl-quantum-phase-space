@@ -22,7 +22,7 @@ abstract: >-
   The companion Lean artifact proves the bounded canonical-core Theorem E via
   ExoticCCR.theoremE (tag v0.1.8-theorem-e, SHA a6bb091) and, proposed and under
   review, the bounded Theorem F via ExoticCCR.theoremF at SHA
-  f1fe83785add60ccc5f012b51e7576aab5627a74: both
+  ff50f4a2a312591c2e5b26e71eb390ade9164b34: both
   adjoint eigenspaces ker(H-dagger -+ i) of the canonical minimal core are
   infinite-dimensional, obtained by a measure-preserving sign-involution
   transport of the forward minus-i families. A separate `hilbertDeficiencyIndex`
@@ -30,8 +30,15 @@ abstract: >-
   closed adjoint eigenspaces. `standardDeficiencyIndex` is `Module.rank`, the
   algebraic (Hamel) rank, for which the standard cardinal-valued lower bounds
   Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_- are recorded but exact
-  equality is not claimed. Von Neumann extension multiplicity/classification
-  and the paper's backward-wall construction remain not Lean-covered. Prior
+  equality is not claimed. At that SHA, for the specific canonical minimal
+  operator H_X1_min, Lean also proves a bijective von Neumann classification
+  of all SelfAdjointExtension H_X1_min witnesses (self-adjoint LinearPMaps
+  extending H_X1_min) by complex-linear isometric equivalences from the +i
+  adjoint eigenspace to the -i adjoint eigenspace, and proves that at least two
+  distinct such extensions exist. This does not prove a preferred extension,
+  an arbitrary-operator theorem, the exact extension cardinality, the paper's
+  claims of infinitely many/continuum many extensions or selection by
+  algebraic data, or the paper's backward-wall construction. Prior
   withdrawn: v0.2.2 pair (0,infinity); v0.3.0
   s-indicator proof. No gates/channels. This is a proposed untagged review
   artifact; no new version DOI is asserted.

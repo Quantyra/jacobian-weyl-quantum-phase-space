@@ -23,11 +23,16 @@ I request arXiv endorsement for:
 **Concept DOI:** https://doi.org/10.5281/zenodo.21474351  
 
 **Lean boundary note:** The verified companion SHA
-`f1fe83785add60ccc5f012b51e7576aab5627a74` includes the separate exact
+`ff50f4a2a312591c2e5b26e71eb390ade9164b34` includes the separate exact
 Hilbert-basis cardinal result `hilbertDeficiencyIndex_X1_eq_aleph0` for the
 closed adjoint eigenspaces. `standardDeficiencyIndex`/`Module.rank` is Hamel
-rank with lower bounds only; extension multiplicity/classification remains
-paper-grade/not Lean-covered.
+rank with lower bounds only. For the specific canonical minimal operator,
+Lean also classifies all self-adjoint-extension witnesses bijectively by
+complex-linear isometric equivalences between the deficiency eigenspaces and
+proves at least two distinct witnesses exist. Exact extension cardinality,
+preferred extension, arbitrary-operator classification, and the paper's
+stronger infinitely-many/continuum and algebraic-selection consequences are
+not claimed as new Lean corollaries.
 
 **Endorsement code:** `VIPN6B`  
 **Endorser link:** https://arxiv.org/auth/endorse?x=VIPN6B  
