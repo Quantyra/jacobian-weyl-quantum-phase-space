@@ -81,7 +81,7 @@ Then:
 
 1. Self-adjoint extensions of \(A\) exist if and only if \(n_+=n_-\).
 2. \(A\) is essentially self-adjoint if and only if \((n_+,n_-)=(0,0)\).
-3. When \(n_+=n_-=n\in\{1,2,\ldots,\infty\}\), self-adjoint extensions are parameterized by unitaries \(U:\mathcal{K}_+\to\mathcal{K}_-\) between the deficiency subspaces (von Neumann’s formula); in particular, if \(n=\infty\) there is a continuum of inequivalent extensions.
+3. When \(n_+=n_-=n\in\{1,2,\ldots,\infty\}\), self-adjoint extensions are parameterized by unitaries \(U:\mathcal{K}_+\to\mathcal{K}_-\) between the deficiency subspaces (von Neumann’s formula); in particular, if \(n=\infty\) there is a continuum-sized family of distinct self-adjoint-extension witnesses. No pairwise unitary-inequivalence classification is claimed.
 
 **Citation.** M. Reed & B. Simon, *Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness*, Academic Press, 1975 (Ch. X; deficiency indices and von Neumann’s extension theory). Standard textbook form; no exotic hypotheses.
 
@@ -102,7 +102,7 @@ For the minimal operator \(H_1=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\),
 **Theorem J2 (No Joint-Stone-Canonical — \(H_1\) sector).**  
 There is **no** Joint-Stone-Canonical package for the A001 dual-lift data, already at the single-generator \(H_1\) sector:
 
-1. By Theorem J1 and the A001 pair \((\infty,\infty)\), there exists a continuum of inequivalent self-adjoint extensions \(\widetilde H_1\) of \(H_1\), parameterized by unitaries between infinite-dimensional deficiency subspaces.
+1. By Theorem J1 and the A001 pair \((\infty,\infty)\), there exists a continuum-sized family of distinct self-adjoint-extension witnesses \(\widetilde H_1\) of \(H_1\), parameterized by unitaries between infinite-dimensional deficiency subspaces. No pairwise unitary-inequivalence classification is claimed.
 2. Every Joint-Stone package must pick some self-adjoint extension \(\widetilde H_1\) (Tier A, item 2) and implement its unitary group via \(\Phi\) (item 3).
 3. The algebraic data \((\psi,F,B)\) alone — polynomial Weyl endomorphism, seed map, and Piola matrix — are the **same** for every such extension: they fix only the minimal operator on \(C_c^\infty\), not a boundary condition at incomplete \(X_1\)-ends (A001 Discussion / Theorem F reading).
 4. Therefore no package is **uniquely determined** by \((\psi,F,B)\) alone. Joint-Stone-Canonical fails.

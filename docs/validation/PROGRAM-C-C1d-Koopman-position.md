@@ -87,8 +87,9 @@ A **Joint-Stone-Canonical** package would require self-adjoint extensions
 \((\psi,F,B)\) alone.
 
 **Theorem J2:** A001 gives \((n_+,n_-)=(\infty,\infty)\) for \(H_1=-iX_1\), so
-von Neumann supplies a continuum of inequivalent SA extensions; algebraic
-data do not pick one. **Joint-Stone-Canonical fails**. Choice-dependent
+von Neumann supplies a continuum-sized family of distinct
+self-adjoint-extension witnesses; algebraic data do not pick one. No pairwise
+unitary-inequivalence classification is claimed. **Joint-Stone-Canonical fails**. Choice-dependent
 CP+Stone is separately ruled out by J5; unitary image without SA link by J6.
 
 **Withdrawn historical J3:** older G4 notes asserted exact \(H_0,H_2\)
