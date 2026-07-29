@@ -5,11 +5,11 @@
 | Field | Value |
 |---|---|
 | Proposed paper package | `0.3.9-referee-revision` |
-| Git tag/release | **none; Dan approval pending** |
+| Git tag/release | **none; fresh technical re-gates precede Dan approval** |
 | arXiv identifier | none |
-| Synchronized Lean freeze | `b8bc72ea87531b88d50ed588ec6268ae743a662f` (untagged, unreleased) |
+| Synchronized Lean freeze | `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` (untagged, unreleased) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean cache/build/axiom provenance | PASS at synchronized freeze |
+| Lean cache/build/axiom provenance | recorded focused 8,684/8,692 jobs, full 8,702 jobs, and seven-declaration audit |
 | New version DOI | **none; do not predict** |
 | Existing concept DOI | `10.5281/zenodo.21474351` (project-level) |
 | Existing v0.3.3 version DOI | `10.5281/zenodo.21478679` (do not relabel) |
@@ -22,9 +22,13 @@ extension, arbitrary-operator theorem, exact Hamel rank, exact extension
 cardinality of the full extension type, strong CCR, physical selection, or
 rank-three Dixmier counterexample is claimed. The Lean declarations
 `theoremFUnitPhaseExtension` and `theoremFUnitPhaseExtension_injective`
-exhibit a continuum-sized lower family of distinct extension witnesses.
+prove an injection from unitary complex phases into distinct extension
+witnesses. The continuum-sized lower-family conclusion additionally uses the
+classical cardinality of the complex unit circle; that cardinal identification
+is not one of the cited Lean declarations.
 
-Math.FA, math.AG, Lean/build, non-claims, and package/metadata gates PASS. Do
-not create a tag, release, Zenodo version, or arXiv submission until Dan
-approval is recorded.
+The corrected Lean/build/audit is recorded. Fresh math.FA, math.AG/Weyl,
+non-claims, and package/metadata re-gates remain pending, followed by Dan
+approval. Do not create a tag, release, Zenodo version, or arXiv submission
+until all those gates close.
 Do not cite the v0.2.2 pair or v0.3.0 interior-indicator proof.

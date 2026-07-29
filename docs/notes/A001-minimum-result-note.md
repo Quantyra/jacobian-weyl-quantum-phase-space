@@ -184,7 +184,12 @@ is **not essentially self-adjoint**.
 
 ## 6. One-paragraph summary
 
-Starting from the Alpöge–Fable seed map (restated, not claimed as discovery), we construct Poisson/Weyl lifts, prove \(X_1\) incomplete, and show \(H=-iX_1\) has deficiency indices \((\infty,\infty)\): not ESS, infinitely many self-adjoint extensions, none preferred by algebraic CCR data. Channel/gate claims are not made.
+Starting from the explicit Keller seed announced by Alpöge (with Fable
+credited in the announcement for work leading to it; no discovery claim), we
+construct Poisson/Weyl lifts, prove \(X_1\) incomplete, and show
+\(H=-iX_1\) has deficiency indices \((\infty,\infty)\): not ESS, infinitely
+many self-adjoint extensions, none preferred by algebraic CCR data.
+Channel/gate claims are not made.
 
 ---
 

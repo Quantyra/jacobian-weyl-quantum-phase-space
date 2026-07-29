@@ -16,7 +16,7 @@
   },
   "layer_B_Cstar_extension": {
     "verdict": "OPEN",
-    "reason": "\u03c8 is a proper (non-auto) unital *-endomorphism of the polynomial Weyl algebra. Algebraic positivity is automatic; continuous CP extension to a C* completion of Weyl/CCR algebra is not constructed and not ruled out in this probe."
+    "reason": "\u03c8 is a unital *-endomorphism of the polynomial Weyl algebra. This probe does not decide whether \u03c8 is an automorphism or surjective. Algebraic positivity is automatic; continuous CP extension to a C* completion of the Weyl/CCR algebra is not constructed and not ruled out here."
   },
   "n_samples": 40,
   "pass_c1b_algebraic": true,

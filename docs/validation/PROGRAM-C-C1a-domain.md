@@ -1,7 +1,8 @@
 # Program C — C1a domain freeze
 
 **Date:** 2026-07-21  
-**Status:** frozen for Paper C draft  
+**Status:** historical freeze, superseded 2026-07-29 on explicit
+nonautomorphy; current bounded domain retained below
 **Object:** A001 Weyl endomorphism \(\psi\) (G3)
 
 ---
@@ -25,7 +26,11 @@ With \(F\) the A001 seed, \(J=DF\), \(B=J^{-T}\) (polynomial),
 
 ## Facts locked
 1. \(\psi\) is unital and multiplicative on \(\mathcal{W}\).  
-2. \(\psi\) is **not** an automorphism ( \(F\) non-injective ⇒ not surjective on generators in the classical shadow).  
+2. **Withdrawn historical assertion:** the former inference
+   “\(F\) non-injective \(\Rightarrow\psi\) is not an automorphism” is not
+   established. The explicit rank-three Weyl endomorphism \(\psi\) is
+   constructed and its generator relations are proved, but this artifact does
+   not determine whether \(\psi\) is an automorphism or surjective.
 3. **T4:** \(\psi\) is **not** claimed to implement dual \(F\)-translations on \(L^2(\mathbb{R}^3)\).  
 
 ## Non-goals (C1a)

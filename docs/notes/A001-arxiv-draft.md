@@ -1,5 +1,5 @@
 ﻿---
-title: "Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
+title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 author: "Daniel Eric Fredriksen"
 affiliation: "Quantyra Inc."
 email: ""
@@ -26,14 +26,17 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "none-v0.3.9-referee-revision-untagged"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex; all five technical gates PASS; only Dan approval pending."
+claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex at Lean freeze 0735757f7f1a3a2875fcd29e31e03a203c3c8a74; fresh math.FA, math.AG/Weyl, non-claims, and package/metadata re-gates remain pending before Dan approval."
 ---
 
-# Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
+# Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator
 
 > **Historical drafting notebook.** The canonical scientific-revision source
 > is `A001-arxiv.tex`; this long-form Markdown has not been line-for-line
-> synchronized and must not be used as a freeze or submission source.
+> synchronized and must not be used as a freeze or submission source. Its
+> current evidence header and reference pin are maintained only to prevent
+> stale artifact routing; theorem exposition must be checked against the
+> canonical TeX/PDF.
 
 **Daniel Eric Fredriksen**  
 Quantyra Inc.  
@@ -83,7 +86,25 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], Schmüdgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
-- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at synchronized freeze `b8bc72ea87531b88d50ed588ec6268ae743a662f`. For the specific canonical minimal operator `H_X1_min`, Lean proves a bijective von Neumann classification of all `SelfAdjointExtension H_X1_min` witnesses (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear isometric equivalences from the \(+i\) adjoint eigenspace to the \(-i\) adjoint eigenspace. `theoremFUnitPhaseExtension` and `theoremFUnitPhaseExtension_injective` prove that unitary complex phases inject into distinct witnesses, exhibiting a continuum-sized lower family. The same freeze proves both adjoint eigenspaces are not finite-dimensional, the standard \(\operatorname{Module.rank}\) lower bounds \(\operatorname{Cardinal.aleph0}\le n_\pm\), and exact \(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces. Exact Hamel rank, exact cardinality of the full extension type, a preferred extension, arbitrary-operator classification, backward-wall construction, and algebraic or physical selection are not claimed.
+- **Lean-proved:** Theorem A seed identities [6], plus the bounded
+  canonical-core Theorems E--F at synchronized freeze
+  `0735757f7f1a3a2875fcd29e31e03a203c3c8a74`. For the specific canonical
+  minimal operator `H_X1_min`, Lean proves a bijective von Neumann
+  classification of all `SelfAdjointExtension H_X1_min` witnesses
+  (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear
+  isometric equivalences from the \(+i\) adjoint eigenspace to the \(-i\)
+  adjoint eigenspace. `theoremFUnitPhaseExtension` and
+  `theoremFUnitPhaseExtension_injective` prove that unitary complex phases
+  inject into distinct witnesses. The continuum-sized lower-family conclusion
+  additionally uses the classical cardinality of the complex unit circle;
+  that cardinal identification is not one of the cited Lean declarations.
+  The same freeze proves both adjoint eigenspaces are not finite-dimensional,
+  \(\operatorname{Cardinal.aleph0}\) lower bounds for the
+  `Module.rank`-valued `hamelDeficiencyRank`, and exact
+  \(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed
+  eigenspaces. Exact Hamel rank, exact cardinality of the full extension type,
+  a preferred extension, arbitrary-operator classification, backward-wall
+  construction, and algebraic or physical selection are not claimed.
 - **Exact CAS (two engines) + conceptual proof:** B--C polynomial identities; D curve.  
 - **Analytic construction:** E--F deficiency functions in flow-box coordinates.  
 Software DOI: [5].
@@ -415,7 +436,7 @@ The example separates two layers that are often collapsed in practice. On the al
 \]
 Thus a working algebraic CCR/Poisson presentation does **not** select a unique self-adjoint dual momentum for \(H=-iX_1\).
 
-This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the abstract operator-theoretic phenomenon is new: incomplete flows and half-line models are classical [2]. The contribution is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alpöge–Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
+This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the abstract operator-theoretic phenomenon is new: incomplete flows and half-line models are classical [2]. The contribution is geometric and structural. The explicit map announced by Alpöge (with Fable credited in the announcement for work leading to it) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
 
 What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. The Lean companion covers the bounded canonical-core Theorems E--F, exact Hilbert-basis cardinality of the closed adjoint eigenspaces, the specific `H_X1_min` von Neumann classification, and an injective unit-phase family of distinct extension witnesses. It does not cover the paper's backward-wall construction, exact algebraic/Hamel rank, a preferred extension, an arbitrary-operator theorem, exact cardinality of the full extension type, or algebraic/physical selection.
 
@@ -431,7 +452,8 @@ Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) a
 4. No unique physically preferred self-adjoint extension is selected.  
 5. No von Neumann inclusion index tied to generic degree is claimed.  
 6. No slogan claim that the Jacobian conjecture is "factory false" is made beyond the finite identities actually used.  
-7. Discovery of the seed map \(F\) is not claimed (Alpöge--Fable [8]).  
+7. Discovery of the seed map \(F\) is not claimed; attribution follows the
+   announcement by Alpöge, which credits Fable for work leading to the map [8].
 8. Family/degree-\(d\) pilots elsewhere in the repository are outside Theorems A--F unless separately cited.
 
 ---
@@ -448,7 +470,13 @@ Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) a
 
 ## 12. Conclusion
 
-Starting from the Alpöge--Fable Keller map, we construct polynomial Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices \((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely many self-adjoint extensions, none selected by the algebraic data. Strong CCR after extension remains open.
+Starting from the explicit Keller map announced by Alpöge, with Fable credited
+in the announcement for work leading to it, we construct polynomial
+Poisson/Weyl lifts, prove incompleteness of \(X_1\), and show that \(H=-iX_1\)
+on \(C_c^\infty(\mathbb{R}^3)\) has deficiency indices
+\((\infty,\infty)\): not essentially self-adjoint, yet admitting infinitely
+many self-adjoint extensions, none selected by the algebraic data. Strong CCR
+after extension remains open.
 
 ---
 
@@ -465,12 +493,12 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287--330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299--306.  
 [5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.3); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
-[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean (`ExoticCCR.theoremF`, `hilbertDeficiencyIndex_X1_eq_aleph0`, `theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and `theoremFUnitPhaseExtension_injective`, synchronized untagged freeze `b8bc72ea87531b88d50ed588ec6268ae743a662f`; historical theorem-source root `ff50f4a2a312591c2e5b26e71eb390ade9164b34`).
+[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean (`ExoticCCR.theoremF`, `aleph0_le_hamelDeficiencyRank_X1`, `hilbertDeficiencyIndex_X1_eq_aleph0`, `theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and `theoremFUnitPhaseExtension_injective`, synchronized untagged freeze `0735757f7f1a3a2875fcd29e31e03a203c3c8a74`; historical theorem-source root `ff50f4a2a312591c2e5b26e71eb390ade9164b34`).
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
 [8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
 [10] K. Schmüdgen, *Unbounded Self-adjoint Operators on Hilbert Space*, Springer, 2012.
-[11] D. Cureton, independent Lean 4 formalization of the Alpöge/Fable seed, https://github.com/deancureton/jacobian.  
+[11] D. Cureton, independent Lean 4 formalization of the explicit Keller seed announced by Alpöge, https://github.com/deancureton/jacobian.
 [12] D. Speyer, *The new counterexample to the Jacobian conjecture*, Secret Blogging Seminar, 20 July 2026.
 
 ---

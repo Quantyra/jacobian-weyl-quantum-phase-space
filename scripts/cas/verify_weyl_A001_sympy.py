@@ -9,7 +9,7 @@ psi: Q_i = F_i(q),  P_j = sum_k B_jk(q) p_k,  B=J^{-T}
 
 Checks:
   [Q_i,Q_j]=0, [Q_i,P_j]=δ_ij, [P_i,P_j]=0 (coefficient identities)
-  properness note: image of generators from classical non-injectivity (not surjective on max spectrum / not auto)
+  No claim about automorphy or surjectivity of the explicit Weyl endomorphism.
 
 No domains, no physics.
 """

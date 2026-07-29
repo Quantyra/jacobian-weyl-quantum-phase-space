@@ -7,8 +7,8 @@ Layer A (algebraic *-hom / SOS cone):
   (including matrix levels id_n⊗ψ). This is a theorem + generator check.
 
 Layer B (C* / continuous CP extension):
-  Not decided here. ψ is not an automorphism (F non-injective). Whether ψ
-  extends to a CP map on a C* completion of the Weyl/CCR algebra remains OPEN.
+  Not decided here. Whether ψ is an automorphism or surjective, and whether ψ
+  extends to a CP map on a C* completion of the Weyl/CCR algebra, remain OPEN.
 
 T4: does not implement dual F-translations on L2(R^3).
 """
@@ -170,10 +170,11 @@ def main():
         "layer_B_Cstar_extension": {
             "verdict": "OPEN",
             "reason": (
-                "ψ is a proper (non-auto) unital *-endomorphism of the polynomial "
-                "Weyl algebra. Algebraic positivity is automatic; continuous CP "
-                "extension to a C* completion of Weyl/CCR algebra is not constructed "
-                "and not ruled out in this probe."
+                "ψ is a unital *-endomorphism of the polynomial Weyl algebra. "
+                "This probe does not decide whether ψ is an automorphism or "
+                "surjective. Algebraic positivity is automatic; continuous CP "
+                "extension to a C* completion of the Weyl/CCR algebra is not "
+                "constructed and not ruled out here."
             ),
         },
         "n_samples": len(samples),

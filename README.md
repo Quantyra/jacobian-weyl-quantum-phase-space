@@ -18,7 +18,8 @@ historical drafting notebook, not the freeze source.
 
 ## Result and scope
 
-For the Alpöge–Fable Keller map (restated), the paper records the standard
+For the explicit Keller map announced by Alpöge (with Fable credited in the
+announcement for work leading to the map), the paper records the standard
 Poisson/Weyl lifts and analyzes the canonical real dual field \(X_1\). The
 minimal transport operator \(H=-iX_1\) on \(C_c^\infty(\mathbb{R}^3)\) is not
 essentially self-adjoint and has Hilbert deficiency indices

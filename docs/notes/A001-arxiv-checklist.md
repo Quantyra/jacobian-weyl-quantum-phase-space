@@ -4,7 +4,7 @@
 math.FA, math.AG, Lean/build, non-claims, and package/metadata re-gates pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
-PDF SHA-256: `b4f4a8882d828134a6aa15462d3d888c411186aa0c865632fa564a34fe24352d`
+PDF SHA-256: `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
@@ -25,6 +25,12 @@ Scope: **specific canonical \(H=-iX_1\) only**
   Lean coverage.
 - [x] Paper title, candidate/release status, and concept-versus-version DOI
   semantics are aligned across the current metadata surfaces.
+- [x] Current title and source prose use neutral attribution: the explicit
+  map was announced by Alpöge, whose announcement credits Fable for work
+  leading to it; no uncertain co-discovery eponym is coined.
+- [x] The displayed rank-three Weyl endomorphism is constructed, but explicit
+  nonautomorphy/non-surjectivity is neither claimed nor inferred from the
+  classical collision.
 - [x] Weak-adjoint proof dominates both the test-function and transport
   pairings.
 - [x] The absolutely convergent improper identity is proved on each fixed

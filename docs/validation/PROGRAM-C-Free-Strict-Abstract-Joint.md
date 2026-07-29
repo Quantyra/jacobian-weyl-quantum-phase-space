@@ -16,7 +16,8 @@ P_j^{\mathrm{Sch}} = -i\,\partial_{q_j}
 \]
 for the standard Schrödinger momenta (essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\), unique SA closure).
 
-On the Alpöge–Fable A001 seed, dual fields are
+On the explicit A001 Keller seed announced by Alpöge (with Fable credited in
+the announcement), dual fields are
 \[
 X_j = \sum_k B_{jk}(q)\,\partial_{q_k},\qquad B = J^{-T},
 \]

@@ -6,6 +6,9 @@
   Lean proves the injective unit-phase parameterization, while the continuum
   cardinality conclusion separately uses the classical size of the complex
   unit circle.
+- Replaced the provisional co-eponym in current title/metadata surfaces with
+  neutral source wording: an explicit three-dimensional Keller map announced
+  by Alpöge, with Fable credited in the announcement for work leading to it.
 - Renamed the Lean algebraic index reference to `hamelDeficiencyRank`, clearly
   separating it from the Hilbert deficiency index.
 - Corrected Theorem E provenance: tag `v0.1.8-theorem-e` targets `be4f330`,

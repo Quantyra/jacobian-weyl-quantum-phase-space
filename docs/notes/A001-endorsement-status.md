@@ -11,9 +11,11 @@
 | Paper candidate | `v0.3.9-referee-revision` (proposed, untagged) |
 | Tag/release/arXiv ID | none |
 | Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
-| Technical gates | math.FA, math.AG, Lean/build, and non-claims PASS |
-| Package/metadata recheck | PASS |
-| Dan approval | pending |
+| Lean/build/axiom | corrected freeze `0735757f7f1a3a2875fcd29e31e03a203c3c8a74` recorded |
+| Technical re-gates | fresh math.FA, math.AG/Weyl, and non-claims pending |
+| Package/metadata recheck | pending |
+| Dan approval | pending after technical gates |
 
-Endorsement does not authorize submission. All five technical gates recorded
-in `A001-arxiv-checklist.md` PASS; only Dan's final approval remains pending.
+Endorsement does not authorize submission. The fresh gates recorded in
+`A001-arxiv-checklist.md` must close before Dan's final approval and any
+submission action.

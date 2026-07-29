@@ -153,3 +153,27 @@ Package/metadata exact re-gate PASS was recorded against science commit
 PASS; only Dan approval remains pending. This is a status-only update: the
 canonical TeX theorem content, rendered PDF, and Lean SHA are unchanged. No
 tag, release, DOI minting, arXiv submission, or Dan approval is recorded.
+
+## Round 9 claim-boundary correction (current superseding status)
+
+**Date:** 2026-07-29
+
+External adversarial review subsequently identified claim-boundary,
+provenance, and metadata defects in the Round 8 candidate. The Round 6--8
+pins and PASS records above are retained as dated historical evidence; they
+are not the current publication status.
+
+The corrected synchronized Lean freeze is
+`0735757f7f1a3a2875fcd29e31e03a203c3c8a74`. It renames the algebraic
+`Module.rank` API to `hamelDeficiencyRank`, with
+`aleph0_le_hamelDeficiencyRank_X1`, and records focused 8,684/8,692-job
+builds, the full 8,702-job build, and the seven-declaration axiom audit. The
+science package separates the Lean-proved unit-phase injection from the
+classical cardinality of the complex unit circle used for the continuum
+lower-family corollary.
+
+The corrected PDF SHA-256 is
+`f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`.
+Fresh math.FA, math.AG/Weyl, non-claims, and package/metadata re-gates remain
+pending before Dan approval. No tag, release, DOI minting, arXiv submission,
+or Dan approval is recorded.

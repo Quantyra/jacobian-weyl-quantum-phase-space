@@ -7,6 +7,16 @@
 
 This Markdown is a planning-lane text extract of the DOCX for agent/search use. Prefer the DOCX for external human review.
 
+> **2026-07-29 claim-boundary correction.** Version 1.0 treated
+> non-surjectivity/nonautomorphy of the displayed rank-three Weyl endomorphism
+> as an expected or completed result. That assertion is withdrawn. The
+> artifact constructs a Weyl endomorphism preserving the generator relations
+> but does not identify or prove its non-surjectivity or nonautomorphy.
+> References below to “proper” or “non-surjective” Weyl endomorphisms are
+> research hypotheses unless an independent theorem is cited. The
+> noninjectivity of the classical map and its cotangent lift does not discharge
+> that Weyl-algebra question.
+
 ---
 
 PROJECT EXOTIC-CCR
@@ -39,7 +49,9 @@ Principal investigator
 Core collaborators
 Algebraic geometry; Poisson and symplectic geometry; Weyl algebras; unbounded-operator theory; C*-algebras; continuous-variable quantum information; formal verification
 Primary outcome
-A definitive classification of whether the explicit non-surjective canonical endomorphisms induced by the Jacobian counterexample admit any physically admissible quantum realization
+A definitive classification of whether the explicit canonical endomorphisms
+induced by the Keller seed are automorphisms and whether they admit any
+physically admissible quantum realization
 Minimum publishable outcome
 An exact algebraic construction plus a theorem identifying the first analytic or operator-algebraic obstruction to physical realization
 Stretch outcome
@@ -47,12 +59,26 @@ A completely positive or subsystem/dilation realization with a concrete continuo
 
 Executive summary
 On 19 July 2026, an explicit polynomial map F: C^3 -> C^3 was announced with constant nonzero Jacobian determinant and a verified collision of three distinct points. The identity is finite and exactly checkable; an independent Lean 4 formalization has also been published. The project will nevertheless begin with a formal validation and provenance gate, because all downstream work depends on a stable, versioned anchor object. [1-3]
-The discovery opens a concrete route from a formerly abstract equivalence network to explicit non-surjective endomorphisms of canonical Poisson and Weyl algebras. The natural classical construction is the cotangent lift (q,p) -> (F(q), DF(q)^(-T)p). The natural algebraic quantum construction sends the canonical generators to nonlinear polynomial differential operators satisfying the canonical commutators. Classical equivalence results connect the Jacobian, Dixmier, and Poisson conjectures, while the explicit map makes the research program constructive rather than merely logical. [4-6]
+The announced map opens a concrete route from a formerly abstract
+equivalence network to an explicit noninjective Poisson cotangent map and an
+explicit endomorphism of the canonical Weyl algebra. The natural classical
+construction is the cotangent lift (q,p) -> (F(q), DF(q)^(-T)p). The natural
+algebraic quantum construction sends the canonical generators to nonlinear
+polynomial differential operators satisfying the canonical commutators.
+Whether that displayed Weyl endomorphism is surjective or an automorphism is
+not established here. Classical equivalence results connect the Jacobian,
+Dixmier, and Poisson conjectures, while the explicit map makes the research
+program constructive rather than merely logical. [4-6]
 Central scientific question
 Where, exactly, does algebraic preservation of Poisson brackets or canonical commutators fail to become a reversible or otherwise physically admissible quantum operation?
 
 The program is deliberately neutral about the answer. A positive result would identify a new kind of proper endomorphism, subsystem embedding, quantum correspondence, or open-system operation in a continuous-variable setting. A negative result would identify a new no-go boundary between algebraic canonicality and physical quantum mechanics. Either outcome is scientifically valuable.
-This is not a project on nonlinear state-vector evolution. Standard quantum states continue to evolve linearly under unitary or completely positive dynamics. The candidate nonlinearity is in the polynomial transformation of observable generators, a phenomenon already familiar in invertible continuous-variable gates; the novelty is potential non-surjectivity.
+This is not a project on nonlinear state-vector evolution. Standard quantum
+states continue to evolve linearly under unitary or completely positive
+dynamics. The candidate nonlinearity is in the polynomial transformation of
+observable generators, a phenomenon already familiar in invertible
+continuous-variable gates; possible non-surjectivity is a research question,
+not a certified property of the displayed Weyl endomorphism.
 1  Background and rationale
 1.1  Triggering result and current status
 The announced map has real coefficients, Jacobian determinant -2, and a real three-point collision. These two exact checks already suffice to rule out a polynomial inverse. The public record is only one day old as of this charter, so structural claims such as generic degree, monodromy, and minimal forms are treated as research inputs rather than settled premises. [1-3]
@@ -64,8 +90,20 @@ det DF = -2
 A determinant-one normalization over characteristic zero can be obtained by rescaling one output coordinate. The project will maintain both the announced form and a canonical normalized form, each with exact certificates.
 1.2  Why this matters to quantum research
 The canonical Poisson algebra is the polynomial algebra of classical phase-space observables equipped with the standard Poisson bracket. The Weyl algebra is the polynomial differential-operator algebra generated by position and momentum variables satisfying the canonical commutation relations. These are central mathematical structures behind Hamiltonian mechanics and quantization. [4-6]
-A non-surjective endomorphism can preserve the defining algebraic relations without being a reversible coordinate change or unitary symmetry. The research opportunity is therefore not to revise quantum mechanics, but to locate the exact additional assumptions - reality, involution, domains, self-adjointness, regularity, positivity, continuity, finite energy, and operational implementability - that restore physical reversibility or otherwise classify the map.
-This also connects naturally to continuous-variable quantum information, where nonlinear but invertible transformations of quadratures are already important. Universal continuous-variable computation requires non-Gaussian nonlinear resources; however, those gates remain unitary automorphisms. EXOTIC-CCR asks whether a proper algebraic endomorphism has any legitimate counterpart beyond that familiar setting. [11,12]
+A polynomial endomorphism can preserve the defining algebraic relations
+without yet supplying a reversible coordinate change or unitary symmetry.
+The research opportunity is therefore not to revise quantum mechanics, but
+to determine automorphy first and then locate the exact additional assumptions
+- reality, involution, domains, self-adjointness, regularity, positivity,
+continuity, finite energy, and operational implementability - needed for a
+physical realization.
+This also connects naturally to continuous-variable quantum information,
+where nonlinear but invertible transformations of quadratures are already
+important. Universal continuous-variable computation requires non-Gaussian
+nonlinear resources; however, those gates remain unitary automorphisms.
+EXOTIC-CCR asks first whether the displayed algebraic endomorphism is proper
+and, if so, whether it has any legitimate counterpart beyond that familiar
+setting. [11,12]
 1.3  Scientific boundary conditions
 * An algebra endomorphism is not automatically a transformation of states, a unitary symmetry, or a quantum channel.
 * Preservation of formal commutators on polynomials is weaker than satisfaction of exponentiated Weyl relations by self-adjoint operators.
@@ -75,7 +113,10 @@ This also connects naturally to continuous-variable quantum information, where n
 2  Mission, problem statement, and hypotheses
 2.1  Mission
 Mission statement
-Construct the explicit Poisson and Weyl endomorphisms induced by the Jacobian counterexample, determine their real and operator-theoretic properties, and prove whether they do or do not define physically admissible operations in continuous-variable quantum theory.
+Construct the explicit Poisson and Weyl endomorphisms induced by the Keller
+seed, determine their algebraic, real, and operator-theoretic properties
+including automorphy, and prove whether they do or do not define physically
+admissible operations in continuous-variable quantum theory.
 
 2.2  Problem statement
 The counterexample provides a polynomial local diffeomorphism that is not globally invertible. Its cotangent lift is expected to preserve the canonical symplectic structure algebraically while remaining noninvertible. A corresponding substitution in the Weyl algebra is expected to preserve canonical commutators. The unresolved issue is whether these maps survive the analytic completion required by quantum mechanics.
@@ -117,7 +158,10 @@ Noninvertibility will reappear analytically through at least one obstruction: in
 H4
 A proper endomorphism cannot be implemented by unitary conjugation on the same faithful representation; any admissible realization must instead use a subsystem embedding, dilation, correspondence, nonregular representation, or open-system construction.
 H5
-The proper image subalgebra may exhibit multiplicity or sector structure relevant to continuous-variable encodings, but no computational benefit is assumed in advance.
+If the displayed Weyl endomorphism is independently proved proper, its image
+subalgebra may exhibit multiplicity or sector structure relevant to
+continuous-variable encodings, but no computational benefit is assumed in
+advance.
 
 3  Objectives, success criteria, and scope
 3.1  Objectives
@@ -126,7 +170,8 @@ Objective
 O1
 Validate and freeze a canonical version of the counterexample, with exact CAS and proof-assistant certificates.
 O2
-Construct explicit Poisson and Weyl endomorphisms and prove their defining relations and non-surjectivity.
+Construct explicit Poisson and Weyl endomorphisms, prove their defining
+relations, and determine surjectivity/automorphy separately for each map.
 O3
 Classify real structures, formal adjoints, invariant domains, closures, self-adjointness, and strong commutation.
 O4
@@ -187,7 +232,9 @@ Independent exact verification; normalization; provenance log; Lean audit; froze
 WP1
 Poisson and Weyl construction
 M1-M5
-Explicit B matrix; bracket/commutator proofs; non-surjectivity; image subalgebras; formalization.
+Explicit B matrix; bracket/commutator proofs; a separate audited
+surjectivity/automorphy determination; image subalgebras where justified;
+formalization.
 WP2
 Geometry and classical dynamics
 M3-M9
@@ -218,7 +265,9 @@ General criteria; benchmark library; external workshop; final monograph and road
 4.4  WP1 - Explicit Poisson and Weyl endomorphisms
 * Compute B = DF^(-T) in exact sparse form and exploit the map's weighted grading to control expression growth.
 * Prove the cotangent-lift Poisson identities and properness; formalize the result where practical.
-* Construct the Weyl candidate, prove canonical commutators, and establish non-surjectivity using a direct theorem or the classical Dixmier-to-Jacobian construction.
+* Construct the Weyl candidate, prove canonical commutators, and investigate
+  surjectivity/automorphy using a direct theorem with all hypotheses and
+  implication directions audited; do not infer it from the seed collision.
 * Characterize the image subalgebras, centralizers, filtrations, associated graded maps, and the observables not generated polynomially by the image.
 * Deliverables D1-D2: algebraic preprint and executable endomorphism library.
 4.5  WP2 - Geometry, flows, and semiclassical structure
@@ -241,8 +290,12 @@ General criteria; benchmark library; external workshop; final monograph and road
 * Search for Stinespring, Cuntz-family, Hilbert-module, or correspondence implementations; distinguish multiplicative endomorphisms from general quantum channels. [8]
 * Deliverable D5: extension theorem, obstruction theorem, or explicit dilation model.
 4.8  WP5 - Continuous-variable quantum information
-* Compare the candidate with known nonlinear unitary automorphisms such as cubic-phase transformations; isolate the genuinely new role of non-surjectivity.
-* Explore whether the proper image algebra defines a bosonic subsystem, code subalgebra, information-forgetting channel, or sector decomposition.
+* Compare the candidate with known nonlinear unitary automorphisms such as
+  cubic-phase transformations; determine whether non-surjectivity is present
+  before assigning it any role.
+* If a proper image algebra is independently established, explore whether it
+  defines a bosonic subsystem, code subalgebra, information-forgetting
+  channel, or sector decomposition.
 * Construct finite-energy and finite-dimensional approximants only after a valid infinite-dimensional model exists; report convergence and error norms explicitly.
 * Evaluate operational resources, noise sensitivity, reversibility costs, and whether inaccessible observables correspond to information loss or merely algebraic incompleteness.
 * Deliverable D6: protocol/no-go paper and reproducible simulation notebooks.
@@ -533,9 +586,10 @@ The Weyl substitution preserves all canonical commutators
 Noncommutative symbolic proof
 G1
 T1.5
-The Weyl endomorphism is not surjective
-Direct theorem / standard construction
-G1-G2
+Withdrawn Version 1.0 target: "The Weyl endomorphism is not surjective"
+OPEN - requires a direct theorem for the displayed endomorphism; the
+classical collision does not suffice
+Uncertified
 T2.1
 Row-wise div B = 0
 Piola identity + exact check

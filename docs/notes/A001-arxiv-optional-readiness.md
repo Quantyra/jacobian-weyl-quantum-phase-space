@@ -8,7 +8,7 @@
 | Item | Path | Status |
 |---|---|---|
 | Canonical source | `docs/notes/A001-arxiv.tex` | revised |
-| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `b4f4a888…24352d` |
+| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `f9e3b9bf…4e4e785` |
 | Checklist | `docs/notes/A001-arxiv-checklist.md` | fresh technical re-gates open |
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | HOLD |

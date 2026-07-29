@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "This is an untagged scientific-revision candidate; cite a released version when available."
-title: "Poisson and Weyl lifts of the Alpöge–Fable Keller map and nonunique self-adjoint realizations of a dual transport operator"
+title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
 authors:
   - family-names: Fredriksen
@@ -20,7 +20,8 @@ abstract: >-
   the continuing project record, not this candidate; no version DOI exists
   for this untagged revision. For the
   canonical real dual transport operator H=-i X_1 associated with the
-  restated Alpöge–Fable Keller seed, the paper gives Hilbert deficiency
+  explicit Keller map announced by Alpöge, with Fable credited in the
+  announcement for work leading to the map, the paper gives Hilbert deficiency
   indices n_+=n_-=aleph0. The revised main proof constructs the minus-i
   family from a forward maximal sheet and obtains the plus-i family through
   the measure-preserving sign involution. The synchronized Lean publication

@@ -7,7 +7,7 @@
 
 | Item | Current value |
 |---|---|
-| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `b4f4a8882d828134a6aa15462d3d888c411186aa0c865632fa564a34fe24352d` |
+| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Tag/release | none |
 | arXiv identifier | none |

@@ -4,7 +4,7 @@ This is a local scientific-revision candidate, not a public freeze.
 
 - PDF: `docs/notes/A001-arxiv.pdf`
 - PDF SHA-256:
-  `b4f4a8882d828134a6aa15462d3d888c411186aa0c865632fa564a34fe24352d`
+  `f9e3b9bfe81d15047fc406910038028bc65d403c88636594a7bb4d52a4e4e785`
 - TeX: `docs/notes/A001-arxiv.tex`
 - Tag/release/arXiv identifier/new version DOI: none
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not
