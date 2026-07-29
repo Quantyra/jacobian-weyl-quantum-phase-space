@@ -22,6 +22,13 @@ I request arXiv endorsement for:
 **Tag:** none  
 **Concept DOI:** https://doi.org/10.5281/zenodo.21474351  
 
+**Lean boundary note:** The verified companion SHA
+`f1fe83785add60ccc5f012b51e7576aab5627a74` includes the separate exact
+Hilbert-basis cardinal result `hilbertDeficiencyIndex_X1_eq_aleph0` for the
+closed adjoint eigenspaces. `standardDeficiencyIndex`/`Module.rank` is Hamel
+rank with lower bounds only; extension multiplicity/classification remains
+paper-grade/not Lean-covered.
+
 **Endorsement code:** `VIPN6B`  
 **Endorser link:** https://arxiv.org/auth/endorse?x=VIPN6B  
 **Fallback form:** https://arxiv.org/auth/endorse.php (enter `VIPN6B`)  

@@ -13,15 +13,18 @@
 | Release | none; do not create until review and Dan approval |
 | Concept DOI | https://doi.org/10.5281/zenodo.21474351 (project-level only until version ingest) |
 | Lean (bounded Theorem E) | `ExoticCCR.theoremE` @ SHA `a6bb091` |
-| Lean (bounded Theorem F) | `ExoticCCR.theoremF` @ SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2` |
-| Lean supplement | `aleph0_le_standardDeficiencyIndex_X1`: `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-` |
-| Lean boundary | Equality `n_±=aleph0`, extension multiplicity/classification, and paper backward-wall construction remain paper-grade |
+| Lean (bounded Theorem F) | `ExoticCCR.theoremF` @ SHA `f1fe83785add60ccc5f012b51e7576aab5627a74` |
+| Lean standard-rank supplement | `aleph0_le_standardDeficiencyIndex_X1`: `Cardinal.aleph0 ≤ n_+` and `Cardinal.aleph0 ≤ n_-`; `standardDeficiencyIndex`/`Module.rank` is Hamel rank with lower bounds only |
+| Lean exact Hilbert supplement | `hilbertDeficiencyIndex_X1_eq_aleph0`: exact `Cardinal.aleph0` Hilbert-basis cardinality for both closed adjoint eigenspaces |
+| Lean boundary | Von Neumann extension multiplicity/classification and the paper backward-wall construction remain paper-grade/not Lean-covered |
 
 ## Comments line
 Seed map due to Alpöge (credits Fable); restated/verified only. Candidate
 v0.3.8-theorem-f; concept DOI 10.5281/zenodo.21474351. H=-iX_1 only.
 Bounded Lean Theorem F proves both standard adjoint eigenspaces are not
-finite-dimensional. No gates/channels/advantage.
+finite-dimensional. The exact Hilbert-basis cardinal is separately formalized;
+the algebraic Hamel rank is not identified with \(\aleph0\). No
+gates/channels/advantage.
 
 ## Endorsement
 Start submit → code → https://arxiv.org/auth/endorse → finish submit.

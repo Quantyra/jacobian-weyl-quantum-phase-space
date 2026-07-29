@@ -1,7 +1,7 @@
 ﻿# EXOTIC-CCR â€” Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Release (arXiv candidate):** v0.3.8-theorem-f (proposed, untagged; bounded Lean Theorem F review)  
+**Release (arXiv candidate):** v0.3.8-theorem-f (proposed, untagged; Hilbert-index Lean update under review)  
 **Prior:** [v0.3.5-submit](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.5-submit) · [v0.3.3](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3)  
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (version DOI pending ingest)  
 **Do not use:** v0.2.2 pair or v0.3.0 Dom(H*) proof
@@ -27,7 +27,7 @@ Theorems Aâ€“F: AlpÃ¶geâ€“Fable seed **restated**; Poisson/Weyl lift
 
 ## One-sentence result
 
-For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The bounded Lean-backed results are the canonical-core conclusions `ExoticCCR.theoremE` (Lean tag `v0.1.8-theorem-e`, SHA `a6bb091`) and — proposed, under review — `ExoticCCR.theoremF` at Lean SHA `30df8bcd310cab7a2c53d18500fcf847f1e284d2`, which proves both adjoint eigenspaces \(\ker(H^\dagger \mp i)\) of the canonical minimal core are not finite-dimensional and verifies the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-, via a measure-preserving sign-involution transport of the forward \(-i\) families. Equality \(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, and the paper's backward-wall construction remain paper-grade, not Lean-covered.
+For the AlpÃ¶geâ€“Fable Keller map (restated), algebraic Poisson/Weyl lifts exist, and the paper-grade analysis states that \(H=-i X_1\) is **not essentially self-adjoint** on \(C_c^\infty(\mathbb{R}^3)\), with deficiency indices \((n_+,n_-)=(\infty,\infty)\). The Lean-backed results are the canonical-core conclusions `ExoticCCR.theoremE` (Lean tag `v0.1.8-theorem-e`, SHA `a6bb091`) and `ExoticCCR.theoremF` at proposed Lean SHA `f1fe83785add60ccc5f012b51e7576aab5627a74`, which proves both adjoint eigenspaces \(\ker(H^\dagger \mp i)\) are not finite-dimensional and gives the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_- by measure-preserving sign-involution transport. A separate verified module at the same SHA proves `hilbertDeficiencyIndex_X1_eq_aleph0`: the Hilbert-basis cardinal of the closed eigenspaces is exactly \(\operatorname{aleph0}\) on both sides. This is distinct from `standardDeficiencyIndex`, which is `Module.rank` (algebraic/Hamel rank) and has lower bounds only. Von Neumann extension multiplicity/classification and the paper's backward-wall construction remain paper-grade, not Lean-covered.
 
 ## Non-claims
 
@@ -45,12 +45,15 @@ https://github.com/Quantyra/exotic-ccr-lean
 The companion Theorem E freeze is released as `v0.1.8-theorem-e` (theorem SHA
 `a6bb091`): the bounded canonical `X1` non-essential-self-adjointness theorem.
 The proposed companion Theorem F freeze is untagged at
-`30df8bcd310cab7a2c53d18500fcf847f1e284d2`
+`f1fe83785add60ccc5f012b51e7576aab5627a74`
 (`ExoticCCR.theoremF`, under four-role review): both adjoint eigenspaces
 \(\ker(H^\dagger \mp i)\) of the canonical minimal core are proved
 infinite-dimensional by sign-involution transport, with the additional
 standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0
-≤ n_-. Equality n_±=aleph0, extension multiplicity/classification, and the
+≤ n_-. The separate `hilbertDeficiencyIndex_X1_eq_aleph0` result gives exact
+\(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces.
+`standardDeficiencyIndex`/`Module.rank` remains algebraic (Hamel) rank with
+lower bounds only. Von Neumann extension multiplicity/classification and the
 paper's backward-wall construction are not Lean-covered.
 
 ## Companion papers (B001 / C001) — advance while A001 waits on arXiv endorsement

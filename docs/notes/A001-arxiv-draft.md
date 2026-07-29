@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "pending-v0.3.8-theorem-f-zenodo"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); bounded Lean companion ExoticCCR.theoremF at SHA 30df8bcd310cab7a2c53d18500fcf847f1e284d2 proves both standard adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-. Equality n_±=aleph0, extension multiplicity/classification, and backward-wall construction remain paper-grade. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
+claims_freeze: "A001 v0.3.8-theorem-f candidate: paper-grade Theorem F Dom(H*)+saturation+analytic wall argument and (n+,n-)=(inf,inf); bounded Lean companion ExoticCCR.theoremF at SHA f1fe83785add60ccc5f012b51e7576aab5627a74 proves both standard adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds Cardinal.aleph0 ≤ n_+ and Cardinal.aleph0 ≤ n_-. The separate hilbertDeficiencyIndex_X1_eq_aleph0 result at that SHA gives exact aleph0 Hilbert-basis cardinality for the closed adjoint eigenspaces. standardDeficiencyIndex/Module.rank is Hamel rank with lower bounds only; von Neumann extension multiplicity/classification and backward-wall construction remain paper-grade. Errata: v0.2.2 (0,inf); v0.3.0 s-indicators."
 ---
 
 # Poisson and Weyl lifts of the Alpöge--Fable Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -79,7 +79,7 @@ The cotangent (Piola) lift \(\Phi(q,p)=(F(q),J^{-T}p)\) and the associated dual 
 Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent/Piola lifts and divergence-free cofactor rows are classical. Deficiency indices and half-line models: Reed--Simon [2]; direct integrals: [9], SchmÃ¼dgen [10]. Chernoff [1] concerns *sufficiency* criteria for ESS of hyperbolic generators and is **not** used as a necessity theorem here. Seed provenance: [8, 11, 12] and `docs/provenance/` in [5].
 
 ### 1.4 Evidence layers
-- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at companion SHAs recorded in the package metadata. Theorem F proves both standard adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds \(\operatorname{Cardinal.aleph0}\le n_+\) and \(\operatorname{Cardinal.aleph0}\le n_-\); it does not formalize equality \(n_\pm=\operatorname{aleph0}\), extension multiplicity/classification, or the paper's backward-wall construction.  
+- **Lean-proved:** Theorem A seed identities [6], plus the bounded canonical-core Theorems E--F at the companion SHAs recorded in the package metadata. At SHA f1fe83785add60ccc5f012b51e7576aab5627a74, Theorem F proves both adjoint eigenspaces are not finite-dimensional and the standard cardinal-valued lower bounds \(\operatorname{Cardinal.aleph0}\le n_+\) and \(\operatorname{Cardinal.aleph0}\le n_-\). The separate hilbertDeficiencyIndex_X1_eq_aleph0 theorem gives exact \(\operatorname{aleph0}\) Hilbert-basis cardinality for the closed eigenspaces. standardDeficiencyIndex/Module.rank is algebraic (Hamel) rank with lower bounds only. Von Neumann extension multiplicity/classification and the paper's backward-wall construction remain paper-grade, not Lean-covered.  
 - **Exact CAS (two engines) + conceptual proof:** B--C polynomial identities; D curve.  
 - **Analytic construction:** E--F deficiency functions in flow-box coordinates.  
 Software DOI: [5].
@@ -390,7 +390,7 @@ Interior indicators \(\mathbf{1}_{(\beta-\delta,\beta)}(s)\) create \(\delta\)-m
 ### 8.6 Theorems E--F
 **Theorem F.** \((n_+,n_-)=(\infty,\infty)\).
 
-*Proof.* Propositions 8.1--8.2 and Lemmas 8.3--8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both dimensions to be countably infinite. ∎
+*Proof.* Propositions 8.1--8.2 and Lemmas 8.3--8.4. Separability of \(L^2(\mathbb{R}^3)\) forces both Hilbert-space dimensions (orthonormal-basis cardinals) to be countably infinite. This is a Hilbert dimension statement, not an assertion that the algebraic Hamel rank is \(\operatorname{aleph0}\). ∎
 
 **Theorem E.** \(H\) is not essentially self-adjoint on \(C_c^\infty(\mathbb{R}^3)\).
 
@@ -413,7 +413,7 @@ Thus a working algebraic CCR/Poisson presentation does **not** select a unique s
 
 This is not a claim that essential self-adjointness fails for every incomplete vector field in full generality, nor that the abstract operator-theoretic phenomenon is new: incomplete flows and half-line models are classical [2]. The contribution is geometric and structural. The same map that is a noninjective Keller seed (constant nonzero Jacobian, restated from Alpöge–Fable) induces dual transport whose incompleteness is explicit and of positive transverse measure in both time directions. The algebraic lift therefore underdetermines quantization for this dual momentum: many self-adjoint extensions exist, and the core polynomial relations do not name one.
 
-What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. The Lean companion separately covers the bounded canonical-core Theorems E--F statement; it does not cover the paper's backward-wall construction, exact cardinal index value, or extension multiplicity.
+What the paper does **not** establish is equally important. We do not claim discovery of \(F\); unitary gates, channels, or computational advantage; essential-self-adjointness failure for \(H_0\) or \(H_2\); strong CCR after extensions; or a preferred physical boundary condition at the incomplete ends. The Lean companion separately covers the bounded canonical-core Theorems E--F statement and, at the updated SHA, the exact Hilbert-basis cardinal of the closed adjoint eigenspaces. It does not cover the paper's backward-wall construction, exact algebraic/Hamel rank, or von Neumann extension multiplicity/classification.
 
 Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) and \(H_2\), residual CCR after extensions, spectral theory of the extension family, and Lean coverage beyond Gate-0.
 
@@ -436,7 +436,7 @@ Natural next steps are recorded in §11 (open problems): ESS status of \(H_0\) a
 
 1. ESS status of \(P_0^{\mathrm{sym}}\) and \(P_2^{\mathrm{sym}}\).  
 2. Strong CCR after extensions.  
-3. Lean formalization of the paper-grade analytic backward-wall construction and exact cardinal index beyond the bounded Theorem F statement.  
+3. Lean formalization of the paper-grade analytic backward-wall construction and von Neumann extension multiplicity/classification; the exact Hilbert-basis cardinal is covered, while exact algebraic/Hamel rank is not claimed.  
 4. The same depth of analysis for higher-degree family maps in the atlas.  
 5. Optional: finer spectral theory of self-adjoint extensions of \(P_1^{\mathrm{sym}}\).
 
@@ -461,7 +461,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287--330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299--306.  
 [5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.3); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
-[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean.  
+[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean (Theorem F and hilbertDeficiencyIndex_X1_eq_aleph0, SHA f1fe83785add60ccc5f012b51e7576aab5627a74).  
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
 [8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  
