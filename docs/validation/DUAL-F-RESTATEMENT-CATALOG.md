@@ -1,7 +1,15 @@
 # Dual-\(F\) obstruction — restatement catalog
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> Entries that assert H0/H2 non-ESS, exact H0/H2 deficiency, or a dual-flow
+> strong-CCR obstruction/no-go are not Lean-backed at the current publication
+> freeze. They are withdrawn as current theorems and may not be copied into
+> current claims or publication packets. Those questions remain open pending
+> Lean. Current boundary: `README.md`, `INTEGRITY.md`, and
+> `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Status:** **CATALOG** (parallel track; **no new dual-flow repair**)  
+**Historical status (superseded):** catalog of paper-only restatements
 **Rule:** Every entry is an **equivalent or weaker packaging** of the same non-surjectivity obstruction unless marked *strictly weaker*.
 
 ---

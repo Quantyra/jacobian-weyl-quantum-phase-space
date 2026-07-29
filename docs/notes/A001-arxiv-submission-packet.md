@@ -15,8 +15,8 @@
 | New version DOI | none; do not predict |
 | Synchronized Lean freeze | `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean build/axiom provenance | corrected freeze records focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited seven-declaration audit |
-| Technical gates | Lean/build complete; fresh math.FA, math.AG, and non-claims re-gates pending |
+| Lean build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), seven-declaration axiom audit |
+| Technical gates | Lean/build and math.FA/math.AG COMPLETE/PASS; fresh non-claims re-gate pending |
 | Package/metadata recheck | pending |
 | Human approval | pending Dan |
 
@@ -44,5 +44,6 @@ The map was announced by Alpöge; the announcement credits Claude Fable for
 work leading to it and Akhil Mathew for prompting the question. It is restated
 and independently checked here, not discovered here. No gates, channels,
 computational advantage, or rank-three Dixmier counterexample is claimed.
-Fresh technical re-gates are required before the package can return to Dan for
-approval.
+Lean/build and math.FA/math.AG gates PASS. Fresh non-claims and
+package/metadata re-gates are required before the package can return to Dan
+for approval.

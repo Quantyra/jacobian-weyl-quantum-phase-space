@@ -1,7 +1,14 @@
 # Phase 1 closeout — G4 on A001 (roadmap)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This closeout depended on unformalized H0/H2 deficiency/ESS assertions and a
+> paper-only dual-flow strong-CCR obstruction. Those conclusions are withdrawn
+> as current theorems and may not be used for publication or current program
+> status. H0/H2 and dual-flow strong CCR remain open pending Lean. Current
+> boundary: `README.md`, `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Decision:** **G4 CLOSED for A001 dual-flow program** at obstruction level
+**Historical decision (superseded):** “G4 CLOSED” at obstruction level
 
 ## Delivered
 | Item | Artifact | Result |

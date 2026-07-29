@@ -1,22 +1,26 @@
 # EXOTIC-CCR companion pack
 
 **Date:** 2026-07-29
-**Status:** ACTIVE; A001 scientific revision and fresh gates pending
+**Status:** CURRENT INDEX; A001 is untagged/unreleased and technical re-gating is incomplete
 **Rule:** The current A001 review candidate is
 `v0.3.9-referee-revision` (proposed, untagged). Earlier candidates remain
 historical records and must not be presented as the current freeze.
+The project concept DOI is a historical/project-level identifier only; it
+does not identify this candidate. External-LLM reviews are advisory and do
+not replace the mandatory independent publication gates.
 
 ---
 
-## Flagship A001 (DOI citable; arXiv pending)
+## Flagship A001 (unreleased candidate; do not cite as a DOI version)
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [A001-arxiv.pdf](A001-arxiv.pdf) |
 | Candidate | `v0.3.9-referee-revision` (proposed, untagged; no release or version DOI) |
-| Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) |
+| Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level historical identifier; not this candidate) |
 | Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has Hilbert indices \(n_+=n_-=\aleph_0\); seed restated; H₁-only |
+| Gate status | Lean/build and math.FA/math.AG PASS; fresh non-claims and package/metadata re-gates pending; Dan approval pending |
 
 ---
 
@@ -57,7 +61,7 @@ historical records and must not be presented as the current freeze.
 
 ## Cite
 
-1. Deficiency: A001 + concept DOI  
+1. Deficiency: cite no unreleased A001 version; the concept DOI does not identify the current candidate
 2. Classification: B001 v0.7 / `v0.2.3-b001-draft` @ `45e7d53`  
 3. Completions of \(\psi\): C001 v0.9 / `v0.3.3-c001-companion` @ `45e7d53`  
 

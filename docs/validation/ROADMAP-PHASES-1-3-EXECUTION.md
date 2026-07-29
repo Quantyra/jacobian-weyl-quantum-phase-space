@@ -1,5 +1,11 @@
 # Roadmap Phases 1–3 — execution record
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL EXECUTION RECORD ONLY.**
+> “Done/obstructed/closed” rows for H0/H2 deficiency/ESS and dual-flow strong
+> CCR are not Lean-backed and are withdrawn as current theorem or gate
+> evidence. Those questions remain open pending Lean. Current boundary:
+> `README.md`, `INTEGRITY.md`, and the A001 paper.
+
 **Date:** 2026-07-21  
 **Protocols:** charter EXOTIC-CCR v1.0; publication-adversarial-review (no claim inflation); non-claims ledger  
 

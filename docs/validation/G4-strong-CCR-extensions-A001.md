@@ -1,7 +1,15 @@
 # G4 Strong CCR after extensions — A001
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> The strong-CCR obstruction, impossibility theorem, and dual-flow no-go
+> conclusions below are not Lean-backed at the current publication freeze.
+> They are withdrawn as current theorems and must not be cited, copied into
+> metadata, or used for publication review. Dual-flow strong CCR remains
+> open/unverified pending Lean. Current boundary: `README.md`, `INTEGRITY.md`,
+> and `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Status:** **Obstruction package (no construction)** — strong CCR **not achieved**; unitary implementation of all three dual \(F\)-translations **impossible**  
+**Historical status (withdrawn):** obstruction package / no construction
 **Phase:** Roadmap Phase 1B  
 **Non-claims:** no gates; no claim that *no* exotic joint extension exists in some other representation.
 

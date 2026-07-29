@@ -1,5 +1,10 @@
 # H4-S pilot: reducing-subspace no-go (dual \(F\)-translations)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This no-go depends on the unformalized dual-flow strong-CCR obstruction and
+> is withdrawn as a current theorem. It must not be used as publication
+> evidence. Dual-flow strong CCR remains open pending Lean.
+
 **Date:** 2026-07-21  
 **Class:** H4-S (subspace / compression)  
 **Status:** **NO-GO under global dual-flow axioms** (corollary of G4 strong-CCR obstruction)  

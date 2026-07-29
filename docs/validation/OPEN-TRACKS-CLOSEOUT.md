@@ -1,5 +1,11 @@
 # Open tracks closeout (post-P4)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> H4 no-go rows that depend on the unformalized dual-flow strong-CCR
+> obstruction are withdrawn as current theorems. This file is not current
+> publication or gate evidence. Dual-flow strong CCR and H0/H2 remain open
+> pending Lean.
+
 **Date:** 2026-07-21  
 **Parent roadmap:** Phases 1–3 dual-flow no-go complete; dual-track P+H opening complete  
 

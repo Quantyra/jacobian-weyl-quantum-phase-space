@@ -1,5 +1,11 @@
 # Phase 3 — Levels D–E (strong CCR / C* / degree) — A001
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> The obstruction cascade below depends on unformalized H0/H2 and dual-flow
+> strong-CCR conclusions. Those conclusions are withdrawn as current theorems
+> and must not be used as publication evidence. H0/H2 and dual-flow strong
+> CCR remain open pending Lean.
+
 **Date:** 2026-07-21  
 **Status:** **CLOSED as obstruction cascade** (no positive C* realization constructed)  
 **Depends on:** Phase 1 G4 closeout  

@@ -13,10 +13,12 @@ This is a local scientific-revision candidate, not a public freeze.
   `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased)
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
-- Lean cache/build/axiom provenance: corrected freeze records focused
-  Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited
-  seven-declaration audit
-- Math.FA, math.AG, and non-claims re-gates: pending
+- Lean cache/build/axiom provenance: `PUBLICATION_PROVENANCE.md` records
+  focused `TheoremFPlusITransport` (8,684 jobs), focused
+  `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build`
+  (8,702 jobs), and the seven-declaration axiom audit
+- Lean/build and math.FA/math.AG re-gates: COMPLETE/PASS
+- Non-claims re-gate: pending
 - Package/metadata recheck: pending
 - Dan approval: pending after technical gates
 

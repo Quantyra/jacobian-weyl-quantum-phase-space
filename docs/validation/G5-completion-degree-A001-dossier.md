@@ -1,6 +1,12 @@
 # G5 Completion vs generic degree \(d\) — A001
 
-**Status:** CLOSED as **decision analysis** (ladder E)  
+> **SUPERSEDED / WITHDRAWN — HISTORICAL DECISION ANALYSIS ONLY.**
+> Conclusions below that depend on all-Hj non-ESS or a dual-flow strong-CCR
+> obstruction are not Lean-backed and are withdrawn as current theorem or
+> publication evidence. H0/H2 and dual-flow strong CCR remain open pending
+> Lean. Current boundary: `README.md`, `INTEGRITY.md`, and the A001 paper.
+
+**Historical status:** closed as decision analysis (ladder E)
 **Date:** 2026-07-21  
 **Story:** S021
 

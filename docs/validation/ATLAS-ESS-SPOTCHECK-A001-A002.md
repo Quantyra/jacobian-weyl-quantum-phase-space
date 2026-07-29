@@ -1,7 +1,14 @@
 # Atlas ESS spot-check — A001 / A002 (optional follow-on)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> The A001 H0/H2 ESS/pair and dual-flow strong-CCR rows below point to
+> unformalized historical dossiers. They are withdrawn as current theorem or
+> publication evidence. H0/H2 and dual-flow strong CCR remain open pending
+> Lean. Current boundary: `README.md`, `INTEGRITY.md`, and
+> `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Status:** **CLOSED** at structural + seed strength; A002 curve-level ESS **not** claimed  
+**Historical status (superseded):** closed at then-authorized paper-only depth
 **Non-claims:** no full literature Keller sweep; atlas does not re-prove deficiency pairs
 
 ---

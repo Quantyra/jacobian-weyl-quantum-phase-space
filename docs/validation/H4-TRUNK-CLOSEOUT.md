@@ -1,5 +1,10 @@
 # H4 trunk closeout — dual-\(F\) classes piloted
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This closeout aggregates H4 no-go pilots that depend on the unformalized
+> dual-flow obstruction cascade. It is not current theorem, gate, or
+> publication evidence. Dual-flow strong CCR remains open pending Lean.
+
 **Date:** 2026-07-21  
 **Charter:** `H4-realization-charter.md`  
 **Rule:** no dual-flow repair; no gates/channels/advantage

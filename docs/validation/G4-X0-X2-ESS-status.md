@@ -1,7 +1,14 @@
 # G4 ESS status of \(H_0=-iX_0\) and \(H_2=-iX_2\) (A001)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> The H0/H2 incompleteness-to-ESS conclusions below are not Lean-backed at the
+> current publication freeze. They are withdrawn as current theorems and must
+> not be cited, copied into metadata, or used for publication review. H0/H2
+> deficiency and ESS status remain open pending Lean. Current boundary:
+> `README.md`, `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Status:** \(X_0\) and \(X_2\) **incomplete** (proved); \(H_0\) and \(H_2\) **not ESS**.  
+**Historical status (withdrawn):** paper-only incompleteness and ESS assertions
 **Non-claims:** no gates/channels; no \((n_+,n_-)=(0,\infty)\) for any \(H_j\); exact global indices for \(H_0,H_2\) open.
 
 ---

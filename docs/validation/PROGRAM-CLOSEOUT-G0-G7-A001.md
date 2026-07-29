@@ -1,5 +1,12 @@
 ﻿# EXOTIC-CCR program closeout â€” A001 spine (G0â€“G7)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This closeout incorporated unformalized H0/H2 deficiency/ESS and dual-flow
+> strong-CCR conclusions. Those portions are withdrawn and prohibit use of
+> this document as a current theorem, gate, or publication-status source.
+> H0/H2 and dual-flow strong CCR remain open pending Lean. Current boundary:
+> `README.md`, `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
 **Entity:** Quantyra Inc.  
 **Planning:** Quantyra-Planning2 E005  

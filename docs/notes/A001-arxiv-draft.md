@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "none-v0.3.9-referee-revision-untagged"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex at Lean freeze b51b67d03515d44e1cb1309cf8721a7ecf7803b2; fresh math.FA, math.AG/Weyl, non-claims, and package/metadata re-gates remain pending before Dan approval."
+claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex at Lean freeze b51b67d03515d44e1cb1309cf8721a7ecf7803b2; Lean/build and math.FA/math.AG/Weyl gates PASS, while non-claims and package/metadata re-gates remain pending before Dan approval."
 ---
 
 # Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator

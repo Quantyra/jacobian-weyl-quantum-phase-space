@@ -1,5 +1,12 @@
 # Dual-track closeout — Polish ∥ H4 trunk
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This closeout relies on paper-only H0/H2 deficiency/ESS and dual-flow
+> strong-CCR no-go claims. Those claims are withdrawn as current theorems and
+> may not be used for publication or current status. H0/H2 and dual-flow
+> strong CCR remain open pending Lean. Current boundary: `README.md`,
+> `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
 **Science SHA:** (see git log; P4 closeout `f9d48a3`+)  
 **Rules honored:** no gates/advantage; no dual-flow CCR repair; no false \(H_1\) pair revival  

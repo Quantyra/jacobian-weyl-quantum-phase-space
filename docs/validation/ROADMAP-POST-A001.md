@@ -1,7 +1,16 @@
 # Roadmap post-A001 — follow the charters
 
+> **SUPERSEDED — DO NOT USE AS CURRENT PUBLICATION OR THEOREM STATUS.**
+> This roadmap predates the H1 Theorem F referee revision, treats external LLM
+> review as the publication workflow, and relies on withdrawn paper-only
+> dual-flow/H0/H2 conclusions. The current candidate is
+> `v0.3.9-referee-revision`, untagged and unreleased, with no version DOI.
+> The concept DOI is historical/project-level only. Mandatory review now
+> follows the independent publication gates recorded in
+> `docs/notes/A001-arxiv-checklist.md`.
+
 **Date:** 2026-07-21  
-**Spine status:** Dual-flow A001 **closed (no-go)** · wind-down publish **in flight**  
+**Historical spine status (superseded):** “closed (no-go)” / publish in flight
 **Binding non-claims:** no gates/channels/advantage; no dual-\(F\) repair; no “all quantization fails”
 
 Charters:

@@ -1,6 +1,16 @@
 # G4 Domains / self-adjointness / strong CCR — A001
 
-**Status:** **G4 closed (obstruction).** All \(X_j\) incomplete; all \(H_j\) not ESS; \(H_1\) pair \((\infty,\infty)\); \(H_0,H_2\) have \(\max n_\pm=\infty\); dual-flow strong CCR obstructed. See `G4-PHASE1-CLOSEOUT.md`.  
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> Any H0/H2 exact deficiency, H0/H2 non-ESS, or dual-flow strong-CCR
+> theorem/no-go language below is not Lean-backed at the current publication
+> freeze and is withdrawn as current evidence. It must not be cited, copied
+> into metadata, or used for publication review. Those lanes remain open
+> pending Lean. Current boundary: `README.md`, `INTEGRITY.md`, and
+> `docs/notes/A001-arxiv.tex`.
+
+**Historical status (withdrawn):** “G4 closed (obstruction)” on the paper-only
+surface preserved below.
+
 **Date:** 2026-07-21  
 
 ## Documents

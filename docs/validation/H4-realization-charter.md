@@ -1,5 +1,11 @@
 # H4 Realization Trunk — Charter (EXOTIC-CCR / A001)
 
+> **SUPERSEDED / HISTORICAL PROGRAM CHARTER.**
+> Its trigger and “failed dual-flow package” premise rely on a paper-only
+> strong-CCR no-go that is withdrawn as a current theorem. Dual-flow strong
+> CCR, H0/H2 deficiency, and H0/H2 ESS remain open pending Lean. Do not use
+> this charter as current publication evidence.
+
 **Date:** 2026-07-21  
 **Status:** **OPEN PROGRAM** (not a dual-flow repair)  
 **Parent:** EXOTIC-CCR Research Charter v1.0, hypothesis H4  

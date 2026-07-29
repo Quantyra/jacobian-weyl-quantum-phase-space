@@ -27,9 +27,12 @@ abstract: >-
   the measure-preserving sign involution. The synchronized Lean publication
   freeze is b51b67d03515d44e1cb1309cf8721a7ecf7803b2; it is untagged and
   unreleased. The historical theorem-source root is
-  ff50f4a2a312591c2e5b26e71eb390ade9164b34. The repository records successful
-  targeted and full Lean builds for that freeze; the current wording and
-  metadata revision requires fresh technical review before human approval.
+  ff50f4a2a312591c2e5b26e71eb390ade9164b34. PUBLICATION_PROVENANCE.md records
+  focused TheoremFPlusITransport (8,684 jobs) and
+  TheoremFExtensionMultiplicity (8,692 jobs) builds, the full 8,702-job Lean
+  build, and a seven-declaration axiom audit. Lean/build and math.FA/math.AG
+  gates pass; fresh non-claims and package/metadata review remains required
+  before human approval.
   Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
   classification for the specific H_X1_min, and an injective family of

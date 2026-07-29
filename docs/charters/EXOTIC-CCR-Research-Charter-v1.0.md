@@ -1,21 +1,44 @@
 # PROJECT EXOTIC-CCR — Research Project Charter
 
-> **Canonical human-review source:** `docs/charters/Project_EXOTIC_CCR_Research_Charter.docx`
+> **HISTORICAL / SUPERSEDED CHARTER — NOT A CURRENT CLAIM SOURCE.**
+> This v1.0 charter and its companion DOCX preserve the program's July 2026
+> launch assumptions. They are not canonical for theorem, publication, or
+> product claims. The current boundary is defined only by `README.md`,
+> `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex` (with its rendered PDF).
+>
+> **Withdrawn pending Lean:** every assertion below that treats the displayed
+> Weyl endomorphism \(\psi\) as nonautomorphic or nonsurjective; every exact
+> deficiency-index or non-essential-self-adjointness assertion for \(H_0\) or
+> \(H_2\); and every theorem/no-go conclusion about dual-flow strong CCR,
+> global unitary implementation, or physical admissibility. None may be cited
+> as a current theorem or used in a publication packet unless a later
+> Lean-backed source explicitly restores it.
+>
+> **Historical human-review source:** `docs/charters/Project_EXOTIC_CCR_Research_Charter.docx`
 > **Ingested:** 2026-07-20 into Quantyra-Planning2
-> **Status:** Draft for initiation and external technical review (as on cover)
-> **Decision requested:** Authorize the 90-day launch phase and Gate 0 / Gate 1 review
+> **Historical status:** Draft for initiation and external technical review (as on cover)
+> **Historical decision request:** Authorize the 90-day launch phase and Gate 0 / Gate 1 review
 
-This Markdown is a planning-lane text extract of the DOCX for agent/search use. Prefer the DOCX for external human review.
+This Markdown is a historical text extract of the DOCX for agent/search use.
+Neither file is a current claim source.
 
 > **2026-07-29 claim-boundary correction.** Version 1.0 treated
 > non-surjectivity/nonautomorphy of the displayed rank-three Weyl endomorphism
-> as an expected or completed result. That assertion is withdrawn. The
+> as an expected or completed result. Those assertions are withdrawn and
+> unverified pending Lean. The
 > artifact constructs a Weyl endomorphism preserving the generator relations
 > but does not identify or prove its non-surjectivity or nonautomorphy.
 > References below to “proper” or “non-surjective” Weyl endomorphisms are
 > research hypotheses unless an independent theorem is cited. The
 > noninjectivity of the classical map and its cotangent lift does not discharge
 > that Weyl-algebra question.
+>
+> The same correction applies to historical H0/H2 and dual-flow claims in this
+> charter: exact \(H_0,H_2\) deficiency pairs, their asserted failure of
+> essential self-adjointness, and strong-CCR obstruction/no-go conclusions are
+> withdrawn and unverified pending named Lean declarations at a recorded SHA.
+> The currently authorized operator result is the H1-only surface described in
+> `README.md`, `INTEGRITY.md`, and the A001 paper.
 
 ---
 

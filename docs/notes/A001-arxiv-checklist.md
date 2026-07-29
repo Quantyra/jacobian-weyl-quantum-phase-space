@@ -1,7 +1,7 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — claim-boundary corrections applied; fresh
-math.FA, math.AG, Lean/build, non-claims, and package/metadata re-gates pending.
+**Status:** SCIENTIFIC REVISION — Lean/build and math.FA/math.AG gates PASS;
+fresh non-claims and package/metadata re-gates pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
 PDF SHA-256: `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
@@ -92,11 +92,12 @@ asserted.
 
 ## Fresh mandatory gate
 
-- [ ] Fresh math.FA/operator-theory proof-adversarial review
-- [ ] Fresh math.AG/Weyl–Dixmier review
+- [x] Fresh math.FA/operator-theory proof-adversarial review — PASS
+- [x] Fresh math.AG/Weyl–Dixmier review — PASS
 - [x] Fresh Lean/build/axiom audit on the synchronized corrected freeze:
-  focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited
-  seven-declaration audit
+  `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
+  (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full
+  `lake build` (8,702 jobs), and the seven-declaration axiom audit
 - [ ] Fresh non-claims review
 - [ ] Fresh package/metadata review
 - [x] Revised PDF built twice without warnings, rendered as 11 letter-size

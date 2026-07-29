@@ -53,6 +53,10 @@ human approval:
   declarations.
 - No preferred extension, physical selection rule, exact cardinality of the
   full extension type, or exact Hamel-rank equality is claimed.
+- The current operator-theory boundary is H1-only. Exact H0/H2 deficiency
+  indices, H0/H2 essential-self-adjointness conclusions, and dual-flow
+  strong-CCR obstruction/no-go statements in older validation documents are
+  withdrawn as current theorems and remain open pending Lean.
 
 ## Related surfaces
 

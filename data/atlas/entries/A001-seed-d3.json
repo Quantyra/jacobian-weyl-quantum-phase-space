@@ -1,6 +1,6 @@
 {
   "atlas_id": "A001-seed-d3",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "mu_generic_degree": 3,
   "mu_evidence": "certified",
   "ambient_dimension": 3,
@@ -59,7 +59,7 @@
   "placeholders": {
     "poisson_lift_Phi": "G2 CERTIFIED (pilot): Phi(q,p)=(F(q), J(q)^{-T} p); B polynomial; Poisson brackets on generators dual-CAS; non-injectivity lift; mu(Phi)=3 partial fiberwise. See docs/validation/G2-poisson-A001-dossier.md and data/anchor/Phi_A001_seed_d3.json",
     "weyl_formula": "G3 CERTIFIED: Q=F(q), P=B(q)p, B=J^{-T}; [Q,Q]=0,[P,P]=0,[Q,P]=I on poly Weyl (hbar=1). See docs/validation/G3-weyl-A001-dossier.md and data/anchor/psi_weyl_A001.json",
-    "star_domain_status": "G4: X_1 incomplete PROVED (explicit curve T=1/2 through (1,0,0)); P_1^sym=-i X_1 not ESS on C_c^infty PROVED. Deficiency indices open (max n_pm >= 1). P_0/P_2 ESS open. No channel/gate."
+    "star_domain_status": "CURRENT H1-ONLY LEAN BOUNDARY at b51b67d03515d44e1cb1309cf8721a7ecf7803b2: H_1=-i X_1 is not essentially self-adjoint; both closed adjoint eigenspaces have Hilbert-basis cardinal aleph0; all SelfAdjointExtension H_X1_min witnesses are classified by complex-linear isometric equivalences between the deficiency spaces; unitary complex phases inject into distinct witnesses. H_0/H_2 deficiency and ESS status are open/not Lean-backed. Dual-flow strong CCR is open/not Lean-backed. No channel/gate/physical selection."
   },
   "poisson_lift": {
     "status": "certified_pilot",
@@ -72,17 +72,13 @@
     "mu_Phi": 3,
     "mu_Phi_evidence": "partial_fiberwise_from_mu_F"
   },
-  "evidence_level": "A_algebra_certified",
+  "evidence_level": "C_unbounded",
   "certificates": {
     "dossiers": [
       "docs/validation/D0-seed-validation-dossier.md",
       "docs/validation/G2-poisson-A001-dossier.md",
       "docs/validation/G3-weyl-A001-dossier.md",
-      "docs/validation/G4-domains-CCR-A001-dossier.md",
-      "docs/validation/G5-completion-degree-A001-dossier.md",
-      "docs/validation/G6-CP-dilation-A001-dossier.md",
-      "docs/validation/G7-semigroup-index-A001-dossier.md",
-      "docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md"
+      "docs/notes/A001-arxiv.pdf"
     ],
     "cas_reports": [
       "data/anchor/cas_sympy_report.json",
@@ -94,15 +90,21 @@
     ],
     "lean": {
       "repo": "https://github.com/Quantyra/exotic-ccr-lean",
-      "release": "v0.1.1",
+      "freeze": "b51b67d03515d44e1cb1309cf8721a7ecf7803b2",
+      "release": "untagged_unreleased",
       "theorems": [
         "ExoticCCR.jacobianDet_F",
         "ExoticCCR.evalMap_F_p0",
         "ExoticCCR.evalMap_F_p1",
         "ExoticCCR.evalMap_F_p2",
-        "ExoticCCR.not_injective_unit_jacobian"
+        "ExoticCCR.not_injective_unit_jacobian",
+        "ExoticCCR.theoremE",
+        "ExoticCCR.theoremF",
+        "ExoticCCR.hilbertDeficiencyIndex_X1_eq_aleph0",
+        "ExoticCCR.theoremFVonNeumannClassification",
+        "ExoticCCR.theoremFUnitPhaseExtension_injective"
       ],
-      "status": "certified_seed_config_only_not_Phi"
+      "status": "current_H1_only_freeze_untagged_unreleased"
     },
     "literature": [
       "docs/literature/jacobian-counterexample-ulam-2026-07-20.pdf",
@@ -111,7 +113,9 @@
   },
   "composition_notes": "Base factor for Cor 5.3 family (Thm 5.2). Composites/iterates not registered in bootstrap. Cotangent lift Phi registered under poisson_lift.",
   "non_claims": [
-    "G3 poly Weyl only; G4 ESS not theorem",
+    "H1 operator results only at Lean b51b67d; H0/H2 deficiency and ESS remain open",
+    "Dual-flow strong CCR remains open and is not Lean-backed",
+    "Displayed Weyl endomorphism nonautomorphy/non-surjectivity is not established",
     "No physical reversible symmetry claim",
     "No channel/gate/advantage",
     "No factory-false as Quantyra theorem",
@@ -128,7 +132,8 @@
     ],
     "div_B_rows_zero": true
   },
-  "gates_G4_G7": {
+  "historical_gates_G4_G7": {
+    "status": "superseded_historical_routing_not_current_theorem_or_publication_evidence",
     "G4": "docs/validation/G4-domains-CCR-A001-dossier.md",
     "G5": "docs/validation/G5-completion-degree-A001-dossier.md",
     "G6": "docs/validation/G6-CP-dilation-A001-dossier.md",
@@ -139,18 +144,16 @@
     "G4_X1": "docs/validation/G4-X1-incompleteness.md"
   },
   "program_b": {
-    "b_incomplete": "fail",
-    "b_ess": "fail",
-    "b_def": "H1=(inf,inf); H0/H2 companion notes only",
-    "b_ccr": "fail",
-    "b_cp": "fail",
+    "b_incomplete": "open",
+    "b_ess": "open",
+    "b_def": "H1 Hilbert indices=(aleph0,aleph0) and full specialized extension classification at Lean b51b67d; H0/H2 open/not Lean-backed",
+    "b_ccr": "open",
+    "b_cp": "open",
     "evidence": [
       "docs/validation/PROGRAM-B-B1-structural-lemma.md",
       "docs/notes/A001-arxiv.pdf",
-      "docs/validation/G4-Xj-incompleteness.md",
-      "docs/validation/PROGRAM-C-C1c-obstruction.md",
-      "docs/validation/PROGRAM-C-GenCP.md",
-      "C0-star and Bogoliubov and C0-compatible CP NO-GO; GenCP-Alg construct; GenCP-Free OPEN"
+      "Lean freeze b51b67d03515d44e1cb1309cf8721a7ecf7803b2",
+      "Historical G4/H0/H2/strong-CCR dossiers are superseded and not current evidence"
     ]
   }
 }

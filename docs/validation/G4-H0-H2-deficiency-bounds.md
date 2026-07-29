@@ -1,7 +1,15 @@
 # G4 Deficiency indices for \(H_0\) and \(H_2\) (A001)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> The exact \(H_0,H_2\) pairs and all resulting self-adjointness conclusions
+> below are not Lean-backed at the current publication freeze. They are
+> withdrawn as current theorems and must not be cited, copied into metadata, or
+> used for publication review. H0/H2 deficiency and ESS status remain open
+> pending Lean. Current boundary: `README.md`, `INTEGRITY.md`, and
+> `docs/notes/A001-arxiv.tex`.
+
 **Date:** 2026-07-21  
-**Status:** **Pairs sharpened** — \(H_0:\ (n_+,n_-)=(\infty,0)\); \(H_2:\ (n_+,n_-)=(0,\infty)\) on the dual-flow models below  
+**Historical status (withdrawn):** “Pairs sharpened” on the paper-only dual-flow models below
 **Conventions:** \(n_+=\dim\ker(H^*-i)\), \(n_-=\dim\ker(H^*+i)\).  
 **Non-claims:** no gates; no preferred extensions; these pairs are for the dual-field operators on \(L^2(\mathbb{R}^3)\), not a joint CCR package.
 

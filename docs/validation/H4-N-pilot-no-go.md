@@ -1,5 +1,11 @@
 # H4-N pilot: nonregular CCR — \(F\)-supported spectral covariance no-go
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This no-go belongs to the historical dual-flow obstruction cascade and is
+> not Lean-backed at the current publication freeze. It must not be used as
+> current theorem or publication evidence. Dual-flow strong CCR remains open
+> pending Lean.
+
 **Date:** 2026-07-21  
 **Class:** H4-N (nonregular representation)  
 **Status:** **NO-GO** under \(F\)-supported spectral axioms below  

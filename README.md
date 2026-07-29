@@ -2,7 +2,7 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** targeted claim-boundary revision in progress; fresh technical re-gate required before Dan approval
+**Scientific status:** Lean/build and math.FA/math.AG gates PASS; final non-claims and package/metadata re-gates pending before Dan approval
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -51,11 +51,15 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
 The synchronized freeze includes theorem sources, documentation, recorded
 strict cache/build provenance, and an executable headline-theorem axiom audit.
-Those records report successful focused Theorem C and Theorem C Weyl builds,
-a full 8,702-job build, and the inherited executable axiom audit at the pinned
-SHA.
-The present wording/metadata revision requires a fresh technical re-gate
-before the candidate returns to Dan for approval.
+`PUBLICATION_PROVENANCE.md` records the focused
+`TheoremFPlusITransport` build (8,684 jobs), focused
+`TheoremFExtensionMultiplicity` build (8,692 jobs), full `lake build`
+(8,702 jobs), and the seven-declaration executable axiom audit at the pinned
+SHA. Later focused Theorem C / Theorem C Weyl checks are implementation checks,
+not the publication-freeze build provenance summarized here.
+Lean/build and math.FA/math.AG review gates PASS. The present claim-boundary
+cleanup still requires fresh non-claims and package/metadata re-gates before
+the candidate returns to Dan for approval.
 
 At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.
@@ -99,7 +103,7 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 | G0 seed | certified | [D0 seed dossier](docs/validation/D0-seed-validation-dossier.md) |
 | G2 Poisson | certified | [G2 dossier](docs/validation/G2-poisson-A001-dossier.md) |
 | G3 Weyl | certified | [G3 dossier](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(H=-iX_1\) | theorem surface proved; revised package re-gate pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
+| G4 \(H=-iX_1\) | theorem surface proved; Lean/build and math reviews PASS; non-claims/package re-gates pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
 
 ## Citation and release status
 

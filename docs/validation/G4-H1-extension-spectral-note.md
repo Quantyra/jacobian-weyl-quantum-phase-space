@@ -1,5 +1,11 @@
 # G4 \(H_1\) extension class + sample spectral note (A001)
 
+> **PARTIALLY SUPERSEDED — CURRENT H1 CLASSIFICATION IS LEAN b51b67d.**
+> H1 results may be cited only through the current README/paper/Lean anchors.
+> The H0/H2 and joint-CCR conclusions retained below are historical,
+> withdrawn, and not publication evidence. H0/H2 and dual-flow strong CCR
+> remain open pending Lean.
+
 **Date:** 2026-07-21  
 **Status:** **Concrete product extension class** + model spectrum  
 **Input:** \((n_+,n_-)=(\infty,\infty)\); taxonomy in `G4-H1-extension-taxonomy.md`

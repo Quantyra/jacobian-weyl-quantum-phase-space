@@ -185,13 +185,16 @@ or Dan approval is recorded.
 The synchronized Lean freeze is now
 `b51b67d03515d44e1cb1309cf8721a7ecf7803b2`. It contains all Round 9
 declaration/API repairs plus the final Theorem C coverage-comment and
-historical-backlog supersession repair. Focused `TheoremC` and
-`TheoremCWeyl` builds and the full 8,702-job aggregate pass are recorded.
+historical-backlog supersession repair. `PUBLICATION_PROVENANCE.md` records
+focused `TheoremFPlusITransport` (8,684 jobs), focused
+`TheoremFExtensionMultiplicity` (8,692 jobs), the full 8,702-job build, and
+the seven-declaration axiom audit. Later focused `TheoremC` and
+`TheoremCWeyl` checks are separate implementation checks.
 The Round 9 Lean pin and PDF hash above are retained only as dated historical
 evidence and are superseded by this Round 10 package.
 The Round 10 PDF SHA-256 is
 `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`.
 
-Fresh math.FA, math.AG/Weyl, non-claims, and package/metadata re-gates remain
-pending before Dan approval. No tag, release, DOI minting, arXiv submission,
-or Dan approval is recorded.
+Lean/build and math.FA/math.AG/Weyl gates are COMPLETE/PASS. Fresh non-claims
+and package/metadata re-gates remain pending before Dan approval. No tag,
+release, DOI minting, arXiv submission, or Dan approval is recorded.

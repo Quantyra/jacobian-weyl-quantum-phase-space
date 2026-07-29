@@ -1,5 +1,10 @@
 # Program B — Classification charter (encore)
 
+> **HISTORICAL CHARTER NOTE.**
+> The “after A001 dual-flow no-go” parent framing below is superseded. The
+> dual-flow strong-CCR no-go and H0/H2 operator conclusions remain open pending
+> Lean and are not premises for current publication claims.
+
 **Date:** 2026-07-21  
 **Status:** **OPEN** (parallel to wind-down publish)  
 **Parent:** EXOTIC-CCR after A001 dual-flow no-go  

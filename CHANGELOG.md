@@ -23,8 +23,11 @@
   provenance; fresh technical re-gating is required after this revision.
 - Repinned the full science package to synchronized, untagged Lean freeze
   `b51b67d03515d44e1cb1309cf8721a7ecf7803b2`; its repository provenance
-  records focused Theorem C and Theorem C Weyl builds, a full 8,702-job build,
-  and the inherited executable publication axiom audit.
+  records focused `TheoremFPlusITransport` (8,684 jobs) and
+  `TheoremFExtensionMultiplicity` (8,692 jobs) builds, the full 8,702-job
+  build, and the seven-declaration executable publication axiom audit. Later
+  focused Theorem C / Theorem C Weyl checks are separate implementation
+  checks, not this publication-freeze provenance.
 - Added the Lean-proved injective unit-phase family of distinct
   `SelfAdjointExtension H_X1_min` witnesses. Together with the classical
   cardinality of the complex unit circle, this gives a continuum-sized lower

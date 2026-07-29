@@ -5,11 +5,11 @@
 | Field | Value |
 |---|---|
 | Proposed paper package | `0.3.9-referee-revision` |
-| Git tag/release | **none; fresh technical re-gates precede Dan approval** |
+| Git tag/release | **none; non-claims and package/metadata re-gates precede Dan approval** |
 | arXiv identifier | none |
 | Synchronized Lean freeze | `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean cache/build/axiom provenance | recorded focused Theorem C/Theorem C Weyl builds, full 8,702 jobs, and inherited seven-declaration audit |
+| Lean cache/build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), seven-declaration axiom audit |
 | New version DOI | **none; do not predict** |
 | Existing concept DOI | `10.5281/zenodo.21474351` (project-level) |
 | Existing v0.3.3 version DOI | `10.5281/zenodo.21478679` (do not relabel) |
@@ -27,8 +27,10 @@ witnesses. The continuum-sized lower-family conclusion additionally uses the
 classical cardinality of the complex unit circle; that cardinal identification
 is not one of the cited Lean declarations.
 
-The corrected Lean/build/audit is recorded. Fresh math.FA, math.AG/Weyl,
-non-claims, and package/metadata re-gates remain pending, followed by Dan
-approval. Do not create a tag, release, Zenodo version, or arXiv submission
-until all those gates close.
+The corrected Lean/build/audit and math.FA/math.AG/Weyl gates are
+COMPLETE/PASS. Fresh non-claims and package/metadata re-gates remain pending,
+followed by Dan approval. Later focused Theorem C / Theorem C Weyl checks are
+separate implementation checks, not the publication-freeze provenance above.
+Do not create a tag, release, Zenodo version, or arXiv submission until all
+remaining gates close.
 Do not cite the v0.2.2 pair or v0.3.0 interior-indicator proof.

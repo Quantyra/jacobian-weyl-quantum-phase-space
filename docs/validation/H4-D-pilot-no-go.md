@@ -1,5 +1,10 @@
 # H4-D pilot: dilation — dual \(F\)-translation no-go (conditional)
 
+> **SUPERSEDED / WITHDRAWN — HISTORICAL RECORD ONLY.**
+> This conditional no-go depends on the unformalized dual-flow strong-CCR
+> obstruction and is withdrawn as a current theorem. It must not be used as
+> publication evidence. Dual-flow strong CCR remains open pending Lean.
+
 **Date:** 2026-07-21  
 **Class:** H4-D (dilation / correspondence)  
 **Status:** **NO-GO under strengthened axioms** (corollary of dual-flow obstruction)  
