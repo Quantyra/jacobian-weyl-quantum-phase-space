@@ -23,12 +23,13 @@ CCR, or rank-three Dixmier claim is made.
 
 **Candidate PDF:** `docs/notes/A001-arxiv.pdf`
 (`v0.3.9-referee-revision`, proposed and untagged)
-**PDF SHA-256:** `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
+**PDF SHA-256:** `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
 **Tag/release/arXiv identifier:** none
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
 The synchronized Lean publication freeze is
-`fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged and unreleased);
+`2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged and unreleased;
+provenance-only successor to `fbcdd034`);
 `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
 (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), the full
 8,702-job `lake build`, and the nine-declaration axiom audit. The earlier

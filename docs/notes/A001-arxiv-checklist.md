@@ -1,11 +1,13 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — Lean/build and math.FA/math.AG gates PASS;
-fresh non-claims and package/metadata re-gates returned REVISE on current
-Program C/C001 and Lean-provenance surfaces. A001 theorem claims are unchanged.
+**Status:** SCIENTIFIC REVISION — Lean/build and math.FA/math.AG gates PASS.
+Fresh review returned REVISE on the predecessor Program C/C001 and
+Lean-provenance surfaces; the corrective local successor is prepared with
+A001 theorem claims unchanged, and fresh non-claims/package re-gating remains
+pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
-PDF SHA-256: `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
+PDF SHA-256: `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
@@ -69,7 +71,8 @@ Scope: **specific canonical \(H=-iX_1\) only**
 ## Lean boundary
 
 - Synchronized publication freeze:
-  `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged, unreleased).
+  `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased;
+  provenance-only successor to `fbcdd034`, theorem/audit source unchanged).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.

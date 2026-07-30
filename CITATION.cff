@@ -25,8 +25,9 @@ abstract: >-
   indices n_+=n_-=aleph0. The revised main proof constructs the minus-i
   family from a forward maximal sheet and obtains the plus-i family through
   the measure-preserving sign involution. The synchronized Lean publication
-  freeze is fbcdd0345d2f2540cd537204be2178ae07e18a5e; it is untagged and
-  unreleased. The historical theorem-source root is
+  freeze is 2e40c4cab86a1ef97cb3334497d10081dfe33867; it is untagged and
+  unreleased. It is a provenance-only successor to fbcdd034; theorem and
+  audit source are unchanged. The historical theorem-source root is
   ff50f4a2a312591c2e5b26e71eb390ade9164b34. PUBLICATION_PROVENANCE.md records
   focused TheoremFPlusITransport (8,684 jobs) and
   TheoremFExtensionMultiplicity (8,692 jobs) builds, the full 8,702-job Lean

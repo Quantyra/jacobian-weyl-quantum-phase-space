@@ -1,6 +1,7 @@
 # G4 \(H_1\) extension class + sample spectral note (A001)
 
-> **PARTIALLY SUPERSEDED — CURRENT H1 CLASSIFICATION IS LEAN fbcdd034.**
+> **PARTIALLY SUPERSEDED — CURRENT H1 CLASSIFICATION IS LEAN 2e40c4c
+> (PROVENANCE-ONLY SUCCESSOR TO fbcdd034; THEOREM/AUDIT SOURCE UNCHANGED).**
 > H1 results may be cited only through the current README/paper/Lean anchors.
 > The H0/H2 and joint-CCR conclusions retained below are historical,
 > withdrawn, and not publication evidence. H0/H2 and dual-flow strong CCR

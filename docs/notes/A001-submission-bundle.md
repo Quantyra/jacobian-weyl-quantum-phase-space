@@ -4,13 +4,14 @@ This is a local scientific-revision candidate, not a public freeze.
 
 - PDF: `docs/notes/A001-arxiv.pdf`
 - PDF SHA-256:
-  `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
+  `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
 - TeX: `docs/notes/A001-arxiv.tex`
 - Tag/release/arXiv identifier/new version DOI: none
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not
   identify this candidate)
 - Synchronized Lean freeze:
-  `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged, unreleased)
+  `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased;
+  provenance-only successor to `fbcdd034`)
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`
 - Lean cache/build/axiom provenance: `PUBLICATION_PROVENANCE.md` records

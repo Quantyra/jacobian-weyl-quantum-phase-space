@@ -11,7 +11,7 @@
 | Paper candidate | `v0.3.9-referee-revision` (proposed, untagged) |
 | Tag/release/arXiv ID | none |
 | Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
-| Lean/build/axiom | PASS at `fbcdd0345d2f2540cd537204be2178ae07e18a5e`: focused 8,684/8,692 jobs, full 8,702 jobs, nine-declaration audit |
+| Lean/build/axiom | PASS; synchronized provenance-only successor `2e40c4cab86a1ef97cb3334497d10081dfe33867` retains the unchanged theorem/audit source from `fbcdd034`: focused 8,684/8,692 jobs, full 8,702 jobs, nine-declaration audit |
 | Technical re-gates | math.FA and math.AG/Weyl PASS; fresh non-claims pending |
 | Package/metadata recheck | pending |
 | Dan approval | pending after technical gates |

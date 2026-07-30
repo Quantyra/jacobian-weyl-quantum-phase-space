@@ -7,7 +7,7 @@
 | Proposed paper package | `0.3.9-referee-revision` |
 | Git tag/release | **none; non-claims and package/metadata re-gates precede Dan approval** |
 | arXiv identifier | none |
-| Synchronized Lean freeze | `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged, unreleased) |
+| Synchronized Lean freeze | `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased; provenance-only successor to `fbcdd034`) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
 | Lean cache/build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), nine-declaration axiom audit |
 | New version DOI | **none; do not predict** |

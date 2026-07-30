@@ -2,10 +2,11 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** A001 Lean/build and math.FA/math.AG gates PASS; fresh
+**Scientific status:** A001 Lean/build and math.FA/math.AG gates PASS. Fresh
 external review found a Program C/C001 normal-CP error and a Lean-provenance
-status error. The A001 theorem claims are unchanged, but publication remains
-blocked pending correction and re-gating before Dan approval.
+status error; both are corrected in the current local successor without
+changing A001 theorem claims. Publication remains blocked pending fresh
+non-claims/package re-gating and Dan approval.
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -48,7 +49,9 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 - Released Theorem E milestone: tag `v0.1.8-theorem-e` targets `be4f330`;
   `a6bb091` is its reviewed theorem-source anchor.
 - Synchronized Lean publication freeze:
-  `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged and unreleased).
+  `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged and unreleased).
+  This is a provenance-only successor to `fbcdd034`; theorem and audit source
+  are unchanged.
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 

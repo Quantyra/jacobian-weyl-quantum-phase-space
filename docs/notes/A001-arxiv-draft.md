@@ -26,7 +26,7 @@ software_doi_concept: "10.5281/zenodo.21474351"
 software_doi_version: "none-v0.3.9-referee-revision-untagged"
 repo: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 lean_companion: "https://github.com/Quantyra/exotic-ccr-lean"
-claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex at Lean freeze fbcdd0345d2f2540cd537204be2178ae07e18a5e; Lean/build and math.FA/math.AG/Weyl gates PASS, while non-claims and package/metadata re-gates remain pending before Dan approval."
+claims_freeze: "Historical drafting notebook only. Canonical v0.3.9-referee-revision source is A001-arxiv.tex at Lean freeze 2e40c4cab86a1ef97cb3334497d10081dfe33867 (provenance-only successor to fbcdd034; theorem/audit source unchanged); Lean/build and math.FA/math.AG/Weyl gates PASS, while non-claims and package/metadata re-gates remain pending before Dan approval."
 ---
 
 # Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator
@@ -88,7 +88,7 @@ Jacobian conjecture background: Keller [4], Bass--Connell--Wright [3]. Cotangent
 ### 1.4 Evidence layers
 - **Lean-proved:** Theorem A seed identities [6], plus the bounded
   canonical-core Theorems E--F at synchronized freeze
-  `fbcdd0345d2f2540cd537204be2178ae07e18a5e`. For the specific canonical
+  `2e40c4cab86a1ef97cb3334497d10081dfe33867`. For the specific canonical
   minimal operator `H_X1_min`, Lean proves a bijective von Neumann
   classification of all `SelfAdjointExtension H_X1_min` witnesses
   (self-adjoint `LinearPMap`s extending `H_X1_min`) by complex-linear
@@ -493,7 +493,7 @@ This work is part of the Quantyra Inc. EXOTIC-CCR research program. Reproducible
 [3] H. Bass, E. H. Connell, and D. Wright, *The Jacobian conjecture: reduction of degree and formal expansion of the inverse*, Bull. Amer. Math. Soc. (N.S.) **7** (1982), 287--330.  
 [4] O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939), 299--306.  
 [5] D. E. Fredriksen, *EXOTIC-CCR A001 software artifact*, Zenodo (2026), concept DOI [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351); version DOI [10.5281/zenodo.21478679](https://doi.org/10.5281/zenodo.21478679) (v0.3.3); GitHub https://github.com/Quantyra/jacobian-weyl-quantum-phase-space.  
-[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean (`ExoticCCR.theoremF`, `aleph0_le_hamelDeficiencyRank_X1`, `hilbertDeficiencyIndex_X1_eq_aleph0`, `theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and `theoremFUnitPhaseExtension_injective`, synchronized untagged freeze `fbcdd0345d2f2540cd537204be2178ae07e18a5e`; historical theorem-source root `ff50f4a2a312591c2e5b26e71eb390ade9164b34`).
+[6] D. E. Fredriksen, *exotic-ccr-lean: Lean 4 Gate-0 certificates*, https://github.com/Quantyra/exotic-ccr-lean (`ExoticCCR.theoremF`, `aleph0_le_hamelDeficiencyRank_X1`, `hilbertDeficiencyIndex_X1_eq_aleph0`, `theoremFVonNeumannClassification`, `theoremFUnitPhaseExtension`, and `theoremFUnitPhaseExtension_injective`, synchronized untagged freeze `2e40c4cab86a1ef97cb3334497d10081dfe33867`; historical theorem-source root `ff50f4a2a312591c2e5b26e71eb390ade9164b34`).
 [7] Validation dossiers under `docs/validation/` in [5], especially `G4-P1-orbit-measure-deficiency.md`.  
 [8] L. Alpöge, announcement that the Jacobian conjecture is false in dimension \(3\), public post, 19--20 July 2026 (credits Fable); archived pointers in `docs/provenance/` of [5].  
 [9] M. Reed and B. Simon, *Methods of Modern Mathematical Physics I: Functional Analysis*, Academic Press, 1980.  

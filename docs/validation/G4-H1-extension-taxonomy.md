@@ -1,6 +1,7 @@
 # G4 Extension taxonomy for \(H_1=-iX_1\) (A001)
 
-> **PARTIALLY SUPERSEDED — CURRENT H1 CLASSIFICATION IS LEAN fbcdd034.**
+> **PARTIALLY SUPERSEDED — CURRENT H1 CLASSIFICATION IS LEAN 2e40c4c
+> (PROVENANCE-ONLY SUCCESSOR TO fbcdd034; THEOREM/AUDIT SOURCE UNCHANGED).**
 > Use the current README/paper and named Lean classification declarations for
 > H1. Any H0/H2 or joint-CCR implications retained below are historical and
 > not current publication evidence.

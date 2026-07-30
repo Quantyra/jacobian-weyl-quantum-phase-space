@@ -22,7 +22,8 @@
 - Replaced public internal PASS language with factual recorded-build
   provenance; fresh technical re-gating is required after this revision.
 - Repinned the full science package to synchronized, untagged Lean freeze
-  `fbcdd0345d2f2540cd537204be2178ae07e18a5e`; its repository provenance
+  `2e40c4cab86a1ef97cb3334497d10081dfe33867`, a provenance-only successor to
+  `fbcdd034` with theorem and audit source unchanged; its repository provenance
   records focused `TheoremFPlusITransport` (8,684 jobs) and
   `TheoremFExtensionMultiplicity` (8,692 jobs) builds, the full 8,702-job
   build, and the nine-declaration executable publication axiom audit. Later
