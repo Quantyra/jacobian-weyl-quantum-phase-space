@@ -1,7 +1,8 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
 **Status:** SCIENTIFIC REVISION — Lean/build and math.FA/math.AG gates PASS;
-fresh non-claims and package/metadata re-gates pending.
+fresh non-claims and package/metadata re-gates returned REVISE on current
+Program C/C001 and Lean-provenance surfaces. A001 theorem claims are unchanged.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
 PDF SHA-256: `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
@@ -100,6 +101,9 @@ asserted.
   `lake build` (8,702 jobs), and the nine-declaration axiom audit
 - [ ] Fresh non-claims review
 - [ ] Fresh package/metadata review
+- [x] Fresh external review finding triaged: J6-C withdrawn; Program C/C001
+      moved outside A001 as historical/open pending Lean
+- [ ] Re-run non-claims and package/metadata roles on the successor commits
 - [x] Revised PDF built twice without warnings, rendered as 11 letter-size
   pages, and visually inspected page by page
 - [ ] Dan approval recorded

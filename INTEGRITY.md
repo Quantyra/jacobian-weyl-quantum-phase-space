@@ -57,6 +57,12 @@ human approval:
   indices, H0/H2 essential-self-adjointness conclusions, and dual-flow
   strong-CCR obstruction/no-go statements in older validation documents are
   withdrawn as current theorems and remain open pending Lean.
+- Program C/C001 is not part of the current A001 publication package. Its
+  paper-only CP and \(C^*\)-completion material is historical and must not be
+  cited as a current theorem surface. J6-C (the claimed normal conditional
+  expectation/Diag-CP construction) is withdrawn after external review found
+  it incompatible with ultraweak continuity. The Koopman normality and
+  BT-envelope claims remain open pending Lean-backed statements and review.
 
 ## Related surfaces
 

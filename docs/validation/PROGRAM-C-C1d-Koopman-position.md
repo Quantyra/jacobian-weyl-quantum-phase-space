@@ -1,7 +1,12 @@
 # Program C — C1d: Koopman position-sector construct (Free-Strict-Abstract)
 
 **Date:** 2026-07-22  
-**Status:** **CONSTRUCT** for the position sector (normal, bounded-Borel level); joint sector refined in `PROGRAM-C-Free-Strict-Abstract-Joint.md` (J2–J6 NO-GOs on Stone/unitary-image packages; Diag-CP-Φ₀ **CONSTRUCT**; full-\(\psi\) abstract \(C^*\) **SPLIT J7**: BT-Envelope **CONSTRUCT**, CFC-SA **NO-GO**, CP-Weyl-C\* **OPEN**)  
+**Status (superseding, 2026-07-29): HISTORICAL / OPEN PENDING LEAN —
+OUTSIDE THE CURRENT A001 PUBLICATION PACKAGE.** The former generic assertion
+that a unital \(*\)-homomorphism of von Neumann algebras is automatically
+normal is false. The specific pullback's normality has not been re-established
+in Lean, so no positive normal-CP theorem is current. J6-C is withdrawn and
+the former BT-envelope construct is open pending Lean.  
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`
 
 ---
@@ -17,6 +22,10 @@
   vanishing-at-infinity requirement, so non-properness is irrelevant here.
 
 ---
+
+> **Superseding notice.** The proof and scoreboards below are retained as
+> historical evidence only. CONSTRUCT and Theorem labels do not state a
+> current publication result.
 
 ## 1. Axiom pack **Free-Strict-Abstract-Koopman**
 
@@ -57,10 +66,11 @@ diffeomorphism (in particular for the A001 seed, \(\det DF\equiv -2\neq 0\)).
 3. *Unital \(*\)-homomorphism.* \((f\circ F)^* = \bar f\circ F = \overline{f\circ F}\);
    \((fg)\circ F=(f\circ F)(g\circ F)\); \(1\circ F=1\). These are pointwise
    identities, hence hold a.e.
-4. *Normality / complete positivity.* A unital \(*\)-homomorphism between
-   von Neumann algebras is automatically normal and completely positive
-   (indeed multiplicative, the strongest CP case: \(\Phi_0(a^*a)=\Phi_0(a)^*\Phi_0(a)\)
-   trivially). \(\blacksquare\)
+4. *Withdrawn normality step.* The historical proof asserted that every
+   unital \(*\)-homomorphism between von Neumann algebras is automatically
+   normal. That general assertion is false. Complete positivity follows from
+   \(*\)-homomorphism, but the specific normality claim is left open pending
+   Lean-backed proof and review.
 
 **Corollary.** The Regular-v2 intuition (that non-surjectivity should
 obstruct something) is confirmed to be **false** at the bounded-Borel level:
@@ -105,10 +115,10 @@ and the J3 full-triple question are **OPEN pending Lean**.
 | Joint-Stone-Hom-1 (multiplicative single \(j=1\)) | **OBSTRUCT (J4)** — see `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` |
 | Joint-Stone-CP-1 (mere CP + Stone \(j=1\) + \(\Phi_0\)) | **OBSTRUCT (J5)** — see `PROGRAM-C-residual-mere-CP-Joint-Stone.md` |
 | Unitary-Image-CP-1 (unitary image of \(U(s)\), no SA link) | **OBSTRUCT (J6)** — see `PROGRAM-C-residual-CP-without-Stone.md` |
-| Diag-CP-Φ₀ (\(\Phi_0\circ E\) on joint vNa) | **CONSTRUCT (J6-C)** — same note |
+| Diag-CP-Φ₀ (\(\Phi_0\circ E\) on joint vNa) | **WITHDRAWN (J6-C invalid as stated)** |
 | Joint-Form-Core (forms on \(C_c^\infty\) + \(\Phi_0\)) | **CONSTRUCT (J4-F)** |
 | Joint-Form-ESS-1 | **OBSTRUCT (J4-E)** |
-| Full-ψ-BT-Envelope | **CONSTRUCT (J7-C)** — see `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
+| Full-ψ-BT-Envelope | **OPEN pending Lean** — former J7-C |
 | Full-ψ-CFC-SA-1 | **OBSTRUCT (J7)** — same note |
 | Full-ψ-CP-Weyl-C\* | **OPEN (J7-O)** — same note |
 
@@ -116,7 +126,8 @@ J5–J6: unital CP + unitary image of \(e^{is P_1^{\mathrm{Sch}}}\) puts those
 unitaries in the multiplicative domain, recovers dual-\(F_1\) Heisenberg
 covariance, and dies by SvN / sheet-count geometry (SA-extension-of-\(H_1\)
 inessential). Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\).
-J7 splits full-\(\psi\) abstract \(C^*\): BT-Envelope CONSTRUCT; CFC-SA NO-GO;
+Historical J7 split full-\(\psi\) abstract \(C^*\); its BT-Envelope positive
+claim is now OPEN pending Lean, while CFC-SA/other labels are historical;
 CP-Weyl-C\* OPEN.
 
 ---
@@ -128,15 +139,15 @@ CP-Weyl-C\* OPEN.
 | C0 → C0 composition (vanishing at infinity) | NO-GO |
 | Bogoliubov / quasifree CCR | NO-GO |
 | Free-Strict-Regular-v2 | WITHDRAWN (false) |
-| **Free-Strict-Abstract-Koopman (position sector)** | **CONSTRUCT** (this note) |
+| **Free-Strict-Abstract-Koopman (position sector)** | **OPEN pending Lean** |
 | Free-Strict-Abstract-Joint / **Joint-Stone-Canonical** | **NO-GO (J2)** — see `PROGRAM-C-Free-Strict-Abstract-Joint.md` |
 | Free-Strict-Abstract-Joint / full-triple Joint-Stone | **OPEN; historical J3 withdrawn pending Lean** |
 | Free-Strict-Abstract-Joint / Joint-Stone-Hom-1 | **NO-GO (J4)** |
 | Free-Strict-Abstract-Joint / Joint-Stone-CP-1 | **NO-GO (J5)** |
 | Free-Strict-Abstract-Joint / Unitary-Image-CP-1 | **NO-GO (J6)** |
-| Free-Strict-Abstract-Joint / Diag-CP-Φ₀ | **CONSTRUCT (J6-C)** |
+| Free-Strict-Abstract-Joint / Diag-CP-Φ₀ | **WITHDRAWN** |
 | Free-Strict-Abstract-Joint / Joint-Form-Core | **CONSTRUCT (J4-F)** |
-| Free-Strict-Abstract-Joint / Full-ψ-BT-Envelope | **CONSTRUCT (J7-C)** |
+| Free-Strict-Abstract-Joint / Full-ψ-BT-Envelope | **OPEN pending Lean** |
 | Free-Strict-Abstract-Joint / Full-ψ-CFC-SA-1 | **NO-GO (J7)** |
 | Free-Strict-Abstract-Joint / Full-ψ-CP-Weyl-C\* | **OPEN (J7-O)** |
 

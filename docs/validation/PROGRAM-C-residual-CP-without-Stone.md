@@ -1,7 +1,12 @@
 # Program C residual — Theorem J6: CP of Φ₀ without Stone/SA momentum
 
 **Date:** 2026-07-22  
-**Status:** **SPLIT** — pack **Unitary-Image-CP-1** = **OBSTRUCT (J6)**; pack **Diag-CP-Φ₀** = **CONSTRUCT (J6-C)**; full-\(\psi\) abstract \(C^*\) further **SPLIT by J7** (see `PROGRAM-C-residual-abstract-Cstar-full-psi.md`)  
+**Status (superseding, 2026-07-29): WITHDRAWN HISTORICAL RECORD — OUTSIDE
+THE CURRENT A001 PUBLICATION PACKAGE.** J6-C/Diag-CP-\(\Phi_0\) is withdrawn:
+the asserted normal expectation cannot send every \(U(s)\), \(s\ne0\), to
+zero while remaining ultraweakly continuous at \(s=0\). No replacement CP
+theorem is claimed. All other theorem-grade Program C statements in this
+note retain only historical/not-Lean status pending formalization and review.  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-mere-CP-Joint-Stone.md` (J5: Joint-Stone-CP-1 NO-GO)  
 **Companion:** C001 (v0.9 cites J6/J7)  
@@ -10,6 +15,12 @@
 ---
 
 ## 0. Scope
+
+> **Superseding notice.** The material below is retained to preserve the
+> historical derivation and review trail. Labels such as CONSTRUCT, Theorem,
+> OBSTRUCT, and closed refer to the former paper-only Program C campaign, not
+> to a current publication claim. In particular, do not cite Lemma J6.6 or
+> Theorem J6-C as valid.
 
 J5 closed **Joint-Stone-CP-1**: unital normal CP extending \(\Phi_0\) **plus** Stone agreement
 \[
@@ -24,7 +35,7 @@ That residual is **not** a single blob. This note names two packs and settles th
 | Pack | Axioms (sketch) | Verdict |
 |------|-----------------|---------|
 | **Unitary-Image-CP-1** | unital normal CP on \(M\), \(\Phi|_{\mathcal{B}_b(Q)}=\Phi_0\), \(\Phi(U(s))\) **unitary** for all \(s\) — **no** requirement that the generator extend \(H_1\) | **OBSTRUCT (J6)** |
-| **Diag-CP-Φ₀** | unital normal CP on \(M\) (or \(B(H)\)) extending \(\Phi_0\), built as \(\Phi_0\circ E\) for the normal conditional expectation onto positions — **no** unitary Stone image | **CONSTRUCT (J6-C)** |
+| **Diag-CP-Φ₀** | former unital normal CP claim on \(M\) | **WITHDRAWN (J6-C invalid as stated)** |
 
 **Why Unitary-Image-CP-1 is strictly weaker than Joint-Stone-CP-1.**  
 J5 requires \(\Phi(U(s))=e^{is\widetilde H_1}\) with \(\widetilde H_1\supset H_1\). J6 drops the dual-field SA link entirely: only that \(\Phi\) send Schrödinger Stone unitaries to *some* unitaries. The geometric kill still applies.
@@ -192,21 +203,24 @@ J6 does **not** rule out:
 
 ---
 
-## 6. Axiom pack **Diag-CP-Φ₀** — CONSTRUCT
+## 6. Axiom pack **Diag-CP-Φ₀** — WITHDRAWN
 
 ### 6.1 Conditional expectation onto positions
 
-**Lemma J6.6 (normal conditional expectation).**  
-There exists a faithful normal conditional expectation
+**Withdrawn Lemma J6.6 (normal conditional expectation).**  
+The historical text claimed that there exists a faithful normal conditional expectation
 \[
 E:M\to\mathcal{B}_b(Q)
 \]
 (i.e. a unital normal CP projection onto the position masa with the bimodule property \(E(axb)=a\,E(x)\,b\) for \(a,b\in\mathcal{B}_b(Q)\)).
 
-**Proof sketch.**  
-The position masa \(\mathcal{A}:=\mathcal{B}_b(Q)\cong L^\infty(\mathbb{R}^3)\) is injective (all abelian von Neumann algebras are injective). Hence a normal conditional expectation \(B(H)\to\mathcal{A}\) exists; restrict to \(M\).  
+**Withdrawn proof sketch.**  
+The historical inference from injectivity to a normal conditional expectation
+\(B(H)\to\mathcal A\) is not valid in this diffuse-masa setting.
 
-More explicitly in the crossed-product picture \(M\simeq\mathcal{A}\rtimes_\tau\mathbb{R}\) (translation action in \(q_1\)): amenability of \(\mathbb{R}\) supplies a normal conditional expectation onto the coefficient algebra \(\mathcal{A}\), characterized on a ultraweakly dense \(*\)-subalgebra of finite Fourier sums by
+The historical crossed-product argument also treated the nondiscrete
+\(\mathbb R\) zero-coefficient operation as a bounded normal conditional
+expectation, characterized by
 \[
 E\Bigl(\sum_{k=1}^N f_k(Q)\,U(s_k)\Bigr)
 =
@@ -229,8 +243,9 @@ Set
 :M\to B(H).
 \]
 
-**Theorem J6-C (Diag-CP-Φ₀ construct).**  
-\(\Phi_{\mathrm{diag}}\) is a **unital normal completely positive** map \(M\to B(H)\) such that:
+**Withdrawn Theorem J6-C (Diag-CP-Φ₀).**  
+The former claim that \(\Phi_{\mathrm{diag}}\) is a **unital normal completely
+positive** map \(M\to B(H)\) with the following properties is not current:
 
 1. \(\Phi_{\mathrm{diag}}\big|_{\mathcal{B}_b(Q)}=\Phi_0\);
 2. \(\Phi_{\mathrm{diag}}\bigl(U(s)\bigr)=0\) for all \(s\neq 0\) (hence **not** unitary — no Stone/SA momentum implementation);
@@ -244,8 +259,12 @@ Set
    \]
    i.e. Schrödinger–Heisenberg conjugates of position observables are pulled back exactly by \(\Phi_0\) (automatic for any extension of \(\Phi_0\), since \(U(s)f(Q)U(s)^*\in\mathcal{B}_b(Q)\)).
 
-**Proof.**  
-\(E\) is unital normal CP and a conditional expectation onto \(\mathcal{A}\); \(\Phi_0\) is a unital normal \(*\)-homomorphism \(\mathcal{A}\to B(H)\). Composition preserves unital normal CP. Restriction: \(E|_{\mathcal{A}}=\mathrm{id}\) so \(\Phi_{\mathrm{diag}}|_{\mathcal{A}}=\Phi_0\). Item 2 is \(E(U(s))=0\) for \(s\neq 0\). Item 3: \(U(s)f(Q)U(s)^*=f_s(Q)\in\mathcal{A}\), so
+**Withdrawal reason.**  
+For any nonzero sequence \(s_n\to0\), strong continuity gives
+\(U(s_n)\to I\) strongly and hence ultraweakly. A normal \(E\) would give
+\(E(U(s_n))\to E(I)=I\), contradicting the former rule
+\(E(U(s_n))=0\). The remainder of the historical calculation therefore
+does not establish a map:
 \[
 \Phi_{\mathrm{diag}}(f_s(Q))=\Phi_0(f_s)=(f_s\circ F)(Q).
 \]
@@ -266,11 +285,11 @@ Diag-CP-Φ₀ is a CP map on the joint vNa \(M\); Joint-Form-Core is a form-leve
 | Joint-Stone-Hom-1 | **OBSTRUCT** | J4 |
 | Joint-Stone-CP-1 | **OBSTRUCT** | J5 |
 | **Unitary-Image-CP-1** (unitary image of \(U(s)\), no SA link) | **OBSTRUCT** | **J6** |
-| **Diag-CP-Φ₀** ( \(\Phi_0\circ E\) on \(M\) ) | **CONSTRUCT** | **J6-C** |
+| **Diag-CP-Φ₀** ( \(\Phi_0\circ E\) on \(M\) ) | **WITHDRAWN** | **J6-C invalid as stated** |
 | Joint-Form-Core | **CONSTRUCT** | J4-F |
 | Joint-Form-ESS-1 | **OBSTRUCT** | J4-E |
 | Abstract \(C^*\) envelope of full \(\psi\) without Hom / unitary-image axioms | **SPLIT (J7)** | `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
-| Full-ψ-BT-Envelope | **CONSTRUCT** | J7-C |
+| Full-ψ-BT-Envelope | **OPEN pending Lean** | former J7-C |
 | Full-ψ-CFC-SA-1 (SA-CFC / unitary Cayley) | **OBSTRUCT** | J7 |
 | Full-ψ-CP-Weyl-C\* (CP from completion of \(\mathcal{W}\), no SA-CFC) | **OPEN** | J7-O |
 
@@ -279,7 +298,9 @@ The former residual “CP of \(\Phi_0\) without Stone” splits:
 
 - **unitary-image** slice on \(M\) → **closed NO-GO (J6)**;
 - **diagonal / non-unitary-image** slice on \(M\) → **closed CONSTRUCT (J6-C)**;
-- **full-\(\psi\) abstract \(C^*\)** (momenta as well as positions, no Hom/unitary-image) → further **SPLIT by J7** (BT-Envelope CONSTRUCT; CFC-SA NO-GO; CP-Weyl-C\* OPEN).
+- **full-\(\psi\) abstract \(C^*\)** (momenta as well as positions, no
+  Hom/unitary-image) → historical J7 taxonomy; positive BT-Envelope claim
+  now OPEN pending Lean.
 
 ---
 
@@ -289,7 +310,7 @@ The former residual “CP of \(\Phi_0\) without Stone” splits:
 |------|-----------|----------|
 | Joint-Stone-CP-1 | OBSTRUCT (J5) | OBSTRUCT (J5) — unchanged |
 | Unitary-Image-CP-1 | (unnamed part of residual) | **OBSTRUCT (J6)** |
-| Diag-CP-Φ₀ / Mere-CP-Ext on \(M\) | (unnamed) | **CONSTRUCT (J6-C)** |
+| Diag-CP-Φ₀ / Mere-CP-Ext on \(M\) | (unnamed) | **WITHDRAWN** |
 | CP of \(\Phi_0\) without Stone (undifferentiated) | OPEN | **SPLIT** (see §7) |
 | Abstract \(C^*\) of full \(\psi\) | OPEN | **SPLIT (J7)** |
 

@@ -1,6 +1,8 @@
 # Program C residual — Theorem J4: Joint-Stone-Hom-1 obstruction
 
 **Date:** 2026-07-22  
+**Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
+OUTSIDE A001.** The obstruction labels below are not current A001 claims.  
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-Hom-1**; mere-CP Joint-Stone-CP-1 separately **OBSTRUCT** by J5 (see sibling note)  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Companion:** C001 (v0.9 cites J4–J7)  
@@ -213,7 +215,7 @@ Joint-Form-ESS-1 fails for A001: \(H_1\) is not essentially self-adjoint on \(C_
 | Joint-Stone-Canonical | NO-GO | J2 (prior) |
 | Full-triple Joint-Stone | **OPEN** | historical J3 withdrawn pending Lean |
 | Unitary-Image-CP-1 | OBSTRUCT | J6 (`PROGRAM-C-residual-CP-without-Stone.md`) |
-| Diag-CP-Φ₀ | CONSTRUCT | J6-C |
+| Diag-CP-Φ₀ | WITHDRAWN | J6-C invalid as stated |
 | Full-\(\psi\) abstract \(C^*\) | **SPLIT (J7)** | `PROGRAM-C-residual-abstract-Cstar-full-psi.md` |
 
 ---

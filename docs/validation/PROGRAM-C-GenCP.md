@@ -1,6 +1,9 @@
 # Program C — GenCP (general unital CP) construct / obstruct
 
 **Date:** 2026-07-21  
+**Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
+OUTSIDE A001.** The former positive correspondence/CP labels are not current
+publication claims and remain open pending Lean where theorem-grade.  
 **Status:** **SPLIT** — algebraic correspondence **CONSTRUCT**; C0-compatible GenCP **NO-GO**; free GenCP **OPEN**  
 **Parent:** C1c obstruction package
 
@@ -82,16 +85,16 @@ Detail: `PROGRAM-C-GenCP-Free-progress.md`.
 | GenCP-C0-compatible CP | **NO-GO** |
 | Free CCR \*-hom | **NO-GO** |
 | Free-Strict-Regular-v2 | **WITHDRAWN** (false) |
-| Free-Strict-Abstract-Koopman (position sector) | **CONSTRUCT** (`PROGRAM-C-C1d-Koopman-position.md`) |
+| Free-Strict-Abstract-Koopman (position sector) | **OPEN pending Lean** |
 | Free-Strict-Abstract-Joint-Stone-Canonical (H1 leg) | **CONDITIONAL-OBSTRUCTION** (J2; `PROGRAM-C-Free-Strict-Abstract-Joint.md`) |
 | Free-Strict-Abstract full-triple Joint-Stone | **OPEN** (historical J3 withdrawn pending Lean-backed H0/H2 results) |
 | Free-Strict-Abstract Joint-Stone-Hom-1 | **OBSTRUCTION** (J4) |
 | Free-Strict-Abstract Joint-Stone-CP-1 | **OBSTRUCTION** (J5) |
 | Free-Strict-Abstract Unitary-Image-CP-1 | **OBSTRUCTION** (J6) |
-| Free-Strict-Abstract Diag-CP-Φ₀ | **CONSTRUCT** (J6-C) |
+| Free-Strict-Abstract Diag-CP-Φ₀ | **WITHDRAWN** |
 | Joint-Form-Core | **CONSTRUCT** |
 | Joint-Form-ESS-1 | **OBSTRUCT** |
-| Full-ψ-BT-Envelope | **CONSTRUCT** (J7-C) |
+| Full-ψ-BT-Envelope | **OPEN pending Lean** |
 | Full-ψ-CFC-SA-1 | **OBSTRUCTION** (J7) |
 | Full-ψ-CP-Weyl-C\* | **OPEN** (J7-O) |
 

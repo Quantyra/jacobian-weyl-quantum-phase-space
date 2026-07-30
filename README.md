@@ -2,7 +2,10 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** Lean/build and math.FA/math.AG gates PASS; final non-claims and package/metadata re-gates pending before Dan approval
+**Scientific status:** A001 Lean/build and math.FA/math.AG gates PASS; fresh
+external review found a Program C/C001 normal-CP error and a Lean-provenance
+status error. The A001 theorem claims are unchanged, but publication remains
+blocked pending correction and re-gating before Dan approval.
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -78,6 +81,10 @@ continuum; that cardinal identification is not part of those Lean declarations.
 ## Non-claims
 
 - No unitary quantum gate, channel, or computational advantage.
+- Program C and C001 are outside the current A001 publication package. Their
+  former positive normal-CP and \(C^*\)-completion claims are historical,
+  unformalized records, not current results. In particular, J6-C
+  (Diag-CP-\(\Phi_0\)) is withdrawn.
 - No preferred physical extension.
 - No essential-self-adjointness conclusion for the other two dual momenta.
 - No arbitrary-operator classification, exact Hamel rank, or exact cardinality
@@ -91,14 +98,14 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 
 ## Companion papers
 
-The linked local PDFs are corrected, untagged, and unreleased candidates.
-The releases in the last column are historical and do **not** identify those
-current local PDF binaries.
+B001 remains an untagged cross-companion correction. C001 is a withdrawn
+historical record outside A001. The releases in the last column are
+historical and do **not** identify the current local PDF binaries.
 
 | Paper | Current local PDF (untagged correction) | Historical release (not this PDF) |
 |---|---|---|
 | B001 classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) |
-| C001 completions | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
+| C001 completions — **WITHDRAWN historical record; outside A001** | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
 
 ## Evidence
 

@@ -1,6 +1,13 @@
 ﻿# C001 companion freeze (v0.9)
 
-> **CURRENT CLAIM-BOUNDARY CORRECTION — UNTAGGED / UNRELEASED.**
+> **SUPERSEDING STATUS (2026-07-29): WITHDRAWN / OUTSIDE A001.**
+> Fresh external review invalidated J6-C: a normal map cannot send every
+> nonzero Schrödinger mode to zero while remaining ultraweakly continuous at
+> zero. The former Koopman normality and BT-envelope positive claims are open
+> pending Lean. This marker and PDF preserve history only; no new C001 freeze
+> is authorized.
+>
+> **Historical context.**
 > The historical `v0.3.3-c001-companion` release at `45e7d53` contains the
 > now-withdrawn J3 full-triple claim. It does not identify the corrected local
 > PDF. H0/H2 and the full-triple Joint-Stone question are open pending Lean.
@@ -12,22 +19,22 @@
 **Current tag/release:** none
 **Historical tag:** `v0.3.3-c001-companion` @ `45e7d53` (do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `346cbaa0be5150d3000238785a868d968c4a140e9155c66b164c4ae4184fc425`
+**Current PDF SHA-256:** `63e5809bfe2e1b93455cb700e43133511c0e238e6754bc4fb4c50a68e8a9a0d4`
 **Pack:** COMPANION-PACK.md  
 
 ## Scoreboard
 | Item | Status |
 |------|--------|
-| Koopman position-sector CP | CONSTRUCT |
+| Koopman position-sector CP | **OPEN pending Lean** |
 | Joint-Stone-Canonical (J2) | NO-GO |
 | Full-triple Joint-Stone (historical J3) | **OPEN; J3 withdrawn pending Lean-backed H0/H2 results** |
 | Joint-Stone-Hom-1 (J4) | NO-GO |
 | Joint-Stone-CP-1 (J5) | NO-GO |
 | Unitary-Image-CP-1 (J6) | NO-GO |
-| Diag-CP-Φ₀ (J6-C) | CONSTRUCT |
+| Diag-CP-Φ₀ (J6-C) | **WITHDRAWN — invalid as stated** |
 | Joint-Form-Core | CONSTRUCT |
 | Joint-Form-ESS-1 | OBSTRUCT |
-| **Full-ψ-BT-Envelope (J7-C)** — bounded dual-momentum transforms + Φ₀ positions; form-level only; **not** Full-ψ-CFC / **not** Weyl-C* / **not** Stinespring | **CONSTRUCT** |
+| **Full-ψ-BT-Envelope (J7-C)** — bounded dual-momentum transforms + Φ₀ positions; form-level only; **not** Full-ψ-CFC / **not** Weyl-C* / **not** Stinespring | **OPEN pending Lean** |
 | **Full-ψ-CFC-SA-1 (J7)** — reduces to J6 on same joint vNa + normal CP | **NO-GO** |
 | Full-ψ-CP-Weyl-C\* (J7-O) | OPEN (narrowed) |
 
@@ -42,5 +49,5 @@
 - **Historical v0.9 Aggregate PASS** at `45e7d53`
   (`v0.3.3-c001-companion`): retained only as release history; it does not
   approve the current J3-withdrawal correction.
-- **Current correction gates:** fresh non-claims and package/metadata review
-  pending; no tag, release, or DOI action authorized.
+- **Current status:** withdrawn historical record; no tag, release, DOI, or
+  citation action authorized.

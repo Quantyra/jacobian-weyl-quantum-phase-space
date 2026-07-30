@@ -1,7 +1,11 @@
 # GenCP-Free progress (post-J7)
 
 **Date:** 2026-07-22  
-**Position sector:** Koopman \(\Phi_0\) **CONSTRUCT** (C1d).  
-**Joint:** J2 Canonical NO-GO (H1 only); historical J3 full-triple claim **WITHDRAWN / OPEN pending Lean**; **J4 Hom-1 NO-GO**; **J5 CP-1 NO-GO**; **J6 Unitary-Image-CP-1 NO-GO**; **J6-C Diag-CP-Φ₀ CONSTRUCT**; Joint-Form-Core **CONSTRUCT**; Joint-Form-ESS-1 **OBSTRUCT**.
-**Full-\(\psi\) abstract \(C^*\):** **J7-C** Full-ψ-BT-Envelope **CONSTRUCT**; **J7** Full-ψ-CFC-SA-1 **NO-GO**; **J7-O** Full-ψ-CP-Weyl-C\* **OPEN** (narrowed).  
+**Superseding status (2026-07-29): WITHDRAWN HISTORICAL SCOREBOARD —
+OUTSIDE A001.** J6-C is invalid as stated; former positive
+Koopman/BT-envelope claims are open pending Lean. All labels below are
+historical/not-Lean.  
+**Position sector:** former Koopman \(\Phi_0\) claim **OPEN pending Lean**.  
+**Joint:** historical taxonomy only; **J6-C Diag-CP-Φ₀ WITHDRAWN**.
+**Full-\(\psi\) abstract \(C^*\):** former J7-C BT-envelope claim **OPEN pending Lean**.  
 **Detail:** `PROGRAM-C-GenCP-Free-Strict.md`, `PROGRAM-C-Free-Strict-Abstract-Joint.md`, `PROGRAM-C-residual-J4-Joint-Stone-Hom.md`, `PROGRAM-C-residual-mere-CP-Joint-Stone.md`, `PROGRAM-C-residual-CP-without-Stone.md`, `PROGRAM-C-residual-abstract-Cstar-full-psi.md` · C001 **v0.9**

@@ -1,6 +1,11 @@
 ﻿# B001 draft v0.7
 
-> **CURRENT CROSS-COMPANION CORRECTION — UNTAGGED / UNRELEASED.**
+> **SUPERSEDING CROSS-COMPANION NOTICE (2026-07-29).**
+> C001/Program C is now a withdrawn historical record outside A001. J6-C is
+> invalid as stated; its positive Koopman/BT-envelope companion claims are
+> open pending Lean. Any older C001 summary below is historical only.
+>
+> **Historical B001 correction context.**
 > The B001 mathematics is unchanged. This local candidate only updates its
 > C001 status summary to withdraw historical J3 and leave H0/H2 open pending
 > Lean. The historical `v0.2.3-b001-draft` release remains immutable and does
@@ -12,10 +17,12 @@
 **Current tag/release:** none
 **Historical tag:** `v0.2.3-b001-draft` @ `45e7d53` (prior `v0.2.2` @ `61bf3da` package-superseded; do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `06502e13235d65582985e5afb927af56996494340ae1f511cfc665e98ddf95f2`
+**Current PDF SHA-256:** `db0f39adc4537ae8d8f789664d296b69bf2876c2adbb3054e7ff975007abab32`
 **Pack:** COMPANION-PACK.md  
 **A001:** proposed v0.3.9 untagged/unreleased with no version DOI; current non-claims and package/metadata re-gates pending, then Dan approval and endorsement/publication actions remain
-**C:** C001 v0.9 claim-boundary correction; J2 NO-GO (H1 only); historical J3 full-triple claim **WITHDRAWN / OPEN pending Lean**; J4–J7 split; Diag-CP-Φ₀ CONSTRUCT; Full-ψ-BT-Envelope (bounded dual-momentum transforms + Φ₀ positions; form-level; **not** CFC / **not** Weyl-C* / **not** Stinespring) CONSTRUCT; Full-ψ-CFC-SA-1 OBSTRUCT via J6; Full-ψ-CP-Weyl-C* OPEN (narrow)
+**C:** C001/Program C withdrawn as a current theorem surface; J6-C invalid
+as stated; former positive Koopman/BT-envelope claims open pending Lean;
+remaining labels historical/not-Lean and outside A001
 **Dichotomy:** full poly thin-vs-open still conjecture; regime T excluded on proper/injective/deg-1/product/triangular/**graph-type / deg P≤2** (as global \(C^\infty\) diffeos / E); residual **OPEN-T** (non-coordinate deg≥3, Bad on atypical/bifurcation-born fibers)
 
 ## B7

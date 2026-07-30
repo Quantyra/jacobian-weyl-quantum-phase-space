@@ -1,6 +1,9 @@
 # GenCP Free-Strict — status after J7
 
 **Date:** 2026-07-22  
+**Superseding status (2026-07-29): WITHDRAWN HISTORICAL SCOREBOARD —
+OUTSIDE A001.** J6-C is invalid as stated; former positive CP/\(C^*\)
+constructs are open pending Lean.  
 **Status:** Regular-v2 **WITHDRAWN**; J2–J7 as below; Full-ψ-CP-Weyl-C\* residual **OPEN (J7-O)**
 
 ## Withdrawn
@@ -12,16 +15,16 @@
 | C0 → C0 composition \*-homo | NO-GO |
 | Bogoliubov / quasifree | NO-GO |
 | Algebraic \*-SOS + correspondence | PASS / CONSTRUCT |
-| Koopman position sector | CONSTRUCT |
+| Koopman position sector | OPEN pending Lean |
 | Joint-Stone-Canonical | NO-GO (J2) |
 | Full-triple Joint-Stone | **OPEN** (historical J3 withdrawn pending Lean) |
 | Joint-Stone-Hom-1 | NO-GO (J4) |
 | Joint-Stone-CP-1 | NO-GO (J5) |
 | Unitary-Image-CP-1 | NO-GO (J6) |
-| Diag-CP-Φ₀ | CONSTRUCT (J6-C) |
+| Diag-CP-Φ₀ | WITHDRAWN |
 | Joint-Form-Core | CONSTRUCT |
 | Joint-Form-ESS-1 | OBSTRUCT |
-| Full-ψ-BT-Envelope | CONSTRUCT (J7-C) |
+| Full-ψ-BT-Envelope | OPEN pending Lean |
 | Full-ψ-CFC-SA-1 / Cayley-Unitary-1 | NO-GO (J7) |
 
 ## Open

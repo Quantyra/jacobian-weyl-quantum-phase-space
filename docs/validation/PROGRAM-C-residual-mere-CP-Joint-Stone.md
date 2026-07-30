@@ -1,6 +1,8 @@
 # Program C residual — Theorem J5: Joint-Stone-CP-1 obstruction
 
 **Date:** 2026-07-22  
+**Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
+OUTSIDE A001.** The obstruction labels below are not current A001 claims.  
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-CP-1** (mere unital normal CP + choice-dependent Stone for \(j=1\))  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-J4-Joint-Stone-Hom.md` (Hom pack NO-GO; left mere-CP open)  
@@ -209,10 +211,11 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 | Joint-Form-Core | **CONSTRUCT** | J4-F |
 | Joint-Form-ESS-1 | **OBSTRUCT** | J4-E |
 | Unitary-Image-CP-1 (no SA link) | **OBSTRUCT** | **J6** (`PROGRAM-C-residual-CP-without-Stone.md`) |
-| Diag-CP-Φ₀ | **CONSTRUCT** | **J6-C** |
+| Diag-CP-Φ₀ | **WITHDRAWN** | **J6-C invalid as stated** |
 | Abstract \(C^*\) envelope of full \(\psi\) without Hom/unitary-image | **OPEN** | GenCP charter |
 
-**Reading.** The former residual (A) — “mere-CP choice-dependent Joint-Stone” — is **closed** as NO-GO. The non-Stone residual is further split by J6/J6-C (Unitary-Image NO-GO; Diag-CP CONSTRUCT); full-\(\psi\) abstract \(C^*\) is further **SPLIT by J7** (BT-Envelope CONSTRUCT; CFC-SA NO-GO; CP-Weyl-C\* OPEN).
+**Historical reading.** The former taxonomy is superseded: J6-C is
+withdrawn, and the BT-envelope positive claim is open pending Lean.
 
 ---
 
@@ -223,7 +226,7 @@ J5 uses unitality, complete positivity (Kadison–Schwarz / multiplicative domai
 | Joint-Stone-CP-1 | OPEN | **OBSTRUCT (J5)** | OBSTRUCT (J5) |
 | Joint-Stone-Hom-1 | OBSTRUCT (J4) | OBSTRUCT (J4) | OBSTRUCT (J4) |
 | Unitary-Image-CP-1 | (not named) | (not named) | **OBSTRUCT (J6)** |
-| Diag-CP-Φ₀ | (not named) | (not named) | **CONSTRUCT (J6-C)** |
+| Diag-CP-Φ₀ | (not named) | (not named) | **WITHDRAWN** |
 | Full-\(\psi\) abstract \(C^*\) | OPEN | OPEN | OPEN |
 
 ---
