@@ -198,3 +198,23 @@ The Round 10 PDF SHA-256 is
 Lean/build and math.FA/math.AG/Weyl gates are COMPLETE/PASS. Fresh non-claims
 and package/metadata re-gates remain pending before Dan approval. No tag,
 release, DOI minting, arXiv submission, or Dan approval is recorded.
+
+## Round 11 expanded axiom-audit synchronization (current superseding status)
+
+**Date:** 2026-07-29
+
+The synchronized Lean freeze is now
+`fbcdd0345d2f2540cd537204be2178ae07e18a5e`. The theorem claims and build
+counts are unchanged from Round 10. `PUBLICATION_PROVENANCE.md` records
+focused `TheoremFPlusITransport` (8,684 jobs), focused
+`TheoremFExtensionMultiplicity` (8,692 jobs), the full 8,702-job build, and
+the expanded nine-declaration strict axiom audit. Every audited declaration
+has exactly `[propext, Classical.choice, Quot.sound]`.
+
+The Round 10 Lean pin and PDF hash above remain dated historical evidence and
+are superseded by this Round 11 package. The Round 11 PDF SHA-256 is
+`2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`.
+
+Lean/build and math.FA/math.AG/Weyl gates remain COMPLETE/PASS. Fresh
+non-claims and package/metadata re-gates remain pending before Dan approval.
+No tag, release, DOI minting, arXiv submission, or Dan approval is recorded.

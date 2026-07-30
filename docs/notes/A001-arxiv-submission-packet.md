@@ -7,15 +7,15 @@
 
 | Item | Current value |
 |---|---|
-| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020` |
+| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Tag/release | none |
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
 | New version DOI | none; do not predict |
-| Synchronized Lean freeze | `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased) |
+| Synchronized Lean freeze | `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged, unreleased) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
-| Lean build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), seven-declaration axiom audit |
+| Lean build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), nine-declaration axiom audit |
 | Technical gates | Lean/build and math.FA/math.AG COMPLETE/PASS; fresh non-claims re-gate pending |
 | Package/metadata recheck | pending |
 | Human approval | pending Dan |

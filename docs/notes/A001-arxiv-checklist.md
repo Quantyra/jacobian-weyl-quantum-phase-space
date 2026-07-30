@@ -4,7 +4,7 @@
 fresh non-claims and package/metadata re-gates pending.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
-PDF SHA-256: `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
+PDF SHA-256: `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
@@ -68,7 +68,7 @@ Scope: **specific canonical \(H=-iX_1\) only**
 ## Lean boundary
 
 - Synchronized publication freeze:
-  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged, unreleased).
+  `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged, unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.
@@ -97,7 +97,7 @@ asserted.
 - [x] Fresh Lean/build/axiom audit on the synchronized corrected freeze:
   `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
   (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full
-  `lake build` (8,702 jobs), and the seven-declaration axiom audit
+  `lake build` (8,702 jobs), and the nine-declaration axiom audit
 - [ ] Fresh non-claims review
 - [ ] Fresh package/metadata review
 - [x] Revised PDF built twice without warnings, rendered as 11 letter-size

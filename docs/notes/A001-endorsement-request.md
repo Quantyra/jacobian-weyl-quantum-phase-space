@@ -23,15 +23,15 @@ CCR, or rank-three Dixmier claim is made.
 
 **Candidate PDF:** `docs/notes/A001-arxiv.pdf`
 (`v0.3.9-referee-revision`, proposed and untagged)
-**PDF SHA-256:** `9cd419312ae139aed3ae517a01d72ec029d5c161fc72747239575f49381a5020`
+**PDF SHA-256:** `2359efa571711abb93fc6566ce1c518705ec1002c6d902de6b7bf23ae87a0343`
 **Tag/release/arXiv identifier:** none
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
 The synchronized Lean publication freeze is
-`b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged and unreleased);
+`fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged and unreleased);
 `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
 (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), the full
-8,702-job `lake build`, and the seven-declaration axiom audit. The earlier
+8,702-job `lake build`, and the nine-declaration axiom audit. The earlier
 `ff50f4a2a312591c2e5b26e71eb390ade9164b34` remains only the historical
 Theorem F source root. Lean/build and math.FA/math.AG/Weyl gates PASS. Fresh
 non-claims and package/metadata re-gates remain required, followed by Dan

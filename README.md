@@ -45,7 +45,7 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 - Released Theorem E milestone: tag `v0.1.8-theorem-e` targets `be4f330`;
   `a6bb091` is its reviewed theorem-source anchor.
 - Synchronized Lean publication freeze:
-  `b51b67d03515d44e1cb1309cf8721a7ecf7803b2` (untagged and unreleased).
+  `fbcdd0345d2f2540cd537204be2178ae07e18a5e` (untagged and unreleased).
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 
@@ -54,7 +54,7 @@ strict cache/build provenance, and an executable headline-theorem axiom audit.
 `PUBLICATION_PROVENANCE.md` records the focused
 `TheoremFPlusITransport` build (8,684 jobs), focused
 `TheoremFExtensionMultiplicity` build (8,692 jobs), full `lake build`
-(8,702 jobs), and the seven-declaration executable axiom audit at the pinned
+(8,702 jobs), and the nine-declaration executable axiom audit at the pinned
 SHA. Later focused Theorem C / Theorem C Weyl checks are implementation checks,
 not the publication-freeze build provenance summarized here.
 Lean/build and math.FA/math.AG review gates PASS. The present claim-boundary

@@ -73,7 +73,7 @@ If \(X\) is **incomplete**, then \(H_X\) is **not** essentially self-adjoint.
 ## 4. Application to A001
 
 **Current active summary:** only \(H_1\) is discharged, by the named Lean
-Theorem E/F chain at freeze `b51b67d`. The table and paper-only argument below
+Theorem E/F chain at freeze `fbcdd034`. The table and paper-only argument below
 are historical and do not discharge H0/H2.
 
 | Step | Status |
