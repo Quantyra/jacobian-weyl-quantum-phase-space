@@ -76,10 +76,13 @@ Scope: **specific canonical \(H=-iX_1\) only**
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.
-- [x] Record strict `lake exe cache get`, targeted multiplicity build, full
-  `lake build`, and the nine-declaration axiom audit at theorem/audit
-  predecessor `fbcdd034`; provenance-only successor `2e40c4c` carries that
-  source and evidence unchanged and is not represented as a fresh execution.
+- [x] Record the earlier targeted builds, full 8,702-job `lake build`, and
+  nine-declaration audit at theorem/audit source `fbcdd034`; provenance-only
+  publication freeze `2e40c4c` carries that theorem/audit source unchanged.
+- [x] Record the later exact-SHA rerun at `2e40c4c`: GitHub Actions
+  [run 30520624449](https://github.com/Quantyra/exotic-ccr-lean/actions/runs/30520624449)
+  passed the full 8,702-job build and nine-declaration audit and uploaded
+  artifact `8750689968`.
 - [x] Record and validate headline-theorem axiom output in executable
   publication provenance.
 
@@ -101,9 +104,9 @@ asserted.
 - [x] Fresh math.FA/operator-theory proof-adversarial review — PASS
 - [x] Fresh math.AG/Weyl–Dixmier review — PASS
 - [x] Fresh Lean/build/axiom audit on the synchronized corrected freeze:
-  `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
-  (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full
-  `lake build` (8,702 jobs), and the nine-declaration axiom audit
+  earlier focused/full/audit evidence is tied to unchanged theorem/audit
+  source `fbcdd034`; exact-SHA run `30520624449` at provenance-only freeze
+  `2e40c4c` passed the full 8,702-job build and nine-declaration audit
 - [ ] Fresh non-claims review
 - [ ] Fresh package/metadata review
 - [x] Fresh external review finding triaged: J6-C withdrawn; Program C/C001

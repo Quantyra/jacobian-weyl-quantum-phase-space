@@ -114,7 +114,7 @@
   },
   "composition_notes": "Base factor for Cor 5.3 family (Thm 5.2). Composites/iterates not registered in bootstrap. Cotangent lift Phi registered under poisson_lift.",
   "non_claims": [
-    "H1 operator results only at Lean fbcdd034; H0/H2 deficiency and ESS remain open",
+    "H1 operator results only at synchronized publication freeze 2e40c4cab86a1ef97cb3334497d10081dfe33867, with unchanged theorem/audit source fbcdd0345d2f2540cd537204be2178ae07e18a5e; H0/H2 deficiency and ESS remain open",
     "Dual-flow strong CCR remains open and is not Lean-backed",
     "Displayed Weyl endomorphism nonautomorphy/non-surjectivity is not established",
     "No physical reversible symmetry claim",
