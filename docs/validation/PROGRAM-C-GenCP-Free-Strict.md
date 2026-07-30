@@ -32,4 +32,8 @@ constructs are open pending Lean.
 Full-ψ-CP-Weyl-C\* (unital CP from a \(C^*\) completion of \(\mathcal{W}\) extending algebraic \(\psi\), without SA-CFC / unitary-image axioms); sub-residual Full-ψ-BT-CP-Bridge.
 
 ## Non-claims
-No channel. T4. No “all CP impossible” (only named Joint-Stone / Unitary-Image / CFC-SA packs + ESS-1). Diag-CP-Φ₀ is not a momentum channel. BT-Envelope is a concrete \(C^*\) envelope, not a channel. Diag-CP is not full-\(\psi\).
+No channel. T4. No “all CP impossible” (only named Joint-Stone /
+Unitary-Image / CFC-SA packs + ESS-1). The former Diag-CP-Φ₀/J6-C construct
+is withdrawn as invalid. The former BT-Envelope \(C^*\) claim is historical
+and open pending Lean; it is not a current \(C^*\)-completion theorem.
+Neither historical proposal establishes full \(\psi\).
