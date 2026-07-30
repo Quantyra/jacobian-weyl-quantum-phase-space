@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-22  
 **Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
-OUTSIDE A001.** The obstruction labels below are not current A001 claims.  
+OUTSIDE A001.** The obstruction labels below are not current A001 claims.
+
 **Status:** **OBSTRUCT** for the named pack **Joint-Stone-Hom-1**; mere-CP Joint-Stone-CP-1 separately **OBSTRUCT** by J5 (see sibling note)  
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Companion:** C001 (v0.9 cites J4–J7)  

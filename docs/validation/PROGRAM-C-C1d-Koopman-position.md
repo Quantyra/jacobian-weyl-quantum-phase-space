@@ -6,7 +6,8 @@ OUTSIDE THE CURRENT A001 PUBLICATION PACKAGE.** The former generic assertion
 that a unital \(*\)-homomorphism of von Neumann algebras is automatically
 normal is false. The specific pullback's normality has not been re-established
 in Lean, so no positive normal-CP theorem is current. J6-C is withdrawn and
-the former BT-envelope construct is open pending Lean.  
+the former BT-envelope construct is open pending Lean.
+
 **Parent:** `PROGRAM-C-GenCP-Free-Strict.md`
 
 ---
@@ -41,14 +42,17 @@ acting by multiplication).
 
 ---
 
-## 2. Theorem (Koopman position-sector construct)
+## 2. Historical Koopman position-sector claim (open pending Lean)
 
-**Theorem.** \(\Phi_0\) is a well-defined **unital normal \(*\)-homomorphism**
-\(\mathcal{B}_b(\mathbb{R}^3)\to\mathcal{B}_b(\mathbb{R}^3)\), hence in
-particular a normal unital CP map, for **any** \(F\) that is a local
-diffeomorphism (in particular for the A001 seed, \(\det DF\equiv -2\neq 0\)).
+**Historical claim, not a current theorem.** The former text asserted that
+\(\Phi_0\) is a well-defined **unital normal \(*\)-homomorphism**
+\(\mathcal{B}_b(\mathbb{R}^3)\to\mathcal{B}_b(\mathbb{R}^3)\), hence a normal
+unital CP map, for every local diffeomorphism \(F\). The pointwise
+\(*\)-homomorphism calculation below is retained, but normality of the
+specific a.e.-class pullback has not been Lean-formalized or independently
+re-established. The normal-CP conclusion is **OPEN pending Lean**.
 
-**Proof.**
+**Historical proof analysis.**
 1. *Well-defined on Borel functions.* \(F\) continuous \(\Rightarrow\)
    \(f\circ F\) is Borel measurable whenever \(f\) is Borel measurable, and
    bounded whenever \(f\) is bounded. No vanishing-at-infinity condition is
@@ -72,11 +76,12 @@ diffeomorphism (in particular for the A001 seed, \(\det DF\equiv -2\neq 0\)).
    \(*\)-homomorphism, but the specific normality claim is left open pending
    Lean-backed proof and review.
 
-**Corollary.** The Regular-v2 intuition (that non-surjectivity should
-obstruct something) is confirmed to be **false** at the bounded-Borel level:
-the Koopman pullback \(\Phi_0\) exists for *every* non-vanishing-Jacobian
-\(F\), surjective or not, proper or not (though the retained \(C_0\)
-obstruction on the *vanishing-at-infinity* subalgebra still stands).
+**Retained limited conclusion.** The Regular-v2 intuition that
+non-surjectivity alone obstructs the pointwise bounded-Borel composition
+formula is false. This does not establish the former normal Koopman/CP theorem
+on a.e.-equivalence classes; that theorem remains open pending Lean. The
+retained \(C_0\) obstruction on the vanishing-at-infinity subalgebra still
+stands.
 
 ---
 
@@ -125,7 +130,8 @@ and the J3 full-triple question are **OPEN pending Lean**.
 J5–J6: unital CP + unitary image of \(e^{is P_1^{\mathrm{Sch}}}\) puts those
 unitaries in the multiplicative domain, recovers dual-\(F_1\) Heisenberg
 covariance, and dies by SvN / sheet-count geometry (SA-extension-of-\(H_1\)
-inessential). Diag-CP-Φ₀ constructs non-Stone CP of \(\Phi_0\) on \(M\).
+inessential). The former Diag-CP-Φ₀/J6-C non-Stone CP construction is
+**withdrawn as invalid**.
 Historical J7 split full-\(\psi\) abstract \(C^*\); its BT-Envelope positive
 claim is now OPEN pending Lean, while CFC-SA/other labels are historical;
 CP-Weyl-C\* OPEN.
@@ -157,11 +163,10 @@ CP-Weyl-C\* OPEN.
 No channel on \(B(H)\) implementing the full \(\psi\). No dual-\(F\)
 translation dynamics (T4). Joint-Stone-Canonical (J2), multiplicative
 Joint-Stone-Hom-1 (J4), mere-CP Joint-Stone-CP-1
-(J5), Unitary-Image-CP-1 (J6), and Full-ψ-CFC-SA-1 (J7) are ruled out;
-Diag-CP-Φ₀ is constructed and is not a momentum channel; BT-Envelope is a
-concrete \(C^*\) envelope, not a channel. Full-ψ-CP-Weyl-C\* is **not**
+(J5), Unitary-Image-CP-1 (J6), and Full-ψ-CFC-SA-1 (J7) are ruled out.
+Diag-CP-Φ₀/J6-C is withdrawn as invalid; the former BT-Envelope \(C^*\)
+construction is historical and **OPEN pending Lean**. Full-ψ-CP-Weyl-C\* is **not**
 claimed impossible. Joint-Form-Core is form-level only. \(\Phi_0\) alone does
 **not** realize \(\psi\); it realizes only the abelian position-generator part.
-Diag-CP is **not** full-\(\psi\).
 Historical J3 is withdrawn; the full-triple Joint-Stone question is open
 pending Lean-backed H0/H2 results.

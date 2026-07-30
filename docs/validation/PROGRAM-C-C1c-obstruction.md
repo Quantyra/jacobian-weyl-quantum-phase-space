@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
-OUTSIDE A001.** The theorem/NO-GO labels below are not current claims.  
+OUTSIDE A001.** The theorem/NO-GO labels below are not current claims.
+
 **Status:** **NO-GO** under axioms below; general non-Bogoliubov CP still **OPEN**  
 **Depends:** C1a domain, C1b algebraic \*-SOS PASS  
 **CAS:** `cas_F_not_proper_C1c_A001.json`

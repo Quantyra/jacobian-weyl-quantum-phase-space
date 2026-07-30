@@ -3,7 +3,8 @@
 **Date:** 2026-07-22  
 **Superseding status (2026-07-29): WITHDRAWN HISTORICAL SCOREBOARD —
 OUTSIDE A001.** J6-C is invalid as stated; former positive CP/\(C^*\)
-constructs are open pending Lean.  
+constructs are open pending Lean.
+
 **Status:** Regular-v2 **WITHDRAWN**; J2–J7 as below; Full-ψ-CP-Weyl-C\* residual **OPEN (J7-O)**
 
 ## Withdrawn

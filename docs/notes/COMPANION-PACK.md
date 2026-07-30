@@ -75,6 +75,6 @@ not replace the mandatory independent publication gates.
 ## Non-claims
 No gates/channels/advantage. No dual-flow repair. No all-quantization-fails. No “all CP impossible.”  
 No current CP map or \(C^*\)-completion claim is made. J6-C is withdrawn;
-the former Koopman and BT-envelope constructs are open pending Lean.  
+the former Koopman and BT-envelope constructs are open pending Lean.
 Historical J3 is withdrawn; H0/H2 and the full-triple Joint-Stone question
 remain open pending Lean.

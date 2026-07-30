@@ -3,7 +3,8 @@
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL/OPEN PROGRAM C RECORD —
 OUTSIDE A001.** No theorem-grade CP or \(C^*\) claim in this note is current
-without Lean-backed formalization and review.  
+without Lean-backed formalization and review.
+
 **Status:** open sketch  
 
 ## Object

@@ -76,8 +76,10 @@ Scope: **specific canonical \(H=-iX_1\) only**
 - Historical Theorem F source root:
   `ff50f4a2a312591c2e5b26e71eb390ade9164b34`.
 - [x] Produce a single-SHA Lean freeze with synchronized documentation.
-- [x] Record strict `lake exe cache get`, targeted multiplicity build, and
-  full `lake build` at that SHA.
+- [x] Record strict `lake exe cache get`, targeted multiplicity build, full
+  `lake build`, and the nine-declaration axiom audit at theorem/audit
+  predecessor `fbcdd034`; provenance-only successor `2e40c4c` carries that
+  source and evidence unchanged and is not represented as a fresh execution.
 - [x] Record and validate headline-theorem axiom output in executable
   publication provenance.
 

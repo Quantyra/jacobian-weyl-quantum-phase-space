@@ -6,7 +6,8 @@ THE CURRENT A001 PUBLICATION PACKAGE.** J6-C/Diag-CP-\(\Phi_0\) is withdrawn:
 the asserted normal expectation cannot send every \(U(s)\), \(s\ne0\), to
 zero while remaining ultraweakly continuous at \(s=0\). No replacement CP
 theorem is claimed. All other theorem-grade Program C statements in this
-note retain only historical/not-Lean status pending formalization and review.  
+note retain only historical/not-Lean status pending formalization and review.
+
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-mere-CP-Joint-Stone.md` (J5: Joint-Stone-CP-1 NO-GO)  
 **Companion:** C001 (v0.9 cites J6/J7)  
@@ -207,14 +208,16 @@ J6 does **not** rule out:
 
 ### 6.1 Conditional expectation onto positions
 
-**Withdrawn Lemma J6.6 (normal conditional expectation).**  
+**Withdrawn Lemma J6.6 (normal conditional expectation).**
+
 The historical text claimed that there exists a faithful normal conditional expectation
 \[
 E:M\to\mathcal{B}_b(Q)
 \]
 (i.e. a unital normal CP projection onto the position masa with the bimodule property \(E(axb)=a\,E(x)\,b\) for \(a,b\in\mathcal{B}_b(Q)\)).
 
-**Withdrawn proof sketch.**  
+**Withdrawn proof sketch.**
+
 The historical inference from injectivity to a normal conditional expectation
 \(B(H)\to\mathcal A\) is not valid in this diffuse-masa setting.
 
@@ -243,7 +246,8 @@ Set
 :M\to B(H).
 \]
 
-**Withdrawn Theorem J6-C (Diag-CP-Φ₀).**  
+**Withdrawn Theorem J6-C (Diag-CP-Φ₀).**
+
 The former claim that \(\Phi_{\mathrm{diag}}\) is a **unital normal completely
 positive** map \(M\to B(H)\) with the following properties is not current:
 
@@ -259,7 +263,8 @@ positive** map \(M\to B(H)\) with the following properties is not current:
    \]
    i.e. Schrödinger–Heisenberg conjugates of position observables are pulled back exactly by \(\Phi_0\) (automatic for any extension of \(\Phi_0\), since \(U(s)f(Q)U(s)^*\in\mathcal{B}_b(Q)\)).
 
-**Withdrawal reason.**  
+**Withdrawal reason.**
+
 For any nonzero sequence \(s_n\to0\), strong continuity gives
 \(U(s_n)\to I\) strongly and hence ultraweakly. A normal \(E\) would give
 \(E(U(s_n))\to E(I)=I\), contradicting the former rule

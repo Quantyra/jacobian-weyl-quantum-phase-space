@@ -3,7 +3,8 @@
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL PROGRAM C RECORD — OUTSIDE
 A001.** CAS/algebraic evidence below does not authorize a current CP or
-\(C^*\)-completion theorem; positive claims remain open pending Lean.  
+\(C^*\)-completion theorem; positive claims remain open pending Lean.
+
 **Status:** algebraic layer **PASS**; C* extension **OPEN**  
 **Domain:** `PROGRAM-C-C1a-domain.md`  
 **CAS:** `scripts/cas/verify_psi_positivity_C1b_A001.py` → `data/anchor/cas_psi_positivity_C1b_A001.json`

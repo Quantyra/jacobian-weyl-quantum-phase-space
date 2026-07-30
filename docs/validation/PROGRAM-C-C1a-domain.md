@@ -3,7 +3,8 @@
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL PROGRAM C RECORD — OUTSIDE
 A001.** Retained for domain provenance only; it is not a current CP or
-\(C^*\)-completion theorem surface.  
+\(C^*\)-completion theorem surface.
+
 **Status:** historical freeze, superseded 2026-07-29 on explicit
 nonautomorphy; current bounded domain retained below
 **Object:** A001 Weyl endomorphism \(\psi\) (G3)

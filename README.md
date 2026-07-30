@@ -57,12 +57,15 @@ Repository: <https://github.com/Quantyra/exotic-ccr-lean>
 
 The synchronized freeze includes theorem sources, documentation, recorded
 strict cache/build provenance, and an executable headline-theorem axiom audit.
-`PUBLICATION_PROVENANCE.md` records the focused
+`PUBLICATION_PROVENANCE.md` records, at theorem/audit predecessor
+`fbcdd0345d2f2540cd537204be2178ae07e18a5e`, the focused
 `TheoremFPlusITransport` build (8,684 jobs), focused
 `TheoremFExtensionMultiplicity` build (8,692 jobs), full `lake build`
-(8,702 jobs), and the nine-declaration executable axiom audit at the pinned
-SHA. Later focused Theorem C / Theorem C Weyl checks are implementation checks,
-not the publication-freeze build provenance summarized here.
+(8,702 jobs), and the nine-declaration executable axiom audit. The
+provenance-only successor `2e40c4c` carries that theorem/audit source and
+evidence unchanged; those commands are not represented as newly executed at
+`2e40c4c`. Later focused Theorem C / Theorem C Weyl checks are implementation
+checks, not the publication-freeze build provenance summarized here.
 Lean/build and math.FA/math.AG review gates PASS. The present claim-boundary
 cleanup still requires fresh non-claims and package/metadata re-gates before
 the candidate returns to Dan for approval.

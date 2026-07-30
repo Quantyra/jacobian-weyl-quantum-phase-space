@@ -3,7 +3,8 @@
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
 OUTSIDE A001.** The former positive correspondence/CP labels are not current
-publication claims and remain open pending Lean where theorem-grade.  
+publication claims and remain open pending Lean where theorem-grade.
+
 **Status:** **SPLIT** — algebraic correspondence **CONSTRUCT**; C0-compatible GenCP **NO-GO**; free GenCP **OPEN**  
 **Parent:** C1c obstruction package
 

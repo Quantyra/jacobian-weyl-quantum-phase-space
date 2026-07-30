@@ -5,7 +5,8 @@
 THE CURRENT A001 PUBLICATION PACKAGE.** The former Full-\(\psi\)-BT-Envelope
 positive theorem is open pending Lean-backed formulation and review. J6-C,
 on which parts of this note rely, is withdrawn. No CP or \(C^*\)-completion
-construct in this file is a current claim.  
+construct in this file is a current claim.
+
 **Parent:** `PROGRAM-C-Free-Strict-Abstract-Joint.md`  
 **Prior slice:** `PROGRAM-C-residual-CP-without-Stone.md` (J6/J6-C; residual named OPEN)  
 **Companion:** C001 (v0.9 cites J7)

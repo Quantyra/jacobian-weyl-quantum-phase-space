@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): PLANNING/HISTORICAL ONLY — OUTSIDE
-A001.** This charter authorizes no current CP, channel, or \(C^*\) theorem.  
+A001.** This charter authorizes no current CP, channel, or \(C^*\) theorem.
+
 **Status:** **OPEN** (parallel to wind-down publish)  
 **Default bet:** **C1** irreversible CP / correspondence for \(\psi\)  
 **Forbidden default:** dual \(F\)-translation repair (closed no-go)
