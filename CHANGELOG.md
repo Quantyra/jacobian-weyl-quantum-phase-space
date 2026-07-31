@@ -1,11 +1,12 @@
 ﻿# Changelog
 
-## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
+## v0.3.9-referee-revision — 2026-07-30
 
 - Closed the mandatory Lean/build, math.FA/math.AG, non-claims, and
   package/metadata publication gates and recorded Dan's publication approval
-  on 2026-07-30. No tag, release, DOI minting, or arXiv submission was
-  performed by this status synchronization.
+  on 2026-07-30. The exact release tag is
+  `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier are
+  recorded separately after external ingest.
 - Corrected the public claim boundary after external adversarial review:
   Lean proves the injective unit-phase parameterization, while the continuum
   cardinality conclusion separately uses the classical size of the complex
@@ -59,7 +60,8 @@
   theorem-source, and Lean synchronized-snapshot version streams.
 - Recorded the prior technical re-gate state; the successor re-gates passed
   and Dan subsequently approved publication.
-- No tag, release, arXiv submission, or DOI minting performed.
+- Release package synchronized for exact tag `v0.3.9-referee-revision`; no
+  arXiv identifier or Zenodo version DOI is invented in the repository.
 
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)
 

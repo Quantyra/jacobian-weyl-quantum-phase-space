@@ -1,11 +1,11 @@
 # Zenodo status
 
-## Proposed A001 scientific revision
+## A001 release package
 
 | Field | Value |
 |---|---|
-| Proposed paper package | `0.3.9-referee-revision` |
-| Git tag/release | **none; all gates PASS and Dan approved publication 2026-07-30** |
+| Paper package/tag | `v0.3.9-referee-revision` |
+| Git tag/release | `v0.3.9-referee-revision` |
 | arXiv identifier | none |
 | Synchronized Lean freeze | `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased; provenance-only successor to `fbcdd034`) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
@@ -30,7 +30,7 @@ is not one of the cited Lean declarations.
 The corrected Lean/build/audit, math.FA/math.AG/Weyl, non-claims, and
 package/metadata gates are COMPLETE/PASS. Dan approved publication on
 2026-07-30. Later focused Theorem C / Theorem C Weyl checks are separate
-implementation checks, not the publication-freeze provenance above. No tag,
-release, Zenodo version, or arXiv submission is asserted by this status
-update.
+implementation checks, not the publication-freeze provenance above. Any
+Zenodo version DOI is assigned separately by release ingest, and no arXiv
+identifier is invented here.
 Do not cite the v0.2.2 pair or v0.3.0 interior-indicator proof.

@@ -1,13 +1,14 @@
-# A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
+# A001 publication checklist (`v0.3.9-referee-revision` release package)
 
 **Status:** APPROVED FOR PUBLICATION WORKFLOW — all mandatory publication
 gates PASS and Dan approved publication on 2026-07-30. The corrective
-successors leave A001 theorem claims unchanged. No tag, release, DOI, or arXiv
-submission is asserted yet.
+successors leave A001 theorem claims unchanged. The exact release tag is
+`v0.3.9-referee-revision`; any version DOI and arXiv identifier are assigned
+separately by external ingest.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
 PDF SHA-256: `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
-Tag/release: none
+Tag/release: `v0.3.9-referee-revision`
 Scope: **specific canonical \(H=-iX_1\) only**
 
 ## Targeted revision

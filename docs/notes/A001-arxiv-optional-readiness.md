@@ -13,7 +13,8 @@
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | ready for authorized outreach |
 | Errata | `docs/notes/A001-ERRATUM-v0.2.2.md` | retained |
-| Tag/release/version DOI | none | downstream publication operations not yet performed |
+| Tag/release | `v0.3.9-referee-revision` | exact publication package |
+| Version DOI / arXiv ID | pending external ingest | none invented here |
 
 ## Closed gates
 
@@ -32,5 +33,6 @@ Lean/build, math.FA/math.AG/Weyl, non-claims, and package/metadata reviews are
 COMPLETE/PASS. Later focused Theorem C / Theorem C Weyl checks are separate
 implementation checks. The freeze remains untagged and unreleased.
 
-All blockers are closed and Dan has authorized publication. No upload, tag,
-release, DOI minting, or arXiv submission is claimed to have occurred yet.
+All blockers are closed and Dan has authorized publication. The exact release
+tag is `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier
+are recorded only after their external ingest workflows.

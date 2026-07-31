@@ -2,23 +2,23 @@
 
 **Date:** 2026-07-29
 **Status:** CURRENT INDEX; A001 publication gates PASS and Dan approval is
-recorded; the candidate remains untagged/unreleased
-**Rule:** The current A001 review candidate is
-`v0.3.9-referee-revision` (proposed, untagged). Earlier candidates remain
+recorded; release package `v0.3.9-referee-revision`
+**Rule:** The current A001 release package is
+`v0.3.9-referee-revision`. Earlier candidates remain
 historical records and must not be presented as the current freeze.
 The project concept DOI is a historical/project-level identifier only; it
-does not identify this candidate. External-LLM reviews are advisory and do
+does not identify this release version. External-LLM reviews are advisory and do
 not replace the mandatory independent publication gates.
 
 ---
 
-## Flagship A001 (unreleased candidate; do not cite as a DOI version)
+## Flagship A001 (`v0.3.9-referee-revision` release; version DOI assigned separately)
 
 | Artifact | Pin |
 |----------|-----|
 | PDF | [A001-arxiv.pdf](A001-arxiv.pdf) |
-| Candidate | `v0.3.9-referee-revision` (proposed, untagged; no release or version DOI) |
-| Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level historical identifier; not this candidate) |
+| Release package/tag | `v0.3.9-referee-revision` |
+| Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level historical identifier; not this release version) |
 | Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has Hilbert indices \(n_+=n_-=\aleph_0\); seed restated; H₁-only |
 | Gate status | Lean/build, math.FA/math.AG, non-claims, and package/metadata PASS; Dan approved publication 2026-07-30 |
@@ -66,7 +66,7 @@ not replace the mandatory independent publication gates.
 
 ## Cite
 
-1. Deficiency: cite no unreleased A001 version; the concept DOI does not identify the current candidate
+1. Deficiency: cite release tag `v0.3.9-referee-revision`; the concept DOI does not identify this release version, and any version DOI is assigned separately
 2. Classification: do not cite the corrected B001 candidate until re-gated; historical `v0.2.3-b001-draft` does not identify its current PDF
 3. Completions of \(\psi\): do not cite C001 as a current result; the local
    PDF is a withdrawn historical record and the historical release contains

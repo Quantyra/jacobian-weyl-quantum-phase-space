@@ -22,10 +22,11 @@ announcement for work leading to the map), the canonical
 gate, channel, computational-advantage, preferred-extension, H0/H2, strong
 CCR, or rank-three Dixmier claim is made.
 
-**Candidate PDF:** `docs/notes/A001-arxiv.pdf`
-(`v0.3.9-referee-revision`, proposed and untagged)
+**Release PDF:** `docs/notes/A001-arxiv.pdf`
+(`v0.3.9-referee-revision` release package)
 **PDF SHA-256:** `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
-**Tag/release/arXiv identifier:** none
+**Tag/release:** `v0.3.9-referee-revision`
+**arXiv identifier:** pending external submission; none invented here
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
 The synchronized Lean publication freeze is

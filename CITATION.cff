@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-message: "This Dan-approved publication candidate remains untagged; cite the released version when available."
+message: "Cite the v0.3.9-referee-revision release package; any version DOI is assigned separately by Zenodo ingest."
 title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
+version: "v0.3.9-referee-revision"
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
@@ -15,10 +16,10 @@ keywords:
   - essential-self-adjointness
   - exotic-ccr
 abstract: >-
-  Proposed, untagged v0.3.9-referee-revision candidate of the A001 paper
+  Publication release package v0.3.9-referee-revision of the A001 paper
   package. The project-level concept DOI 10.5281/zenodo.21474351 identifies
-  the continuing project record, not this candidate; no version DOI exists
-  for this untagged revision. For the
+  the continuing project record, not this release version; any version DOI is
+  assigned separately by Zenodo ingest. For the
   canonical real dual transport operator H=-i X_1 associated with the
   explicit Keller map announced by Alpöge, with Fable credited in the
   announcement for work leading to the map, the paper gives Hilbert deficiency
@@ -33,8 +34,7 @@ abstract: >-
   TheoremFExtensionMultiplicity (8,692 jobs) builds, the full 8,702-job Lean
   build, and a nine-declaration axiom audit. Lean/build and math.FA/math.AG
   gates pass, as do the non-claims and package/metadata reviews. Dan approved
-  publication on 2026-07-30; no tag, release, version DOI, or arXiv submission
-  is asserted yet.
+  publication on 2026-07-30. No arXiv identifier is asserted.
   Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
   classification for the specific H_X1_min, and an injective family of

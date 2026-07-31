@@ -1,19 +1,19 @@
 # EXOTIC-CCR — Jacobian / Weyl / quantum phase-space
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
-**Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
+**Paper package/tag:** `v0.3.9-referee-revision`
 **Scientific status:** A001 Lean/build, math.FA/math.AG, non-claims, and
 package/metadata gates PASS. The residual Program C/C001 and historical G7
 claim-boundary defects are corrected without changing A001 theorem claims.
-Dan approved publication on 2026-07-30. The proposed package is ready for the
-release/submission workflow; no tag, release, DOI, or arXiv submission is
-asserted yet.
-**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
+Dan approved publication on 2026-07-30. This is the exact
+`v0.3.9-referee-revision` release package; any Zenodo version DOI and arXiv
+identifier are assigned separately by their external ingest workflows.
+**Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this release version)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
 ## Start here
 
-- [A001-arxiv.pdf](docs/notes/A001-arxiv.pdf) — rendered paper candidate
+- [A001-arxiv.pdf](docs/notes/A001-arxiv.pdf) — rendered release paper
 - [A001-arxiv.tex](docs/notes/A001-arxiv.tex) — canonical paper source
 - [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) — current review status
 - [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) — withdrawn claims
@@ -128,9 +128,9 @@ historical and do **not** identify the current local PDF binaries.
 
 ## Citation and release status
 
-See [CITATION.cff](CITATION.cff). The proposed
-`v0.3.9-referee-revision` paper package has no tag, GitHub release, arXiv
-identifier, or version DOI. Existing DOI records and releases refer to earlier
-artifacts and must not be relabeled.
+See [CITATION.cff](CITATION.cff). The paper package is tagged
+`v0.3.9-referee-revision`. Its arXiv identifier and Zenodo version DOI, if
+assigned, are recorded separately after external ingest. Existing DOI records
+and earlier releases must not be relabeled.
 
 Apache-2.0. See [LICENSE](LICENSE).
