@@ -1,6 +1,10 @@
-# G7 Composition, iteration, index, entropy — program synthesis
+# G7 Composition, iteration, index, entropy — superseded historical synthesis
 
-**Status:** CLOSED as **synthesis + roadmap** (ladder G deferred)  
+> **SUPERSEDED / HISTORICAL — NOT CURRENT A001 EVIDENCE (2026-07-30).**
+> This dossier preserves an earlier Program G synthesis and roadmap. It must
+> not be cited as a current theorem, gate closeout, or publication claim.
+
+**Status:** HISTORICAL synthesis + roadmap (ladder G deferred)
 **Date:** 2026-07-21  
 **Story:** S023
 
@@ -23,13 +27,13 @@ Composition of Weyl endomorphisms corresponds to composition of maps when lifts 
 
 ## Continuous-time no-go (heuristic → semi-formal)
 Integer-valued multiplicative \(\mu\) cannot connect continuously from \(\mathrm{id}\) (\(\mu=1\)) to \(d>1\) in a continuous family of generically finite polynomial maps. ⇒ nontrivial family members are **not** Hamiltonian flows through the identity.  
-**Status:** heuristic solidified as **program principle**; not a theorem about all smooth paths in \(\mathrm{Diff}\).
+**Status:** historical program principle; not a theorem about all smooth paths in \(\mathrm{Diff}\).
 
 ## Computational primitive (ladder G)
 **Not authorized.** No finite-energy protocol, no complexity claim.
 
-## Program synthesis (A001 spine)
-| Gate | Result |
+## Historical program synthesis (A001 spine)
+| Gate | Historical reading |
 |------|--------|
 | G0 | Seed + d=4 pilot algebraic |
 | G1 | Atlas A001/A002 |
@@ -37,11 +41,15 @@ Integer-valued multiplicative \(\mu\) cannot connect continuously from \(\mathrm
 | G3 | Polynomial Weyl \(\psi\) certified |
 | G4 | Formal symmetry; ESS/strong CCR **open** with obstruction routes |
 | G5 | Trichotomy; index **open** |
-| G6 | Not a reversible channel/auto |
+| G6 | No CP/channel theorem; explicit-\(\psi\) automorphy/nonautomorphy unresolved |
 | G7 | Semigroup classical; quantum index **open** |
 
-**Minimum publishable narrative (achieved as package):**  
-Exact classical+Weyl endomorphisms for the seed counterexample, with a clear **no-go boundary** against uncritical physical/reversible readings, and a degree-indexed atlas for future work.
+**Current bounded position:** no CP/channel theorem; automorphy or
+nonautomorphy of the displayed polynomial Weyl endomorphism is unresolved;
+operator-algebra completion, index, and entropy remain open. Historical
+material in this dossier cannot be cited as current A001 evidence.
 
 ## Non-claims
-No completed G5 index theorem; no G7 entropy theorem; no experimental claim.
+No completed G5 index theorem; no G7 entropy theorem; no CP map, channel, gate,
+implementation, computational advantage, reversible-channel obstruction, or
+operator-algebra completion.

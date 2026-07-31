@@ -1,6 +1,11 @@
 {
   "atlas_id": "A001-seed-d3",
-  "version": "2.4.0",
+  "version": "2.4.1",
+  "reviewed_science_source_anchor": {
+    "commit": "b0ca5be6710606e44fb6d59a9827cae2a8d1b273",
+    "role": "reviewed_predecessor_source_anchor_for_this_metadata_successor",
+    "self_reference_boundary": "This field records the reviewed predecessor source anchor; it does not claim that the containing successor commit embeds its own SHA."
+  },
   "mu_generic_degree": 3,
   "mu_evidence": "certified",
   "ambient_dimension": 3,
