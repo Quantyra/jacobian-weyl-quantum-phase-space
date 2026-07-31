@@ -1,14 +1,14 @@
 # A001 public bundle (`v0.3.9-referee-revision` release package)
 
 This is the Dan-approved publication release package. All mandatory publication
-gates PASS; the downstream tag/release/DOI/arXiv operations have not yet
-occurred.
+gates PASS. External release, DOI, and arXiv lifecycle records are maintained
+separately from this bundle.
 
 - PDF: `docs/notes/A001-arxiv.pdf`
 - PDF SHA-256:
   `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 - TeX: `docs/notes/A001-arxiv.tex`
-- Tag/release: `v0.3.9-referee-revision`
+- Release identifier: `v0.3.9-referee-revision`
 - arXiv identifier: pending external submission; none invented here
 - New version DOI: assigned separately by Zenodo ingest; none invented here
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not

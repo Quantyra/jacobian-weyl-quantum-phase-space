@@ -9,7 +9,7 @@
 | Endorsement code | `VIPN6B` |
 | Endorser URL | `https://arxiv.org/auth/endorse?x=VIPN6B` |
 | Paper release | `v0.3.9-referee-revision` |
-| Tag/release | `v0.3.9-referee-revision` |
+| Release identifier | `v0.3.9-referee-revision` |
 | arXiv ID | pending external submission; none invented here |
 | Version DOI | none; concept DOI only `10.5281/zenodo.21474351` |
 | Lean/build/axiom | PASS; synchronized provenance-only successor `2e40c4cab86a1ef97cb3334497d10081dfe33867` retains the unchanged theorem/audit source from `fbcdd034`: focused 8,684/8,692 jobs, full 8,702 jobs, nine-declaration audit |

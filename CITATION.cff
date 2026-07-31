@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the v0.3.9-referee-revision release package; any version DOI is assigned separately by Zenodo ingest."
+message: "Release identifier: v0.3.9-referee-revision; any version DOI is assigned separately by Zenodo ingest."
 title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
 version: "v0.3.9-referee-revision"

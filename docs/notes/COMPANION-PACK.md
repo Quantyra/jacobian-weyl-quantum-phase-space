@@ -17,7 +17,7 @@ not replace the mandatory independent publication gates.
 | Artifact | Pin |
 |----------|-----|
 | PDF | [A001-arxiv.pdf](A001-arxiv.pdf) |
-| Release package/tag | `v0.3.9-referee-revision` |
+| Release identifier | `v0.3.9-referee-revision` |
 | Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level historical identifier; not this release version) |
 | Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has Hilbert indices \(n_+=n_-=\aleph_0\); seed restated; H₁-only |

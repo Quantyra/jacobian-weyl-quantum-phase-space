@@ -4,7 +4,7 @@
 
 - Closed the mandatory Lean/build, math.FA/math.AG, non-claims, and
   package/metadata publication gates and recorded Dan's publication approval
-  on 2026-07-30. The exact release tag is
+  on 2026-07-30. The exact release identifier is
   `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier are
   recorded separately after external ingest.
 - Corrected the public claim boundary after external adversarial review:
@@ -60,7 +60,7 @@
   theorem-source, and Lean synchronized-snapshot version streams.
 - Recorded the prior technical re-gate state; the successor re-gates passed
   and Dan subsequently approved publication.
-- Release package synchronized for exact tag `v0.3.9-referee-revision`; no
+- Release package synchronized for release identifier `v0.3.9-referee-revision`; no
   arXiv identifier or Zenodo version DOI is invented in the repository.
 
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)

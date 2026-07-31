@@ -13,7 +13,7 @@
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | ready for authorized outreach |
 | Errata | `docs/notes/A001-ERRATUM-v0.2.2.md` | retained |
-| Tag/release | `v0.3.9-referee-revision` | exact publication package |
+| Release identifier | `v0.3.9-referee-revision` | exact publication package |
 | Version DOI / arXiv ID | pending external ingest | none invented here |
 
 ## Closed gates
@@ -34,5 +34,5 @@ COMPLETE/PASS. Later focused Theorem C / Theorem C Weyl checks are separate
 implementation checks. The freeze remains untagged and unreleased.
 
 All blockers are closed and Dan has authorized publication. The exact release
-tag is `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier
+identifier is `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier
 are recorded only after their external ingest workflows.

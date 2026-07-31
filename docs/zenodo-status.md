@@ -4,8 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Paper package/tag | `v0.3.9-referee-revision` |
-| Git tag/release | `v0.3.9-referee-revision` |
+| Release identifier | `v0.3.9-referee-revision` |
+| GitHub release target | `v0.3.9-referee-revision` |
 | arXiv identifier | none |
 | Synchronized Lean freeze | `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased; provenance-only successor to `fbcdd034`) |
 | Historical theorem-source root | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |

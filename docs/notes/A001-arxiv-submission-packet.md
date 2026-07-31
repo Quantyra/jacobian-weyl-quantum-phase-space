@@ -10,7 +10,7 @@ recorded 2026-07-30; no submission performed yet
 |---|---|
 | PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
-| Tag/release | `v0.3.9-referee-revision` |
+| Release identifier | `v0.3.9-referee-revision` |
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
 | New version DOI | none; do not predict |
@@ -46,6 +46,6 @@ work leading to it and Akhil Mathew for prompting the question. It is restated
 and independently checked here, not discovered here. No gates, channels,
 computational advantage, or rank-three Dixmier counterexample is claimed.
 Lean/build, math.FA/math.AG, non-claims, and package/metadata gates PASS. Dan
-approved publication on 2026-07-30. The exact release tag is
+approved publication on 2026-07-30. The exact release identifier is
 `v0.3.9-referee-revision`; no arXiv identifier is invented, and any Zenodo
 version DOI is assigned separately by ingest.
