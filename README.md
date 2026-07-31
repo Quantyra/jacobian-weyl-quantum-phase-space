@@ -2,11 +2,12 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper package:** `v0.3.9-referee-revision` (proposed, untagged)
-**Scientific status:** A001 Lean/build and math.FA/math.AG gates PASS. Fresh
-external review found a Program C/C001 normal-CP error and a Lean-provenance
-status error; both are corrected in the current local successor without
-changing A001 theorem claims. Publication remains blocked pending fresh
-non-claims/package re-gating and Dan approval.
+**Scientific status:** A001 Lean/build, math.FA/math.AG, non-claims, and
+package/metadata gates PASS. The residual Program C/C001 and historical G7
+claim-boundary defects are corrected without changing A001 theorem claims.
+Dan approved publication on 2026-07-30. The proposed package is ready for the
+release/submission workflow; no tag, release, DOI, or arXiv submission is
+asserted yet.
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this untagged candidate)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -70,9 +71,8 @@ artifact `8750689968`
 (`lean-publication-provenance-2e40c4cab86a1ef97cb3334497d10081dfe33867`).
 Later focused Theorem C / Theorem C Weyl checks are implementation checks,
 not the publication-freeze build provenance summarized here.
-Lean/build and math.FA/math.AG review gates PASS. The present claim-boundary
-cleanup still requires fresh non-claims and package/metadata re-gates before
-the candidate returns to Dan for approval.
+Lean/build, math.FA/math.AG, non-claims, and package/metadata review gates
+PASS. Dan approved publication on 2026-07-30.
 
 At the synchronized freeze, `ExoticCCR.theoremF` proves that both adjoint
 eigenspaces of the specific canonical minimal core are not finite-dimensional.
@@ -124,7 +124,7 @@ historical and do **not** identify the current local PDF binaries.
 | G0 seed | certified | [D0 seed dossier](docs/validation/D0-seed-validation-dossier.md) |
 | G2 Poisson | certified | [G2 dossier](docs/validation/G2-poisson-A001-dossier.md) |
 | G3 Weyl | certified | [G3 dossier](docs/validation/G3-weyl-A001-dossier.md) |
-| G4 \(H=-iX_1\) | theorem surface proved; Lean/build and math reviews PASS; non-claims/package re-gates pending | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
+| G4 \(H=-iX_1\) | theorem surface proved; all publication gates PASS; Dan approval recorded | [orbit-measure dossier](docs/validation/G4-P1-orbit-measure-deficiency.md) |
 
 ## Citation and release status
 

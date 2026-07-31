@@ -1,7 +1,8 @@
 # arXiv endorsement request (draft email)
 
-> **HOLD — non-claims and package/metadata re-gates pending. Do not send until
-> those gates pass and Dan approval is recorded.**
+> **READY FOR AUTHORIZED OUTREACH.** All mandatory publication gates PASS and
+> Dan approved publication on 2026-07-30. Sending remains a distinct external
+> communication action.
 
 **Subject:** arXiv endorsement request — math-ph — dual transport deficiency
 
@@ -23,7 +24,7 @@ CCR, or rank-three Dixmier claim is made.
 
 **Candidate PDF:** `docs/notes/A001-arxiv.pdf`
 (`v0.3.9-referee-revision`, proposed and untagged)
-**PDF SHA-256:** `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
+**PDF SHA-256:** `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 **Tag/release/arXiv identifier:** none
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
 
@@ -34,9 +35,8 @@ provenance-only successor to `fbcdd034`);
 (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), the full
 8,702-job `lake build`, and the nine-declaration axiom audit. The earlier
 `ff50f4a2a312591c2e5b26e71eb390ade9164b34` remains only the historical
-Theorem F source root. Lean/build and math.FA/math.AG/Weyl gates PASS. Fresh
-non-claims and package/metadata re-gates remain required, followed by Dan
-approval, before submission.
+Theorem F source root. Lean/build, math.FA/math.AG/Weyl, non-claims, and
+package/metadata gates PASS. Dan approved publication on 2026-07-30.
 
 **Endorsement code:** `VIPN6B`  
 **Endorser link:** <https://arxiv.org/auth/endorse?x=VIPN6B>

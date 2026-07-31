@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "This is an untagged scientific-revision candidate; cite a released version when available."
+message: "This Dan-approved publication candidate remains untagged; cite the released version when available."
 title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
 authors:
@@ -32,8 +32,9 @@ abstract: >-
   focused TheoremFPlusITransport (8,684 jobs) and
   TheoremFExtensionMultiplicity (8,692 jobs) builds, the full 8,702-job Lean
   build, and a nine-declaration axiom audit. Lean/build and math.FA/math.AG
-  gates pass; fresh non-claims and package/metadata review remains required
-  before human approval.
+  gates pass, as do the non-claims and package/metadata reviews. Dan approved
+  publication on 2026-07-30; no tag, release, version DOI, or arXiv submission
+  is asserted yet.
   Lean proves the exact aleph0 Hilbert-basis
   indices, the bounded canonical-core Theorems E-F, a bijective von Neumann
   classification for the specific H_X1_min, and an injective family of

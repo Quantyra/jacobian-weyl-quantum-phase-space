@@ -1,13 +1,12 @@
 # A001 publication checklist (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — Lean/build and math.FA/math.AG gates PASS.
-Fresh review returned REVISE on the predecessor Program C/C001 and
-Lean-provenance surfaces; the corrective local successor is prepared with
-A001 theorem claims unchanged, and fresh non-claims/package re-gating remains
-pending.
+**Status:** APPROVED FOR PUBLICATION WORKFLOW — all mandatory publication
+gates PASS and Dan approved publication on 2026-07-30. The corrective
+successors leave A001 theorem claims unchanged. No tag, release, DOI, or arXiv
+submission is asserted yet.
 
 PDF: `docs/notes/A001-arxiv.pdf`  
-PDF SHA-256: `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
+PDF SHA-256: `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 Tag/release: none
 Scope: **specific canonical \(H=-iX_1\) only**
 
@@ -99,7 +98,7 @@ classification, exact Hamel rank, exact cardinality of the full extension
 type, strong CCR, physical selection, or paper backward-wall formalization is
 asserted.
 
-## Fresh mandatory gate
+## Mandatory publication gate
 
 - [x] Fresh math.FA/operator-theory proof-adversarial review — PASS
 - [x] Fresh math.AG/Weyl–Dixmier review — PASS
@@ -107,14 +106,16 @@ asserted.
   earlier focused/full/audit evidence is tied to unchanged theorem/audit
   source `fbcdd034`; exact-SHA run `30520624449` at provenance-only freeze
   `2e40c4c` passed the full 8,702-job build and nine-declaration audit
-- [ ] Fresh non-claims review
-- [ ] Fresh package/metadata review
+- [x] Fresh non-claims review — PASS
+- [x] Fresh package/metadata review — PASS
 - [x] Fresh external review finding triaged: J6-C withdrawn; Program C/C001
       moved outside A001 as historical/open pending Lean
-- [ ] Re-run non-claims and package/metadata roles on the successor commits
+- [x] Re-run non-claims and package/metadata roles on the successor commits —
+      PASS
 - [x] Revised PDF built twice without warnings, rendered as 11 letter-size
   pages, and visually inspected page by page
-- [ ] Dan approval recorded
+- [x] Dan approval recorded — 2026-07-30
 
-No tag, release, DOI minting, or arXiv submission is authorized while any item
-above remains open.
+All mandatory review items are closed. Dan authorized publication on
+2026-07-30. Release, DOI, and arXiv actions remain distinct downstream
+operations and are not asserted by this checklist update.

@@ -1,8 +1,8 @@
 # EXOTIC-CCR companion pack
 
 **Date:** 2026-07-29
-**Status:** CURRENT INDEX; A001 is untagged/unreleased and technical re-gating
-is incomplete after a fresh Program C/C001 withdrawal
+**Status:** CURRENT INDEX; A001 publication gates PASS and Dan approval is
+recorded; the candidate remains untagged/unreleased
 **Rule:** The current A001 review candidate is
 `v0.3.9-referee-revision` (proposed, untagged). Earlier candidates remain
 historical records and must not be presented as the current freeze.
@@ -21,7 +21,7 @@ not replace the mandatory independent publication gates.
 | Concept DOI | [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level historical identifier; not this candidate) |
 | Endorsement | [A001-endorsement-status.md](A001-endorsement-status.md) — code `VIPN6B`, category **math-ph** |
 | Claim | \(H=-iX_1\) has Hilbert indices \(n_+=n_-=\aleph_0\); seed restated; H₁-only |
-| Gate status | Lean/build and math.FA/math.AG PASS; fresh non-claims and package/metadata re-gates pending; Dan approval pending |
+| Gate status | Lean/build, math.FA/math.AG, non-claims, and package/metadata PASS; Dan approved publication 2026-07-30 |
 
 ---
 

@@ -1,10 +1,12 @@
 # A001 public bundle (`v0.3.9-referee-revision`, proposed and untagged)
 
-This is a local scientific-revision candidate, not a public freeze.
+This is the Dan-approved publication candidate. All mandatory publication
+gates PASS; the downstream tag/release/DOI/arXiv operations have not yet
+occurred.
 
 - PDF: `docs/notes/A001-arxiv.pdf`
 - PDF SHA-256:
-  `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04`
+  `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 - TeX: `docs/notes/A001-arxiv.tex`
 - Tag/release/arXiv identifier/new version DOI: none
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not
@@ -19,9 +21,9 @@ This is a local scientific-revision candidate, not a public freeze.
   `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build`
   (8,702 jobs), and the nine-declaration axiom audit
 - Lean/build and math.FA/math.AG re-gates: COMPLETE/PASS
-- Non-claims re-gate: pending
-- Package/metadata recheck: pending
-- Dan approval: pending after technical gates
+- Non-claims re-gate: COMPLETE/PASS
+- Package/metadata recheck: COMPLETE/PASS
+- Dan approval: recorded 2026-07-30
 
 Paper claim: the specific canonical \(H=-iX_1\) has Hilbert deficiency indices
 \(n_+=n_-=\aleph_0\), with the forward maximal sheet and sign involution as

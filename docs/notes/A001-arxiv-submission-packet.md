@@ -1,13 +1,14 @@
 # A001 arXiv submission packet (`v0.3.9-referee-revision`, proposed and untagged)
 
-**Status:** SCIENTIFIC REVISION — do not submit
+**Status:** APPROVED FOR PUBLICATION WORKFLOW — all gates PASS; Dan approval
+recorded 2026-07-30; no submission performed yet
 **Primary (recommended):** `math.SP` · alternative `math.FA`
 **Secondary:** `math.FA`, `math-ph`
 **Scope:** specific canonical \(H=-iX_1\) only
 
 | Item | Current value |
 |---|---|
-| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `28dff06b67ff3b7799f652ae3ac39d860e103421803638e29372aa7698046b04` |
+| PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Tag/release | none |
 | arXiv identifier | none |
@@ -16,9 +17,9 @@
 | Synchronized Lean freeze | `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased; provenance-only successor to `fbcdd034`) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
 | Lean build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), nine-declaration axiom audit |
-| Technical gates | Lean/build and math.FA/math.AG COMPLETE/PASS; fresh non-claims re-gate pending |
-| Package/metadata recheck | pending |
-| Human approval | pending Dan |
+| Technical gates | Lean/build, math.FA/math.AG, non-claims, and package/metadata COMPLETE/PASS |
+| Package/metadata recheck | PASS |
+| Human approval | Dan approved publication on 2026-07-30 |
 
 ## Exact scope
 
@@ -44,6 +45,6 @@ The map was announced by Alpöge; the announcement credits Claude Fable for
 work leading to it and Akhil Mathew for prompting the question. It is restated
 and independently checked here, not discovered here. No gates, channels,
 computational advantage, or rank-three Dixmier counterexample is claimed.
-Lean/build and math.FA/math.AG gates PASS. Fresh non-claims and
-package/metadata re-gates are required before the package can return to Dan
-for approval.
+Lean/build, math.FA/math.AG, non-claims, and package/metadata gates PASS. Dan
+approved publication on 2026-07-30. No tag, release, DOI minting, or arXiv
+submission is asserted by this packet update.

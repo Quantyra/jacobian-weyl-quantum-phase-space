@@ -2,6 +2,10 @@
 
 ## v0.3.9-referee-revision — 2026-07-29 (proposed, untagged)
 
+- Closed the mandatory Lean/build, math.FA/math.AG, non-claims, and
+  package/metadata publication gates and recorded Dan's publication approval
+  on 2026-07-30. No tag, release, DOI minting, or arXiv submission was
+  performed by this status synchronization.
 - Corrected the public claim boundary after external adversarial review:
   Lean proves the injective unit-phase parameterization, while the continuum
   cardinality conclusion separately uses the classical size of the complex
@@ -20,7 +24,7 @@
   the complex inner-product convention, and qualified every deficiency-space
   dimension as Hilbert dimension.
 - Replaced public internal PASS language with factual recorded-build
-  provenance; fresh technical re-gating is required after this revision.
+  provenance; the required successor re-gates subsequently passed.
 - Repinned the full science package to synchronized, untagged Lean freeze
   `2e40c4cab86a1ef97cb3334497d10081dfe33867`, a provenance-only successor to
   `fbcdd034` with theorem and audit source unchanged; its repository provenance
@@ -53,8 +57,8 @@
   D–F do not use the collision.
 - Repaired README UTF-8 corruption and separated paper-package, Lean
   theorem-source, and Lean synchronized-snapshot version streams.
-- Recorded the prior technical re-gate state, which is superseded by the
-  present claim-boundary revision and must be rerun before human approval.
+- Recorded the prior technical re-gate state; the successor re-gates passed
+  and Dan subsequently approved publication.
 - No tag, release, arXiv submission, or DOI minting performed.
 
 ## v0.3.8-theorem-f — 2026-07-28 (candidate update)

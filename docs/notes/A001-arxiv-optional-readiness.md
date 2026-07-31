@@ -1,25 +1,25 @@
 # A001 arXiv readiness (`v0.3.9-referee-revision`)
 
-**Date:** 2026-07-29
-**Status:** **SCIENTIFIC REVISION; NOT READY TO SUBMIT**
+**Date:** 2026-07-30
+**Status:** **APPROVED FOR PUBLICATION WORKFLOW; ALL GATES PASS**
 
 ## Local bundle
 
 | Item | Path | Status |
 |---|---|---|
 | Canonical source | `docs/notes/A001-arxiv.tex` | revised |
-| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `28dff06b…046b04` |
-| Checklist | `docs/notes/A001-arxiv-checklist.md` | non-claims and package/metadata re-gates open |
+| PDF | `docs/notes/A001-arxiv.pdf` | built twice; 11 pages visually inspected; SHA-256 `96a44419…aad1c8` |
+| Checklist | `docs/notes/A001-arxiv-checklist.md` | all mandatory gates PASS; Dan approval recorded |
 | Bundle note | `docs/notes/A001-submission-bundle.md` | synchronized |
-| Endorsement draft | `docs/notes/A001-endorsement-request.md` | HOLD |
+| Endorsement draft | `docs/notes/A001-endorsement-request.md` | ready for authorized outreach |
 | Errata | `docs/notes/A001-ERRATUM-v0.2.2.md` | retained |
-| Tag/release/version DOI | none | must remain absent |
+| Tag/release/version DOI | none | downstream publication operations not yet performed |
 
-## Blocking gates
+## Closed gates
 
-1. Fresh non-claims and package/metadata re-gates on the corrected
-   synchronized packet. Lean/build and math.FA/math.AG are COMPLETE/PASS.
-2. Dan approval after those gates pass.
+1. Lean/build, math.FA/math.AG, non-claims, and package/metadata reviews:
+   COMPLETE/PASS.
+2. Dan publication approval: recorded 2026-07-30.
 
 The repository records successful cache/build and executable axiom-audit
 results for the corrected synchronized Lean freeze
@@ -28,9 +28,9 @@ results for the corrected synchronized Lean freeze
 `PUBLICATION_PROVENANCE.md` records focused `TheoremFPlusITransport`
 (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), the full
 8,702-job `lake build`, and the nine-declaration axiom audit.
-Lean/build and math.FA/math.AG/Weyl reviews are COMPLETE/PASS. Fresh
-non-claims and package/metadata reviews remain required. Later focused
-Theorem C / Theorem C Weyl checks are separate implementation checks. The
-freeze remains untagged and unreleased.
+Lean/build, math.FA/math.AG/Weyl, non-claims, and package/metadata reviews are
+COMPLETE/PASS. Later focused Theorem C / Theorem C Weyl checks are separate
+implementation checks. The freeze remains untagged and unreleased.
 
-No upload, tag, release, or DOI action is authorized before all blockers close.
+All blockers are closed and Dan has authorized publication. No upload, tag,
+release, DOI minting, or arXiv submission is claimed to have occurred yet.
