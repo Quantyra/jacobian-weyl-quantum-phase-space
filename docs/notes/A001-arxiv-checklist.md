@@ -9,6 +9,11 @@ separately by external ingest.
 PDF: `docs/notes/A001-arxiv.pdf`  
 PDF SHA-256: `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 Release identifier: `v0.3.9-referee-revision`
+- GitHub release:
+  <https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision>
+- Tag commit: `001035470f8ebfa180c840e507796aec560284b8`
+- Version DOI: `10.5281/zenodo.21715479`
+- Concept DOI: `10.5281/zenodo.21474351`
 Scope: **specific canonical \(H=-iX_1\) only**
 
 ## Targeted revision
@@ -118,5 +123,6 @@ asserted.
 - [x] Dan approval recorded — 2026-07-30
 
 All mandatory review items are closed. Dan authorized publication on
-2026-07-30. Release, DOI, and arXiv actions remain distinct downstream
-operations and are not asserted by this checklist update.
+2026-07-30. The release and version DOI receipts are recorded above. No arXiv
+identifier is assigned; endorsement/submission remain separate external
+steps. Later receipt commits do not move the tag from `0010354`.

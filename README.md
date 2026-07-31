@@ -6,8 +6,12 @@
 package/metadata gates PASS. The residual Program C/C001 and historical G7
 claim-boundary defects are corrected without changing A001 theorem claims.
 Dan approved publication on 2026-07-30. This is the exact
-`v0.3.9-referee-revision` release package; any Zenodo version DOI and arXiv
-identifier are assigned separately by their external ingest workflows.
+[`v0.3.9-referee-revision`](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision)
+release package at tag commit
+`001035470f8ebfa180c840e507796aec560284b8`. Zenodo version DOI:
+[10.5281/zenodo.21715479](https://doi.org/10.5281/zenodo.21715479).
+Later commits record release receipts only and do not move the tag. No arXiv
+identifier is assigned.
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this release version)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
@@ -129,8 +133,9 @@ historical and do **not** identify the current local PDF binaries.
 ## Citation and release status
 
 See [CITATION.cff](CITATION.cff). The paper package uses release identifier
-`v0.3.9-referee-revision`. Its arXiv identifier and Zenodo version DOI, if
-assigned, are recorded separately after external ingest. Existing DOI records
-and earlier releases must not be relabeled.
+`v0.3.9-referee-revision` and version DOI
+[10.5281/zenodo.21715479](https://doi.org/10.5281/zenodo.21715479). The
+project concept DOI remains `10.5281/zenodo.21474351`. No arXiv identifier is
+assigned. Existing DOI records and earlier releases must not be relabeled.
 
 Apache-2.0. See [LICENSE](LICENSE).

@@ -26,8 +26,10 @@ CCR, or rank-three Dixmier claim is made.
 (`v0.3.9-referee-revision` release package)
 **PDF SHA-256:** `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 **Release identifier:** `v0.3.9-referee-revision`
+**GitHub release:** <https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision>
 **arXiv identifier:** pending external submission; none invented here
 **Concept DOI:** <https://doi.org/10.5281/zenodo.21474351>
+**Version DOI:** <https://doi.org/10.5281/zenodo.21715479>
 
 The synchronized Lean publication freeze is
 `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged and unreleased;

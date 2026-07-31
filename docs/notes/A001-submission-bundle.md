@@ -9,8 +9,11 @@ separately from this bundle.
   `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8`
 - TeX: `docs/notes/A001-arxiv.tex`
 - Release identifier: `v0.3.9-referee-revision`
+- GitHub release:
+  <https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision>
+- Tag commit: `001035470f8ebfa180c840e507796aec560284b8`
 - arXiv identifier: pending external submission; none invented here
-- New version DOI: assigned separately by Zenodo ingest; none invented here
+- Version DOI: `10.5281/zenodo.21715479`
 - Concept DOI: `10.5281/zenodo.21474351` (project-level record; does not
   identify this release version)
 - Synchronized Lean freeze:

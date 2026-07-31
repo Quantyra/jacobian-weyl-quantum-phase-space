@@ -2,6 +2,12 @@
 
 ## v0.3.9-referee-revision — 2026-07-30
 
+- Released tag `v0.3.9-referee-revision` at
+  `001035470f8ebfa180c840e507796aec560284b8`; GitHub release:
+  <https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision>.
+- Recorded Zenodo version DOI `10.5281/zenodo.21715479` (record `21715479`);
+  concept DOI remains `10.5281/zenodo.21474351`. Later commits are receipt
+  metadata only and do not move the release tag.
 - Closed the mandatory Lean/build, math.FA/math.AG, non-claims, and
   package/metadata publication gates and recorded Dan's publication approval
   on 2026-07-30. The exact release identifier is

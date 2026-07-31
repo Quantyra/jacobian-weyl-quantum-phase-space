@@ -14,7 +14,9 @@
 | Endorsement draft | `docs/notes/A001-endorsement-request.md` | ready for authorized outreach |
 | Errata | `docs/notes/A001-ERRATUM-v0.2.2.md` | retained |
 | Release identifier | `v0.3.9-referee-revision` | exact publication package |
-| Version DOI / arXiv ID | pending external ingest | none invented here |
+| GitHub release | [v0.3.9-referee-revision](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision) | tag commit `001035470f8ebfa180c840e507796aec560284b8` |
+| Version DOI | [10.5281/zenodo.21715479](https://doi.org/10.5281/zenodo.21715479) | concept DOI remains `10.5281/zenodo.21474351` |
+| arXiv ID | none | endorsement/submission pending |
 
 ## Closed gates
 
@@ -35,4 +37,5 @@ implementation checks. The freeze remains untagged and unreleased.
 
 All blockers are closed and Dan has authorized publication. The exact release
 identifier is `v0.3.9-referee-revision`; any Zenodo version DOI and arXiv identifier
-are recorded only after their external ingest workflows.
+are recorded only after their external ingest workflows. The Zenodo version
+DOI is now `10.5281/zenodo.21715479`; no arXiv identifier is assigned.

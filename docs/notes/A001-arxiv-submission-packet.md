@@ -11,9 +11,10 @@ recorded 2026-07-30; no submission performed yet
 | PDF | `docs/notes/A001-arxiv.pdf`; SHA-256 `96a444196598b418b6724b03e0ca40e75756b3697c3a3eb21f3b204c54aad1c8` |
 | Canonical source | `docs/notes/A001-arxiv.tex` |
 | Release identifier | `v0.3.9-referee-revision` |
+| GitHub release | <https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision>; tag commit `001035470f8ebfa180c840e507796aec560284b8` |
 | arXiv identifier | none |
 | Concept DOI | `10.5281/zenodo.21474351` (project-level only) |
-| New version DOI | none; do not predict |
+| Version DOI | `10.5281/zenodo.21715479` |
 | Synchronized Lean freeze | `2e40c4cab86a1ef97cb3334497d10081dfe33867` (untagged, unreleased; provenance-only successor to `fbcdd034`) |
 | Historical theorem source | `ff50f4a2a312591c2e5b26e71eb390ade9164b34` |
 | Lean build/axiom provenance | `PUBLICATION_PROVENANCE.md`: focused `TheoremFPlusITransport` (8,684 jobs), focused `TheoremFExtensionMultiplicity` (8,692 jobs), full `lake build` (8,702 jobs), nine-declaration axiom audit |
@@ -47,5 +48,6 @@ and independently checked here, not discovered here. No gates, channels,
 computational advantage, or rank-three Dixmier counterexample is claimed.
 Lean/build, math.FA/math.AG, non-claims, and package/metadata gates PASS. Dan
 approved publication on 2026-07-30. The exact release identifier is
-`v0.3.9-referee-revision`; no arXiv identifier is invented, and any Zenodo
-version DOI is assigned separately by ingest.
+`v0.3.9-referee-revision`; version DOI `10.5281/zenodo.21715479` identifies
+that release. No arXiv identifier is assigned; endorsement/submission remain
+pending external steps. Later receipt commits do not move the tag.

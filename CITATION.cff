@@ -1,14 +1,17 @@
 cff-version: 1.2.0
-message: "Release identifier: v0.3.9-referee-revision; any version DOI is assigned separately by Zenodo ingest."
+message: "Cite release v0.3.9-referee-revision using version DOI 10.5281/zenodo.21715479."
 title: "Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator"
 type: software
 version: "v0.3.9-referee-revision"
+doi: "10.5281/zenodo.21715479"
+date-released: 2026-07-30
 authors:
   - family-names: Fredriksen
     given-names: Daniel Eric
     affiliation: "Quantyra Inc"
 url: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
 repository-code: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space"
+repository-artifact: "https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision"
 license: Apache-2.0
 keywords:
   - jacobian-conjecture
@@ -17,9 +20,9 @@ keywords:
   - exotic-ccr
 abstract: >-
   Publication release package v0.3.9-referee-revision of the A001 paper
-  package. The project-level concept DOI 10.5281/zenodo.21474351 identifies
-  the continuing project record, not this release version; any version DOI is
-  assigned separately by Zenodo ingest. For the
+  package. Version DOI 10.5281/zenodo.21715479 identifies this release;
+  project-level concept DOI 10.5281/zenodo.21474351 identifies the continuing
+  project record. For the
   canonical real dual transport operator H=-i X_1 associated with the
   explicit Keller map announced by Alpöge, with Fable credited in the
   announcement for work leading to the map, the paper gives Hilbert deficiency
