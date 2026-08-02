@@ -2,24 +2,27 @@
 
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Paper release identifier:** `v0.3.9-referee-revision`
-**Scientific status:** A001 Lean/build, math.FA/math.AG, non-claims, and
-package/metadata gates PASS. The residual Program C/C001 and historical G7
-claim-boundary defects are corrected without changing A001 theorem claims.
-Dan approved publication on 2026-07-30. This is the exact
+**Scientific status:** A001 is **closed** as a published bounded research
+result (GitHub + Zenodo). Lean/build, math.FA/math.AG, non-claims, and
+package/metadata gates PASS. Dan approved publication on 2026-07-30. This is
+the exact
 [`v0.3.9-referee-revision`](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.9-referee-revision)
 release package at tag commit
 `001035470f8ebfa180c840e507796aec560284b8`. Zenodo version DOI:
 [10.5281/zenodo.21715479](https://doi.org/10.5281/zenodo.21715479).
-Later commits record release receipts only and do not move the tag. No arXiv
+Later commits record release receipts and closeout only and do not move the
+tag. **No active theorem-development backlog.** arXiv is **not** submitted;
+human endorsement code `VIPN6B` remains the only Soft/human Blocker. No arXiv
 identifier is assigned.
 **Concept DOI:** [10.5281/zenodo.21474351](https://doi.org/10.5281/zenodo.21474351) (project-level record; it does not identify this release version)
 **Do not use:** the v0.2.2 deficiency pair or the v0.3.0 interior-indicator proof
 
 ## Start here
 
+- [A001-PROGRAM-CLOSEOUT-FINAL.md](docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md) — **current** program closeout (citable pins, non-claims, B/C parked)
 - [A001-arxiv.pdf](docs/notes/A001-arxiv.pdf) — rendered release paper
 - [A001-arxiv.tex](docs/notes/A001-arxiv.tex) — canonical paper source
-- [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) — current review status
+- [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) — review/gate log
 - [A001-ERRATUM-v0.2.2.md](docs/notes/A001-ERRATUM-v0.2.2.md) — withdrawn claims
 
 The long-form [A001-arxiv-draft.md](docs/notes/A001-arxiv-draft.md) is a
@@ -112,14 +115,20 @@ See [INTEGRITY.md](INTEGRITY.md) and the paper's Non-claims section.
 
 ## Companion papers
 
-B001 remains an untagged cross-companion correction. C001 is a withdrawn
-historical record outside A001. The releases in the last column are
-historical and do **not** identify the current local PDF binaries.
+Programs B and C are **PARKED** (2026-08-01): not active theorem-development
+backlog; optional future research only. See
+[A001-PROGRAM-CLOSEOUT-FINAL.md](docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
 
-| Paper | Current local PDF (untagged correction) | Historical release (not this PDF) |
+B001 is a **parked** historical companion (v0.7 Aggregate PASS at `45e7d53` /
+tag `v0.2.3-b001-draft`; residual OPEN-T not an open execution story). Local
+cross-companion PDF corrections may exist; the historical tag does **not**
+identify every later local binary. C001 is a **withdrawn** historical record
+outside A001 (J6-C withdrawn; J7-O and companions not active backlog).
+
+| Paper | Local PDF (may be untagged correction) | Historical release (not necessarily this PDF) |
 |---|---|---|
-| B001 classification | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) |
-| C001 completions — **WITHDRAWN historical record; outside A001** | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
+| B001 classification — **PARKED** historical companion | [B001-classification-arxiv.pdf](docs/notes/B001-classification-arxiv.pdf) | [v0.2.3-b001-draft](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.2.3-b001-draft) |
+| C001 completions — **WITHDRAWN / PARKED**; outside A001 | [C001-cp-correspondence-arxiv.pdf](docs/notes/C001-cp-correspondence-arxiv.pdf) | [v0.3.3-c001-companion](https://github.com/Quantyra/jacobian-weyl-quantum-phase-space/releases/tag/v0.3.3-c001-companion) |
 
 ## Evidence
 
@@ -132,10 +141,14 @@ historical and do **not** identify the current local PDF binaries.
 
 ## Citation and release status
 
-See [CITATION.cff](CITATION.cff). The paper package uses release identifier
-`v0.3.9-referee-revision` and version DOI
+See [CITATION.cff](CITATION.cff) and
+[A001-PROGRAM-CLOSEOUT-FINAL.md](docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
+The paper package uses release identifier `v0.3.9-referee-revision` and
+version DOI
 [10.5281/zenodo.21715479](https://doi.org/10.5281/zenodo.21715479). The
 project concept DOI remains `10.5281/zenodo.21474351`. No arXiv identifier is
-assigned. Existing DOI records and earlier releases must not be relabeled.
+assigned (endorsement Soft Blocker `VIPN6B` only). Existing DOI records and
+earlier releases must not be relabeled. There is **no active
+theorem-development backlog** for this program.
 
 Apache-2.0. See [LICENSE](LICENSE).

@@ -40,6 +40,10 @@ desktop.ini
 secrets/
 local/
 
+# Local agent / generated scratch (never commit)
+tmp/
+.opencode/
+
 docs/notes/*.aux
 docs/notes/*.log
 docs/notes/*.out

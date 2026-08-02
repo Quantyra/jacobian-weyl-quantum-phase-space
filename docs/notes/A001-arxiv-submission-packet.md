@@ -1,7 +1,11 @@
 # A001 arXiv submission packet (`v0.3.9-referee-revision` release package)
 
-**Status:** APPROVED FOR PUBLICATION WORKFLOW — all gates PASS; Dan approval
-recorded 2026-07-30; no submission performed yet
+**Status:** PACKAGE CLOSED FOR THEOREM WORK (2026-08-01) — A001 published as
+bounded result (GitHub `v0.3.9-referee-revision` + Zenodo version DOI); all
+gates PASS; Dan approval recorded 2026-07-30. **Only remaining action:** human
+arXiv endorsement code `VIPN6B`, then submit after endorse. No submission
+performed yet; no arXiv identifier assigned. See
+`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`.
 **Primary (recommended):** `math.SP` · alternative `math.FA`
 **Secondary:** `math.FA`, `math-ph`
 **Scope:** specific canonical \(H=-iX_1\) only

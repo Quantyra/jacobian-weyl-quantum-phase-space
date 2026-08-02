@@ -1,13 +1,15 @@
 # Roadmap post-A001 — follow the charters
 
 > **SUPERSEDED — DO NOT USE AS CURRENT PUBLICATION OR THEOREM STATUS.**
+> **Final closeout:** `docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md` (2026-08-01).
+> Programs B and C are **PARKED** — not active theorem-development backlog;
+> residual OPEN-T / J7-O and companions are optional future research only.
 > This roadmap predates the H1 Theorem F referee revision, treats external LLM
 > review as the publication workflow, and relies on withdrawn paper-only
-> dual-flow/H0/H2 conclusions. The current candidate is
-> `v0.3.9-referee-revision`, untagged and unreleased, with no version DOI.
-> The concept DOI is historical/project-level only. Mandatory review now
-> follows the independent publication gates recorded in
-> `docs/notes/A001-arxiv-checklist.md`.
+> dual-flow/H0/H2 conclusions. A001 is published as the bounded package
+> `v0.3.9-referee-revision` @ `001035470f8ebfa180c840e507796aec560284b8`
+> with Zenodo version DOI `10.5281/zenodo.21715479`. Body below is **historical**
+> only. Live status: `README.md`, `INTEGRITY.md`, `A001-PROGRAM-CLOSEOUT-FINAL.md`.
 
 **Date:** 2026-07-21  
 **Historical spine status (superseded):** “closed (no-go)” / publish in flight
