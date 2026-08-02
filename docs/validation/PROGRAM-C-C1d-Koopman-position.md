@@ -1,5 +1,7 @@
 # Program C — C1d: Koopman position-sector construct (Free-Strict-Abstract)
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program C / C001 are withdrawn as a current theorem surface. Residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
 **Status (superseding, 2026-07-29): HISTORICAL / OPEN PENDING LEAN —
 OUTSIDE THE CURRENT A001 PUBLICATION PACKAGE.** The former generic assertion

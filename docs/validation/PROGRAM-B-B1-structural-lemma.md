@@ -1,5 +1,7 @@
 # Program B — B1 structural lemma
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program B residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-21  
 **Status:** theorem-grade note (paper B input)  
 **Non-claims:** no ESS pattern, no CCR package, no gates

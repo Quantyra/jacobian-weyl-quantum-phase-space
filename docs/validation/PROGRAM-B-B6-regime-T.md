@@ -1,5 +1,7 @@
 # Program B — B6: regime T (thin residual incompleteness)
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program B residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
 **Status:** theorem-grade **partial** exclusion package (full T-exclusion still open)  
 **Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.7; B6 content from v0.6)  

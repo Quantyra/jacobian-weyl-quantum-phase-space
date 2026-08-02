@@ -1,5 +1,7 @@
 # Program C — Free-Strict-Abstract-Joint (q and p together)
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program C / C001 are withdrawn as a current theorem surface. Residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
 **Status (superseding, 2026-07-29): WITHDRAWN HISTORICAL RECORD — OUTSIDE
 THE CURRENT A001 PUBLICATION PACKAGE.** J6-C is withdrawn. The positive

@@ -1,8 +1,14 @@
 # EXOTIC-CCR Charter Amendment v1.1 — Degree-indexed family framing
 
-**Status:** Draft amendment (Chief Scientist direction, 2026-07-20)  
+> **CLOSED / PARKED HISTORICAL AMENDMENT (2026-08-01).** This adopted historical
+> amendment is closed for A001. Its forward gates and new-story directions are
+> **not active**. Program B/C residuals are **PARKED**. Authoritative current
+> status: [`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
+> Body preserved below as historical evidence only.
+
+**Status:** Draft amendment (Chief Scientist direction, 2026-07-20) — **historical only**  
 **Amends:** `Project_EXOTIC_CCR_Research_Charter.docx` v1.0  
-**Authority:** Does not replace v1.0 integrity/claim-control; strengthens scientific scope and gates.
+**Authority:** Does not replace v1.0 integrity/claim-control; strengthens scientific scope and gates. **Not an active launch or forward-work directive.**
 
 ## 1. Trigger
 Public technical strengthening of the counterexample landscape beyond a single specimen:

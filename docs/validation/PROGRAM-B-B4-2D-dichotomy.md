@@ -1,4 +1,6 @@
-﻿# Program B — B4: dichotomy evidence (null-set vs open-set incompleteness)
+# Program B — B4: dichotomy evidence (null-set vs open-set incompleteness)
+
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program B residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
 
 **Date:** 2026-07-22  
 **Status:** done (evidence gathered; polynomial-only dichotomy conjecture still open; **restricted lemmas in B5**)  

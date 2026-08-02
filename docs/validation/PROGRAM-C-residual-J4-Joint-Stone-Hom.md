@@ -1,5 +1,7 @@
 # Program C residual — Theorem J4: Joint-Stone-Hom-1 obstruction
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program C / C001 are withdrawn as a current theorem surface. Residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
 **Superseding boundary (2026-07-29): HISTORICAL/NOT-LEAN PROGRAM C RECORD —
 OUTSIDE A001.** The obstruction labels below are not current A001 claims.

@@ -1,5 +1,7 @@
 # Program C — C1a domain freeze
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program C / C001 are withdrawn as a current theorem surface. Residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): HISTORICAL PROGRAM C RECORD — OUTSIDE
 A001.** Retained for domain provenance only; it is not a current CP or

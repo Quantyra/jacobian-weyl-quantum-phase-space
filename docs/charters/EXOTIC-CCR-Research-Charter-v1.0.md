@@ -1,10 +1,14 @@
 # PROJECT EXOTIC-CCR — Research Project Charter
 
-> **HISTORICAL / SUPERSEDED CHARTER — NOT A CURRENT CLAIM SOURCE.**
+> **CLOSED / PARKED HISTORICAL CHARTER (2026-08-01). NOT A CURRENT CLAIM SOURCE
+> OR LAUNCH DIRECTIVE.**
 > This v1.0 charter and its companion DOCX preserve the program's July 2026
-> launch assumptions. They are not canonical for theorem, publication, or
-> product claims. The current boundary is defined only by `README.md`,
-> `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex` (with its rendered PDF).
+> launch assumptions. They are not canonical for theorem, publication, product
+> claims, or active forward work. A001 is closed; Program B/C are **PARKED**.
+> Authoritative current status:
+> [`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
+> Live claim/non-claim boundary: `README.md`, `INTEGRITY.md`, and
+> `docs/notes/A001-arxiv.tex` (with its rendered PDF).
 >
 > **Withdrawn pending Lean:** every assertion below that treats the displayed
 > Weyl endomorphism \(\psi\) as nonautomorphic or nonsurjective; every exact
@@ -17,7 +21,7 @@
 > **Historical human-review source:** `docs/charters/Project_EXOTIC_CCR_Research_Charter.docx`
 > **Ingested:** 2026-07-20 into Quantyra-Planning2
 > **Historical status:** Draft for initiation and external technical review (as on cover)
-> **Historical decision request:** Authorize the 90-day launch phase and Gate 0 / Gate 1 review
+> **Historical decision request (not active):** Authorize the 90-day launch phase and Gate 0 / Gate 1 review
 
 This Markdown is a historical text extract of the DOCX for agent/search use.
 Neither file is a current claim source.

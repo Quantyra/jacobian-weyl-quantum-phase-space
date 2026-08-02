@@ -1,5 +1,7 @@
 # GenCP-Free progress (post-J7)
 
+> **PARKED HISTORICAL RECORD (2026-08-01).** Not an active theorem-development task. Program C / C001 are withdrawn as a current theorem surface. Residuals require a new story and Lean-backed gate to reopen. Current status: [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
 **Superseding status (2026-07-29): WITHDRAWN HISTORICAL SCOREBOARD —
 OUTSIDE A001.** J6-C is invalid as stated; former positive

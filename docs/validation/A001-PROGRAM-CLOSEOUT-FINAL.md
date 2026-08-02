@@ -166,17 +166,23 @@ theorem development.
 
 ## 8. Supersession table (older docs = historical)
 
-| Document | Disposition |
-|----------|-------------|
+| Document / family | Disposition |
+|-------------------|-------------|
 | `docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md` | **Historical / withdrawn** as current theorem or publication status |
 | `docs/validation/ROADMAP-POST-A001.md` | **Historical** roadmap; B/C lanes PARKED; do not use as current status |
 | `docs/validation/PROGRAM-WINDDOWN-A001.md` | **Historical** wind-down; pre-referee-revision package pins |
 | `docs/validation/GOAL-BC-PAPERS.md` | **PARKED (2026-08-01)**; not active backlog |
+| Entire `docs/validation/PROGRAM-B-*.md` family (B0–B7, classification charter, and any sibling `PROGRAM-B-*` notes) | **PARKED HISTORICAL RECORD (2026-08-01)**; not active theorem-development backlog; reopen only via new story + Lean-backed gate |
+| Entire `docs/validation/PROGRAM-C-*.md` family (C1/C1a–d, GenCP, Free-Strict, residuals/joint notes, constructive charter, and any sibling `PROGRAM-C-*` notes) | **PARKED / withdrawn as current theorem surface (2026-08-01)**; C001 not a current theorem surface; reopen only via new story + Lean-backed gate |
+| `docs/charters/EXOTIC-CCR-Charter-Amendment-v1.1-family-degree.md` | **CLOSED / PARKED historical amendment (2026-08-01)**; forward gates / new-story directions not active |
+| `docs/charters/EXOTIC-CCR-Research-Charter-v1.0.md` (Markdown extract) | **CLOSED / PARKED historical charter (2026-08-01)**; not a launch or claim source |
+| `docs/charters/Project_EXOTIC_CCR_Research_Charter.docx` | **Historical** human-review source only; do not edit for closeout; not a current claim source |
 | This file `A001-PROGRAM-CLOSEOUT-FINAL.md` | **CURRENT** closeout surface |
 
 Also prefer `README.md`, `INTEGRITY.md`, and `docs/notes/A001-arxiv.tex` for
 live claim/non-claim wording. Companion pack and freeze markers for B/C remain
-historical packaging notes.
+historical packaging notes. Bodies of parked B/C and charter records are
+preserved as historical evidence only.
 
 ---
 
