@@ -1,13 +1,19 @@
 # Program B — Classification charter (encore)
 
-> **HISTORICAL CHARTER NOTE.**
-> The “after A001 dual-flow no-go” parent framing below is superseded. The
-> dual-flow strong-CCR no-go and H0/H2 operator conclusions remain open pending
-> Lean and are not premises for current publication claims.
+> **PARKED 2026-08-01 — HISTORICAL CHARTER ONLY. NOT BACKLOG.**
+> This document is a frozen historical charter. It is **not** an open execution
+> story and does **not** authorize active theorem-development work.
+> Program B is **PARKED**. Authoritative disposition:
+> [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+>
+> Additional historical note: the “after A001 dual-flow no-go” parent framing
+> below is superseded. The dual-flow strong-CCR no-go and H0/H2 operator
+> conclusions remain open pending Lean and are not premises for current
+> publication claims.
 
 **Date:** 2026-07-21  
-**Status:** **OPEN** (parallel to wind-down publish)  
-**Parent:** EXOTIC-CCR after A001 dual-flow no-go  
+**Status:** **PARKED (2026-08-01)** — historical charter; not active backlog  
+**Parent:** EXOTIC-CCR after A001 dual-flow no-go *(historical framing)*  
 **Shock thesis:** A clean dichotomy for which Poisson/Weyl endomorphisms admit ESS dual momenta / strong CCR packages.
 
 ---

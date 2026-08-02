@@ -1,5 +1,19 @@
 # A001 external LLM review log
 
+> **HISTORICAL ADVISORY LOG (2026-08-01) — NOT THE AUTHORITATIVE PUBLICATION GATE.**
+> External-LLM reviews recorded below are advisory chronology only. They do
+> **not** replace the mandatory independent publication gates or live release
+> status. Final authoritative surfaces:
+>
+> - Closeout / released status: [`../validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md)
+> - Gate log: [`A001-arxiv-checklist.md`](A001-arxiv-checklist.md)
+> - Submission packet: [`A001-arxiv-submission-packet.md`](A001-arxiv-submission-packet.md)
+>
+> Within the chronology, older round labels such as "current superseding status"
+> are **historical within this log only**. They do not override the final
+> closeout. A001 is released (GitHub + Zenodo); arXiv remains human-endorsement
+> only (`VIPN6B`).
+
 **Date:** 2026-07-21  
 **Inputs:** Grok, Claude, ChatGPT Pro (hostile referee template)  
 **Response:** REVISE → manuscript `v0.3.4-submit` (H₁-only, expanded)
@@ -154,7 +168,7 @@ PASS; only Dan approval remains pending. This is a status-only update: the
 canonical TeX theorem content, rendered PDF, and Lean SHA are unchanged. No
 tag, release, DOI minting, arXiv submission, or Dan approval is recorded.
 
-## Round 9 claim-boundary correction (current superseding status)
+## Round 9 claim-boundary correction (historical superseding status within this log)
 
 **Date:** 2026-07-29
 
@@ -178,7 +192,7 @@ Fresh math.FA, math.AG/Weyl, non-claims, and package/metadata re-gates remain
 pending before Dan approval. No tag, release, DOI minting, arXiv submission,
 or Dan approval is recorded.
 
-## Round 10 final Lean documentation sync (current superseding status)
+## Round 10 final Lean documentation sync (historical superseding status within this log)
 
 **Date:** 2026-07-29
 
@@ -199,7 +213,7 @@ Lean/build and math.FA/math.AG/Weyl gates are COMPLETE/PASS. Fresh non-claims
 and package/metadata re-gates remain pending before Dan approval. No tag,
 release, DOI minting, arXiv submission, or Dan approval is recorded.
 
-## Round 11 expanded axiom-audit synchronization (current superseding status)
+## Round 11 expanded axiom-audit synchronization (historical superseding status within this log)
 
 **Date:** 2026-07-29
 

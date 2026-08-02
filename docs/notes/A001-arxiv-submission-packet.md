@@ -3,12 +3,15 @@
 **Status:** PACKAGE CLOSED FOR THEOREM WORK (2026-08-01) — A001 published as
 bounded result (GitHub `v0.3.9-referee-revision` + Zenodo version DOI); all
 gates PASS; Dan approval recorded 2026-07-30. **Only remaining action:** human
-arXiv endorsement code `VIPN6B`, then submit after endorse. No submission
-performed yet; no arXiv identifier assigned. See
+arXiv endorsement code `VIPN6B` must be completed **before** submission. No
+submission performed yet; no arXiv identifier assigned. See
 `docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`.
-**Primary (recommended):** `math.SP` · alternative `math.FA`
-**Secondary:** `math.FA`, `math-ph`
+**Primary (aligned to endorsement VIPN6B):** `math-ph`
+**Cross-list / secondary (if accepted by arXiv):** `math.SP`, `math.FA`
 **Scope:** specific canonical \(H=-iX_1\) only
+**Category note:** Endorsement code `VIPN6B` is recorded for `math-ph`. Submit
+with `math-ph` as primary so the endorsement applies; request cross-lists
+`math.SP` and `math.FA` if arXiv accepts them. Do not invent an arXiv id.
 
 | Item | Current value |
 |---|---|

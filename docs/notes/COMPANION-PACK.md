@@ -1,9 +1,16 @@
 # EXOTIC-CCR companion pack
 
+> **HISTORICAL COMPANION INDEX (2026-08-01) — NOT CURRENT STATUS.**
+> This file is a frozen companion packaging index. It is **not** the live
+> program-status surface. For citable pins, B/C disposition, non-claims, and
+> residual publication logistics, use
+> [`../validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
+> A001 is closed as a published bounded result; Programs B and C are parked;
+> there is no active theorem-development backlog.
+
 **Date:** 2026-07-29
-**Status:** CURRENT INDEX; A001 publication gates PASS and Dan approval is
-recorded; release package `v0.3.9-referee-revision`
-**Rule:** The current A001 release package is
+**Status:** **HISTORICAL INDEX** — A001 release package `v0.3.9-referee-revision` (see final closeout for live status)
+**Rule:** The A001 release package is
 `v0.3.9-referee-revision`. Earlier candidates remain
 historical records and must not be presented as the current freeze.
 The project concept DOI is a historical/project-level identifier only; it

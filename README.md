@@ -20,6 +20,7 @@ identifier is assigned.
 ## Start here
 
 - [A001-PROGRAM-CLOSEOUT-FINAL.md](docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md) — **current** program closeout (citable pins, non-claims, B/C parked)
+- [REPRODUCING.md](REPRODUCING.md) — clean-machine binary / TeX / Lean / CAS verification guide
 - [A001-arxiv.pdf](docs/notes/A001-arxiv.pdf) — rendered release paper
 - [A001-arxiv.tex](docs/notes/A001-arxiv.tex) — canonical paper source
 - [A001-arxiv-checklist.md](docs/notes/A001-arxiv-checklist.md) — review/gate log

@@ -106,9 +106,11 @@ See `INTEGRITY.md` and the paper Non-claims section.
 | Five-role gates + Dan approval (2026-07-30) | **DONE** |
 | arXiv | **NOT submitted.** Soft/human Blocker only: endorsement code **VIPN6B**. No arXiv id assigned. Do not invent an id; do not attempt automated submission. |
 
-After human endorsement, submit under the categories recorded in
+After human endorsement (`VIPN6B`), submit with **primary category `math-ph`**
+(aligned to the endorsement code) and request cross-lists / secondary
+`math.SP` and `math.FA` if arXiv accepts them. Details:
 `docs/notes/A001-arxiv-submission-packet.md` / endorsement notes. Package
-theorem work is otherwise closed.
+theorem work is otherwise closed. Do not invent an arXiv identifier.
 
 ---
 
@@ -182,7 +184,8 @@ historical packaging notes.
 
 - Paper PDF: `docs/notes/A001-arxiv.pdf`
 - Paper TeX: `docs/notes/A001-arxiv.tex`
+- Reproduction / verification: `REPRODUCING.md` (root)
 - Submission packet: `docs/notes/A001-arxiv-submission-packet.md`
-- Endorsement: `docs/notes/A001-endorsement-status.md` (code `VIPN6B`)
+- Endorsement: `docs/notes/A001-endorsement-status.md` (code `VIPN6B`; primary `math-ph`)
 - Non-claims: `INTEGRITY.md`
 - Repo entry: `README.md`

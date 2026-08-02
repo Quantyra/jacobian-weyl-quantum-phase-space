@@ -1,11 +1,18 @@
 # Program C — Constructive non-dual-\(F\) charter (encore)
 
+> **PARKED / WITHDRAWN AS CURRENT THEOREM SURFACE (2026-08-01). NOT BACKLOG.**
+> This document is a frozen historical charter. It is **not** an open execution
+> story and does **not** authorize active theorem-development work.
+> Program C / C001 are outside the A001 publication package; J6-C is withdrawn.
+> Authoritative disposition:
+> [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-21  
 **Superseding boundary (2026-07-29): PLANNING/HISTORICAL ONLY — OUTSIDE
 A001.** This charter authorizes no current CP, channel, or \(C^*\) theorem.
 
-**Status:** **OPEN** (parallel to wind-down publish)  
-**Default bet:** **C1** irreversible CP / correspondence for \(\psi\)  
+**Status:** **PARKED / WITHDRAWN AS CURRENT THEOREM SURFACE (2026-08-01)** — not active backlog  
+**Default bet:** **C1** irreversible CP / correspondence for \(\psi\) *(historical)*  
 **Forbidden default:** dual \(F\)-translation repair (closed no-go)
 
 ---

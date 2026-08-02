@@ -1,15 +1,20 @@
 # H4 Realization Trunk — Charter (EXOTIC-CCR / A001)
 
-> **SUPERSEDED / HISTORICAL PROGRAM CHARTER.**
+> **HISTORICAL / PARKED (2026-08-01) — NOT AN OPEN PROGRAM.**
+> This charter is frozen history. It is **not** active theorem-development
+> backlog and does **not** authorize current execution. Authoritative program
+> disposition:
+> [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+>
 > Its trigger and “failed dual-flow package” premise rely on a paper-only
 > strong-CCR no-go that is withdrawn as a current theorem. Dual-flow strong
 > CCR, H0/H2 deficiency, and H0/H2 ESS remain open pending Lean. Do not use
 > this charter as current publication evidence.
 
 **Date:** 2026-07-21  
-**Status:** **OPEN PROGRAM** (not a dual-flow repair)  
+**Status:** **HISTORICAL / PARKED (2026-08-01)** — not an open program  
 **Parent:** EXOTIC-CCR Research Charter v1.0, hypothesis H4  
-**Trigger:** Phases 1–3 closed dual-flow Schrödinger path as **no-go**
+**Trigger:** Phases 1–3 closed dual-flow Schrödinger path as **no-go** *(historical framing)*
 
 ---
 

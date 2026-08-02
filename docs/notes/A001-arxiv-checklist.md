@@ -124,5 +124,9 @@ asserted.
 
 All mandatory review items are closed. Dan authorized publication on
 2026-07-30. The release and version DOI receipts are recorded above. No arXiv
-identifier is assigned; endorsement/submission remain separate external
-steps. Later receipt commits do not move the tag from `0010354`.
+identifier is assigned; **human endorsement (`VIPN6B`, category `math-ph`) must
+be completed before submission.** Planned primary category is `math-ph`
+(aligned to the endorsement); request cross-lists `math.SP` and `math.FA` if
+arXiv accepts them. Do not invent an arXiv id. Later receipt commits do not
+move the tag from `0010354`. See
+`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`.

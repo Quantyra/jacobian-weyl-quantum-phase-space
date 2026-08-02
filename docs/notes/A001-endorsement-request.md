@@ -13,7 +13,10 @@ I request arXiv endorsement for:
 **Title:** Poisson and Weyl lifts of an explicit three-dimensional Keller map and nonunique self-adjoint realizations of a dual transport operator
 **Author:** Daniel Eric Fredriksen (Quantyra Inc.)  
 **Endorsement category:** math-ph
-**Planned submission:** math.SP primary preferred; math.FA / math-ph as appropriate
+**Planned submission:** **math-ph primary** (aligned to this endorsement code);
+cross-list / secondary `math.SP` and `math.FA` if accepted by arXiv.
+**Blocker:** human endorsement must be completed before any arXiv submission;
+no arXiv identifier is assigned.
 
 For the explicit Keller map announced by Alpöge (with Fable credited in the
 announcement for work leading to the map), the canonical

@@ -1,7 +1,13 @@
 # Program B — B7: OPEN-T sharpened (graph exclusion + residual)
 
+> **PARKED RESIDUAL OPEN PROBLEM (2026-08-01). NOT BACKLOG.**
+> The residual OPEN-T item below is optional future research only. It is
+> **not** an active theorem-development execution story. Program B is
+> **PARKED**. Authoritative disposition:
+> [`A001-PROGRAM-CLOSEOUT-FINAL.md`](A001-PROGRAM-CLOSEOUT-FINAL.md).
+
 **Date:** 2026-07-22  
-**Status:** theorem-grade **partial** progress on OPEN-T (full T-exclusion still open)  
+**Status:** **PARKED residual** — historical theorem-grade **partial** progress on OPEN-T (full T-exclusion still open as optional future research, not backlog)  
 **Paper:** `docs/notes/B001-classification-arxiv.tex` (v0.7)  
 **CAS:** `data/anchor/cas_atlas_B7_OPEN_T_B001.json`  
 **Baseline:** `PROGRAM-B-B6-regime-T.md`, `PROGRAM-B-B5-poly-dichotomy-lemmas.md`  

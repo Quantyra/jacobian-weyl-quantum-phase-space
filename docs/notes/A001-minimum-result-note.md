@@ -7,7 +7,8 @@
 **Status:** Internal scientific note — claims bounded to certified package only  
 **Planning:** `Quantyra-Planning2` epic E005  
 
-**Closeout index:** [`docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md`](../validation/PROGRAM-CLOSEOUT-G0-G7-A001.md)
+**Closeout index (current):** [`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md)  
+**Historical G0–G7 closeout (withdrawn as current status):** [`docs/validation/PROGRAM-CLOSEOUT-G0-G7-A001.md`](../validation/PROGRAM-CLOSEOUT-G0-G7-A001.md)
 
 ---
 

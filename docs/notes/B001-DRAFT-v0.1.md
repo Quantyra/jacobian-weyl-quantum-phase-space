@@ -1,7 +1,13 @@
 ﻿# B001 draft v0.7
 
+> **PARKED / HISTORICAL (2026-08-01). B001 IS NOT ACTIVE.**
+> A001 is now **released** (GitHub `v0.3.9-referee-revision` + Zenodo version
+> DOI). Program B / B001 is **PARKED** and is not active theorem-development
+> backlog. Authoritative disposition:
+> [`../validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](../validation/A001-PROGRAM-CLOSEOUT-FINAL.md).
+>
 > **SUPERSEDING CROSS-COMPANION NOTICE (2026-07-29).**
-> C001/Program C is now a withdrawn historical record outside A001. J6-C is
+> C001/Program C is a withdrawn historical record outside A001. J6-C is
 > invalid as stated; its positive Koopman/BT-envelope companion claims are
 > open pending Lean. Any older C001 summary below is historical only.
 >
@@ -13,17 +19,17 @@
 
 **Date:** 2026-07-22  
 **PDF:** docs/notes/B001-classification-arxiv.pdf  
-**Status:** v0.7 — atlas A000–A010 + B5 restricted poly dichotomy + B6 regime-T partial + **B7 OPEN-T sharpened** (graph / deg≤2 ⇒ **global \(C^\infty\) diffeo** / E; affine-invariant; poly inverse only when proved)  
-**Current tag/release:** none
+**Status:** **PARKED / HISTORICAL** — v0.7 body retained (atlas A000–A010 + B5 restricted poly dichotomy + B6 regime-T partial + **B7 OPEN-T sharpened**)  
+**Current tag/release:** none (not an active release track)
 **Historical tag:** `v0.2.3-b001-draft` @ `45e7d53` (prior `v0.2.2` @ `61bf3da` package-superseded; do not move)
 **Current correction source:** the untagged commit containing this marker
 **Current PDF SHA-256:** `db0f39adc4537ae8d8f789664d296b69bf2876c2adbb3054e7ff975007abab32`
-**Pack:** COMPANION-PACK.md  
-**A001:** proposed v0.3.9 untagged/unreleased with no version DOI; current non-claims and package/metadata re-gates pending, then Dan approval and endorsement/publication actions remain
+**Pack:** COMPANION-PACK.md (historical index)  
+**A001:** **released** — `v0.3.9-referee-revision` @ `0010354`; version DOI `10.5281/zenodo.21715479`; see final closeout
 **C:** C001/Program C withdrawn as a current theorem surface; J6-C invalid
 as stated; former positive Koopman/BT-envelope claims open pending Lean;
 remaining labels historical/not-Lean and outside A001
-**Dichotomy:** full poly thin-vs-open still conjecture; regime T excluded on proper/injective/deg-1/product/triangular/**graph-type / deg P≤2** (as global \(C^\infty\) diffeos / E); residual **OPEN-T** (non-coordinate deg≥3, Bad on atypical/bifurcation-born fibers)
+**Dichotomy:** full poly thin-vs-open still conjecture; regime T excluded on proper/injective/deg-1/product/triangular/**graph-type / deg P≤2** (as global \(C^\infty\) diffeos / E); residual **OPEN-T** is a **parked** optional future problem (not backlog)
 
 ## B7
 - Note: `docs/validation/PROGRAM-B-B7-OPEN-T.md`
