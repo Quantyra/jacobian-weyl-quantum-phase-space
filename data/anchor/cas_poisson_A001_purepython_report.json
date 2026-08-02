@@ -1,6 +1,6 @@
 {
   "engine": "purepython_dual_fractions",
-  "python": "3.14.2",
+  "python": "3.8.10",
   "atlas_id": "A001-seed-d3",
   "samples": 40,
   "det_eq_minus_two": 40,

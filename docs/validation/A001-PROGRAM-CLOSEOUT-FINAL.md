@@ -180,7 +180,16 @@ historical packaging notes.
 
 ---
 
-## 9. Start-here pointers
+## 9. Reproduction / verification links
+
+This document links to the current verification receipt:
+
+- `docs/validation/A001-REPRODUCTION-VERIFICATION-2026-08-01.md` — clean‑machine verification completed at HEAD `85c633c` (2026‑08‑01). Records successful runs of the three pure‑Python CAS verifiers and immutable release tag/PDF/DOI checks.
+- `REPRODUCING.md` — lightweight verification guide for the A001 package (runs the same CAS verifiers and checks tag/PDF/DOI immutables).
+
+---
+
+## 10. Start-here pointers
 
 - Paper PDF: `docs/notes/A001-arxiv.pdf`
 - Paper TeX: `docs/notes/A001-arxiv.tex`

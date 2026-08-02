@@ -3,7 +3,8 @@
 This guide is for clean-machine **verification** of the published A001 package.
 It does **not** reopen theorem development. Authoritative pins and non-claims:
 [`docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md`](docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md),
-[`INTEGRITY.md`](INTEGRITY.md).
+[`INTEGRITY.md`](INTEGRITY.md),
+and the verification receipt `docs/validation/A001-REPRODUCTION-VERIFICATION-2026-08-01.md` (links to this receipt, see `docs/validation/A001-PROGRAM-CLOSEOUT-FINAL.md` reproduction section).
 
 **Immutable pins**
 
