@@ -23,7 +23,7 @@
 **Current tag/release:** none (not an active release track)
 **Historical tag:** `v0.2.3-b001-draft` @ `45e7d53` (prior `v0.2.2` @ `61bf3da` package-superseded; do not move)
 **Current correction source:** the untagged commit containing this marker
-**Current PDF SHA-256:** `db0f39adc4537ae8d8f789664d296b69bf2876c2adbb3054e7ff975007abab32`
+**Current PDF SHA-256:** `6b7712933a891f2f8bbb6dd807ffca8da15f7d71d9011b4d6164ceb95064e29e`
 **Pack:** COMPANION-PACK.md (historical index)  
 **A001:** **released** — `v0.3.9-referee-revision` @ `0010354`; version DOI `10.5281/zenodo.21715479`; see final closeout
 **C:** C001/Program C withdrawn as a current theorem surface; J6-C invalid

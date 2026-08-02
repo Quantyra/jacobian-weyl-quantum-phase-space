@@ -39,7 +39,7 @@ not replace the mandatory independent publication gates.
 | Artifact | Pin |
 |----------|-----|
 | PDF | [B001-classification-arxiv.pdf](B001-classification-arxiv.pdf) |
-| Current PDF SHA-256 | `db0f39adc4537ae8d8f789664d296b69bf2876c2adbb3054e7ff975007abab32` |
+| Current PDF SHA-256 | `6b7712933a891f2f8bbb6dd807ffca8da15f7d71d9011b4d6164ceb95064e29e` |
 | TeX | [B001-classification-arxiv.tex](B001-classification-arxiv.tex) |
 | Marker | [B001-DRAFT-v0.1.md](B001-DRAFT-v0.1.md) (current cross-companion correction; B001 content = v0.7, B7 PARTIAL) |
 | Current tag / release | none; corrected candidate is untagged/unreleased |
